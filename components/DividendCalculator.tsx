@@ -130,13 +130,20 @@ export function DividendCalculator({
       </section>
 
       {stock && didSubmit ? (
-        <>
+        <section aria-labelledby="heading-estimativas" className="flex flex-col gap-10">
+          <h2
+            id="heading-estimativas"
+            className="text-center text-lg font-semibold text-neutral-800 dark:text-neutral-200"
+          >
+            Estimativas e histórico
+          </h2>
+
           <header className="flex flex-col gap-1 border-b border-neutral-200 pb-6 dark:border-neutral-800">
             <div className="flex flex-wrap items-center gap-3">
               {stock.logoUrl ? (
                 <Image
                   src={stock.logoUrl}
-                  alt=""
+                  alt={`Logotipo ${stock.symbol}`}
                   width={48}
                   height={48}
                   unoptimized
@@ -144,9 +151,9 @@ export function DividendCalculator({
                 />
               ) : null}
               <div className="flex min-w-0 flex-wrap items-baseline gap-2">
-                <h2 className="text-xl font-semibold text-neutral-900 dark:text-neutral-50">
+                <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-50">
                   {stock.longName ?? stock.shortName}
-                </h2>
+                </h3>
                 <Link
                   href={`/acoes/${encodeURIComponent(stock.symbol)}`}
                   className="text-sm font-medium text-teal-700 hover:underline dark:text-teal-400"
@@ -209,16 +216,19 @@ export function DividendCalculator({
             </div>
           ) : null}
 
-          <section className="flex flex-col gap-3">
-            <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-50">
+          <section className="flex flex-col gap-3" aria-labelledby="heading-proventos">
+            <h4
+              id="heading-proventos"
+              className="text-lg font-semibold text-neutral-900 dark:text-neutral-50"
+            >
               Proventos recentes
-            </h3>
+            </h4>
             <p className="text-sm text-neutral-500 dark:text-neutral-400">
               Lista baseada nos dados retornados pela API (valores por cota são estimativas).
             </p>
             <DividendTable rows={calculation?.recentDividends ?? []} currency={currency} />
           </section>
-        </>
+        </section>
       ) : null}
 
       <p className="text-center text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">

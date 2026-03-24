@@ -16,7 +16,7 @@ export function ResultsCard({
       <span className="text-xs font-medium uppercase tracking-wide text-teal-600 dark:text-teal-400">
         {estimateLabel}
       </span>
-      <h3 className="mt-1 text-sm font-medium text-neutral-500 dark:text-neutral-400">{title}</h3>
+      <p className="mt-1 text-sm font-medium text-neutral-500 dark:text-neutral-400">{title}</p>
       <p className="mt-2 text-2xl font-semibold tabular-nums tracking-tight text-neutral-900 dark:text-neutral-50">
         {value}
       </p>

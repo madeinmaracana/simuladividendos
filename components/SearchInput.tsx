@@ -192,7 +192,7 @@ export function SearchInput({
                 {s.logoUrl ? (
                   <Image
                     src={s.logoUrl}
-                    alt=""
+                    alt={`Logo ${s.symbol}`}
                     width={32}
                     height={32}
                     unoptimized

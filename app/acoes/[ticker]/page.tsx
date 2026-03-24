@@ -53,13 +53,21 @@ export default async function AcaoPage({ params }: PageProps) {
         Ticker pré-carregado na URL. Ajuste as cotas ou busque outro papel; valores são apenas{" "}
         <strong className="font-medium text-neutral-800 dark:text-neutral-200">estimativas</strong>.
       </p>
-      <DividendCalculator
-        initialTicker={raw.toUpperCase()}
-        initialStock={initialStock}
-        serverError={serverError}
-        defaultShares={100}
-        showBackLink
-      />
+      <section aria-labelledby="heading-calculadora-acao" className="flex flex-col gap-4">
+        <h2
+          id="heading-calculadora-acao"
+          className="text-center text-lg font-semibold text-neutral-800 dark:text-neutral-200"
+        >
+          Calculadora de dividendos
+        </h2>
+        <DividendCalculator
+          initialTicker={raw.toUpperCase()}
+          initialStock={initialStock}
+          serverError={serverError}
+          defaultShares={100}
+          showBackLink
+        />
+      </section>
     </main>
   );
 }

@@ -4,7 +4,7 @@ import { DividendCalculator } from "@/components/DividendCalculator";
 export const metadata: Metadata = {
   title: "Início",
   description:
-    "Calculadora de dividendos para ações B3: informe ticker e cotas. Valores são estimativas a partir do histórico, sem garantia de rendimento.",
+    "Calculadora de dividendos para ações B3: informe ticker e cotas. Estimativas a partir do histórico, sem garantia de rendimento.",
   alternates: { canonical: "/" },
 };
 
@@ -19,7 +19,16 @@ export default function HomePage() {
         <strong className="font-medium text-neutral-800 dark:text-neutral-200">estimativas</strong>{" "}
         derivadas do histórico — não há retorno garantido.
       </p>
-      <DividendCalculator defaultShares={100} />
+
+      <section aria-labelledby="heading-calculadora" className="flex flex-col gap-4">
+        <h2
+          id="heading-calculadora"
+          className="text-center text-lg font-semibold text-neutral-800 dark:text-neutral-200"
+        >
+          Calculadora de dividendos
+        </h2>
+        <DividendCalculator defaultShares={100} />
+      </section>
     </main>
   );
 }

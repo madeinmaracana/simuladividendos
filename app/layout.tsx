@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { getSiteUrl } from "@/lib/site";
+import { getSeoBaseUrl } from "@/lib/site";
 import "./globals.css";
 
 const inter = Inter({
@@ -9,23 +9,26 @@ const inter = Inter({
   display: "swap",
 });
 
-const siteUrl = getSiteUrl();
+const seoBase = getSeoBaseUrl();
+const defaultTitle = "Simula Dividendos | Simulador de renda passiva";
+const defaultDescription =
+  "Simule seus dividendos e descubra quanto você pode ganhar com investimentos em ações e renda passiva.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(seoBase),
   title: {
-    default: "SimulaDividendos — simule proventos de ações brasileiras",
-    template: "%s · SimulaDividendos",
+    default: defaultTitle,
+    template: "%s | Simula Dividendos",
   },
-  description:
-    "Ferramenta educativa para estimar dividendos de ações brasileiras com base em dados públicos. Não constitui recomendação de investimento.",
+  description: defaultDescription,
   keywords: [
     "dividendos",
     "ações",
     "B3",
     "simulador",
+    "renda passiva",
     "proventos",
-    "ticker",
+    "investimentos",
     "Brasil",
   ],
   robots: {
@@ -34,19 +37,17 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true },
   },
   openGraph: {
-    title: "SimulaDividendos",
-    description:
-      "Simule quanto uma ação pode pagar em dividendos (estimativas, sem garantias).",
+    title: defaultTitle,
+    description: defaultDescription,
+    url: seoBase,
     locale: "pt_BR",
     type: "website",
-    siteName: "SimulaDividendos",
-    url: siteUrl,
+    siteName: "Simula Dividendos",
   },
   twitter: {
     card: "summary_large_image",
-    title: "SimulaDividendos",
-    description:
-      "Simule proventos de ações brasileiras com base no histórico (estimativas).",
+    title: defaultTitle,
+    description: defaultDescription,
   },
 };
 
@@ -61,7 +62,7 @@ export default function RootLayout({
         <div className="mx-auto min-h-screen max-w-4xl px-4 py-10 sm:px-6 lg:px-8">
           <header className="mb-10 text-center">
             <p className="text-sm font-medium uppercase tracking-widest text-teal-600 dark:text-teal-400">
-              SimulaDividendos
+              Simula Dividendos
             </p>
           </header>
           {children}
