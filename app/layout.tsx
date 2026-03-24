@@ -67,7 +67,7 @@ export default function RootLayout({
           </header>
           {children}
           <footer className="mt-16 border-t border-neutral-200 pt-8 text-center text-xs text-neutral-400 dark:border-neutral-800">
-            Dados via brapi.dev. Uso por sua conta e risco; não é aconselhamento financeiro.
+            Uso por sua conta e risco; não é aconselhamento financeiro.
           </footer>
         </div>
       </body>
