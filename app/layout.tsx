@@ -60,7 +60,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body className={`${inter.className} min-h-screen antialiased`}>
         <div className="mx-auto min-h-screen max-w-4xl px-4 py-10 sm:px-6 lg:px-8">
-          <header className="mb-10 text-center">
+          <header className="mb-10 text-left">
             <p className="text-sm font-medium uppercase tracking-widest text-teal-600 dark:text-teal-400">
               Simula Dividendos
             </p>

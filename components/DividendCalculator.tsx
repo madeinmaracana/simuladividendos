@@ -78,7 +78,7 @@ export function DividendCalculator({
   const hasDividends = Boolean(stock?.dividends.length);
 
   return (
-    <div className="mx-auto flex max-w-3xl flex-col gap-10">
+    <div className="flex w-full max-w-3xl flex-col gap-10">
       {showBackLink ? (
         <Link
           href="/"
@@ -133,7 +133,7 @@ export function DividendCalculator({
         <section aria-labelledby="heading-estimativas" className="flex flex-col gap-10">
           <h2
             id="heading-estimativas"
-            className="text-center text-lg font-semibold text-neutral-800 dark:text-neutral-200"
+            className="text-left text-lg font-semibold text-neutral-800 dark:text-neutral-200"
           >
             Estimativas e histórico
           </h2>
@@ -231,7 +231,7 @@ export function DividendCalculator({
         </section>
       ) : null}
 
-      <p className="text-center text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">
+      <p className="text-left text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">
         Esta é uma estimativa baseada no histórico. Dividendos não são garantidos.
       </p>
     </div>
