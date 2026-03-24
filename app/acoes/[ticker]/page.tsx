@@ -5,6 +5,7 @@ import { DividendCalculator } from "@/components/DividendCalculator";
 import { StockFAQ } from "@/components/stocks/StockFAQ";
 import { StockHero } from "@/components/stocks/StockHero";
 import { StockMetrics } from "@/components/stocks/StockMetrics";
+import { StockPageHeading } from "@/components/stocks/StockPageHeading";
 import { StockPeerLinks } from "@/components/stocks/StockPeerLinks";
 import { BrapiError, getStockData } from "@/lib/brapi";
 import { getAllMockTickers, getPeerTickers, getSectorPath, getStockSeo } from "@/lib/stocks-data";
@@ -89,9 +90,33 @@ export default async function AcaoPage({ params }: PageProps) {
 
   return (
     <main className="flex flex-col gap-12">
+      <StockPageHeading ticker={mock?.ticker ?? symbol} companyName={mock?.companyName ?? displayName} />
+
+      <section aria-labelledby="heading-calculadora-acao" className="flex flex-col gap-4">
+        <h2
+          id="heading-calculadora-acao"
+          className="text-left text-lg font-semibold text-neutral-800 dark:text-neutral-200"
+        >
+          Simulação de dividendos
+        </h2>
+        <p className="text-left text-sm text-neutral-600 dark:text-neutral-400">
+          Ajuste cotas ou busque outro ticker. Valores exibidos pela API são{" "}
+          <strong className="font-medium text-neutral-800 dark:text-neutral-200">estimativas</strong> derivadas do
+          histórico — sem garantia de rendimento.
+        </p>
+        <DividendCalculator
+          initialTicker={symbol}
+          initialStock={initialStock}
+          serverError={serverError}
+          defaultShares={100}
+          showBackLink
+        />
+      </section>
+
       {mock ? (
         <>
           <StockHero
+            afterCalculator
             ticker={mock.ticker}
             companyName={mock.companyName}
             shortDescription={mock.shortDescription}
@@ -145,44 +170,15 @@ export default async function AcaoPage({ params }: PageProps) {
           />
         </>
       ) : (
-        <header className="flex flex-col gap-3 border-b border-neutral-200 pb-8 dark:border-neutral-800">
-          <p className="text-sm font-medium uppercase tracking-widest text-teal-600 dark:text-teal-400">
-            {symbol}
-          </p>
-          <h1 className="text-left text-2xl font-semibold tracking-tight text-neutral-900 sm:text-3xl dark:text-neutral-50">
-            {symbol}: {displayName}
-          </h1>
-          <p className="max-w-3xl text-left text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
-            Página de simulação de dividendos para este papel na B3. Conteúdo editorial detalhado por setor está
-            disponível para uma lista de tickers em expansão — use a calculadora abaixo e explore os{" "}
-            <Link href="/setores" className="font-medium text-teal-700 underline-offset-2 hover:underline dark:text-teal-400">
-              setores
-            </Link>{" "}
-            para mais contexto.
-          </p>
-        </header>
-      )}
-
-      <section aria-labelledby="heading-calculadora-acao" className="flex flex-col gap-4">
-        <h2
-          id="heading-calculadora-acao"
-          className="text-left text-lg font-semibold text-neutral-800 dark:text-neutral-200"
-        >
-          Simulação de dividendos
-        </h2>
-        <p className="text-left text-sm text-neutral-600 dark:text-neutral-400">
-          Ajuste cotas ou busque outro ticker. Valores exibidos pela API são{" "}
-          <strong className="font-medium text-neutral-800 dark:text-neutral-200">estimativas</strong> derivadas do
-          histórico — sem garantia de rendimento.
+        <p className="max-w-3xl text-left text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+          Página de simulação de dividendos para este papel na B3. Conteúdo editorial detalhado por setor está
+          disponível para uma lista de tickers em expansão — explore os{" "}
+          <Link href="/setores" className="font-medium text-teal-700 underline-offset-2 hover:underline dark:text-teal-400">
+            setores
+          </Link>{" "}
+          para mais contexto.
         </p>
-        <DividendCalculator
-          initialTicker={symbol}
-          initialStock={initialStock}
-          serverError={serverError}
-          defaultShares={100}
-          showBackLink
-        />
-      </section>
+      )}
 
       <StockFAQ
         title="Perguntas frequentes"
