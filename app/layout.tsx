@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { getSeoBaseUrl } from "@/lib/site";
+import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { cn } from "@/lib/cn";
@@ -63,6 +64,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={inter.variable}>
       <body className={`${inter.className} min-h-screen antialiased`}>
+        <GoogleAnalytics />
         <div
           className={cn(
             "flex min-h-screen flex-col pb-10 pt-2 sm:pb-12 sm:pt-4",
