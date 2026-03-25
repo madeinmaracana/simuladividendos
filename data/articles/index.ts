@@ -5,7 +5,7 @@ import type { SectorSlug } from "@/data/stocks";
 import { ARTICLES } from "./registry";
 import type { ArticleRecord } from "./types";
 
-export type { ArticleRecord, ArticleSection } from "./types";
+export type { ArticleRecord, ArticleSection, ArticleSubsection } from "./types";
 
 export function getAllArticleSlugs(): string[] {
   return ARTICLES.map((a) => a.slug);

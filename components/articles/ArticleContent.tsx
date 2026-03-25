@@ -19,6 +19,16 @@ export function ArticleContent({ sections }: ArticleContentProps) {
               </p>
             ))}
           </div>
+          {section.subsections?.map((sub) => (
+            <div key={sub.heading} className="flex flex-col gap-2 pl-0 sm:pl-2">
+              <h3 className={cn("text-left", ui.subsectionTitle)}>{sub.heading}</h3>
+              {sub.paragraphs.map((p, idx) => (
+                <p key={`${sub.heading}-${idx}`} className={cn(ui.body, "max-w-2xl text-left")}>
+                  {p}
+                </p>
+              ))}
+            </div>
+          ))}
         </section>
       ))}
     </div>

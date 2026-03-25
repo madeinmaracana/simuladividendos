@@ -1,8 +1,15 @@
 import type { FaqItem, SectorSlug } from "@/data/stocks";
 
+export type ArticleSubsection = {
+  heading: string;
+  paragraphs: string[];
+};
+
 export type ArticleSection = {
   heading: string;
   paragraphs: string[];
+  /** H3 dentro da seção (conteúdo escaneável / SEO). */
+  subsections?: ArticleSubsection[];
 };
 
 export type ArticleRecord = {
@@ -16,6 +23,8 @@ export type ArticleRecord = {
   /** Tickers de FIIs relacionados ao tema (rotas `/fiis/[ticker]`). */
   relatedFiis?: string[];
   relatedSectors: SectorSlug[];
+  /** Slugs de outros artigos para interligação (SEO + navegação). */
+  relatedArticleSlugs?: string[];
   /** ISO YYYY-MM-DD para `<lastmod>` no sitemap. */
   lastModified?: string;
 };

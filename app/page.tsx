@@ -6,7 +6,7 @@ import { StockFAQ } from "@/components/stocks/StockFAQ";
 import { ArticleCard } from "@/components/articles/ArticleCard";
 import type { FaqItem } from "@/lib/stocks-data";
 import { getAllMockTickers, getSectorNavItems } from "@/lib/stocks-data";
-import { ALL_ARTICLES } from "@/data/articles";
+import { ALL_ARTICLES, type ArticleRecord } from "@/data/articles";
 import { getAllMockFiiTickers, getFiiPath } from "@/data/fiis";
 import { cn } from "@/lib/cn";
 import { ui } from "@/components/ui/classes";
@@ -54,9 +54,28 @@ const faq: FaqItem[] = [
 const sectionGap = "flex w-full min-w-0 flex-col gap-3 sm:gap-4";
 const sectionTitle = cn(ui.sectionTitle, "text-base sm:text-lg");
 
+/** Artigos em destaque na home (intenção de busca + FIIs). */
+const HOME_ARTICLE_SLUGS: string[] = [
+  "melhores-fiis-para-renda-mensal",
+  "quanto-investir-para-viver-de-dividendos",
+  "o-que-e-dividend-yield",
+  "como-calcular-renda-passiva",
+  "acoes-que-pagam-dividendos-todo-mes",
+  "melhores-acoes-de-dividendos-brasil",
+];
+
+function homeFeaturedArticles(): ArticleRecord[] {
+  return HOME_ARTICLE_SLUGS.map((slug) => ALL_ARTICLES.find((a) => a.slug === slug)).filter(
+    (a): a is ArticleRecord => Boolean(a)
+  );
+}
+
 export default function HomePage() {
   const popularTickers = getAllMockTickers().slice(0, 8);
-  const popularFiis = getAllMockFiiTickers().slice(0, 6);
+  const popularFiis = getAllMockFiiTickers().filter((t) =>
+    ["MXRF11", "HGLG11", "XPLG11", "KNRI11", "VGHF11"].includes(t)
+  );
+  const homeArticles = homeFeaturedArticles();
 
   return (
     <main className={cn(ui.stackPage, "gap-12 sm:gap-16 lg:gap-20")}>
@@ -174,7 +193,7 @@ export default function HomePage() {
           Artigos
         </h2>
         <div className="grid gap-4 sm:grid-cols-2">
-          {ALL_ARTICLES.slice(0, 4).map((article) => (
+          {homeArticles.map((article) => (
             <ArticleCard key={article.slug} article={article} />
           ))}
         </div>

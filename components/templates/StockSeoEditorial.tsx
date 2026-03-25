@@ -12,7 +12,7 @@ type StockSeoEditorialProps = {
 };
 
 /**
- * Blocos editoriais padrão para páginas de ticker com dados em `data/stocks/tickers.registry.ts`.
+ * Blocos editoriais padrão para páginas de ticker com dados em `data/tickers.ts`.
  */
 export function StockSeoEditorial({ stock }: StockSeoEditorialProps) {
   const peers = getPeerTickers(stock.ticker);

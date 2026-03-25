@@ -11,6 +11,7 @@ import { getAllArticleSlugs, getArticleBySlug } from "@/data/articles";
 import { getFiiPath } from "@/data/fiis";
 import { getSectorPath, getTickerPath } from "@/lib/stocks-data";
 import { getSector } from "@/data/stocks";
+import { ROUTES } from "@/lib/seo/constants";
 import { breadcrumbsArticle, buildArticlePageMetadata, buildArticleSchemaFromPath } from "@/lib/seo";
 import { cn } from "@/lib/cn";
 import { ui } from "@/components/ui/classes";
@@ -63,23 +64,35 @@ export default function ArtigoPage({ params }: PageProps) {
           <SectionHeading
             id="heading-relacionados"
             title="Próximos passos"
-            description="Coloque a teoria em prática usando o simulador e explorando setores e tickers relacionados."
+            description="Simulador, páginas de ativos, setores e leituras relacionadas."
           />
           <div className="mt-4 flex flex-wrap gap-2">
             <Link href="/simulador" className={cn(ui.ctaSecondary, "no-underline")}>
               Abrir o simulador →
             </Link>
-            {article.relatedTickers.slice(0, 3).map((t) => (
+            <Link href={ROUTES.artigos} className={cn(ui.pillGhost, "no-underline")}>
+              Todos os artigos →
+            </Link>
+            {(article.relatedArticleSlugs ?? []).map((s) => {
+              const rel = getArticleBySlug(s);
+              if (!rel) return null;
+              return (
+                <Link key={s} href={ROUTES.artigo(s)} className={cn(ui.pillGhost, "no-underline")}>
+                  {rel.title}
+                </Link>
+              );
+            })}
+            {article.relatedTickers.slice(0, 6).map((t) => (
               <Link key={t} href={getTickerPath(t)} className={cn(ui.pill, "no-underline")}>
                 {t}
               </Link>
             ))}
-            {(article.relatedFiis ?? []).slice(0, 4).map((t) => (
+            {(article.relatedFiis ?? []).slice(0, 6).map((t) => (
               <Link key={t} href={getFiiPath(t)} className={cn(ui.pill, "no-underline")}>
                 {t}
               </Link>
             ))}
-            {article.relatedSectors.slice(0, 2).map((s) => (
+            {article.relatedSectors.slice(0, 4).map((s) => (
               <Link key={s} href={getSectorPath(s)} className={cn(ui.pillNeutral, "no-underline")}>
                 {getSector(s)?.name ?? s}
               </Link>

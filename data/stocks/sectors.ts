@@ -79,6 +79,46 @@ export const SECTORS: Record<SectorSlug, SectorRecord> = {
       },
     ],
   },
+  consumo: {
+    slug: "consumo",
+    name: "Consumo",
+    intro:
+      "Empresas de bens de consumo (bebidas, alimentos, higiene e similares) costumam ter receitas ligadas ao varejo e ao poder de compra da população. Na B3, há nomes com escala nacional e exposição a câmbio e commodities agrícolas indiretamente.",
+    dividendRelevance:
+      "O retorno ao acionista depende de margens, geração de caixa e política de remuneração da companhia. Em consumo, é comum comparar consistência de dividendos com crescimento e reinvestimento — empresas em expansão podem priorizar CAPEX em certos ciclos.",
+    faqs: [
+      {
+        question: "Consumo é “defensivo” para dividendos?",
+        answer:
+          "Muitas ações do setor são chamadas de defensivas por demanda recorrente, mas isso não garante dividendos estáveis. Concorrência, custo de insumos e decisões estratégicas mudam o fluxo de caixa.",
+      },
+      {
+        question: "Como simular dividendos de uma ação de consumo?",
+        answer:
+          "Use o ticker na página do Simula Dividendos e informe quantas cotas você possui. Os valores são estimativas educacionais com base em dados disponíveis, sem promessa de rendimento futuro.",
+      },
+    ],
+  },
+  industria: {
+    slug: "industria",
+    name: "Indústria",
+    intro:
+      "Fabricantes de equipamentos, papel e celulose, entre outros segmentos industriais, aparecem na B3 com perfis de risco e ciclo diferentes de bancos ou commodities puras. Lucro e distribuição variam com capacidade ociosa, exportação e custo de capital.",
+    dividendRelevance:
+      "Empresas industriais podem alternar anos de payout mais alto com períodos de investimento pesado. Por isso, o investidor de dividendos costuma olhar histórico longo e alavancagem, não só o último yield divulgado.",
+    faqs: [
+      {
+        question: "Indústria paga dividendos mensais?",
+        answer:
+          "Na B3, a frequência mais comum não é mensal para ações ordinárias; depende da companhia. FIIs costumam ter outro calendário. Confira sempre os comunicados oficiais.",
+      },
+      {
+        question: "Por que comparar indústrias diferentes pode ser difícil?",
+        answer:
+          "Mix de produtos, exposição cambial, commodities e intensidade de capital mudam o risco e a previsibilidade de caixa. Compare com pars mais próximos do mesmo segmento.",
+      },
+    ],
+  },
   petroleo: {
     slug: "petroleo",
     name: "Petróleo e gás",
@@ -101,6 +141,26 @@ export const SECTORS: Record<SectorSlug, SectorRecord> = {
         question: "Como estimar quanto recebo por cota?",
         answer:
           "Use o Simula Dividendos com o ticker PETR4 (ou outro) e informe quantas cotas você possui. O resultado é estimativa educacional.",
+      },
+    ],
+  },
+  servicos_financeiros: {
+    slug: "servicos_financeiros",
+    name: "Serviços financeiros",
+    intro:
+      "Além de bancos tradicionais, a B3 inclui infraestrutura de mercado: bolsa, câmara de compensação e serviços correlatos. Esses negócios costumam estar ligados a volume de negócios, listagens e produtos derivados.",
+    dividendRelevance:
+      "A política de dividendos segue lucro, investimento em tecnologia e regulação. Como em qualquer ação, o passado não garante o futuro — use simulações como apoio educacional, não como promessa.",
+    faqs: [
+      {
+        question: "Ações de infraestrutura de mercado são iguais a bancos?",
+        answer:
+          "Não. Os drivers de receita e risco são diferentes. Convém ler relatórios e separar exposição a crédito (bancos) de exposição a atividade de mercado (bolsa, clearing etc.).",
+      },
+      {
+        question: "Onde vejo o histórico de proventos?",
+        answer:
+          "Na página do ticker no Simula Dividendos e nos canais de RI da companhia, além de comunicados à CVM.",
       },
     ],
   },

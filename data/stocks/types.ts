@@ -2,7 +2,15 @@
  * Tipos compartilhados para setores e tickers (SEO / conteúdo editorial).
  */
 
-export const SECTOR_SLUGS = ["bancos", "energia", "mineracao", "petroleo"] as const;
+export const SECTOR_SLUGS = [
+  "bancos",
+  "consumo",
+  "energia",
+  "industria",
+  "mineracao",
+  "petroleo",
+  "servicos_financeiros",
+] as const;
 export type SectorSlug = (typeof SECTOR_SLUGS)[number];
 
 export type FaqItem = { question: string; answer: string };
@@ -37,7 +45,7 @@ export type StockSeoRecord = {
 };
 
 /**
- * Objeto colado em `tickers.registry.ts`.
+ * Objeto colado em `data/tickers.ts` (re-export em `tickers.registry.ts`).
  * `sectorLabel` é opcional: preenchemos com o nome do setor em `data/stocks/index.ts`.
  */
 export type StockSeoDefinition = Omit<StockSeoRecord, "sectorLabel"> & { sectorLabel?: string };

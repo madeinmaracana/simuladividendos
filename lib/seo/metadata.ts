@@ -4,8 +4,11 @@ import type { FiiSeoRecord } from "@/data/fiis";
 import type { SectorRecord, StockSeoRecord } from "@/data/stocks";
 import { getSeoBaseUrl } from "@/lib/site";
 import { OG_LOCALE, SITE_NAME } from "./constants";
-import { generateFiiDescription, generateFiiTitle } from "./fii-seo";
-import { generateTickerDescription, generateTickerTitle } from "./ticker-seo";
+import {
+  generateFiiProgrammaticDescription,
+  generateFiiProgrammaticTitle,
+} from "@/lib/programmatic/fii-page-seo";
+import { generateDescription, generateTitle } from "@/lib/programmatic/stock-seo";
 
 function absoluteUrl(path: string): string {
   const base = getSeoBaseUrl().replace(/\/$/, "");
@@ -61,8 +64,8 @@ export function buildPageMetadata({
 /** Página de ticker: título/descrição alinhados a busca por “[ticker] dividendos” e simulação. */
 export function buildTickerStockPageMetadata(symbol: string, mock: StockSeoRecord | null): Metadata {
   const path = `/acoes/${encodeURIComponent(symbol)}`;
-  const title = generateTickerTitle(symbol);
-  const description = generateTickerDescription(symbol);
+  const title = generateTitle(symbol, mock);
+  const description = generateDescription(symbol, mock);
   const companyKw = mock?.companyName ?? "";
 
   return buildPageMetadata({
@@ -86,8 +89,8 @@ export const buildStockPageMetadata = buildTickerStockPageMetadata;
 
 export function buildFiiPageMetadata(symbol: string, mock: FiiSeoRecord | null): Metadata {
   const path = `/fiis/${encodeURIComponent(symbol)}`;
-  const title = generateFiiTitle(symbol);
-  const description = generateFiiDescription(symbol);
+  const title = generateFiiProgrammaticTitle(symbol, mock);
+  const description = generateFiiProgrammaticDescription(symbol, mock);
   const nameKw = mock?.fundName ?? "";
 
   return buildPageMetadata({

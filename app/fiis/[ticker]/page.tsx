@@ -20,7 +20,8 @@ import {
 } from "@/components/ticker";
 import { BrapiError, getStockData } from "@/lib/brapi";
 import { getArticlesForFii } from "@/data/articles";
-import { getAllMockFiiTickers, getFiiSeo, getPeerFiis } from "@/data/fiis";
+import { buildAllFiiStaticParams } from "@/data/fii-registry";
+import { getFiiSeo, getPeerFiis } from "@/data/fiis";
 import { generateFiiEditorialParagraphs, generateFiiSummaryParagraph } from "@/lib/fii-page";
 import {
   buildDividendTableRows,
@@ -29,19 +30,16 @@ import {
   inferPaymentFrequencyLabel,
 } from "@/lib/ticker-page";
 import {
-  SITE_NAME,
-  breadcrumbsFii,
-  buildFiiPageFaqs,
-  buildFiiPageMetadata,
-  buildWebPageSchema,
-  generateFiiDescription,
-  generateFiiTitle,
-} from "@/lib/seo";
+  generateFiiProgrammaticDescription,
+  generateFiiProgrammaticFAQ,
+  generateFiiProgrammaticTitle,
+} from "@/lib/programmatic/fii-page-seo";
+import { SITE_NAME, breadcrumbsFii, buildFiiPageMetadata, buildWebPageSchema } from "@/lib/seo";
 
 type PageProps = { params: { ticker: string } };
 
 export function generateStaticParams() {
-  return getAllMockFiiTickers().map((ticker) => ({ ticker }));
+  return buildAllFiiStaticParams();
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -93,7 +91,7 @@ export default async function FiiTickerPage({ params }: PageProps) {
   const relatedArticles = getArticlesForFii(mock.ticker);
   const peers = getPeerFiis(mock.ticker);
 
-  const faqItems = buildFiiPageFaqs(symbol, mock, lastSnap, frequencyHint, currency);
+  const faqItems = generateFiiProgrammaticFAQ(symbol, mock, lastSnap, frequencyHint, currency);
 
   const title = `Rendimentos de ${symbol}`;
   const editorialParagraphs = generateFiiEditorialParagraphs(symbol, displayName, mock);
@@ -103,8 +101,8 @@ export default async function FiiTickerPage({ params }: PageProps) {
     <main className="w-full min-w-0">
       <JsonLd
         data={buildWebPageSchema({
-          name: `${generateFiiTitle(symbol)} | ${SITE_NAME}`,
-          description: generateFiiDescription(symbol),
+          name: `${generateFiiProgrammaticTitle(symbol, mock)} | ${SITE_NAME}`,
+          description: generateFiiProgrammaticDescription(symbol, mock),
           path: fiiPath,
         })}
       />
@@ -183,6 +181,8 @@ export default async function FiiTickerPage({ params }: PageProps) {
               articles={relatedArticles}
               id="heading-artigos-relacionados-fii"
               title="Artigos relacionados"
+              max={5}
+              showSimuladorCta
             />
           </TickerPageRow>
         ) : null}

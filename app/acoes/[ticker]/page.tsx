@@ -28,27 +28,21 @@ import {
   inferPaymentFrequencyLabel,
 } from "@/lib/ticker-page";
 import { generateTickerSummaryText } from "@/lib/ticker-page";
-import {
-  getAllMockTickers,
-  getPeerTickers,
-  getSectorPath,
-  getStockSeo,
-} from "@/lib/stocks-data";
+import { buildAllTickerStaticParams } from "@/data/tickers";
+import { getPeerTickers, getSectorPath, getStockSeo } from "@/lib/stocks-data";
 import { getArticlesForTicker } from "@/data/articles";
+import { generateDescription, generateFAQ, generateTitle } from "@/lib/programmatic/stock-seo";
 import {
   SITE_NAME,
   breadcrumbsTicker,
   buildTickerStockPageMetadata,
   buildWebPageSchema,
-  generateTickerDescription,
-  generateTickerFAQ,
-  generateTickerTitle,
 } from "@/lib/seo";
 
 type PageProps = { params: { ticker: string } };
 
 export function generateStaticParams() {
-  return getAllMockTickers().map((ticker) => ({ ticker }));
+  return buildAllTickerStaticParams();
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -111,7 +105,7 @@ export default async function AcaoPage({ params }: PageProps) {
   const relatedArticles = mock ? getArticlesForTicker(mock.ticker) : [];
   const peers = mock ? getPeerTickers(mock.ticker) : [];
 
-  const faqItems = generateTickerFAQ(symbol, mock, lastSnap, nextSnap, frequencyHint, currency);
+  const faqItems = generateFAQ(symbol, mock, lastSnap, nextSnap, frequencyHint, currency);
 
   const title = `Dividendos de ${symbol}`;
 
@@ -134,8 +128,8 @@ export default async function AcaoPage({ params }: PageProps) {
     <main className="w-full min-w-0">
       <JsonLd
         data={buildWebPageSchema({
-          name: `${generateTickerTitle(symbol)} | ${SITE_NAME}`,
-          description: generateTickerDescription(symbol),
+          name: `${generateTitle(symbol, mock)} | ${SITE_NAME}`,
+          description: generateDescription(symbol, mock),
           path: tickerPath,
         })}
       />
@@ -214,7 +208,12 @@ export default async function AcaoPage({ params }: PageProps) {
 
         {mock && relatedArticles.length ? (
           <TickerPageRow>
-            <RelatedArticlesSection articles={relatedArticles} id="heading-artigos-relacionados" />
+            <RelatedArticlesSection
+              articles={relatedArticles}
+              id="heading-artigos-relacionados"
+              max={5}
+              showSimuladorCta
+            />
           </TickerPageRow>
         ) : null}
 
