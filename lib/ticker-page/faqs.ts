@@ -30,7 +30,7 @@ export function buildTickerPageFaqs(
 
   const simQ: FaqItem = {
     question: `Como simular dividendos de ${symbol}?`,
-    answer: `Informe a quantidade de ações no simulador e clique em “Simular dividendos”. O valor mostrado multiplica o dividendo por ação da lista pela sua quantidade — é uma estimativa educacional.`,
+    answer: `Informe a quantidade de ações no simulador. Os totais são atualizados automaticamente com base no dividendo por ação da lista e na sua quantidade — é uma estimativa educacional.`,
   };
 
   const freqQ: FaqItem | null = frequencyLabel
@@ -38,7 +38,12 @@ export function buildTickerPageFaqs(
         question: `${symbol} costuma pagar dividendos com qual frequência?`,
         answer: `Pelo histórico disponível na fonte, o ritmo é ${frequencyLabel}. Para a política oficial, consulte o site de relações com investidores da companhia.`,
       }
-    : null;
+    : mock?.paymentFrequency && mock.paymentFrequency.length < 220
+      ? {
+          question: `${symbol} costuma pagar dividendos com qual frequência?`,
+          answer: `${mock.paymentFrequency} Trate como contexto geral; confirme calendário e política nos canais oficiais da companhia.`,
+        }
+      : null;
 
   const generic: FaqItem[] = [
     {

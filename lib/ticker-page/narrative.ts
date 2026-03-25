@@ -34,7 +34,7 @@ export function generateDividendSummaryParagraph(
       ` O próximo dividendo aparece na lista com ${formatBRL(next.amountPerShare)} por ação, com pagamento previsto para ${formatDatePt(next.paymentDate)} (conforme dados disponibilizados — sujeito a alterações).`
     );
   } else if (last) {
-    parts.push(` O próximo dividendo ainda não consta como anunciado ou agendado na lista retornada pela fonte.`);
+    parts.push(` O próximo dividendo ainda não foi anunciado com data futura.`);
   }
 
   const freq = frequencyHint ?? editorialFrequency?.trim();

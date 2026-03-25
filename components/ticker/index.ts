@@ -12,5 +12,6 @@ export { TickerInternalNav } from "./TickerInternalNav";
 export { DividendPaymentCard } from "./DividendPaymentCard";
 export { SharesDividendSimulator } from "./SharesDividendSimulator";
 export { TickerSimulatorTop } from "./TickerSimulatorTop";
+export { TickerEditorialSection } from "./TickerEditorialSection";
 export type { TickerSimulatorTopProps } from "./TickerSimulatorTop";
 export { DividendResultCards } from "@/components/simulator/DividendResultCards";

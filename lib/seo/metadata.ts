@@ -3,6 +3,7 @@ import type { ArticleRecord } from "@/data/articles";
 import type { SectorRecord, StockSeoRecord } from "@/data/stocks";
 import { getSeoBaseUrl } from "@/lib/site";
 import { OG_LOCALE, SITE_NAME } from "./constants";
+import { generateTickerDescription, generateTickerTitle } from "./ticker-seo";
 
 function absoluteUrl(path: string): string {
   const base = getSeoBaseUrl().replace(/\/$/, "");
@@ -55,19 +56,26 @@ export function buildPageMetadata({
   };
 }
 
-/** Página de ticker: foco em último/próximo dividendo e simulação. */
+/** Página de ticker: título/descrição alinhados a busca por “[ticker] dividendos” e simulação. */
 export function buildTickerStockPageMetadata(symbol: string, mock: StockSeoRecord | null): Metadata {
   const path = `/acoes/${encodeURIComponent(symbol)}`;
-  const title = `${symbol} Dividendos: último pagamento e próxima previsão`;
-  const description = mock
-    ? `Veja o último dividendo de ${symbol}, a próxima previsão de pagamento e simule quanto você receberia com sua quantidade de ações. ${mock.companyName}. Conteúdo educacional.`
-    : `Veja ${symbol} na B3: último dividendo, próximo pagamento quando houver dados na fonte e simulação por quantidade de ações. Educacional.`;
+  const title = generateTickerTitle(symbol);
+  const description = generateTickerDescription(symbol);
+  const companyKw = mock?.companyName ?? "";
 
   return buildPageMetadata({
     title,
     description,
     canonicalPath: path,
-    keywords: [symbol, "dividendos", "B3", mock?.sectorLabel ?? "ações", "último dividendo", "simulador"],
+    keywords: [
+      symbol,
+      "dividendos",
+      "B3",
+      mock?.sectorLabel ?? "ações",
+      "simulador de dividendos",
+      "quanto paga",
+      companyKw,
+    ].filter((k): k is string => Boolean(k)),
   });
 }
 

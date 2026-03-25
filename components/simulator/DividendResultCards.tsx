@@ -10,7 +10,21 @@ export type DividendResultCardsProps = {
   hasDividendRows: boolean;
   embedOnTickerPage?: boolean;
   className?: string;
+  /** Ritmo inferido do histórico (ex.: "mensal (aprox.)") — só quando não há próximo pagamento datado. */
+  paymentFrequencyHint?: string | null;
 };
+
+function nextEmptyPrimary(hasDividendRows: boolean): string {
+  if (!hasDividendRows) {
+    return "Ainda não há registro de proventos para este ativo.";
+  }
+  return "Próximo dividendo ainda não foi anunciado.";
+}
+
+function nextEmptySecondary(hasDividendRows: boolean, frequencyHint: string | null | undefined): string | undefined {
+  if (!hasDividendRows || !frequencyHint?.trim()) return undefined;
+  return `Historicamente, esta ação costuma pagar dividendos com frequência ${frequencyHint.trim()}.`;
+}
 
 export function DividendResultCards({
   currency,
@@ -19,37 +33,40 @@ export function DividendResultCards({
   hasDividendRows,
   embedOnTickerPage = false,
   className,
+  paymentFrequencyHint = null,
 }: DividendResultCardsProps) {
+  const nextSecondaryEmpty =
+    !nextPayment && hasDividendRows ? nextEmptySecondary(hasDividendRows, paymentFrequencyHint) : undefined;
+
+  const nextFooter = nextPayment
+    ? `Data prevista: ${formatDatePt(nextPayment.paymentDate)}\nCerca de ${formatBRL(nextPayment.totalPerShare, currency)} por cota`
+    : undefined;
+
   return (
     <div className={cn("grid w-full gap-4 sm:grid-cols-2 sm:gap-6", className)}>
       <DividendResultCard
         label={embedOnTickerPage ? "Último pagamento" : "Último dividendo pago"}
         lead="Você teria recebido"
+        leadWhenEmpty="Último pagamento"
         value={lastPayment ? formatBRL(lastPayment.totalForShares, currency) : "—"}
         footer={lastPayment ? `Pago em ${formatDatePt(lastPayment.paymentDate)}` : undefined}
         emptyMessage={
           !hasDividendRows
-            ? "Não há histórico de proventos para este ativo na fonte consultada."
+            ? "Ainda não há histórico de proventos para este ativo."
             : !lastPayment
-              ? "Não foi possível identificar um pagamento passado com base nas datas disponíveis."
+              ? "Não foi possível identificar um pagamento já realizado com as datas disponíveis."
               : undefined
         }
       />
 
       <DividendResultCard
-        label={embedOnTickerPage ? "Próximo pagamento estimado" : "Próximo dividendo (estimado)"}
-        lead={embedOnTickerPage ? "Você pode receber aproximadamente" : "Você deve receber aproximadamente"}
+        label="Próximo pagamento"
+        lead="Total estimado para as suas cotas"
+        leadWhenEmpty="Sem data futura divulgada ainda"
         value={nextPayment ? formatBRL(nextPayment.totalForShares, currency) : "—"}
-        footer={nextPayment ? `Previsto para ${formatDatePt(nextPayment.paymentDate)}` : undefined}
-        emptyMessage={
-          !hasDividendRows
-            ? "Sem dados de proventos anunciados ou agendados."
-            : !nextPayment
-              ? embedOnTickerPage
-                ? "Próximo dividendo ainda não anunciado na fonte."
-                : "Próximo dividendo ainda não anunciado na lista retornada pela fonte."
-              : undefined
-        }
+        footer={nextFooter}
+        emptyMessage={!nextPayment ? nextEmptyPrimary(hasDividendRows) : undefined}
+        emptySecondary={nextSecondaryEmpty}
       />
     </div>
   );

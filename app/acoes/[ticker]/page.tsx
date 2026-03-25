@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { StockFAQ } from "@/components/stocks/StockFAQ";
-import { StockPeerLinks } from "@/components/stocks/StockPeerLinks";
+import { RelatedTickers } from "@/components/stocks/RelatedTickers";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { TickerPageLayout, TickerPageRow } from "@/components/layout/TickerPageLayout";
 import { RelatedArticlesSection } from "@/components/seo/RelatedArticlesSection";
@@ -13,6 +14,7 @@ import {
   TickerHero,
   TickerInternalNav,
   TickerMiniMetrics,
+  TickerEditorialSection,
   TickerSimulatorTop,
 } from "@/components/ticker";
 import { BrapiError, getStockData } from "@/lib/brapi";
@@ -25,7 +27,7 @@ import {
   getNextPerShareSnapshot,
   inferPaymentFrequencyLabel,
 } from "@/lib/ticker-page";
-import { buildTickerPageFaqs } from "@/lib/ticker-page/faqs";
+import { generateTickerSummaryText } from "@/lib/ticker-page";
 import {
   getAllMockTickers,
   getPeerTickers,
@@ -33,7 +35,15 @@ import {
   getStockSeo,
 } from "@/lib/stocks-data";
 import { getArticlesForTicker } from "@/data/articles";
-import { breadcrumbsTicker, buildTickerStockPageMetadata } from "@/lib/seo";
+import {
+  SITE_NAME,
+  breadcrumbsTicker,
+  buildTickerStockPageMetadata,
+  buildWebPageSchema,
+  generateTickerDescription,
+  generateTickerFAQ,
+  generateTickerTitle,
+} from "@/lib/seo";
 
 type PageProps = { params: { ticker: string } };
 
@@ -101,12 +111,34 @@ export default async function AcaoPage({ params }: PageProps) {
   const relatedArticles = mock ? getArticlesForTicker(mock.ticker) : [];
   const peers = mock ? getPeerTickers(mock.ticker) : [];
 
-  const faqItems = buildTickerPageFaqs(symbol, mock, lastSnap, nextSnap, frequencyHint, currency);
+  const faqItems = generateTickerFAQ(symbol, mock, lastSnap, nextSnap, frequencyHint, currency);
 
   const title = `Dividendos de ${symbol}`;
 
+  const editorialParagraphs = generateTickerSummaryText({
+    symbol,
+    companyName: displayName,
+    sectorLabel,
+    mock,
+    last: lastSnap,
+    next: nextSnap,
+    frequencyHint,
+    paymentFrequencyNote:
+      mock?.paymentFrequency && mock.paymentFrequency.length < 120 ? mock.paymentFrequency : undefined,
+    dividends,
+  });
+
+  const tickerPath = `/acoes/${encodeURIComponent(symbol)}`;
+
   return (
     <main className="w-full min-w-0">
+      <JsonLd
+        data={buildWebPageSchema({
+          name: `${generateTickerTitle(symbol)} | ${SITE_NAME}`,
+          description: generateTickerDescription(symbol),
+          path: tickerPath,
+        })}
+      />
       <TickerPageLayout>
         <TickerPageRow>
           <Breadcrumbs items={breadcrumbsTicker(symbol, mock)} />
@@ -134,6 +166,10 @@ export default async function AcaoPage({ params }: PageProps) {
 
         <TickerPageRow>
           <DividendSummaryText text={summaryText} />
+        </TickerPageRow>
+
+        <TickerPageRow>
+          <TickerEditorialSection paragraphs={editorialParagraphs} />
         </TickerPageRow>
 
         <TickerPageRow>
@@ -166,7 +202,13 @@ export default async function AcaoPage({ params }: PageProps) {
 
         {mock ? (
           <TickerPageRow>
-            <StockPeerLinks sectorSlug={mock.sectorSlug} sectorLabel={mock.sectorLabel} peers={peers} />
+            <RelatedTickers
+              symbol={symbol}
+              sectorSlug={mock.sectorSlug}
+              sectorLabel={mock.sectorLabel}
+              peers={peers}
+              hasRelatedArticles={relatedArticles.length > 0}
+            />
           </TickerPageRow>
         ) : null}
 

@@ -1,114 +1,116 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { DividendCalculator } from "@/components/DividendCalculator";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { StockFAQ } from "@/components/stocks/StockFAQ";
 import { ArticleCard } from "@/components/articles/ArticleCard";
-import { SectionHeading } from "@/components/ui/SectionHeading";
-import { TextLink } from "@/components/ui/TextLink";
 import type { FaqItem } from "@/lib/stocks-data";
 import { getAllMockTickers, getSectorNavItems } from "@/lib/stocks-data";
 import { ALL_ARTICLES } from "@/data/articles";
-import { getSeoBaseUrl } from "@/lib/site";
 import { cn } from "@/lib/cn";
 import { ui } from "@/components/ui/classes";
+import { buildPageMetadata, buildWebPageSchema, SITE_NAME } from "@/lib/seo";
+
+const HOME_TITLE = "Simulador de dividendos e renda passiva com ações na B3";
+const HOME_DESCRIPTION =
+  "Simule dividendos de ações na B3: escolha o ticker, informe cotas e veja último e próximo pagamento. Explore setores, tickers e artigos. Uso educacional.";
+
+export const metadata: Metadata = buildPageMetadata({
+  title: HOME_TITLE,
+  description: HOME_DESCRIPTION,
+  canonicalPath: "/",
+  keywords: [
+    "simulador de dividendos",
+    "dividendos ações",
+    "renda passiva",
+    "calcular dividendos",
+    "B3",
+    "proventos",
+    "ações",
+  ],
+});
 
 const faq: FaqItem[] = [
   {
-    question: "O que eu posso calcular no Simula Dividendos?",
+    question: "O que este simulador faz?",
     answer:
-      "Você pode simular estimativas educacionais com base em histórico de dividendos: ajuste o ticker e a quantidade de cotas para entender como o fluxo poderia se traduzir no seu caso.",
+      "Multiplica o dividendo por ação (lista pública) pela quantidade de cotas que você informa. Serve para entender o histórico recente em valores, sem prever o futuro.",
   },
   {
-    question: "Os valores do simulador são garantidos?",
+    question: "Os valores são garantidos?",
     answer:
-      "Não. A simulação é educacional e não substitui análise. Dividendos dependem de resultados e decisões futuras, então o valor pode variar.",
+      "Não. Dividendos dependem da companhia e do calendário oficial. O site é educacional e não recomenda compra ou venda de ativos.",
   },
   {
-    question: "Como explorar mais conteúdo?",
+    question: "De onde vêm os dados?",
     answer:
-      "Além do simulador, o site organiza páginas por ticker e por setor e mantém artigos educativos para ajudar a interpretar métricas como dividend yield.",
+      "De uma fonte pública de cotações e proventos. Sempre confira RI e comunicados da empresa para decisões reais.",
   },
 ];
 
-const base = getSeoBaseUrl();
-
-export const metadata: Metadata = {
-  title: "Simulador de Dividendos | SimulaDividendos",
-  description:
-    "Simule dividendos da B3 com contexto por setor e páginas de tickers. Guias educativos para entender dividend yield e planejar renda passiva — tudo com UX rápida e limpa.",
-  alternates: { canonical: "/" },
-  openGraph: {
-    title: "Simulador de Dividendos | SimulaDividendos",
-    description:
-      "Simule dividendos da B3 com contexto por setor e páginas de tickers. Guias educativos para entender dividend yield e planejar renda passiva.",
-    url: base,
-    locale: "pt_BR",
-    type: "website",
-    siteName: "Simula Dividendos",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Simulador de Dividendos | SimulaDividendos",
-    description:
-      "Simule dividendos da B3 com contexto por setor e páginas de tickers.",
-  },
-};
+const sectionGap = "flex w-full min-w-0 flex-col gap-3 sm:gap-4";
+const sectionTitle = cn(ui.sectionTitle, "text-base sm:text-lg");
 
 export default function HomePage() {
-  const popularTickers = getAllMockTickers().slice(0, 6);
+  const popularTickers = getAllMockTickers().slice(0, 8);
 
   return (
-    <main className={ui.stackPage}>
-      <header className={cn(ui.divider, "flex flex-col gap-3")}>
-        <p className={ui.eyebrow}>Simula Dividendos</p>
-        <h1 className={cn("text-left", ui.pageTitle)}>Simulador de dividendos da B3</h1>
-        <p className={cn(ui.body, "max-w-2xl")}>
-          Escolha uma ação e a quantidade de papéis para ver quanto você teria recebido no último pagamento e o que pode vir a receber no próximo, conforme os dados da fonte. Explore também as páginas por ticker e por setor.
-        </p>
-      </header>
+    <main className={cn(ui.stackPage, "gap-12 sm:gap-16 lg:gap-20")}>
+      <JsonLd
+        data={buildWebPageSchema({
+          name: `${HOME_TITLE} | ${SITE_NAME}`,
+          description: HOME_DESCRIPTION,
+          path: "/",
+        })}
+      />
 
-      <section aria-labelledby="heading-calculadora" className={ui.stackSection}>
-        <SectionHeading
-          id="heading-calculadora"
-          title="Simule agora"
-          description="A calculadora abaixo usa dados de histórico. Os resultados são estimativas — não há retorno garantido."
+      <section aria-labelledby="heading-hero-sim" className="flex flex-col gap-6 sm:gap-8">
+        <div className="flex max-w-3xl flex-col gap-3 sm:gap-4">
+          <p className={ui.eyebrow}>Simula Dividendos</p>
+          <h1 id="heading-hero-sim" className={cn(ui.pageTitle, "text-3xl sm:text-4xl")}>
+            Simule dividendos de ações da B3
+          </h1>
+          <p className="max-w-xl text-base leading-snug text-neutral-600 dark:text-neutral-400">
+            Escolha uma ação, informe quantas cotas você tem e veja o último e o próximo pagamento — uso educacional,
+            dados públicos.
+          </p>
+        </div>
+
+        <DividendCalculator
+          showTickerPicker
+          defaultShares={100}
+          simulatorFetchMode="manual"
+          compactHero
         />
-        <DividendCalculator showTickerPicker defaultShares={100} />
       </section>
 
-      <section aria-labelledby="heading-como-funciona" className={ui.stackSection}>
-        <SectionHeading id="heading-como-funciona" title="Como o simulador funciona" />
-        <ol className={ui.listOrdered}>
-          <li>O simulador carrega histórico de dividendos para o ticker selecionado.</li>
-          <li>Você informa quantas cotas possui e o site calcula estimativas educacionais.</li>
-          <li>Você pode explorar setores e tickers relacionados para ampliar o contexto.</li>
+      <section aria-labelledby="heading-como" className={sectionGap}>
+        <h2 id="heading-como" className={sectionTitle}>
+          Como funciona
+        </h2>
+        <ol className="ml-5 max-w-xl list-decimal space-y-1.5 text-sm leading-snug text-neutral-600 dark:text-neutral-400">
+          <li>Escolha o ticker (sugestões após duas letras).</li>
+          <li>Informe a quantidade de ações e clique em Simular dividendos.</li>
+          <li>Confira último e próximo pagamento logo abaixo.</li>
         </ol>
       </section>
 
-      <section aria-labelledby="heading-beneficios" className={ui.stackSection}>
-        <SectionHeading id="heading-beneficios" title="Benefícios de usar o Simula Dividendos" />
-        <ul className={cn(ui.listUnordered, "ml-0 list-none space-y-3")}>
-          <li className={cn(ui.body, "flex gap-2")}>
-            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600 dark:bg-teal-400" aria-hidden />
-            <span>Navegação simples: encontre setores e tickers com links diretos para simular.</span>
-          </li>
-          <li className={cn(ui.body, "flex gap-2")}>
-            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600 dark:bg-teal-400" aria-hidden />
-            <span>Conteúdo indexável: páginas por ticker e por setor ajudam a capturar intenção de busca.</span>
-          </li>
-          <li className={cn(ui.body, "flex gap-2")}>
-            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600 dark:bg-teal-400" aria-hidden />
-            <span>Transparência: o site mantém avisos educacionais e evita promessas.</span>
-          </li>
-        </ul>
-      </section>
+      <p className="max-w-2xl text-xs leading-relaxed text-neutral-500 dark:text-neutral-500">
+        Ferramenta educacional. Para comparar contexto, abra{" "}
+        <Link href="/setores" className={cn(ui.link, "text-xs")}>
+          setores
+        </Link>{" "}
+        ou a{" "}
+        <Link href="/simulador" className={cn(ui.link, "text-xs")}>
+          página do simulador
+        </Link>{" "}
+        (carrega proventos automaticamente ao digitar o ticker).
+      </p>
 
-      <section aria-labelledby="heading-exemplos" className={ui.stackSection}>
-        <SectionHeading
-          id="heading-exemplos"
-          title="Exemplos rápidos"
-          description="Use os links para abrir páginas com contexto e a calculadora pré-preenchida."
-        />
+      <section aria-labelledby="heading-populares" className={sectionGap}>
+        <h2 id="heading-populares" className={sectionTitle}>
+          Ações populares
+        </h2>
         <ul className="flex flex-wrap gap-2">
           {popularTickers.map((t) => (
             <li key={t}>
@@ -120,12 +122,10 @@ export default function HomePage() {
         </ul>
       </section>
 
-      <section aria-labelledby="heading-setores-home" className={ui.stackSection}>
-        <SectionHeading
-          id="heading-setores-home"
-          title="Explorar por setor"
-          description="Setores ajudam a comparar contexto e entender riscos. Escolha um para ver ações relacionadas."
-        />
+      <section aria-labelledby="heading-setores" className={sectionGap}>
+        <h2 id="heading-setores" className={sectionTitle}>
+          Setores
+        </h2>
         <ul className="flex flex-wrap gap-2">
           {getSectorNavItems().map(({ slug, label, href }) => (
             <li key={slug}>
@@ -136,41 +136,28 @@ export default function HomePage() {
           ))}
           <li>
             <Link href="/setores" className={cn(ui.pillGhost, "no-underline")}>
-              Ver todos →
+              Todos
             </Link>
           </li>
         </ul>
       </section>
 
-      <section aria-labelledby="heading-artigos-home" className={ui.stackSection}>
-        <SectionHeading
-          id="heading-artigos-home"
-          title="Guias e artigos"
-          description="Leituras curtas e educativas para interpretar métricas e usar simulações com mais clareza."
-        />
+      <section aria-labelledby="heading-artigos" className={sectionGap}>
+        <h2 id="heading-artigos" className={sectionTitle}>
+          Artigos
+        </h2>
         <div className="grid gap-4 sm:grid-cols-2">
           {ALL_ARTICLES.slice(0, 4).map((article) => (
             <ArticleCard key={article.slug} article={article} />
           ))}
         </div>
-        <TextLink href="/artigos" className="text-sm">
-          Ver todos os artigos →
-        </TextLink>
-      </section>
-
-      <section aria-labelledby="heading-faq-home">
-        <StockFAQ title="Perguntas frequentes" items={faq} id="heading-faq-home" />
-      </section>
-
-      <section aria-labelledby="heading-cta" className={ui.stackSection}>
-        <SectionHeading
-          id="heading-cta"
-          title="Próximo passo"
-          description="Use a página dedicada do simulador para conteúdo de apoio e links internos organizados."
-        />
-        <Link href="/simulador" className={cn(ui.ctaSecondary, "w-full sm:w-fit no-underline")}>
-          Abrir simulador dedicado →
+        <Link href="/artigos" className={cn(ui.link, "text-sm")}>
+          Ver todos →
         </Link>
+      </section>
+
+      <section aria-labelledby="heading-faq-home" className="pt-2">
+        <StockFAQ title="Perguntas frequentes" items={faq} id="heading-faq-home" />
       </section>
     </main>
   );

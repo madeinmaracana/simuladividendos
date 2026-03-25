@@ -6,7 +6,7 @@ export function genericTickerFaq(symbol: string): FaqItem[] {
     {
       question: `Como simular dividendos de ${symbol}?`,
       answer:
-        "Use a calculadora nesta página: informe o ticker (já pré-preenchido se você veio pelo link) e a quantidade de cotas. Os valores são estimativas com base em dados disponíveis.",
+        "Use o simulador nesta página: informe a quantidade de cotas; os totais são atualizados automaticamente com base nos proventos da lista. O ticker costuma vir pré-preenchido se você abriu pelo link da ação.",
     },
     {
       question: "Os valores são garantidos?",

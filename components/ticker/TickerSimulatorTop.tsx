@@ -6,6 +6,7 @@ import { DividendSimulatorForm } from "@/components/simulator/DividendSimulatorF
 import { DividendResultCards } from "@/components/simulator/DividendResultCards";
 import { DividendResultCardsSkeleton } from "@/components/simulator/DividendResultCardsSkeleton";
 import { useDividendSimulator } from "@/components/simulator/useDividendSimulator";
+import { inferPaymentFrequencyLabel } from "@/lib/ticker-page";
 import { TextLink } from "@/components/ui/TextLink";
 import { cn } from "@/lib/cn";
 import { ui } from "@/components/ui/classes";
@@ -37,6 +38,7 @@ export function TickerSimulatorTop({
   const {
     sharesStr,
     setSharesStr,
+    stock,
     error,
     loading,
     showResults,
@@ -45,7 +47,7 @@ export function TickerSimulatorTop({
     nextPayment,
     hasDividendRows,
     onSimulate,
-  } = useDividendSimulator(ticker, initialStock, serverError, defaultShares);
+  } = useDividendSimulator(ticker, initialStock, serverError, defaultShares, "tickerPage");
 
   const handleSimulate = useCallback(async () => {
     scrollAfterSimulate.current = true;
@@ -88,6 +90,8 @@ export function TickerSimulatorTop({
             onSimulate={() => void handleSimulate()}
             error={error}
             embedOnTickerPage
+            tickerSymbolForHeading={ticker}
+            simulateCta="none"
             compact
             elevated
           />
@@ -108,6 +112,9 @@ export function TickerSimulatorTop({
             lastPayment={lastPayment}
             nextPayment={nextPayment}
             hasDividendRows={hasDividendRows}
+            paymentFrequencyHint={
+              stock?.dividends?.length ? inferPaymentFrequencyLabel(stock.dividends) : null
+            }
             embedOnTickerPage
           />
         ) : null}

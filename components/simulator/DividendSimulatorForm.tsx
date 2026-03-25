@@ -1,8 +1,8 @@
 "use client";
 
 import { SharesInput } from "@/components/SharesInput";
+import { PrimarySimulationButton } from "@/components/home/PrimarySimulationButton";
 import { SimulatorCardContainer } from "@/components/simulator/SimulatorCardContainer";
-import { Button } from "@/components/ui/Button";
 import { Callout } from "@/components/ui/Callout";
 import { cn } from "@/lib/cn";
 import { ui } from "@/components/ui/classes";
@@ -15,6 +15,12 @@ export type DividendSimulatorFormProps = {
   onSimulate: () => void;
   error: string | null;
   embedOnTickerPage?: boolean;
+  /** Na página de ticker, texto do H2 com o código (ex.: “Simular dividendos de PETR4”). */
+  tickerSymbolForHeading?: string;
+  /** `none`: resultados automáticos (home/ticker); `primary`: exige clique para carregar dados. */
+  simulateCta?: "none" | "primary";
+  /** Com `simulateCta="none"` e erro de rede/API, oferece nova tentativa. */
+  showRetryLink?: boolean;
   /** Coluna estreita na página de ticker: padding um pouco menor. */
   compact?: boolean;
   /** Destaque extra (sombra) na coluna direita. */
@@ -31,11 +37,16 @@ export function DividendSimulatorForm({
   onSimulate,
   error,
   embedOnTickerPage = false,
+  tickerSymbolForHeading,
+  simulateCta = "none",
+  showRetryLink = true,
   compact = false,
   elevated = false,
   className,
   cardClassName,
 }: DividendSimulatorFormProps) {
+  const autoMode = simulateCta === "none";
+
   return (
     <div className={cn("flex w-full flex-col gap-6", className)}>
       <SimulatorCardContainer
@@ -52,7 +63,11 @@ export function DividendSimulatorForm({
             id="heading-simulacao-ticker"
             className="text-xl font-semibold tracking-tight text-neutral-900 sm:text-2xl dark:text-neutral-50"
           >
-            {embedOnTickerPage ? "Simule quanto você receberia" : "Simule quanto essa ação paga em dividendos"}
+            {embedOnTickerPage && tickerSymbolForHeading
+              ? `Simular dividendos de ${tickerSymbolForHeading}`
+              : embedOnTickerPage
+                ? "Simule quanto você receberia"
+                : "Simule quanto essa ação paga em dividendos"}
           </h2>
           <p
             className={cn(
@@ -61,31 +76,37 @@ export function DividendSimulatorForm({
               embedOnTickerPage ? "w-full text-left" : "mx-auto max-w-prose sm:mx-0"
             )}
           >
-            {embedOnTickerPage
-              ? "Informe quantas ações você possui. Os valores usam os dividendos por ação da lista retornada pela fonte."
-              : "Veja quanto você teria recebido e quanto pode receber no próximo pagamento — com base nos proventos disponíveis na fonte de dados."}
+            {embedOnTickerPage && autoMode
+              ? "Informe a quantidade de ações para ver quanto você teria recebido conforme os proventos da lista. Os valores são atualizados automaticamente ao alterar a quantidade."
+              : embedOnTickerPage
+                ? "Informe quantas ações você possui. Os valores usam os dividendos por ação da lista retornada pela fonte."
+                : autoMode
+                  ? "Informe a quantidade de cotas. Quando os dados do ativo estiverem carregados, os totais são atualizados automaticamente."
+                  : "Veja quanto você teria recebido e quanto pode receber no próximo pagamento — com base nos proventos disponíveis na fonte de dados. Use o botão abaixo para carregar ou atualizar os dados."}
           </p>
         </div>
 
         <div className={cn("flex flex-col gap-6", compact ? "mt-6" : "mt-8")}>
           <SharesInput id={inputId} value={sharesStr} onChange={onSharesChange} disabled={loading} size="lg" />
 
-          <Button
-            type="button"
-            onClick={() => onSimulate()}
-            disabled={loading}
-            className={cn(
-              "w-full rounded-xl bg-teal-600 px-6 py-4 text-base font-semibold text-white shadow-md transition-shadow",
-              "hover:bg-teal-500 hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600",
-              "disabled:cursor-not-allowed disabled:opacity-60 dark:hover:bg-teal-500"
-            )}
-          >
-            {loading ? "Carregando…" : "Simular dividendos"}
-          </Button>
+          {simulateCta === "primary" ? (
+            <PrimarySimulationButton loading={loading} onClick={() => onSimulate()} />
+          ) : null}
 
           {error ? (
             <Callout tone="danger" role="alert">
-              {error}
+              <div className="flex flex-col gap-2">
+                <span>{error}</span>
+                {autoMode && showRetryLink ? (
+                  <button
+                    type="button"
+                    className="w-fit text-left text-sm font-semibold text-red-800 underline decoration-red-800/40 underline-offset-2 hover:decoration-red-800 dark:text-red-200 dark:decoration-red-200/40"
+                    onClick={() => onSimulate()}
+                  >
+                    Tentar novamente
+                  </button>
+                ) : null}
+              </div>
             </Callout>
           ) : null}
         </div>

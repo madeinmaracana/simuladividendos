@@ -44,7 +44,7 @@ const faq: FaqItem[] = [
   {
     question: "O que eu preciso para fazer a simulação?",
     answer:
-      "Informe o ticker B3 e a quantidade de ações. Depois, clique em “Simular dividendos”.",
+      "Informe o ticker B3 e a quantidade de ações. Os proventos são carregados automaticamente após o ticker (com uma breve pausa enquanto você digita); os totais se atualizam na hora quando você muda a quantidade.",
   },
   {
     question: "Como interpretar dividend yield e payout na prática?",
@@ -75,20 +75,18 @@ export default function SimuladorPage() {
         </p>
       </header>
 
-      <section aria-labelledby="heading-comecar" className={ui.stackSection}>
-        <SectionHeading
-          id="heading-comecar"
-          title="Comece agora"
-          description="Informe ticker e cotas. Os números exibidos são estimativas derivadas do histórico."
-        />
+      <section aria-labelledby="heading-comecar" className={ui.pageSection}>
+        <h2 id="heading-comecar" className="sr-only">
+          Comece agora — simule com ticker e quantidade
+        </h2>
         <DividendCalculator showTickerPicker defaultShares={100} />
       </section>
 
       <section aria-labelledby="heading-como-usar" className={ui.stackSection}>
         <SectionHeading id="heading-como-usar" title="Como usar o simulador" />
         <ol className={ui.listOrdered}>
-          <li>Informe o ticker da ação (ex.: PETR4) e a quantidade de ações.</li>
-          <li>Clique em “Simular dividendos” para carregar os proventos da API.</li>
+          <li>Informe o ticker da ação (ex.: PETR4) — use as sugestões após duas letras — e a quantidade de cotas.</li>
+          <li>Aguarde o carregamento automático dos proventos; ajuste a quantidade para ver os totais atualizarem na hora.</li>
           <li>Confira o último pagamento e o próximo, quando houver data futura na lista.</li>
         </ol>
         <p className={ui.body}>

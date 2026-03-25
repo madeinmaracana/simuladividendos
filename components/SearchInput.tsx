@@ -17,15 +17,24 @@ type TickerSuggestion = {
   logoUrl?: string | null;
 };
 
+/** Metadados da escolha na lista ou sincronizados após carregar o ativo. */
+export type TickerSelectionMeta = {
+  name: string;
+  logoUrl?: string | null;
+};
+
 interface SearchInputProps {
   id?: string;
   value: string;
-  onChange: (value: string) => void;
+  /** `selectionMeta` só na escolha da lista; omitir ao digitar para o pai limpar o estado visual. */
+  onChange: (value: string, selectionMeta?: TickerSelectionMeta) => void;
   disabled?: boolean;
   placeholder?: string;
   /** Quando false, oculta a dica abaixo do campo (layout compacto no simulador). */
   showHelperText?: boolean;
   label?: string;
+  /** Enriquece o campo após seleção (logo à esquerda + nome abaixo). */
+  selectionMeta?: TickerSelectionMeta | null;
 }
 
 function useDebouncedValue<T>(value: T, delayMs: number): T {
@@ -45,6 +54,7 @@ export function SearchInput({
   placeholder = "Ex.: PETR4",
   showHelperText = true,
   label = "Ticker da ação",
+  selectionMeta = null,
 }: SearchInputProps) {
   const reactId = useId();
   const id = idProp ?? `ticker-${reactId}`;
@@ -113,8 +123,8 @@ export function SearchInput({
 
   const showList = open && suggestions.length > 0 && !disabled;
 
-  const pick = (symbol: string) => {
-    onChange(symbol);
+  const pick = (s: TickerSuggestion) => {
+    onChange(s.symbol, { name: s.name, logoUrl: s.logoUrl });
     setOpen(false);
   };
 
@@ -161,13 +171,39 @@ export function SearchInput({
               setHighlight((h) => Math.max(h - 1, 0));
             } else if (e.key === "Enter" && open && suggestions[highlight]) {
               e.preventDefault();
-              pick(suggestions[highlight]!.symbol);
+              pick(suggestions[highlight]!);
             } else if (e.key === "Escape") {
               setOpen(false);
             }
           }}
-          className={cn(ui.input, "min-h-[52px] py-3 text-base font-medium")}
+          className={cn(
+            ui.input,
+            "min-h-[52px] py-3 text-base font-medium",
+            selectionMeta && value.trim().length > 0 && "pl-12 sm:pl-[3.25rem]"
+          )}
         />
+
+        {selectionMeta && value.trim().length > 0 ? (
+          <span className="pointer-events-none absolute left-3 top-1/2 z-[1] -translate-y-1/2">
+            {selectionMeta.logoUrl ? (
+              <Image
+                src={selectionMeta.logoUrl}
+                alt=""
+                width={28}
+                height={28}
+                unoptimized
+                className="h-7 w-7 rounded-md bg-white object-contain p-0.5 ring-1 ring-neutral-200 dark:bg-neutral-800 dark:ring-neutral-600 sm:h-8 sm:w-8"
+              />
+            ) : (
+              <span
+                className="flex h-7 w-7 items-center justify-center rounded-md bg-neutral-100 text-[10px] font-semibold text-neutral-500 dark:bg-neutral-800 dark:text-neutral-400 sm:h-8 sm:w-8"
+                aria-hidden
+              >
+                {value.trim().slice(0, 2)}
+              </span>
+            )}
+          </span>
+        ) : null}
 
         {loading ? (
           <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-xs text-neutral-400">
@@ -194,7 +230,7 @@ export function SearchInput({
                 }`}
                 onMouseEnter={() => setHighlight(i)}
                 onMouseDown={(e) => e.preventDefault()}
-                onClick={() => pick(s.symbol)}
+                onClick={() => pick(s)}
               >
                 {s.logoUrl ? (
                   <Image
@@ -224,7 +260,13 @@ export function SearchInput({
           </ul>
         ) : null}
       </div>
-      {showHelperText ? (
+      {selectionMeta && value.trim().length > 0 && selectionMeta.name ? (
+        <p className={cn(ui.bodyMuted, "line-clamp-2 sm:line-clamp-1")} title={selectionMeta.name}>
+          {selectionMeta.name}
+        </p>
+      ) : null}
+
+      {showHelperText && !(selectionMeta && value.trim().length > 0) ? (
         <p className={ui.bodyMuted}>
           Digite ao menos 2 letras para ver sugestões de ações (dados da brapi).
         </p>
