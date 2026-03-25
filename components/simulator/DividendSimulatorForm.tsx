@@ -25,6 +25,8 @@ export type DividendSimulatorFormProps = {
   compact?: boolean;
   /** Destaque extra (sombra) na coluna direita. */
   elevated?: boolean;
+  /** FII: textos falam em rendimentos e renda mensal; ação: dividendos. */
+  assetKind?: "stock" | "fii";
   className?: string;
   cardClassName?: string;
 };
@@ -42,10 +44,12 @@ export function DividendSimulatorForm({
   showRetryLink = true,
   compact = false,
   elevated = false,
+  assetKind = "stock",
   className,
   cardClassName,
 }: DividendSimulatorFormProps) {
   const autoMode = simulateCta === "none";
+  const fii = assetKind === "fii";
 
   return (
     <div className={cn("flex w-full flex-col gap-6", className)}>
@@ -63,11 +67,15 @@ export function DividendSimulatorForm({
             id="heading-simulacao-ticker"
             className="text-xl font-semibold tracking-tight text-neutral-900 sm:text-2xl dark:text-neutral-50"
           >
-            {embedOnTickerPage && tickerSymbolForHeading
-              ? `Simular dividendos de ${tickerSymbolForHeading}`
-              : embedOnTickerPage
-                ? "Simule quanto você receberia"
-                : "Simule quanto essa ação paga em dividendos"}
+            {embedOnTickerPage && tickerSymbolForHeading && fii
+              ? `Simular rendimentos de ${tickerSymbolForHeading}`
+              : embedOnTickerPage && tickerSymbolForHeading
+                ? `Simular dividendos de ${tickerSymbolForHeading}`
+                : embedOnTickerPage
+                  ? "Simule quanto você receberia"
+                  : fii
+                    ? "Simule renda com este FII"
+                    : "Simule quanto essa ação paga em dividendos"}
           </h2>
           <p
             className={cn(
@@ -76,13 +84,17 @@ export function DividendSimulatorForm({
               embedOnTickerPage ? "w-full text-left" : "mx-auto max-w-prose sm:mx-0"
             )}
           >
-            {embedOnTickerPage && autoMode
-              ? "Informe a quantidade de ações para ver quanto você teria recebido conforme os proventos da lista. Os valores são atualizados automaticamente ao alterar a quantidade."
-              : embedOnTickerPage
-                ? "Informe quantas ações você possui. Os valores usam os dividendos por ação da lista retornada pela fonte."
-                : autoMode
-                  ? "Informe a quantidade de cotas. Quando os dados do ativo estiverem carregados, os totais são atualizados automaticamente."
-                  : "Veja quanto você teria recebido e quanto pode receber no próximo pagamento — com base nos proventos disponíveis na fonte de dados. Use o botão abaixo para carregar ou atualizar os dados."}
+            {embedOnTickerPage && autoMode && fii
+              ? "Informe quantas cotas você possui. Mostramos renda mensal de referência e o último pagamento com base no histórico disponível — tudo atualiza ao mudar a quantidade."
+              : embedOnTickerPage && autoMode
+                ? "Informe a quantidade de ações para ver quanto você teria recebido conforme os proventos da lista. Os valores são atualizados automaticamente ao alterar a quantidade."
+                : embedOnTickerPage
+                  ? fii
+                    ? "Informe suas cotas. Os valores usam as distribuições por cota do histórico disponível."
+                    : "Informe quantas ações você possui. Os valores usam os dividendos por ação da lista retornada pela fonte."
+                  : autoMode
+                    ? "Informe a quantidade de cotas. Quando os dados do ativo estiverem carregados, os totais são atualizados automaticamente."
+                    : "Veja quanto você teria recebido e quanto pode receber no próximo pagamento — com base nos proventos disponíveis na fonte de dados. Use o botão abaixo para carregar ou atualizar os dados."}
           </p>
         </div>
 

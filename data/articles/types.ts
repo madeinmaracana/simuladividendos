@@ -13,5 +13,9 @@ export type ArticleRecord = {
   sections: ArticleSection[];
   faqs: FaqItem[];
   relatedTickers: string[];
+  /** Tickers de FIIs relacionados ao tema (rotas `/fiis/[ticker]`). */
+  relatedFiis?: string[];
   relatedSectors: SectorSlug[];
+  /** ISO YYYY-MM-DD para `<lastmod>` no sitemap. */
+  lastModified?: string;
 };

@@ -21,6 +21,11 @@ export function getArticlesForTicker(ticker: string): ArticleRecord[] {
   return ARTICLES.filter((a) => a.relatedTickers.includes(key));
 }
 
+export function getArticlesForFii(ticker: string): ArticleRecord[] {
+  const key = ticker.trim().toUpperCase();
+  return ARTICLES.filter((a) => (a.relatedFiis ?? []).includes(key));
+}
+
 export function getArticlesForSector(sectorSlug: SectorSlug): ArticleRecord[] {
   return ARTICLES.filter((a) => a.relatedSectors.includes(sectorSlug));
 }

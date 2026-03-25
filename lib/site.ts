@@ -1,5 +1,5 @@
 /** Domínio canônico para SEO (sitemap, Open Graph, robots). */
-export const CANONICAL_SITE_URL = "https://simuladividendos.com";
+export const CANONICAL_SITE_URL = "https://www.simuladividendos.com";
 
 /**
  * URL pública do site em runtime (preview Vercel, env, ou canônico).

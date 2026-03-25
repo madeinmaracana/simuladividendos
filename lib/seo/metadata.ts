@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import type { ArticleRecord } from "@/data/articles";
+import type { FiiSeoRecord } from "@/data/fiis";
 import type { SectorRecord, StockSeoRecord } from "@/data/stocks";
 import { getSeoBaseUrl } from "@/lib/site";
 import { OG_LOCALE, SITE_NAME } from "./constants";
+import { generateFiiDescription, generateFiiTitle } from "./fii-seo";
 import { generateTickerDescription, generateTickerTitle } from "./ticker-seo";
 
 function absoluteUrl(path: string): string {
@@ -81,6 +83,39 @@ export function buildTickerStockPageMetadata(symbol: string, mock: StockSeoRecor
 
 /** @deprecated Use buildTickerStockPageMetadata — mantido para compatibilidade. */
 export const buildStockPageMetadata = buildTickerStockPageMetadata;
+
+export function buildFiiPageMetadata(symbol: string, mock: FiiSeoRecord | null): Metadata {
+  const path = `/fiis/${encodeURIComponent(symbol)}`;
+  const title = generateFiiTitle(symbol);
+  const description = generateFiiDescription(symbol);
+  const nameKw = mock?.fundName ?? "";
+
+  return buildPageMetadata({
+    title,
+    description,
+    canonicalPath: path,
+    keywords: [
+      symbol,
+      "FII",
+      "fundo imobiliário",
+      "rendimentos",
+      "B3",
+      "renda mensal",
+      "quanto paga",
+      nameKw,
+    ].filter((k): k is string => Boolean(k)),
+  });
+}
+
+export function buildFiisIndexMetadata(): Metadata {
+  return buildPageMetadata({
+    title: "FIIs: simule rendimentos e renda mensal",
+    description:
+      "Lista de fundos imobiliários para simular rendimentos por cota, renda mensal de referência e explorar artigos. Conteúdo educacional na B3.",
+    canonicalPath: "/fiis",
+    keywords: ["FII", "fundos imobiliários", "B3", "renda mensal", "simulador"],
+  });
+}
 
 export function buildSectorPageMetadata(sector: SectorRecord): Metadata {
   const path = `/setores/${encodeURIComponent(sector.slug)}`;

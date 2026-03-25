@@ -3,11 +3,13 @@ import type { ArticleRecord } from "./types";
 export const ARTICLES: ArticleRecord[] = [
   {
     slug: "o-que-e-dividend-yield",
+    lastModified: "2026-03-25",
     title: "O que é dividend yield? Entenda como interpretar dividendos",
     description:
       "Dividend yield mede a relação entre dividendos e preço da ação. Veja o que ele significa, como ele pode variar e como usar a métrica sem tomar decisões impulsivas.",
     keywords: ["dividend yield", "dividendos", "renda passiva", "ações B3", "como interpretar"],
     relatedTickers: ["BBAS3", "ITUB4", "PETR4"],
+    relatedFiis: ["MXRF11", "HGLG11"],
     relatedSectors: ["bancos", "petroleo"],
     sections: [
       {
@@ -52,11 +54,13 @@ export const ARTICLES: ArticleRecord[] = [
   },
   {
     slug: "como-viver-de-dividendos",
+    lastModified: "2026-03-25",
     title: "Como viver de dividendos: passo a passo para planejar renda passiva",
     description:
       "Planejar renda por dividendos envolve mais do que escolher uma ação. Veja como pensar em orçamento, horizonte, reinvestimento e consistência.",
     keywords: ["viver de dividendos", "planejamento", "renda passiva", "dividendos", "reinvestimento"],
     relatedTickers: ["VALE3", "TAEE11", "EGIE3"],
+    relatedFiis: ["MXRF11", "KNCR11"],
     relatedSectors: ["energia", "mineracao"],
     sections: [
       {
@@ -100,6 +104,7 @@ export const ARTICLES: ArticleRecord[] = [
   },
   {
     slug: "quanto-investir-para-receber-1000-por-mes",
+    lastModified: "2026-03-25",
     title: "Quanto investir para receber R$ 1.000/mês com dividendos (estimativas)",
     description:
       "Não existe fórmula mágica, mas dá para estimar cenários educacionais. Aprenda a estruturar a conta usando dividendos por cota e seu orçamento.",
@@ -199,6 +204,7 @@ export const ARTICLES: ArticleRecord[] = [
   },
   {
     slug: "como-calcular-renda-passiva",
+    lastModified: "2026-03-25",
     title: "Como calcular renda passiva por dividendos (com simulações)",
     description:
       "Entenda como organizar uma conta de renda passiva: dividendos por cota, quantidade de ações, frequência de pagamento e consistência do histórico.",

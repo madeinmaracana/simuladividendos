@@ -6,8 +6,10 @@ export const ROUTES = {
   home: "/",
   simulador: "/simulador",
   setores: "/setores",
+  fiis: "/fiis",
   artigos: "/artigos",
   acao: (ticker: string) => `/acoes/${encodeURIComponent(ticker.trim().toUpperCase())}`,
+  fii: (ticker: string) => `/fiis/${encodeURIComponent(ticker.trim().toUpperCase())}`,
   setor: (slug: string) => `/setores/${encodeURIComponent(slug)}`,
   artigo: (slug: string) => `/artigos/${encodeURIComponent(slug.trim().toLowerCase())}`,
 } as const;

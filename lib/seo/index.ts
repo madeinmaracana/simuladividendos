@@ -4,3 +4,4 @@ export * from "./schema";
 export * from "./breadcrumbs";
 export * from "./faq";
 export * from "./ticker-seo";
+export * from "./fii-seo";

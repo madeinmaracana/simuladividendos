@@ -7,6 +7,7 @@ import { ArticleCard } from "@/components/articles/ArticleCard";
 import type { FaqItem } from "@/lib/stocks-data";
 import { getAllMockTickers, getSectorNavItems } from "@/lib/stocks-data";
 import { ALL_ARTICLES } from "@/data/articles";
+import { getAllMockFiiTickers, getFiiPath } from "@/data/fiis";
 import { cn } from "@/lib/cn";
 import { ui } from "@/components/ui/classes";
 import { buildPageMetadata, buildWebPageSchema, SITE_NAME } from "@/lib/seo";
@@ -27,6 +28,8 @@ export const metadata: Metadata = buildPageMetadata({
     "B3",
     "proventos",
     "ações",
+    "FII",
+    "fundos imobiliários",
   ],
 });
 
@@ -53,6 +56,7 @@ const sectionTitle = cn(ui.sectionTitle, "text-base sm:text-lg");
 
 export default function HomePage() {
   const popularTickers = getAllMockTickers().slice(0, 8);
+  const popularFiis = getAllMockFiiTickers().slice(0, 6);
 
   return (
     <main className={cn(ui.stackPage, "gap-12 sm:gap-16 lg:gap-20")}>
@@ -119,6 +123,29 @@ export default function HomePage() {
               </Link>
             </li>
           ))}
+        </ul>
+      </section>
+
+      <section aria-labelledby="heading-fiis-home" className={sectionGap}>
+        <h2 id="heading-fiis-home" className={sectionTitle}>
+          Simular FIIs
+        </h2>
+        <p className="max-w-xl text-sm leading-snug text-neutral-600 dark:text-neutral-400">
+          Páginas dedicadas com renda mensal de referência e histórico de rendimentos.
+        </p>
+        <ul className="flex flex-wrap gap-2">
+          {popularFiis.map((t) => (
+            <li key={t}>
+              <Link href={getFiiPath(t)} className={cn(ui.pill, "no-underline")}>
+                {t}
+              </Link>
+            </li>
+          ))}
+          <li>
+            <Link href="/fiis" className={cn(ui.pillGhost, "no-underline")}>
+              Ver todos os FIIs →
+            </Link>
+          </li>
         </ul>
       </section>
 

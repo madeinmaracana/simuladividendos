@@ -81,15 +81,16 @@ interface BrapiListResponse {
   stocks?: Array<{ stock: string; name: string; logo?: string }>;
 }
 
-/** Busca tickers na listagem brapi (ações ordinárias). */
-export async function searchTickerSuggestions(query: string): Promise<TickerSuggestion[]> {
-  const q = query.trim().toUpperCase().replace(/[^A-Z0-9]/g, "");
-  if (q.length < 2) return [];
-
+/** Uma página da listagem brapi por tipo (ação, FII, etc.). */
+async function fetchQuoteListByType(
+  query: string,
+  type: "stock" | "fund",
+  limit: number
+): Promise<TickerSuggestion[]> {
   const url = new URL(`${BRAPI_BASE}/quote/list`);
-  url.searchParams.set("search", q);
-  url.searchParams.set("limit", "15");
-  url.searchParams.set("type", "stock");
+  url.searchParams.set("search", query);
+  url.searchParams.set("limit", String(limit));
+  url.searchParams.set("type", type);
   const token = process.env.BRAPI_TOKEN;
   if (token) {
     url.searchParams.set("token", token);
@@ -102,17 +103,51 @@ export async function searchTickerSuggestions(query: string): Promise<TickerSugg
   if (!res.ok) return [];
 
   const json = (await res.json()) as BrapiListResponse;
-  const stocks = json.stocks ?? [];
+  const rows = json.stocks ?? [];
 
-  return stocks
-    .filter((s) => s.stock && !s.stock.endsWith("F"))
-    .slice(0, 10)
+  return rows
+    .filter((s) => Boolean(s.stock?.trim()))
     .map((s) => ({
       symbol: s.stock,
       name: s.name ?? s.stock,
       logoUrl:
         typeof s.logo === "string" && s.logo.startsWith("http") ? s.logo : null,
     }));
+}
+
+/**
+ * Sugestões de ticker: ações (`stock`) e fundos imobiliários (`fund` na brapi).
+ * A cotação `/api/quote/{ticker}` com `dividends=true` também cobre FIIs quando a brapi os expõe.
+ */
+export async function searchTickerSuggestions(query: string): Promise<TickerSuggestion[]> {
+  const q = query.trim().toUpperCase().replace(/[^A-Z0-9]/g, "");
+  if (q.length < 2) return [];
+
+  const [fromStocks, fromFunds] = await Promise.all([
+    fetchQuoteListByType(q, "stock", 12),
+    fetchQuoteListByType(q, "fund", 12),
+  ]);
+
+  const seen = new Set<string>();
+  const merged: TickerSuggestion[] = [];
+
+  for (const row of fromStocks) {
+    const sym = row.symbol.toUpperCase();
+    if (seen.has(sym)) continue;
+    seen.add(sym);
+    merged.push(row);
+    if (merged.length >= 10) return merged;
+  }
+
+  for (const row of fromFunds) {
+    const sym = row.symbol.toUpperCase();
+    if (seen.has(sym)) continue;
+    seen.add(sym);
+    merged.push(row);
+    if (merged.length >= 10) break;
+  }
+
+  return merged;
 }
 
 export async function getStockData(ticker: string): Promise<StockQuote> {

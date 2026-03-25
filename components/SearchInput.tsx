@@ -268,7 +268,7 @@ export function SearchInput({
 
       {showHelperText && !(selectionMeta && value.trim().length > 0) ? (
         <p className={ui.bodyMuted}>
-          Digite ao menos 2 letras para ver sugestões de ações (dados da brapi).
+          Digite ao menos 2 letras para ver sugestões de ações e fundos imobiliários (FIIs) na B3.
         </p>
       ) : null}
     </div>

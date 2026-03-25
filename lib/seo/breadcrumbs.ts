@@ -37,6 +37,14 @@ export function breadcrumbsArticle(article: ArticleRecord): BreadcrumbItem[] {
   ];
 }
 
+export function breadcrumbsFii(symbol: string): BreadcrumbItem[] {
+  return [
+    { label: "Início", href: ROUTES.home },
+    { label: "FIIs", href: ROUTES.fiis },
+    { label: symbol, href: undefined },
+  ];
+}
+
 export function breadcrumbsSimple(
   items: { label: string; href?: string }[]
 ): BreadcrumbItem[] {

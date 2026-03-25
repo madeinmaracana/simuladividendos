@@ -156,6 +156,7 @@ export const TICKER_DEFINITIONS: StockSeoDefinition[] = [
   },
   {
     ticker: "EGIE3",
+    lastModified: "2026-03-25",
     companyName: "Engie Brasil Energia",
     sectorSlug: "energia",
     shortDescription:

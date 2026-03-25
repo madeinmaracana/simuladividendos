@@ -25,9 +25,9 @@ export function TickerSelectField({
   return (
     <div className={cn("min-w-0", className)}>
       <SearchInput
-        label="Ação (ticker B3)"
+        label="Ação ou FII (ticker B3)"
         showHelperText={showHelperText}
-        placeholder="Ex.: PETR4"
+        placeholder="Ex.: PETR4 ou HGLG11"
         selectionMeta={selectionMeta}
         {...rest}
       />

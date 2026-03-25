@@ -8,6 +8,7 @@ import { StockFAQ } from "@/components/stocks/StockFAQ";
 import { Card } from "@/components/ui/Card";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { getAllArticleSlugs, getArticleBySlug } from "@/data/articles";
+import { getFiiPath } from "@/data/fiis";
 import { getSectorPath, getTickerPath } from "@/lib/stocks-data";
 import { getSector } from "@/data/stocks";
 import { breadcrumbsArticle, buildArticlePageMetadata, buildArticleSchemaFromPath } from "@/lib/seo";
@@ -70,6 +71,11 @@ export default function ArtigoPage({ params }: PageProps) {
             </Link>
             {article.relatedTickers.slice(0, 3).map((t) => (
               <Link key={t} href={getTickerPath(t)} className={cn(ui.pill, "no-underline")}>
+                {t}
+              </Link>
+            ))}
+            {(article.relatedFiis ?? []).slice(0, 4).map((t) => (
+              <Link key={t} href={getFiiPath(t)} className={cn(ui.pill, "no-underline")}>
                 {t}
               </Link>
             ))}

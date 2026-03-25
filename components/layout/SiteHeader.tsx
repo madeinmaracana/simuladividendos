@@ -4,6 +4,7 @@ import { cn } from "@/lib/cn";
 
 const nav = [
   { href: "/simulador", label: "Simulador" },
+  { href: "/fiis", label: "FIIs" },
   { href: "/setores", label: "Setores" },
   { href: "/artigos", label: "Artigos" },
 ] as const;

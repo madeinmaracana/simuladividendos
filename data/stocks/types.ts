@@ -32,6 +32,8 @@ export type StockSeoRecord = {
   worthFollowing: string;
   listDescription: string;
   faqs: FaqItem[];
+  /** ISO YYYY-MM-DD (sitemap lastmod). Opcional: sem isso, usa data de geração. */
+  lastModified?: string;
 };
 
 /**
