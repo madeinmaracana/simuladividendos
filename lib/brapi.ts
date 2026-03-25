@@ -6,6 +6,8 @@ interface BrapiCashDividend {
   paymentDate: string;
   rate: number;
   label: string;
+  exDate?: string;
+  date?: string;
 }
 
 interface BrapiResult {
@@ -35,6 +37,7 @@ function normalizeDividends(raw: BrapiResult): DividendEntry[] {
       paymentDate: d.paymentDate,
       ratePerShare: d.rate,
       label: d.label ?? "—",
+      exDate: d.exDate,
     }));
   }
 

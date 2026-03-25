@@ -1,0 +1,86 @@
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import Link from "next/link";
+import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
+import { ArticleContent } from "@/components/articles/ArticleContent";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { StockFAQ } from "@/components/stocks/StockFAQ";
+import { Card } from "@/components/ui/Card";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { getAllArticleSlugs, getArticleBySlug } from "@/data/articles";
+import { getSectorPath, getTickerPath } from "@/lib/stocks-data";
+import { getSector } from "@/data/stocks";
+import { breadcrumbsArticle, buildArticlePageMetadata, buildArticleSchemaFromPath } from "@/lib/seo";
+import { cn } from "@/lib/cn";
+import { ui } from "@/components/ui/classes";
+
+type PageProps = { params: { slug: string } };
+
+export function generateStaticParams() {
+  return getAllArticleSlugs().map((slug) => ({ slug }));
+}
+
+export function generateMetadata({ params }: PageProps): Metadata {
+  const slug = decodeURIComponent(params.slug).trim().toLowerCase();
+  const article = getArticleBySlug(slug);
+  if (!article) return { title: "Artigo não encontrado" };
+  return buildArticlePageMetadata(article);
+}
+
+export default function ArtigoPage({ params }: PageProps) {
+  const slug = decodeURIComponent(params.slug).trim().toLowerCase();
+  const article = getArticleBySlug(slug);
+  if (!article) notFound();
+
+  const path = `/artigos/${encodeURIComponent(article.slug)}`;
+  const articleSchema = buildArticleSchemaFromPath(article, path);
+
+  return (
+    <main className={ui.stackPage}>
+      <Breadcrumbs items={breadcrumbsArticle(article)} />
+
+      <header className={cn(ui.divider, "flex flex-col gap-3")}>
+        <p className={ui.eyebrow}>Artigo</p>
+        <h1 className={cn("text-left", ui.pageTitle)}>{article.title}</h1>
+        <p className={cn(ui.body, "max-w-2xl")}>{article.description}</p>
+
+        <JsonLd data={articleSchema} />
+      </header>
+
+      <ArticleContent sections={article.sections} />
+
+      <section aria-labelledby="heading-faq-artigo">
+        <StockFAQ
+          title="Perguntas frequentes"
+          items={article.faqs}
+          id="heading-faq-artigo"
+        />
+      </section>
+
+      <section aria-labelledby="heading-relacionados">
+        <Card>
+          <SectionHeading
+            id="heading-relacionados"
+            title="Próximos passos"
+            description="Coloque a teoria em prática usando o simulador e explorando setores e tickers relacionados."
+          />
+          <div className="mt-4 flex flex-wrap gap-2">
+            <Link href="/simulador" className={cn(ui.ctaSecondary, "no-underline")}>
+              Abrir o simulador →
+            </Link>
+            {article.relatedTickers.slice(0, 3).map((t) => (
+              <Link key={t} href={getTickerPath(t)} className={cn(ui.pill, "no-underline")}>
+                {t}
+              </Link>
+            ))}
+            {article.relatedSectors.slice(0, 2).map((s) => (
+              <Link key={s} href={getSectorPath(s)} className={cn(ui.pillNeutral, "no-underline")}>
+                {getSector(s)?.name ?? s}
+              </Link>
+            ))}
+          </div>
+        </Card>
+      </section>
+    </main>
+  );
+}

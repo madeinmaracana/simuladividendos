@@ -1,10 +1,15 @@
 "use client";
 
+import { ui } from "@/components/ui/classes";
+import { cn } from "@/lib/cn";
+
 interface SharesInputProps {
   id?: string;
   value: string;
   onChange: (value: string) => void;
   disabled?: boolean;
+  /** Campo maior no simulador simplificado. */
+  size?: "default" | "lg";
 }
 
 export function SharesInput({
@@ -12,11 +17,12 @@ export function SharesInput({
   value,
   onChange,
   disabled,
+  size = "default",
 }: SharesInputProps) {
   return (
-    <div className="flex flex-col gap-1.5">
-      <label htmlFor={id} className="text-sm font-medium text-neutral-600 dark:text-neutral-400">
-        Quantidade de cotas
+    <div className="flex flex-col gap-2">
+      <label htmlFor={id} className={cn(ui.label, size === "lg" && "text-[0.9375rem] font-semibold text-neutral-800 dark:text-neutral-200")}>
+        Quantidade de ações
       </label>
       <input
         id={id}
@@ -27,7 +33,10 @@ export function SharesInput({
         disabled={disabled}
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="w-full rounded-lg border border-neutral-200 bg-white px-3 py-2.5 text-neutral-900 shadow-sm outline-none ring-teal-500/30 focus:border-teal-500 focus:ring-2 disabled:cursor-not-allowed disabled:opacity-60 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100"
+        className={cn(
+          ui.input,
+          size === "lg" && "min-h-[52px] py-3 text-lg font-semibold tabular-nums"
+        )}
       />
     </div>
   );

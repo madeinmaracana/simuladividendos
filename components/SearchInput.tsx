@@ -8,6 +8,8 @@ import {
   useState,
 } from "react";
 import Image from "next/image";
+import { ui } from "@/components/ui/classes";
+import { cn } from "@/lib/cn";
 
 type TickerSuggestion = {
   symbol: string;
@@ -21,6 +23,9 @@ interface SearchInputProps {
   onChange: (value: string) => void;
   disabled?: boolean;
   placeholder?: string;
+  /** Quando false, oculta a dica abaixo do campo (layout compacto no simulador). */
+  showHelperText?: boolean;
+  label?: string;
 }
 
 function useDebouncedValue<T>(value: T, delayMs: number): T {
@@ -38,6 +43,8 @@ export function SearchInput({
   onChange,
   disabled,
   placeholder = "Ex.: PETR4",
+  showHelperText = true,
+  label = "Ticker da ação",
 }: SearchInputProps) {
   const reactId = useId();
   const id = idProp ?? `ticker-${reactId}`;
@@ -113,8 +120,8 @@ export function SearchInput({
 
   return (
     <div className="flex flex-col gap-1.5" ref={wrapRef}>
-      <label htmlFor={id} className="text-sm font-medium text-neutral-600 dark:text-neutral-400">
-        Ticker da ação
+      <label htmlFor={id} className={ui.label}>
+        {label}
       </label>
       <div className="relative">
         <input
@@ -159,7 +166,7 @@ export function SearchInput({
               setOpen(false);
             }
           }}
-          className="w-full rounded-lg border border-neutral-200 bg-white px-3 py-2.5 text-neutral-900 shadow-sm outline-none ring-teal-500/30 placeholder:text-neutral-400 focus:border-teal-500 focus:ring-2 disabled:cursor-not-allowed disabled:opacity-60 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100 dark:placeholder:text-neutral-500"
+          className={cn(ui.input, "min-h-[52px] py-3 text-base font-medium")}
         />
 
         {loading ? (
@@ -172,7 +179,7 @@ export function SearchInput({
           <ul
             id={listId}
             role="listbox"
-            className="absolute z-50 mt-1 max-h-60 w-full overflow-auto rounded-lg border border-neutral-200 bg-white py-1 shadow-lg dark:border-neutral-700 dark:bg-neutral-900"
+            className="absolute z-50 mt-1 max-h-60 w-full overflow-auto rounded-[length:var(--radius-input)] border border-[var(--border)] bg-[var(--card)] py-1 shadow-lg dark:shadow-xl"
           >
             {suggestions.map((s, i) => (
               <li
@@ -217,9 +224,11 @@ export function SearchInput({
           </ul>
         ) : null}
       </div>
-      <p className="text-xs text-neutral-500 dark:text-neutral-400">
-        Digite ao menos 2 letras para ver sugestões de ações (dados da brapi).
-      </p>
+      {showHelperText ? (
+        <p className={ui.bodyMuted}>
+          Digite ao menos 2 letras para ver sugestões de ações (dados da brapi).
+        </p>
+      ) : null}
     </div>
   );
 }

@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { getSeoBaseUrl } from "@/lib/site";
+import { SiteFooter } from "@/components/layout/SiteFooter";
+import { SiteHeader } from "@/components/layout/SiteHeader";
+import { cn } from "@/lib/cn";
+import { ui } from "@/components/ui/classes";
 import "./globals.css";
 
 const inter = Inter({
@@ -57,18 +61,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" className={inter.variable}>
       <body className={`${inter.className} min-h-screen antialiased`}>
-        <div className="mx-auto min-h-screen max-w-4xl px-4 py-10 sm:px-6 lg:px-8">
-          <header className="mb-10 text-left">
-            <p className="text-sm font-medium uppercase tracking-widest text-teal-600 dark:text-teal-400">
-              Simula Dividendos
-            </p>
-          </header>
-          {children}
-          <footer className="mt-16 border-t border-neutral-200 pt-8 text-center text-xs text-neutral-400 dark:border-neutral-800">
-            Uso por sua conta e risco; não é aconselhamento financeiro.
-          </footer>
+        <div
+          className={cn(
+            "flex min-h-screen flex-col pb-10 pt-2 sm:pb-12 sm:pt-4",
+            ui.pageShell
+          )}
+        >
+          <SiteHeader />
+          <div className="flex-1">{children}</div>
+          <SiteFooter />
         </div>
       </body>
     </html>

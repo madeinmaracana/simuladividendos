@@ -1,4 +1,9 @@
 import type { FaqItem } from "@/lib/stocks-data";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { Card } from "@/components/ui/Card";
+import { cn } from "@/lib/cn";
+import { ui } from "@/components/ui/classes";
+import { buildFaqPageSchema } from "@/lib/seo/schema";
 
 type StockFAQProps = {
   title?: string;
@@ -9,34 +14,38 @@ type StockFAQProps = {
 export function StockFAQ({ title = "Perguntas frequentes", items, id = "heading-faq-acao" }: StockFAQProps) {
   if (!items.length) return null;
 
+  const faqSchema = buildFaqPageSchema(items);
+
   return (
-    <section
-      aria-labelledby={id}
-      className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm dark:border-neutral-800 dark:bg-neutral-900"
-    >
-      <h2 id={id} className="text-left text-lg font-semibold text-neutral-900 dark:text-neutral-50">
-        {title}
-      </h2>
-      <div className="mt-4 flex flex-col gap-2">
-        {items.map((item) => (
-          <details
-            key={item.question}
-            className="group rounded-lg border border-neutral-200 open:bg-neutral-50 dark:border-neutral-700 dark:open:bg-neutral-950/50"
-          >
-            <summary className="cursor-pointer list-none px-4 py-3 text-left text-sm font-medium text-neutral-900 marker:content-none dark:text-neutral-100 [&::-webkit-details-marker]:hidden">
-              <span className="flex items-start justify-between gap-2">
-                {item.question}
-                <span className="shrink-0 text-neutral-400 transition group-open:rotate-180 dark:text-neutral-500">
-                  ▼
+    <section aria-labelledby={id} className={ui.pageSection}>
+      <Card className="p-0 sm:p-0">
+        <div className="border-b border-[var(--border)] px-5 py-4 sm:px-6 dark:border-neutral-800">
+          <h2 id={id} className={cn("text-left", ui.sectionTitle)}>
+            {title}
+          </h2>
+        </div>
+
+        <JsonLd data={faqSchema} />
+
+        <div className="flex flex-col divide-y divide-[var(--border)] dark:divide-neutral-800">
+          {items.map((item) => (
+            <details key={item.question} className="group px-5 py-1 sm:px-6">
+              <summary className="cursor-pointer list-none py-3 text-left text-sm font-medium text-neutral-900 marker:content-none dark:text-neutral-100 [&::-webkit-details-marker]:hidden">
+                <span className="flex items-start justify-between gap-3">
+                  <span className="min-w-0 flex-1 leading-snug">{item.question}</span>
+                  <span
+                    className="mt-0.5 shrink-0 text-neutral-400 transition-transform duration-200 group-open:rotate-180 dark:text-neutral-500"
+                    aria-hidden
+                  >
+                    ▼
+                  </span>
                 </span>
-              </span>
-            </summary>
-            <p className="border-t border-neutral-200 px-4 py-3 text-left text-sm leading-relaxed text-neutral-600 dark:border-neutral-700 dark:text-neutral-400">
-              {item.answer}
-            </p>
-          </details>
-        ))}
-      </div>
+              </summary>
+              <p className={cn(ui.body, "pb-4 pt-1")}>{item.answer}</p>
+            </details>
+          ))}
+        </div>
+      </Card>
     </section>
   );
 }

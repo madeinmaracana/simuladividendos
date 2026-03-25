@@ -2,6 +2,8 @@ export interface DividendEntry {
   paymentDate: string;
   ratePerShare: number;
   label: string;
+  /** Data ex, quando a fonte informar (senão omitir ou usar “—” na UI). */
+  exDate?: string;
 }
 
 export interface StockQuote {

@@ -21,6 +21,56 @@ function groupByPaymentDate(entries: DividendEntry[]): Map<string, number> {
   return map;
 }
 
+/**
+ * Último evento de pagamento já realizado (data ≤ hoje).
+ * Valor total por cota = soma das taxas naquela data de pagamento.
+ */
+export function getLastDividendPayment(
+  entries: DividendEntry[],
+  shares: number,
+  now: Date = new Date()
+): NextDividendEstimate | null {
+  const grouped = groupByPaymentDate(entries);
+  if (grouped.size === 0) return null;
+
+  const todayStart = startOfDayUTC(now);
+  const sortedDays = [...grouped.keys()].sort();
+
+  let chosenDay: string | null = null;
+  for (let i = sortedDays.length - 1; i >= 0; i--) {
+    const day = sortedDays[i]!;
+    const dayStart = Date.parse(day + "T00:00:00.000Z");
+    if (dayStart <= todayStart) {
+      chosenDay = day;
+      break;
+    }
+  }
+
+  if (!chosenDay) return null;
+
+  const totalPerShare = grouped.get(chosenDay) ?? 0;
+  const safeShares = Math.max(0, shares);
+  return {
+    paymentDate: chosenDay + "T12:00:00.000Z",
+    totalPerShare,
+    totalForShares: totalPerShare * safeShares,
+    isFuture: false,
+  };
+}
+
+/**
+ * Próximo pagamento apenas quando há data futura na lista (anunciado/agendado).
+ */
+export function getNextScheduledDividend(
+  entries: DividendEntry[],
+  shares: number,
+  now: Date = new Date()
+): NextDividendEstimate | null {
+  const est = pickNextDividendEstimate(entries, shares, now);
+  if (!est || !est.isFuture) return null;
+  return est;
+}
+
 function pickNextDividendEstimate(
   entries: DividendEntry[],
   shares: number,
@@ -50,10 +100,11 @@ function pickNextDividendEstimate(
   }
 
   const totalPerShare = grouped.get(chosenDay) ?? 0;
+  const safeShares = Math.max(0, shares);
   return {
     paymentDate: chosenDay + "T12:00:00.000Z",
     totalPerShare,
-    totalForShares: totalPerShare * shares,
+    totalForShares: totalPerShare * safeShares,
     isFuture,
   };
 }

@@ -1,4 +1,7 @@
-import Link from "next/link";
+import { Card } from "@/components/ui/Card";
+import { TextLink } from "@/components/ui/TextLink";
+import { cn } from "@/lib/cn";
+import { ui } from "@/components/ui/classes";
 import { getSectorPath } from "@/lib/stocks-data";
 
 type StockHeroProps = {
@@ -21,51 +24,35 @@ export function StockHero({
 }: StockHeroProps) {
   if (afterCalculator) {
     return (
-      <section
-        aria-labelledby={`heading-sobre-${ticker}`}
-        className="flex flex-col gap-3 border-b border-neutral-200 pb-8 dark:border-neutral-800"
-      >
-        <h2
-          id={`heading-sobre-${ticker}`}
-          className="text-left text-lg font-semibold text-neutral-900 dark:text-neutral-50"
-        >
-          Sobre {ticker}: {companyName}
-        </h2>
-        <p className="max-w-3xl text-left text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
-          {shortDescription}
-        </p>
-        <p className="text-left text-sm text-neutral-500 dark:text-neutral-500">
-          Setor:{" "}
-          <Link
-            href={getSectorPath(sectorSlug)}
-            className="font-medium text-teal-700 underline-offset-2 hover:underline dark:text-teal-400"
-          >
-            {sectorLabel}
-          </Link>
-        </p>
+      <section aria-labelledby={`heading-sobre-${ticker}`}>
+        <Card>
+          <h2 id={`heading-sobre-${ticker}`} className={cn("text-left", ui.sectionTitle)}>
+            Sobre {ticker}: {companyName}
+          </h2>
+          <p className={cn(ui.body, "mt-3 max-w-3xl")}>{shortDescription}</p>
+          <p className={cn(ui.body, "mt-4")}>
+            Setor:{" "}
+            <TextLink href={getSectorPath(sectorSlug)} className="text-sm">
+              {sectorLabel}
+            </TextLink>
+          </p>
+        </Card>
       </section>
     );
   }
 
   return (
-    <header className="flex flex-col gap-3 border-b border-neutral-200 pb-8 dark:border-neutral-800">
-      <p className="text-sm font-medium uppercase tracking-widest text-teal-600 dark:text-teal-400">
-        {ticker}
-      </p>
-      <h1 className="text-left text-2xl font-semibold tracking-tight text-neutral-900 sm:text-3xl dark:text-neutral-50">
+    <header className={cn(ui.divider, "flex flex-col gap-3")}>
+      <p className={ui.eyebrow}>{ticker}</p>
+      <h1 className={cn("text-left", ui.pageTitle)}>
         {ticker}: {companyName}
       </h1>
-      <p className="max-w-3xl text-left text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
-        {shortDescription}
-      </p>
-      <p className="text-left text-sm text-neutral-500 dark:text-neutral-500">
+      <p className={cn(ui.body, "max-w-3xl")}>{shortDescription}</p>
+      <p className={ui.body}>
         Setor:{" "}
-        <Link
-          href={getSectorPath(sectorSlug)}
-          className="font-medium text-teal-700 underline-offset-2 hover:underline dark:text-teal-400"
-        >
+        <TextLink href={getSectorPath(sectorSlug)} className="text-sm">
           {sectorLabel}
-        </Link>
+        </TextLink>
       </p>
     </header>
   );
