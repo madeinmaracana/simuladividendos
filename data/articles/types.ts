@@ -16,11 +16,13 @@ export type ArticleRecord = {
   slug: string;
   title: string;
   description: string;
+  /** Bloco curto no topo (estilo resposta direta / snippet). */
+  quickAnswer?: string;
   keywords: string[];
   sections: ArticleSection[];
   faqs: FaqItem[];
   relatedTickers: string[];
-  /** Tickers de FIIs relacionados ao tema (rotas `/fiis/[ticker]`). */
+  /** Tickers de FIIs relacionados ao tema (rotas `/fiis/[slug]`, ex. ticker ou landing). */
   relatedFiis?: string[];
   relatedSectors: SectorSlug[];
   /** Slugs de outros artigos para interligação (SEO + navegação). */

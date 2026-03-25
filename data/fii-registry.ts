@@ -1,5 +1,5 @@
 /**
- * Fonte central para SEO programático de **FIIs** (`/fiis/[ticker]`).
+ * Fonte central para SEO programático de **FIIs** (`/fiis/[slug]` — ticker ou variações de intenção).
  *
  * Não nomeamos este arquivo `data/fiis.ts` para não colidir com o pacote `@/data/fiis` (pasta + `index.ts`).
  * Campos principais: `ticker`, `fundName`, `shortDescription`, `paymentFrequency`, `faqs`, etc. (ver {@link FiiSeoDefinition}).
@@ -7,6 +7,12 @@
  * Proventos exibidos na página vêm da API; estes campos são contexto editorial e FAQ.
  */
 import type { FiiSeoDefinition } from "./fiis/types";
+import {
+  FII_TICKERS_PAGA_QUANTO_POR_MES,
+  FII_VARIANT_PAGA_QUANTO_POR_MES,
+  fiiMainSlug,
+  fiiVariantSlug,
+} from "@/lib/fiis/fii-slug";
 
 export type { FiiSeoDefinition as FiiProgrammaticRecord } from "./fiis/types";
 
@@ -18,10 +24,21 @@ export function fiiPagePath(ticker: string): string {
   return `/fiis/${encodeURIComponent(fiiToSlug(ticker))}`;
 }
 
-/** Lista para `generateStaticParams` em `app/fiis/[ticker]`. */
-export function buildAllFiiStaticParams(): { ticker: string }[] {
-  return FII_DEFINITIONS.map((d) => ({ ticker: d.ticker.trim().toUpperCase() }));
+/** Lista para `generateStaticParams` em `app/fiis/[slug]` (principal + landings por ticker). */
+export function buildAllFiiSlugStaticParams(): { slug: string }[] {
+  const allow = new Set(FII_TICKERS_PAGA_QUANTO_POR_MES.map((x) => x.toUpperCase()));
+  const out: { slug: string }[] = [];
+  for (const d of FII_DEFINITIONS) {
+    const t = d.ticker.trim().toUpperCase();
+    out.push({ slug: fiiMainSlug(t) });
+    if (allow.has(t)) {
+      out.push({ slug: fiiVariantSlug(t, FII_VARIANT_PAGA_QUANTO_POR_MES) });
+    }
+  }
+  return out;
 }
+
+export const buildAllFiiStaticParams = buildAllFiiSlugStaticParams;
 
 export const FII_DEFINITIONS: FiiSeoDefinition[] = [
   {

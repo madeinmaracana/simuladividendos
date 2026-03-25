@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { StockAcaoIntentNav } from "@/components/stocks/StockAcaoIntentNav";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { StockFAQ } from "@/components/stocks/StockFAQ";
 import { RelatedTickers } from "@/components/stocks/RelatedTickers";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { TickerPageLayout, TickerPageRow } from "@/components/layout/TickerPageLayout";
 import { RelatedArticlesSection } from "@/components/seo/RelatedArticlesSection";
+import { StockQuickAnswer } from "@/components/stocks/StockQuickAnswer";
 import {
   CompanyInfoSection,
   DividendHistorySection,
@@ -17,6 +19,15 @@ import {
   TickerEditorialSection,
   TickerSimulatorTop,
 } from "@/components/ticker";
+import { acaoPathFromSlug, buildAllAcaoSlugStaticParams, parseAcaoSlug } from "@/lib/acoes/acao-slug";
+import { canonicalMainAcaoPath, getStockIntentMetadata } from "@/lib/acoes/stock-intent-seo";
+import {
+  mergeFaqByQuestion,
+  stockIntentEditorialAddendum,
+  stockIntentEditorialHeading,
+  stockIntentExtraFaqs,
+  stockIntentHeroTitle,
+} from "@/lib/acoes/stock-intent-copy";
 import { BrapiError, getStockData } from "@/lib/brapi";
 import {
   buildDividendTableRows,
@@ -28,43 +39,41 @@ import {
   inferPaymentFrequencyLabel,
 } from "@/lib/ticker-page";
 import { generateTickerSummaryText } from "@/lib/ticker-page";
-import { buildAllTickerStaticParams } from "@/data/tickers";
 import { getPeerTickers, getSectorPath, getStockSeo } from "@/lib/stocks-data";
 import { getArticlesForTicker } from "@/data/articles";
-import { generateDescription, generateFAQ, generateTitle } from "@/lib/programmatic/stock-seo";
+import { generateFAQ } from "@/lib/programmatic/stock-seo";
 import {
   SITE_NAME,
-  breadcrumbsTicker,
-  buildTickerStockPageMetadata,
+  breadcrumbsAcao,
+  buildAcaoSlugPageMetadata,
   buildWebPageSchema,
 } from "@/lib/seo";
 
-type PageProps = { params: { ticker: string } };
+type PageProps = { params: { slug: string } };
 
 export function generateStaticParams() {
-  return buildAllTickerStaticParams();
+  return buildAllAcaoSlugStaticParams();
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const symbol = decodeURIComponent(params.ticker).trim().toUpperCase();
+  const slug = decodeURIComponent(params.slug).trim();
+  const { ticker: symbol, variant } = parseAcaoSlug(slug);
   const mock = getStockSeo(symbol);
-  return buildTickerStockPageMetadata(symbol, mock);
+  return buildAcaoSlugPageMetadata(symbol, mock, slug, variant);
 }
 
-export default async function AcaoPage({ params }: PageProps) {
-  const raw = decodeURIComponent(params.ticker).trim();
-  if (!raw) {
-    notFound();
-  }
+export default async function AcaoSlugPage({ params }: PageProps) {
+  const slug = decodeURIComponent(params.slug).trim();
+  if (!slug) notFound();
 
-  const symbol = raw.toUpperCase();
+  const { ticker: symbol, variant } = parseAcaoSlug(slug);
   const mock = getStockSeo(symbol);
 
   let serverError: string | null = null;
   let initialStock = null;
 
   try {
-    initialStock = await getStockData(raw);
+    initialStock = await getStockData(symbol);
   } catch (e) {
     if (e instanceof BrapiError) {
       serverError = e.message;
@@ -74,10 +83,7 @@ export default async function AcaoPage({ params }: PageProps) {
   }
 
   const displayName =
-    mock?.companyName ??
-    initialStock?.longName ??
-    initialStock?.shortName ??
-    "Ação na B3";
+    mock?.companyName ?? initialStock?.longName ?? initialStock?.shortName ?? "Ação na B3";
 
   const sectorLabel = mock?.sectorLabel ?? "—";
   const shortDescription =
@@ -105,11 +111,14 @@ export default async function AcaoPage({ params }: PageProps) {
   const relatedArticles = mock ? getArticlesForTicker(mock.ticker) : [];
   const peers = mock ? getPeerTickers(mock.ticker) : [];
 
-  const faqItems = generateFAQ(symbol, mock, lastSnap, nextSnap, frequencyHint, currency);
+  const faqItems = mergeFaqByQuestion([
+    stockIntentExtraFaqs(variant, symbol),
+    generateFAQ(symbol, mock, lastSnap, nextSnap, frequencyHint, currency),
+  ]);
 
-  const title = `Dividendos de ${symbol}`;
+  const heroTitle = stockIntentHeroTitle(symbol, variant);
 
-  const editorialParagraphs = generateTickerSummaryText({
+  const baseEditorial = generateTickerSummaryText({
     symbol,
     companyName: displayName,
     sectorLabel,
@@ -122,20 +131,36 @@ export default async function AcaoPage({ params }: PageProps) {
     dividends,
   });
 
-  const tickerPath = `/acoes/${encodeURIComponent(symbol)}`;
+  const intentParas = stockIntentEditorialAddendum(variant, symbol, displayName);
+  const editorialParagraphs =
+    variant === "main"
+      ? [...baseEditorial, ...intentParas]
+      : [
+          ...intentParas,
+          `A tabela e o histórico abaixo usam a mesma fonte da visão geral de ${symbol}; a diferença está no texto e nas perguntas frequentes, alinhados à sua busca.`,
+        ];
+
+  const pagePath = acaoPathFromSlug(slug);
+  /** Mesma entidade WebPage que a principal: alinhada ao `rel=canonical` nas variações. */
+  const mainMeta = getStockIntentMetadata(symbol, mock, "main");
+  const schemaPath = canonicalMainAcaoPath(symbol);
 
   return (
     <main className="w-full min-w-0">
       <JsonLd
         data={buildWebPageSchema({
-          name: `${generateTitle(symbol, mock)} | ${SITE_NAME}`,
-          description: generateDescription(symbol, mock),
-          path: tickerPath,
+          name: `${mainMeta.title} | ${SITE_NAME}`,
+          description: mainMeta.description,
+          path: schemaPath,
         })}
       />
       <TickerPageLayout>
         <TickerPageRow>
-          <Breadcrumbs items={breadcrumbsTicker(symbol, mock)} />
+          <Breadcrumbs items={breadcrumbsAcao(symbol, mock, variant)} />
+        </TickerPageRow>
+
+        <TickerPageRow>
+          <StockAcaoIntentNav symbol={symbol} current={variant} />
         </TickerPageRow>
 
         <TickerPageRow>
@@ -152,18 +177,27 @@ export default async function AcaoPage({ params }: PageProps) {
                 sectorLabel={sectorLabel}
                 shortDescription={shortDescription}
                 logoUrl={initialStock?.logoUrl ?? undefined}
-                title={title}
+                title={heroTitle}
               />
             }
           />
         </TickerPageRow>
+
+        {(variant === "paga-quanto" || variant === "quanto-paga-dividendos") && (
+          <TickerPageRow>
+            <StockQuickAnswer symbol={symbol} lastSnap={lastSnap} currency={currency} variant={variant} />
+          </TickerPageRow>
+        )}
 
         <TickerPageRow>
           <DividendSummaryText text={summaryText} />
         </TickerPageRow>
 
         <TickerPageRow>
-          <TickerEditorialSection paragraphs={editorialParagraphs} />
+          <TickerEditorialSection
+            paragraphs={editorialParagraphs}
+            sectionTitle={stockIntentEditorialHeading(variant)}
+          />
         </TickerPageRow>
 
         <TickerPageRow>
@@ -189,7 +223,11 @@ export default async function AcaoPage({ params }: PageProps) {
             <CompanyInfoSection
               companyName={mock.companyName}
               shortDescription={mock.shortDescription}
-              extraParagraph={mock.historySummary ? mock.historySummary.slice(0, 400) + (mock.historySummary.length > 400 ? "…" : "") : undefined}
+              extraParagraph={
+                mock.historySummary
+                  ? mock.historySummary.slice(0, 400) + (mock.historySummary.length > 400 ? "…" : "")
+                  : undefined
+              }
             />
           </TickerPageRow>
         ) : null}

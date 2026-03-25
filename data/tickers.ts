@@ -1,5 +1,5 @@
 /**
- * Fonte central para SEO programático de **ações** (`/acoes/[ticker]`).
+ * Fonte central para SEO programático de **ações** (`/acoes/[slug]` — principal e variações).
  *
  * Cada item segue {@link StockSeoDefinition}:
  * - `ticker` + slug de URL (sempre o ticker em maiúsculas — use {@link tickerToSlug})
@@ -24,7 +24,7 @@ export function tickerPagePath(ticker: string): string {
   return `/acoes/${encodeURIComponent(tickerToSlug(ticker))}`;
 }
 
-/** Lista para `generateStaticParams` em `app/acoes/[ticker]`. */
+/** Lista para `generateStaticParams` em `app/acoes/[slug]`. */
 export function buildAllTickerStaticParams(): { ticker: string }[] {
   return TICKER_DEFINITIONS.map((d) => ({ ticker: d.ticker.trim().toUpperCase() }));
 }

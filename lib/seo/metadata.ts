@@ -4,10 +4,10 @@ import type { FiiSeoRecord } from "@/data/fiis";
 import type { SectorRecord, StockSeoRecord } from "@/data/stocks";
 import { getSeoBaseUrl } from "@/lib/site";
 import { OG_LOCALE, SITE_NAME } from "./constants";
-import {
-  generateFiiProgrammaticDescription,
-  generateFiiProgrammaticTitle,
-} from "@/lib/programmatic/fii-page-seo";
+import type { AcaoUrlVariant } from "@/lib/acoes/acao-slug";
+import { canonicalMainAcaoPath, getStockIntentMetadata } from "@/lib/acoes/stock-intent-seo";
+import type { FiiUrlVariant } from "@/lib/fiis/fii-slug";
+import { canonicalMainFiiPath, getFiiIntentMetadata } from "@/lib/fiis/fii-intent-seo";
 import { generateDescription, generateTitle } from "@/lib/programmatic/stock-seo";
 
 function absoluteUrl(path: string): string {
@@ -21,6 +21,11 @@ export type PageMetadataInput = {
   title: string;
   description: string;
   canonicalPath: string;
+  /**
+   * Quando definido, `rel=canonical` e `og:url` apontam para este caminho (página “self” pode ser outra).
+   * Usado nas variações `/acoes/petr4-dividendos` → canônico `/acoes/PETR4`.
+   */
+  linkCanonicalPath?: string;
   keywords?: string[];
   ogType?: "website" | "article";
 };
@@ -33,18 +38,25 @@ export function buildPageMetadata({
   title,
   description,
   canonicalPath,
+  linkCanonicalPath,
   keywords,
   ogType = "website",
 }: PageMetadataInput): Metadata {
   const path = canonicalPath.startsWith("/") ? canonicalPath : `/${canonicalPath}`;
-  const url = absoluteUrl(path);
+  const canonical =
+    linkCanonicalPath === undefined
+      ? path
+      : linkCanonicalPath.startsWith("/")
+        ? linkCanonicalPath
+        : `/${linkCanonicalPath}`;
+  const url = absoluteUrl(canonical);
   const ogTitle = `${title} | ${SITE_NAME}`;
 
   return {
     title,
     description,
     keywords,
-    alternates: { canonical: path },
+    alternates: { canonical },
     openGraph: {
       title: ogTitle,
       description,
@@ -87,26 +99,53 @@ export function buildTickerStockPageMetadata(symbol: string, mock: StockSeoRecor
 /** @deprecated Use buildTickerStockPageMetadata — mantido para compatibilidade. */
 export const buildStockPageMetadata = buildTickerStockPageMetadata;
 
+/** Metadata para `/acoes/[slug]` (principal ou variação dividendos | paga-quanto | simulador). */
+export function buildAcaoSlugPageMetadata(
+  symbol: string,
+  mock: StockSeoRecord | null,
+  slug: string,
+  variant: "main" | AcaoUrlVariant
+): Metadata {
+  const path = `/acoes/${encodeURIComponent(slug.trim())}`;
+  const meta = getStockIntentMetadata(symbol, mock, variant);
+  const mainPath = canonicalMainAcaoPath(symbol);
+  return buildPageMetadata({
+    title: meta.title,
+    description: meta.description,
+    canonicalPath: path,
+    linkCanonicalPath: variant === "main" ? undefined : mainPath,
+    keywords: meta.keywords,
+  });
+}
+
 export function buildFiiPageMetadata(symbol: string, mock: FiiSeoRecord | null): Metadata {
-  const path = `/fiis/${encodeURIComponent(symbol)}`;
-  const title = generateFiiProgrammaticTitle(symbol, mock);
-  const description = generateFiiProgrammaticDescription(symbol, mock);
+  return buildFiiSlugPageMetadata(symbol, mock, symbol, "main");
+}
+
+/** Metadata para `/fiis/[slug]` (principal ou variação de intenção). */
+export function buildFiiSlugPageMetadata(
+  symbol: string,
+  mock: FiiSeoRecord | null,
+  slug: string,
+  variant: "main" | FiiUrlVariant
+): Metadata {
+  const path = `/fiis/${encodeURIComponent(slug.trim())}`;
+  const meta = getFiiIntentMetadata(symbol, mock, variant);
+  const mainPath = canonicalMainFiiPath(symbol);
   const nameKw = mock?.fundName ?? "";
+  const keywords = [
+    ...meta.keywords,
+    "fundo imobiliário",
+    "renda mensal",
+    nameKw,
+  ].filter((k): k is string => Boolean(k));
 
   return buildPageMetadata({
-    title,
-    description,
+    title: meta.title,
+    description: meta.description,
     canonicalPath: path,
-    keywords: [
-      symbol,
-      "FII",
-      "fundo imobiliário",
-      "rendimentos",
-      "B3",
-      "renda mensal",
-      "quanto paga",
-      nameKw,
-    ].filter((k): k is string => Boolean(k)),
+    linkCanonicalPath: variant === "main" ? undefined : mainPath,
+    keywords: [...new Set(keywords)],
   });
 }
 

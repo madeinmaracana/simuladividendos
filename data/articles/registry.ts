@@ -15,6 +15,7 @@ export const ARTICLES: ArticleRecord[] = [
       "como-calcular-renda-passiva",
       "melhores-fiis-para-renda-mensal",
       "quanto-investir-para-viver-de-dividendos",
+      "fiis-que-pagam-dividendos-todo-mes",
     ],
     sections: [
       {
@@ -132,6 +133,7 @@ export const ARTICLES: ArticleRecord[] = [
     relatedTickers: ["BBAS3", "ITUB4", "PETR4", "TAEE11", "EGIE3"],
     relatedFiis: ["MXRF11", "HGLG11", "KNRI11"],
     relatedSectors: ["bancos", "petroleo"],
+    relatedArticleSlugs: ["quanto-investir-para-receber-1000-reais-por-mes"],
     sections: [
       {
         heading: "A ideia por trás da estimativa",
@@ -171,6 +173,142 @@ export const ARTICLES: ArticleRecord[] = [
         question: "Como o simulador ajuda na prática?",
         answer:
           "Ele permite ajustar o número de cotas e visualizar estimativas educacionais. Assim, você consegue revisar hipótese e refinar seu plano.",
+      },
+    ],
+  },
+  {
+    slug: "quanto-investir-para-receber-1000-reais-por-mes",
+    lastModified: "2026-03-25",
+    title: "Quanto investir para receber R$ 1.000 reais por mês? (sem promessas)",
+    description:
+      "A conta é: renda desejada em função do provento por cota que você observa no histórico. Veja como montar o raciocínio com o simulador — sem inventar dividendos futuros.",
+    quickAnswer:
+      "Ninguém pode dizer um patrimônio exato sem saber quanto cada ativo paga por cota na sua carteira. Para ~R$ 1.000/mês, a ideia é: provento por cota (no período que você escolher) × quantidade de cotas — e os proventos mudam.",
+    keywords: [
+      "1000 reais por mês",
+      "quanto investir",
+      "dividendos",
+      "renda mensal",
+      "simulador",
+    ],
+    relatedTickers: ["PETR4", "TAEE11", "BBAS3", "ITUB4", "VALE3"],
+    relatedFiis: ["MXRF11", "HGLG11", "KNRI11"],
+    relatedSectors: ["bancos", "petroleo"],
+    relatedArticleSlugs: [
+      "quanto-investir-para-receber-1000-por-mes",
+      "como-calcular-renda-passiva",
+      "fiis-que-pagam-dividendos-todo-mes",
+    ],
+    sections: [
+      {
+        heading: "Como a pergunta deve ser formulada",
+        paragraphs: [
+          "“Quanto investir?” só ganha resposta depois que você define com quais ativos está falando. Cada papel tem provento ou rendimento por cota diferente e calendário diferente.",
+          "O caminho honesto é: abrir a página do ticker ou FII no Simula Dividendos, ver o que a fonte mostrou nos últimos pagamentos e usar o simulador para multiplicar pela quantidade de cotas.",
+        ],
+      },
+      {
+        heading: "A conta em linguagem simples",
+        paragraphs: [
+          "Uma aproximação útil: renda mensal desejada ≈ valor por cota no período que você está usando × número de cotas. O “valor por cota” não é universal: vem do histórico de cada ativo.",
+          "Se você mistura ações e FIIs, some os fluxos de cada posição. O site ajuda a ver por ativo; a consolidação do planejamento continua sendo sua.",
+        ],
+      },
+      {
+        heading: "Simulação prática no site",
+        paragraphs: [
+          "Em páginas como PETR4 ou TAEE11, use o simulador com uma quantidade de cotas (por exemplo 100) e veja quanto o último provento da lista representaria em reais para essa posição. Ajuste as cotas para explorar cenários.",
+          "Para fundos imobiliários, compare MXRF11 e pares na seção de FIIs. A página /fiis/mxrf11-paga-quanto-por-mes reforça a pergunta “quanto paga por mês” com os mesmos dados da visão geral do fundo.",
+        ],
+      },
+      {
+        heading: "Riscos de planejar só em cima da meta",
+        paragraphs: [
+          "Empresas e fundos mudam distribuição conforme resultado e política. Trate R$ 1.000/mês como cenário educacional, não como renda garantida.",
+          "Impostos, preço das cotas, vacância em FIIs e reinvestimento alteram o que efetivamente sobra.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Existe um valor único de patrimônio para R$ 1.000/mês?",
+        answer:
+          "Não. Depende do mix de ativos e dos proventos por cota em cada um. Use o simulador por ticker para encostar na realidade dos dados exibidos na página.",
+      },
+      {
+        question: "Este artigo substitui o outro sobre R$ 1.000/mês?",
+        answer:
+          "Eles se complementam: aqui o foco está na busca por “1000 reais” e em links diretos para tickers e FIIs. O outro artigo aprofunda o raciocínio geral de estimativa.",
+      },
+      {
+        question: "O simulador garante o próximo mês?",
+        answer:
+          "Não. Ele usa dados de histórico na interface para fins educacionais; decisões e riscos são sempre seus.",
+      },
+    ],
+  },
+  {
+    slug: "fiis-que-pagam-dividendos-todo-mes",
+    lastModified: "2026-03-25",
+    title: "FIIs que pagam dividendos todo mês? Rendimento e calendário",
+    description:
+      "O termo popular é “dividendo”, mas em FIIs fala-se em rendimentos distribuídos. Entenda periodicidade, limites da linguagem e como usar o simulador sem achismo.",
+    quickAnswer:
+      "Fiis distribuem rendimentos (não o mesmo conceito jurídico de dividendo de ação). Muitos fundos miram pagamentos mensais, mas data e valor dependem do regulamento e do resultado — confirme no administrador.",
+    keywords: ["FII todo mês", "rendimento mensal", "FIIs dividendos", "B3", "simulador FII"],
+    relatedTickers: ["TAEE11"],
+    relatedFiis: ["MXRF11", "HGLG11", "XPLG11", "KNCR11", "KNRI11", "VGHF11"],
+    relatedSectors: [],
+    relatedArticleSlugs: [
+      "melhores-fiis-para-renda-mensal",
+      "quanto-investir-para-receber-1000-reais-por-mes",
+      "o-que-e-dividend-yield",
+    ],
+    sections: [
+      {
+        heading: "Por que a pergunta é comum",
+        paragraphs: [
+          "Quem busca fluxo na bolsa costuma querer previsibilidade. FIIs são frequentemente associados a pagamentos regulares — e muitos fundos de papel ou tijolo de fato trabalham com distribuições frequentes.",
+          "Ainda assim, “todo mês” não é promessa: pode haver meses sem distribuição, valores diferentes ou mudança de política.",
+        ],
+      },
+      {
+        heading: "Rendimento de FII ≠ dividendo de ação",
+        paragraphs: [
+          "Na conversa do investidor, tudo vira “dividendo”. Tecnicamente, companhias abertas pagam dividendos/JCP conforme o caso; fundos imobiliários distribuem rendimentos segundo regras próprias.",
+          "Isso muda rótulo, tributação e leitura de comunicados. Por isso, nas páginas de FII do Simula Dividendos falamos em rendimentos por cota.",
+        ],
+      },
+      {
+        heading: "Como estudar na prática (sem lista mágica)",
+        paragraphs: [
+          "Em vez de uma tabela estática que envelhece no mesmo dia, use páginas por ticker: MXRF11, HGLG11, KNRI11, etc. O histórico mostra o ritmo recente na fonte integrada.",
+          "A landing /fiis/mxrf11-paga-quanto-por-mes concentra a intenção “quanto paga por mês” com simulador e FAQ alinhados à busca.",
+        ],
+      },
+      {
+        heading: "Simulação: o que o site mostra",
+        paragraphs: [
+          "Informe o número de cotas no simulador do fundo. O painel traduz proventos por cota em totais para a sua posição — sempre como material educacional, não como garantia de repetição.",
+          "Compare com ações de dividendos (ex.: TAEE11) se quiser diversificar o estudo de fluxo na bolsa.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Existe FII que paga exatamente o mesmo valor todo mês?",
+        answer:
+          "Raramente há valor fixo eterno. Mesmo fundos com cultura mensal mudam o valor por cota conforme receitas, despesas e política de distribuição.",
+      },
+      {
+        question: "Posso confiar só neste site para decidir?",
+        answer:
+          "Use como apoio educacional. Decisões exigem prospecto, informes do administrador, seu perfil de risco e, se for o caso, assessoramento profissional.",
+      },
+      {
+        question: "Onde acompanhar o calendário oficial?",
+        answer:
+          "Site do administrador do fundo, RI e comunicados à CVM. A página do Simula Dividendos resume o histórico disponível na integração, não substitui o canal oficial.",
       },
     ],
   },

@@ -10,6 +10,8 @@ import {
   FiiSimulatorTop,
   FiiInternalNav,
   RelatedFiiLinks,
+  FiiQuickAnswer,
+  FiiIntentLandingLinks,
 } from "@/components/fii";
 import {
   CompanyInfoSection,
@@ -18,10 +20,14 @@ import {
   DividendTableSimple,
   TickerEditorialSection,
 } from "@/components/ticker";
+import { mergeFaqByQuestion } from "@/lib/acoes/stock-intent-copy";
 import { BrapiError, getStockData } from "@/lib/brapi";
 import { getArticlesForFii } from "@/data/articles";
-import { buildAllFiiStaticParams } from "@/data/fii-registry";
+import { buildAllFiiSlugStaticParams } from "@/data/fii-registry";
 import { getFiiSeo, getPeerFiis } from "@/data/fiis";
+import { fiiIntentEditorialAddendum, fiiIntentExtraFaqs } from "@/lib/fiis/fii-intent-copy";
+import { canonicalMainFiiPath, getFiiIntentMetadata } from "@/lib/fiis/fii-intent-seo";
+import { parseFiiSlug } from "@/lib/fiis/fii-slug";
 import { generateFiiEditorialParagraphs, generateFiiSummaryParagraph } from "@/lib/fii-page";
 import {
   buildDividendTableRows,
@@ -29,30 +35,32 @@ import {
   getNextPerShareSnapshot,
   inferPaymentFrequencyLabel,
 } from "@/lib/ticker-page";
+import { generateFiiProgrammaticFAQ } from "@/lib/programmatic/fii-page-seo";
 import {
-  generateFiiProgrammaticDescription,
-  generateFiiProgrammaticFAQ,
-  generateFiiProgrammaticTitle,
-} from "@/lib/programmatic/fii-page-seo";
-import { SITE_NAME, breadcrumbsFii, buildFiiPageMetadata, buildWebPageSchema } from "@/lib/seo";
+  SITE_NAME,
+  breadcrumbsFiiSlug,
+  buildFiiSlugPageMetadata,
+  buildWebPageSchema,
+} from "@/lib/seo";
 
-type PageProps = { params: { ticker: string } };
+type PageProps = { params: { slug: string } };
 
 export function generateStaticParams() {
-  return buildAllFiiStaticParams();
+  return buildAllFiiSlugStaticParams();
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const symbol = decodeURIComponent(params.ticker).trim().toUpperCase();
+  const slug = decodeURIComponent(params.slug).trim();
+  const { ticker: symbol, variant } = parseFiiSlug(slug);
   const mock = getFiiSeo(symbol);
-  return buildFiiPageMetadata(symbol, mock);
+  return buildFiiSlugPageMetadata(symbol, mock, slug, variant);
 }
 
-export default async function FiiTickerPage({ params }: PageProps) {
-  const raw = decodeURIComponent(params.ticker).trim();
-  if (!raw) notFound();
+export default async function FiiSlugPage({ params }: PageProps) {
+  const slug = decodeURIComponent(params.slug).trim();
+  if (!slug) notFound();
 
-  const symbol = raw.toUpperCase();
+  const { ticker: symbol, variant } = parseFiiSlug(slug);
   const mock = getFiiSeo(symbol);
   if (!mock) notFound();
 
@@ -60,7 +68,7 @@ export default async function FiiTickerPage({ params }: PageProps) {
   let initialStock = null;
 
   try {
-    initialStock = await getStockData(raw);
+    initialStock = await getStockData(symbol);
   } catch (e) {
     if (e instanceof BrapiError) {
       serverError = e.message;
@@ -91,25 +99,44 @@ export default async function FiiTickerPage({ params }: PageProps) {
   const relatedArticles = getArticlesForFii(mock.ticker);
   const peers = getPeerFiis(mock.ticker);
 
-  const faqItems = generateFiiProgrammaticFAQ(symbol, mock, lastSnap, frequencyHint, currency);
+  const faqItems = mergeFaqByQuestion([
+    fiiIntentExtraFaqs(variant, symbol),
+    generateFiiProgrammaticFAQ(symbol, mock, lastSnap, frequencyHint, currency),
+  ]);
 
-  const title = `Rendimentos de ${symbol}`;
-  const editorialParagraphs = generateFiiEditorialParagraphs(symbol, displayName, mock);
-  const fiiPath = `/fiis/${encodeURIComponent(symbol)}`;
+  const heroTitle =
+    variant === "main" ? `Rendimentos de ${symbol}` : `${symbol} paga quanto por mês?`;
+
+  const baseEditorial = generateFiiEditorialParagraphs(symbol, displayName, mock);
+  const intentParas = fiiIntentEditorialAddendum(variant, symbol, displayName);
+  const editorialParagraphs =
+    variant === "main" ? baseEditorial : [...intentParas, ...baseEditorial];
+
+  const editorialSectionTitle =
+    variant === "main" ? "Contexto sobre rendimentos" : "Quanto paga por mês em rendimentos";
+
+  const mainMeta = getFiiIntentMetadata(symbol, mock, "main");
+  const schemaPath = canonicalMainFiiPath(symbol);
 
   return (
     <main className="w-full min-w-0">
       <JsonLd
         data={buildWebPageSchema({
-          name: `${generateFiiProgrammaticTitle(symbol, mock)} | ${SITE_NAME}`,
-          description: generateFiiProgrammaticDescription(symbol, mock),
-          path: fiiPath,
+          name: `${mainMeta.title} | ${SITE_NAME}`,
+          description: mainMeta.description,
+          path: schemaPath,
         })}
       />
       <TickerPageLayout>
         <TickerPageRow>
-          <Breadcrumbs items={breadcrumbsFii(symbol)} />
+          <Breadcrumbs items={breadcrumbsFiiSlug(symbol, variant)} />
         </TickerPageRow>
+
+        {variant === "main" ? (
+          <TickerPageRow>
+            <FiiIntentLandingLinks symbol={symbol} />
+          </TickerPageRow>
+        ) : null}
 
         <TickerPageRow>
           <FiiSimulatorTop
@@ -123,11 +150,17 @@ export default async function FiiTickerPage({ params }: PageProps) {
                 fundName={displayName}
                 shortDescription={shortDescription}
                 logoUrl={initialStock?.logoUrl ?? undefined}
-                title={title}
+                title={heroTitle}
               />
             }
           />
         </TickerPageRow>
+
+        {variant !== "main" ? (
+          <TickerPageRow>
+            <FiiQuickAnswer symbol={symbol} lastSnap={lastSnap} currency={currency} variant={variant} />
+          </TickerPageRow>
+        ) : null}
 
         <TickerPageRow>
           <DividendSummaryText id="heading-resumo-fii" text={summaryText} />
@@ -137,7 +170,7 @@ export default async function FiiTickerPage({ params }: PageProps) {
           <TickerEditorialSection
             paragraphs={editorialParagraphs}
             id="heading-contexto-fii"
-            sectionTitle="Contexto sobre rendimentos"
+            sectionTitle={editorialSectionTitle}
           />
         </TickerPageRow>
 

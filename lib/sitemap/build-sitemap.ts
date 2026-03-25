@@ -1,13 +1,14 @@
 import type { MetadataRoute } from "next";
+import { acaoPathFromSlug, buildAllAcaoSlugStaticParams, parseAcaoSlug } from "@/lib/acoes/acao-slug";
+import { buildAllFiiSlugStaticParams } from "@/data/fii-registry";
 import {
   ALL_ARTICLES,
   getAllSectorSlugs,
-  getFiiPath,
   getSectorPath,
-  getTickerPath,
   MOCK_FIIS,
   MOCK_STOCKS,
 } from "@/data/sitemap-sources";
+import { fiiPathFromSlug, parseFiiSlug } from "@/lib/fiis/fii-slug";
 
 /** Fallback de lastmod quando o conteúdo não declara data (ex.: setores, home). */
 function defaultLastModified(): Date {
@@ -44,19 +45,37 @@ export function buildSitemap(baseUrl: string): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  const tickerRoutes = MOCK_STOCKS.map((s) => ({
-    url: `${base}${getTickerPath(s.ticker)}`,
-    lastModified: lastModFromIso(s.lastModified),
-    changeFrequency: "weekly" as const,
-    priority: 0.8,
-  }));
+  const tickerBySymbol = Object.fromEntries(MOCK_STOCKS.map((s) => [s.ticker.toUpperCase(), s]));
 
-  const fiiRoutes = MOCK_FIIS.map((f) => ({
-    url: `${base}${getFiiPath(f.ticker)}`,
-    lastModified: lastModFromIso(f.lastModified),
-    changeFrequency: "weekly" as const,
-    priority: 0.8,
-  }));
+  const acaoSlugParams = buildAllAcaoSlugStaticParams();
+  const acaoSlugsForSitemap =
+    process.env.SITEMAP_EXCLUDE_ACAO_URL_VARIANTS === "1"
+      ? acaoSlugParams.filter(({ slug }) => parseAcaoSlug(slug).variant === "main")
+      : acaoSlugParams;
+
+  const tickerRoutes = acaoSlugsForSitemap.map(({ slug }) => {
+    const { ticker } = parseAcaoSlug(slug);
+    const stock = tickerBySymbol[ticker];
+    return {
+      url: `${base}${acaoPathFromSlug(slug)}`,
+      lastModified: lastModFromIso(stock?.lastModified),
+      changeFrequency: "weekly" as const,
+      priority: slug.includes("-") ? (0.72 as const) : (0.8 as const),
+    };
+  });
+
+  const fiiByTicker = Object.fromEntries(MOCK_FIIS.map((f) => [f.ticker.toUpperCase(), f]));
+
+  const fiiRoutes = buildAllFiiSlugStaticParams().map(({ slug }) => {
+    const { ticker } = parseFiiSlug(slug);
+    const f = fiiByTicker[ticker];
+    return {
+      url: `${base}${fiiPathFromSlug(slug)}`,
+      lastModified: lastModFromIso(f?.lastModified),
+      changeFrequency: "weekly" as const,
+      priority: slug.includes("-") ? (0.72 as const) : (0.8 as const),
+    };
+  });
 
   const articleRoutes = ALL_ARTICLES.map((a) => ({
     url: `${base}/artigos/${encodeURIComponent(a.slug)}`,

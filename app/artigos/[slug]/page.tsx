@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { ArticleContent } from "@/components/articles/ArticleContent";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { QuickAnswer } from "@/components/seo/QuickAnswer";
 import { StockFAQ } from "@/components/stocks/StockFAQ";
 import { Card } from "@/components/ui/Card";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -48,6 +49,12 @@ export default function ArtigoPage({ params }: PageProps) {
 
         <JsonLd data={articleSchema} />
       </header>
+
+      {article.quickAnswer ? (
+        <QuickAnswer>
+          <p>{article.quickAnswer}</p>
+        </QuickAnswer>
+      ) : null}
 
       <ArticleContent sections={article.sections} />
 
