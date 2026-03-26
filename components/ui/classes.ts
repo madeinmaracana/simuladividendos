@@ -18,11 +18,11 @@ export const ui = {
   /** Subtítulo de seção (h3) */
   subsectionTitle: "text-base font-semibold text-[color:var(--text)]",
   /** Corpo */
-  body: "text-sm leading-relaxed text-[color:var(--text-secondary)]",
+  body: "text-sm leading-relaxed text-[color:var(--text-muted)]",
   bodyMuted: "text-xs leading-relaxed text-[color:var(--text-soft)]",
   /** Links de texto */
   link:
-    "font-medium text-[color:var(--accent)] underline-offset-2 transition hover:underline",
+    "font-medium text-[color:var(--text)] underline-offset-2 transition hover:underline",
   /** Chip / pill para tickers e tags */
   pill:
     "inline-flex items-center rounded-full border border-[var(--border)] bg-[var(--surface)] px-3 py-1.5 text-xs font-semibold text-[color:var(--text)] shadow-[var(--shadow-sm)] transition hover:border-[var(--border-strong)] hover:bg-[var(--surface-muted)]",
@@ -35,7 +35,7 @@ export const ui = {
   ctaSecondary:
     "inline-flex items-center justify-center rounded-[length:var(--radius-md)] border border-[var(--border)] bg-[var(--surface)] px-5 py-2.5 text-sm font-semibold text-[color:var(--text)] shadow-[var(--shadow-sm)] transition hover:border-[var(--border-strong)] hover:bg-[var(--surface-muted)]",
   linkNav:
-    "rounded-lg px-3 py-2 text-sm font-medium text-[color:var(--text-secondary)] transition hover:bg-[var(--surface-muted)] hover:text-[color:var(--text)]",
+    "rounded-lg px-3 py-2 text-sm font-medium text-[color:var(--text-muted)] transition hover:bg-[var(--surface-muted)] hover:text-[color:var(--text)]",
   /** Card base (use com Card ou cn) */
   card:
     "rounded-[length:var(--radius-lg)] border border-[var(--border)] bg-[var(--surface)] shadow-[var(--shadow-sm)]",

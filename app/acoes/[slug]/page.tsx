@@ -186,7 +186,7 @@ export default async function AcaoSlugPage({ params }: PageProps) {
           />
         </TickerPageRow>
 
-        {(variant === "paga-quanto" || variant === "quanto-paga-dividendos") && (
+        {variant !== "main" && (
           <TickerPageRow>
             <StockQuickAnswer symbol={symbol} lastSnap={lastSnap} currency={currency} variant={variant} />
           </TickerPageRow>

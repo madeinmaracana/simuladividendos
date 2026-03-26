@@ -6,7 +6,7 @@ import { canonicalMainFiiPath } from "@/lib/fiis/fii-intent-seo";
 import { cn } from "@/lib/cn";
 import { ui } from "@/components/ui/classes";
 import type { FiiUrlVariant } from "@/lib/fiis/fii-slug";
-import { FII_VARIANT_PAGA_QUANTO_POR_MES } from "@/lib/fiis/fii-slug";
+import { fiiVariantShares } from "@/lib/fiis/fii-slug";
 
 type FiiQuickAnswerProps = {
   symbol: string;
@@ -17,10 +17,10 @@ type FiiQuickAnswerProps = {
 };
 
 export function FiiQuickAnswer({ symbol, lastSnap, nextSnap, currency, variant }: FiiQuickAnswerProps) {
-  if (variant !== FII_VARIANT_PAGA_QUANTO_POR_MES) return null;
+  if (variant === "main") return null;
 
   const mainHref = canonicalMainFiiPath(symbol);
-  const exampleCotas = 100;
+  const exampleCotas = fiiVariantShares(variant) ?? 100;
 
   if (!lastSnap) {
     return (
@@ -52,9 +52,7 @@ export function FiiQuickAnswer({ symbol, lastSnap, nextSnap, currency, variant }
         </p>
       ) : null}
       <p className="mt-2">
-        “Por mês” costuma ser uma média/expectativa, não um valor fixo. Se aqui aparece um mês antigo (ex.: janeiro),
-        normalmente é porque a fonte ainda não tem pagamentos mais recentes disponíveis. Com{" "}
-        <strong>{exampleCotas} cotas</strong>, o último evento equivale a cerca de{" "}
+        Com <strong>{exampleCotas} cotas</strong>, o último evento equivale a cerca de{" "}
         <strong>{formatBRL(totalEx, currency)}</strong> — ajuste no simulador para a sua posição.
       </p>
       <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">

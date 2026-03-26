@@ -8,8 +8,7 @@
  */
 import type { FiiSeoDefinition } from "./fiis/types";
 import {
-  FII_TICKERS_PAGA_QUANTO_POR_MES,
-  FII_VARIANT_PAGA_QUANTO_POR_MES,
+  FII_URL_VARIANTS,
   fiiMainSlug,
   fiiVariantSlug,
 } from "@/lib/fiis/fii-slug";
@@ -26,13 +25,12 @@ export function fiiPagePath(ticker: string): string {
 
 /** Lista para `generateStaticParams` em `app/fiis/[slug]` (principal + landings por ticker). */
 export function buildAllFiiSlugStaticParams(): { slug: string }[] {
-  const allow = new Set(FII_TICKERS_PAGA_QUANTO_POR_MES.map((x) => x.toUpperCase()));
   const out: { slug: string }[] = [];
   for (const d of FII_DEFINITIONS) {
     const t = d.ticker.trim().toUpperCase();
     out.push({ slug: fiiMainSlug(t) });
-    if (allow.has(t)) {
-      out.push({ slug: fiiVariantSlug(t, FII_VARIANT_PAGA_QUANTO_POR_MES) });
+    for (const v of FII_URL_VARIANTS) {
+      out.push({ slug: fiiVariantSlug(t, v) });
     }
   }
   return out;

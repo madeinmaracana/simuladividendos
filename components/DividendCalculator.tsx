@@ -7,6 +7,14 @@ import { DividendSimulatorSimple } from "@/components/simulator/DividendSimulato
 
 const DEFAULT_TICKER = "PETR4";
 
+function resolveInitialTicker(initialTicker: string | undefined, showTickerPicker: boolean): string {
+  const cleaned = initialTicker?.trim();
+  if (cleaned) return cleaned;
+  // Na home com combobox, começamos vazio para não parecer valor pré-selecionado.
+  if (showTickerPicker) return "";
+  return DEFAULT_TICKER;
+}
+
 export type DividendCalculatorProps = {
   initialTicker?: string;
   /** Home e /simulador: ticker e simulação em um único card ({@link HomeSimulatorCard}). */
@@ -24,7 +32,7 @@ export type DividendCalculatorProps = {
  * Na home (picker ligado): {@link HomeSimulatorCard}. Caso contrário: {@link DividendSimulatorSimple} com ticker fixo.
  */
 export function DividendCalculator({
-  initialTicker = DEFAULT_TICKER,
+  initialTicker,
   showTickerPicker = false,
   initialStock = null,
   serverError = null,
@@ -33,11 +41,11 @@ export function DividendCalculator({
   simulatorFetchMode = "auto",
   compactHero = false,
 }: DividendCalculatorProps) {
-  const [ticker, setTicker] = useState(() => (initialTicker?.trim() ? initialTicker.trim() : DEFAULT_TICKER));
+  const [ticker, setTicker] = useState(() => resolveInitialTicker(initialTicker, showTickerPicker));
 
   useEffect(() => {
-    setTicker(initialTicker?.trim() ? initialTicker.trim() : DEFAULT_TICKER);
-  }, [initialTicker]);
+    setTicker(resolveInitialTicker(initialTicker, showTickerPicker));
+  }, [initialTicker, showTickerPicker]);
 
   if (showTickerPicker) {
     return (

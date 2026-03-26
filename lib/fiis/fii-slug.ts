@@ -5,10 +5,14 @@
  * `generateStaticParams` vive em `data/fii-registry.ts` (evita ciclo com a lista de fundos).
  */
 export const FII_VARIANT_PAGA_QUANTO_POR_MES = "paga-quanto-por-mes" as const;
-export type FiiUrlVariant = typeof FII_VARIANT_PAGA_QUANTO_POR_MES;
-
-/** Tickers que têm landing `*-paga-quanto-por-mes`. */
-export const FII_TICKERS_PAGA_QUANTO_POR_MES: readonly string[] = ["MXRF11"];
+export const FII_URL_VARIANTS = [
+  "paga-quanto-por-mes",
+  "simulador-de-dividendos",
+  "quanto-rende-100-cotas",
+  "quanto-rende-500-cotas",
+  "quanto-rende-1000-cotas",
+] as const;
+export type FiiUrlVariant = (typeof FII_URL_VARIANTS)[number];
 
 export type ParsedFiiSlug = {
   ticker: string;
@@ -18,12 +22,14 @@ export type ParsedFiiSlug = {
 export function parseFiiSlug(raw: string): ParsedFiiSlug {
   const s = decodeURIComponent(raw).trim();
   const lower = s.toLowerCase();
-  const suf = `-${FII_VARIANT_PAGA_QUANTO_POR_MES}`;
-  if (lower.endsWith(suf)) {
-    const base = lower.slice(0, -suf.length);
-    const ticker = base.toUpperCase();
-    if (base.length >= 4 && FII_TICKERS_PAGA_QUANTO_POR_MES.includes(ticker)) {
-      return { ticker, variant: FII_VARIANT_PAGA_QUANTO_POR_MES };
+  for (const v of FII_URL_VARIANTS) {
+    const suf = `-${v}`;
+    if (lower.endsWith(suf)) {
+      const base = lower.slice(0, -suf.length);
+      const ticker = base.toUpperCase();
+      if (base.length >= 4) {
+        return { ticker, variant: v };
+      }
     }
   }
 
@@ -40,4 +46,12 @@ export function fiiVariantSlug(ticker: string, variant: FiiUrlVariant): string {
 
 export function fiiPathFromSlug(slug: string): string {
   return `/fiis/${encodeURIComponent(slug.trim())}`;
+}
+
+export function fiiVariantShares(variant: "main" | FiiUrlVariant): number | null {
+  if (variant.startsWith("quanto-rende-") && variant.endsWith("-cotas")) {
+    const n = Number(variant.replace("quanto-rende-", "").replace("-cotas", ""));
+    return Number.isFinite(n) && n > 0 ? n : null;
+  }
+  return null;
 }

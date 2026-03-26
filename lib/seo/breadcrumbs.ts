@@ -26,9 +26,13 @@ export function breadcrumbsTicker(symbol: string, mock: StockSeoRecord | null): 
 }
 
 function acaoVariantCrumbLabel(variant: AcaoUrlVariant): string {
+  if (variant === "quanto-rende-100-cotas") return "Quanto rendem 100 cotas";
+  if (variant === "quanto-rende-500-cotas") return "Quanto rendem 500 cotas";
+  if (variant === "quanto-rende-1000-cotas") return "Quanto rendem 1000 cotas";
   if (variant === "quanto-paga-dividendos") return "Quanto paga dividendos";
   if (variant === "dividendos") return "Dividendos";
   if (variant === "paga-quanto") return "Quanto paga";
+  if (variant === "simulador-de-dividendos") return "Simulador de dividendos";
   return "Simulador";
 }
 
@@ -88,11 +92,21 @@ export function breadcrumbsFiiSlug(symbol: string, variant: "main" | FiiUrlVaria
   if (variant === "main") return breadcrumbsFii(symbol);
 
   const mainPath = `/fiis/${encodeURIComponent(fiiMainSlug(symbol))}`;
+  const label =
+    variant === "paga-quanto-por-mes"
+      ? "Quanto paga por mês"
+      : variant === "simulador-de-dividendos"
+        ? "Simulador de dividendos"
+        : variant === "quanto-rende-100-cotas"
+          ? "Quanto rendem 100 cotas"
+          : variant === "quanto-rende-500-cotas"
+            ? "Quanto rendem 500 cotas"
+            : "Quanto rendem 1000 cotas";
   return [
     { label: "Início", href: ROUTES.home },
     { label: "FIIs", href: ROUTES.fiis },
     { label: symbol, href: mainPath },
-    { label: "Quanto paga por mês", href: undefined },
+    { label, href: undefined },
   ];
 }
 

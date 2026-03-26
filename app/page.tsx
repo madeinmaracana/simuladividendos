@@ -119,6 +119,7 @@ export default function HomePage() {
 
         <div className="lg:col-span-6 lg:pl-1">
           <DividendCalculator
+            initialTicker=""
             showTickerPicker
             defaultShares={100}
             simulatorFetchMode="manual"

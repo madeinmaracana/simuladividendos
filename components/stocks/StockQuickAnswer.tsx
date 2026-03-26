@@ -2,7 +2,7 @@ import Link from "next/link";
 import { QuickAnswer } from "@/components/seo/QuickAnswer";
 import { formatBRL, formatDatePt } from "@/lib/format";
 import type { PerShareSnapshot } from "@/lib/ticker-page/derive";
-import { acaoMainSlug } from "@/lib/acoes/acao-slug";
+import { acaoMainSlug, acaoVariantShares } from "@/lib/acoes/acao-slug";
 import { cn } from "@/lib/cn";
 import { ui } from "@/components/ui/classes";
 import type { AcaoUrlVariant } from "@/lib/acoes/acao-slug";
@@ -16,8 +16,15 @@ type StockQuickAnswerProps = {
 
 export function StockQuickAnswer({ symbol, lastSnap, currency, variant }: StockQuickAnswerProps) {
   const mainHref = `/acoes/${encodeURIComponent(acaoMainSlug(symbol))}`;
-  const exampleCotas = 100;
-  const show = variant === "paga-quanto" || variant === "quanto-paga-dividendos";
+  const shares = acaoVariantShares(variant);
+  const exampleCotas = shares ?? 100;
+  const show =
+    variant !== "main" &&
+    (variant === "paga-quanto" ||
+      variant === "quanto-paga-dividendos" ||
+      variant === "simulador" ||
+      variant === "simulador-de-dividendos" ||
+      shares != null);
 
   if (!show) return null;
 
@@ -40,6 +47,8 @@ export function StockQuickAnswer({ symbol, lastSnap, currency, variant }: StockQ
   const labelPorCota =
     variant === "paga-quanto"
       ? "por ação (último provento na fonte)"
+      : shares
+        ? `por ação no último provento (cenário com ${shares} cotas)`
       : "por ação no último provento registrado na fonte";
 
   return (

@@ -1,5 +1,11 @@
 import type { FaqItem } from "@/data/stocks";
-import { FII_VARIANT_PAGA_QUANTO_POR_MES, type FiiUrlVariant } from "./fii-slug";
+import { fiiVariantShares, type FiiUrlVariant } from "./fii-slug";
+
+function pickBySeed(seed: string, options: readonly string[]): string {
+  let h = 0;
+  for (let i = 0; i < seed.length; i++) h = (h * 33 + seed.charCodeAt(i)) >>> 0;
+  return options[h % options.length] ?? options[0]!;
+}
 
 export function fiiIntentEditorialAddendum(
   variant: "main" | FiiUrlVariant,
@@ -7,6 +13,29 @@ export function fiiIntentEditorialAddendum(
   displayName: string
 ): string[] {
   if (variant === "main") return [];
+  const shares = fiiVariantShares(variant);
+
+  if (variant === "simulador-de-dividendos") {
+    return [
+      `Página de simulador para ${symbol}: escolha a quantidade de cotas e veja a estimativa por evento com base no histórico disponível na fonte.`,
+      `Use como apoio de estudo para comparar cenários de renda; valores futuros podem variar conforme resultado e regulamento do fundo.`,
+    ];
+  }
+
+  if (shares) {
+    return [
+      pickBySeed(`${symbol}-${variant}-a`, [
+        `Para ${shares} cotas de ${symbol}, esta página mostra uma estimativa educacional do total por distribuição usando o histórico da fonte.`,
+        `A busca “${symbol} quanto rende ${shares} cotas” é respondida com cálculo prático e simulador no topo, sem prometer retorno futuro.`,
+        `Com ${shares} cotas de ${symbol}, você acompanha quanto cada pagamento por cota pode representar no seu fluxo estimado.`,
+      ]),
+      pickBySeed(`${symbol}-${variant}-b`, [
+        "Distribuições de FIIs podem oscilar; confira também os informes oficiais do administrador.",
+        "Use a simulação para ter ordem de grandeza e revisar cenários com diferentes quantidades de cotas.",
+        "Histórico ajuda no contexto, mas não substitui documentos oficiais do fundo.",
+      ]),
+    ];
+  }
 
   return [
     `Esta URL responde à busca “${symbol} paga quanto por mês?”. O valor por cota do último rendimento está na tabela; o total na sua conta depende de quantas cotas você tem — use o simulador acima.`,
@@ -15,7 +44,27 @@ export function fiiIntentEditorialAddendum(
 }
 
 export function fiiIntentExtraFaqs(variant: "main" | FiiUrlVariant, symbol: string): FaqItem[] {
-  if (variant !== FII_VARIANT_PAGA_QUANTO_POR_MES) return [];
+  const shares = fiiVariantShares(variant);
+
+  if (variant === "simulador-de-dividendos") {
+    return [
+      {
+        question: `Como simular dividendos de ${symbol}?`,
+        answer:
+          "Informe o número de cotas no simulador da página. O cálculo usa valores por cota do histórico disponível na fonte para gerar uma estimativa educacional.",
+      },
+    ];
+  }
+
+  if (shares) {
+    return [
+      {
+        question: `${symbol}: quanto rendem ${shares} cotas?`,
+        answer:
+          "Depende dos valores por cota registrados no histórico da fonte para o período analisado. A página transforma isso em estimativa automática para a quantidade escolhida.",
+      },
+    ];
+  }
 
   return [
     {

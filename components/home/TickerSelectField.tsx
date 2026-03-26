@@ -27,7 +27,7 @@ export function TickerSelectField({
       <SearchInput
         label="Ação ou FII (ticker B3)"
         showHelperText={showHelperText}
-        placeholder="Ex.: PETR4 ou HGLG11"
+        placeholder="Ex: PETR4 ou outro ticker"
         selectionMeta={selectionMeta}
         {...rest}
       />

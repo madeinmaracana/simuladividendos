@@ -1,7 +1,7 @@
 import type { StockSeoRecord } from "@/data/stocks";
 import { generateDescription, generateTitle } from "@/lib/programmatic/stock-seo";
 import type { AcaoUrlVariant } from "./acao-slug";
-import { acaoMainSlug } from "./acao-slug";
+import { acaoMainSlug, acaoVariantShares } from "./acao-slug";
 
 type IntentMeta = { title: string; description: string; keywords: string[] };
 
@@ -26,6 +26,7 @@ export function getStockIntentMetadata(
 ): IntentMeta {
   const name = mock?.companyName?.trim();
   const label = name ? `${name} (${symbol})` : symbol;
+  const shares = acaoVariantShares(variant);
 
   if (variant === "main") {
     return {
@@ -69,7 +70,26 @@ export function getStockIntentMetadata(
     };
   }
 
-  // simulador
+  if (shares) {
+    return {
+      title: `${symbol} quanto rende ${shares} cotas? Simulação de dividendos`,
+      description: `Veja uma estimativa educacional de quanto ${shares} cotas de ${label} podem render por evento de provento com base no histórico disponível na fonte e ajuste no simulador.`,
+      keywords: [
+        ...baseKeywords(symbol, mock),
+        `quanto rende ${shares} cotas`,
+        `simulação ${symbol} ${shares} cotas`,
+      ],
+    };
+  }
+
+  if (variant === "simulador-de-dividendos" || variant === "simulador") {
+    return {
+      title: `Simulador de dividendos ${symbol}: calcule por quantidade de cotas`,
+      description: `Simule dividendos de ${label} multiplicando provento por ação pela quantidade de cotas. Página focada em simulação rápida, educacional e sem promessas de retorno.`,
+      keywords: [...baseKeywords(symbol, mock), "simulador de dividendos", "calculadora por cotas"],
+    };
+  }
+
   return {
     title: `Simular dividendos ${symbol}: calculadora por quantidade de ações`,
     description: `Simule dividendos de ${label} multiplicando dividendos por ação pela quantidade de cotas. Ferramenta educacional para entender quanto paga em cenários diferentes — sem garantir resultados futuros.`,

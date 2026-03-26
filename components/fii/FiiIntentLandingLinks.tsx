@@ -1,7 +1,6 @@
 import Link from "next/link";
 import {
-  FII_TICKERS_PAGA_QUANTO_POR_MES,
-  FII_VARIANT_PAGA_QUANTO_POR_MES,
+  FII_URL_VARIANTS,
   fiiPathFromSlug,
   fiiVariantSlug,
 } from "@/lib/fiis/fii-slug";
@@ -15,19 +14,27 @@ type FiiIntentLandingLinksProps = {
 /** Link para landing de intenção (ex. “paga quanto por mês”) na página principal do FII. */
 export function FiiIntentLandingLinks({ symbol }: FiiIntentLandingLinksProps) {
   const u = symbol.trim().toUpperCase();
-  if (!FII_TICKERS_PAGA_QUANTO_POR_MES.includes(u)) return null;
-
-  const href = fiiPathFromSlug(fiiVariantSlug(u, FII_VARIANT_PAGA_QUANTO_POR_MES));
+  const labels: Record<(typeof FII_URL_VARIANTS)[number], string> = {
+    "paga-quanto-por-mes": "Quanto paga por mês",
+    "simulador-de-dividendos": "Simulador de dividendos",
+    "quanto-rende-100-cotas": "Quanto rendem 100 cotas",
+    "quanto-rende-500-cotas": "Quanto rendem 500 cotas",
+    "quanto-rende-1000-cotas": "Quanto rendem 1000 cotas",
+  };
 
   return (
     <nav aria-label={`Busca por rendimento mensal — ${symbol}`} className={cn(ui.pageSection, "flex flex-col gap-2")}>
-      <p className={ui.metricLabel}>Busca específica</p>
+      <p className={ui.metricLabel}>Páginas similares</p>
       <p className={cn(ui.body, "max-w-2xl")}>
-        Página focada na pergunta “paga quanto por mês?” (mesmos dados, texto e FAQ alinhados à intenção).
+        Variações programáticas por intenção de busca e quantidade de cotas (mesmos dados, texto adaptado por contexto).
       </p>
-      <Link href={href} className={cn(ui.pill, "w-fit no-underline")}>
-        {symbol}: quanto paga por mês →
-      </Link>
+      <div className="flex flex-wrap gap-2">
+        {FII_URL_VARIANTS.map((v) => (
+          <Link key={v} href={fiiPathFromSlug(fiiVariantSlug(u, v))} className={cn(ui.pill, "w-fit no-underline")}>
+            {labels[v]}
+          </Link>
+        ))}
+      </div>
     </nav>
   );
 }

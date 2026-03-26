@@ -51,7 +51,7 @@ export function SearchInput({
   value,
   onChange,
   disabled,
-  placeholder = "Ex.: PETR4",
+  placeholder = "Ex: PETR4 ou TAEE11",
   showHelperText = true,
   label = "Ticker da ação",
   selectionMeta = null,
@@ -167,6 +167,12 @@ export function SearchInput({
           }}
           onFocus={() => {
             setFocused(true);
+            if (selectionMeta && value.trim().length > 0) {
+              onChange("");
+              setSuggestions([]);
+              setOpen(false);
+              return;
+            }
             if (suggestions.length > 0) setOpen(true);
           }}
           onBlur={() => setFocused(false)}
@@ -188,7 +194,8 @@ export function SearchInput({
           }}
           className={cn(
             ui.input,
-            "min-h-[52px] py-3 text-base font-medium",
+            "min-h-[52px] py-3 text-base font-normal placeholder:font-normal",
+            value.trim().length > 0 && "font-semibold text-[color:var(--text)]",
             selectionMeta && value.trim().length > 0 && "pl-12 sm:pl-[3.25rem]"
           )}
         />
@@ -270,17 +277,19 @@ export function SearchInput({
           </ul>
         ) : null}
       </div>
-      {selectionMeta && value.trim().length > 0 && selectionMeta.name ? (
-        <p className={cn(ui.bodyMuted, "line-clamp-2 sm:line-clamp-1")} title={selectionMeta.name}>
-          {selectionMeta.name}
-        </p>
-      ) : null}
-
-      {showHelperText && !(selectionMeta && value.trim().length > 0) ? (
-        <p className={ui.bodyMuted}>
-          Digite ao menos 2 letras para ver sugestões de ações e fundos imobiliários (FIIs) na B3.
-        </p>
-      ) : null}
+      <div className="min-h-[1.25rem]">
+        {selectionMeta && value.trim().length > 0 && selectionMeta.name ? (
+          <p className={cn(ui.bodyMuted, "line-clamp-1")} title={selectionMeta.name}>
+            {selectionMeta.name}
+          </p>
+        ) : showHelperText ? (
+          <p className={ui.bodyMuted}>
+            Digite ao menos 2 letras para ver sugestões de ações e fundos imobiliários (FIIs) na B3.
+          </p>
+        ) : (
+          <p className="invisible text-xs">.</p>
+        )}
+      </div>
     </div>
   );
 }

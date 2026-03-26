@@ -75,7 +75,7 @@ export default function RootLayout({
         <GoogleAnalytics />
         <div
           className={cn(
-            "flex min-h-screen flex-col pb-10 pt-2 sm:pb-12 sm:pt-4",
+            "flex min-h-screen flex-col pb-0 pt-2 sm:pt-4",
             ui.pageShell
           )}
         >

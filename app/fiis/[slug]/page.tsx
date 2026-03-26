@@ -27,7 +27,7 @@ import { buildAllFiiSlugStaticParams } from "@/data/fii-registry";
 import { getFiiSeo, getPeerFiis } from "@/data/fiis";
 import { fiiIntentEditorialAddendum, fiiIntentExtraFaqs } from "@/lib/fiis/fii-intent-copy";
 import { canonicalMainFiiPath, getFiiIntentMetadata } from "@/lib/fiis/fii-intent-seo";
-import { parseFiiSlug } from "@/lib/fiis/fii-slug";
+import { fiiVariantShares, parseFiiSlug } from "@/lib/fiis/fii-slug";
 import { generateFiiEditorialParagraphs, generateFiiSummaryParagraph } from "@/lib/fii-page";
 import {
   buildDividendTableRows,
@@ -104,8 +104,15 @@ export default async function FiiSlugPage({ params }: PageProps) {
     generateFiiProgrammaticFAQ(symbol, mock, lastSnap, frequencyHint, currency),
   ]);
 
+  const variantShares = fiiVariantShares(variant);
   const heroTitle =
-    variant === "main" ? `Rendimentos de ${symbol}` : `${symbol} paga quanto por mês?`;
+    variant === "main"
+      ? `Rendimentos de ${symbol}`
+      : variant === "simulador-de-dividendos"
+        ? `Simulador de dividendos ${symbol}`
+        : variantShares
+          ? `${symbol}: quanto rendem ${variantShares} cotas?`
+          : `${symbol} paga quanto por mês?`;
 
   const baseEditorial = generateFiiEditorialParagraphs(symbol, displayName, mock);
   const intentParas = fiiIntentEditorialAddendum(variant, symbol, displayName);
@@ -113,7 +120,13 @@ export default async function FiiSlugPage({ params }: PageProps) {
     variant === "main" ? baseEditorial : [...intentParas, ...baseEditorial];
 
   const editorialSectionTitle =
-    variant === "main" ? "Contexto sobre rendimentos" : "Quanto paga por mês em rendimentos";
+    variant === "main"
+      ? "Contexto sobre rendimentos"
+      : variantShares
+        ? `Quanto rendem ${variantShares} cotas`
+        : variant === "simulador-de-dividendos"
+          ? "Simulador de dividendos"
+          : "Quanto paga por mês em rendimentos";
 
   const mainMeta = getFiiIntentMetadata(symbol, mock, "main");
   const schemaPath = canonicalMainFiiPath(symbol);
@@ -132,11 +145,9 @@ export default async function FiiSlugPage({ params }: PageProps) {
           <Breadcrumbs items={breadcrumbsFiiSlug(symbol, variant)} />
         </TickerPageRow>
 
-        {variant === "main" ? (
-          <TickerPageRow>
-            <FiiIntentLandingLinks symbol={symbol} />
-          </TickerPageRow>
-        ) : null}
+        <TickerPageRow>
+          <FiiIntentLandingLinks symbol={symbol} />
+        </TickerPageRow>
 
         <TickerPageRow>
           <FiiSimulatorTop

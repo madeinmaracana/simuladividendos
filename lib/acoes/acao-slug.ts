@@ -10,7 +10,17 @@ import { getAllMockTickers } from "@/data/stocks";
 /**
  * Ordem: sufixos mais longos primeiro (ex.: `taee11-quanto-paga-dividendos` não pode casar só com `-dividendos`).
  */
-export const ACAO_URL_VARIANTS = ["quanto-paga-dividendos", "dividendos", "paga-quanto", "simulador"] as const;
+export const ACAO_QUANTO_RENDE_COTAS = [100, 500, 1000] as const;
+export const ACAO_URL_VARIANTS = [
+  "quanto-rende-100-cotas",
+  "quanto-rende-500-cotas",
+  "quanto-rende-1000-cotas",
+  "quanto-paga-dividendos",
+  "simulador-de-dividendos",
+  "dividendos",
+  "paga-quanto",
+  "simulador",
+] as const;
 export type AcaoUrlVariant = (typeof ACAO_URL_VARIANTS)[number];
 
 /** Variação `quanto-paga-dividendos` só é gerada para estes tickers (landing de intenção específica). */
@@ -67,4 +77,12 @@ export function buildAllAcaoSlugStaticParams(): { slug: string }[] {
 
 export function acaoPathFromSlug(slug: string): string {
   return `/acoes/${encodeURIComponent(slug.trim())}`;
+}
+
+export function acaoVariantShares(variant: "main" | AcaoUrlVariant): number | null {
+  if (variant.startsWith("quanto-rende-") && variant.endsWith("-cotas")) {
+    const n = Number(variant.replace("quanto-rende-", "").replace("-cotas", ""));
+    return Number.isFinite(n) && n > 0 ? n : null;
+  }
+  return null;
 }

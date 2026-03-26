@@ -5,9 +5,13 @@ import { cn } from "@/lib/cn";
 import { ui } from "@/components/ui/classes";
 
 const VARIANT_LABEL: Record<AcaoUrlVariant, string> = {
+  "quanto-rende-100-cotas": "Quanto rendem 100 cotas",
+  "quanto-rende-500-cotas": "Quanto rendem 500 cotas",
+  "quanto-rende-1000-cotas": "Quanto rendem 1000 cotas",
   "quanto-paga-dividendos": "Quanto paga dividendos",
   dividendos: "Dividendos por ação",
   "paga-quanto": "Quanto paga",
+  "simulador-de-dividendos": "Simulador de dividendos",
   simulador: "Simulador",
 };
 

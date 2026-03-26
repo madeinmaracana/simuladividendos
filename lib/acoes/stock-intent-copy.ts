@@ -1,6 +1,13 @@
 import type { FaqItem } from "@/data/stocks";
 import type { AcaoUrlVariant } from "./acao-slug";
 import { ACAO_TICKERS_QUANTO_PAGA_DIVIDENDOS, ACAO_URL_VARIANTS } from "./acao-slug";
+import { acaoVariantShares } from "./acao-slug";
+
+function pickBySeed(seed: string, options: readonly string[]): string {
+  let h = 0;
+  for (let i = 0; i < seed.length; i++) h = (h * 31 + seed.charCodeAt(i)) >>> 0;
+  return options[h % options.length] ?? options[0]!;
+}
 
 export function acaoVariantsForTicker(symbol: string): AcaoUrlVariant[] {
   const u = symbol.trim().toUpperCase();
@@ -11,16 +18,22 @@ export function acaoVariantsForTicker(symbol: string): AcaoUrlVariant[] {
 
 export function stockIntentHeroTitle(symbol: string, variant: "main" | AcaoUrlVariant): string {
   if (variant === "main") return `Dividendos de ${symbol}`;
+  const shares = acaoVariantShares(variant);
+  if (shares) return `${symbol}: quanto rendem ${shares} cotas em dividendos?`;
   if (variant === "dividendos") return `${symbol}: dividendos por ação e histórico`;
   if (variant === "quanto-paga-dividendos") return `${symbol} quanto paga de dividendos?`;
   if (variant === "paga-quanto") return `${symbol} paga quanto em dividendos?`;
+  if (variant === "simulador-de-dividendos") return `Simulador de dividendos ${symbol}`;
   return `Simular dividendos ${symbol}`;
 }
 
 export function stockIntentEditorialHeading(variant: "main" | AcaoUrlVariant): string {
+  const shares = acaoVariantShares(variant);
+  if (shares) return `Quanto rendem ${shares} cotas`;
   if (variant === "dividendos") return "Dividendos por ação e histórico";
   if (variant === "quanto-paga-dividendos") return "Quanto paga em dividendos por cota";
   if (variant === "paga-quanto") return "Quanto paga por cota";
+  if (variant === "simulador-de-dividendos") return "Simulador de dividendos";
   if (variant === "simulador") return "Simular dividendos com a lista de proventos";
   return "Contexto sobre dividendos";
 }
@@ -49,6 +62,7 @@ export function stockIntentEditorialAddendum(
   displayName: string
 ): string[] {
   const who = `${displayName} (${symbol})`;
+  const shares = acaoVariantShares(variant);
 
   if (variant === "main") {
     return [
@@ -77,6 +91,20 @@ export function stockIntentEditorialAddendum(
     ];
   }
 
+  if (shares) {
+    const intro = pickBySeed(`${symbol}-${variant}-i`, [
+      `Para ${shares} cotas de ${symbol}, o total estimado depende do valor por ação em cada evento de provento. Esta página transforma a pergunta em conta prática com o simulador.`,
+      `A busca “${symbol} quanto rende ${shares} cotas” é respondida aqui com o mesmo histórico de dividendos por ação e cálculo automático para ${shares} papéis.`,
+      `Com ${shares} cotas de ${symbol}, você vê rapidamente uma estimativa educacional do total por evento, sem assumir valor fixo para meses futuros.`,
+    ]);
+    const note = pickBySeed(`${symbol}-${variant}-n`, [
+      "Use como referência de ordem de grandeza e sempre valide anúncios oficiais no RI.",
+      "Os valores mudam ao longo do tempo; histórico ajuda no contexto, não é promessa de repetição.",
+      "A política de remuneração pode mudar; trate o resultado como simulação educacional.",
+    ]);
+    return [intro, note];
+  }
+
   return [
     `Use esta página para simular dividendos de ${who}: informe quantas ações você possui e acompanhe como a lista de dividendos por ação se traduz em totais. Isso ajuda a entender quanto paga em termos de ordem de grandeza, não como promessa de renda.`,
   ];
@@ -87,6 +115,7 @@ export function stockIntentExtraFaqs(
   variant: "main" | AcaoUrlVariant,
   symbol: string
 ): FaqItem[] {
+  const shares = acaoVariantShares(variant);
   if (variant === "main") {
     return [
       {
@@ -133,6 +162,21 @@ export function stockIntentExtraFaqs(
         question: `${symbol} paga quanto por mês?`,
         answer:
           "Ações da B3 raramente seguem um valor fixo mensal como conta de luz. O ritmo depende da companhia; some os proventos do período que você escolheu e divida pelos meses se quiser uma média educacional.",
+      },
+    ];
+  }
+
+  if (shares) {
+    return [
+      {
+        question: `${symbol}: quanto rende ${shares} cotas?`,
+        answer:
+          "A página calcula com base no valor por ação do histórico disponível na fonte e na quantidade escolhida. É estimativa educacional, sem garantia de proventos futuros.",
+      },
+      {
+        question: `Posso usar ${shares} cotas como cenário inicial e ajustar depois?`,
+        answer:
+          "Sim. O simulador permite alterar a quantidade para comparar cenários e avaliar sensibilidade da renda estimada.",
       },
     ];
   }
