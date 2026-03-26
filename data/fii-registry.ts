@@ -8,7 +8,7 @@
  */
 import type { FiiSeoDefinition } from "./fiis/types";
 import {
-  FII_URL_VARIANTS,
+  FII_URL_VARIANTS_GENERATED,
   fiiMainSlug,
   fiiVariantSlug,
 } from "@/lib/fiis/fii-slug";
@@ -26,10 +26,23 @@ export function fiiPagePath(ticker: string): string {
 /** Lista para `generateStaticParams` em `app/fiis/[slug]` (principal + landings por ticker). */
 export function buildAllFiiSlugStaticParams(): { slug: string }[] {
   const out: { slug: string }[] = [];
+  const strongQuantoRende = new Set([
+    "MXRF11",
+    "HGLG11",
+    "XPML11",
+    "VISC11",
+    "KNRI11",
+    "XPLG11",
+    "RBRR11",
+    "IRDM11",
+    "KNIP11",
+    "CPTS11",
+  ]);
   for (const d of FII_DEFINITIONS) {
     const t = d.ticker.trim().toUpperCase();
     out.push({ slug: fiiMainSlug(t) });
-    for (const v of FII_URL_VARIANTS) {
+    for (const v of FII_URL_VARIANTS_GENERATED) {
+      if (v.startsWith("quanto-rende-") && !strongQuantoRende.has(t)) continue;
       out.push({ slug: fiiVariantSlug(t, v) });
     }
   }
@@ -135,5 +148,107 @@ export const FII_DEFINITIONS: FiiSeoDefinition[] = [
           "São tickers diferentes com prospectos e políticas próprios. Compare regulamentos, taxas e carteiras no site do administrador.",
       },
     ],
+  },
+  {
+    ticker: "XPML11",
+    lastModified: "2026-03-26",
+    fundName: "XP Malls",
+    shortDescription:
+      "FII de shopping centers, comum em buscas sobre renda imobiliária recorrente e exposição ao varejo físico no Brasil.",
+    paymentFrequency:
+      "Distribuições costumam seguir calendário periódico do fundo; confirme datas e valores nos informes do administrador.",
+    historySummary:
+      "O histórico de rendimentos pode variar com ocupação, vendas dos lojistas e gestão da carteira.",
+    faqs: [],
+  },
+  {
+    ticker: "HGRE11",
+    lastModified: "2026-03-26",
+    fundName: "CSHG Real Estate",
+    shortDescription:
+      "FII com foco em lajes corporativas e ativos imobiliários de renda, citado por investidores que comparam fluxo em diferentes segmentos.",
+    paymentFrequency:
+      "Datas e valores de distribuição dependem do resultado do fundo e do calendário oficial de pagamentos.",
+    faqs: [],
+  },
+  {
+    ticker: "VISC11",
+    lastModified: "2026-03-26",
+    fundName: "Vinci Shopping Centers",
+    shortDescription:
+      "FII de shopping centers com gestão ativa, usado em comparações de renda mensal entre FIIs de varejo.",
+    paymentFrequency:
+      "A periodicidade segue o regulamento e os comunicados oficiais do fundo.",
+    faqs: [],
+  },
+  {
+    ticker: "BRCR11",
+    lastModified: "2026-03-26",
+    fundName: "BTG Pactual Corporate Office Fund",
+    shortDescription:
+      "FII associado ao segmento corporativo, útil para quem estuda a relação entre vacância de escritórios e distribuição de rendimentos.",
+    paymentFrequency:
+      "Distribuições variam conforme resultado e política do fundo; sempre confira o informe oficial.",
+    faqs: [],
+  },
+  {
+    ticker: "RBRR11",
+    lastModified: "2026-03-26",
+    fundName: "RBR High Grade",
+    shortDescription:
+      "FII de papel focado em crédito imobiliário, frequentemente comparado com outros fundos de renda por cota.",
+    paymentFrequency:
+      "Pagamentos podem ocorrer de forma periódica, conforme resultado e decisões previstas em regulamento.",
+    faqs: [],
+  },
+  {
+    ticker: "IRDM11",
+    lastModified: "2026-03-26",
+    fundName: "Iridium Recebíveis Imobiliários",
+    shortDescription:
+      "FII de recebíveis imobiliários usado por investidores que buscam comparar renda estimada entre fundos de papel.",
+    paymentFrequency:
+      "O calendário de distribuição segue a política do fundo e pode variar ao longo do tempo.",
+    faqs: [],
+  },
+  {
+    ticker: "HCTR11",
+    lastModified: "2026-03-26",
+    fundName: "Hectare CE",
+    shortDescription:
+      "FII com perfil de crédito imobiliário, citado em buscas por fundos com variação relevante de rendimentos.",
+    paymentFrequency:
+      "Distribuições e valores podem oscilar; acompanhe informes e comunicados oficiais.",
+    faqs: [],
+  },
+  {
+    ticker: "KNIP11",
+    lastModified: "2026-03-26",
+    fundName: "Kinea Índices de Preços",
+    shortDescription:
+      "FII de papel com exposição a instrumentos indexados, útil para comparar cenários de renda em diferentes ciclos de inflação e juros.",
+    paymentFrequency:
+      "A periodicidade é definida pelo regulamento e pelo resultado do fundo em cada período.",
+    faqs: [],
+  },
+  {
+    ticker: "CPTS11",
+    lastModified: "2026-03-26",
+    fundName: "Capitania Securities II",
+    shortDescription:
+      "FII de crédito e títulos imobiliários, usado em análises de renda potencial por cota e comparação entre pares.",
+    paymentFrequency:
+      "Valores distribuídos dependem da carteira e do resultado do fundo, conforme comunicados oficiais.",
+    faqs: [],
+  },
+  {
+    ticker: "VGIR11",
+    lastModified: "2026-03-26",
+    fundName: "Valora RE III",
+    shortDescription:
+      "FII de recebíveis com gestão ativa, relevante para leitores que querem simular fluxo por cota em fundos de papel.",
+    paymentFrequency:
+      "Calendário e valor de distribuição podem variar ao longo do tempo; confirme sempre na fonte oficial.",
+    faqs: [],
   },
 ];

@@ -6,8 +6,10 @@ import { getSeoBaseUrl } from "@/lib/site";
 import { OG_LOCALE, SITE_NAME } from "./constants";
 import type { AcaoUrlVariant } from "@/lib/acoes/acao-slug";
 import { canonicalMainAcaoPath, getStockIntentMetadata } from "@/lib/acoes/stock-intent-seo";
+import { ACAO_URL_VARIANTS_GENERATED } from "@/lib/acoes/acao-slug";
 import type { FiiUrlVariant } from "@/lib/fiis/fii-slug";
 import { canonicalMainFiiPath, getFiiIntentMetadata } from "@/lib/fiis/fii-intent-seo";
+import { FII_URL_VARIANTS_GENERATED } from "@/lib/fiis/fii-slug";
 import { generateDescription, generateTitle } from "@/lib/programmatic/stock-seo";
 
 function absoluteUrl(path: string): string {
@@ -109,13 +111,22 @@ export function buildAcaoSlugPageMetadata(
   const path = `/acoes/${encodeURIComponent(slug.trim())}`;
   const meta = getStockIntentMetadata(symbol, mock, variant);
   const mainPath = canonicalMainAcaoPath(symbol);
-  return buildPageMetadata({
+  const built = buildPageMetadata({
     title: meta.title,
     description: meta.description,
     canonicalPath: path,
     linkCanonicalPath: variant === "main" ? undefined : mainPath,
     keywords: meta.keywords,
   });
+  const generated = new Set<string>(ACAO_URL_VARIANTS_GENERATED);
+  const isLowPriority = variant !== "main" && !generated.has(variant);
+  if (isLowPriority) {
+    return {
+      ...built,
+      robots: { index: false, follow: true, googleBot: { index: false, follow: true } },
+    };
+  }
+  return built;
 }
 
 export function buildFiiPageMetadata(symbol: string, mock: FiiSeoRecord | null): Metadata {
@@ -140,13 +151,22 @@ export function buildFiiSlugPageMetadata(
     nameKw,
   ].filter((k): k is string => Boolean(k));
 
-  return buildPageMetadata({
+  const built = buildPageMetadata({
     title: meta.title,
     description: meta.description,
     canonicalPath: path,
     linkCanonicalPath: variant === "main" ? undefined : mainPath,
     keywords: [...new Set(keywords)],
   });
+  const generated = new Set<string>(FII_URL_VARIANTS_GENERATED);
+  const isLowPriority = variant !== "main" && !generated.has(variant);
+  if (isLowPriority) {
+    return {
+      ...built,
+      robots: { index: false, follow: true, googleBot: { index: false, follow: true } },
+    };
+  }
+  return built;
 }
 
 export function buildFiisIndexMetadata(): Metadata {

@@ -43,6 +43,14 @@ export function getFiiIntentMetadata(
     };
   }
 
+  if (variant === "paga-quanto") {
+    return {
+      title: `${symbol} paga quanto? Rendimentos por cota e simulação`,
+      description: `Quanto ${label} pagou por cota nos dados desta página? Veja referência do último rendimento, histórico e simule o total para sua quantidade de cotas.`,
+      keywords: [...baseKeywords(symbol, mock), "paga quanto", "rendimentos por cota"],
+    };
+  }
+
   if (shares) {
     return {
       title: `${symbol} quanto rendem ${shares} cotas? Simulação de rendimentos`,

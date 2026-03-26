@@ -22,6 +22,20 @@ export function fiiIntentEditorialAddendum(
     ];
   }
 
+  if (variant === "simulador") {
+    return [
+      `Simulador de ${symbol}: informe suas cotas para visualizar estimativas de rendimentos com base no histórico disponível na fonte.`,
+      "A ferramenta ajuda a comparar cenários rapidamente sem transformar histórico em promessa de retorno futuro.",
+    ];
+  }
+
+  if (variant === "paga-quanto") {
+    return [
+      `A pergunta “${symbol} paga quanto?” é respondida aqui com foco no valor por cota do último rendimento e no total estimado para a sua posição.`,
+      `${displayName} pode variar distribuições ao longo do tempo; use o simulador para ajustar a quantidade de cotas e comparar cenários.`,
+    ];
+  }
+
   if (shares) {
     return [
       pickBySeed(`${symbol}-${variant}-a`, [
@@ -52,6 +66,26 @@ export function fiiIntentExtraFaqs(variant: "main" | FiiUrlVariant, symbol: stri
         question: `Como simular dividendos de ${symbol}?`,
         answer:
           "Informe o número de cotas no simulador da página. O cálculo usa valores por cota do histórico disponível na fonte para gerar uma estimativa educacional.",
+      },
+    ];
+  }
+
+  if (variant === "simulador") {
+    return [
+      {
+        question: `Como usar o simulador de ${symbol}?`,
+        answer:
+          "Digite a quantidade de cotas no bloco de simulação. O resultado usa o histórico de rendimentos por cota disponível na fonte para fins educacionais.",
+      },
+    ];
+  }
+
+  if (variant === "paga-quanto") {
+    return [
+      {
+        question: `${symbol} paga quanto por cota?`,
+        answer:
+          "A referência aparece na tabela desta página, com base no último (ou próximo) rendimento disponível na fonte. Multiplique pela sua posição para estimar o total.",
       },
     ];
   }

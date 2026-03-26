@@ -23,6 +23,14 @@ export const ACAO_URL_VARIANTS = [
 ] as const;
 export type AcaoUrlVariant = (typeof ACAO_URL_VARIANTS)[number];
 
+/** Variantes geradas e promovidas (qualidade > volume). */
+export const ACAO_URL_VARIANTS_GENERATED = [
+  "dividendos",
+  "paga-quanto",
+  "simulador",
+  "quanto-paga-dividendos",
+] as const;
+
 /** Variação `quanto-paga-dividendos` só é gerada para estes tickers (landing de intenção específica). */
 export const ACAO_TICKERS_QUANTO_PAGA_DIVIDENDOS: readonly string[] = ["TAEE11"];
 
@@ -67,7 +75,7 @@ export function buildAllAcaoSlugStaticParams(): { slug: string }[] {
   for (const t of tickers) {
     const tu = t.trim().toUpperCase();
     out.push({ slug: acaoMainSlug(t) });
-    for (const v of ACAO_URL_VARIANTS) {
+    for (const v of ACAO_URL_VARIANTS_GENERATED) {
       if (v === "quanto-paga-dividendos" && !quantoSet.has(tu)) continue;
       out.push({ slug: acaoVariantSlug(t, v) });
     }

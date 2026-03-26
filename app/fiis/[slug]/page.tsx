@@ -108,10 +108,12 @@ export default async function FiiSlugPage({ params }: PageProps) {
   const heroTitle =
     variant === "main"
       ? `Rendimentos de ${symbol}`
-      : variant === "simulador-de-dividendos"
+      : variant === "simulador-de-dividendos" || variant === "simulador"
         ? `Simulador de dividendos ${symbol}`
         : variantShares
           ? `${symbol}: quanto rendem ${variantShares} cotas?`
+        : variant === "paga-quanto"
+          ? `${symbol} paga quanto?`
           : `${symbol} paga quanto por mês?`;
 
   const baseEditorial = generateFiiEditorialParagraphs(symbol, displayName, mock);
@@ -124,9 +126,11 @@ export default async function FiiSlugPage({ params }: PageProps) {
       ? "Contexto sobre rendimentos"
       : variantShares
         ? `Quanto rendem ${variantShares} cotas`
-        : variant === "simulador-de-dividendos"
+        : variant === "simulador-de-dividendos" || variant === "simulador"
           ? "Simulador de dividendos"
-          : "Quanto paga por mês em rendimentos";
+          : variant === "paga-quanto"
+            ? "Quanto paga por cota"
+            : "Quanto paga por mês em rendimentos";
 
   const mainMeta = getFiiIntentMetadata(symbol, mock, "main");
   const schemaPath = canonicalMainFiiPath(symbol);

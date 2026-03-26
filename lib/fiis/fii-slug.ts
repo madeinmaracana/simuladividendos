@@ -5,14 +5,25 @@
  * `generateStaticParams` vive em `data/fii-registry.ts` (evita ciclo com a lista de fundos).
  */
 export const FII_VARIANT_PAGA_QUANTO_POR_MES = "paga-quanto-por-mes" as const;
+/** Variantes reconhecidas pelo parser (inclui aliases legados). */
 export const FII_URL_VARIANTS = [
+  "paga-quanto",
   "paga-quanto-por-mes",
+  "simulador",
   "simulador-de-dividendos",
   "quanto-rende-100-cotas",
   "quanto-rende-500-cotas",
   "quanto-rende-1000-cotas",
 ] as const;
 export type FiiUrlVariant = (typeof FII_URL_VARIANTS)[number];
+
+/** Variantes canônicas geradas automaticamente e incluídas no sitemap. */
+export const FII_URL_VARIANTS_GENERATED = [
+  "paga-quanto",
+  "simulador",
+  "quanto-rende-100-cotas",
+  "quanto-rende-1000-cotas",
+] as const;
 
 export type ParsedFiiSlug = {
   ticker: string;

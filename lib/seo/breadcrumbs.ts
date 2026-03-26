@@ -95,6 +95,10 @@ export function breadcrumbsFiiSlug(symbol: string, variant: "main" | FiiUrlVaria
   const label =
     variant === "paga-quanto-por-mes"
       ? "Quanto paga por mês"
+      : variant === "paga-quanto"
+        ? "Paga quanto"
+        : variant === "simulador"
+          ? "Simulador"
       : variant === "simulador-de-dividendos"
         ? "Simulador de dividendos"
         : variant === "quanto-rende-100-cotas"

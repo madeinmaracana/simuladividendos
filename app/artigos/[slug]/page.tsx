@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { ArticleContent } from "@/components/articles/ArticleContent";
@@ -19,12 +19,18 @@ import { ui } from "@/components/ui/classes";
 
 type PageProps = { params: { slug: string } };
 
+/** Consolidação de intenção: slugs antigos redirecionam para a versão principal. */
+const ARTICLE_REDIRECTS: Record<string, string> = {
+  "quanto-investir-para-receber-1000-por-mes": "quanto-investir-para-receber-1000-reais-por-mes",
+};
+
 export function generateStaticParams() {
   return getAllArticleSlugs().map((slug) => ({ slug }));
 }
 
 export function generateMetadata({ params }: PageProps): Metadata {
-  const slug = decodeURIComponent(params.slug).trim().toLowerCase();
+  const slugRaw = decodeURIComponent(params.slug).trim().toLowerCase();
+  const slug = ARTICLE_REDIRECTS[slugRaw] ?? slugRaw;
   const article = getArticleBySlug(slug);
   if (!article) return { title: "Artigo não encontrado" };
   return buildArticlePageMetadata(article);
@@ -32,6 +38,10 @@ export function generateMetadata({ params }: PageProps): Metadata {
 
 export default function ArtigoPage({ params }: PageProps) {
   const slug = decodeURIComponent(params.slug).trim().toLowerCase();
+  const redirected = ARTICLE_REDIRECTS[slug];
+  if (redirected) {
+    redirect(`/artigos/${encodeURIComponent(redirected)}`);
+  }
   const article = getArticleBySlug(slug);
   if (!article) notFound();
 

@@ -1,6 +1,6 @@
 import type { FaqItem } from "@/data/stocks";
 import type { AcaoUrlVariant } from "./acao-slug";
-import { ACAO_TICKERS_QUANTO_PAGA_DIVIDENDOS, ACAO_URL_VARIANTS } from "./acao-slug";
+import { ACAO_TICKERS_QUANTO_PAGA_DIVIDENDOS, ACAO_URL_VARIANTS_GENERATED } from "./acao-slug";
 import { acaoVariantShares } from "./acao-slug";
 
 function pickBySeed(seed: string, options: readonly string[]): string {
@@ -11,7 +11,7 @@ function pickBySeed(seed: string, options: readonly string[]): string {
 
 export function acaoVariantsForTicker(symbol: string): AcaoUrlVariant[] {
   const u = symbol.trim().toUpperCase();
-  return ACAO_URL_VARIANTS.filter(
+  return ACAO_URL_VARIANTS_GENERATED.filter(
     (v) => v !== "quanto-paga-dividendos" || ACAO_TICKERS_QUANTO_PAGA_DIVIDENDOS.includes(u)
   );
 }
