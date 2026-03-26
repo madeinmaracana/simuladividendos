@@ -88,36 +88,36 @@ export default function HomePage() {
       />
 
       <section aria-labelledby="heading-hero-sim" className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-10">
-        <div className="flex flex-col gap-4 lg:col-span-6 lg:pt-6">
-          <p className={ui.eyebrow}>Simula Dividendos</p>
-          <h1 id="heading-hero-sim" className={cn(ui.pageTitle, "text-4xl leading-[1.08] sm:text-5xl")}>
-            Simule dividendos com precisão visual
+        <div className="flex flex-col gap-5 lg:col-span-6 lg:pt-8">
+          <p className={ui.eyebrow}>Simulador de dividendos</p>
+          <h1
+            id="heading-hero-sim"
+            className={cn(ui.pageTitle, "max-w-[18ch] text-4xl leading-[1.06] sm:text-5xl sm:leading-[1.04]")}
+          >
+            Simule quanto você pode receber em dividendos
           </h1>
-          <p className={cn(ui.body, "max-w-xl text-base")}>
-            Minimalista e direto ao ponto: escolha o ticker, informe cotas e veja valores em reais (histórico + datas).
-            Educacional, sem promessa de retorno.
+          <p className={cn(ui.body, "max-w-[56ch] text-base leading-relaxed sm:text-[1.06rem]")}>
+            Compare ações, estime pagamentos e visualize a renda potencial da sua carteira em poucos segundos.
           </p>
 
-          <div className="mt-2 flex flex-wrap gap-2">
-            <span className="font-mono text-xs text-[color:var(--text-soft)]">tabular-nums</span>
-            <span className="font-mono text-xs text-[color:var(--text-soft)]">B3</span>
-            <span className="font-mono text-xs text-[color:var(--text-soft)]">proventos</span>
-          </div>
-
-          <div className="mt-4 flex flex-wrap gap-3">
-            <Link href="/simulador" className={cn(ui.ctaSecondary, "no-underline")}>
-              Abrir simulador completo →
+          <div className="mt-2 flex flex-wrap gap-3">
+            <Link
+              href="#home-ticker-field"
+              className={cn(
+                "no-underline",
+                ui.ctaSecondary,
+                "bg-[var(--surface-muted)] px-6 text-[var(--text)] hover:bg-[var(--border)]"
+              )}
+            >
+              Simular agora
             </Link>
-            <Link href="/fiis" className={cn(ui.pillGhost, "no-underline")}>
-              FIIs
-            </Link>
-            <Link href="/artigos" className={cn(ui.pillGhost, "no-underline")}>
-              Artigos
+            <Link href="/setores" className={cn(ui.ctaSecondary, "no-underline")}>
+              Ver ações
             </Link>
           </div>
         </div>
 
-        <div className="lg:col-span-6">
+        <div className="lg:col-span-6 lg:pl-1">
           <DividendCalculator
             showTickerPicker
             defaultShares={100}
