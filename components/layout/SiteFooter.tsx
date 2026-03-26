@@ -28,14 +28,14 @@ export function SiteFooter() {
               <Link
                 key={href}
                 href={href}
-                className="text-sm text-neutral-600 transition hover:text-teal-800 dark:text-neutral-400 dark:hover:text-teal-300"
+                className="text-sm text-neutral-600 transition hover:text-[color:var(--primary)] dark:text-neutral-400"
               >
                 {label}
               </Link>
             ))}
             <Link
               href="/"
-              className="text-sm text-neutral-600 transition hover:text-teal-800 dark:text-neutral-400 dark:hover:text-teal-300"
+              className="text-sm text-neutral-600 transition hover:text-[color:var(--primary)] dark:text-neutral-400"
             >
               Início
             </Link>

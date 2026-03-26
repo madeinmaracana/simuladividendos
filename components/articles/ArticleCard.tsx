@@ -12,12 +12,12 @@ type ArticleCardProps = {
 export function ArticleCard({ article }: ArticleCardProps) {
   return (
     <article>
-      <Card className="group h-full transition hover:border-teal-300/60 dark:hover:border-teal-800">
+      <Card className="group h-full transition hover:border-[color:var(--primary-soft-border)]">
         <p className={ui.eyebrow}>Artigo</p>
         <h2 className={cn("mt-2 text-left", ui.sectionTitle)}>
           <Link
             href={`/artigos/${article.slug}`}
-            className="transition group-hover:text-teal-800 dark:group-hover:text-teal-300"
+            className="transition group-hover:text-[color:var(--primary)]"
           >
             {article.title}
           </Link>

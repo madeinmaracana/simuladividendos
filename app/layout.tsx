@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import { getSeoBaseUrl } from "@/lib/site";
 import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { SiteFooter } from "@/components/layout/SiteFooter";
@@ -8,9 +8,17 @@ import { cn } from "@/lib/cn";
 import { ui } from "@/components/ui/classes";
 import "./globals.css";
 
-const inter = Inter({
+const plexSans = IBM_Plex_Sans({
   subsets: ["latin"],
-  variable: "--font-inter",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
+const plexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-mono",
   display: "swap",
 });
 
@@ -62,8 +70,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={inter.variable}>
-      <body className={`${inter.className} min-h-screen antialiased`}>
+    <html lang="pt-BR" className={`${plexSans.variable} ${plexMono.variable}`}>
+      <body className={`${plexSans.className} min-h-screen antialiased`}>
         <GoogleAnalytics />
         <div
           className={cn(

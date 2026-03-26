@@ -15,7 +15,7 @@ export function SiteHeader() {
       <div className="flex flex-wrap items-center justify-between gap-4">
         <Link href="/" className="group flex flex-col gap-0.5">
           <span className={cn(ui.eyebrow, "text-[0.65rem] tracking-[0.18em]")}>Ferramenta</span>
-          <span className="text-base font-semibold tracking-tight text-neutral-900 transition group-hover:text-teal-800 dark:text-neutral-100 dark:group-hover:text-teal-300">
+          <span className="text-base font-semibold tracking-tight text-neutral-900 transition group-hover:text-[color:var(--primary)] dark:text-neutral-100">
             Simula Dividendos
           </span>
         </Link>

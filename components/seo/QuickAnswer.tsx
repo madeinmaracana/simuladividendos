@@ -19,14 +19,14 @@ export function QuickAnswer({
     <section
       aria-labelledby={id}
       className={cn(
-        "rounded-xl border border-teal-200/80 bg-teal-50/60 px-4 py-4 dark:border-teal-900/60 dark:bg-teal-950/25",
+        "rounded-[length:var(--radius-lg)] border border-[var(--border)] bg-[var(--surface-muted)] px-4 py-4 shadow-[var(--shadow-sm)]",
         className
       )}
     >
-      <h2 id={id} className={cn(ui.subsectionTitle, "text-teal-900 dark:text-teal-100")}>
+      <h2 id={id} className={cn(ui.subsectionTitle, "text-[color:var(--text)]")}>
         {title}
       </h2>
-      <div className={cn(ui.body, "mt-2 max-w-2xl text-neutral-800 dark:text-neutral-200")}>
+      <div className={cn(ui.body, "mt-2 max-w-2xl text-[color:var(--text)]")}>
         {children}
       </div>
     </section>

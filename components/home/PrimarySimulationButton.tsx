@@ -22,9 +22,8 @@ export function PrimarySimulationButton({
       onClick={onClick}
       disabled={disabled || loading}
       className={cn(
-        "w-full rounded-xl bg-teal-600 px-6 py-4 text-base font-semibold text-white shadow-md transition-shadow",
-        "hover:bg-teal-500 hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600",
-        "disabled:cursor-not-allowed disabled:opacity-60 dark:hover:bg-teal-500",
+        "w-full px-6 py-4 text-base shadow-md transition-shadow",
+        "hover:shadow-lg",
         className
       )}
     >

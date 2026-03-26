@@ -13,23 +13,29 @@ export function DividendTableSimple({ id = "heading-tabela-dividendos", rows }: 
       <h2 id={id} className={cn("text-left", ui.sectionTitle)}>
         Em um relance
       </h2>
-      <div className="mt-4 overflow-x-auto rounded-xl border border-[var(--border)] bg-[var(--card)] shadow-sm dark:shadow-none">
+      <div className="mt-4 overflow-x-auto rounded-[length:var(--radius-lg)] border border-[var(--border)] bg-[var(--surface)] shadow-[var(--shadow-sm)]">
         <table className="w-full min-w-[var(--table-min-glance)] text-left text-sm">
           <thead>
-            <tr className="border-b border-[var(--border)] bg-neutral-50 dark:bg-neutral-900/80">
-              <th className="px-4 py-3 font-semibold text-neutral-700 dark:text-neutral-200">Campo</th>
-              <th className="px-4 py-3 font-semibold text-neutral-700 dark:text-neutral-200">Último</th>
-              <th className="px-4 py-3 font-semibold text-neutral-700 dark:text-neutral-200">Próximo</th>
+            <tr className="border-b border-[var(--border)] bg-[var(--surface-muted)]">
+              <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-[color:var(--text-soft)]">
+                Campo
+              </th>
+              <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-[color:var(--text-soft)]">
+                Último
+              </th>
+              <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-[color:var(--text-soft)]">
+                Próximo
+              </th>
             </tr>
           </thead>
           <tbody className="divide-y divide-[var(--border)]">
             {rows.map((row) => (
-              <tr key={row.label}>
-                <td className="px-4 py-3 text-neutral-600 dark:text-neutral-400">{row.label}</td>
-                <td className="px-4 py-3 font-medium tabular-nums text-neutral-900 dark:text-neutral-100">
+              <tr key={row.label} className="odd:bg-[var(--surface)] even:bg-[var(--surface)]">
+                <td className="px-4 py-3 text-[color:var(--text-secondary)]">{row.label}</td>
+                <td className="px-4 py-3 font-mono font-semibold tabular-nums text-[color:var(--text)]">
                   {row.last}
                 </td>
-                <td className="px-4 py-3 font-medium tabular-nums text-neutral-900 dark:text-neutral-100">
+                <td className="px-4 py-3 font-mono font-semibold tabular-nums text-[color:var(--text)]">
                   {row.next}
                 </td>
               </tr>

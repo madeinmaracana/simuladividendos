@@ -33,7 +33,11 @@ export function StockAcaoIntentNav({ symbol, current }: StockAcaoIntentNavProps)
         <li>
           <Link
             href={mainHref}
-            className={cn(ui.pill, "no-underline", current === "main" && "border-teal-600 bg-teal-50 dark:bg-teal-950/40")}
+            className={cn(
+              ui.pill,
+              "no-underline",
+              current === "main" && "border-[color:var(--primary-soft-border)] bg-[color:var(--primary-soft)]"
+            )}
             aria-current={current === "main" ? "page" : undefined}
           >
             Visão geral
@@ -45,7 +49,11 @@ export function StockAcaoIntentNav({ symbol, current }: StockAcaoIntentNavProps)
             <li key={v}>
               <Link
                 href={href}
-                className={cn(ui.pill, "no-underline", current === v && "border-teal-600 bg-teal-50 dark:bg-teal-950/40")}
+                className={cn(
+                  ui.pill,
+                  "no-underline",
+                  current === v && "border-[color:var(--primary-soft-border)] bg-[color:var(--primary-soft)]"
+                )}
                 aria-current={current === v ? "page" : undefined}
               >
                 {VARIANT_LABEL[v]}

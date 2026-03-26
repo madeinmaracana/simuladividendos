@@ -44,7 +44,7 @@ export function DividendSummaryText({
       {shouldCollapse && !expanded ? (
         <button
           type="button"
-          className="mt-3 text-left text-sm font-medium text-teal-700 hover:underline dark:text-teal-400"
+          className="mt-3 text-left text-sm font-medium text-[color:var(--primary)] hover:underline"
           aria-expanded={false}
           aria-controls={regionId}
           onClick={() => setExpanded(true)}
@@ -56,7 +56,7 @@ export function DividendSummaryText({
       {shouldCollapse && expanded ? (
         <button
           type="button"
-          className="mt-3 text-left text-sm font-medium text-teal-700 hover:underline dark:text-teal-400"
+          className="mt-3 text-left text-sm font-medium text-[color:var(--primary)] hover:underline"
           aria-expanded={true}
           aria-controls={regionId}
           onClick={() => setExpanded(false)}

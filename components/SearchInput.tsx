@@ -225,7 +225,7 @@ export function SearchInput({
                 aria-selected={i === highlight}
                 className={`flex cursor-pointer items-center gap-2 px-2 py-1.5 text-sm ${
                   i === highlight
-                    ? "bg-teal-50 text-teal-900 dark:bg-teal-950/50 dark:text-teal-100"
+                    ? "bg-[color:var(--primary-soft)] text-neutral-900 dark:text-neutral-100"
                     : "text-neutral-800 dark:text-neutral-200"
                 }`}
                 onMouseEnter={() => setHighlight(i)}

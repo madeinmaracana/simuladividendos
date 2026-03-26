@@ -112,7 +112,7 @@ export function HomeSimulatorCard({
         className={cn(
           "mx-auto w-full",
           compactHero &&
-            "border-teal-600/15 shadow-[0_12px_40px_-12px_rgb(15_23_42/0.12)] ring-1 ring-teal-900/5 dark:ring-white/5"
+            "border-[color:var(--primary-soft-border)] shadow-[0_16px_48px_-20px_rgb(15_23_42/0.18)] ring-1 ring-black/5 dark:ring-white/10"
         )}
       >
         {!compactHero ? (

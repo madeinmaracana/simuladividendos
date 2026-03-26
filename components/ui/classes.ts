@@ -5,44 +5,49 @@
 
 export const ui = {
   /** Rótulo acima de campos (eyebrow de página) */
-  eyebrow: "text-xs font-semibold uppercase tracking-[0.14em] text-teal-700 dark:text-teal-400",
+  eyebrow:
+    "text-xs font-semibold uppercase tracking-[0.14em] text-[color:var(--text-soft)]",
   /** Rótulo de métrica / KPI em card */
-  metricLabel: "text-xs font-medium uppercase tracking-wide text-teal-700 dark:text-teal-400",
+  metricLabel:
+    "text-xs font-medium uppercase tracking-wide text-[color:var(--text-soft)]",
   /** Título principal de página (h1) */
-  pageTitle: "text-2xl font-semibold tracking-tight text-neutral-900 sm:text-3xl dark:text-neutral-50",
+  pageTitle:
+    "text-2xl font-semibold tracking-tight text-[color:var(--text)] sm:text-3xl",
   /** Título de seção (h2) */
-  sectionTitle: "text-lg font-semibold tracking-tight text-neutral-900 dark:text-neutral-50",
+  sectionTitle: "text-lg font-semibold tracking-tight text-[color:var(--text)]",
   /** Subtítulo de seção (h3) */
-  subsectionTitle: "text-base font-semibold text-neutral-900 dark:text-neutral-50",
+  subsectionTitle: "text-base font-semibold text-[color:var(--text)]",
   /** Corpo */
-  body: "text-sm leading-relaxed text-neutral-600 dark:text-neutral-400",
-  bodyMuted: "text-xs leading-relaxed text-neutral-500 dark:text-neutral-500",
+  body: "text-sm leading-relaxed text-[color:var(--text-secondary)]",
+  bodyMuted: "text-xs leading-relaxed text-[color:var(--text-soft)]",
   /** Links de texto */
-  link: "font-medium text-teal-700 underline-offset-2 transition hover:text-teal-800 hover:underline dark:text-teal-400 dark:hover:text-teal-300",
+  link:
+    "font-medium text-[color:var(--accent)] underline-offset-2 transition hover:underline",
   /** Chip / pill para tickers e tags */
   pill:
-    "inline-flex items-center rounded-full border border-[var(--border)] bg-[var(--card)] px-3 py-1.5 text-xs font-semibold text-teal-800 shadow-sm transition hover:border-teal-400 hover:bg-teal-50 dark:text-teal-300 dark:hover:border-teal-700 dark:hover:bg-teal-950/40",
+    "inline-flex items-center rounded-full border border-[var(--border)] bg-[var(--surface)] px-3 py-1.5 text-xs font-semibold text-[color:var(--text)] shadow-[var(--shadow-sm)] transition hover:border-[var(--border-strong)] hover:bg-[var(--surface-muted)]",
   pillGhost:
-    "inline-flex items-center rounded-full border border-dashed border-neutral-300 bg-transparent px-3 py-1.5 text-xs font-semibold text-neutral-600 transition hover:border-teal-400 hover:text-teal-800 dark:border-neutral-600 dark:text-neutral-400 dark:hover:text-teal-300",
+    "inline-flex items-center rounded-full border border-dashed border-[var(--border)] bg-transparent px-3 py-1.5 text-xs font-semibold text-[color:var(--text-secondary)] transition hover:border-[var(--border-strong)] hover:text-[color:var(--text)]",
   /** Pill neutro (ex.: slug de setor) */
   pillNeutral:
-    "inline-flex items-center rounded-full border border-[var(--border)] bg-neutral-50/90 px-3 py-1.5 text-xs font-semibold text-neutral-800 shadow-sm transition hover:border-teal-400 hover:bg-teal-50/50 dark:bg-neutral-800/60 dark:text-neutral-200 dark:hover:border-teal-700",
+    "inline-flex items-center rounded-full border border-[var(--border)] bg-[var(--surface-muted)] px-3 py-1.5 text-xs font-semibold text-[color:var(--text)] shadow-[var(--shadow-sm)] transition hover:border-[var(--border-strong)]",
   /** CTA secundário (âncora estilo botão) */
   ctaSecondary:
-    "inline-flex items-center justify-center rounded-[length:var(--radius-input)] border border-[var(--border)] bg-[var(--card)] px-5 py-2.5 text-sm font-semibold text-teal-800 shadow-sm transition hover:border-teal-500/40 hover:bg-teal-50 dark:text-teal-300 dark:hover:bg-teal-950/50",
+    "inline-flex items-center justify-center rounded-[length:var(--radius-md)] border border-[var(--border)] bg-[var(--surface)] px-5 py-2.5 text-sm font-semibold text-[color:var(--text)] shadow-[var(--shadow-sm)] transition hover:border-[var(--border-strong)] hover:bg-[var(--surface-muted)]",
   linkNav:
-    "rounded-lg px-3 py-2 text-sm font-medium text-neutral-600 transition hover:bg-neutral-100 hover:text-teal-800 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:hover:text-teal-300",
+    "rounded-lg px-3 py-2 text-sm font-medium text-[color:var(--text-secondary)] transition hover:bg-[var(--surface-muted)] hover:text-[color:var(--text)]",
   /** Card base (use com Card ou cn) */
-  card: "rounded-2xl border border-[var(--border)] bg-[var(--card)] shadow-card",
+  card:
+    "rounded-[length:var(--radius-lg)] border border-[var(--border)] bg-[var(--surface)] shadow-[var(--shadow-sm)]",
   /** Divisor de página */
-  divider: "border-b border-[var(--border)] pb-6 dark:border-neutral-800",
+  divider: "border-b border-[var(--border)] pb-6",
   /** Listas numeradas / bullets */
   listOrdered: "ml-5 list-decimal space-y-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400",
   listUnordered: "ml-5 list-disc space-y-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400",
   /** Form */
-  label: "text-sm font-medium text-neutral-700 dark:text-neutral-300",
+  label: "text-sm font-medium text-[color:var(--text)]",
   input:
-    "w-full rounded-[length:var(--radius-input)] border border-[var(--border)] bg-[var(--card)] px-3 py-2.5 text-sm text-[var(--foreground)] shadow-sm outline-none transition placeholder:text-neutral-400 focus:border-teal-600 focus:ring-2 focus:ring-teal-600/20 disabled:cursor-not-allowed disabled:opacity-60 dark:placeholder:text-neutral-500",
+    "w-full rounded-[length:var(--radius-md)] border border-[var(--border)] bg-[var(--surface)] px-3 py-2.5 text-sm text-[color:var(--text)] shadow-[var(--shadow-sm)] outline-none transition placeholder:text-[color:var(--text-soft)] focus:border-[var(--border-strong)] focus:ring-2 focus:ring-[color:var(--accent)]/15 disabled:cursor-not-allowed disabled:opacity-60",
   /** Espaçamento vertical entre seções principais (largura total da área útil do layout). */
   stackPage: "flex w-full min-w-0 flex-col gap-10 sm:gap-12",
   stackSection: "flex w-full min-w-0 flex-col gap-4",
@@ -68,5 +73,5 @@ export const ui = {
     "grid w-full min-w-0 grid-cols-1 items-start gap-8 lg:grid-cols-12 lg:gap-x-6 lg:gap-y-0",
   tickerTopMain: "min-w-0 lg:col-span-7",
   tickerTopAside:
-    "min-w-0 w-full rounded-2xl bg-neutral-50/70 p-3 dark:bg-neutral-900/35 lg:col-span-5 lg:p-4",
+    "min-w-0 w-full rounded-[length:var(--radius-lg)] bg-[var(--surface-muted)] p-3 lg:col-span-5 lg:p-4",
 } as const;

@@ -34,29 +34,28 @@ export function DividendResultCard({
   return (
     <div
       className={cn(
-        "flex flex-col rounded-2xl border border-[var(--border)] bg-neutral-50/80 p-6 sm:p-8",
-        "dark:border-neutral-800 dark:bg-neutral-900/40",
+        "flex flex-col rounded-[length:var(--radius-lg)] border border-[var(--border)] bg-[var(--surface)] p-6 shadow-[var(--shadow-sm)] sm:p-8",
         className
       )}
     >
-      <span className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+      <span className="text-xs font-semibold uppercase tracking-wide text-[color:var(--text-soft)]">
         {label}
       </span>
-      <p className="mt-3 text-sm font-medium text-neutral-700 dark:text-neutral-300">{leadShown}</p>
+      <p className="mt-3 text-sm font-medium text-[color:var(--text-secondary)]">{leadShown}</p>
       {isEmpty ? (
         <div className="mt-4 flex flex-col gap-2">
-          <p className="text-sm leading-relaxed text-neutral-500 dark:text-neutral-400">{emptyMessage}</p>
+          <p className="text-sm leading-relaxed text-[color:var(--text-soft)]">{emptyMessage}</p>
           {emptySecondary ? (
-            <p className="text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">{emptySecondary}</p>
+            <p className="text-xs leading-relaxed text-[color:var(--text-soft)]">{emptySecondary}</p>
           ) : null}
         </div>
       ) : (
         <>
-          <p className="mt-2 text-3xl font-bold tabular-nums tracking-tight text-neutral-900 sm:text-4xl dark:text-neutral-50">
+          <p className="mt-2 font-mono text-3xl font-semibold tabular-nums tracking-tight text-[color:var(--text)] sm:text-4xl">
             {value}
           </p>
           {footer ? (
-            <p className="mt-4 whitespace-pre-line text-sm text-neutral-500 dark:text-neutral-400">{footer}</p>
+            <p className="mt-4 whitespace-pre-line text-sm text-[color:var(--text-soft)]">{footer}</p>
           ) : null}
         </>
       )}

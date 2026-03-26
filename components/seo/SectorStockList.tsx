@@ -14,11 +14,11 @@ export function SectorStockList({ stocks }: SectorStockListProps) {
     <ul className="flex flex-col gap-4">
       {stocks.map((s) => (
         <li key={s.ticker}>
-          <Card className="transition hover:border-teal-300/50 dark:hover:border-teal-800/80">
+          <Card className="transition hover:border-[color:var(--primary-soft-border)]">
             <div className="flex flex-wrap items-baseline justify-between gap-2">
               <Link
                 href={getTickerPath(s.ticker)}
-                className="text-lg font-semibold text-teal-700 transition hover:text-teal-800 dark:text-teal-400 dark:hover:text-teal-300"
+                className="text-lg font-semibold text-[color:var(--primary)] transition hover:opacity-90"
               >
                 {s.ticker}
               </Link>

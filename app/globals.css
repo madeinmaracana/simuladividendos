@@ -1,51 +1,46 @@
 @import "tailwindcss";
+@import "./tokens.css";
 
 :root {
-  --background: #f6f8f7;
-  --foreground: #0f172a;
-  --card: #ffffff;
-  --muted: #64748b;
-  --border: #e2e8f0;
-  --accent: #0d9488;
-  --radius-input: 0.5rem;
-  --radius-card: 1rem;
-  /* Largura útil do site; padding horizontal só em `ui.pageShell` (layout.tsx). */
-  --page-max: 72rem;
-  /** Largura máx. do card do simulador na página /simulador (não usar na página de ticker). */
-  --simulator-card-max: 50rem;
-  /** Largura mínima da tabela para scroll horizontal controlado (evita magic numbers soltos). */
-  --table-min-glance: 20rem;
-  --table-min-history: 40rem;
-  --shadow-card: 0 1px 2px rgb(15 23 42 / 0.04), 0 2px 8px rgb(15 23 42 / 0.06);
-  --shadow-card-dark: 0 1px 3px rgb(0 0 0 / 0.45);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0c0f0e;
-    --foreground: #f1f5f9;
-    --card: #141a18;
-    --muted: #94a3b8;
-    --border: #1e293b;
-    --accent: #2dd4bf;
-    --shadow-card: var(--shadow-card-dark);
-  }
+  /* Back-compat vars usadas no projeto (mapeadas para tokens do design system). */
+  --background: var(--bg);
+  --foreground: var(--text);
+  --card: var(--surface);
+  --muted: var(--text-secondary);
+  --primary-hover: var(--primary);
+  --primary-soft: var(--surface-muted);
+  --primary-soft-border: var(--border-strong);
+  --positive: var(--success);
+  --attention: var(--warning);
+  --radius-input: var(--radius-md);
+  --radius-card: var(--radius-lg);
+  --shadow-card: var(--shadow-md);
 }
 
 .shadow-card {
   box-shadow: var(--shadow-card);
 }
 
-.shadow-card-dark {
-  box-shadow: var(--shadow-card-dark);
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
   line-height: 1.625;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+code,
+pre,
+kbd,
+samp {
+  font-family: var(--font-mono);
+}
+
+/* Números financeiros: alinhamento e consistência visual */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
 }
 
 @keyframes simulator-result-in {

@@ -87,24 +87,44 @@ export default function HomePage() {
         })}
       />
 
-      <section aria-labelledby="heading-hero-sim" className="flex flex-col gap-6 sm:gap-8">
-        <div className="flex max-w-3xl flex-col gap-3 sm:gap-4">
+      <section aria-labelledby="heading-hero-sim" className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-10">
+        <div className="flex flex-col gap-4 lg:col-span-6 lg:pt-6">
           <p className={ui.eyebrow}>Simula Dividendos</p>
-          <h1 id="heading-hero-sim" className={cn(ui.pageTitle, "text-3xl sm:text-4xl")}>
-            Simule dividendos de ações da B3
+          <h1 id="heading-hero-sim" className={cn(ui.pageTitle, "text-4xl leading-[1.08] sm:text-5xl")}>
+            Simule dividendos com precisão visual
           </h1>
-          <p className="max-w-xl text-base leading-snug text-neutral-600 dark:text-neutral-400">
-            Escolha uma ação, informe quantas cotas você tem e veja o último e o próximo pagamento — uso educacional,
-            dados públicos.
+          <p className={cn(ui.body, "max-w-xl text-base")}>
+            Minimalista e direto ao ponto: escolha o ticker, informe cotas e veja valores em reais (histórico + datas).
+            Educacional, sem promessa de retorno.
           </p>
+
+          <div className="mt-2 flex flex-wrap gap-2">
+            <span className="font-mono text-xs text-[color:var(--text-soft)]">tabular-nums</span>
+            <span className="font-mono text-xs text-[color:var(--text-soft)]">B3</span>
+            <span className="font-mono text-xs text-[color:var(--text-soft)]">proventos</span>
+          </div>
+
+          <div className="mt-4 flex flex-wrap gap-3">
+            <Link href="/simulador" className={cn(ui.ctaSecondary, "no-underline")}>
+              Abrir simulador completo →
+            </Link>
+            <Link href="/fiis" className={cn(ui.pillGhost, "no-underline")}>
+              FIIs
+            </Link>
+            <Link href="/artigos" className={cn(ui.pillGhost, "no-underline")}>
+              Artigos
+            </Link>
+          </div>
         </div>
 
-        <DividendCalculator
-          showTickerPicker
-          defaultShares={100}
-          simulatorFetchMode="manual"
-          compactHero
-        />
+        <div className="lg:col-span-6">
+          <DividendCalculator
+            showTickerPicker
+            defaultShares={100}
+            simulatorFetchMode="manual"
+            compactHero
+          />
+        </div>
       </section>
 
       <section aria-labelledby="heading-como" className={sectionGap}>
