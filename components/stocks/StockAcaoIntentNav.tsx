@@ -30,8 +30,8 @@ export function StockAcaoIntentNav({ symbol, current }: StockAcaoIntentNavProps)
         Outras páginas sobre {symbol}
       </h2>
       <p className={cn(ui.body, "max-w-2xl")}>
-        Cada URL reforça uma intenção de busca diferente; os dados de proventos são os mesmos da visão geral. Para
-        indexação, o Google usa a página principal do ticker como canônica.
+        Cada URL reforça uma intenção de busca diferente. As páginas prioritárias ficam indexáveis com canonical própria;
+        aliases e variações fracas seguem para a principal.
       </p>
       <ul className="flex flex-wrap gap-2">
         <li>

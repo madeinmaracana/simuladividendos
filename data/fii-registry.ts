@@ -9,6 +9,7 @@
 import type { FiiSeoDefinition } from "./fiis/types";
 import {
   FII_URL_VARIANTS_GENERATED,
+  FII_TICKERS_STRONG_1000,
   fiiMainSlug,
   fiiVariantSlug,
 } from "@/lib/fiis/fii-slug";
@@ -26,23 +27,12 @@ export function fiiPagePath(ticker: string): string {
 /** Lista para `generateStaticParams` em `app/fiis/[slug]` (principal + landings por ticker). */
 export function buildAllFiiSlugStaticParams(): { slug: string }[] {
   const out: { slug: string }[] = [];
-  const strongQuantoRende = new Set([
-    "MXRF11",
-    "HGLG11",
-    "XPML11",
-    "VISC11",
-    "KNRI11",
-    "XPLG11",
-    "RBRR11",
-    "IRDM11",
-    "KNIP11",
-    "CPTS11",
-  ]);
+  const strong1000 = new Set(FII_TICKERS_STRONG_1000.map((x) => x.toUpperCase()));
   for (const d of FII_DEFINITIONS) {
     const t = d.ticker.trim().toUpperCase();
     out.push({ slug: fiiMainSlug(t) });
     for (const v of FII_URL_VARIANTS_GENERATED) {
-      if (v.startsWith("quanto-rende-") && !strongQuantoRende.has(t)) continue;
+      if (v === "quanto-rende-1000-cotas" && !strong1000.has(t)) continue;
       out.push({ slug: fiiVariantSlug(t, v) });
     }
   }

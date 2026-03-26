@@ -6,10 +6,10 @@ import { getSeoBaseUrl } from "@/lib/site";
 import { OG_LOCALE, SITE_NAME } from "./constants";
 import type { AcaoUrlVariant } from "@/lib/acoes/acao-slug";
 import { canonicalMainAcaoPath, getStockIntentMetadata } from "@/lib/acoes/stock-intent-seo";
-import { ACAO_URL_VARIANTS_GENERATED } from "@/lib/acoes/acao-slug";
+import { isAcaoVariantIndexable } from "@/lib/acoes/acao-slug";
 import type { FiiUrlVariant } from "@/lib/fiis/fii-slug";
 import { canonicalMainFiiPath, getFiiIntentMetadata } from "@/lib/fiis/fii-intent-seo";
-import { FII_URL_VARIANTS_GENERATED } from "@/lib/fiis/fii-slug";
+import { isFiiVariantIndexable } from "@/lib/fiis/fii-slug";
 import { generateDescription, generateTitle } from "@/lib/programmatic/stock-seo";
 
 function absoluteUrl(path: string): string {
@@ -111,15 +111,15 @@ export function buildAcaoSlugPageMetadata(
   const path = `/acoes/${encodeURIComponent(slug.trim())}`;
   const meta = getStockIntentMetadata(symbol, mock, variant);
   const mainPath = canonicalMainAcaoPath(symbol);
+  const isIndexable = isAcaoVariantIndexable(symbol, variant);
   const built = buildPageMetadata({
     title: meta.title,
     description: meta.description,
     canonicalPath: path,
-    linkCanonicalPath: variant === "main" ? undefined : mainPath,
+    linkCanonicalPath: variant === "main" || isIndexable ? undefined : mainPath,
     keywords: meta.keywords,
   });
-  const generated = new Set<string>(ACAO_URL_VARIANTS_GENERATED);
-  const isLowPriority = variant !== "main" && !generated.has(variant);
+  const isLowPriority = !isIndexable;
   if (isLowPriority) {
     return {
       ...built,
@@ -143,6 +143,7 @@ export function buildFiiSlugPageMetadata(
   const path = `/fiis/${encodeURIComponent(slug.trim())}`;
   const meta = getFiiIntentMetadata(symbol, mock, variant);
   const mainPath = canonicalMainFiiPath(symbol);
+  const isIndexable = isFiiVariantIndexable(symbol, variant);
   const nameKw = mock?.fundName ?? "";
   const keywords = [
     ...meta.keywords,
@@ -155,11 +156,10 @@ export function buildFiiSlugPageMetadata(
     title: meta.title,
     description: meta.description,
     canonicalPath: path,
-    linkCanonicalPath: variant === "main" ? undefined : mainPath,
+    linkCanonicalPath: variant === "main" || isIndexable ? undefined : mainPath,
     keywords: [...new Set(keywords)],
   });
-  const generated = new Set<string>(FII_URL_VARIANTS_GENERATED);
-  const isLowPriority = variant !== "main" && !generated.has(variant);
+  const isLowPriority = !isIndexable;
   if (isLowPriority) {
     return {
       ...built,
