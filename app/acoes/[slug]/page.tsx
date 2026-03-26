@@ -177,6 +177,9 @@ export default async function AcaoSlugPage({ params }: PageProps) {
                 sectorLabel={sectorLabel}
                 shortDescription={shortDescription}
                 logoUrl={initialStock?.logoUrl ?? undefined}
+                currentPrice={initialStock?.currentPrice ?? initialStock?.regularMarketPrice ?? null}
+                currency={currency}
+                lastUpdated={initialStock?.lastUpdated}
                 title={heroTitle}
               />
             }

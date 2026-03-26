@@ -24,7 +24,7 @@
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: var(--font-sans);
+  font-family: var(--font-sans, var(--ds-font-sans));
   line-height: 1.625;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -35,7 +35,7 @@ code,
 pre,
 kbd,
 samp {
-  font-family: var(--font-mono);
+  font-family: var(--font-mono, var(--ds-font-mono));
 }
 
 /* Números financeiros: alinhamento e consistência visual */

@@ -94,6 +94,9 @@ export function TickerSimulatorTop({
             simulateCta="none"
             compact
             elevated
+            currentPrice={stock?.currentPrice ?? stock?.regularMarketPrice ?? null}
+            currency={currency}
+            lastUpdated={stock?.lastUpdated}
           />
         </div>
       </div>

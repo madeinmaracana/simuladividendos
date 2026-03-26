@@ -192,14 +192,18 @@ export async function getStockData(ticker: string): Promise<StockQuote> {
     throw new BrapiError("Ativo não encontrado. Verifique o ticker.", 404);
   }
 
+  const currentPrice =
+    typeof row.regularMarketPrice === "number" ? row.regularMarketPrice : null;
+
   return {
     symbol: row.symbol ?? symbol,
     shortName: row.shortName ?? symbol,
     longName: row.longName,
     logoUrl:
       typeof row.logourl === "string" && row.logourl.startsWith("http") ? row.logourl : null,
-    regularMarketPrice:
-      typeof row.regularMarketPrice === "number" ? row.regularMarketPrice : null,
+    currentPrice,
+    lastUpdated: new Date().toISOString(),
+    regularMarketPrice: currentPrice,
     currency: row.currency ?? "BRL",
     dividends: normalizeDividends(row),
   };

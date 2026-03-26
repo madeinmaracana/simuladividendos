@@ -150,6 +150,18 @@ export function HomeSimulatorCard({
           />
         </div>
 
+        {stock?.regularMarketPrice != null ? (
+          <p className={cn(ui.bodyMuted, "mt-4 font-mono tabular-nums")}>
+            Preço atual da ação:{" "}
+            {new Intl.NumberFormat("pt-BR", {
+              style: "currency",
+              currency: currency ?? "BRL",
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2,
+            }).format(stock.regularMarketPrice)}
+          </p>
+        ) : null}
+
         {fetchMode === "manual" ? (
           <div className="mt-5">
             <PrimarySimulationButton loading={loading} onClick={() => void handleSimulate()} />

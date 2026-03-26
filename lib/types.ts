@@ -12,6 +12,11 @@ export interface StockQuote {
   longName?: string;
   /** URL do ícone na brapi (geralmente SVG). */
   logoUrl?: string | null;
+  /** Preço atual (ou mais recente) na fonte. */
+  currentPrice?: number | null;
+  /** ISO datetime: quando este dado foi montado/atualizado no servidor. */
+  lastUpdated?: string;
+  /** @deprecated Use `currentPrice`. Mantido por compatibilidade interna. */
   regularMarketPrice: number | null;
   currency: string;
   dividends: DividendEntry[];

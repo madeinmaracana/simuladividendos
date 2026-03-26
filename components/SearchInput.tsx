@@ -64,6 +64,7 @@ export function SearchInput({
   const [loading, setLoading] = useState(false);
   const [suggestions, setSuggestions] = useState<TickerSuggestion[]>([]);
   const [highlight, setHighlight] = useState(0);
+  const [focused, setFocused] = useState(false);
   const wrapRef = useRef<HTMLDivElement>(null);
   const abortRef = useRef<AbortController | null>(null);
 
@@ -112,6 +113,13 @@ export function SearchInput({
   }, [suggestions]);
 
   useEffect(() => {
+    if (!focused) return;
+    if (disabled) return;
+    if (debouncedQuery.length < 2) return;
+    if (suggestions.length > 0) setOpen(true);
+  }, [focused, disabled, debouncedQuery, suggestions.length]);
+
+  useEffect(() => {
     function onDocMouseDown(e: MouseEvent) {
       if (!wrapRef.current?.contains(e.target as Node)) {
         setOpen(false);
@@ -158,8 +166,10 @@ export function SearchInput({
             setOpen(true);
           }}
           onFocus={() => {
+            setFocused(true);
             if (suggestions.length > 0) setOpen(true);
           }}
+          onBlur={() => setFocused(false)}
           onKeyDown={(e) => {
             if (!suggestions.length) return;
             if (e.key === "ArrowDown") {

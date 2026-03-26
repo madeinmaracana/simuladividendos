@@ -27,6 +27,10 @@ export type DividendSimulatorFormProps = {
   elevated?: boolean;
   /** FII: textos falam em rendimentos e renda mensal; ação: dividendos. */
   assetKind?: "stock" | "fii";
+  /** Preço atual (ou mais recente) exibido como contexto (não altera cálculo). */
+  currentPrice?: number | null;
+  currency?: string;
+  lastUpdated?: string;
   className?: string;
   cardClassName?: string;
 };
@@ -45,6 +49,9 @@ export function DividendSimulatorForm({
   compact = false,
   elevated = false,
   assetKind = "stock",
+  currentPrice = null,
+  currency = "BRL",
+  lastUpdated,
   className,
   cardClassName,
 }: DividendSimulatorFormProps) {
@@ -100,6 +107,19 @@ export function DividendSimulatorForm({
 
         <div className={cn("flex flex-col gap-6", compact ? "mt-6" : "mt-8")}>
           <SharesInput id={inputId} value={sharesStr} onChange={onSharesChange} disabled={loading} size="lg" />
+
+          {currentPrice != null ? (
+            <p className={cn(ui.bodyMuted, "font-mono tabular-nums")}>
+              {assetKind === "fii" ? "Preço atual da cota" : "Preço atual da ação"}:{" "}
+              {new Intl.NumberFormat("pt-BR", {
+                style: "currency",
+                currency,
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2,
+              }).format(currentPrice)}
+              {lastUpdated ? ` · atualizado ${new Date(lastUpdated).toLocaleString("pt-BR")}` : ""}
+            </p>
+          ) : null}
 
           {simulateCta === "primary" ? (
             <PrimarySimulationButton loading={loading} onClick={() => onSimulate()} />

@@ -150,6 +150,9 @@ export default async function FiiSlugPage({ params }: PageProps) {
                 fundName={displayName}
                 shortDescription={shortDescription}
                 logoUrl={initialStock?.logoUrl ?? undefined}
+                currentPrice={initialStock?.currentPrice ?? initialStock?.regularMarketPrice ?? null}
+                currency={currency}
+                lastUpdated={initialStock?.lastUpdated}
                 title={heroTitle}
               />
             }
