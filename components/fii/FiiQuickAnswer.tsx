@@ -11,11 +11,12 @@ import { FII_VARIANT_PAGA_QUANTO_POR_MES } from "@/lib/fiis/fii-slug";
 type FiiQuickAnswerProps = {
   symbol: string;
   lastSnap: PerShareSnapshot | null;
+  nextSnap?: PerShareSnapshot | null;
   currency: string;
   variant: "main" | FiiUrlVariant;
 };
 
-export function FiiQuickAnswer({ symbol, lastSnap, currency, variant }: FiiQuickAnswerProps) {
+export function FiiQuickAnswer({ symbol, lastSnap, nextSnap, currency, variant }: FiiQuickAnswerProps) {
   if (variant !== FII_VARIANT_PAGA_QUANTO_POR_MES) return null;
 
   const mainHref = canonicalMainFiiPath(symbol);
@@ -40,14 +41,21 @@ export function FiiQuickAnswer({ symbol, lastSnap, currency, variant }: FiiQuick
   return (
     <QuickAnswer>
       <p>
-        <strong>{symbol}</strong> — último rendimento por cota na fonte:{" "}
+        <strong>{symbol}</strong> — último rendimento por cota <strong>registrado na fonte</strong>:{" "}
         <strong>{formatBRL(lastSnap.amountPerShare, currency)}</strong>, pago em{" "}
         <strong>{formatDatePt(lastSnap.paymentDate)}</strong>.
       </p>
+      {nextSnap ? (
+        <p className="mt-2">
+          Próximo evento na fonte: <strong>{formatBRL(nextSnap.amountPerShare, currency)}</strong> com data{" "}
+          <strong>{formatDatePt(nextSnap.paymentDate)}</strong>.
+        </p>
+      ) : null}
       <p className="mt-2">
-        “Por mês” costuma ser uma média ou expectativa, não um valor fixo. Com <strong>{exampleCotas} cotas</strong>, o
-        último evento equivale a cerca de <strong>{formatBRL(totalEx, currency)}</strong> — ajuste no simulador para a sua
-        posição.
+        “Por mês” costuma ser uma média/expectativa, não um valor fixo. Se aqui aparece um mês antigo (ex.: janeiro),
+        normalmente é porque a fonte ainda não tem pagamentos mais recentes disponíveis. Com{" "}
+        <strong>{exampleCotas} cotas</strong>, o último evento equivale a cerca de{" "}
+        <strong>{formatBRL(totalEx, currency)}</strong> — ajuste no simulador para a sua posição.
       </p>
       <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
         Próximos rendimentos dependem do fundo; confirme no site do administrador.

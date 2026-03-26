@@ -158,7 +158,13 @@ export default async function FiiSlugPage({ params }: PageProps) {
 
         {variant !== "main" ? (
           <TickerPageRow>
-            <FiiQuickAnswer symbol={symbol} lastSnap={lastSnap} currency={currency} variant={variant} />
+            <FiiQuickAnswer
+              symbol={symbol}
+              lastSnap={lastSnap}
+              nextSnap={nextSnap}
+              currency={currency}
+              variant={variant}
+            />
           </TickerPageRow>
         ) : null}
 
