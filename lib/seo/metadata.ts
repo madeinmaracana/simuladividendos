@@ -18,6 +18,30 @@ function absoluteUrl(path: string): string {
   return `${base}${p}`;
 }
 
+/** Injeta imagem OG absoluta (ex.: `/api/og`) e garante Twitter `summary_large_image`. */
+export function withOpenGraphApiImage(metadata: Metadata, ogImageAbsoluteUrl: string): Metadata {
+  const titleStr =
+    typeof metadata.title === "string"
+      ? metadata.title
+      : metadata.title && typeof metadata.title === "object" && "default" in metadata.title
+        ? String((metadata.title as { default?: string }).default ?? "")
+        : "";
+  const alt = titleStr ? `${titleStr} — pré-visualização` : "Pré-visualização — Simula Dividendos";
+
+  return {
+    ...metadata,
+    openGraph: {
+      ...metadata.openGraph,
+      images: [{ url: ogImageAbsoluteUrl, width: 1200, height: 630, alt }],
+    },
+    twitter: {
+      ...metadata.twitter,
+      card: "summary_large_image",
+      images: [ogImageAbsoluteUrl],
+    },
+  };
+}
+
 export type PageMetadataInput = {
   /** Título da página sem sufixo do site (o layout aplica `%s | Simula Dividendos`). */
   title: string;

@@ -40,11 +40,14 @@ import {
   inferPaymentFrequencyLabel,
 } from "@/lib/ticker-page";
 import { generateFiiProgrammaticFAQ } from "@/lib/programmatic/fii-page-seo";
+import { buildAbsoluteOgApiUrl } from "@/lib/og/build-og-api-url";
+import { fetchQuoteForOg, resolvePerShareValueForOg } from "@/lib/og/ticker-og-data";
 import {
   SITE_NAME,
   breadcrumbsFiiSlug,
   buildFiiSlugPageMetadata,
   buildWebPageSchema,
+  withOpenGraphApiImage,
 } from "@/lib/seo";
 
 type PageProps = { params: { slug: string } };
@@ -57,7 +60,23 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const slug = decodeURIComponent(params.slug).trim();
   const { ticker: symbol, variant } = parseFiiSlug(slug);
   const mock = getFiiSeo(symbol);
-  return buildFiiSlugPageMetadata(symbol, mock, slug, variant);
+  const base = buildFiiSlugPageMetadata(symbol, mock, slug, variant);
+
+  const quote = await fetchQuoteForOg(symbol);
+  const valor = resolvePerShareValueForOg(quote);
+  const nome =
+    mock?.fundName?.trim() ||
+    quote?.longName?.trim() ||
+    quote?.shortName?.trim() ||
+    undefined;
+  const ogUrl = buildAbsoluteOgApiUrl({
+    ticker: symbol,
+    nome,
+    valor: valor ?? undefined,
+    tipo: "fii",
+  });
+
+  return withOpenGraphApiImage(base, ogUrl);
 }
 
 export default async function FiiSlugPage({ params }: PageProps) {

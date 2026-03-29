@@ -54,12 +54,15 @@ import { generateTickerSummaryText } from "@/lib/ticker-page";
 import { getPeerTickers, getSectorPath, getStockSeo } from "@/lib/stocks-data";
 import { getArticlesForTicker } from "@/data/articles";
 import { generateFAQ } from "@/lib/programmatic/stock-seo";
+import { buildAbsoluteOgApiUrl } from "@/lib/og/build-og-api-url";
+import { fetchQuoteForOg, resolvePerShareValueForOg } from "@/lib/og/ticker-og-data";
 import {
   SITE_NAME,
   breadcrumbsAcao,
   buildAcaoSlugPageMetadata,
   buildFaqPageSchema,
   buildWebPageSchema,
+  withOpenGraphApiImage,
 } from "@/lib/seo";
 
 type PageProps = { params: { slug: string } };
@@ -72,7 +75,23 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const slug = decodeURIComponent(params.slug).trim();
   const { ticker: symbol, variant } = parseAcaoSlug(slug);
   const mock = getStockSeo(symbol);
-  return buildAcaoSlugPageMetadata(symbol, mock, slug, variant);
+  const base = buildAcaoSlugPageMetadata(symbol, mock, slug, variant);
+
+  const quote = await fetchQuoteForOg(symbol);
+  const valor = resolvePerShareValueForOg(quote);
+  const nome =
+    mock?.companyName?.trim() ||
+    quote?.longName?.trim() ||
+    quote?.shortName?.trim() ||
+    undefined;
+  const ogUrl = buildAbsoluteOgApiUrl({
+    ticker: symbol,
+    nome,
+    valor: valor ?? undefined,
+    tipo: "acao",
+  });
+
+  return withOpenGraphApiImage(base, ogUrl);
 }
 
 export default async function AcaoSlugPage({ params }: PageProps) {

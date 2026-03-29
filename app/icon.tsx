@@ -3,7 +3,7 @@ import { ImageResponse } from "next/og";
 export const size = { width: 32, height: 32 };
 export const contentType = "image/png";
 
-/** Favicon gerado — alinhado ao tema escuro e ao “R$” do SVG em `public/favicon.svg`. */
+/** Favicon — fundo escuro e acento verde (#00E676), alinhado às OG dinâmicas. */
 export default function Icon() {
   return new ImageResponse(
     (
@@ -14,12 +14,12 @@ export default function Icon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: "#0b0b0b",
+          backgroundColor: "#000000",
           borderRadius: 8,
-          fontFamily: "ui-monospace, monospace",
+          fontFamily: 'ui-sans-serif, system-ui, sans-serif',
         }}
       >
-        <span style={{ fontSize: 15, fontWeight: 700, color: "#34d399", letterSpacing: -1 }}>R$</span>
+        <span style={{ fontSize: 20, fontWeight: 800, color: "#00E676", letterSpacing: -1 }}>D</span>
       </div>
     ),
     { ...size }
