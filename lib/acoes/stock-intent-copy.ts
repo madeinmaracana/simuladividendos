@@ -1,4 +1,6 @@
 import type { FaqItem } from "@/data/stocks";
+import { formatBRL, formatDatePt } from "@/lib/format";
+import type { PerShareSnapshot } from "@/lib/ticker-page/derive";
 import type { AcaoUrlVariant } from "./acao-slug";
 import {
   ACAO_TICKERS_QUANTO_PAGA_DIVIDENDOS,
@@ -33,7 +35,7 @@ export function stockIntentHeroTitle(symbol: string, variant: "main" | AcaoUrlVa
   if (shares) return `${symbol}: quanto rendem ${shares} cotas em dividendos?`;
   if (variant === "dividendos") return `${symbol}: dividendos por ação e histórico`;
   if (variant === "quanto-paga-dividendos") return `${symbol} quanto paga de dividendos?`;
-  if (variant === "paga-quanto") return `${symbol} paga quanto em dividendos?`;
+  if (variant === "paga-quanto") return `${symbol} paga quanto?`;
   if (variant === "simulador-de-dividendos") return `Simulador de dividendos ${symbol}`;
   return `Simular dividendos ${symbol}`;
 }
@@ -43,10 +45,51 @@ export function stockIntentEditorialHeading(variant: "main" | AcaoUrlVariant): s
   if (shares) return `Quanto rendem ${shares} cotas`;
   if (variant === "dividendos") return "Dividendos por ação e histórico";
   if (variant === "quanto-paga-dividendos") return "Quanto paga em dividendos por cota";
-  if (variant === "paga-quanto") return "Quanto paga por cota";
+  if (variant === "paga-quanto") return "Contexto e histórico";
   if (variant === "simulador-de-dividendos") return "Simulador de dividendos";
   if (variant === "simulador") return "Simular dividendos com a lista de proventos";
   return "Contexto sobre dividendos";
+}
+
+/** FAQ curta para `/acoes/[ticker]-paga-quanto` (dados reais no texto quando há último provento). */
+export function buildAcaoPagaQuantoFaqs(
+  symbol: string,
+  displayName: string,
+  last: PerShareSnapshot | null,
+  currency: string
+): FaqItem[] {
+  const sym = symbol.trim().toUpperCase();
+  const label = displayName.trim() ? `${displayName.trim()} (${sym})` : sym;
+  const lastAnswer = last
+    ? `Na fonte usada nesta página, o último provento aparece com cerca de ${formatBRL(last.amountPerShare, currency)} por ação, com pagamento em ${formatDatePt(last.paymentDate)}. Eventos futuros dependem de deliberação da companhia.`
+    : `Quando a fonte não traz um pagamento recente, veja a tabela e o histórico abaixo e confira o site de RI para comunicados oficiais.`;
+
+  return [
+    {
+      question: `${sym} paga dividendos?`,
+      answer: `${label} pode pagar dividendos e outros proventos quando há deliberação e os eventos constam na fonte. Não é renda fixa: valores e datas mudam.`,
+    },
+    {
+      question: `Quanto ${sym} pagou no último dividendo?`,
+      answer: lastAnswer,
+    },
+    {
+      question: `Como simular dividendos de ${sym}?`,
+      answer:
+        "Use o simulador nesta página: informe quantas ações você tem. O cálculo multiplica o provento por ação da lista pela quantidade — estimativa educacional.",
+    },
+    {
+      question: `Quanto eu receberia com 100 ações de ${sym}?`,
+      answer: last
+        ? `Multiplique ${formatBRL(last.amountPerShare, currency)} por 100 (último evento na fonte) ou use o simulador com 100 no campo de quantidade.`
+        : "Quando houver valor por ação na fonte, multiplique por 100 ou use o simulador com 100 ações.",
+    },
+    {
+      question: `${sym} paga quanto por mês?`,
+      answer:
+        "Ações na B3 raramente têm valor fixo mensal. Some os proventos do período que lhe interessa e divida pelos meses se quiser uma média educacional — ou use a média mensal quando o topo da página a mostrar.",
+    },
+  ];
 }
 
 export function mergeFaqByQuestion(lists: FaqItem[][]): FaqItem[] {
@@ -97,8 +140,11 @@ export function stockIntentEditorialAddendum(
 
   if (variant === "paga-quanto") {
     return [
-      `A pergunta “${symbol} paga quanto?” costuma significar: (1) quanto por ação na data do comunicado e (2) quanto cai na conta para a minha posição. O primeiro valor está na lista de dividendos por ação; o segundo você obtém ao simular dividendos com suas cotas.`,
-      `Valores futuros não estão garantidos — a companhia pode alterar política, calendário e valores.`,
+      pickBySeed(`${symbol}-pq-ed`, [
+        `O resumo no topo usa os mesmos dados da tabela e do histórico; para decisões reais, confira sempre o RI da companhia.`,
+        `Valores futuros não estão garantidos — política e calendário de proventos podem mudar.`,
+        `Trate os números como referência educacional na fonte integrada, não como promessa de renda.`,
+      ]),
     ];
   }
 
@@ -168,13 +214,7 @@ export function stockIntentExtraFaqs(
   }
 
   if (variant === "paga-quanto") {
-    return [
-      {
-        question: `${symbol} paga quanto por mês?`,
-        answer:
-          "Ações da B3 raramente seguem um valor fixo mensal como conta de luz. O ritmo depende da companhia; some os proventos do período que você escolheu e divida pelos meses se quiser uma média educacional.",
-      },
-    ];
+    return [];
   }
 
   if (shares) {

@@ -24,11 +24,21 @@ export function buildAcaoVejaTambemLinks(symbol: string, currentSlug: string): I
     .map((c) => ({ href: acaoPathFromSlug(c.slug), label: c.label }));
 }
 
-/** Hubs “paga quanto” para interlinking mútuo (máx. 4 itens: principal + 3 pares). */
-const PAGA_QUANTO_CROSS_ORDER = ["PETR4", "TAEE11", "BBAS3", "EGIE3", "VALE3", "ITUB4"] as const;
+/** Prioridade para interlinking mútuo entre landings “paga-quanto”; depois entram os demais tickers do registry. */
+const PAGA_QUANTO_HUB_PRIORITY = [
+  "PETR4",
+  "TAEE11",
+  "BBAS3",
+  "EGIE3",
+  "VALE3",
+  "ITUB4",
+  "ABEV3",
+] as const;
+
+const MAX_PAGA_QUANTO_VEJA_TAMBEM = 5;
 
 /**
- * “Veja também” só para `/acoes/[ticker]-paga-quanto`: visão geral + outras landings paga-quanto.
+ * “Veja também” para `/acoes/[ticker]-paga-quanto`: visão geral + até 3 outras landings paga-quanto + simulador (máx. 5).
  */
 export function buildAcaoPagaQuantoVejaTambem(symbol: string): InternalLinkItem[] {
   const u = symbol.trim().toUpperCase();
@@ -36,16 +46,28 @@ export function buildAcaoPagaQuantoVejaTambem(symbol: string): InternalLinkItem[
   const items: InternalLinkItem[] = [
     { href: acaoPathFromSlug(acaoMainSlug(u)), label: `${u}: visão geral` },
   ];
-  for (const t of PAGA_QUANTO_CROSS_ORDER) {
+
+  const ordered: string[] = [];
+  for (const t of PAGA_QUANTO_HUB_PRIORITY) {
+    if (allowed.has(t) && !ordered.includes(t)) ordered.push(t);
+  }
+  for (const t of [...allowed].sort((a, b) => a.localeCompare(b, "pt-BR"))) {
+    if (!ordered.includes(t)) ordered.push(t);
+  }
+
+  let cross = 0;
+  for (const t of ordered) {
     if (t === u) continue;
-    if (!allowed.has(t)) continue;
     items.push({
       href: acaoPathFromSlug(acaoVariantSlug(t, "paga-quanto")),
       label: `${t}: paga quanto?`,
     });
-    if (items.length >= 4) break;
+    cross++;
+    if (cross >= 3) break;
   }
-  return items.slice(0, 4);
+
+  items.push({ href: "/simulador", label: "Simulador geral" });
+  return items.slice(0, MAX_PAGA_QUANTO_VEJA_TAMBEM);
 }
 
 /** Até 4 links de intenção (exclui a página atual). */

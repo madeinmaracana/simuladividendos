@@ -5,6 +5,12 @@ import { acaoMainSlug, acaoVariantShares } from "./acao-slug";
 
 type IntentMeta = { title: string; description: string; keywords: string[] };
 
+function pickBySeed(seed: string, options: readonly string[]): string {
+  let h = 0;
+  for (let i = 0; i < seed.length; i++) h = (h * 31 + seed.charCodeAt(i)) >>> 0;
+  return options[h % options.length] ?? options[0]!;
+}
+
 function baseKeywords(symbol: string, mock: StockSeoRecord | null): string[] {
   return [
     symbol,
@@ -64,9 +70,15 @@ export function getStockIntentMetadata(
 
   if (variant === "paga-quanto") {
     const subject = name ? `${name} (${symbol})` : symbol;
+    const tickerAlone = symbol.trim().toUpperCase();
+    const description = pickBySeed(tickerAlone, [
+      `Veja quanto ${subject} paga de dividendos por ação e simule quanto você receberia com diferentes quantidades.`,
+      `Confira quanto ${subject} pagou por ação na fonte, um resumo rápido no topo e simule dividendos com a sua posição — conteúdo educacional.`,
+      `${tickerAlone} paga quanto em proventos? Veja valores por ação, histórico resumido e use o simulador para estimar o total com 100 ações ou outra quantidade.`,
+    ]);
     return {
       title: `${symbol} paga quanto? Veja dividendos e simulação`,
-      description: `Veja quanto ${subject} paga de dividendos por ação e simule quanto você receberia com diferentes quantidades.`,
+      description,
       keywords: [
         ...baseKeywords(symbol, mock),
         "paga quanto",

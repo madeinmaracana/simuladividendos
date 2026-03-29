@@ -59,7 +59,7 @@ export function buildSearchIntentTeaserLines(input: SearchIntentTeaserInput): [
           { text: " paga cerca de ", bold: false },
           { text: brPer, bold: true },
           {
-            text: " por ação por mês, com base nos últimos pagamentos disponíveis na fonte.",
+            text: " por ação nos últimos pagamentos (média mensal na fonte).",
             bold: false,
           },
         ]

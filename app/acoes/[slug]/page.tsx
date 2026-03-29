@@ -30,6 +30,7 @@ import {
 } from "@/lib/acoes/acao-slug";
 import { canonicalMainAcaoPath, getStockIntentMetadata } from "@/lib/acoes/stock-intent-seo";
 import {
+  buildAcaoPagaQuantoFaqs,
   mergeFaqByQuestion,
   stockIntentEditorialAddendum,
   stockIntentEditorialHeading,
@@ -57,6 +58,7 @@ import {
   SITE_NAME,
   breadcrumbsAcao,
   buildAcaoSlugPageMetadata,
+  buildFaqPageSchema,
   buildWebPageSchema,
 } from "@/lib/seo";
 
@@ -123,6 +125,9 @@ export default async function AcaoSlugPage({ params }: PageProps) {
   const peers = mock ? getPeerTickers(mock.ticker) : [];
 
   const faqItems = mergeFaqByQuestion([
+    variant === "paga-quanto"
+      ? buildAcaoPagaQuantoFaqs(symbol, displayName, lastSnap, currency)
+      : [],
     stockIntentExtraFaqs(variant, symbol),
     generateFAQ(symbol, mock, lastSnap, nextSnap, frequencyHint, currency),
   ]);
@@ -147,12 +152,14 @@ export default async function AcaoSlugPage({ params }: PageProps) {
 
   const intentParas = stockIntentEditorialAddendum(variant, symbol, displayName);
   const editorialParagraphs =
-    variant === "main"
-      ? [...baseEditorial, ...intentParas]
-      : [
-          ...intentParas,
-          `A tabela e o histórico abaixo usam a mesma fonte da visão geral de ${symbol}; a diferença está no texto e nas perguntas frequentes, alinhados à sua busca.`,
-        ];
+    variant === "paga-quanto"
+      ? intentParas
+      : variant === "main"
+        ? [...baseEditorial, ...intentParas]
+        : [
+            ...intentParas,
+            `A tabela e o histórico abaixo usam a mesma fonte da visão geral de ${symbol}; a diferença está no texto e nas perguntas frequentes, alinhados à sua busca.`,
+          ];
 
   const pagePath = acaoPathFromSlug(slug);
   const indexable = isAcaoVariantIndexable(symbol, variant);
@@ -161,14 +168,20 @@ export default async function AcaoSlugPage({ params }: PageProps) {
   const schemaPath = indexable ? pagePath : canonicalMainAcaoPath(symbol);
   const schemaMeta = indexable ? variantMeta : mainMeta;
 
+  const webPageJsonLd = buildWebPageSchema({
+    name: `${schemaMeta.title} | ${SITE_NAME}`,
+    description: schemaMeta.description,
+    path: schemaPath,
+  });
+
   return (
     <main className="w-full min-w-0">
       <JsonLd
-        data={buildWebPageSchema({
-          name: `${schemaMeta.title} | ${SITE_NAME}`,
-          description: schemaMeta.description,
-          path: schemaPath,
-        })}
+        data={
+          variant === "paga-quanto"
+            ? [webPageJsonLd, buildFaqPageSchema(faqItems.slice(0, 12))]
+            : webPageJsonLd
+        }
       />
       <TickerPageLayout>
         <TickerPageRow>
@@ -202,7 +215,7 @@ export default async function AcaoSlugPage({ params }: PageProps) {
                     symbol={symbol}
                     currency={currency}
                     dividends={dividends}
-                    simulationShares={intentSimulationShares}
+                    simulationShares={variant === "paga-quanto" ? 100 : intentSimulationShares}
                     assetKind="stock"
                     stockCopyProfile={variant === "paga-quanto" ? "paga-quanto" : "default"}
                   />
@@ -227,7 +240,7 @@ export default async function AcaoSlugPage({ params }: PageProps) {
           />
         </TickerPageRow>
 
-        {variant !== "main" && (
+        {variant !== "main" && variant !== "paga-quanto" && (
           <TickerPageRow>
             <StockQuickAnswer symbol={symbol} lastSnap={lastSnap} currency={currency} variant={variant} />
           </TickerPageRow>
@@ -237,16 +250,31 @@ export default async function AcaoSlugPage({ params }: PageProps) {
           <DividendSummaryText text={summaryText} />
         </TickerPageRow>
 
-        <TickerPageRow>
-          <TickerEditorialSection
-            paragraphs={editorialParagraphs}
-            sectionTitle={stockIntentEditorialHeading(variant)}
-          />
-        </TickerPageRow>
-
-        <TickerPageRow>
-          <DividendTableSimple rows={tableRows} />
-        </TickerPageRow>
+        {variant === "paga-quanto" ? (
+          <>
+            <TickerPageRow>
+              <DividendTableSimple rows={tableRows} />
+            </TickerPageRow>
+            <TickerPageRow>
+              <TickerEditorialSection
+                paragraphs={editorialParagraphs}
+                sectionTitle={stockIntentEditorialHeading(variant)}
+              />
+            </TickerPageRow>
+          </>
+        ) : (
+          <>
+            <TickerPageRow>
+              <TickerEditorialSection
+                paragraphs={editorialParagraphs}
+                sectionTitle={stockIntentEditorialHeading(variant)}
+              />
+            </TickerPageRow>
+            <TickerPageRow>
+              <DividendTableSimple rows={tableRows} />
+            </TickerPageRow>
+          </>
+        )}
 
         {(yieldDisp || metrics.avgMonthlyPerShare || metrics.total12mPerShare) && (
           <TickerPageRow>
