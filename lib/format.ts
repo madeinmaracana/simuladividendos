@@ -7,6 +7,14 @@ export function formatBRL(value: number, currency: string = "BRL"): string {
   }).format(value);
 }
 
+/** Mesmo valor que `formatBRL`, sem espaços tipográficos (NBSP) — seguro para query strings e OG. */
+export function formatBRLForOg(value: number, currency: string = "BRL"): string {
+  return formatBRL(value, currency)
+    .replace(/\u00a0/g, " ")
+    .replace(/\u202f/g, " ")
+    .trim();
+}
+
 /** Alias explícito para textos gerados (páginas de ticker). */
 export const formatCurrencyBRL = formatBRL;
 

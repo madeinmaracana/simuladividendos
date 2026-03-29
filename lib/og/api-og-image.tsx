@@ -131,7 +131,7 @@ export function createApiOgImageResponse(input: ApiOgImageInput) {
                   opacity: 0.92,
                 }}
               >
-                por {input.assetLabel}
+                {`por ${input.assetLabel}`}
               </div>
             </div>
           ) : (
@@ -216,8 +216,29 @@ export function createApiOgImageResponse(input: ApiOgImageInput) {
         </div>
       </div>
     ),
-    { ...OG_API_SIZE }
+    {
+      width: OG_API_SIZE.width,
+      height: OG_API_SIZE.height,
+      headers: {
+        // Evita cache “immutable” de 1 ano com corpo vazio (Edge) e permite atualizar dividendos.
+        "Cache-Control": "public, s-maxage=900, stale-while-revalidate=86400",
+      },
+    }
   );
+}
+
+/** Fallback garantido (sem logo/valor externos) se a rota falhar. */
+export function createApiOgSafeFallbackResponse(
+  ticker: string,
+  assetLabel: "ação" | "cota" = "ação"
+) {
+  return createApiOgImageResponse({
+    ticker,
+    entityName: null,
+    valorFormatted: null,
+    assetLabel,
+    logoDataUrl: null,
+  });
 }
 
 /** Monta `ImageResponse` após buscar a logo (data URL) — uso na rota `/api/og`. */
@@ -228,7 +249,12 @@ export async function createApiOgImageResponseFromTicker(input: {
   assetLabel: "ação" | "cota";
   logoRemoteUrl: string | null;
 }) {
-  const logoDataUrl = await fetchLogoAsDataUrl(input.logoRemoteUrl);
+  let logoDataUrl: string | null = null;
+  try {
+    logoDataUrl = await fetchLogoAsDataUrl(input.logoRemoteUrl);
+  } catch {
+    logoDataUrl = null;
+  }
   return createApiOgImageResponse({
     ticker: input.ticker,
     entityName: input.nome,

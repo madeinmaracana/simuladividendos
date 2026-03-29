@@ -32,7 +32,15 @@ export function withOpenGraphApiImage(metadata: Metadata, ogImageAbsoluteUrl: st
     ...metadata,
     openGraph: {
       ...metadata.openGraph,
-      images: [{ url: ogImageAbsoluteUrl, width: 1200, height: 630, alt }],
+      images: [
+        {
+          url: ogImageAbsoluteUrl,
+          width: 1200,
+          height: 630,
+          alt,
+          type: "image/png",
+        },
+      ],
     },
     twitter: {
       ...metadata.twitter,

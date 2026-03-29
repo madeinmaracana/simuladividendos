@@ -22,9 +22,14 @@ export function buildAbsoluteOgApiUrl(input: OgApiUrlInput): string {
   const nome = input.nome?.trim();
   if (nome) u.searchParams.set("nome", nome.slice(0, 120));
 
-  const valor = input.valor?.trim();
+  const valor = input.valor
+    ?.replace(/\u00a0/g, " ")
+    .replace(/\u202f/g, " ")
+    .trim();
   if (valor) u.searchParams.set("valor", valor.slice(0, 40));
 
   u.searchParams.set("tipo", input.tipo === "fii" ? "fii" : "acao");
+  /** Bust de cache CDN após correção de corpo vazio / headers. */
+  u.searchParams.set("ogv", "2");
   return u.toString();
 }

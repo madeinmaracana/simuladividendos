@@ -1,5 +1,5 @@
 import { calculateDividends } from "@/lib/calculations";
-import { formatBRL } from "@/lib/format";
+import { formatBRLForOg } from "@/lib/format";
 import { getLastPerShareSnapshot } from "@/lib/ticker-page/derive";
 import type { StockQuote } from "@/lib/types";
 
@@ -15,14 +15,19 @@ function arrayBufferToBase64(buf: ArrayBuffer): string {
  * Para logo local no futuro: em `fetchQuoteForOg` ou aqui, testar primeiro
  * `public/logos/{TICKER}.png` e servir via `getSeoBaseUrl()` + path absoluto.
  */
+const MAX_LOGO_BYTES = 750_000;
+
 export async function fetchLogoAsDataUrl(url: string | null | undefined): Promise<string | null> {
   if (!url || !url.startsWith("http")) return null;
   try {
     const res = await fetch(url, { next: { revalidate: 3600 } });
     if (!res.ok) return null;
     const buf = await res.arrayBuffer();
+    if (buf.byteLength > MAX_LOGO_BYTES) return null;
     const ct = res.headers.get("content-type")?.split(";")[0]?.trim() || "image/png";
     if (!ct.startsWith("image/")) return null;
+    // Satori costuma falhar com SVG/WebP em alguns casos — só embute raster comum.
+    if (ct.includes("svg") || ct === "image/webp") return null;
     return `data:${ct};base64,${arrayBufferToBase64(buf)}`;
   } catch {
     return null;
@@ -104,9 +109,9 @@ export function resolvePerShareValueForOg(stock: StockQuote | null): string | nu
     calc.monthlyAvgEstimate > 0 &&
     Number.isFinite(calc.monthlyAvgEstimate);
   if (useMonthly) {
-    return formatBRL(calc.monthlyAvgEstimate, stock.currency);
+    return formatBRLForOg(calc.monthlyAvgEstimate, stock.currency);
   }
   const last = getLastPerShareSnapshot(stock.dividends);
   if (!last || last.amountPerShare <= 0) return null;
-  return formatBRL(last.amountPerShare, stock.currency);
+  return formatBRLForOg(last.amountPerShare, stock.currency);
 }
