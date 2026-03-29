@@ -9,7 +9,7 @@ import { canonicalMainAcaoPath, getStockIntentMetadata } from "@/lib/acoes/stock
 import { isAcaoVariantIndexable } from "@/lib/acoes/acao-slug";
 import type { FiiUrlVariant } from "@/lib/fiis/fii-slug";
 import { canonicalMainFiiPath, getFiiIntentMetadata } from "@/lib/fiis/fii-intent-seo";
-import { isFiiVariantIndexable } from "@/lib/fiis/fii-slug";
+import { isFiiVariantIndexable } from "@/data/fii-registry";
 import { generateDescription, generateTitle } from "@/lib/programmatic/stock-seo";
 
 function absoluteUrl(path: string): string {
@@ -126,7 +126,10 @@ export function buildAcaoSlugPageMetadata(
       robots: { index: false, follow: true, googleBot: { index: false, follow: true } },
     };
   }
-  return built;
+  return {
+    ...built,
+    robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
+  };
 }
 
 export function buildFiiPageMetadata(symbol: string, mock: FiiSeoRecord | null): Metadata {
@@ -166,7 +169,10 @@ export function buildFiiSlugPageMetadata(
       robots: { index: false, follow: true, googleBot: { index: false, follow: true } },
     };
   }
-  return built;
+  return {
+    ...built,
+    robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
+  };
 }
 
 export function buildFiisIndexMetadata(): Metadata {

@@ -6,3 +6,5 @@ export * from "./faqs";
 export * from "./calc";
 export * from "./table";
 export * from "./editorial";
+export * from "./intent-teaser";
+export * from "./interlinking";

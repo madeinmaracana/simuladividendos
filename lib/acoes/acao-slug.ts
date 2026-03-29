@@ -2,8 +2,7 @@
  * URLs de ações: página principal `/acoes/PETR4` e variações de intenção `/acoes/petr4-dividendos`, etc.
  * Slug das variações usa ticker em minúsculas + sufixo (SEO e leitura humana).
  *
- * SEO: variações definem `rel=canonical` (e og:url) para a página principal do ticker; JSON-LD WebPage idem.
- * Links internos do site devem preferir `getTickerPath` / maiúsculas (visão geral).
+ * SEO: variantes indexáveis usam canonical própria; demais apontam à página principal. Ver {@link isAcaoVariantIndexable}.
  */
 import { getAllMockTickers } from "@/data/stocks";
 
@@ -110,13 +109,8 @@ export function acaoVariantShares(variant: "main" | AcaoUrlVariant): number | nu
   return null;
 }
 
-/** Regra de indexação por intenção (qualidade > volume, reduz canibalização). */
-export function isAcaoVariantIndexable(ticker: string, variant: "main" | AcaoUrlVariant): boolean {
+/** Long tail indexável em ações: principal + `paga-quanto`. Demais variantes geradas ficam noindex (canonical → principal). */
+export function isAcaoVariantIndexable(_ticker: string, variant: "main" | AcaoUrlVariant): boolean {
   if (variant === "main") return true;
-  if (variant === "paga-quanto" || variant === "quanto-rende-100-cotas" || variant === "simulador") return true;
-  if (variant === "quanto-rende-1000-cotas") {
-    const t = ticker.trim().toUpperCase();
-    return ACAO_TICKERS_STRONG_1000.map((x) => x.toUpperCase()).includes(t);
-  }
-  return false;
+  return variant === "paga-quanto";
 }

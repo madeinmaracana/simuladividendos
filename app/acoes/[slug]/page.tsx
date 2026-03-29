@@ -6,6 +6,7 @@ import { StockFAQ } from "@/components/stocks/StockFAQ";
 import { RelatedTickers } from "@/components/stocks/RelatedTickers";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { TickerPageLayout, TickerPageRow } from "@/components/layout/TickerPageLayout";
+import { ProgrammaticTickerInterlinking } from "@/components/seo/ProgrammaticTickerInterlinking";
 import { RelatedArticlesSection } from "@/components/seo/RelatedArticlesSection";
 import { StockQuickAnswer } from "@/components/stocks/StockQuickAnswer";
 import {
@@ -13,13 +14,20 @@ import {
   DividendHistorySection,
   DividendSummaryText,
   DividendTableSimple,
+  SearchIntentTeaser,
   TickerHero,
   TickerInternalNav,
   TickerMiniMetrics,
   TickerEditorialSection,
   TickerSimulatorTop,
 } from "@/components/ticker";
-import { acaoPathFromSlug, buildAllAcaoSlugStaticParams, parseAcaoSlug } from "@/lib/acoes/acao-slug";
+import {
+  acaoPathFromSlug,
+  acaoVariantShares,
+  buildAllAcaoSlugStaticParams,
+  isAcaoVariantIndexable,
+  parseAcaoSlug,
+} from "@/lib/acoes/acao-slug";
 import { canonicalMainAcaoPath, getStockIntentMetadata } from "@/lib/acoes/stock-intent-seo";
 import {
   mergeFaqByQuestion,
@@ -30,6 +38,8 @@ import {
 } from "@/lib/acoes/stock-intent-copy";
 import { BrapiError, getStockData } from "@/lib/brapi";
 import {
+  buildAcaoRelacionadosLinks,
+  buildAcaoVejaTambemLinks,
   buildDividendTableRows,
   deriveOptionalMetrics,
   formatYieldForDisplay,
@@ -117,6 +127,7 @@ export default async function AcaoSlugPage({ params }: PageProps) {
   ]);
 
   const heroTitle = stockIntentHeroTitle(symbol, variant);
+  const intentSimulationShares = acaoVariantShares(variant) ?? 100;
 
   const baseEditorial = generateTickerSummaryText({
     symbol,
@@ -141,16 +152,18 @@ export default async function AcaoSlugPage({ params }: PageProps) {
         ];
 
   const pagePath = acaoPathFromSlug(slug);
-  /** Mesma entidade WebPage que a principal: alinhada ao `rel=canonical` nas variações. */
+  const indexable = isAcaoVariantIndexable(symbol, variant);
   const mainMeta = getStockIntentMetadata(symbol, mock, "main");
-  const schemaPath = canonicalMainAcaoPath(symbol);
+  const variantMeta = getStockIntentMetadata(symbol, mock, variant);
+  const schemaPath = indexable ? pagePath : canonicalMainAcaoPath(symbol);
+  const schemaMeta = indexable ? variantMeta : mainMeta;
 
   return (
     <main className="w-full min-w-0">
       <JsonLd
         data={buildWebPageSchema({
-          name: `${mainMeta.title} | ${SITE_NAME}`,
-          description: mainMeta.description,
+          name: `${schemaMeta.title} | ${SITE_NAME}`,
+          description: schemaMeta.description,
           path: schemaPath,
         })}
       />
@@ -181,7 +194,31 @@ export default async function AcaoSlugPage({ params }: PageProps) {
                 currency={currency}
                 lastUpdated={initialStock?.lastUpdated}
                 title={heroTitle}
+                afterTitle={
+                  <SearchIntentTeaser
+                    symbol={symbol}
+                    currency={currency}
+                    dividends={dividends}
+                    simulationShares={intentSimulationShares}
+                    assetKind="stock"
+                  />
+                }
               />
+            }
+          />
+        </TickerPageRow>
+
+        <TickerPageRow>
+          <ProgrammaticTickerInterlinking
+            vejaTambem={buildAcaoVejaTambemLinks(symbol, slug)}
+            outrosAtivos={mock ? buildAcaoRelacionadosLinks(peers, symbol) : []}
+            sectorHub={
+              mock
+                ? {
+                    href: getSectorPath(mock.sectorSlug),
+                    label: `Ver todas as ações em ${mock.sectorLabel}`,
+                  }
+                : { href: "/setores", label: "Explorar setores na B3" }
             }
           />
         </TickerPageRow>

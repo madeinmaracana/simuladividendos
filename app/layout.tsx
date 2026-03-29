@@ -73,14 +73,16 @@ export default function RootLayout({
     <html lang="pt-BR" className={`${plexSans.variable} ${plexMono.variable}`}>
       <body className={`${plexSans.className} min-h-screen antialiased`}>
         <GoogleAnalytics />
-        <div
-          className={cn(
-            "flex min-h-screen flex-col pb-0 pt-2 sm:pt-4",
-            ui.pageShell
-          )}
-        >
-          <SiteHeader />
-          <div className="flex-1">{children}</div>
+        <div className="flex min-h-screen flex-col">
+          <div
+            className={cn(
+              "flex min-h-0 flex-1 flex-col pb-0 pt-2 sm:pt-4",
+              ui.pageShell
+            )}
+          >
+            <SiteHeader />
+            <div className="flex-1">{children}</div>
+          </div>
           <SiteFooter />
         </div>
       </body>

@@ -7,12 +7,8 @@
  * Proventos exibidos na página vêm da API; estes campos são contexto editorial e FAQ.
  */
 import type { FiiSeoDefinition } from "./fiis/types";
-import {
-  FII_URL_VARIANTS_GENERATED,
-  FII_TICKERS_STRONG_1000,
-  fiiMainSlug,
-  fiiVariantSlug,
-} from "@/lib/fiis/fii-slug";
+import type { FiiUrlVariant } from "@/lib/fiis/fii-slug";
+import { FII_URL_VARIANTS_GENERATED, fiiMainSlug, fiiVariantSlug } from "@/lib/fiis/fii-slug";
 
 export type { FiiSeoDefinition as FiiProgrammaticRecord } from "./fiis/types";
 
@@ -27,12 +23,10 @@ export function fiiPagePath(ticker: string): string {
 /** Lista para `generateStaticParams` em `app/fiis/[slug]` (principal + landings por ticker). */
 export function buildAllFiiSlugStaticParams(): { slug: string }[] {
   const out: { slug: string }[] = [];
-  const strong1000 = new Set(FII_TICKERS_STRONG_1000.map((x) => x.toUpperCase()));
   for (const d of FII_DEFINITIONS) {
     const t = d.ticker.trim().toUpperCase();
     out.push({ slug: fiiMainSlug(t) });
     for (const v of FII_URL_VARIANTS_GENERATED) {
-      if (v === "quanto-rende-1000-cotas" && !strong1000.has(t)) continue;
       out.push({ slug: fiiVariantSlug(t, v) });
     }
   }
@@ -242,3 +236,27 @@ export const FII_DEFINITIONS: FiiSeoDefinition[] = [
     faqs: [],
   },
 ];
+
+const PROGRAMMATIC_FII_TICKERS = new Set(
+  FII_DEFINITIONS.map((d) => d.ticker.trim().toUpperCase())
+);
+
+export function isProgrammaticFiiTicker(ticker: string): boolean {
+  return PROGRAMMATIC_FII_TICKERS.has(ticker.trim().toUpperCase());
+}
+
+/**
+ * URLs indexáveis (long tail): principal + paga-quanto + quanto-rende (100 e 1000 cotas em todos os FIIs do registry) + simulador.
+ * Noindex: aliases (`paga-quanto-por-mes`, `simulador-de-dividendos`, `quanto-rende-500-cotas`).
+ */
+export function isFiiVariantIndexable(ticker: string, variant: "main" | FiiUrlVariant): boolean {
+  if (variant === "main") return true;
+  const t = ticker.trim().toUpperCase();
+  if (!PROGRAMMATIC_FII_TICKERS.has(t)) return false;
+  return (
+    variant === "paga-quanto" ||
+    variant === "simulador" ||
+    variant === "quanto-rende-100-cotas" ||
+    variant === "quanto-rende-1000-cotas"
+  );
+}

@@ -213,7 +213,7 @@ export function SearchInput({
               />
             ) : (
               <span
-                className="flex h-7 w-7 items-center justify-center rounded-md bg-neutral-100 text-[10px] font-semibold text-neutral-500 dark:bg-neutral-800 dark:text-neutral-400 sm:h-8 sm:w-8"
+                className="flex h-7 w-7 items-center justify-center rounded-md bg-neutral-100 text-xs font-semibold text-neutral-500 dark:bg-neutral-800 dark:text-neutral-400 sm:h-8 sm:w-8"
                 aria-hidden
               >
                 {value.trim().slice(0, 2)}
@@ -260,7 +260,7 @@ export function SearchInput({
                   />
                 ) : (
                   <span
-                    className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-neutral-100 text-[10px] font-semibold text-neutral-500 dark:bg-neutral-800 dark:text-neutral-400"
+                    className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-neutral-100 text-xs font-semibold text-neutral-500 dark:bg-neutral-800 dark:text-neutral-400"
                     aria-hidden
                   >
                     {s.symbol.slice(0, 2)}

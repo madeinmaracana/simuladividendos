@@ -12,13 +12,13 @@ export const ui = {
     "text-xs font-medium uppercase tracking-wide text-[color:var(--text-soft)]",
   /** Título principal de página (h1) */
   pageTitle:
-    "text-2xl font-semibold tracking-tight text-[color:var(--text)] sm:text-3xl",
+    "text-2xl font-semibold tracking-tight text-[color:var(--text)] sm:text-[32px]",
   /** Título de seção (h2) */
-  sectionTitle: "text-lg font-semibold tracking-tight text-[color:var(--text)]",
+  sectionTitle: "text-xl font-semibold tracking-tight text-[color:var(--text)]",
   /** Subtítulo de seção (h3) */
   subsectionTitle: "text-base font-semibold text-[color:var(--text)]",
   /** Corpo */
-  body: "text-sm leading-relaxed text-[color:var(--text-muted)]",
+  body: "text-base leading-relaxed text-[color:var(--text-muted)]",
   bodyMuted: "text-xs leading-relaxed text-[color:var(--text-soft)]",
   /** Links de texto */
   link:
@@ -33,21 +33,21 @@ export const ui = {
     "inline-flex items-center rounded-full border border-[var(--border)] bg-[var(--surface-muted)] px-3 py-1.5 text-xs font-semibold text-[color:var(--text)] shadow-[var(--shadow-sm)] transition hover:border-[var(--border-strong)]",
   /** CTA secundário (âncora estilo botão) */
   ctaSecondary:
-    "inline-flex items-center justify-center rounded-[length:var(--radius-md)] border border-[var(--border)] bg-[var(--surface)] px-5 py-2.5 text-sm font-semibold text-[color:var(--text)] shadow-[var(--shadow-sm)] transition hover:border-[var(--border-strong)] hover:bg-[var(--surface-muted)]",
+    "inline-flex items-center justify-center rounded-[length:var(--radius-md)] border border-[var(--border)] bg-[var(--surface)] px-5 py-2.5 text-base font-semibold text-[color:var(--text)] shadow-[var(--shadow-sm)] transition hover:border-[var(--border-strong)] hover:bg-[var(--surface-muted)]",
   linkNav:
-    "rounded-lg px-3 py-2 text-sm font-medium text-[color:var(--text-muted)] transition hover:bg-[var(--surface-muted)] hover:text-[color:var(--text)]",
+    "rounded-lg px-3 py-2 text-base font-medium text-[color:var(--text-muted)] transition hover:bg-[var(--surface-muted)] hover:text-[color:var(--text)]",
   /** Card base (use com Card ou cn) */
   card:
     "rounded-[length:var(--radius-lg)] border border-[var(--border)] bg-[var(--surface)] shadow-[var(--shadow-sm)]",
   /** Divisor de página */
   divider: "border-b border-[var(--border)] pb-6",
   /** Listas numeradas / bullets */
-  listOrdered: "ml-5 list-decimal space-y-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400",
-  listUnordered: "ml-5 list-disc space-y-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400",
+  listOrdered: "ml-5 list-decimal space-y-2 text-base leading-relaxed text-neutral-600 dark:text-neutral-400",
+  listUnordered: "ml-5 list-disc space-y-2 text-base leading-relaxed text-neutral-600 dark:text-neutral-400",
   /** Form */
-  label: "text-sm font-medium text-[color:var(--text)]",
+  label: "text-base font-medium text-[color:var(--text)]",
   input:
-    "w-full rounded-[length:var(--radius-md)] border border-[var(--border)] bg-[var(--surface)] px-3 py-2.5 text-sm text-[color:var(--text)] shadow-[var(--shadow-sm)] outline-none transition placeholder:text-[color:var(--text-soft)] focus:border-[var(--border-strong)] focus:ring-2 focus:ring-[color:var(--accent)]/15 disabled:cursor-not-allowed disabled:opacity-60",
+    "w-full rounded-[length:var(--radius-md)] border border-[var(--border)] bg-[var(--surface)] px-3 py-2.5 text-base text-[color:var(--text)] shadow-[var(--shadow-sm)] outline-none transition placeholder:text-[color:var(--text-soft)] focus:border-[var(--border-strong)] focus:ring-2 focus:ring-[color:var(--accent)]/15 disabled:cursor-not-allowed disabled:opacity-60",
   /** Espaçamento vertical entre seções principais (largura total da área útil do layout). */
   stackPage: "flex w-full min-w-0 flex-col gap-10 sm:gap-12",
   stackSection: "flex w-full min-w-0 flex-col gap-4",

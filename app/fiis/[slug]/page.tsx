@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { ProgrammaticTickerInterlinking } from "@/components/seo/ProgrammaticTickerInterlinking";
 import { RelatedArticlesSection } from "@/components/seo/RelatedArticlesSection";
 import { StockFAQ } from "@/components/stocks/StockFAQ";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
@@ -18,19 +19,22 @@ import {
   DividendHistorySection,
   DividendSummaryText,
   DividendTableSimple,
+  SearchIntentTeaser,
   TickerEditorialSection,
 } from "@/components/ticker";
 import { mergeFaqByQuestion } from "@/lib/acoes/stock-intent-copy";
 import { BrapiError, getStockData } from "@/lib/brapi";
 import { getArticlesForFii } from "@/data/articles";
-import { buildAllFiiSlugStaticParams } from "@/data/fii-registry";
+import { buildAllFiiSlugStaticParams, isFiiVariantIndexable } from "@/data/fii-registry";
 import { getFiiSeo, getPeerFiis } from "@/data/fiis";
 import { fiiIntentEditorialAddendum, fiiIntentExtraFaqs } from "@/lib/fiis/fii-intent-copy";
 import { canonicalMainFiiPath, getFiiIntentMetadata } from "@/lib/fiis/fii-intent-seo";
-import { fiiVariantShares, parseFiiSlug } from "@/lib/fiis/fii-slug";
+import { fiiPathFromSlug, fiiVariantShares, parseFiiSlug } from "@/lib/fiis/fii-slug";
 import { generateFiiEditorialParagraphs, generateFiiSummaryParagraph } from "@/lib/fii-page";
 import {
   buildDividendTableRows,
+  buildFiiRelacionadosLinks,
+  buildFiiVejaTambemLinks,
   getLastPerShareSnapshot,
   getNextPerShareSnapshot,
   inferPaymentFrequencyLabel,
@@ -132,15 +136,19 @@ export default async function FiiSlugPage({ params }: PageProps) {
             ? "Quanto paga por cota"
             : "Quanto paga por mês em rendimentos";
 
+  const pagePath = fiiPathFromSlug(slug);
+  const indexable = isFiiVariantIndexable(symbol, variant);
   const mainMeta = getFiiIntentMetadata(symbol, mock, "main");
-  const schemaPath = canonicalMainFiiPath(symbol);
+  const variantMeta = getFiiIntentMetadata(symbol, mock, variant);
+  const schemaPath = indexable ? pagePath : canonicalMainFiiPath(symbol);
+  const schemaMeta = indexable ? variantMeta : mainMeta;
 
   return (
     <main className="w-full min-w-0">
       <JsonLd
         data={buildWebPageSchema({
-          name: `${mainMeta.title} | ${SITE_NAME}`,
-          description: mainMeta.description,
+          name: `${schemaMeta.title} | ${SITE_NAME}`,
+          description: schemaMeta.description,
           path: schemaPath,
         })}
       />
@@ -169,8 +177,24 @@ export default async function FiiSlugPage({ params }: PageProps) {
                 currency={currency}
                 lastUpdated={initialStock?.lastUpdated}
                 title={heroTitle}
+                afterTitle={
+                  <SearchIntentTeaser
+                    symbol={symbol}
+                    currency={currency}
+                    dividends={dividends}
+                    simulationShares={variantShares ?? 100}
+                    assetKind="fii"
+                  />
+                }
               />
             }
+          />
+        </TickerPageRow>
+
+        <TickerPageRow>
+          <ProgrammaticTickerInterlinking
+            vejaTambem={buildFiiVejaTambemLinks(symbol, slug)}
+            outrosAtivos={buildFiiRelacionadosLinks(peers, symbol)}
           />
         </TickerPageRow>
 

@@ -1,10 +1,5 @@
 import Link from "next/link";
-import {
-  FII_URL_VARIANTS_GENERATED,
-  fiiPathFromSlug,
-  fiiVariantSlug,
-  isFiiVariantIndexable,
-} from "@/lib/fiis/fii-slug";
+import { FII_URL_VARIANTS_GENERATED, fiiPathFromSlug, fiiVariantSlug } from "@/lib/fiis/fii-slug";
 import { cn } from "@/lib/cn";
 import { ui } from "@/components/ui/classes";
 
@@ -29,7 +24,7 @@ export function FiiIntentLandingLinks({ symbol }: FiiIntentLandingLinksProps) {
         Variações programáticas por intenção de busca e quantidade de cotas (mesmos dados, texto adaptado por contexto).
       </p>
       <div className="flex flex-wrap gap-2">
-        {FII_URL_VARIANTS_GENERATED.filter((v) => isFiiVariantIndexable(u, v)).map((v) => (
+        {FII_URL_VARIANTS_GENERATED.map((v) => (
           <Link key={v} href={fiiPathFromSlug(fiiVariantSlug(u, v))} className={cn(ui.pill, "w-fit no-underline")}>
             {labels[v]}
           </Link>

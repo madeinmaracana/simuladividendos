@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { ReactNode } from "react";
 import { cn } from "@/lib/cn";
 import { ui } from "@/components/ui/classes";
 
@@ -11,6 +12,8 @@ export type FiiHeroProps = {
   currency?: string;
   lastUpdated?: string;
   title: string;
+  /** Conteúdo logo abaixo do H1 (ex.: resumo para intenção de busca). */
+  afterTitle?: ReactNode;
 };
 
 export function FiiHero({
@@ -22,6 +25,7 @@ export function FiiHero({
   currency = "BRL",
   lastUpdated,
   title,
+  afterTitle,
 }: FiiHeroProps) {
   return (
     <header className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
@@ -46,6 +50,7 @@ export function FiiHero({
           ) : null}
         </div>
         <h1 className={cn("text-left", ui.pageTitle)}>{title}</h1>
+        {afterTitle}
         <p className="text-left text-sm font-medium text-[color:var(--text-secondary)]">{fundName}</p>
         <p className={cn(ui.body, "text-pretty")}>{shortDescription}</p>
         {currentPrice != null && lastUpdated ? (

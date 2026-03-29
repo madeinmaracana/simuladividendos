@@ -21,7 +21,10 @@ export function SharesInput({
 }: SharesInputProps) {
   return (
     <div className="flex flex-col gap-2">
-      <label htmlFor={id} className={cn(ui.label, size === "lg" && "text-[0.9375rem] font-semibold text-neutral-800 dark:text-neutral-200")}>
+      <label
+        htmlFor={id}
+        className={cn(ui.label, size === "lg" && "text-base font-medium text-[color:var(--text)]")}
+      >
         Quantidade de ações
       </label>
       <input
@@ -35,7 +38,7 @@ export function SharesInput({
         onChange={(e) => onChange(e.target.value)}
         className={cn(
           ui.input,
-          size === "lg" && "min-h-[52px] py-3 text-lg font-semibold tabular-nums"
+          size === "lg" && "min-h-[52px] py-3 text-base font-medium tabular-nums"
         )}
       />
     </div>

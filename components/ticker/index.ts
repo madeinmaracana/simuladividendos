@@ -1,4 +1,5 @@
 export { TickerHero } from "./TickerHero";
+export { SearchIntentTeaser } from "./SearchIntentTeaser";
 export { DividendSummaryText } from "./DividendSummaryText";
 export { DividendTableSimple } from "./DividendTableSimple";
 export type { DividendTableColumn } from "@/lib/ticker-page/table";

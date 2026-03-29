@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { ReactNode } from "react";
 import { cn } from "@/lib/cn";
 import { ui } from "@/components/ui/classes";
 
@@ -13,6 +14,8 @@ export type TickerHeroProps = {
   lastUpdated?: string;
   /** Ex.: "Dividendos de TAEE11" */
   title: string;
+  /** Conteúdo logo abaixo do H1 (ex.: resumo para intenção de busca). */
+  afterTitle?: ReactNode;
   /**
    * `split`: coluna esquerda ao lado do simulador (sem divisor inferior; logo alinhado ao topo).
    * `default`: layout completo da página de ticker isolada.
@@ -30,6 +33,7 @@ export function TickerHero({
   currency = "BRL",
   lastUpdated,
   title,
+  afterTitle,
   variant = "default",
 }: TickerHeroProps) {
   const isSplit = variant === "split";
@@ -62,6 +66,7 @@ export function TickerHero({
           ) : null}
         </div>
         <h1 className={cn("text-left", ui.pageTitle)}>{title}</h1>
+        {afterTitle}
         <p className="text-left text-sm font-medium text-[color:var(--text-secondary)]">{companyName}</p>
         <p className={cn(ui.body, "text-pretty")}>{shortDescription}</p>
         {currentPrice != null && lastUpdated ? (

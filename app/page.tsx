@@ -52,7 +52,7 @@ const faq: FaqItem[] = [
 ];
 
 const sectionGap = "flex w-full min-w-0 flex-col gap-3 sm:gap-4";
-const sectionTitle = cn(ui.sectionTitle, "text-base sm:text-lg");
+const sectionTitle = cn(ui.sectionTitle, "text-base sm:text-xl");
 
 /** Artigos em destaque na home (intenção de busca + FIIs). */
 const HOME_ARTICLE_SLUGS: string[] = [
@@ -87,8 +87,8 @@ export default function HomePage() {
         })}
       />
 
-      <section aria-labelledby="heading-hero-sim" className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-10">
-        <div className="flex flex-col gap-5 lg:col-span-6 lg:pt-8">
+      <section aria-labelledby="heading-hero-sim" className="grid grid-cols-1 gap-9 lg:grid-cols-12 lg:gap-10">
+        <div className="flex flex-col gap-5 lg:col-span-6 lg:pt-10">
           <p className={ui.eyebrow}>Simulador de dividendos</p>
           <h1
             id="heading-hero-sim"
@@ -96,11 +96,11 @@ export default function HomePage() {
           >
             Simule quanto você pode receber em dividendos
           </h1>
-          <p className={cn(ui.body, "max-w-[56ch] text-base leading-relaxed sm:text-[1.06rem]")}>
+          <p className={cn(ui.body, "max-w-[56ch] text-base leading-relaxed text-[color:var(--text-muted)] sm:text-base")}>
             Compare ações, estime pagamentos e visualize a renda potencial da sua carteira em poucos segundos.
           </p>
 
-          <div className="mt-2 flex flex-wrap gap-3">
+          <div className="mt-1 flex flex-wrap gap-3">
             <Link
               href="#home-ticker-field"
               className={cn(

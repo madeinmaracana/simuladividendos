@@ -112,7 +112,7 @@ export function HomeSimulatorCard({
         className={cn(
           "mx-auto w-full",
           compactHero &&
-            "border-[color:var(--primary-soft-border)] shadow-[0_16px_48px_-20px_rgb(15_23_42/0.18)] ring-1 ring-black/5 dark:ring-white/10"
+            "max-w-[576px] border-[color:#E2E2E0] p-8 md:p-9 shadow-[0_6px_18px_rgba(0,0,0,0.08)] ring-1 ring-black/5 dark:ring-white/10"
         )}
       >
         {!compactHero ? (
@@ -184,7 +184,7 @@ export function HomeSimulatorCard({
         ) : null}
 
         {compactHero && fetchMode === "manual" ? (
-          <p className={cn(ui.bodyMuted, "mt-4 text-center sm:text-left")}>
+          <p className={cn(ui.bodyMuted, "mt-4 text-center text-[color:#5F5F5F] sm:text-left")}>
             Depois de carregar, altere a quantidade de ações para atualizar os valores na hora.
           </p>
         ) : null}
@@ -220,7 +220,7 @@ export function HomeSimulatorCard({
       <p
         className={cn(
           ui.bodyMuted,
-          "mx-auto w-full max-w-[var(--simulator-card-max)] text-center sm:text-left"
+          "mx-auto w-full max-w-[var(--simulator-card-max)] text-center text-[color:#5F5F5F] sm:text-left"
         )}
       >
         Fonte pública de proventos. Não é recomendação de investimento.

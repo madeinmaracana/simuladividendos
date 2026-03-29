@@ -1,6 +1,6 @@
 /**
- * URLs de FIIs: principal `/fiis/MXRF11` e variações de intenção, ex. `/fiis/mxrf11-paga-quanto-por-mes`.
- * Variações usam `rel=canonical` para a página principal do ticker (igual às ações).
+ * URLs de FIIs: principal `/fiis/MXRF11` e variações de intenção.
+ * Indexação/canonical/sitemap: ver {@link isFiiVariantIndexable} em `data/fii-registry.ts`.
  *
  * `generateStaticParams` vive em `data/fii-registry.ts` (evita ciclo com a lista de fundos).
  */
@@ -23,20 +23,6 @@ export const FII_URL_VARIANTS_GENERATED = [
   "simulador",
   "quanto-rende-100-cotas",
   "quanto-rende-1000-cotas",
-] as const;
-
-/** Em FIIs, `quanto-rende-1000-cotas` só para fundos mais fortes. */
-export const FII_TICKERS_STRONG_1000: readonly string[] = [
-  "MXRF11",
-  "HGLG11",
-  "XPML11",
-  "VISC11",
-  "KNRI11",
-  "XPLG11",
-  "RBRR11",
-  "IRDM11",
-  "KNIP11",
-  "CPTS11",
 ] as const;
 
 export type ParsedFiiSlug = {
@@ -79,15 +65,4 @@ export function fiiVariantShares(variant: "main" | FiiUrlVariant): number | null
     return Number.isFinite(n) && n > 0 ? n : null;
   }
   return null;
-}
-
-/** Regra de indexação por intenção (qualidade > volume, reduz canibalização). */
-export function isFiiVariantIndexable(ticker: string, variant: "main" | FiiUrlVariant): boolean {
-  if (variant === "main") return true;
-  if (variant === "paga-quanto" || variant === "simulador" || variant === "quanto-rende-100-cotas") return true;
-  if (variant === "quanto-rende-1000-cotas") {
-    const t = ticker.trim().toUpperCase();
-    return FII_TICKERS_STRONG_1000.map((x) => x.toUpperCase()).includes(t);
-  }
-  return false;
 }

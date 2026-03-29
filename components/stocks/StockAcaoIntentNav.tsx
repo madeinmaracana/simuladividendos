@@ -30,8 +30,8 @@ export function StockAcaoIntentNav({ symbol, current }: StockAcaoIntentNavProps)
         Outras páginas sobre {symbol}
       </h2>
       <p className={cn(ui.body, "max-w-2xl")}>
-        Cada URL reforça uma intenção de busca diferente. As páginas prioritárias ficam indexáveis com canonical própria;
-        aliases e variações fracas seguem para a principal.
+        Cada URL reforça uma intenção de busca. Para indexação, priorizamos a visão geral e a página “quanto paga”; as
+        demais variações seguem acessíveis, em geral com canonical para a principal.
       </p>
       <ul className="flex flex-wrap gap-2">
         <li>

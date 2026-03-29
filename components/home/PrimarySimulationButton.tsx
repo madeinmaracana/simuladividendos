@@ -22,8 +22,8 @@ export function PrimarySimulationButton({
       onClick={onClick}
       disabled={disabled || loading}
       className={cn(
-        "w-full px-6 py-4 text-base shadow-md transition-shadow",
-        "hover:shadow-lg",
+        "min-h-[52px] w-full px-6 text-sm shadow-[0_4px_6px_-1px_rgba(0,0,0,0.10),0_2px_4px_-2px_rgba(0,0,0,0.10)] transition-shadow",
+        "hover:shadow-[0_6px_10px_-2px_rgba(0,0,0,0.12),0_3px_6px_-2px_rgba(0,0,0,0.10)]",
         className
       )}
     >

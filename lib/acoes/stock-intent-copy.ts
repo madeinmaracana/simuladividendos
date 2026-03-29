@@ -1,7 +1,11 @@
 import type { FaqItem } from "@/data/stocks";
 import type { AcaoUrlVariant } from "./acao-slug";
-import { ACAO_URL_VARIANTS, isAcaoVariantIndexable } from "./acao-slug";
-import { acaoVariantShares } from "./acao-slug";
+import {
+  ACAO_TICKERS_QUANTO_PAGA_DIVIDENDOS,
+  ACAO_TICKERS_STRONG_1000,
+  ACAO_URL_VARIANTS_GENERATED,
+  acaoVariantShares,
+} from "./acao-slug";
 
 function pickBySeed(seed: string, options: readonly string[]): string {
   let h = 0;
@@ -9,8 +13,18 @@ function pickBySeed(seed: string, options: readonly string[]): string {
   return options[h % options.length] ?? options[0]!;
 }
 
+/** Links na UI: mesmas URLs que `buildAllAcaoSlugStaticParams` (independente de indexação). */
 export function acaoVariantsForTicker(symbol: string): AcaoUrlVariant[] {
-  return ACAO_URL_VARIANTS.filter((v) => isAcaoVariantIndexable(symbol, v));
+  const u = symbol.trim().toUpperCase();
+  const quantoSet = new Set(ACAO_TICKERS_QUANTO_PAGA_DIVIDENDOS.map((x) => x.toUpperCase()));
+  const strong1000 = new Set(ACAO_TICKERS_STRONG_1000.map((x) => x.toUpperCase()));
+  const out: AcaoUrlVariant[] = [];
+  for (const v of ACAO_URL_VARIANTS_GENERATED) {
+    if (v === "quanto-paga-dividendos" && !quantoSet.has(u)) continue;
+    out.push(v);
+  }
+  if (strong1000.has(u)) out.push("quanto-rende-1000-cotas");
+  return out;
 }
 
 export function stockIntentHeroTitle(symbol: string, variant: "main" | AcaoUrlVariant): string {
