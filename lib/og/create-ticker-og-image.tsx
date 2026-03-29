@@ -5,12 +5,17 @@ export const OG_SIZE = { width: 1200, height: 630 } as const;
 
 const BG = "#0b0b0b";
 const TEXT = "#ededed";
-const MUTED = "#a1a1a1";
+const MUTED = "#8c8c8c";
 const ACCENT = "#34d399";
-const BORDER = "#1f1f1f";
+const BORDER = "#262626";
 
+/**
+ * Hierarquia: ticker (médio) → pergunta (forte) → valor (máximo) → contexto.
+ * Logo à esquerda; sem logo, o box mostra o ticker em tamanho médio.
+ */
 export function createTickerOgImageResponse(payload: TickerOgPayload) {
-  const { symbol, headline, subline, perShareLine, logoDataUrl } = payload;
+  const { symbol, question, entityName, perShareValue, assetLabel, logoDataUrl, contextLine } =
+    payload;
 
   return new ImageResponse(
     (
@@ -21,9 +26,8 @@ export function createTickerOgImageResponse(payload: TickerOgPayload) {
           height: "100%",
           display: "flex",
           flexDirection: "row",
-          alignItems: "center",
-          justifyContent: "space-between",
-          padding: 56,
+          alignItems: "stretch",
+          padding: 52,
           backgroundColor: BG,
           border: `1px solid ${BORDER}`,
           fontFamily:
@@ -33,30 +37,30 @@ export function createTickerOgImageResponse(payload: TickerOgPayload) {
         <div
           style={{
             display: "flex",
-            width: 200,
-            height: 200,
+            width: 176,
+            minWidth: 176,
             alignItems: "center",
             justifyContent: "center",
-            borderRadius: 24,
+            borderRadius: 20,
             backgroundColor: "#141414",
             border: `1px solid ${BORDER}`,
             overflow: "hidden",
-            flexShrink: 0,
+            alignSelf: "center",
           }}
         >
           {logoDataUrl ? (
-            <img src={logoDataUrl} alt="" width={160} height={160} style={{ objectFit: "contain" }} />
+            <img src={logoDataUrl} alt="" width={140} height={140} style={{ objectFit: "contain" }} />
           ) : (
             <span
               style={{
-                fontSize: 52,
-                fontWeight: 700,
-                color: TEXT,
-                letterSpacing: "-0.02em",
+                fontSize: 44,
+                fontWeight: 800,
+                color: ACCENT,
+                letterSpacing: -2,
                 fontFamily: "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace",
               }}
             >
-              {symbol}
+              R$
             </span>
           )}
         </div>
@@ -66,41 +70,120 @@ export function createTickerOgImageResponse(payload: TickerOgPayload) {
             display: "flex",
             flexDirection: "column",
             flex: 1,
-            marginLeft: 48,
-            gap: 16,
+            marginLeft: 44,
             justifyContent: "center",
             minWidth: 0,
+            gap: 0,
           }}
         >
+          {/* Ticker — médio */}
           <div
             style={{
-              fontSize: 52,
+              fontSize: 34,
               fontWeight: 700,
-              color: TEXT,
-              lineHeight: 1.15,
-              letterSpacing: "-0.03em",
+              color: MUTED,
+              letterSpacing: "-0.02em",
+              fontFamily: "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace",
+              marginBottom: 10,
             }}
           >
-            {headline}
+            {symbol}
           </div>
-          {subline ? (
-            <div style={{ fontSize: 28, color: MUTED, fontWeight: 500 }}>{subline}</div>
+
+          {/* Pergunta — forte */}
+          <div
+            style={{
+              fontSize: 48,
+              fontWeight: 800,
+              color: TEXT,
+              lineHeight: 1.12,
+              letterSpacing: "-0.04em",
+              marginBottom: entityName ? 8 : 20,
+            }}
+          >
+            {question}
+          </div>
+
+          {entityName ? (
+            <div
+              style={{
+                fontSize: 24,
+                fontWeight: 500,
+                color: MUTED,
+                marginBottom: 20,
+                lineHeight: 1.3,
+              }}
+            >
+              {entityName}
+            </div>
           ) : null}
-          {perShareLine ? (
-            <div style={{ fontSize: 26, color: ACCENT, fontWeight: 600, marginTop: 8 }}>{perShareLine}</div>
+
+          {/* Valor — muito forte (central visual do cartão) */}
+          {perShareValue ? (
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                marginBottom: 18,
+              }}
+            >
+              <div
+                style={{
+                  fontSize: 86,
+                  fontWeight: 800,
+                  color: ACCENT,
+                  letterSpacing: "-0.04em",
+                  lineHeight: 1,
+                }}
+              >
+                {perShareValue}
+              </div>
+              <div
+                style={{
+                  fontSize: 28,
+                  fontWeight: 600,
+                  color: ACCENT,
+                  opacity: 0.85,
+                  marginTop: 10,
+                }}
+              >
+                por {assetLabel}
+              </div>
+            </div>
           ) : (
-            <div style={{ fontSize: 24, color: MUTED, marginTop: 4 }}>
-              Dados de proventos quando disponíveis na fonte · simulador no site
+            <div
+              style={{
+                fontSize: 30,
+                fontWeight: 600,
+                color: MUTED,
+                marginBottom: 18,
+                lineHeight: 1.35,
+              }}
+            >
+              Dados de proventos na fonte · simule no site
             </div>
           )}
+
+          {/* Contexto / CTA */}
+          <div
+            style={{
+              fontSize: 26,
+              fontWeight: 500,
+              color: TEXT,
+              opacity: 0.92,
+              marginTop: 4,
+            }}
+          >
+            {contextLine}
+          </div>
         </div>
 
         <div
           style={{
             position: "absolute",
-            bottom: 40,
-            right: 56,
-            fontSize: 20,
+            bottom: 36,
+            right: 52,
+            fontSize: 18,
             color: MUTED,
             fontWeight: 500,
           }}

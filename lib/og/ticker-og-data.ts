@@ -1,13 +1,21 @@
+import { calculateDividends } from "@/lib/calculations";
 import { formatBRL } from "@/lib/format";
 import { getLastPerShareSnapshot } from "@/lib/ticker-page/derive";
 import type { StockQuote } from "@/lib/types";
 
 export type TickerOgPayload = {
   symbol: string;
-  headline: string;
-  subline: string | null;
-  perShareLine: string | null;
+  /** Pergunta principal (forte). */
+  question: string;
+  /** Nome da empresa ou fundo (opcional). */
+  entityName: string | null;
+  /** Valor em destaque, só o montante (ex.: R$ 0,02). */
+  perShareValue: string | null;
+  /** "ação" | "cota" — legenda abaixo do valor. */
+  assetLabel: "ação" | "cota";
   logoDataUrl: string | null;
+  /** Linha de contexto / CTA. */
+  contextLine: string;
 };
 
 function arrayBufferToBase64(buf: ArrayBuffer): string {
@@ -100,11 +108,32 @@ export async function fetchQuoteForOg(ticker: string): Promise<StockQuote | null
   }
 }
 
-export function formatPerShareForOg(stock: StockQuote | null): string | null {
+const MIN_EVENTS_12M = 2;
+
+/** Valor em destaque: média mensal se histórico suficiente; senão último provento. */
+export function resolvePerShareValueForOg(stock: StockQuote | null): string | null {
   if (!stock?.dividends?.length) return null;
+  const calc = calculateDividends(stock.dividends, 1);
+  const useMonthly =
+    calc.dividendsLast12m.length >= MIN_EVENTS_12M &&
+    calc.monthlyAvgEstimate > 0 &&
+    Number.isFinite(calc.monthlyAvgEstimate);
+  if (useMonthly) {
+    return formatBRL(calc.monthlyAvgEstimate, stock.currency);
+  }
   const last = getLastPerShareSnapshot(stock.dividends);
   if (!last || last.amountPerShare <= 0) return null;
-  return `Último provento na fonte: ${formatBRL(last.amountPerShare, stock.currency)} por ação`;
+  return formatBRL(last.amountPerShare, stock.currency);
+}
+
+function contextLineForSeed(seed: string): string {
+  let h = 0;
+  for (let i = 0; i < seed.length; i++) h = (h * 31 + seed.charCodeAt(i)) >>> 0;
+  const options = [
+    "Veja quanto você receberia com dividendos",
+    "Simule seus dividendos na B3",
+  ] as const;
+  return options[h % options.length]!;
 }
 
 export function buildAcaoOgPayload(
@@ -117,19 +146,22 @@ export function buildAcaoOgPayload(
   const sym = symbol.trim().toUpperCase();
   const name =
     displayName?.trim() || stock?.longName?.trim() || stock?.shortName?.trim() || null;
-  const headline =
+  const entityName = name && name.toUpperCase() !== sym ? name : null;
+  const question =
     variant === "paga-quanto"
-      ? `Quanto ${sym} paga de dividendos?`
-      : `Dividendos de ${sym}`;
-  const subline = name && name.toUpperCase() !== sym ? name : null;
-  const perShareLine = formatPerShareForOg(stock);
+      ? `${sym} paga quanto?`
+      : variant === "main"
+        ? `Quanto ${sym} paga?`
+        : `Quanto ${sym} paga?`;
 
   return {
     symbol: sym,
-    headline,
-    subline,
-    perShareLine,
+    question,
+    entityName,
+    perShareValue: resolvePerShareValueForOg(stock),
+    assetLabel: "ação",
     logoDataUrl,
+    contextLine: contextLineForSeed(sym),
   };
 }
 
@@ -141,16 +173,16 @@ export function buildFiiOgPayload(
 ): TickerOgPayload {
   const sym = symbol.trim().toUpperCase();
   const fn = fundName?.trim() || stock?.longName || stock?.shortName || null;
-  const headline = `Rendimentos de ${sym}`;
-  const subline = fn && fn !== sym ? fn : null;
-  const perShareLine = formatPerShareForOg(stock);
+  const entityName = fn && fn !== sym ? fn : null;
 
   return {
     symbol: sym,
-    headline,
-    subline,
-    perShareLine,
+    question: `Quanto ${sym} paga?`,
+    entityName,
+    perShareValue: resolvePerShareValueForOg(stock),
+    assetLabel: "cota",
     logoDataUrl,
+    contextLine: contextLineForSeed(`fii-${sym}`),
   };
 }
 
@@ -158,9 +190,11 @@ export function buildFallbackOgPayload(symbol: string): TickerOgPayload {
   const sym = symbol.trim().toUpperCase() || "B3";
   return {
     symbol: sym,
-    headline: `Dividendos de ${sym}`,
-    subline: "Simula Dividendos · simule proventos na B3",
-    perShareLine: null,
+    question: `Quanto ${sym} paga?`,
+    entityName: "Simula Dividendos",
+    perShareValue: null,
+    assetLabel: "ação",
     logoDataUrl: null,
+    contextLine: "Veja quanto você receberia com dividendos",
   };
 }
