@@ -15,6 +15,11 @@ export type SearchIntentTeaserInput = {
   /** Cotas no exemplo (URL `quanto-rende-N-cotas` ou 100). */
   simulationShares: number;
   assetKind: "fii" | "stock";
+  /**
+   * Copy alinhada à landing `/acoes/[ticker]-paga-quanto` (ações + “simulador abaixo”).
+   * Demais ações mantêm texto padrão com “cotas”.
+   */
+  stockCopyProfile?: "default" | "paga-quanto";
 };
 
 /**
@@ -26,9 +31,11 @@ export function buildSearchIntentTeaserLines(input: SearchIntentTeaserInput): [
   IntentTeaserSegment[],
   IntentTeaserSegment[],
 ] {
-  const { symbol, currency, dividends, simulationShares, assetKind } = input;
+  const { symbol, currency, dividends, simulationShares, assetKind, stockCopyProfile = "default" } = input;
   const shareUnit = assetKind === "fii" ? "cota" : "ação";
-  const pluralCotas = "cotas";
+  const usePagaQuantoAcoesCopy =
+    assetKind === "stock" && stockCopyProfile === "paga-quanto";
+  const pluralShares = usePagaQuantoAcoesCopy ? "ações" : "cotas";
   const n = Math.max(1, Math.round(simulationShares));
 
   const calc = dividends.length ? calculateDividends(dividends, 1) : null;
@@ -46,23 +53,41 @@ export function buildSearchIntentTeaserLines(input: SearchIntentTeaserInput): [
     const brPer = formatBRL(perMo, currency);
     const brTot = formatBRL(total, currency);
 
-    const line1: IntentTeaserSegment[] = [
-      { text: symbol, bold: true },
-      {
-        text: ` paga em média cerca de `,
-        bold: false,
-      },
-      { text: brPer, bold: true },
-      { text: ` por ${shareUnit} por mês, com base nos últimos pagamentos disponíveis na fonte.`, bold: false },
-    ];
+    const line1: IntentTeaserSegment[] = usePagaQuantoAcoesCopy
+      ? [
+          { text: symbol, bold: true },
+          { text: " paga cerca de ", bold: false },
+          { text: brPer, bold: true },
+          {
+            text: " por ação por mês, com base nos últimos pagamentos disponíveis na fonte.",
+            bold: false,
+          },
+        ]
+      : [
+          { text: symbol, bold: true },
+          {
+            text: ` paga em média cerca de `,
+            bold: false,
+          },
+          { text: brPer, bold: true },
+          { text: ` por ${shareUnit} por mês, com base nos últimos pagamentos disponíveis na fonte.`, bold: false },
+        ];
 
-    const line2: IntentTeaserSegment[] = [
-      { text: "Se você tivesse ", bold: false },
-      { text: String(n), bold: true },
-      { text: ` ${pluralCotas}, receberia cerca de `, bold: false },
-      { text: brTot, bold: true },
-      { text: " por mês (estimativa).", bold: false },
-    ];
+    const line2: IntentTeaserSegment[] = usePagaQuantoAcoesCopy
+      ? [
+          { text: "Se você tivesse ", bold: false },
+          { text: String(n), bold: true },
+          { text: ` ${pluralShares}, receberia aproximadamente `, bold: false },
+          { text: brTot, bold: true },
+          { text: " por mês.", bold: false },
+        ]
+      : [
+          { text: "Se você tivesse ", bold: false },
+          { text: String(n), bold: true },
+          { text: ` ${pluralShares}, receberia cerca de `, bold: false },
+          { text: brTot, bold: true },
+          { text: " por mês (estimativa).", bold: false },
+        ];
 
     const line3 =
       assetKind === "fii"
@@ -71,11 +96,17 @@ export function buildSearchIntentTeaserLines(input: SearchIntentTeaserInput): [
             { text: "simulador", bold: true },
             { text: " nesta página para calcular seus rendimentos.", bold: false },
           ] as IntentTeaserSegment[])
-        : ([
-            { text: "Use o ", bold: false },
-            { text: "simulador", bold: true },
-            { text: " nesta página para calcular seus dividendos.", bold: false },
-          ] as IntentTeaserSegment[]);
+        : usePagaQuantoAcoesCopy
+          ? ([
+              { text: "Use o ", bold: false },
+              { text: "simulador", bold: true },
+              { text: " abaixo para calcular seus dividendos.", bold: false },
+            ] as IntentTeaserSegment[])
+          : ([
+              { text: "Use o ", bold: false },
+              { text: "simulador", bold: true },
+              { text: " nesta página para calcular seus dividendos.", bold: false },
+            ] as IntentTeaserSegment[]);
 
     return [line1, line2, line3];
   }
@@ -85,29 +116,44 @@ export function buildSearchIntentTeaserLines(input: SearchIntentTeaserInput): [
     const total = last.amountPerShare * n;
     const brTot = formatBRL(total, currency);
 
-    const line1: IntentTeaserSegment[] = [
-      { text: symbol, bold: true },
-      {
-        text: ` pagou cerca de `,
-        bold: false,
-      },
-      { text: brPer, bold: true },
-      {
-        text:
-          assetKind === "fii"
-            ? ` por ${shareUnit} no último pagamento disponível na fonte.`
-            : ` por ${shareUnit} no último provento disponível na fonte.`,
-        bold: false,
-      },
-    ];
+    const line1: IntentTeaserSegment[] = usePagaQuantoAcoesCopy
+      ? [
+          { text: symbol, bold: true },
+          { text: " paga cerca de ", bold: false },
+          { text: brPer, bold: true },
+          { text: " por ação nos últimos pagamentos disponíveis na fonte.", bold: false },
+        ]
+      : [
+          { text: symbol, bold: true },
+          {
+            text: ` pagou cerca de `,
+            bold: false,
+          },
+          { text: brPer, bold: true },
+          {
+            text:
+              assetKind === "fii"
+                ? ` por ${shareUnit} no último pagamento disponível na fonte.`
+                : ` por ${shareUnit} no último provento disponível na fonte.`,
+            bold: false,
+          },
+        ];
 
-    const line2: IntentTeaserSegment[] = [
-      { text: "Se você tivesse ", bold: false },
-      { text: String(n), bold: true },
-      { text: ` ${pluralCotas}, esse evento corresponderia a cerca de `, bold: false },
-      { text: brTot, bold: true },
-      { text: " no total.", bold: false },
-    ];
+    const line2: IntentTeaserSegment[] = usePagaQuantoAcoesCopy
+      ? [
+          { text: "Se você tivesse ", bold: false },
+          { text: String(n), bold: true },
+          { text: ` ${pluralShares}, receberia aproximadamente `, bold: false },
+          { text: brTot, bold: true },
+          { text: " por pagamento.", bold: false },
+        ]
+      : [
+          { text: "Se você tivesse ", bold: false },
+          { text: String(n), bold: true },
+          { text: ` ${pluralShares}, esse evento corresponderia a cerca de `, bold: false },
+          { text: brTot, bold: true },
+          { text: " no total.", bold: false },
+        ];
 
     const line3 =
       assetKind === "fii"
@@ -116,11 +162,17 @@ export function buildSearchIntentTeaserLines(input: SearchIntentTeaserInput): [
             { text: "simulador", bold: true },
             { text: " nesta página para calcular seus rendimentos.", bold: false },
           ] as IntentTeaserSegment[])
-        : ([
-            { text: "Use o ", bold: false },
-            { text: "simulador", bold: true },
-            { text: " nesta página para calcular seus dividendos.", bold: false },
-          ] as IntentTeaserSegment[]);
+        : usePagaQuantoAcoesCopy
+          ? ([
+              { text: "Use o ", bold: false },
+              { text: "simulador", bold: true },
+              { text: " abaixo para calcular seus dividendos.", bold: false },
+            ] as IntentTeaserSegment[])
+          : ([
+              { text: "Use o ", bold: false },
+              { text: "simulador", bold: true },
+              { text: " nesta página para calcular seus dividendos.", bold: false },
+            ] as IntentTeaserSegment[]);
 
     return [line1, line2, line3];
   }
@@ -142,11 +194,17 @@ export function buildSearchIntentTeaserLines(input: SearchIntentTeaserInput): [
     { text: " quando a fonte os informa.", bold: false },
   ];
 
-  const line3: IntentTeaserSegment[] = [
-    { text: "Use o ", bold: false },
-    { text: "simulador", bold: true },
-    { text: " nesta página para simular quando houver histórico.", bold: false },
-  ];
+  const line3: IntentTeaserSegment[] = usePagaQuantoAcoesCopy
+    ? [
+        { text: "Use o ", bold: false },
+        { text: "simulador", bold: true },
+        { text: " abaixo para simular quando houver histórico.", bold: false },
+      ]
+    : [
+        { text: "Use o ", bold: false },
+        { text: "simulador", bold: true },
+        { text: " nesta página para simular quando houver histórico.", bold: false },
+      ];
 
   return [line1, line2, line3];
 }

@@ -38,6 +38,7 @@ import {
 } from "@/lib/acoes/stock-intent-copy";
 import { BrapiError, getStockData } from "@/lib/brapi";
 import {
+  buildAcaoPagaQuantoVejaTambem,
   buildAcaoRelacionadosLinks,
   buildAcaoVejaTambemLinks,
   buildDividendTableRows,
@@ -128,6 +129,8 @@ export default async function AcaoSlugPage({ params }: PageProps) {
 
   const heroTitle = stockIntentHeroTitle(symbol, variant);
   const intentSimulationShares = acaoVariantShares(variant) ?? 100;
+  const vejaTambemLinks =
+    variant === "paga-quanto" ? buildAcaoPagaQuantoVejaTambem(symbol) : buildAcaoVejaTambemLinks(symbol, slug);
 
   const baseEditorial = generateTickerSummaryText({
     symbol,
@@ -201,6 +204,7 @@ export default async function AcaoSlugPage({ params }: PageProps) {
                     dividends={dividends}
                     simulationShares={intentSimulationShares}
                     assetKind="stock"
+                    stockCopyProfile={variant === "paga-quanto" ? "paga-quanto" : "default"}
                   />
                 }
               />
@@ -210,7 +214,7 @@ export default async function AcaoSlugPage({ params }: PageProps) {
 
         <TickerPageRow>
           <ProgrammaticTickerInterlinking
-            vejaTambem={buildAcaoVejaTambemLinks(symbol, slug)}
+            vejaTambem={vejaTambemLinks}
             outrosAtivos={mock ? buildAcaoRelacionadosLinks(peers, symbol) : []}
             sectorHub={
               mock

@@ -63,10 +63,17 @@ export function getStockIntentMetadata(
   }
 
   if (variant === "paga-quanto") {
+    const subject = name ? `${name} (${symbol})` : symbol;
     return {
-      title: `${symbol} paga quanto? Dividendos e valores por cota`,
-      description: `Quanto paga ${label} em proventos por ação, segundo os dados usados nesta página? Confira referência por cota e use o simulador para estimar o total com o seu número de ações.`,
-      keywords: [...baseKeywords(symbol, mock), "quanto paga por cota", "valor do dividendo"],
+      title: `${symbol} paga quanto? Veja dividendos e simulação`,
+      description: `Veja quanto ${subject} paga de dividendos por ação e simule quanto você receberia com diferentes quantidades.`,
+      keywords: [
+        ...baseKeywords(symbol, mock),
+        "paga quanto",
+        "dividendos por ação",
+        "quanto paga em dividendos",
+        "valor do dividendo",
+      ],
     };
   }
 
