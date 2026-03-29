@@ -1,8 +1,9 @@
 import { fetchQuoteForOg } from "@/lib/og/ticker-og-data";
 
 /**
- * Retorna a URL pública da logo (ex.: brapi `logourl`) para o ticker.
- * Para embutir em `ImageResponse`, use `fetchLogoAsDataUrl(url)` na rota OG.
+ * Retorna a URL brapi (`logourl`) — em geral **SVG** em `icons.brapi.dev`.
+ * Na OG, `resolveOgLogoDataUrl` tenta PNG local, raster remoto e favicon do site mapeado;
+ * se tudo falhar, o layout mostra só o ticker no quadrado.
  */
 export async function getLogoByTicker(ticker: string): Promise<{ url: string | null }> {
   const symbol = ticker.trim().toUpperCase().replace(/[^A-Z0-9]/g, "");

@@ -1,5 +1,5 @@
 import { ImageResponse } from "next/og";
-import { fetchLogoAsDataUrl } from "@/lib/og/ticker-og-data";
+import { resolveOgLogoDataUrl } from "@/lib/og/resolve-og-logo";
 import { getSeoBaseUrl } from "@/lib/site";
 
 export const OG_API_SIZE = { width: 1200, height: 630 } as const;
@@ -30,11 +30,7 @@ function footerDomain(): string {
   }
 }
 
-/**
- * Layout 1200×630 — hierarquia: valor → pergunta → ticker.
- * Tipografia: system-ui / Inter-like stack suportada pelo `next/og`.
- */
-export function createApiOgImageResponse(input: ApiOgImageInput) {
+function buildOgImageElement(input: ApiOgImageInput) {
   const sym = input.ticker.trim().toUpperCase().replace(/[^A-Z0-9]/g, "") || "B3";
   const question = `${sym} paga quanto?`;
   const hasValor = Boolean(input.valorFormatted?.trim());
@@ -43,9 +39,8 @@ export function createApiOgImageResponse(input: ApiOgImageInput) {
     input.entityName.trim().toUpperCase() !== sym &&
     input.entityName.trim().slice(0, 80);
 
-  return new ImageResponse(
-    (
-      <div
+  return (
+    <div
         style={{
           position: "relative",
           width: "100%",
@@ -215,16 +210,37 @@ export function createApiOgImageResponse(input: ApiOgImageInput) {
           {footerDomain()}
         </div>
       </div>
-    ),
-    {
-      width: OG_API_SIZE.width,
-      height: OG_API_SIZE.height,
-      headers: {
-        // Evita cache “immutable” de 1 ano com corpo vazio (Edge) e permite atualizar dividendos.
-        "Cache-Control": "public, s-maxage=900, stale-while-revalidate=86400",
-      },
-    }
   );
+}
+
+const imageResponseOptions = {
+  width: OG_API_SIZE.width,
+  height: OG_API_SIZE.height,
+  headers: {
+    "Cache-Control": "public, s-maxage=900, stale-while-revalidate=86400",
+  },
+} as const;
+
+/**
+ * Layout 1200×630 — hierarquia: valor → pergunta → ticker.
+ * Se a logo em data URL quebrar o Satori, tenta de novo só com o ticker no painel.
+ */
+export function createApiOgImageResponse(input: ApiOgImageInput) {
+  try {
+    return new ImageResponse(buildOgImageElement(input), imageResponseOptions);
+  } catch (err) {
+    if (input.logoDataUrl) {
+      try {
+        return new ImageResponse(
+          buildOgImageElement({ ...input, logoDataUrl: null }),
+          imageResponseOptions
+        );
+      } catch {
+        /* continua */
+      }
+    }
+    throw err;
+  }
 }
 
 /** Fallback garantido (sem logo/valor externos) se a rota falhar. */
@@ -251,7 +267,7 @@ export async function createApiOgImageResponseFromTicker(input: {
 }) {
   let logoDataUrl: string | null = null;
   try {
-    logoDataUrl = await fetchLogoAsDataUrl(input.logoRemoteUrl);
+    logoDataUrl = await resolveOgLogoDataUrl(input.ticker, input.logoRemoteUrl);
   } catch {
     logoDataUrl = null;
   }
