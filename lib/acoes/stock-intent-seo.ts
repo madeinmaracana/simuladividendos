@@ -5,12 +5,6 @@ import { acaoMainSlug, acaoVariantShares } from "./acao-slug";
 
 type IntentMeta = { title: string; description: string; keywords: string[] };
 
-function pickBySeed(seed: string, options: readonly string[]): string {
-  let h = 0;
-  for (let i = 0; i < seed.length; i++) h = (h * 31 + seed.charCodeAt(i)) >>> 0;
-  return options[h % options.length] ?? options[0]!;
-}
-
 function baseKeywords(symbol: string, mock: StockSeoRecord | null): string[] {
   return [
     symbol,
@@ -24,95 +18,38 @@ function baseKeywords(symbol: string, mock: StockSeoRecord | null): string[] {
   ].filter((k): k is string => Boolean(k));
 }
 
+function seoTitle2026(symbol: string): string {
+  return `${symbol} dividendos: quanto paga + simulação (2026)`;
+}
+
+function seoDescription2026(symbol: string, companyName: string | null): string {
+  const label = companyName?.trim() ? companyName.trim() : "Empresa";
+  return `${symbol} (${label}) — veja quanto paga em dividendos, último rendimento e simule quanto você receberia com seus investimentos. Atualizado para 2026.`;
+}
+
 /** Títulos e descriptions distintos por intenção (evita cópia idêntica entre URLs). */
 export function getStockIntentMetadata(
   symbol: string,
   mock: StockSeoRecord | null,
   variant: "main" | AcaoUrlVariant
 ): IntentMeta {
-  const name = mock?.companyName?.trim();
-  const label = name ? `${name} (${symbol})` : symbol;
+  const name = mock?.companyName?.trim() ?? null;
   const shares = acaoVariantShares(variant);
-
-  if (variant === "main") {
-    return {
-      title: generateTitle(symbol, mock),
-      description: generateDescription(symbol, mock),
-      keywords: baseKeywords(symbol, mock),
-    };
-  }
-
-  if (variant === "dividendos") {
-    return {
-      title: `${symbol} dividendos por ação e histórico na B3`,
-      description: `Veja quanto ${label} pagou em dividendos por ação, datas recentes e como interpretar o histórico antes de simular dividendos com suas cotas. Conteúdo educacional.`,
-      keywords: [
-        ...baseKeywords(symbol, mock),
-        "histórico de dividendos",
-        "último dividendo",
-        "proventos",
-      ],
-    };
-  }
-
-  if (variant === "quanto-paga-dividendos") {
-    return {
-      title: `${symbol} quanto paga de dividendos? Valores por cota e simulação`,
-      description: `Quanto ${label} pagou em dividendos por ação nos dados desta página? Confira o último provento de referência, o histórico e simule o total com a sua quantidade de cotas — conteúdo educacional.`,
-      keywords: [
-        ...baseKeywords(symbol, mock),
-        "quanto paga de dividendos",
-        "dividendos por cota",
-        `proventos ${symbol}`,
-      ],
-    };
-  }
-
-  if (variant === "paga-quanto") {
-    const subject = name ? `${name} (${symbol})` : symbol;
-    const tickerAlone = symbol.trim().toUpperCase();
-    const description = pickBySeed(tickerAlone, [
-      `Veja quanto ${subject} paga de dividendos por ação e simule quanto você receberia com diferentes quantidades.`,
-      `Confira quanto ${subject} pagou por ação na fonte, um resumo rápido no topo e simule dividendos com a sua posição — conteúdo educacional.`,
-      `${tickerAlone} paga quanto em proventos? Veja valores por ação, histórico resumido e use o simulador para estimar o total com 100 ações ou outra quantidade.`,
-    ]);
-    return {
-      title: `${symbol} paga quanto? Veja dividendos e simulação`,
-      description,
-      keywords: [
-        ...baseKeywords(symbol, mock),
-        "paga quanto",
-        "dividendos por ação",
-        "quanto paga em dividendos",
-        "valor do dividendo",
-      ],
-    };
-  }
-
-  if (shares) {
-    return {
-      title: `${symbol} quanto rende ${shares} cotas? Simulação de dividendos`,
-      description: `Veja uma estimativa educacional de quanto ${shares} cotas de ${label} podem render por evento de provento com base no histórico disponível na fonte e ajuste no simulador.`,
-      keywords: [
-        ...baseKeywords(symbol, mock),
-        `quanto rende ${shares} cotas`,
-        `simulação ${symbol} ${shares} cotas`,
-      ],
-    };
-  }
-
-  if (variant === "simulador-de-dividendos" || variant === "simulador") {
-    return {
-      title: `Simulador de dividendos ${symbol}: calcule por quantidade de cotas`,
-      description: `Simule dividendos de ${label} multiplicando provento por ação pela quantidade de cotas. Página focada em simulação rápida, educacional e sem promessas de retorno.`,
-      keywords: [...baseKeywords(symbol, mock), "simulador de dividendos", "calculadora por cotas"],
-    };
-  }
+  const title = seoTitle2026(symbol);
+  const description = seoDescription2026(symbol, name);
 
   return {
-    title: `Simular dividendos ${symbol}: calculadora por quantidade de ações`,
-    description: `Simule dividendos de ${label} multiplicando dividendos por ação pela quantidade de cotas. Ferramenta educacional para entender quanto paga em cenários diferentes — sem garantir resultados futuros.`,
-    keywords: [...baseKeywords(symbol, mock), "calculadora dividendos", "simulação B3"],
+    title,
+    description,
+    keywords: [
+      ...baseKeywords(symbol, mock),
+      ...generateTitle(symbol, mock).split(" "),
+      ...generateDescription(symbol, mock).split(" "),
+      "paga quanto",
+      "quanto rende",
+      "simulação 2026",
+      shares ? `quanto rende ${shares} cotas` : "",
+    ].filter(Boolean),
   };
 }
 

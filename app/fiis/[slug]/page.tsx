@@ -24,10 +24,16 @@ import {
 } from "@/components/ticker";
 import { mergeFaqByQuestion } from "@/lib/acoes/stock-intent-copy";
 import { BrapiError, getStockData } from "@/lib/brapi";
+import { formatBRL } from "@/lib/format";
 import { getArticlesForFii } from "@/data/articles";
 import { buildAllFiiSlugStaticParams, isFiiVariantIndexable } from "@/data/fii-registry";
 import { getFiiSeo, getPeerFiis } from "@/data/fiis";
-import { fiiIntentEditorialAddendum, fiiIntentExtraFaqs } from "@/lib/fiis/fii-intent-copy";
+import {
+  ensureMinimumFiiFaqs,
+  fiiIntentEditorialAddendum,
+  fiiIntentExtraFaqs,
+  fiiIntentIntroParagraph,
+} from "@/lib/fiis/fii-intent-copy";
 import { canonicalMainFiiPath, getFiiIntentMetadata } from "@/lib/fiis/fii-intent-seo";
 import { fiiPathFromSlug, fiiVariantShares, parseFiiSlug } from "@/lib/fiis/fii-slug";
 import { generateFiiEditorialParagraphs, generateFiiSummaryParagraph } from "@/lib/fii-page";
@@ -45,6 +51,7 @@ import { fetchQuoteForOg, resolvePerShareValueForOg } from "@/lib/og/ticker-og-d
 import {
   SITE_NAME,
   breadcrumbsFiiSlug,
+  buildFaqPageSchema,
   buildFiiSlugPageMetadata,
   buildWebPageSchema,
   withOpenGraphApiImage,
@@ -117,6 +124,12 @@ export default async function FiiSlugPage({ params }: PageProps) {
   );
 
   const currency = initialStock?.currency ?? "BRL";
+  const estimatedYield =
+    lastSnap &&
+    initialStock?.regularMarketPrice &&
+    initialStock.regularMarketPrice > 0
+      ? `${((lastSnap.amountPerShare * 12 * 100) / initialStock.regularMarketPrice).toFixed(2)}%`
+      : "—";
   const tableRows = buildDividendTableRows(lastSnap, nextSnap, currency);
 
   const relatedArticles = getArticlesForFii(mock.ticker);
@@ -126,18 +139,15 @@ export default async function FiiSlugPage({ params }: PageProps) {
     fiiIntentExtraFaqs(variant, symbol),
     generateFiiProgrammaticFAQ(symbol, mock, lastSnap, frequencyHint, currency),
   ]);
+  const faqList = ensureMinimumFiiFaqs(symbol, faqItems);
+  const introText = fiiIntentIntroParagraph(
+    symbol,
+    displayName,
+    lastSnap ? formatBRL(lastSnap.amountPerShare, currency) : null
+  );
 
   const variantShares = fiiVariantShares(variant);
-  const heroTitle =
-    variant === "main"
-      ? `Rendimentos de ${symbol}`
-      : variant === "simulador-de-dividendos" || variant === "simulador"
-        ? `Simulador de dividendos ${symbol}`
-        : variantShares
-          ? `${symbol}: quanto rendem ${variantShares} cotas?`
-        : variant === "paga-quanto"
-          ? `${symbol} paga quanto?`
-          : `${symbol} paga quanto por mês?`;
+  const heroTitle = `${symbol} paga quanto em dividendos?`;
 
   const baseEditorial = generateFiiEditorialParagraphs(symbol, displayName, mock);
   const intentParas = fiiIntentEditorialAddendum(variant, symbol, displayName);
@@ -165,11 +175,14 @@ export default async function FiiSlugPage({ params }: PageProps) {
   return (
     <main className="w-full min-w-0">
       <JsonLd
-        data={buildWebPageSchema({
-          name: `${schemaMeta.title} | ${SITE_NAME}`,
-          description: schemaMeta.description,
-          path: schemaPath,
-        })}
+        data={[
+          buildWebPageSchema({
+            name: `${schemaMeta.title} | ${SITE_NAME}`,
+            description: schemaMeta.description,
+            path: schemaPath,
+          }),
+          buildFaqPageSchema(faqList.slice(0, 12)),
+        ]}
       />
       <TickerPageLayout>
         <TickerPageRow>
@@ -197,17 +210,44 @@ export default async function FiiSlugPage({ params }: PageProps) {
                 lastUpdated={initialStock?.lastUpdated}
                 title={heroTitle}
                 afterTitle={
-                  <SearchIntentTeaser
-                    symbol={symbol}
-                    currency={currency}
-                    dividends={dividends}
-                    simulationShares={variantShares ?? 100}
-                    assetKind="fii"
-                  />
+                  <>
+                    <p className="text-sm text-[color:var(--text-secondary)]">{introText}</p>
+                    <SearchIntentTeaser
+                      symbol={symbol}
+                      currency={currency}
+                      dividends={dividends}
+                      simulationShares={variantShares ?? 100}
+                      assetKind="fii"
+                    />
+                  </>
                 }
               />
             }
           />
+        </TickerPageRow>
+
+        <TickerPageRow>
+          <section className="rounded-[length:var(--radius-lg)] border border-[var(--border)] bg-[var(--surface)] p-5">
+            <h2 className="text-lg font-semibold text-[color:var(--text)]">{`Dividendos do ${symbol}`}</h2>
+            <dl className="mt-3 grid gap-2 text-sm text-[color:var(--text-secondary)] sm:grid-cols-2">
+              <div>
+                <dt className="font-medium">Último dividendo (R$)</dt>
+                <dd>{lastSnap ? formatBRL(lastSnap.amountPerShare, currency) : "—"}</dd>
+              </div>
+              <div>
+                <dt className="font-medium">Média mensal</dt>
+                <dd>{frequencyHint ? "Ver histórico" : "—"}</dd>
+              </div>
+              <div>
+                <dt className="font-medium">Dividend yield estimado</dt>
+                <dd>{estimatedYield}</dd>
+              </div>
+              <div>
+                <dt className="font-medium">Frequência de pagamento</dt>
+                <dd>{frequencyHint ?? "—"}</dd>
+              </div>
+            </dl>
+          </section>
         </TickerPageRow>
 
         <TickerPageRow>
@@ -292,7 +332,23 @@ export default async function FiiSlugPage({ params }: PageProps) {
         </TickerPageRow>
 
         <TickerPageRow>
-          <StockFAQ title="Perguntas frequentes" items={faqItems} id="heading-faq-fii" />
+          <StockFAQ title={`Perguntas frequentes sobre ${symbol}`} items={faqList} id="heading-faq-fii" />
+        </TickerPageRow>
+
+        <TickerPageRow>
+          <section className="text-sm text-[color:var(--text-secondary)]">
+            <p className="font-semibold text-[color:var(--text)]">Veja também:</p>
+            <p className="mt-1 flex flex-wrap gap-x-3 gap-y-1">
+              {peers.slice(0, 3).map((p) => (
+                <a key={p.ticker} href={`/fiis/${p.ticker}`} className="underline">
+                  {p.ticker}
+                </a>
+              ))}
+              <a href="/" className="underline">
+                Página inicial
+              </a>
+            </p>
+          </section>
         </TickerPageRow>
       </TickerPageLayout>
     </main>

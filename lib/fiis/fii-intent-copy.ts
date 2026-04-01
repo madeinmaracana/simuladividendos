@@ -108,3 +108,41 @@ export function fiiIntentExtraFaqs(variant: "main" | FiiUrlVariant, symbol: stri
     },
   ];
 }
+
+export function fiiIntentIntroParagraph(
+  symbol: string,
+  fundName: string,
+  lastAmountFormatted: string | null
+): string {
+  const prefix = lastAmountFormatted ? `cerca de ${lastAmountFormatted}` : "um valor de referência";
+  return `O ${symbol} paga atualmente ${prefix} por ação. Veja histórico de dividendos, rendimento mensal e simule quanto você pode ganhar investindo em ${fundName}.`;
+}
+
+export function ensureMinimumFiiFaqs(symbol: string, items: FaqItem[]): FaqItem[] {
+  if (items.length >= 3) return items;
+  const fallback: FaqItem[] = [
+    {
+      question: `O ${symbol} paga dividendos todo mês?`,
+      answer:
+        "Muitos FIIs distribuem mensalmente, mas o valor pode variar conforme resultado do fundo e regulamento.",
+    },
+    {
+      question: `Qual o dividend yield do ${symbol}?`,
+      answer:
+        "O dividend yield estimado desta página usa os dados da fonte integrada e pode mudar conforme preço e distribuição.",
+    },
+    {
+      question: `Vale a pena investir em ${symbol}?`,
+      answer:
+        "Depende da sua estratégia e tolerância a risco. O conteúdo aqui é informativo e não representa recomendação.",
+    },
+  ];
+  const seen = new Set<string>();
+  const merged = [...items, ...fallback].filter((item) => {
+    const k = item.question.trim().toLowerCase();
+    if (seen.has(k)) return false;
+    seen.add(k);
+    return true;
+  });
+  return merged;
+}

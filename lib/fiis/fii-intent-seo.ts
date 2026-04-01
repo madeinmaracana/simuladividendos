@@ -18,51 +18,37 @@ function baseKeywords(symbol: string, mock: FiiSeoRecord | null): string[] {
   ].filter((k): k is string => Boolean(k));
 }
 
+function seoTitle2026(symbol: string): string {
+  return `${symbol} dividendos: quanto paga + simulação (2026)`;
+}
+
+function seoDescription2026(symbol: string, fundName: string | null): string {
+  const label = fundName?.trim() ? fundName.trim() : "Fundo";
+  return `${symbol} (${label}) — veja quanto paga em dividendos, último rendimento e simule quanto você receberia com seus investimentos. Atualizado para 2026.`;
+}
+
 export function getFiiIntentMetadata(
   symbol: string,
   mock: FiiSeoRecord | null,
   variant: "main" | FiiUrlVariant
 ): IntentMeta {
-  const name = mock?.fundName?.trim();
-  const label = name ? `${name} (${symbol})` : symbol;
+  const name = mock?.fundName?.trim() ?? null;
   const shares = fiiVariantShares(variant);
-
-  if (variant === "main") {
-    return {
-      title: generateFiiProgrammaticTitle(symbol, mock),
-      description: generateFiiProgrammaticDescription(symbol, mock),
-      keywords: baseKeywords(symbol, mock),
-    };
-  }
-
-  if (variant === "paga-quanto-por-mes") {
-    return {
-      title: `${symbol} paga quanto por mês? Rendimentos por cota e simulação`,
-      description: `Quanto ${label} pagou por cota no último rendimento da fonte? Veja referência, histórico e simule com suas cotas. Valores futuros dependem do fundo — conteúdo educacional.`,
-      keywords: [...baseKeywords(symbol, mock), "paga quanto por mês", "renda mensal FII"],
-    };
-  }
-
-  if (variant === "paga-quanto") {
-    return {
-      title: `${symbol} paga quanto? Rendimentos por cota e simulação`,
-      description: `Quanto ${label} pagou por cota nos dados desta página? Veja referência do último rendimento, histórico e simule o total para sua quantidade de cotas.`,
-      keywords: [...baseKeywords(symbol, mock), "paga quanto", "rendimentos por cota"],
-    };
-  }
-
-  if (shares) {
-    return {
-      title: `${symbol} quanto rendem ${shares} cotas? Simulação de rendimentos`,
-      description: `Veja uma estimativa educacional de quanto ${shares} cotas de ${label} podem render por distribuição com base no histórico disponível e ajuste no simulador.`,
-      keywords: [...baseKeywords(symbol, mock), `quanto rende ${shares} cotas`, "simulação FII"],
-    };
-  }
+  const title = seoTitle2026(symbol);
+  const description = seoDescription2026(symbol, name);
 
   return {
-    title: `Simulador de dividendos ${symbol}: calcule por quantidade de cotas`,
-    description: `Simule rendimentos de ${label} por quantidade de cotas, compare cenários e use o histórico da fonte para contexto educacional.`,
-    keywords: [...baseKeywords(symbol, mock), "simulador de dividendos", "simulação por cotas"],
+    title,
+    description,
+    keywords: [
+      ...baseKeywords(symbol, mock),
+      ...generateFiiProgrammaticTitle(symbol, mock).split(" "),
+      ...generateFiiProgrammaticDescription(symbol, mock).split(" "),
+      "paga quanto",
+      "quanto rende",
+      "simulação 2026",
+      shares ? `quanto rende ${shares} cotas` : "",
+    ].filter(Boolean),
   };
 }
 

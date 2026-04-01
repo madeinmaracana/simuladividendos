@@ -31,13 +31,16 @@ import {
 import { canonicalMainAcaoPath, getStockIntentMetadata } from "@/lib/acoes/stock-intent-seo";
 import {
   buildAcaoPagaQuantoFaqs,
+  ensureMinimumTickerFaqs,
   mergeFaqByQuestion,
+  stockIntentIntroParagraph,
   stockIntentEditorialAddendum,
   stockIntentEditorialHeading,
   stockIntentExtraFaqs,
   stockIntentHeroTitle,
 } from "@/lib/acoes/stock-intent-copy";
 import { BrapiError, getStockData } from "@/lib/brapi";
+import { formatBRL } from "@/lib/format";
 import {
   buildAcaoPagaQuantoVejaTambem,
   buildAcaoRelacionadosLinks,
@@ -150,8 +153,14 @@ export default async function AcaoSlugPage({ params }: PageProps) {
     stockIntentExtraFaqs(variant, symbol),
     generateFAQ(symbol, mock, lastSnap, nextSnap, frequencyHint, currency),
   ]);
+  const faqList = ensureMinimumTickerFaqs(symbol, faqItems);
 
   const heroTitle = stockIntentHeroTitle(symbol, variant);
+  const introText = stockIntentIntroParagraph(
+    symbol,
+    displayName,
+    lastSnap ? formatBRL(lastSnap.amountPerShare, currency) : null
+  );
   const intentSimulationShares = acaoVariantShares(variant) ?? 100;
   const vejaTambemLinks =
     variant === "paga-quanto" ? buildAcaoPagaQuantoVejaTambem(symbol) : buildAcaoVejaTambemLinks(symbol, slug);
@@ -197,9 +206,7 @@ export default async function AcaoSlugPage({ params }: PageProps) {
     <main className="w-full min-w-0">
       <JsonLd
         data={
-          variant === "paga-quanto"
-            ? [webPageJsonLd, buildFaqPageSchema(faqItems.slice(0, 12))]
-            : webPageJsonLd
+          [webPageJsonLd, buildFaqPageSchema(faqList.slice(0, 12))]
         }
       />
       <TickerPageLayout>
@@ -230,18 +237,45 @@ export default async function AcaoSlugPage({ params }: PageProps) {
                 lastUpdated={initialStock?.lastUpdated}
                 title={heroTitle}
                 afterTitle={
-                  <SearchIntentTeaser
-                    symbol={symbol}
-                    currency={currency}
-                    dividends={dividends}
-                    simulationShares={variant === "paga-quanto" ? 100 : intentSimulationShares}
-                    assetKind="stock"
-                    stockCopyProfile={variant === "paga-quanto" ? "paga-quanto" : "default"}
-                  />
+                  <>
+                    <p className="text-sm text-[color:var(--text-secondary)]">{introText}</p>
+                    <SearchIntentTeaser
+                      symbol={symbol}
+                      currency={currency}
+                      dividends={dividends}
+                      simulationShares={variant === "paga-quanto" ? 100 : intentSimulationShares}
+                      assetKind="stock"
+                      stockCopyProfile={variant === "paga-quanto" ? "paga-quanto" : "default"}
+                    />
+                  </>
                 }
               />
             }
           />
+        </TickerPageRow>
+
+        <TickerPageRow>
+          <section className="rounded-[length:var(--radius-lg)] border border-[var(--border)] bg-[var(--surface)] p-5">
+            <h2 className="text-lg font-semibold text-[color:var(--text)]">{`Dividendos do ${symbol}`}</h2>
+            <dl className="mt-3 grid gap-2 text-sm text-[color:var(--text-secondary)] sm:grid-cols-2">
+              <div>
+                <dt className="font-medium">Último dividendo (R$)</dt>
+                <dd>{lastSnap ? formatBRL(lastSnap.amountPerShare, currency) : "—"}</dd>
+              </div>
+              <div>
+                <dt className="font-medium">Média mensal</dt>
+                <dd>{metrics.avgMonthlyPerShare ?? "—"}</dd>
+              </div>
+              <div>
+                <dt className="font-medium">Dividend yield estimado</dt>
+                <dd>{yieldDisp ?? "—"}</dd>
+              </div>
+              <div>
+                <dt className="font-medium">Frequência de pagamento</dt>
+                <dd>{frequencyHint ?? "—"}</dd>
+              </div>
+            </dl>
+          </section>
         </TickerPageRow>
 
         <TickerPageRow>
@@ -351,7 +385,23 @@ export default async function AcaoSlugPage({ params }: PageProps) {
         </TickerPageRow>
 
         <TickerPageRow>
-          <StockFAQ title="Perguntas frequentes" items={faqItems} id="heading-faq-acao" />
+          <StockFAQ title={`Perguntas frequentes sobre ${symbol}`} items={faqList} id="heading-faq-acao" />
+        </TickerPageRow>
+
+        <TickerPageRow>
+          <section className="text-sm text-[color:var(--text-secondary)]">
+            <p className="font-semibold text-[color:var(--text)]">Veja também:</p>
+            <p className="mt-1 flex flex-wrap gap-x-3 gap-y-1">
+              {peers.slice(0, 3).map((p) => (
+                <a key={p.ticker} href={`/acoes/${p.ticker}`} className="underline">
+                  {p.ticker}
+                </a>
+              ))}
+              <a href="/" className="underline">
+                Página inicial
+              </a>
+            </p>
+          </section>
         </TickerPageRow>
 
         {!mock ? (

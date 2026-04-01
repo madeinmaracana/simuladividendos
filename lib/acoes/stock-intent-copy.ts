@@ -30,14 +30,39 @@ export function acaoVariantsForTicker(symbol: string): AcaoUrlVariant[] {
 }
 
 export function stockIntentHeroTitle(symbol: string, variant: "main" | AcaoUrlVariant): string {
-  if (variant === "main") return `Dividendos de ${symbol}`;
-  const shares = acaoVariantShares(variant);
-  if (shares) return `${symbol}: quanto rendem ${shares} cotas em dividendos?`;
-  if (variant === "dividendos") return `${symbol}: dividendos por ação e histórico`;
-  if (variant === "quanto-paga-dividendos") return `${symbol} quanto paga de dividendos?`;
-  if (variant === "paga-quanto") return `${symbol} paga quanto?`;
-  if (variant === "simulador-de-dividendos") return `Simulador de dividendos ${symbol}`;
-  return `Simular dividendos ${symbol}`;
+  void variant;
+  return `${symbol} paga quanto em dividendos?`;
+}
+
+export function stockIntentIntroParagraph(
+  symbol: string,
+  companyName: string,
+  lastAmountFormatted: string | null
+): string {
+  const prefix = lastAmountFormatted ? `cerca de ${lastAmountFormatted}` : "um valor de referência";
+  return `O ${symbol} paga atualmente ${prefix} por ação. Veja histórico de dividendos, rendimento mensal e simule quanto você pode ganhar investindo em ${companyName}.`;
+}
+
+export function ensureMinimumTickerFaqs(symbol: string, items: FaqItem[]): FaqItem[] {
+  if (items.length >= 3) return items;
+  const fallback: FaqItem[] = [
+    {
+      question: `O ${symbol} paga dividendos todo mês?`,
+      answer:
+        "Não necessariamente. O pagamento depende da política de proventos e dos resultados reportados pela empresa/fundo.",
+    },
+    {
+      question: `Qual o dividend yield do ${symbol}?`,
+      answer:
+        "O dividend yield estimado aparece nesta página com base na fonte integrada. Esse indicador muda conforme preço e proventos.",
+    },
+    {
+      question: `Vale a pena investir em ${symbol}?`,
+      answer:
+        "Depende do seu perfil, objetivos e riscos. Esta página é educativa e não substitui análise própria ou orientação profissional.",
+    },
+  ];
+  return mergeFaqByQuestion([items, fallback]);
 }
 
 export function stockIntentEditorialHeading(variant: "main" | AcaoUrlVariant): string {
