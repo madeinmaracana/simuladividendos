@@ -4,7 +4,6 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { ProgrammaticTickerInterlinking } from "@/components/seo/ProgrammaticTickerInterlinking";
 import { RelatedArticlesSection } from "@/components/seo/RelatedArticlesSection";
 import { StockFAQ } from "@/components/stocks/StockFAQ";
-import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { TickerPageLayout, TickerPageRow } from "@/components/layout/TickerPageLayout";
 import {
   FiiHero,
@@ -12,7 +11,6 @@ import {
   FiiInternalNav,
   RelatedFiiLinks,
   FiiQuickAnswer,
-  FiiIntentLandingLinks,
 } from "@/components/fii";
 import {
   CompanyInfoSection,
@@ -35,7 +33,7 @@ import {
   fiiIntentIntroParagraph,
 } from "@/lib/fiis/fii-intent-copy";
 import { canonicalMainFiiPath, getFiiIntentMetadata } from "@/lib/fiis/fii-intent-seo";
-import { fiiPathFromSlug, fiiVariantShares, parseFiiSlug } from "@/lib/fiis/fii-slug";
+import { fiiPathFromSlug, fiiVariantShares, fiiVariantSlug, parseFiiSlug } from "@/lib/fiis/fii-slug";
 import { generateFiiEditorialParagraphs, generateFiiSummaryParagraph } from "@/lib/fii-page";
 import {
   buildDividendTableRows,
@@ -50,7 +48,6 @@ import { buildAbsoluteOgApiUrl } from "@/lib/og/build-og-api-url";
 import { fetchQuoteForOg, resolvePerShareValueForOg } from "@/lib/og/ticker-og-data";
 import {
   SITE_NAME,
-  breadcrumbsFiiSlug,
   buildFaqPageSchema,
   buildFiiSlugPageMetadata,
   buildWebPageSchema,
@@ -186,14 +183,6 @@ export default async function FiiSlugPage({ params }: PageProps) {
       />
       <TickerPageLayout>
         <TickerPageRow>
-          <Breadcrumbs items={breadcrumbsFiiSlug(symbol, variant)} />
-        </TickerPageRow>
-
-        <TickerPageRow>
-          <FiiIntentLandingLinks symbol={symbol} />
-        </TickerPageRow>
-
-        <TickerPageRow>
           <FiiSimulatorTop
             ticker={symbol}
             initialStock={initialStock}
@@ -251,10 +240,7 @@ export default async function FiiSlugPage({ params }: PageProps) {
         </TickerPageRow>
 
         <TickerPageRow>
-          <ProgrammaticTickerInterlinking
-            vejaTambem={buildFiiVejaTambemLinks(symbol, slug)}
-            outrosAtivos={buildFiiRelacionadosLinks(peers, symbol)}
-          />
+          <DividendSummaryText id="heading-resumo-fii" text={summaryText} />
         </TickerPageRow>
 
         {variant !== "main" ? (
@@ -270,7 +256,10 @@ export default async function FiiSlugPage({ params }: PageProps) {
         ) : null}
 
         <TickerPageRow>
-          <DividendSummaryText id="heading-resumo-fii" text={summaryText} />
+          <ProgrammaticTickerInterlinking
+            vejaTambem={buildFiiVejaTambemLinks(symbol, slug)}
+            outrosAtivos={buildFiiRelacionadosLinks(peers, symbol)}
+          />
         </TickerPageRow>
 
         <TickerPageRow>
@@ -337,13 +326,17 @@ export default async function FiiSlugPage({ params }: PageProps) {
 
         <TickerPageRow>
           <section className="text-sm text-[color:var(--text-secondary)]">
-            <p className="font-semibold text-[color:var(--text)]">Veja também:</p>
+            <p className="font-semibold text-[color:var(--text)]">{`Veja também sobre ${symbol}:`}</p>
             <p className="mt-1 flex flex-wrap gap-x-3 gap-y-1">
-              {peers.slice(0, 3).map((p) => (
-                <a key={p.ticker} href={`/fiis/${p.ticker}`} className="underline">
-                  {p.ticker}
-                </a>
-              ))}
+              <a href={fiiPathFromSlug(fiiVariantSlug(symbol, "paga-quanto"))} className="underline">
+                Dividendos por ação
+              </a>
+              <a href={fiiPathFromSlug(fiiVariantSlug(symbol, "quanto-rende-100-cotas"))} className="underline">
+                Quanto rende 100 cotas
+              </a>
+              <a href={fiiPathFromSlug(fiiVariantSlug(symbol, "simulador-de-dividendos"))} className="underline">
+                Simulador
+              </a>
               <a href="/" className="underline">
                 Página inicial
               </a>

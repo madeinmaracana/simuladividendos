@@ -1,12 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { StockAcaoIntentNav } from "@/components/stocks/StockAcaoIntentNav";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { StockFAQ } from "@/components/stocks/StockFAQ";
 import { RelatedTickers } from "@/components/stocks/RelatedTickers";
-import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { TickerPageLayout, TickerPageRow } from "@/components/layout/TickerPageLayout";
-import { ProgrammaticTickerInterlinking } from "@/components/seo/ProgrammaticTickerInterlinking";
 import { RelatedArticlesSection } from "@/components/seo/RelatedArticlesSection";
 import { StockQuickAnswer } from "@/components/stocks/StockQuickAnswer";
 import {
@@ -22,6 +19,7 @@ import {
   TickerSimulatorTop,
 } from "@/components/ticker";
 import {
+  acaoVariantSlug,
   acaoPathFromSlug,
   acaoVariantShares,
   buildAllAcaoSlugStaticParams,
@@ -42,9 +40,6 @@ import {
 import { BrapiError, getStockData } from "@/lib/brapi";
 import { formatBRL } from "@/lib/format";
 import {
-  buildAcaoPagaQuantoVejaTambem,
-  buildAcaoRelacionadosLinks,
-  buildAcaoVejaTambemLinks,
   buildDividendTableRows,
   deriveOptionalMetrics,
   formatYieldForDisplay,
@@ -61,7 +56,6 @@ import { buildAbsoluteOgApiUrl } from "@/lib/og/build-og-api-url";
 import { fetchQuoteForOg, resolvePerShareValueForOg } from "@/lib/og/ticker-og-data";
 import {
   SITE_NAME,
-  breadcrumbsAcao,
   buildAcaoSlugPageMetadata,
   buildFaqPageSchema,
   buildWebPageSchema,
@@ -162,8 +156,6 @@ export default async function AcaoSlugPage({ params }: PageProps) {
     lastSnap ? formatBRL(lastSnap.amountPerShare, currency) : null
   );
   const intentSimulationShares = acaoVariantShares(variant) ?? 100;
-  const vejaTambemLinks =
-    variant === "paga-quanto" ? buildAcaoPagaQuantoVejaTambem(symbol) : buildAcaoVejaTambemLinks(symbol, slug);
 
   const baseEditorial = generateTickerSummaryText({
     symbol,
@@ -210,14 +202,6 @@ export default async function AcaoSlugPage({ params }: PageProps) {
         }
       />
       <TickerPageLayout>
-        <TickerPageRow>
-          <Breadcrumbs items={breadcrumbsAcao(symbol, mock, variant)} />
-        </TickerPageRow>
-
-        <TickerPageRow>
-          <StockAcaoIntentNav symbol={symbol} current={variant} />
-        </TickerPageRow>
-
         <TickerPageRow>
           <TickerSimulatorTop
             ticker={symbol}
@@ -276,21 +260,6 @@ export default async function AcaoSlugPage({ params }: PageProps) {
               </div>
             </dl>
           </section>
-        </TickerPageRow>
-
-        <TickerPageRow>
-          <ProgrammaticTickerInterlinking
-            vejaTambem={vejaTambemLinks}
-            outrosAtivos={mock ? buildAcaoRelacionadosLinks(peers, symbol) : []}
-            sectorHub={
-              mock
-                ? {
-                    href: getSectorPath(mock.sectorSlug),
-                    label: `Ver todas as ações em ${mock.sectorLabel}`,
-                  }
-                : { href: "/setores", label: "Explorar setores na B3" }
-            }
-          />
         </TickerPageRow>
 
         {variant !== "main" && variant !== "paga-quanto" && (
@@ -390,13 +359,17 @@ export default async function AcaoSlugPage({ params }: PageProps) {
 
         <TickerPageRow>
           <section className="text-sm text-[color:var(--text-secondary)]">
-            <p className="font-semibold text-[color:var(--text)]">Veja também:</p>
+            <p className="font-semibold text-[color:var(--text)]">{`Veja também sobre ${symbol}:`}</p>
             <p className="mt-1 flex flex-wrap gap-x-3 gap-y-1">
-              {peers.slice(0, 3).map((p) => (
-                <a key={p.ticker} href={`/acoes/${p.ticker}`} className="underline">
-                  {p.ticker}
-                </a>
-              ))}
+              <a href={acaoPathFromSlug(acaoVariantSlug(symbol, "dividendos"))} className="underline">
+                Dividendos por ação
+              </a>
+              <a href={acaoPathFromSlug(acaoVariantSlug(symbol, "quanto-rende-100-cotas"))} className="underline">
+                Quanto rende 100 cotas
+              </a>
+              <a href={acaoPathFromSlug(acaoVariantSlug(symbol, "simulador-de-dividendos"))} className="underline">
+                Simulador
+              </a>
               <a href="/" className="underline">
                 Página inicial
               </a>
