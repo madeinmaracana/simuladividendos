@@ -4,10 +4,13 @@ import { DividendCalculator } from "@/components/DividendCalculator";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { StockFAQ } from "@/components/stocks/StockFAQ";
 import { ArticleCard } from "@/components/articles/ArticleCard";
+import { TickerPill } from "@/components/ui/TickerPill";
+import { Icon } from "@/components/ui/Icon";
 import type { FaqItem } from "@/lib/stocks-data";
 import { getAllMockTickers, getSectorNavItems } from "@/lib/stocks-data";
 import { ALL_ARTICLES, type ArticleRecord } from "@/data/articles";
 import { getAllMockFiiTickers, getFiiPath } from "@/data/fiis";
+import { getTickerPath } from "@/data/stocks";
 import { cn } from "@/lib/cn";
 import { ui } from "@/components/ui/classes";
 import { buildPageMetadata, buildWebPageSchema, SITE_NAME } from "@/lib/seo";
@@ -52,7 +55,7 @@ const faq: FaqItem[] = [
 ];
 
 const sectionGap = "flex w-full min-w-0 flex-col gap-3 sm:gap-4";
-const sectionTitle = cn(ui.sectionTitle, "text-base sm:text-xl");
+const sectionTitle = ui.sectionTitle;
 
 /** Artigos em destaque na home (intenção de busca + FIIs). */
 const HOME_ARTICLE_SLUGS: string[] = [
@@ -158,9 +161,7 @@ export default function HomePage() {
         <ul className="flex flex-wrap gap-2">
           {popularTickers.map((t) => (
             <li key={t}>
-              <Link href={`/acoes/${encodeURIComponent(t)}`} className={cn(ui.pill, "no-underline")}>
-                {t}
-              </Link>
+              <TickerPill ticker={t} href={getTickerPath(t)} />
             </li>
           ))}
         </ul>
@@ -176,9 +177,7 @@ export default function HomePage() {
         <ul className="flex flex-wrap gap-2">
           {popularFiis.map((t) => (
             <li key={t}>
-              <Link href={getFiiPath(t)} className={cn(ui.pill, "no-underline")}>
-                {t}
-              </Link>
+              <TickerPill ticker={t} href={getFiiPath(t)} />
             </li>
           ))}
           <li>
@@ -193,20 +192,29 @@ export default function HomePage() {
         <h2 id="heading-setores" className={sectionTitle}>
           Setores
         </h2>
-        <ul className="flex flex-wrap gap-2">
-          {getSectorNavItems().map(({ slug, label, href }) => (
+        <ul className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+          {getSectorNavItems().slice(0, 5).map(({ slug, label, href, icon }) => (
             <li key={slug}>
-              <Link href={href} className={cn(ui.pill, "no-underline")}>
-                {label}
+              <Link
+                href={href}
+                className={cn(
+                  "flex h-[140px] flex-col justify-between no-underline",
+                  "rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)]",
+                  "p-4 transition-colors",
+                  "hover:border-[var(--color-border-strong)] hover:bg-[var(--color-surface-muted)]"
+                )}
+              >
+                <Icon name={icon} size="md" className="text-[var(--color-text)]" />
+                <span className="mt-8 block text-base font-medium text-[var(--color-text)]">
+                  {label}
+                </span>
               </Link>
             </li>
           ))}
-          <li>
-            <Link href="/setores" className={cn(ui.pillGhost, "no-underline")}>
-              Todos
-            </Link>
-          </li>
         </ul>
+        <Link href="/setores" className={cn(ui.link, "text-sm")}>
+          Ver todos →
+        </Link>
       </section>
 
       <section aria-labelledby="heading-artigos" className={sectionGap}>

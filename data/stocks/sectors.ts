@@ -127,7 +127,7 @@ export const SECTORS: Record<SectorSlug, SectorRecord> = {
   petroleo: {
     slug: "petroleo",
     name: "Petróleo e gás",
-    icon: "oil_barrel",
+    icon: "local_gas_station",
     intro:
       "O setor de petróleo e gás na B3 é dominado pela Petrobras, empresa de capital misto com forte peso no Ibovespa. Resultados e política de dividendos estão ligados ao preço do barril, câmbio, produção e decisões estratégicas da companhia.",
     dividendRelevance:

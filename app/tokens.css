@@ -173,9 +173,9 @@
   --text-soft:        var(--color-text-soft);
   --border:           var(--color-border);
   --border-strong:    var(--color-border-strong);
-  --primary:          var(--color-text);       /* era #111 — mantido */
-  --primary-foreground: var(--color-surface);
-  --accent:           #2f2f2f;
+  --primary:            var(--brand);            /* verde neon — CTA principal */
+  --primary-foreground: var(--brand-foreground); /* preto sobre verde */
+  --accent:             #2f2f2f;
 
   --dark-bg:      var(--color-dark-bg);
   --dark-surface: var(--color-dark-surface);

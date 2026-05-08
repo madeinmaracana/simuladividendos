@@ -14,7 +14,7 @@ export const ui = {
   pageTitle:
     "text-2xl font-semibold tracking-tight text-[color:var(--text)] sm:text-[32px]",
   /** Título de seção (h2) */
-  sectionTitle: "text-xl font-semibold tracking-tight text-[color:var(--text)]",
+  sectionTitle: "text-2xl font-semibold tracking-tight text-[color:var(--text)]",
   /** Subtítulo de seção (h3) */
   subsectionTitle: "text-base font-semibold text-[color:var(--text)]",
   /** Corpo */
