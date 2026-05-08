@@ -1,57 +1,112 @@
 @import "tailwindcss";
 @import "./tokens.css";
 
+/* =============================================================================
+   GLOBALS — SimulaDividendos
+   Estilos base + classes utilitárias do design system.
+   Os tokens estão em app/tokens.css; a referência TypeScript em lib/tokens.ts.
+   ============================================================================= */
+
+/* ---------------------------------------------------------------------------
+   Aliases de retrocompatibilidade (não remover — usados em componentes)
+   --------------------------------------------------------------------------- */
 :root {
-  /* Back-compat vars usadas no projeto (mapeadas para tokens do design system). */
-  --background: var(--bg);
-  --foreground: var(--text);
-  --card: var(--surface);
-  --muted: var(--text-secondary);
-  --primary-hover: var(--primary);
-  --primary-soft: var(--surface-muted);
-  --primary-soft-border: var(--border-strong);
-  --positive: var(--success);
-  --attention: var(--warning);
-  --radius-input: var(--radius-md);
-  --radius-card: var(--radius-lg);
-  --shadow-card: var(--shadow-md);
+  --background:          var(--color-bg);
+  --foreground:          var(--color-text);
+  --card:                var(--color-surface);
+  --muted:               var(--color-text-muted);
+  --primary-hover:       var(--color-text);
+  --primary-soft:        var(--color-surface-muted);
+  --primary-soft-border: var(--color-border-strong);
+  --positive:            var(--color-success);
+  --attention:           var(--color-warning);
 }
 
-.shadow-card {
-  box-shadow: var(--shadow-card);
-}
-
+/* ---------------------------------------------------------------------------
+   Base
+   --------------------------------------------------------------------------- */
 body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: var(--font-sans, var(--ds-font-sans));
-  line-height: 1.625;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-feature-settings: var(--font-features-ui);
+  line-height: var(--leading-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
 
-code,
-pre,
-kbd,
-samp {
-  font-family: var(--font-mono, var(--ds-font-mono));
+code, pre, kbd, samp {
+  font-family: var(--font-mono);
 }
 
-/* Números financeiros: alinhamento e consistência visual */
-.tabular-nums {
-  font-variant-numeric: tabular-nums;
+/* ---------------------------------------------------------------------------
+   Utilitários tipográficos — escala Figma
+   Uso: className="ds-text-xl ds-semibold"
+   --------------------------------------------------------------------------- */
+.ds-text-2xs { font-size: var(--text-2xs); line-height: var(--leading-body); }
+.ds-text-sm  { font-size: var(--text-sm);  line-height: var(--leading-body); }
+.ds-text-md  { font-size: var(--text-md);  line-height: var(--leading-snug); }
+.ds-text-lg  { font-size: var(--text-lg);  line-height: var(--leading-snug); }
+.ds-text-xl  { font-size: var(--text-xl);  line-height: var(--leading-display); }
+
+/* ---------------------------------------------------------------------------
+   Utilitários de superfície
+   --------------------------------------------------------------------------- */
+.ds-surface       { background: var(--color-surface); border: 1px solid var(--color-border); }
+.ds-surface-dark  { background: var(--color-dark-bg); color: var(--color-dark-text); }
+.ds-surface-brand { background: var(--brand); color: var(--brand-foreground); }
+
+/* ---------------------------------------------------------------------------
+   Sombras
+   --------------------------------------------------------------------------- */
+.shadow-xs   { box-shadow: var(--shadow-xs); }
+.shadow-sm   { box-shadow: var(--shadow-sm); }
+.shadow-card { box-shadow: var(--shadow-md); }
+.shadow-lg   { box-shadow: var(--shadow-lg); }
+
+/* ---------------------------------------------------------------------------
+   Números financeiros — Inter com zero cortado + tabular
+   --------------------------------------------------------------------------- */
+.tabular-nums  { font-variant-numeric: tabular-nums; }
+.slashed-zero  { font-feature-settings: var(--font-features-numeric); font-variant-numeric: tabular-nums slashed-zero; }
+
+/* ---------------------------------------------------------------------------
+   Tipografia editorial — Merriweather para corpo de artigos
+   --------------------------------------------------------------------------- */
+.font-serif { font-family: var(--font-serif); }
+
+.article-body {
+  font-family: var(--font-serif);
+  font-size: var(--text-sm);       /* 16px */
+  line-height: 1.75;               /* mais espaçado para leitura longa */
+  color: var(--color-text);
 }
 
+.article-body h2 {
+  font-family: var(--font-sans);
+  font-size: var(--text-md);       /* 24px */
+  font-weight: var(--font-semibold);
+  line-height: var(--leading-snug);
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+.article-body h3 {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);       /* 16px */
+  font-weight: var(--font-semibold);
+  line-height: var(--leading-snug);
+  margin-top: 1.5em;
+  margin-bottom: 0.4em;
+}
+
+/* ---------------------------------------------------------------------------
+   Animações
+   --------------------------------------------------------------------------- */
 @keyframes simulator-result-in {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 .simulator-result-reveal {

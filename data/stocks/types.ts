@@ -22,6 +22,12 @@ export type SectorRecord = {
   intro: string;
   dividendRelevance: string;
   faqs: FaqItem[];
+  /**
+   * Nome do ícone no Google Fonts Material Symbols Outlined.
+   * Referência: https://fonts.google.com/icons
+   * Renderizado pelo componente <Icon name={sector.icon} /> (components/ui/Icon.tsx).
+   */
+  icon: string;
 };
 
 /** Registro normalizado usado nas páginas (sempre com sectorLabel resolvido). */
