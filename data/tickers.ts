@@ -3743,4 +3743,11039 @@ export const TICKER_DEFINITIONS: StockSeoDefinition[] = [
       { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker CMIG3 e sua quantidade de ações." }
     ],
   },
+
+  // --- AUTO-GERADO em 2026-05-08 (613 tickers) ---
+  {
+    ticker: "FRAS3",
+    companyName: "FRASLE MOBILITY S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "FRASLE MOBILITY S.A. (FRAS3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e FRASLE MOBILITY S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do FRAS3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe FRAS3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "FRASLE MOBILITY S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "FRAS3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker FRAS3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "BBAS3F",
+    companyName: "BCO BRASIL S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "BCO BRASIL S.A. (BBAS3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BBAS3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BBAS3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BCO BRASIL S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BBAS3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BBAS3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "EUCA4",
+    companyName: "EUCATEX S.A. INDUSTRIA E COMERCIO",
+    sectorSlug: "bancos",
+    shortDescription: "EUCATEX S.A. INDUSTRIA E COMERCIO (EUCA4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e EUCATEX S.A. INDUSTRIA E COMERCIO aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do EUCA4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe EUCA4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "EUCATEX S.A. INDUSTRIA E COMERCIO — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "EUCA4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker EUCA4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "AGRO3",
+    companyName: "BRASILAGRO - CIA BRAS DE PROP AGRICOLAS",
+    sectorSlug: "servicos_financeiros",
+    shortDescription: "BRASILAGRO - CIA BRAS DE PROP AGRICOLAS (AGRO3) atua em serviços financeiros — como bolsa, clearing, meios de pagamento ou fintechs listadas na B3. O resultado está ligado a volume de transações, tecnologia e regulação do setor.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia.",
+    historySummary: "O histórico de proventos do AGRO3 acompanha a evolução do mercado de capitais e de pagamentos no Brasil. Use o simulador para explorar o passado e combine com análise de crescimento e margem.",
+    worthFollowing: "Acompanhe AGRO3 se você quer exposição a infraestrutura financeira e aceita risco de regulação e ciclo de mercado. Proventos tendem a acompanhar crescimento de volume e lucratividade.",
+    listDescription: "BRASILAGRO - CIA BRAS DE PROP AGRICOLAS — serviços financeiros com histórico de distribuição ligado ao mercado de capitais.",
+    faqs: [
+      { question: "AGRO3 é equivalente a uma ação de banco?", answer: "Não. Serviços financeiros têm drivers diferentes de bancos tradicionais — foco em transações e tecnologia, não crédito." },
+      { question: "Como ver histórico de proventos?", answer: "Use o ticker AGRO3 nesta página para estimativas, e consulte o RI para dados oficiais." }
+    ],
+  },
+
+  {
+    ticker: "PTBL3",
+    companyName: "PBG S/A",
+    sectorSlug: "bancos",
+    shortDescription: "PBG S/A (PTBL3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e PBG S/A aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do PTBL3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe PTBL3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "PBG S/A — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "PTBL3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker PTBL3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "RCSL3",
+    companyName: "RECRUSUL S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "RECRUSUL S.A. (RCSL3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e RECRUSUL S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do RCSL3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe RCSL3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "RECRUSUL S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "RCSL3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker RCSL3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "SCAR3",
+    companyName: "SAO CARLOS EMPREEND E PARTICIPACOES S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "SAO CARLOS EMPREEND E PARTICIPACOES S.A. (SCAR3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e SAO CARLOS EMPREEND E PARTICIPACOES S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do SCAR3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe SCAR3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "SAO CARLOS EMPREEND E PARTICIPACOES S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "SCAR3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker SCAR3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "NGRD3",
+    companyName: "NEOGRID PARTICIPACOES S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "NEOGRID PARTICIPACOES S.A. (NGRD3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e NEOGRID PARTICIPACOES S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do NGRD3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe NGRD3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "NEOGRID PARTICIPACOES S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "NGRD3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker NGRD3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "PFRM3",
+    companyName: "PROFARMA DISTRIB PROD FARMACEUTICOS S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "PROFARMA DISTRIB PROD FARMACEUTICOS S.A. (PFRM3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e PROFARMA DISTRIB PROD FARMACEUTICOS S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do PFRM3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe PFRM3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "PROFARMA DISTRIB PROD FARMACEUTICOS S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "PFRM3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker PFRM3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "TASA4",
+    companyName: "TAURUS ARMAS S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "TAURUS ARMAS S.A. (TASA4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e TAURUS ARMAS S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do TASA4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe TASA4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "TAURUS ARMAS S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "TASA4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker TASA4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "ROMI3",
+    companyName: "ROMI S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "ROMI S.A. (ROMI3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e ROMI S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do ROMI3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe ROMI3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "ROMI S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "ROMI3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker ROMI3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "KLBN4F",
+    companyName: "KLABIN S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "KLABIN S.A. (KLBN4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do KLBN4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe KLBN4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "KLABIN S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "KLBN4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker KLBN4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "EMBJ3F",
+    companyName: "EMBJ3F",
+    sectorSlug: "consumo",
+    shortDescription: "EMBJ3F (EMBJ3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do EMBJ3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe EMBJ3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "EMBJ3F — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "EMBJ3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker EMBJ3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "TAEE3",
+    companyName: "TRANSMISSORA ALIANÇA DE ENERGIA ELÉTRICA S.A.",
+    sectorSlug: "energia",
+    shortDescription: "TRANSMISSORA ALIANÇA DE ENERGIA ELÉTRICA S.A. (TAEE3) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do TAEE3 reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "TAEE3 pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "TRANSMISSORA ALIANÇA DE ENERGIA ELÉTRICA S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "TAEE3 é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker TAEE3 e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "SANB3",
+    companyName: "BCO SANTANDER (BRASIL) S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BCO SANTANDER (BRASIL) S.A. (SANB3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BCO SANTANDER (BRASIL) S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do SANB3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe SANB3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BCO SANTANDER (BRASIL) S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "SANB3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker SANB3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "RNEW4",
+    companyName: "RENOVA ENERGIA S.A.",
+    sectorSlug: "energia",
+    shortDescription: "RENOVA ENERGIA S.A. (RNEW4) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do RNEW4 reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "RNEW4 pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "RENOVA ENERGIA S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "RNEW4 é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker RNEW4 e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "UNIP6",
+    companyName: "UNIPAR CARBOCLORO S.A.",
+    sectorSlug: "industria",
+    shortDescription: "UNIPAR CARBOCLORO S.A. (UNIP6) é uma empresa industrial listada na B3, com exposição a capacidade de produção, exportação e custos de insumos. O setor distribui dividendos conforme resultado e ciclo de investimentos.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado operacional e política de capital da empresa.",
+    historySummary: "O histórico de proventos do UNIP6 alterna períodos de payout maior com ciclos de CAPEX intenso. Analise o fluxo de caixa livre e a alavancagem para entender a sustentabilidade dos dividendos.",
+    worthFollowing: "UNIP6 pode interessar a quem busca diversificação industrial com potencial de proventos em fases de geração de caixa. Volatilidade cambial e de insumos são fatores de risco relevantes.",
+    listDescription: "UNIPAR CARBOCLORO S.A. — indústria com histórico de proventos ligado ao ciclo produtivo.",
+    faqs: [
+      { question: "UNIP6 paga dividendos frequentes?", answer: "A frequência varia com o ciclo da companhia. Consulte RI e comunicados para o calendário atualizado." },
+      { question: "Como simular meus proventos?", answer: "Informe UNIP6 e a quantidade de ações na calculadora desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "ITSA3",
+    companyName: "ITAUSA S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "ITAUSA S.A. (ITSA3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e ITAUSA S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do ITSA3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe ITSA3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "ITAUSA S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "ITSA3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker ITSA3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "IGTI3",
+    companyName: "IGUATEMI S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "IGUATEMI S.A. (IGTI3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e IGUATEMI S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do IGTI3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe IGTI3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "IGUATEMI S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "IGTI3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker IGTI3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "BBSE3F",
+    companyName: "BB SEGURIDADE PARTICIPAÇÕES S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "BB SEGURIDADE PARTICIPAÇÕES S.A. (BBSE3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BBSE3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BBSE3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BB SEGURIDADE PARTICIPAÇÕES S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BBSE3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BBSE3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "SAPR3",
+    companyName: "CIA SANEAMENTO DO PARANA - SANEPAR",
+    sectorSlug: "bancos",
+    shortDescription: "CIA SANEAMENTO DO PARANA - SANEPAR (SAPR3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e CIA SANEAMENTO DO PARANA - SANEPAR aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do SAPR3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe SAPR3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "CIA SANEAMENTO DO PARANA - SANEPAR — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "SAPR3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker SAPR3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "ETER3",
+    companyName: "ETERNIT S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "ETERNIT S.A. (ETER3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e ETERNIT S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do ETER3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe ETER3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "ETERNIT S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "ETER3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker ETER3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "DMVF3",
+    companyName: "D1000 VAREJO FARMA PARTICIPAÇÕES S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "D1000 VAREJO FARMA PARTICIPAÇÕES S.A. (DMVF3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e D1000 VAREJO FARMA PARTICIPAÇÕES S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do DMVF3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe DMVF3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "D1000 VAREJO FARMA PARTICIPAÇÕES S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "DMVF3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker DMVF3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "MATD3",
+    companyName: "HOSPITAL MATER DEI S/A",
+    sectorSlug: "bancos",
+    shortDescription: "HOSPITAL MATER DEI S/A (MATD3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e HOSPITAL MATER DEI S/A aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do MATD3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe MATD3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "HOSPITAL MATER DEI S/A — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "MATD3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker MATD3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "FSRF11",
+    companyName: "FSRF11",
+    sectorSlug: "consumo",
+    shortDescription: "FSRF11 (FSRF11) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do FSRF11 reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe FSRF11 se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "FSRF11 — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "FSRF11 é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker FSRF11 na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "PETR4F",
+    companyName: "PETROLEO BRASILEIRO S.A. PETROBRAS",
+    sectorSlug: "petroleo",
+    shortDescription: "PETROLEO BRASILEIRO S.A. PETROBRAS (PETR4F) atua no setor de petróleo e gás, com resultado ligado ao preço do barril, produção e câmbio. É uma das indústrias com maior potencial de dividendos em momentos de preço favorável.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Distribuição vinculada ao resultado e à política de capital da companhia.",
+    historySummary: "O histórico de proventos do PETR4F varia com o preço do petróleo e decisões estratégicas da empresa. Simule com base no passado disponível e acompanhe comunicados para entender o próximo ciclo.",
+    worthFollowing: "PETR4F pode ser relevante para quem busca exposição ao setor de energia com potencial de dividendos expressivos. Considere também volatilidade de commodities e risco político.",
+    listDescription: "PETROLEO BRASILEIRO S.A. PETROBRAS — petróleo e gás com dividendos ligados ao ciclo de commodities.",
+    faqs: [
+      { question: "PETR4F paga dividendos regulares?", answer: "A regularidade depende do preço do petróleo e da política da empresa. Simulações passadas não garantem o futuro." },
+      { question: "Como estimar meus proventos?", answer: "Informe PETR4F e sua quantidade de ações no simulador desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "DEXP3",
+    companyName: "DEXXOS PARTICIPACOES S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "DEXXOS PARTICIPACOES S.A. (DEXP3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e DEXXOS PARTICIPACOES S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do DEXP3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe DEXP3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "DEXXOS PARTICIPACOES S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "DEXP3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker DEXP3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "MGLU3F",
+    companyName: "MAGAZINE LUIZA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "MAGAZINE LUIZA S.A. (MGLU3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do MGLU3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe MGLU3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "MAGAZINE LUIZA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "MGLU3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker MGLU3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CMIG4F",
+    companyName: "CIA ENERGETICA DE MINAS GERAIS - CEMIG",
+    sectorSlug: "energia",
+    shortDescription: "CIA ENERGETICA DE MINAS GERAIS - CEMIG (CMIG4F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do CMIG4F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "CMIG4F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "CIA ENERGETICA DE MINAS GERAIS - CEMIG — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "CMIG4F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker CMIG4F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "ITSA4F",
+    companyName: "ITAUSA S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "ITAUSA S.A. (ITSA4F) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e ITAUSA S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do ITSA4F acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe ITSA4F se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "ITAUSA S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "ITSA4F paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker ITSA4F e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "ALPK3",
+    companyName: "ALLPARK EMPREENDIMENTOS PARTICIPACOES SERVICOS S.A",
+    sectorSlug: "bancos",
+    shortDescription: "ALLPARK EMPREENDIMENTOS PARTICIPACOES SERVICOS S.A (ALPK3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e ALLPARK EMPREENDIMENTOS PARTICIPACOES SERVICOS S.A aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do ALPK3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe ALPK3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "ALLPARK EMPREENDIMENTOS PARTICIPACOES SERVICOS S.A — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "ALPK3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker ALPK3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "SANB4",
+    companyName: "BCO SANTANDER (BRASIL) S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BCO SANTANDER (BRASIL) S.A. (SANB4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BCO SANTANDER (BRASIL) S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do SANB4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe SANB4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BCO SANTANDER (BRASIL) S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "SANB4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker SANB4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "CXSE3F",
+    companyName: "CAIXA SEGURIDADE PARTICIPAÇÕES S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "CAIXA SEGURIDADE PARTICIPAÇÕES S.A. (CXSE3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CXSE3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CXSE3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CAIXA SEGURIDADE PARTICIPAÇÕES S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CXSE3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CXSE3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "GOAU3",
+    companyName: "METALURGICA GERDAU S.A.",
+    sectorSlug: "mineracao",
+    shortDescription: "METALURGICA GERDAU S.A. (GOAU3) está no setor de mineração, exposto a ciclos de commodities e demanda global. O dividend yield pode ser elevado em anos de preços altos e recuar em viradas de ciclo.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos variáveis conforme resultado e ciclo de commodities.",
+    historySummary: "O histórico de proventos do GOAU3 oscila com o preço das commodities. Anos de superciclo costumam trazer distribuições extraordinárias; quedas de preço reduzem o payout. Use o simulador para explorar o passado.",
+    worthFollowing: "Acompanhe GOAU3 se você aceita a ciclicidade do setor de mineração em troca de potencial de dividendos altos em momentos favoráveis. Diversificação e gestão de risco são fundamentais neste setor.",
+    listDescription: "METALURGICA GERDAU S.A. — mineração com exposição a commodities e histórico de dividendos cíclicos.",
+    faqs: [
+      { question: "Por que o yield do GOAU3 muda tanto?", answer: "O preço da ação e os pagamentos acompanham o ciclo de commodities. Um yield alto pode refletir queda do papel ou distribuição extraordinária." },
+      { question: "Onde vejo o histórico oficial?", answer: "Consulte o RI da companhia e comunicados à CVM. O simulador desta página usa dados via API como referência educacional." }
+    ],
+  },
+
+  {
+    ticker: "GRND3F",
+    companyName: "GRENDENE S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "GRENDENE S.A. (GRND3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do GRND3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe GRND3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "GRENDENE S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "GRND3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker GRND3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "AMAR3",
+    companyName: "MARISA LOJAS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "MARISA LOJAS S.A. (AMAR3) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do AMAR3 reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe AMAR3 se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "MARISA LOJAS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "AMAR3 é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker AMAR3 na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "ITUB4F",
+    companyName: "ITAU UNIBANCO HOLDING S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "ITAU UNIBANCO HOLDING S.A. (ITUB4F) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e ITAU UNIBANCO HOLDING S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do ITUB4F acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe ITUB4F se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "ITAU UNIBANCO HOLDING S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "ITUB4F paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker ITUB4F e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "RNEW3",
+    companyName: "RENOVA ENERGIA S.A.",
+    sectorSlug: "energia",
+    shortDescription: "RENOVA ENERGIA S.A. (RNEW3) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do RNEW3 reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "RNEW3 pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "RENOVA ENERGIA S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "RNEW3 é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker RNEW3 e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "CSUD3",
+    companyName: "CSU DIGITAL S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "CSU DIGITAL S.A. (CSUD3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e CSU DIGITAL S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do CSUD3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe CSUD3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "CSU DIGITAL S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "CSUD3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker CSUD3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "GGBR3",
+    companyName: "GERDAU S.A.",
+    sectorSlug: "mineracao",
+    shortDescription: "GERDAU S.A. (GGBR3) está no setor de mineração, exposto a ciclos de commodities e demanda global. O dividend yield pode ser elevado em anos de preços altos e recuar em viradas de ciclo.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos variáveis conforme resultado e ciclo de commodities.",
+    historySummary: "O histórico de proventos do GGBR3 oscila com o preço das commodities. Anos de superciclo costumam trazer distribuições extraordinárias; quedas de preço reduzem o payout. Use o simulador para explorar o passado.",
+    worthFollowing: "Acompanhe GGBR3 se você aceita a ciclicidade do setor de mineração em troca de potencial de dividendos altos em momentos favoráveis. Diversificação e gestão de risco são fundamentais neste setor.",
+    listDescription: "GERDAU S.A. — mineração com exposição a commodities e histórico de dividendos cíclicos.",
+    faqs: [
+      { question: "Por que o yield do GGBR3 muda tanto?", answer: "O preço da ação e os pagamentos acompanham o ciclo de commodities. Um yield alto pode refletir queda do papel ou distribuição extraordinária." },
+      { question: "Onde vejo o histórico oficial?", answer: "Consulte o RI da companhia e comunicados à CVM. O simulador desta página usa dados via API como referência educacional." }
+    ],
+  },
+
+  {
+    ticker: "AERI3F",
+    companyName: "AERIS IND. E COM. DE EQUIP. GERACAO DE ENERGIA S/A",
+    sectorSlug: "energia",
+    shortDescription: "AERIS IND. E COM. DE EQUIP. GERACAO DE ENERGIA S/A (AERI3F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do AERI3F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "AERI3F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "AERIS IND. E COM. DE EQUIP. GERACAO DE ENERGIA S/A — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "AERI3F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker AERI3F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "TPIS3",
+    companyName: "TPI - TRIUNFO PARTICIP. E INVEST. S.A.",
+    sectorSlug: "industria",
+    shortDescription: "TPI - TRIUNFO PARTICIP. E INVEST. S.A. (TPIS3) é uma empresa industrial listada na B3, com exposição a capacidade de produção, exportação e custos de insumos. O setor distribui dividendos conforme resultado e ciclo de investimentos.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado operacional e política de capital da empresa.",
+    historySummary: "O histórico de proventos do TPIS3 alterna períodos de payout maior com ciclos de CAPEX intenso. Analise o fluxo de caixa livre e a alavancagem para entender a sustentabilidade dos dividendos.",
+    worthFollowing: "TPIS3 pode interessar a quem busca diversificação industrial com potencial de proventos em fases de geração de caixa. Volatilidade cambial e de insumos são fatores de risco relevantes.",
+    listDescription: "TPI - TRIUNFO PARTICIP. E INVEST. S.A. — indústria com histórico de proventos ligado ao ciclo produtivo.",
+    faqs: [
+      { question: "TPIS3 paga dividendos frequentes?", answer: "A frequência varia com o ciclo da companhia. Consulte RI e comunicados para o calendário atualizado." },
+      { question: "Como simular meus proventos?", answer: "Informe TPIS3 e a quantidade de ações na calculadora desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "BBDC4F",
+    companyName: "BCO BRADESCO S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BCO BRADESCO S.A. (BBDC4F) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BCO BRADESCO S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do BBDC4F acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe BBDC4F se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BCO BRADESCO S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "BBDC4F paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker BBDC4F e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "BRAP3",
+    companyName: "BRADESPAR S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BRADESPAR S.A. (BRAP3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BRADESPAR S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do BRAP3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe BRAP3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BRADESPAR S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "BRAP3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker BRAP3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "WEST3",
+    companyName: "WESTWING COMERCIO VAREJISTA S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "WESTWING COMERCIO VAREJISTA S.A. (WEST3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e WESTWING COMERCIO VAREJISTA S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do WEST3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe WEST3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "WESTWING COMERCIO VAREJISTA S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "WEST3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker WEST3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "VALE3F",
+    companyName: "VALE S.A.",
+    sectorSlug: "mineracao",
+    shortDescription: "VALE S.A. (VALE3F) está no setor de mineração, exposto a ciclos de commodities e demanda global. O dividend yield pode ser elevado em anos de preços altos e recuar em viradas de ciclo.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos variáveis conforme resultado e ciclo de commodities.",
+    historySummary: "O histórico de proventos do VALE3F oscila com o preço das commodities. Anos de superciclo costumam trazer distribuições extraordinárias; quedas de preço reduzem o payout. Use o simulador para explorar o passado.",
+    worthFollowing: "Acompanhe VALE3F se você aceita a ciclicidade do setor de mineração em troca de potencial de dividendos altos em momentos favoráveis. Diversificação e gestão de risco são fundamentais neste setor.",
+    listDescription: "VALE S.A. — mineração com exposição a commodities e histórico de dividendos cíclicos.",
+    faqs: [
+      { question: "Por que o yield do VALE3F muda tanto?", answer: "O preço da ação e os pagamentos acompanham o ciclo de commodities. Um yield alto pode refletir queda do papel ou distribuição extraordinária." },
+      { question: "Onde vejo o histórico oficial?", answer: "Consulte o RI da companhia e comunicados à CVM. O simulador desta página usa dados via API como referência educacional." }
+    ],
+  },
+
+  {
+    ticker: "TCSA3",
+    companyName: "TECNISA S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "TECNISA S.A. (TCSA3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e TECNISA S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do TCSA3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe TCSA3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "TECNISA S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "TCSA3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker TCSA3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "JHSF3F",
+    companyName: "JHSF PARTICIPACOES S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "JHSF PARTICIPACOES S.A. (JHSF3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do JHSF3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe JHSF3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "JHSF PARTICIPACOES S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "JHSF3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker JHSF3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "WIZC3F",
+    companyName: "WIZ CO PARTICIPAÇÕES E CORRETAGEM DE SEGUROS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "WIZ CO PARTICIPAÇÕES E CORRETAGEM DE SEGUROS S.A. (WIZC3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do WIZC3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe WIZC3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "WIZ CO PARTICIPAÇÕES E CORRETAGEM DE SEGUROS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "WIZC3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker WIZC3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "AZUL3",
+    companyName: "AZUL S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "AZUL S.A. (AZUL3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e AZUL S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do AZUL3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe AZUL3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "AZUL S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "AZUL3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker AZUL3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "WEGE3F",
+    companyName: "WEG S.A.",
+    sectorSlug: "industria",
+    shortDescription: "WEG S.A. (WEGE3F) é uma empresa industrial listada na B3, com exposição a capacidade de produção, exportação e custos de insumos. O setor distribui dividendos conforme resultado e ciclo de investimentos.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado operacional e política de capital da empresa.",
+    historySummary: "O histórico de proventos do WEGE3F alterna períodos de payout maior com ciclos de CAPEX intenso. Analise o fluxo de caixa livre e a alavancagem para entender a sustentabilidade dos dividendos.",
+    worthFollowing: "WEGE3F pode interessar a quem busca diversificação industrial com potencial de proventos em fases de geração de caixa. Volatilidade cambial e de insumos são fatores de risco relevantes.",
+    listDescription: "WEG S.A. — indústria com histórico de proventos ligado ao ciclo produtivo.",
+    faqs: [
+      { question: "WEGE3F paga dividendos frequentes?", answer: "A frequência varia com o ciclo da companhia. Consulte RI e comunicados para o calendário atualizado." },
+      { question: "Como simular meus proventos?", answer: "Informe WEGE3F e a quantidade de ações na calculadora desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "AMOB3",
+    companyName: "AUTOMOB PARTICIPAÇÕES S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "AUTOMOB PARTICIPAÇÕES S.A. (AMOB3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e AUTOMOB PARTICIPAÇÕES S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do AMOB3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe AMOB3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "AUTOMOB PARTICIPAÇÕES S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "AMOB3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker AMOB3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "SBSP3F",
+    companyName: "CIA SANEAMENTO BASICO EST SAO PAULO",
+    sectorSlug: "consumo",
+    shortDescription: "CIA SANEAMENTO BASICO EST SAO PAULO (SBSP3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do SBSP3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe SBSP3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CIA SANEAMENTO BASICO EST SAO PAULO — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "SBSP3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker SBSP3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "KLBN3F",
+    companyName: "KLABIN S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "KLABIN S.A. (KLBN3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do KLBN3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe KLBN3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "KLABIN S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "KLBN3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker KLBN3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CAMB3",
+    companyName: "CAMBUCI S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "CAMBUCI S.A. (CAMB3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e CAMBUCI S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do CAMB3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe CAMB3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "CAMBUCI S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "CAMB3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker CAMB3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "AZZA3F",
+    companyName: "AZZAS 2154 S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "AZZAS 2154 S.A. (AZZA3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do AZZA3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe AZZA3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "AZZAS 2154 S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "AZZA3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker AZZA3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BIOM3",
+    companyName: "BIOMM S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BIOMM S.A. (BIOM3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BIOMM S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do BIOM3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe BIOM3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BIOMM S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "BIOM3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker BIOM3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "AVLL3",
+    companyName: "ALPHAVILLE S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "ALPHAVILLE S.A. (AVLL3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e ALPHAVILLE S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do AVLL3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe AVLL3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "ALPHAVILLE S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "AVLL3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker AVLL3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "TECN3",
+    companyName: "TECHNOS S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "TECHNOS S.A. (TECN3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e TECHNOS S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do TECN3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe TECN3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "TECHNOS S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "TECN3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker TECN3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "KLBN11F",
+    companyName: "KLABIN S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "KLABIN S.A. (KLBN11F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do KLBN11F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe KLBN11F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "KLABIN S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "KLBN11F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker KLBN11F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BBDC3F",
+    companyName: "BCO BRADESCO S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BCO BRADESCO S.A. (BBDC3F) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BCO BRADESCO S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do BBDC3F acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe BBDC3F se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BCO BRADESCO S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "BBDC3F paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker BBDC3F e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "B3SA3F",
+    companyName: "B3 S.A. - BRASIL. BOLSA. BALCÃO",
+    sectorSlug: "servicos_financeiros",
+    shortDescription: "B3 S.A. - BRASIL. BOLSA. BALCÃO (B3SA3F) atua em serviços financeiros — como bolsa, clearing, meios de pagamento ou fintechs listadas na B3. O resultado está ligado a volume de transações, tecnologia e regulação do setor.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia.",
+    historySummary: "O histórico de proventos do B3SA3F acompanha a evolução do mercado de capitais e de pagamentos no Brasil. Use o simulador para explorar o passado e combine com análise de crescimento e margem.",
+    worthFollowing: "Acompanhe B3SA3F se você quer exposição a infraestrutura financeira e aceita risco de regulação e ciclo de mercado. Proventos tendem a acompanhar crescimento de volume e lucratividade.",
+    listDescription: "B3 S.A. - BRASIL. BOLSA. BALCÃO — serviços financeiros com histórico de distribuição ligado ao mercado de capitais.",
+    faqs: [
+      { question: "B3SA3F é equivalente a uma ação de banco?", answer: "Não. Serviços financeiros têm drivers diferentes de bancos tradicionais — foco em transações e tecnologia, não crédito." },
+      { question: "Como ver histórico de proventos?", answer: "Use o ticker B3SA3F nesta página para estimativas, e consulte o RI para dados oficiais." }
+    ],
+  },
+
+  {
+    ticker: "BRBI11F",
+    companyName: "BRBI BR PARTNERS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "BRBI BR PARTNERS S.A. (BRBI11F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BRBI11F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BRBI11F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BRBI BR PARTNERS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BRBI11F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BRBI11F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "TAEE11F",
+    companyName: "TRANSMISSORA ALIANÇA DE ENERGIA ELÉTRICA S.A.",
+    sectorSlug: "energia",
+    shortDescription: "TRANSMISSORA ALIANÇA DE ENERGIA ELÉTRICA S.A. (TAEE11F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do TAEE11F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "TAEE11F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "TRANSMISSORA ALIANÇA DE ENERGIA ELÉTRICA S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "TAEE11F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker TAEE11F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "RANI3F",
+    companyName: "IRANI PAPEL E EMBALAGEM S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "IRANI PAPEL E EMBALAGEM S.A. (RANI3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do RANI3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe RANI3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "IRANI PAPEL E EMBALAGEM S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "RANI3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker RANI3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CPLE3F",
+    companyName: "CIA PARANAENSE DE ENERGIA - COPEL",
+    sectorSlug: "energia",
+    shortDescription: "CIA PARANAENSE DE ENERGIA - COPEL (CPLE3F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do CPLE3F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "CPLE3F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "CIA PARANAENSE DE ENERGIA - COPEL — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "CPLE3F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker CPLE3F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "RAIZ4F",
+    companyName: "RAIZEN S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "RAIZEN S.A. (RAIZ4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do RAIZ4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe RAIZ4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "RAIZEN S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "RAIZ4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker RAIZ4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BMEB4",
+    companyName: "BCO MERCANTIL DO BRASIL S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BCO MERCANTIL DO BRASIL S.A. (BMEB4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BCO MERCANTIL DO BRASIL S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do BMEB4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe BMEB4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BCO MERCANTIL DO BRASIL S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "BMEB4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker BMEB4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "VAMO9",
+    companyName: "VAMOS LOCAÇÃO DE CAMINHÕES. MÁQUINAS E EQUIP. S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "VAMOS LOCAÇÃO DE CAMINHÕES. MÁQUINAS E EQUIP. S.A. (VAMO9) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do VAMO9 reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe VAMO9 se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "VAMOS LOCAÇÃO DE CAMINHÕES. MÁQUINAS E EQUIP. S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "VAMO9 é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker VAMO9 na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "PRIO3F",
+    companyName: "PRIO S.A.",
+    sectorSlug: "petroleo",
+    shortDescription: "PRIO S.A. (PRIO3F) atua no setor de petróleo e gás, com resultado ligado ao preço do barril, produção e câmbio. É uma das indústrias com maior potencial de dividendos em momentos de preço favorável.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Distribuição vinculada ao resultado e à política de capital da companhia.",
+    historySummary: "O histórico de proventos do PRIO3F varia com o preço do petróleo e decisões estratégicas da empresa. Simule com base no passado disponível e acompanhe comunicados para entender o próximo ciclo.",
+    worthFollowing: "PRIO3F pode ser relevante para quem busca exposição ao setor de energia com potencial de dividendos expressivos. Considere também volatilidade de commodities e risco político.",
+    listDescription: "PRIO S.A. — petróleo e gás com dividendos ligados ao ciclo de commodities.",
+    faqs: [
+      { question: "PRIO3F paga dividendos regulares?", answer: "A regularidade depende do preço do petróleo e da política da empresa. Simulações passadas não garantem o futuro." },
+      { question: "Como estimar meus proventos?", answer: "Informe PRIO3F e sua quantidade de ações no simulador desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "SHOW3",
+    companyName: "T4F ENTRETENIMENTO S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "T4F ENTRETENIMENTO S.A. (SHOW3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e T4F ENTRETENIMENTO S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do SHOW3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe SHOW3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "T4F ENTRETENIMENTO S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "SHOW3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker SHOW3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "VIVA3F",
+    companyName: "VIVARA PARTICIPAÇOES S.A",
+    sectorSlug: "consumo",
+    shortDescription: "VIVARA PARTICIPAÇOES S.A (VIVA3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do VIVA3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe VIVA3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "VIVARA PARTICIPAÇOES S.A — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "VIVA3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker VIVA3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "SAPR4F",
+    companyName: "CIA SANEAMENTO DO PARANA - SANEPAR",
+    sectorSlug: "consumo",
+    shortDescription: "CIA SANEAMENTO DO PARANA - SANEPAR (SAPR4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do SAPR4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe SAPR4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CIA SANEAMENTO DO PARANA - SANEPAR — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "SAPR4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker SAPR4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "LUPA3",
+    companyName: "LUPATECH S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "LUPATECH S.A. (LUPA3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e LUPATECH S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do LUPA3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe LUPA3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "LUPATECH S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "LUPA3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker LUPA3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "MDIA3F",
+    companyName: "M.DIAS BRANCO S.A. IND COM DE ALIMENTOS",
+    sectorSlug: "consumo",
+    shortDescription: "M.DIAS BRANCO S.A. IND COM DE ALIMENTOS (MDIA3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do MDIA3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe MDIA3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "M.DIAS BRANCO S.A. IND COM DE ALIMENTOS — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "MDIA3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker MDIA3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BPAC3F",
+    companyName: "BCO BTG PACTUAL S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BCO BTG PACTUAL S.A. (BPAC3F) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BCO BTG PACTUAL S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do BPAC3F acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe BPAC3F se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BCO BTG PACTUAL S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "BPAC3F paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker BPAC3F e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "POMO4F",
+    companyName: "MARCOPOLO S.A.",
+    sectorSlug: "industria",
+    shortDescription: "MARCOPOLO S.A. (POMO4F) é uma empresa industrial listada na B3, com exposição a capacidade de produção, exportação e custos de insumos. O setor distribui dividendos conforme resultado e ciclo de investimentos.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado operacional e política de capital da empresa.",
+    historySummary: "O histórico de proventos do POMO4F alterna períodos de payout maior com ciclos de CAPEX intenso. Analise o fluxo de caixa livre e a alavancagem para entender a sustentabilidade dos dividendos.",
+    worthFollowing: "POMO4F pode interessar a quem busca diversificação industrial com potencial de proventos em fases de geração de caixa. Volatilidade cambial e de insumos são fatores de risco relevantes.",
+    listDescription: "MARCOPOLO S.A. — indústria com histórico de proventos ligado ao ciclo produtivo.",
+    faqs: [
+      { question: "POMO4F paga dividendos frequentes?", answer: "A frequência varia com o ciclo da companhia. Consulte RI e comunicados para o calendário atualizado." },
+      { question: "Como simular meus proventos?", answer: "Informe POMO4F e a quantidade de ações na calculadora desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "CMIN3F",
+    companyName: "CSN MINERAÇÃO S.A.",
+    sectorSlug: "mineracao",
+    shortDescription: "CSN MINERAÇÃO S.A. (CMIN3F) está no setor de mineração, exposto a ciclos de commodities e demanda global. O dividend yield pode ser elevado em anos de preços altos e recuar em viradas de ciclo.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos variáveis conforme resultado e ciclo de commodities.",
+    historySummary: "O histórico de proventos do CMIN3F oscila com o preço das commodities. Anos de superciclo costumam trazer distribuições extraordinárias; quedas de preço reduzem o payout. Use o simulador para explorar o passado.",
+    worthFollowing: "Acompanhe CMIN3F se você aceita a ciclicidade do setor de mineração em troca de potencial de dividendos altos em momentos favoráveis. Diversificação e gestão de risco são fundamentais neste setor.",
+    listDescription: "CSN MINERAÇÃO S.A. — mineração com exposição a commodities e histórico de dividendos cíclicos.",
+    faqs: [
+      { question: "Por que o yield do CMIN3F muda tanto?", answer: "O preço da ação e os pagamentos acompanham o ciclo de commodities. Um yield alto pode refletir queda do papel ou distribuição extraordinária." },
+      { question: "Onde vejo o histórico oficial?", answer: "Consulte o RI da companhia e comunicados à CVM. O simulador desta página usa dados via API como referência educacional." }
+    ],
+  },
+
+  {
+    ticker: "LREN3F",
+    companyName: "LOJAS RENNER S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "LOJAS RENNER S.A. (LREN3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do LREN3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe LREN3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "LOJAS RENNER S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "LREN3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker LREN3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "AERI3",
+    companyName: "AERIS IND. E COM. DE EQUIP. GERACAO DE ENERGIA S/A",
+    sectorSlug: "energia",
+    shortDescription: "AERIS IND. E COM. DE EQUIP. GERACAO DE ENERGIA S/A (AERI3) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do AERI3 reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "AERI3 pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "AERIS IND. E COM. DE EQUIP. GERACAO DE ENERGIA S/A — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "AERI3 é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker AERI3 e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "EZTC3F",
+    companyName: "EZ TEC EMPREEND. E PARTICIPACOES S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "EZ TEC EMPREEND. E PARTICIPACOES S.A. (EZTC3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do EZTC3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe EZTC3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "EZ TEC EMPREEND. E PARTICIPACOES S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "EZTC3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker EZTC3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "AGXY3",
+    companyName: "AGROGALAXY PARTICIPAÇÕES S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "AGROGALAXY PARTICIPAÇÕES S.A. (AGXY3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e AGROGALAXY PARTICIPAÇÕES S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do AGXY3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe AGXY3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "AGROGALAXY PARTICIPAÇÕES S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "AGXY3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker AGXY3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "EGIE3F",
+    companyName: "ENGIE BRASIL ENERGIA S.A.",
+    sectorSlug: "energia",
+    shortDescription: "ENGIE BRASIL ENERGIA S.A. (EGIE3F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do EGIE3F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "EGIE3F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "ENGIE BRASIL ENERGIA S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "EGIE3F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker EGIE3F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "LOGN3",
+    companyName: "LOG-IN LOGISTICA INTERMODAL S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "LOG-IN LOGISTICA INTERMODAL S.A. (LOGN3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e LOG-IN LOGISTICA INTERMODAL S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do LOGN3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe LOGN3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "LOG-IN LOGISTICA INTERMODAL S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "LOGN3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker LOGN3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "TAEE4F",
+    companyName: "TRANSMISSORA ALIANÇA DE ENERGIA ELÉTRICA S.A.",
+    sectorSlug: "energia",
+    shortDescription: "TRANSMISSORA ALIANÇA DE ENERGIA ELÉTRICA S.A. (TAEE4F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do TAEE4F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "TAEE4F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "TRANSMISSORA ALIANÇA DE ENERGIA ELÉTRICA S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "TAEE4F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker TAEE4F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "COGN3F",
+    companyName: "COGNA EDUCAÇÃO S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "COGNA EDUCAÇÃO S.A. (COGN3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do COGN3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe COGN3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "COGNA EDUCAÇÃO S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "COGN3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker COGN3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "AXIA3F",
+    companyName: "AXIA3F",
+    sectorSlug: "consumo",
+    shortDescription: "AXIA3F (AXIA3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do AXIA3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe AXIA3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "AXIA3F — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "AXIA3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker AXIA3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CSAN3F",
+    companyName: "COSAN S.A.",
+    sectorSlug: "petroleo",
+    shortDescription: "COSAN S.A. (CSAN3F) atua no setor de petróleo e gás, com resultado ligado ao preço do barril, produção e câmbio. É uma das indústrias com maior potencial de dividendos em momentos de preço favorável.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Distribuição vinculada ao resultado e à política de capital da companhia.",
+    historySummary: "O histórico de proventos do CSAN3F varia com o preço do petróleo e decisões estratégicas da empresa. Simule com base no passado disponível e acompanhe comunicados para entender o próximo ciclo.",
+    worthFollowing: "CSAN3F pode ser relevante para quem busca exposição ao setor de energia com potencial de dividendos expressivos. Considere também volatilidade de commodities e risco político.",
+    listDescription: "COSAN S.A. — petróleo e gás com dividendos ligados ao ciclo de commodities.",
+    faqs: [
+      { question: "CSAN3F paga dividendos regulares?", answer: "A regularidade depende do preço do petróleo e da política da empresa. Simulações passadas não garantem o futuro." },
+      { question: "Como estimar meus proventos?", answer: "Informe CSAN3F e sua quantidade de ações no simulador desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "WDCN3",
+    companyName: "WDCN3",
+    sectorSlug: "bancos",
+    shortDescription: "WDCN3 (WDCN3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e WDCN3 aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do WDCN3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe WDCN3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "WDCN3 — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "WDCN3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker WDCN3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "RENT3F",
+    companyName: "LOCALIZA RENT A CAR S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "LOCALIZA RENT A CAR S.A. (RENT3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do RENT3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe RENT3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "LOCALIZA RENT A CAR S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "RENT3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker RENT3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "PDTC3",
+    companyName: "PADTEC HOLDING S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "PADTEC HOLDING S.A. (PDTC3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e PADTEC HOLDING S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do PDTC3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe PDTC3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "PADTEC HOLDING S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "PDTC3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker PDTC3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "CAML3F",
+    companyName: "CAMIL ALIMENTOS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "CAMIL ALIMENTOS S.A. (CAML3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CAML3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CAML3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CAMIL ALIMENTOS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CAML3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CAML3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "VSTE3",
+    companyName: "VESTE S.A. ESTILO",
+    sectorSlug: "bancos",
+    shortDescription: "VESTE S.A. ESTILO (VSTE3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e VESTE S.A. ESTILO aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do VSTE3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe VSTE3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "VESTE S.A. ESTILO — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "VSTE3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker VSTE3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "RPMG3",
+    companyName: "REFINARIA DE PETROLEOS MANGUINHOS S.A.",
+    sectorSlug: "petroleo",
+    shortDescription: "REFINARIA DE PETROLEOS MANGUINHOS S.A. (RPMG3) atua no setor de petróleo e gás, com resultado ligado ao preço do barril, produção e câmbio. É uma das indústrias com maior potencial de dividendos em momentos de preço favorável.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Distribuição vinculada ao resultado e à política de capital da companhia.",
+    historySummary: "O histórico de proventos do RPMG3 varia com o preço do petróleo e decisões estratégicas da empresa. Simule com base no passado disponível e acompanhe comunicados para entender o próximo ciclo.",
+    worthFollowing: "RPMG3 pode ser relevante para quem busca exposição ao setor de energia com potencial de dividendos expressivos. Considere também volatilidade de commodities e risco político.",
+    listDescription: "REFINARIA DE PETROLEOS MANGUINHOS S.A. — petróleo e gás com dividendos ligados ao ciclo de commodities.",
+    faqs: [
+      { question: "RPMG3 paga dividendos regulares?", answer: "A regularidade depende do preço do petróleo e da política da empresa. Simulações passadas não garantem o futuro." },
+      { question: "Como estimar meus proventos?", answer: "Informe RPMG3 e sua quantidade de ações no simulador desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "RECV3F",
+    companyName: "PETRORECÔNCAVO S.A.",
+    sectorSlug: "petroleo",
+    shortDescription: "PETRORECÔNCAVO S.A. (RECV3F) atua no setor de petróleo e gás, com resultado ligado ao preço do barril, produção e câmbio. É uma das indústrias com maior potencial de dividendos em momentos de preço favorável.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Distribuição vinculada ao resultado e à política de capital da companhia.",
+    historySummary: "O histórico de proventos do RECV3F varia com o preço do petróleo e decisões estratégicas da empresa. Simule com base no passado disponível e acompanhe comunicados para entender o próximo ciclo.",
+    worthFollowing: "RECV3F pode ser relevante para quem busca exposição ao setor de energia com potencial de dividendos expressivos. Considere também volatilidade de commodities e risco político.",
+    listDescription: "PETRORECÔNCAVO S.A. — petróleo e gás com dividendos ligados ao ciclo de commodities.",
+    faqs: [
+      { question: "RECV3F paga dividendos regulares?", answer: "A regularidade depende do preço do petróleo e da política da empresa. Simulações passadas não garantem o futuro." },
+      { question: "Como estimar meus proventos?", answer: "Informe RECV3F e sua quantidade de ações no simulador desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "ALOS3F",
+    companyName: "ALLOS S.A",
+    sectorSlug: "consumo",
+    shortDescription: "ALLOS S.A (ALOS3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do ALOS3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe ALOS3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ALLOS S.A — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "ALOS3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker ALOS3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "VIVR3",
+    companyName: "VIVER INCORPORADORA E CONSTRUTORA S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "VIVER INCORPORADORA E CONSTRUTORA S.A. (VIVR3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e VIVER INCORPORADORA E CONSTRUTORA S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do VIVR3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe VIVR3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "VIVER INCORPORADORA E CONSTRUTORA S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "VIVR3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker VIVR3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "ABCB4F",
+    companyName: "BCO ABC BRASIL S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BCO ABC BRASIL S.A. (ABCB4F) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BCO ABC BRASIL S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do ABCB4F acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe ABCB4F se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BCO ABC BRASIL S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "ABCB4F paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker ABCB4F e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "BSLI3",
+    companyName: "BRB BCO DE BRASILIA S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BRB BCO DE BRASILIA S.A. (BSLI3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BRB BCO DE BRASILIA S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do BSLI3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe BSLI3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BRB BCO DE BRASILIA S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "BSLI3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker BSLI3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "VIVT3F",
+    companyName: "TELEFÔNICA BRASIL S.A",
+    sectorSlug: "consumo",
+    shortDescription: "TELEFÔNICA BRASIL S.A (VIVT3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do VIVT3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe VIVT3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "TELEFÔNICA BRASIL S.A — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "VIVT3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker VIVT3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "GOAU4F",
+    companyName: "METALURGICA GERDAU S.A.",
+    sectorSlug: "mineracao",
+    shortDescription: "METALURGICA GERDAU S.A. (GOAU4F) está no setor de mineração, exposto a ciclos de commodities e demanda global. O dividend yield pode ser elevado em anos de preços altos e recuar em viradas de ciclo.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos variáveis conforme resultado e ciclo de commodities.",
+    historySummary: "O histórico de proventos do GOAU4F oscila com o preço das commodities. Anos de superciclo costumam trazer distribuições extraordinárias; quedas de preço reduzem o payout. Use o simulador para explorar o passado.",
+    worthFollowing: "Acompanhe GOAU4F se você aceita a ciclicidade do setor de mineração em troca de potencial de dividendos altos em momentos favoráveis. Diversificação e gestão de risco são fundamentais neste setor.",
+    listDescription: "METALURGICA GERDAU S.A. — mineração com exposição a commodities e histórico de dividendos cíclicos.",
+    faqs: [
+      { question: "Por que o yield do GOAU4F muda tanto?", answer: "O preço da ação e os pagamentos acompanham o ciclo de commodities. Um yield alto pode refletir queda do papel ou distribuição extraordinária." },
+      { question: "Onde vejo o histórico oficial?", answer: "Consulte o RI da companhia e comunicados à CVM. O simulador desta página usa dados via API como referência educacional." }
+    ],
+  },
+
+  {
+    ticker: "BMGB4F",
+    companyName: "BANCO BMG S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BANCO BMG S.A. (BMGB4F) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BANCO BMG S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do BMGB4F acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe BMGB4F se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BANCO BMG S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "BMGB4F paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker BMGB4F e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "BHIA3F",
+    companyName: "GRUPO CASAS BAHIA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "GRUPO CASAS BAHIA S.A. (BHIA3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BHIA3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BHIA3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "GRUPO CASAS BAHIA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BHIA3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BHIA3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "AURE3F",
+    companyName: "AUREN ENERGIA S.A.",
+    sectorSlug: "energia",
+    shortDescription: "AUREN ENERGIA S.A. (AURE3F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do AURE3F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "AURE3F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "AUREN ENERGIA S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "AURE3F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker AURE3F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "ISAE4F",
+    companyName: "ISA ENERGIA BRASIL S.A",
+    sectorSlug: "energia",
+    shortDescription: "ISA ENERGIA BRASIL S.A (ISAE4F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do ISAE4F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "ISAE4F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "ISA ENERGIA BRASIL S.A — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "ISAE4F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker ISAE4F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "USIM5F",
+    companyName: "USINAS SID DE MINAS GERAIS S.A.-USIMINAS",
+    sectorSlug: "mineracao",
+    shortDescription: "USINAS SID DE MINAS GERAIS S.A.-USIMINAS (USIM5F) está no setor de mineração, exposto a ciclos de commodities e demanda global. O dividend yield pode ser elevado em anos de preços altos e recuar em viradas de ciclo.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos variáveis conforme resultado e ciclo de commodities.",
+    historySummary: "O histórico de proventos do USIM5F oscila com o preço das commodities. Anos de superciclo costumam trazer distribuições extraordinárias; quedas de preço reduzem o payout. Use o simulador para explorar o passado.",
+    worthFollowing: "Acompanhe USIM5F se você aceita a ciclicidade do setor de mineração em troca de potencial de dividendos altos em momentos favoráveis. Diversificação e gestão de risco são fundamentais neste setor.",
+    listDescription: "USINAS SID DE MINAS GERAIS S.A.-USIMINAS — mineração com exposição a commodities e histórico de dividendos cíclicos.",
+    faqs: [
+      { question: "Por que o yield do USIM5F muda tanto?", answer: "O preço da ação e os pagamentos acompanham o ciclo de commodities. Um yield alto pode refletir queda do papel ou distribuição extraordinária." },
+      { question: "Onde vejo o histórico oficial?", answer: "Consulte o RI da companhia e comunicados à CVM. O simulador desta página usa dados via API como referência educacional." }
+    ],
+  },
+
+  {
+    ticker: "BOBR4",
+    companyName: "BOMBRIL S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BOMBRIL S.A. (BOBR4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BOMBRIL S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do BOBR4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe BOBR4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BOMBRIL S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "BOBR4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker BOBR4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "ALUP4F",
+    companyName: "ALUPAR INVESTIMENTO S/A",
+    sectorSlug: "consumo",
+    shortDescription: "ALUPAR INVESTIMENTO S/A (ALUP4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do ALUP4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe ALUP4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ALUPAR INVESTIMENTO S/A — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "ALUP4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker ALUP4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "ITUB3F",
+    companyName: "ITAU UNIBANCO HOLDING S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "ITAU UNIBANCO HOLDING S.A. (ITUB3F) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e ITAU UNIBANCO HOLDING S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do ITUB3F acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe ITUB3F se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "ITAU UNIBANCO HOLDING S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "ITUB3F paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker ITUB3F e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "VAMO3F",
+    companyName: "VAMOS LOCAÇÃO DE CAMINHÕES. MÁQUINAS E EQUIP. S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "VAMOS LOCAÇÃO DE CAMINHÕES. MÁQUINAS E EQUIP. S.A. (VAMO3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do VAMO3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe VAMO3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "VAMOS LOCAÇÃO DE CAMINHÕES. MÁQUINAS E EQUIP. S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "VAMO3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker VAMO3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CYRE3F",
+    companyName: "CYRELA BRAZIL REALTY S.A.EMPREEND E PART",
+    sectorSlug: "consumo",
+    shortDescription: "CYRELA BRAZIL REALTY S.A.EMPREEND E PART (CYRE3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CYRE3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CYRE3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CYRELA BRAZIL REALTY S.A.EMPREEND E PART — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CYRE3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CYRE3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "LJQQ3F",
+    companyName: "LOJAS QUERO-QUERO S/A",
+    sectorSlug: "consumo",
+    shortDescription: "LOJAS QUERO-QUERO S/A (LJQQ3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do LJQQ3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe LJQQ3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "LOJAS QUERO-QUERO S/A — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "LJQQ3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker LJQQ3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "HAGA4",
+    companyName: "HAGA S.A. INDUSTRIA E COMERCIO",
+    sectorSlug: "bancos",
+    shortDescription: "HAGA S.A. INDUSTRIA E COMERCIO (HAGA4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e HAGA S.A. INDUSTRIA E COMERCIO aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do HAGA4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe HAGA4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "HAGA S.A. INDUSTRIA E COMERCIO — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "HAGA4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker HAGA4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "VULC3F",
+    companyName: "VULCABRAS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "VULCABRAS S.A. (VULC3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do VULC3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe VULC3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "VULCABRAS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "VULC3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker VULC3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "GGBR4F",
+    companyName: "GERDAU S.A.",
+    sectorSlug: "mineracao",
+    shortDescription: "GERDAU S.A. (GGBR4F) está no setor de mineração, exposto a ciclos de commodities e demanda global. O dividend yield pode ser elevado em anos de preços altos e recuar em viradas de ciclo.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos variáveis conforme resultado e ciclo de commodities.",
+    historySummary: "O histórico de proventos do GGBR4F oscila com o preço das commodities. Anos de superciclo costumam trazer distribuições extraordinárias; quedas de preço reduzem o payout. Use o simulador para explorar o passado.",
+    worthFollowing: "Acompanhe GGBR4F se você aceita a ciclicidade do setor de mineração em troca de potencial de dividendos altos em momentos favoráveis. Diversificação e gestão de risco são fundamentais neste setor.",
+    listDescription: "GERDAU S.A. — mineração com exposição a commodities e histórico de dividendos cíclicos.",
+    faqs: [
+      { question: "Por que o yield do GGBR4F muda tanto?", answer: "O preço da ação e os pagamentos acompanham o ciclo de commodities. Um yield alto pode refletir queda do papel ou distribuição extraordinária." },
+      { question: "Onde vejo o histórico oficial?", answer: "Consulte o RI da companhia e comunicados à CVM. O simulador desta página usa dados via API como referência educacional." }
+    ],
+  },
+
+  {
+    ticker: "PETR3F",
+    companyName: "PETROLEO BRASILEIRO S.A. PETROBRAS",
+    sectorSlug: "petroleo",
+    shortDescription: "PETROLEO BRASILEIRO S.A. PETROBRAS (PETR3F) atua no setor de petróleo e gás, com resultado ligado ao preço do barril, produção e câmbio. É uma das indústrias com maior potencial de dividendos em momentos de preço favorável.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Distribuição vinculada ao resultado e à política de capital da companhia.",
+    historySummary: "O histórico de proventos do PETR3F varia com o preço do petróleo e decisões estratégicas da empresa. Simule com base no passado disponível e acompanhe comunicados para entender o próximo ciclo.",
+    worthFollowing: "PETR3F pode ser relevante para quem busca exposição ao setor de energia com potencial de dividendos expressivos. Considere também volatilidade de commodities e risco político.",
+    listDescription: "PETROLEO BRASILEIRO S.A. PETROBRAS — petróleo e gás com dividendos ligados ao ciclo de commodities.",
+    faqs: [
+      { question: "PETR3F paga dividendos regulares?", answer: "A regularidade depende do preço do petróleo e da política da empresa. Simulações passadas não garantem o futuro." },
+      { question: "Como estimar meus proventos?", answer: "Informe PETR3F e sua quantidade de ações no simulador desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "SUZB3F",
+    companyName: "SUZANO S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "SUZANO S.A. (SUZB3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do SUZB3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe SUZB3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "SUZANO S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "SUZB3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker SUZB3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "RAPT3",
+    companyName: "RANDONCORP S.A.",
+    sectorSlug: "industria",
+    shortDescription: "RANDONCORP S.A. (RAPT3) é uma empresa industrial listada na B3, com exposição a capacidade de produção, exportação e custos de insumos. O setor distribui dividendos conforme resultado e ciclo de investimentos.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado operacional e política de capital da empresa.",
+    historySummary: "O histórico de proventos do RAPT3 alterna períodos de payout maior com ciclos de CAPEX intenso. Analise o fluxo de caixa livre e a alavancagem para entender a sustentabilidade dos dividendos.",
+    worthFollowing: "RAPT3 pode interessar a quem busca diversificação industrial com potencial de proventos em fases de geração de caixa. Volatilidade cambial e de insumos são fatores de risco relevantes.",
+    listDescription: "RANDONCORP S.A. — indústria com histórico de proventos ligado ao ciclo produtivo.",
+    faqs: [
+      { question: "RAPT3 paga dividendos frequentes?", answer: "A frequência varia com o ciclo da companhia. Consulte RI e comunicados para o calendário atualizado." },
+      { question: "Como simular meus proventos?", answer: "Informe RAPT3 e a quantidade de ações na calculadora desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "TAEE3F",
+    companyName: "TRANSMISSORA ALIANÇA DE ENERGIA ELÉTRICA S.A.",
+    sectorSlug: "energia",
+    shortDescription: "TRANSMISSORA ALIANÇA DE ENERGIA ELÉTRICA S.A. (TAEE3F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do TAEE3F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "TAEE3F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "TRANSMISSORA ALIANÇA DE ENERGIA ELÉTRICA S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "TAEE3F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker TAEE3F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "PSSA3F",
+    companyName: "PORTO SEGURO S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "PORTO SEGURO S.A. (PSSA3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do PSSA3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe PSSA3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "PORTO SEGURO S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "PSSA3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker PSSA3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "ALUP4",
+    companyName: "ALUPAR INVESTIMENTO S/A",
+    sectorSlug: "bancos",
+    shortDescription: "ALUPAR INVESTIMENTO S/A (ALUP4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e ALUPAR INVESTIMENTO S/A aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do ALUP4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe ALUP4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "ALUPAR INVESTIMENTO S/A — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "ALUP4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker ALUP4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "ABEV3F",
+    companyName: "AMBEV S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "AMBEV S.A. (ABEV3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do ABEV3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe ABEV3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "AMBEV S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "ABEV3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker ABEV3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BRKM3",
+    companyName: "BRASKEM S.A.",
+    sectorSlug: "industria",
+    shortDescription: "BRASKEM S.A. (BRKM3) é uma empresa industrial listada na B3, com exposição a capacidade de produção, exportação e custos de insumos. O setor distribui dividendos conforme resultado e ciclo de investimentos.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado operacional e política de capital da empresa.",
+    historySummary: "O histórico de proventos do BRKM3 alterna períodos de payout maior com ciclos de CAPEX intenso. Analise o fluxo de caixa livre e a alavancagem para entender a sustentabilidade dos dividendos.",
+    worthFollowing: "BRKM3 pode interessar a quem busca diversificação industrial com potencial de proventos em fases de geração de caixa. Volatilidade cambial e de insumos são fatores de risco relevantes.",
+    listDescription: "BRASKEM S.A. — indústria com histórico de proventos ligado ao ciclo produtivo.",
+    faqs: [
+      { question: "BRKM3 paga dividendos frequentes?", answer: "A frequência varia com o ciclo da companhia. Consulte RI e comunicados para o calendário atualizado." },
+      { question: "Como simular meus proventos?", answer: "Informe BRKM3 e a quantidade de ações na calculadora desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "TOTS3F",
+    companyName: "TOTVS S.A.",
+    sectorSlug: "servicos_financeiros",
+    shortDescription: "TOTVS S.A. (TOTS3F) atua em serviços financeiros — como bolsa, clearing, meios de pagamento ou fintechs listadas na B3. O resultado está ligado a volume de transações, tecnologia e regulação do setor.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia.",
+    historySummary: "O histórico de proventos do TOTS3F acompanha a evolução do mercado de capitais e de pagamentos no Brasil. Use o simulador para explorar o passado e combine com análise de crescimento e margem.",
+    worthFollowing: "Acompanhe TOTS3F se você quer exposição a infraestrutura financeira e aceita risco de regulação e ciclo de mercado. Proventos tendem a acompanhar crescimento de volume e lucratividade.",
+    listDescription: "TOTVS S.A. — serviços financeiros com histórico de distribuição ligado ao mercado de capitais.",
+    faqs: [
+      { question: "TOTS3F é equivalente a uma ação de banco?", answer: "Não. Serviços financeiros têm drivers diferentes de bancos tradicionais — foco em transações e tecnologia, não crédito." },
+      { question: "Como ver histórico de proventos?", answer: "Use o ticker TOTS3F nesta página para estimativas, e consulte o RI para dados oficiais." }
+    ],
+  },
+
+  {
+    ticker: "BPAC11F",
+    companyName: "BCO BTG PACTUAL S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BCO BTG PACTUAL S.A. (BPAC11F) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BCO BTG PACTUAL S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do BPAC11F acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe BPAC11F se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BCO BTG PACTUAL S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "BPAC11F paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker BPAC11F e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "TIMS3F",
+    companyName: "TIM S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "TIM S.A. (TIMS3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do TIMS3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe TIMS3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "TIM S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "TIMS3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker TIMS3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "HOOT4",
+    companyName: "HOTEIS OTHON S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "HOTEIS OTHON S.A. (HOOT4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e HOTEIS OTHON S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do HOOT4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe HOOT4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "HOTEIS OTHON S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "HOOT4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker HOOT4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "KEPL3F",
+    companyName: "KEPLER WEBER S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "KEPLER WEBER S.A. (KEPL3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do KEPL3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe KEPL3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "KEPLER WEBER S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "KEPL3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker KEPL3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BSLI3F",
+    companyName: "BRB BCO DE BRASILIA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "BRB BCO DE BRASILIA S.A. (BSLI3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BSLI3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BSLI3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BRB BCO DE BRASILIA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BSLI3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BSLI3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BRSR6F",
+    companyName: "BCO ESTADO DO RIO GRANDE DO SUL S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "BCO ESTADO DO RIO GRANDE DO SUL S.A. (BRSR6F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BRSR6F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BRSR6F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BCO ESTADO DO RIO GRANDE DO SUL S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BRSR6F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BRSR6F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "UCAS3",
+    companyName: "UNICASA INDÚSTRIA DE MÓVEIS S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "UNICASA INDÚSTRIA DE MÓVEIS S.A. (UCAS3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e UNICASA INDÚSTRIA DE MÓVEIS S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do UCAS3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe UCAS3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "UNICASA INDÚSTRIA DE MÓVEIS S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "UCAS3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker UCAS3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "CURY3F",
+    companyName: "CURY CONSTRUTORA E INCORPORADORA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "CURY CONSTRUTORA E INCORPORADORA S.A. (CURY3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CURY3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CURY3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CURY CONSTRUTORA E INCORPORADORA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CURY3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CURY3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "SLCE3F",
+    companyName: "SLC AGRICOLA S.A.",
+    sectorSlug: "servicos_financeiros",
+    shortDescription: "SLC AGRICOLA S.A. (SLCE3F) atua em serviços financeiros — como bolsa, clearing, meios de pagamento ou fintechs listadas na B3. O resultado está ligado a volume de transações, tecnologia e regulação do setor.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia.",
+    historySummary: "O histórico de proventos do SLCE3F acompanha a evolução do mercado de capitais e de pagamentos no Brasil. Use o simulador para explorar o passado e combine com análise de crescimento e margem.",
+    worthFollowing: "Acompanhe SLCE3F se você quer exposição a infraestrutura financeira e aceita risco de regulação e ciclo de mercado. Proventos tendem a acompanhar crescimento de volume e lucratividade.",
+    listDescription: "SLC AGRICOLA S.A. — serviços financeiros com histórico de distribuição ligado ao mercado de capitais.",
+    faqs: [
+      { question: "SLCE3F é equivalente a uma ação de banco?", answer: "Não. Serviços financeiros têm drivers diferentes de bancos tradicionais — foco em transações e tecnologia, não crédito." },
+      { question: "Como ver histórico de proventos?", answer: "Use o ticker SLCE3F nesta página para estimativas, e consulte o RI para dados oficiais." }
+    ],
+  },
+
+  {
+    ticker: "CSMG3F",
+    companyName: "CIA SANEAMENTO DE MINAS GERAIS-COPASA MG",
+    sectorSlug: "consumo",
+    shortDescription: "CIA SANEAMENTO DE MINAS GERAIS-COPASA MG (CSMG3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CSMG3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CSMG3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CIA SANEAMENTO DE MINAS GERAIS-COPASA MG — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CSMG3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CSMG3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "VBBR3F",
+    companyName: "VIBRA ENERGIA S.A.",
+    sectorSlug: "energia",
+    shortDescription: "VIBRA ENERGIA S.A. (VBBR3F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do VBBR3F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "VBBR3F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "VIBRA ENERGIA S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "VBBR3F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker VBBR3F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "CPFE3F",
+    companyName: "CPFL ENERGIA S.A.",
+    sectorSlug: "energia",
+    shortDescription: "CPFL ENERGIA S.A. (CPFE3F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do CPFE3F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "CPFE3F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "CPFL ENERGIA S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "CPFE3F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker CPFE3F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "MRVE3F",
+    companyName: "MRV ENGENHARIA E PARTICIPACOES S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "MRV ENGENHARIA E PARTICIPACOES S.A. (MRVE3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do MRVE3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe MRVE3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "MRV ENGENHARIA E PARTICIPACOES S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "MRVE3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker MRVE3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "MBRF3F",
+    companyName: "MBRF3F",
+    sectorSlug: "consumo",
+    shortDescription: "MBRF3F (MBRF3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do MBRF3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe MBRF3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "MBRF3F — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "MBRF3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker MBRF3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CVCB3F",
+    companyName: "CVC BRASIL OPERADORA E AGÊNCIA DE VIAGENS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "CVC BRASIL OPERADORA E AGÊNCIA DE VIAGENS S.A. (CVCB3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CVCB3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CVCB3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CVC BRASIL OPERADORA E AGÊNCIA DE VIAGENS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CVCB3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CVCB3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "POMO3F",
+    companyName: "MARCOPOLO S.A.",
+    sectorSlug: "industria",
+    shortDescription: "MARCOPOLO S.A. (POMO3F) é uma empresa industrial listada na B3, com exposição a capacidade de produção, exportação e custos de insumos. O setor distribui dividendos conforme resultado e ciclo de investimentos.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado operacional e política de capital da empresa.",
+    historySummary: "O histórico de proventos do POMO3F alterna períodos de payout maior com ciclos de CAPEX intenso. Analise o fluxo de caixa livre e a alavancagem para entender a sustentabilidade dos dividendos.",
+    worthFollowing: "POMO3F pode interessar a quem busca diversificação industrial com potencial de proventos em fases de geração de caixa. Volatilidade cambial e de insumos são fatores de risco relevantes.",
+    listDescription: "MARCOPOLO S.A. — indústria com histórico de proventos ligado ao ciclo produtivo.",
+    faqs: [
+      { question: "POMO3F paga dividendos frequentes?", answer: "A frequência varia com o ciclo da companhia. Consulte RI e comunicados para o calendário atualizado." },
+      { question: "Como simular meus proventos?", answer: "Informe POMO3F e a quantidade de ações na calculadora desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "ITSA3F",
+    companyName: "ITAUSA S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "ITAUSA S.A. (ITSA3F) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e ITAUSA S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do ITSA3F acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe ITSA3F se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "ITAUSA S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "ITSA3F paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker ITSA3F e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "GMAT3F",
+    companyName: "GRUPO MATEUS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "GRUPO MATEUS S.A. (GMAT3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do GMAT3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe GMAT3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "GRUPO MATEUS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "GMAT3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker GMAT3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BEEF3F",
+    companyName: "MINERVA S.A.",
+    sectorSlug: "mineracao",
+    shortDescription: "MINERVA S.A. (BEEF3F) está no setor de mineração, exposto a ciclos de commodities e demanda global. O dividend yield pode ser elevado em anos de preços altos e recuar em viradas de ciclo.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos variáveis conforme resultado e ciclo de commodities.",
+    historySummary: "O histórico de proventos do BEEF3F oscila com o preço das commodities. Anos de superciclo costumam trazer distribuições extraordinárias; quedas de preço reduzem o payout. Use o simulador para explorar o passado.",
+    worthFollowing: "Acompanhe BEEF3F se você aceita a ciclicidade do setor de mineração em troca de potencial de dividendos altos em momentos favoráveis. Diversificação e gestão de risco são fundamentais neste setor.",
+    listDescription: "MINERVA S.A. — mineração com exposição a commodities e histórico de dividendos cíclicos.",
+    faqs: [
+      { question: "Por que o yield do BEEF3F muda tanto?", answer: "O preço da ação e os pagamentos acompanham o ciclo de commodities. Um yield alto pode refletir queda do papel ou distribuição extraordinária." },
+      { question: "Onde vejo o histórico oficial?", answer: "Consulte o RI da companhia e comunicados à CVM. O simulador desta página usa dados via API como referência educacional." }
+    ],
+  },
+
+  {
+    ticker: "RADL3F",
+    companyName: "RAIA DROGASIL S.A.",
+    sectorSlug: "petroleo",
+    shortDescription: "RAIA DROGASIL S.A. (RADL3F) atua no setor de petróleo e gás, com resultado ligado ao preço do barril, produção e câmbio. É uma das indústrias com maior potencial de dividendos em momentos de preço favorável.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Distribuição vinculada ao resultado e à política de capital da companhia.",
+    historySummary: "O histórico de proventos do RADL3F varia com o preço do petróleo e decisões estratégicas da empresa. Simule com base no passado disponível e acompanhe comunicados para entender o próximo ciclo.",
+    worthFollowing: "RADL3F pode ser relevante para quem busca exposição ao setor de energia com potencial de dividendos expressivos. Considere também volatilidade de commodities e risco político.",
+    listDescription: "RAIA DROGASIL S.A. — petróleo e gás com dividendos ligados ao ciclo de commodities.",
+    faqs: [
+      { question: "RADL3F paga dividendos regulares?", answer: "A regularidade depende do preço do petróleo e da política da empresa. Simulações passadas não garantem o futuro." },
+      { question: "Como estimar meus proventos?", answer: "Informe RADL3F e sua quantidade de ações no simulador desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "HAPV3F",
+    companyName: "HAPVIDA PARTICIPACOES E INVESTIMENTOS SA",
+    sectorSlug: "consumo",
+    shortDescription: "HAPVIDA PARTICIPACOES E INVESTIMENTOS SA (HAPV3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do HAPV3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe HAPV3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "HAPVIDA PARTICIPACOES E INVESTIMENTOS SA — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "HAPV3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker HAPV3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BRAV3F",
+    companyName: "BRAVA ENERGIA S.A.",
+    sectorSlug: "energia",
+    shortDescription: "BRAVA ENERGIA S.A. (BRAV3F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do BRAV3F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "BRAV3F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "BRAVA ENERGIA S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "BRAV3F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker BRAV3F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "DOTZ3",
+    companyName: "DOTZ S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "DOTZ S.A. (DOTZ3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e DOTZ S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do DOTZ3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe DOTZ3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "DOTZ S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "DOTZ3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker DOTZ3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "LAND3",
+    companyName: "TERRA SANTA PROPRIEDADES AGRICOLAS S.A.",
+    sectorSlug: "servicos_financeiros",
+    shortDescription: "TERRA SANTA PROPRIEDADES AGRICOLAS S.A. (LAND3) atua em serviços financeiros — como bolsa, clearing, meios de pagamento ou fintechs listadas na B3. O resultado está ligado a volume de transações, tecnologia e regulação do setor.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia.",
+    historySummary: "O histórico de proventos do LAND3 acompanha a evolução do mercado de capitais e de pagamentos no Brasil. Use o simulador para explorar o passado e combine com análise de crescimento e margem.",
+    worthFollowing: "Acompanhe LAND3 se você quer exposição a infraestrutura financeira e aceita risco de regulação e ciclo de mercado. Proventos tendem a acompanhar crescimento de volume e lucratividade.",
+    listDescription: "TERRA SANTA PROPRIEDADES AGRICOLAS S.A. — serviços financeiros com histórico de distribuição ligado ao mercado de capitais.",
+    faqs: [
+      { question: "LAND3 é equivalente a uma ação de banco?", answer: "Não. Serviços financeiros têm drivers diferentes de bancos tradicionais — foco em transações e tecnologia, não crédito." },
+      { question: "Como ver histórico de proventos?", answer: "Use o ticker LAND3 nesta página para estimativas, e consulte o RI para dados oficiais." }
+    ],
+  },
+
+  {
+    ticker: "SOJA3F",
+    companyName: "BOA SAFRA SEMENTES S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "BOA SAFRA SEMENTES S.A. (SOJA3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do SOJA3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe SOJA3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BOA SAFRA SEMENTES S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "SOJA3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker SOJA3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "FLRY3F",
+    companyName: "FLEURY S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "FLEURY S.A. (FLRY3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do FLRY3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe FLRY3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "FLEURY S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "FLRY3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker FLRY3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "SAUD3F",
+    companyName: "SAUD3F",
+    sectorSlug: "consumo",
+    shortDescription: "SAUD3F (SAUD3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do SAUD3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe SAUD3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "SAUD3F — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "SAUD3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker SAUD3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "SANB11F",
+    companyName: "BCO SANTANDER (BRASIL) S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BCO SANTANDER (BRASIL) S.A. (SANB11F) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BCO SANTANDER (BRASIL) S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do SANB11F acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe SANB11F se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BCO SANTANDER (BRASIL) S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "SANB11F paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker SANB11F e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "BRKM5F",
+    companyName: "BRASKEM S.A.",
+    sectorSlug: "industria",
+    shortDescription: "BRASKEM S.A. (BRKM5F) é uma empresa industrial listada na B3, com exposição a capacidade de produção, exportação e custos de insumos. O setor distribui dividendos conforme resultado e ciclo de investimentos.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado operacional e política de capital da empresa.",
+    historySummary: "O histórico de proventos do BRKM5F alterna períodos de payout maior com ciclos de CAPEX intenso. Analise o fluxo de caixa livre e a alavancagem para entender a sustentabilidade dos dividendos.",
+    worthFollowing: "BRKM5F pode interessar a quem busca diversificação industrial com potencial de proventos em fases de geração de caixa. Volatilidade cambial e de insumos são fatores de risco relevantes.",
+    listDescription: "BRASKEM S.A. — indústria com histórico de proventos ligado ao ciclo produtivo.",
+    faqs: [
+      { question: "BRKM5F paga dividendos frequentes?", answer: "A frequência varia com o ciclo da companhia. Consulte RI e comunicados para o calendário atualizado." },
+      { question: "Como simular meus proventos?", answer: "Informe BRKM5F e a quantidade de ações na calculadora desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "COCE5",
+    companyName: "CIA ENERGETICA DO CEARA - COELCE",
+    sectorSlug: "consumo",
+    shortDescription: "CIA ENERGETICA DO CEARA - COELCE (COCE5) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do COCE5 reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe COCE5 se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CIA ENERGETICA DO CEARA - COELCE — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "COCE5 é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker COCE5 na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "AALR3",
+    companyName: "ALLIANÇA SAÚDE E PARTICIPAÇÕES S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "ALLIANÇA SAÚDE E PARTICIPAÇÕES S.A. (AALR3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e ALLIANÇA SAÚDE E PARTICIPAÇÕES S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do AALR3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe AALR3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "ALLIANÇA SAÚDE E PARTICIPAÇÕES S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "AALR3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker AALR3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "ALPK3F",
+    companyName: "ALLPARK EMPREENDIMENTOS PARTICIPACOES SERVICOS S.A",
+    sectorSlug: "consumo",
+    shortDescription: "ALLPARK EMPREENDIMENTOS PARTICIPACOES SERVICOS S.A (ALPK3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do ALPK3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe ALPK3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ALLPARK EMPREENDIMENTOS PARTICIPACOES SERVICOS S.A — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "ALPK3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker ALPK3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "RSUL4",
+    companyName: "METALURGICA RIOSULENSE S.A.",
+    sectorSlug: "mineracao",
+    shortDescription: "METALURGICA RIOSULENSE S.A. (RSUL4) está no setor de mineração, exposto a ciclos de commodities e demanda global. O dividend yield pode ser elevado em anos de preços altos e recuar em viradas de ciclo.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos variáveis conforme resultado e ciclo de commodities.",
+    historySummary: "O histórico de proventos do RSUL4 oscila com o preço das commodities. Anos de superciclo costumam trazer distribuições extraordinárias; quedas de preço reduzem o payout. Use o simulador para explorar o passado.",
+    worthFollowing: "Acompanhe RSUL4 se você aceita a ciclicidade do setor de mineração em troca de potencial de dividendos altos em momentos favoráveis. Diversificação e gestão de risco são fundamentais neste setor.",
+    listDescription: "METALURGICA RIOSULENSE S.A. — mineração com exposição a commodities e histórico de dividendos cíclicos.",
+    faqs: [
+      { question: "Por que o yield do RSUL4 muda tanto?", answer: "O preço da ação e os pagamentos acompanham o ciclo de commodities. Um yield alto pode refletir queda do papel ou distribuição extraordinária." },
+      { question: "Onde vejo o histórico oficial?", answer: "Consulte o RI da companhia e comunicados à CVM. O simulador desta página usa dados via API como referência educacional." }
+    ],
+  },
+
+  {
+    ticker: "VLID3F",
+    companyName: "VALID SOLUÇÕES S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "VALID SOLUÇÕES S.A. (VLID3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do VLID3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe VLID3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "VALID SOLUÇÕES S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "VLID3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker VLID3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "AGRO3F",
+    companyName: "BRASILAGRO - CIA BRAS DE PROP AGRICOLAS",
+    sectorSlug: "servicos_financeiros",
+    shortDescription: "BRASILAGRO - CIA BRAS DE PROP AGRICOLAS (AGRO3F) atua em serviços financeiros — como bolsa, clearing, meios de pagamento ou fintechs listadas na B3. O resultado está ligado a volume de transações, tecnologia e regulação do setor.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia.",
+    historySummary: "O histórico de proventos do AGRO3F acompanha a evolução do mercado de capitais e de pagamentos no Brasil. Use o simulador para explorar o passado e combine com análise de crescimento e margem.",
+    worthFollowing: "Acompanhe AGRO3F se você quer exposição a infraestrutura financeira e aceita risco de regulação e ciclo de mercado. Proventos tendem a acompanhar crescimento de volume e lucratividade.",
+    listDescription: "BRASILAGRO - CIA BRAS DE PROP AGRICOLAS — serviços financeiros com histórico de distribuição ligado ao mercado de capitais.",
+    faqs: [
+      { question: "AGRO3F é equivalente a uma ação de banco?", answer: "Não. Serviços financeiros têm drivers diferentes de bancos tradicionais — foco em transações e tecnologia, não crédito." },
+      { question: "Como ver histórico de proventos?", answer: "Use o ticker AGRO3F nesta página para estimativas, e consulte o RI para dados oficiais." }
+    ],
+  },
+
+  {
+    ticker: "TRAD3",
+    companyName: "TC S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "TC S.A. (TRAD3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e TC S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do TRAD3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe TRAD3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "TC S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "TRAD3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker TRAD3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "CSNA3F",
+    companyName: "CIA SIDERURGICA NACIONAL",
+    sectorSlug: "mineracao",
+    shortDescription: "CIA SIDERURGICA NACIONAL (CSNA3F) está no setor de mineração, exposto a ciclos de commodities e demanda global. O dividend yield pode ser elevado em anos de preços altos e recuar em viradas de ciclo.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos variáveis conforme resultado e ciclo de commodities.",
+    historySummary: "O histórico de proventos do CSNA3F oscila com o preço das commodities. Anos de superciclo costumam trazer distribuições extraordinárias; quedas de preço reduzem o payout. Use o simulador para explorar o passado.",
+    worthFollowing: "Acompanhe CSNA3F se você aceita a ciclicidade do setor de mineração em troca de potencial de dividendos altos em momentos favoráveis. Diversificação e gestão de risco são fundamentais neste setor.",
+    listDescription: "CIA SIDERURGICA NACIONAL — mineração com exposição a commodities e histórico de dividendos cíclicos.",
+    faqs: [
+      { question: "Por que o yield do CSNA3F muda tanto?", answer: "O preço da ação e os pagamentos acompanham o ciclo de commodities. Um yield alto pode refletir queda do papel ou distribuição extraordinária." },
+      { question: "Onde vejo o histórico oficial?", answer: "Consulte o RI da companhia e comunicados à CVM. O simulador desta página usa dados via API como referência educacional." }
+    ],
+  },
+
+  {
+    ticker: "MDNE3F",
+    companyName: "MOURA DUBEUX ENGENHARIA S/A",
+    sectorSlug: "consumo",
+    shortDescription: "MOURA DUBEUX ENGENHARIA S/A (MDNE3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do MDNE3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe MDNE3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "MOURA DUBEUX ENGENHARIA S/A — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "MDNE3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker MDNE3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "LEVE3F",
+    companyName: "MAHLE-METAL LEVE S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "MAHLE-METAL LEVE S.A. (LEVE3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do LEVE3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe LEVE3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "MAHLE-METAL LEVE S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "LEVE3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker LEVE3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "DIRR3F",
+    companyName: "DIRECIONAL ENGENHARIA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "DIRECIONAL ENGENHARIA S.A. (DIRR3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do DIRR3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe DIRR3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "DIRECIONAL ENGENHARIA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "DIRR3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker DIRR3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "FICT3",
+    companyName: "FICTOR ALIMENTOS S.A",
+    sectorSlug: "bancos",
+    shortDescription: "FICTOR ALIMENTOS S.A (FICT3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e FICTOR ALIMENTOS S.A aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do FICT3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe FICT3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "FICTOR ALIMENTOS S.A — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "FICT3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker FICT3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "BSLI4",
+    companyName: "BRB BCO DE BRASILIA S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BRB BCO DE BRASILIA S.A. (BSLI4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BRB BCO DE BRASILIA S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do BSLI4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe BSLI4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BRB BCO DE BRASILIA S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "BSLI4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker BSLI4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "YDUQ3F",
+    companyName: "YDUQS PARTICIPACOES S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "YDUQS PARTICIPACOES S.A. (YDUQ3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do YDUQ3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe YDUQ3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "YDUQS PARTICIPACOES S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "YDUQ3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker YDUQ3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "SMFT3F",
+    companyName: "SMARTFIT ESCOLA DE GINÁSTICA E DANÇA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "SMARTFIT ESCOLA DE GINÁSTICA E DANÇA S.A. (SMFT3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do SMFT3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe SMFT3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "SMARTFIT ESCOLA DE GINÁSTICA E DANÇA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "SMFT3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker SMFT3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "EQTL3F",
+    companyName: "EQUATORIAL S.A.",
+    sectorSlug: "energia",
+    shortDescription: "EQUATORIAL S.A. (EQTL3F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do EQTL3F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "EQTL3F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "EQUATORIAL S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "EQTL3F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker EQTL3F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "SMTO3F",
+    companyName: "SAO MARTINHO S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "SAO MARTINHO S.A. (SMTO3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do SMTO3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe SMTO3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "SAO MARTINHO S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "SMTO3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker SMTO3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "MTRE3F",
+    companyName: "MITRE REALTY EMPREENDIMENTOS E PARTICIPAÇÕES S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "MITRE REALTY EMPREENDIMENTOS E PARTICIPAÇÕES S.A. (MTRE3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do MTRE3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe MTRE3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "MITRE REALTY EMPREENDIMENTOS E PARTICIPAÇÕES S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "MTRE3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker MTRE3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "ENGI3",
+    companyName: "ENERGISA S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "ENERGISA S.A. (ENGI3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e ENERGISA S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do ENGI3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe ENGI3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "ENERGISA S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "ENGI3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker ENGI3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "BPAC5F",
+    companyName: "BCO BTG PACTUAL S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BCO BTG PACTUAL S.A. (BPAC5F) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BCO BTG PACTUAL S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do BPAC5F acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe BPAC5F se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BCO BTG PACTUAL S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "BPAC5F paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker BPAC5F e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "AXIA6F",
+    companyName: "AXIA6F",
+    sectorSlug: "consumo",
+    shortDescription: "AXIA6F (AXIA6F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do AXIA6F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe AXIA6F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "AXIA6F — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "AXIA6F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker AXIA6F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "TTEN3F",
+    companyName: "TRÊS TENTOS AGROINDUSTRIAL S/A",
+    sectorSlug: "consumo",
+    shortDescription: "TRÊS TENTOS AGROINDUSTRIAL S/A (TTEN3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do TTEN3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe TTEN3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "TRÊS TENTOS AGROINDUSTRIAL S/A — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "TTEN3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker TTEN3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BRKM3F",
+    companyName: "BRASKEM S.A.",
+    sectorSlug: "industria",
+    shortDescription: "BRASKEM S.A. (BRKM3F) é uma empresa industrial listada na B3, com exposição a capacidade de produção, exportação e custos de insumos. O setor distribui dividendos conforme resultado e ciclo de investimentos.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado operacional e política de capital da empresa.",
+    historySummary: "O histórico de proventos do BRKM3F alterna períodos de payout maior com ciclos de CAPEX intenso. Analise o fluxo de caixa livre e a alavancagem para entender a sustentabilidade dos dividendos.",
+    worthFollowing: "BRKM3F pode interessar a quem busca diversificação industrial com potencial de proventos em fases de geração de caixa. Volatilidade cambial e de insumos são fatores de risco relevantes.",
+    listDescription: "BRASKEM S.A. — indústria com histórico de proventos ligado ao ciclo produtivo.",
+    faqs: [
+      { question: "BRKM3F paga dividendos frequentes?", answer: "A frequência varia com o ciclo da companhia. Consulte RI e comunicados para o calendário atualizado." },
+      { question: "Como simular meus proventos?", answer: "Informe BRKM3F e a quantidade de ações na calculadora desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "INTB3F",
+    companyName: "INTELBRAS S.A. IND DE TELEC ELETRONICA BRASILEIRA",
+    sectorSlug: "consumo",
+    shortDescription: "INTELBRAS S.A. IND DE TELEC ELETRONICA BRASILEIRA (INTB3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do INTB3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe INTB3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "INTELBRAS S.A. IND DE TELEC ELETRONICA BRASILEIRA — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "INTB3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker INTB3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "MNPR3",
+    companyName: "MINUPAR PARTICIPACOES S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "MINUPAR PARTICIPACOES S.A. (MNPR3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e MINUPAR PARTICIPACOES S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do MNPR3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe MNPR3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "MINUPAR PARTICIPACOES S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "MNPR3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker MNPR3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "SIMH3F",
+    companyName: "SIMPAR S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "SIMPAR S.A. (SIMH3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do SIMH3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe SIMH3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "SIMPAR S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "SIMH3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker SIMH3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "AXIA7F",
+    companyName: "AXIA7F",
+    sectorSlug: "consumo",
+    shortDescription: "AXIA7F (AXIA7F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do AXIA7F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe AXIA7F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "AXIA7F — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "AXIA7F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker AXIA7F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "ALLD3F",
+    companyName: "ALLIED TECNOLOGIA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "ALLIED TECNOLOGIA S.A. (ALLD3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do ALLD3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe ALLD3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ALLIED TECNOLOGIA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "ALLD3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker ALLD3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "MELK3F",
+    companyName: "MELNICK DESENVOLVIMENTO IMOBILIÁRIO S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "MELNICK DESENVOLVIMENTO IMOBILIÁRIO S.A. (MELK3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do MELK3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe MELK3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "MELNICK DESENVOLVIMENTO IMOBILIÁRIO S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "MELK3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker MELK3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "FESA4F",
+    companyName: "CIA FERRO LIGAS DA BAHIA - FERBASA",
+    sectorSlug: "petroleo",
+    shortDescription: "CIA FERRO LIGAS DA BAHIA - FERBASA (FESA4F) atua no setor de petróleo e gás, com resultado ligado ao preço do barril, produção e câmbio. É uma das indústrias com maior potencial de dividendos em momentos de preço favorável.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Distribuição vinculada ao resultado e à política de capital da companhia.",
+    historySummary: "O histórico de proventos do FESA4F varia com o preço do petróleo e decisões estratégicas da empresa. Simule com base no passado disponível e acompanhe comunicados para entender o próximo ciclo.",
+    worthFollowing: "FESA4F pode ser relevante para quem busca exposição ao setor de energia com potencial de dividendos expressivos. Considere também volatilidade de commodities e risco político.",
+    listDescription: "CIA FERRO LIGAS DA BAHIA - FERBASA — petróleo e gás com dividendos ligados ao ciclo de commodities.",
+    faqs: [
+      { question: "FESA4F paga dividendos regulares?", answer: "A regularidade depende do preço do petróleo e da política da empresa. Simulações passadas não garantem o futuro." },
+      { question: "Como estimar meus proventos?", answer: "Informe FESA4F e sua quantidade de ações no simulador desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "AUAU3F",
+    companyName: "UNIÃO PET PARTICIPAÇÕES S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "UNIÃO PET PARTICIPAÇÕES S.A. (AUAU3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do AUAU3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe AUAU3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "UNIÃO PET PARTICIPAÇÕES S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "AUAU3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker AUAU3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "PLPL3F",
+    companyName: "PLANO & PLANO DESENVOLVIMENTO IMOBILIÁRIO S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "PLANO & PLANO DESENVOLVIMENTO IMOBILIÁRIO S.A. (PLPL3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do PLPL3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe PLPL3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "PLANO & PLANO DESENVOLVIMENTO IMOBILIÁRIO S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "PLPL3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker PLPL3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "OFSA3",
+    companyName: "OUROFINO S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "OUROFINO S.A. (OFSA3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e OUROFINO S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do OFSA3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe OFSA3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "OUROFINO S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "OFSA3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker OFSA3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "ECOR3F",
+    companyName: "ECORODOVIAS INFRAESTRUTURA E LOGÍSTICA S.A.",
+    sectorSlug: "energia",
+    shortDescription: "ECORODOVIAS INFRAESTRUTURA E LOGÍSTICA S.A. (ECOR3F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do ECOR3F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "ECOR3F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "ECORODOVIAS INFRAESTRUTURA E LOGÍSTICA S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "ECOR3F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker ECOR3F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "ONCO3F",
+    companyName: "ONCOCLINICAS DO BRASIL SERVICOS MEDICOS  S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "ONCOCLINICAS DO BRASIL SERVICOS MEDICOS  S.A. (ONCO3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do ONCO3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe ONCO3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ONCOCLINICAS DO BRASIL SERVICOS MEDICOS  S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "ONCO3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker ONCO3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "SAPR11F",
+    companyName: "CIA SANEAMENTO DO PARANA - SANEPAR",
+    sectorSlug: "consumo",
+    shortDescription: "CIA SANEAMENTO DO PARANA - SANEPAR (SAPR11F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do SAPR11F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe SAPR11F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CIA SANEAMENTO DO PARANA - SANEPAR — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "SAPR11F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker SAPR11F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "AMOB3F",
+    companyName: "AUTOMOB PARTICIPAÇÕES S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "AUTOMOB PARTICIPAÇÕES S.A. (AMOB3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do AMOB3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe AMOB3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "AUTOMOB PARTICIPAÇÕES S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "AMOB3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker AMOB3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "UGPA3F",
+    companyName: "ULTRAPAR PARTICIPACOES S.A.",
+    sectorSlug: "petroleo",
+    shortDescription: "ULTRAPAR PARTICIPACOES S.A. (UGPA3F) atua no setor de petróleo e gás, com resultado ligado ao preço do barril, produção e câmbio. É uma das indústrias com maior potencial de dividendos em momentos de preço favorável.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Distribuição vinculada ao resultado e à política de capital da companhia.",
+    historySummary: "O histórico de proventos do UGPA3F varia com o preço do petróleo e decisões estratégicas da empresa. Simule com base no passado disponível e acompanhe comunicados para entender o próximo ciclo.",
+    worthFollowing: "UGPA3F pode ser relevante para quem busca exposição ao setor de energia com potencial de dividendos expressivos. Considere também volatilidade de commodities e risco político.",
+    listDescription: "ULTRAPAR PARTICIPACOES S.A. — petróleo e gás com dividendos ligados ao ciclo de commodities.",
+    faqs: [
+      { question: "UGPA3F paga dividendos regulares?", answer: "A regularidade depende do preço do petróleo e da política da empresa. Simulações passadas não garantem o futuro." },
+      { question: "Como estimar meus proventos?", answer: "Informe UGPA3F e sua quantidade de ações no simulador desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "RDOR3F",
+    companyName: "REDE DOR SÃO LUIZ S.A.",
+    sectorSlug: "servicos_financeiros",
+    shortDescription: "REDE DOR SÃO LUIZ S.A. (RDOR3F) atua em serviços financeiros — como bolsa, clearing, meios de pagamento ou fintechs listadas na B3. O resultado está ligado a volume de transações, tecnologia e regulação do setor.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia.",
+    historySummary: "O histórico de proventos do RDOR3F acompanha a evolução do mercado de capitais e de pagamentos no Brasil. Use o simulador para explorar o passado e combine com análise de crescimento e margem.",
+    worthFollowing: "Acompanhe RDOR3F se você quer exposição a infraestrutura financeira e aceita risco de regulação e ciclo de mercado. Proventos tendem a acompanhar crescimento de volume e lucratividade.",
+    listDescription: "REDE DOR SÃO LUIZ S.A. — serviços financeiros com histórico de distribuição ligado ao mercado de capitais.",
+    faqs: [
+      { question: "RDOR3F é equivalente a uma ação de banco?", answer: "Não. Serviços financeiros têm drivers diferentes de bancos tradicionais — foco em transações e tecnologia, não crédito." },
+      { question: "Como ver histórico de proventos?", answer: "Use o ticker RDOR3F nesta página para estimativas, e consulte o RI para dados oficiais." }
+    ],
+  },
+
+  {
+    ticker: "SYNE3F",
+    companyName: "SYN PROP E TECH S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "SYN PROP E TECH S.A. (SYNE3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do SYNE3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe SYNE3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "SYN PROP E TECH S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "SYNE3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker SYNE3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "AZTE3F",
+    companyName: "AZEVEDO & TRAVASSOS ENERGIA S.A.",
+    sectorSlug: "energia",
+    shortDescription: "AZEVEDO & TRAVASSOS ENERGIA S.A. (AZTE3F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do AZTE3F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "AZTE3F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "AZEVEDO & TRAVASSOS ENERGIA S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "AZTE3F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker AZTE3F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "BRAP4F",
+    companyName: "BRADESPAR S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "BRADESPAR S.A. (BRAP4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BRAP4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BRAP4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BRADESPAR S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BRAP4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BRAP4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CMIG3F",
+    companyName: "CIA ENERGETICA DE MINAS GERAIS - CEMIG",
+    sectorSlug: "energia",
+    shortDescription: "CIA ENERGETICA DE MINAS GERAIS - CEMIG (CMIG3F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do CMIG3F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "CMIG3F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "CIA ENERGETICA DE MINAS GERAIS - CEMIG — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "CMIG3F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker CMIG3F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "SANB4F",
+    companyName: "BCO SANTANDER (BRASIL) S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BCO SANTANDER (BRASIL) S.A. (SANB4F) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BCO SANTANDER (BRASIL) S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do SANB4F acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe SANB4F se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BCO SANTANDER (BRASIL) S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "SANB4F paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker SANB4F e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "MOVI3F",
+    companyName: "MOVIDA PARTICIPACOES SA",
+    sectorSlug: "consumo",
+    shortDescription: "MOVIDA PARTICIPACOES SA (MOVI3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do MOVI3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe MOVI3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "MOVIDA PARTICIPACOES SA — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "MOVI3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker MOVI3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "SAPR3F",
+    companyName: "CIA SANEAMENTO DO PARANA - SANEPAR",
+    sectorSlug: "consumo",
+    shortDescription: "CIA SANEAMENTO DO PARANA - SANEPAR (SAPR3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do SAPR3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe SAPR3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CIA SANEAMENTO DO PARANA - SANEPAR — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "SAPR3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker SAPR3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "IRBR3F",
+    companyName: "IRB - BRASIL RESSEGUROS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "IRB - BRASIL RESSEGUROS S.A. (IRBR3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do IRBR3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe IRBR3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "IRB - BRASIL RESSEGUROS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "IRBR3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker IRBR3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CEAB3F",
+    companyName: "CEA MODAS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "CEA MODAS S.A. (CEAB3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CEAB3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CEAB3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CEA MODAS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CEAB3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CEAB3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "ALUP11F",
+    companyName: "ALUPAR INVESTIMENTO S/A",
+    sectorSlug: "consumo",
+    shortDescription: "ALUPAR INVESTIMENTO S/A (ALUP11F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do ALUP11F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe ALUP11F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ALUPAR INVESTIMENTO S/A — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "ALUP11F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker ALUP11F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "UNIP6F",
+    companyName: "UNIPAR CARBOCLORO S.A.",
+    sectorSlug: "industria",
+    shortDescription: "UNIPAR CARBOCLORO S.A. (UNIP6F) é uma empresa industrial listada na B3, com exposição a capacidade de produção, exportação e custos de insumos. O setor distribui dividendos conforme resultado e ciclo de investimentos.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado operacional e política de capital da empresa.",
+    historySummary: "O histórico de proventos do UNIP6F alterna períodos de payout maior com ciclos de CAPEX intenso. Analise o fluxo de caixa livre e a alavancagem para entender a sustentabilidade dos dividendos.",
+    worthFollowing: "UNIP6F pode interessar a quem busca diversificação industrial com potencial de proventos em fases de geração de caixa. Volatilidade cambial e de insumos são fatores de risco relevantes.",
+    listDescription: "UNIPAR CARBOCLORO S.A. — indústria com histórico de proventos ligado ao ciclo produtivo.",
+    faqs: [
+      { question: "UNIP6F paga dividendos frequentes?", answer: "A frequência varia com o ciclo da companhia. Consulte RI e comunicados para o calendário atualizado." },
+      { question: "Como simular meus proventos?", answer: "Informe UNIP6F e a quantidade de ações na calculadora desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "CASH3F",
+    companyName: "MÉLIUZ S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "MÉLIUZ S.A. (CASH3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CASH3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CASH3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "MÉLIUZ S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CASH3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CASH3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "LAVV3F",
+    companyName: "LAVVI EMPREENDIMENTOS IMOBILIÁRIOS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "LAVVI EMPREENDIMENTOS IMOBILIÁRIOS S.A. (LAVV3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do LAVV3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe LAVV3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "LAVVI EMPREENDIMENTOS IMOBILIÁRIOS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "LAVV3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker LAVV3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "SANB3F",
+    companyName: "BCO SANTANDER (BRASIL) S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BCO SANTANDER (BRASIL) S.A. (SANB3F) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BCO SANTANDER (BRASIL) S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do SANB3F acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe SANB3F se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BCO SANTANDER (BRASIL) S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "SANB3F paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker SANB3F e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "TASA3",
+    companyName: "TAURUS ARMAS S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "TAURUS ARMAS S.A. (TASA3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e TAURUS ARMAS S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do TASA3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe TASA3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "TAURUS ARMAS S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "TASA3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker TASA3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "TEND3F",
+    companyName: "CONSTRUTORA TENDA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "CONSTRUTORA TENDA S.A. (TEND3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do TEND3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe TEND3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CONSTRUTORA TENDA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "TEND3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker TEND3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "RAIL3F",
+    companyName: "RUMO S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "RUMO S.A. (RAIL3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do RAIL3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe RAIL3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "RUMO S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "RAIL3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker RAIL3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "ENEV3F",
+    companyName: "ENEVA S.A",
+    sectorSlug: "consumo",
+    shortDescription: "ENEVA S.A (ENEV3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do ENEV3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe ENEV3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ENEVA S.A — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "ENEV3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker ENEV3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BPAC3",
+    companyName: "BCO BTG PACTUAL S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BCO BTG PACTUAL S.A. (BPAC3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BCO BTG PACTUAL S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do BPAC3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe BPAC3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BCO BTG PACTUAL S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "BPAC3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker BPAC3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "GFSA3F",
+    companyName: "GAFISA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "GAFISA S.A. (GFSA3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do GFSA3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe GFSA3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "GAFISA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "GFSA3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker GFSA3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "LWSA3F",
+    companyName: "LWSA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "LWSA S.A. (LWSA3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do LWSA3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe LWSA3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "LWSA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "LWSA3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker LWSA3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "FSPE11",
+    companyName: "FSPE11",
+    sectorSlug: "consumo",
+    shortDescription: "FSPE11 (FSPE11) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do FSPE11 reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe FSPE11 se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "FSPE11 — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "FSPE11 é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker FSPE11 na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CTAX3",
+    companyName: "CTAX3",
+    sectorSlug: "bancos",
+    shortDescription: "CTAX3 (CTAX3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e CTAX3 aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do CTAX3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe CTAX3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "CTAX3 — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "CTAX3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker CTAX3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "FSRF11F",
+    companyName: "FSRF11F",
+    sectorSlug: "consumo",
+    shortDescription: "FSRF11F (FSRF11F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do FSRF11F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe FSRF11F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "FSRF11F — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "FSRF11F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker FSRF11F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "ROMI3F",
+    companyName: "ROMI S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "ROMI S.A. (ROMI3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do ROMI3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe ROMI3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ROMI S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "ROMI3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker ROMI3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "ENGI11F",
+    companyName: "ENERGISA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "ENERGISA S.A. (ENGI11F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do ENGI11F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe ENGI11F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ENERGISA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "ENGI11F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker ENGI11F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "PCAR3F",
+    companyName: "CIA BRASILEIRA DE DISTRIBUICAO",
+    sectorSlug: "consumo",
+    shortDescription: "CIA BRASILEIRA DE DISTRIBUICAO (PCAR3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do PCAR3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe PCAR3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CIA BRASILEIRA DE DISTRIBUICAO — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "PCAR3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker PCAR3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CSUD3F",
+    companyName: "CSU DIGITAL S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "CSU DIGITAL S.A. (CSUD3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CSUD3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CSUD3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CSU DIGITAL S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CSUD3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CSUD3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CGRA4",
+    companyName: "GRAZZIOTIN S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "GRAZZIOTIN S.A. (CGRA4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e GRAZZIOTIN S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do CGRA4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe CGRA4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "GRAZZIOTIN S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "CGRA4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker CGRA4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "FIQE3F",
+    companyName: "UNIFIQUE TELECOMUNICAÇÕES S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "UNIFIQUE TELECOMUNICAÇÕES S.A. (FIQE3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do FIQE3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe FIQE3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "UNIFIQUE TELECOMUNICAÇÕES S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "FIQE3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker FIQE3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "PGMN3F",
+    companyName: "EMPREENDIMENTOS PAGUE MENOS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "EMPREENDIMENTOS PAGUE MENOS S.A. (PGMN3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do PGMN3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe PGMN3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "EMPREENDIMENTOS PAGUE MENOS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "PGMN3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker PGMN3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "NATU3F",
+    companyName: "NATURA COSMETICOS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "NATURA COSMETICOS S.A. (NATU3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do NATU3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe NATU3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "NATURA COSMETICOS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "NATU3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker NATU3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BEES3",
+    companyName: "BANESTES S.A. - BCO EST ESPIRITO SANTO",
+    sectorSlug: "bancos",
+    shortDescription: "BANESTES S.A. - BCO EST ESPIRITO SANTO (BEES3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BANESTES S.A. - BCO EST ESPIRITO SANTO aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do BEES3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe BEES3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BANESTES S.A. - BCO EST ESPIRITO SANTO — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "BEES3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker BEES3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "EQPA3",
+    companyName: "EQUATORIAL PARA DISTRIBUIDORA DE ENERGIA S.A.",
+    sectorSlug: "energia",
+    shortDescription: "EQUATORIAL PARA DISTRIBUIDORA DE ENERGIA S.A. (EQPA3) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do EQPA3 reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "EQPA3 pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "EQUATORIAL PARA DISTRIBUIDORA DE ENERGIA S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "EQPA3 é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker EQPA3 e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "ASAI3F",
+    companyName: "SENDAS DISTRIBUIDORA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "SENDAS DISTRIBUIDORA S.A. (ASAI3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do ASAI3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe ASAI3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "SENDAS DISTRIBUIDORA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "ASAI3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker ASAI3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BPAC5",
+    companyName: "BCO BTG PACTUAL S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BCO BTG PACTUAL S.A. (BPAC5) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BCO BTG PACTUAL S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do BPAC5 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe BPAC5 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BCO BTG PACTUAL S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "BPAC5 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker BPAC5 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "LIGT3F",
+    companyName: "LIGHT S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "LIGHT S.A. (LIGT3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do LIGT3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe LIGT3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "LIGHT S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "LIGT3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker LIGT3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "TASA4F",
+    companyName: "TAURUS ARMAS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "TAURUS ARMAS S.A. (TASA4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do TASA4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe TASA4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "TAURUS ARMAS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "TASA4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker TASA4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "ALPA4F",
+    companyName: "ALPARGATAS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "ALPARGATAS S.A. (ALPA4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do ALPA4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe ALPA4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ALPARGATAS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "ALPA4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker ALPA4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "QUAL3F",
+    companyName: "QUALICORP CONSULTORIA E CORRETORA DE SEGUROS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "QUALICORP CONSULTORIA E CORRETORA DE SEGUROS S.A. (QUAL3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do QUAL3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe QUAL3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "QUALICORP CONSULTORIA E CORRETORA DE SEGUROS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "QUAL3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker QUAL3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "WHRL4",
+    companyName: "WHIRLPOOL S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "WHIRLPOOL S.A. (WHRL4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e WHIRLPOOL S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do WHRL4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe WHRL4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "WHIRLPOOL S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "WHRL4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker WHRL4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "ANIM3F",
+    companyName: "ANIMA HOLDING S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "ANIMA HOLDING S.A. (ANIM3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do ANIM3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe ANIM3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ANIMA HOLDING S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "ANIM3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker ANIM3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "RAPT4F",
+    companyName: "RANDONCORP S.A.",
+    sectorSlug: "industria",
+    shortDescription: "RANDONCORP S.A. (RAPT4F) é uma empresa industrial listada na B3, com exposição a capacidade de produção, exportação e custos de insumos. O setor distribui dividendos conforme resultado e ciclo de investimentos.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado operacional e política de capital da empresa.",
+    historySummary: "O histórico de proventos do RAPT4F alterna períodos de payout maior com ciclos de CAPEX intenso. Analise o fluxo de caixa livre e a alavancagem para entender a sustentabilidade dos dividendos.",
+    worthFollowing: "RAPT4F pode interessar a quem busca diversificação industrial com potencial de proventos em fases de geração de caixa. Volatilidade cambial e de insumos são fatores de risco relevantes.",
+    listDescription: "RANDONCORP S.A. — indústria com histórico de proventos ligado ao ciclo produtivo.",
+    faqs: [
+      { question: "RAPT4F paga dividendos frequentes?", answer: "A frequência varia com o ciclo da companhia. Consulte RI e comunicados para o calendário atualizado." },
+      { question: "Como simular meus proventos?", answer: "Informe RAPT4F e a quantidade de ações na calculadora desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "AMBP3F",
+    companyName: "AMBIPAR PARTICIPACOES E EMPREENDIMENTOS S/A",
+    sectorSlug: "consumo",
+    shortDescription: "AMBIPAR PARTICIPACOES E EMPREENDIMENTOS S/A (AMBP3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do AMBP3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe AMBP3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "AMBIPAR PARTICIPACOES E EMPREENDIMENTOS S/A — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "AMBP3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker AMBP3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "TUPY3F",
+    companyName: "TUPY S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "TUPY S.A. (TUPY3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do TUPY3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe TUPY3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "TUPY S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "TUPY3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker TUPY3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "PMAM3F",
+    companyName: "PARANAPANEMA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "PARANAPANEMA S.A. (PMAM3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do PMAM3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe PMAM3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "PARANAPANEMA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "PMAM3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker PMAM3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BRSR3",
+    companyName: "BCO ESTADO DO RIO GRANDE DO SUL S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BCO ESTADO DO RIO GRANDE DO SUL S.A. (BRSR3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BCO ESTADO DO RIO GRANDE DO SUL S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do BRSR3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe BRSR3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BCO ESTADO DO RIO GRANDE DO SUL S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "BRSR3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker BRSR3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "CGAS5",
+    companyName: "CIA GAS DE SAO PAULO - COMGAS",
+    sectorSlug: "petroleo",
+    shortDescription: "CIA GAS DE SAO PAULO - COMGAS (CGAS5) atua no setor de petróleo e gás, com resultado ligado ao preço do barril, produção e câmbio. É uma das indústrias com maior potencial de dividendos em momentos de preço favorável.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Distribuição vinculada ao resultado e à política de capital da companhia.",
+    historySummary: "O histórico de proventos do CGAS5 varia com o preço do petróleo e decisões estratégicas da empresa. Simule com base no passado disponível e acompanhe comunicados para entender o próximo ciclo.",
+    worthFollowing: "CGAS5 pode ser relevante para quem busca exposição ao setor de energia com potencial de dividendos expressivos. Considere também volatilidade de commodities e risco político.",
+    listDescription: "CIA GAS DE SAO PAULO - COMGAS — petróleo e gás com dividendos ligados ao ciclo de commodities.",
+    faqs: [
+      { question: "CGAS5 paga dividendos regulares?", answer: "A regularidade depende do preço do petróleo e da política da empresa. Simulações passadas não garantem o futuro." },
+      { question: "Como estimar meus proventos?", answer: "Informe CGAS5 e sua quantidade de ações no simulador desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "USIM3F",
+    companyName: "USINAS SID DE MINAS GERAIS S.A.-USIMINAS",
+    sectorSlug: "mineracao",
+    shortDescription: "USINAS SID DE MINAS GERAIS S.A.-USIMINAS (USIM3F) está no setor de mineração, exposto a ciclos de commodities e demanda global. O dividend yield pode ser elevado em anos de preços altos e recuar em viradas de ciclo.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos variáveis conforme resultado e ciclo de commodities.",
+    historySummary: "O histórico de proventos do USIM3F oscila com o preço das commodities. Anos de superciclo costumam trazer distribuições extraordinárias; quedas de preço reduzem o payout. Use o simulador para explorar o passado.",
+    worthFollowing: "Acompanhe USIM3F se você aceita a ciclicidade do setor de mineração em troca de potencial de dividendos altos em momentos favoráveis. Diversificação e gestão de risco são fundamentais neste setor.",
+    listDescription: "USINAS SID DE MINAS GERAIS S.A.-USIMINAS — mineração com exposição a commodities e histórico de dividendos cíclicos.",
+    faqs: [
+      { question: "Por que o yield do USIM3F muda tanto?", answer: "O preço da ação e os pagamentos acompanham o ciclo de commodities. Um yield alto pode refletir queda do papel ou distribuição extraordinária." },
+      { question: "Onde vejo o histórico oficial?", answer: "Consulte o RI da companhia e comunicados à CVM. O simulador desta página usa dados via API como referência educacional." }
+    ],
+  },
+
+  {
+    ticker: "NEXP3",
+    companyName: "NEXPE PARTICIPAÇÕES S.A",
+    sectorSlug: "servicos_financeiros",
+    shortDescription: "NEXPE PARTICIPAÇÕES S.A (NEXP3) atua em serviços financeiros — como bolsa, clearing, meios de pagamento ou fintechs listadas na B3. O resultado está ligado a volume de transações, tecnologia e regulação do setor.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia.",
+    historySummary: "O histórico de proventos do NEXP3 acompanha a evolução do mercado de capitais e de pagamentos no Brasil. Use o simulador para explorar o passado e combine com análise de crescimento e margem.",
+    worthFollowing: "Acompanhe NEXP3 se você quer exposição a infraestrutura financeira e aceita risco de regulação e ciclo de mercado. Proventos tendem a acompanhar crescimento de volume e lucratividade.",
+    listDescription: "NEXPE PARTICIPAÇÕES S.A — serviços financeiros com histórico de distribuição ligado ao mercado de capitais.",
+    faqs: [
+      { question: "NEXP3 é equivalente a uma ação de banco?", answer: "Não. Serviços financeiros têm drivers diferentes de bancos tradicionais — foco em transações e tecnologia, não crédito." },
+      { question: "Como ver histórico de proventos?", answer: "Use o ticker NEXP3 nesta página para estimativas, e consulte o RI para dados oficiais." }
+    ],
+  },
+
+  {
+    ticker: "EMAE4",
+    companyName: "EMAE - EMPRESA METROP.AGUAS ENERGIA S.A.",
+    sectorSlug: "energia",
+    shortDescription: "EMAE - EMPRESA METROP.AGUAS ENERGIA S.A. (EMAE4) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do EMAE4 reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "EMAE4 pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "EMAE - EMPRESA METROP.AGUAS ENERGIA S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "EMAE4 é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker EMAE4 e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "PINE3",
+    companyName: "BCO PINE S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BCO PINE S.A. (PINE3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BCO PINE S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do PINE3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe PINE3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BCO PINE S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "PINE3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker PINE3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "NEOE3F",
+    companyName: "NEOENERGIA S.A.",
+    sectorSlug: "energia",
+    shortDescription: "NEOENERGIA S.A. (NEOE3F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do NEOE3F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "NEOE3F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "NEOENERGIA S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "NEOE3F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker NEOE3F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "MILS3F",
+    companyName: "MILLS LOCAÇÃO. SERVIÇOS E LOGÍSTICA S.A",
+    sectorSlug: "industria",
+    shortDescription: "MILLS LOCAÇÃO. SERVIÇOS E LOGÍSTICA S.A (MILS3F) é uma empresa industrial listada na B3, com exposição a capacidade de produção, exportação e custos de insumos. O setor distribui dividendos conforme resultado e ciclo de investimentos.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado operacional e política de capital da empresa.",
+    historySummary: "O histórico de proventos do MILS3F alterna períodos de payout maior com ciclos de CAPEX intenso. Analise o fluxo de caixa livre e a alavancagem para entender a sustentabilidade dos dividendos.",
+    worthFollowing: "MILS3F pode interessar a quem busca diversificação industrial com potencial de proventos em fases de geração de caixa. Volatilidade cambial e de insumos são fatores de risco relevantes.",
+    listDescription: "MILLS LOCAÇÃO. SERVIÇOS E LOGÍSTICA S.A — indústria com histórico de proventos ligado ao ciclo produtivo.",
+    faqs: [
+      { question: "MILS3F paga dividendos frequentes?", answer: "A frequência varia com o ciclo da companhia. Consulte RI e comunicados para o calendário atualizado." },
+      { question: "Como simular meus proventos?", answer: "Informe MILS3F e a quantidade de ações na calculadora desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "AMER3F",
+    companyName: "AMERICANAS S.A",
+    sectorSlug: "consumo",
+    shortDescription: "AMERICANAS S.A (AMER3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do AMER3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe AMER3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "AMERICANAS S.A — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "AMER3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker AMER3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "PDGR3",
+    companyName: "PDG REALTY S.A. EMPREEND E PARTICIPACOES",
+    sectorSlug: "bancos",
+    shortDescription: "PDG REALTY S.A. EMPREEND E PARTICIPACOES (PDGR3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e PDG REALTY S.A. EMPREEND E PARTICIPACOES aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do PDGR3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe PDGR3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "PDG REALTY S.A. EMPREEND E PARTICIPACOES — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "PDGR3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker PDGR3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "EPAR3",
+    companyName: "EMBPAR PARTICIPACOES S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "EMBPAR PARTICIPACOES S.A. (EPAR3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e EMBPAR PARTICIPACOES S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do EPAR3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe EPAR3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "EMBPAR PARTICIPACOES S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "EPAR3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker EPAR3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "SEQL3F",
+    companyName: "SEQUOIA LOGISTICA E TRANSPORTES S.A",
+    sectorSlug: "consumo",
+    shortDescription: "SEQUOIA LOGISTICA E TRANSPORTES S.A (SEQL3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do SEQL3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe SEQL3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "SEQUOIA LOGISTICA E TRANSPORTES S.A — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "SEQL3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker SEQL3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "IFCM3F",
+    companyName: "INFRACOMMERCE CXAAS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "INFRACOMMERCE CXAAS S.A. (IFCM3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do IFCM3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe IFCM3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "INFRACOMMERCE CXAAS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "IFCM3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker IFCM3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "PINE4F",
+    companyName: "BCO PINE S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BCO PINE S.A. (PINE4F) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BCO PINE S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do PINE4F acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe PINE4F se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BCO PINE S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "PINE4F paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker PINE4F e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "DXCO3F",
+    companyName: "DEXCO S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "DEXCO S.A. (DXCO3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do DXCO3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe DXCO3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "DEXCO S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "DXCO3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker DXCO3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "MULT3F",
+    companyName: "MULTIPLAN - EMPREEND IMOBILIARIOS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "MULTIPLAN - EMPREEND IMOBILIARIOS S.A. (MULT3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do MULT3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe MULT3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "MULTIPLAN - EMPREEND IMOBILIARIOS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "MULT3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker MULT3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BMEB3",
+    companyName: "BCO MERCANTIL DO BRASIL S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BCO MERCANTIL DO BRASIL S.A. (BMEB3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BCO MERCANTIL DO BRASIL S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do BMEB3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe BMEB3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BCO MERCANTIL DO BRASIL S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "BMEB3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker BMEB3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "MYPK3F",
+    companyName: "IOCHPE MAXION S.A.",
+    sectorSlug: "industria",
+    shortDescription: "IOCHPE MAXION S.A. (MYPK3F) é uma empresa industrial listada na B3, com exposição a capacidade de produção, exportação e custos de insumos. O setor distribui dividendos conforme resultado e ciclo de investimentos.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado operacional e política de capital da empresa.",
+    historySummary: "O histórico de proventos do MYPK3F alterna períodos de payout maior com ciclos de CAPEX intenso. Analise o fluxo de caixa livre e a alavancagem para entender a sustentabilidade dos dividendos.",
+    worthFollowing: "MYPK3F pode interessar a quem busca diversificação industrial com potencial de proventos em fases de geração de caixa. Volatilidade cambial e de insumos são fatores de risco relevantes.",
+    listDescription: "IOCHPE MAXION S.A. — indústria com histórico de proventos ligado ao ciclo produtivo.",
+    faqs: [
+      { question: "MYPK3F paga dividendos frequentes?", answer: "A frequência varia com o ciclo da companhia. Consulte RI e comunicados para o calendário atualizado." },
+      { question: "Como simular meus proventos?", answer: "Informe MYPK3F e a quantidade de ações na calculadora desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "SEER3F",
+    companyName: "SER EDUCACIONAL S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "SER EDUCACIONAL S.A. (SEER3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do SEER3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe SEER3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "SER EDUCACIONAL S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "SEER3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker SEER3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "HYPE3F",
+    companyName: "HYPERA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "HYPERA S.A. (HYPE3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do HYPE3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe HYPE3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "HYPERA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "HYPE3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker HYPE3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "PTNT4",
+    companyName: "PETTENATI S.A. INDUSTRIA TEXTIL",
+    sectorSlug: "bancos",
+    shortDescription: "PETTENATI S.A. INDUSTRIA TEXTIL (PTNT4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e PETTENATI S.A. INDUSTRIA TEXTIL aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do PTNT4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe PTNT4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "PETTENATI S.A. INDUSTRIA TEXTIL — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "PTNT4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker PTNT4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "AZUL3F",
+    companyName: "AZUL S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "AZUL S.A. (AZUL3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do AZUL3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe AZUL3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "AZUL S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "AZUL3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker AZUL3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "EALT4",
+    companyName: "ELECTRO ACO ALTONA S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "ELECTRO ACO ALTONA S.A. (EALT4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e ELECTRO ACO ALTONA S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do EALT4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe EALT4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "ELECTRO ACO ALTONA S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "EALT4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker EALT4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "GGPS3F",
+    companyName: "GPS PARTICIPACOES E EMPREENDIMENTOS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "GPS PARTICIPACOES E EMPREENDIMENTOS S.A. (GGPS3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do GGPS3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe GGPS3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "GPS PARTICIPACOES E EMPREENDIMENTOS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "GGPS3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker GGPS3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "RSID3",
+    companyName: "ROSSI RESIDENCIAL S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "ROSSI RESIDENCIAL S.A. (RSID3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e ROSSI RESIDENCIAL S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do RSID3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe RSID3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "ROSSI RESIDENCIAL S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "RSID3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker RSID3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "AZEV4F",
+    companyName: "AZEVEDO E TRAVASSOS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "AZEVEDO E TRAVASSOS S.A. (AZEV4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do AZEV4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe AZEV4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "AZEVEDO E TRAVASSOS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "AZEV4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker AZEV4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "IGTI11F",
+    companyName: "IGUATEMI S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "IGUATEMI S.A. (IGTI11F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do IGTI11F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe IGTI11F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "IGUATEMI S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "IGTI11F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker IGTI11F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "LUXM4",
+    companyName: "TREVISA INVESTIMENTOS S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "TREVISA INVESTIMENTOS S.A. (LUXM4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e TREVISA INVESTIMENTOS S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do LUXM4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe LUXM4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "TREVISA INVESTIMENTOS S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "LUXM4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker LUXM4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "NGRD3F",
+    companyName: "NEOGRID PARTICIPACOES S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "NEOGRID PARTICIPACOES S.A. (NGRD3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do NGRD3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe NGRD3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "NEOGRID PARTICIPACOES S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "NGRD3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker NGRD3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BLAU3F",
+    companyName: "BLAU FARMACÊUTICA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "BLAU FARMACÊUTICA S.A. (BLAU3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BLAU3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BLAU3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BLAU FARMACÊUTICA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BLAU3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BLAU3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CBAV3F",
+    companyName: "COMPANHIA BRASILEIRA DE ALUMÍNIO",
+    sectorSlug: "consumo",
+    shortDescription: "COMPANHIA BRASILEIRA DE ALUMÍNIO (CBAV3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CBAV3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CBAV3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "COMPANHIA BRASILEIRA DE ALUMÍNIO — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CBAV3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CBAV3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "MOTV3F",
+    companyName: "MOTIVA INFRAESTRUTURA DE MOBILIDADE S.A.",
+    sectorSlug: "energia",
+    shortDescription: "MOTIVA INFRAESTRUTURA DE MOBILIDADE S.A. (MOTV3F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do MOTV3F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "MOTV3F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "MOTIVA INFRAESTRUTURA DE MOBILIDADE S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "MOTV3F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker MOTV3F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "JSLG3F",
+    companyName: "JSL S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "JSL S.A. (JSLG3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do JSLG3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe JSLG3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "JSL S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "JSLG3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker JSLG3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "SNCI11",
+    companyName: "SNCI11",
+    sectorSlug: "consumo",
+    shortDescription: "SNCI11 (SNCI11) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do SNCI11 reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe SNCI11 se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "SNCI11 — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "SNCI11 é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker SNCI11 na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "RIAA3F",
+    companyName: "RIAA3F",
+    sectorSlug: "consumo",
+    shortDescription: "RIAA3F (RIAA3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do RIAA3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe RIAA3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "RIAA3F — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "RIAA3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker RIAA3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "LOGG3F",
+    companyName: "LOG COMMERCIAL PROPERTIES",
+    sectorSlug: "consumo",
+    shortDescription: "LOG COMMERCIAL PROPERTIES (LOGG3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do LOGG3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe LOGG3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "LOG COMMERCIAL PROPERTIES — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "LOGG3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker LOGG3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "ARML3F",
+    companyName: "ARMAC LOCAÇÃO. LOGÍSTICA E SERVIÇOS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "ARMAC LOCAÇÃO. LOGÍSTICA E SERVIÇOS S.A. (ARML3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do ARML3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe ARML3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ARMAC LOCAÇÃO. LOGÍSTICA E SERVIÇOS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "ARML3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker ARML3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "HAGA3",
+    companyName: "HAGA S.A. INDUSTRIA E COMERCIO",
+    sectorSlug: "bancos",
+    shortDescription: "HAGA S.A. INDUSTRIA E COMERCIO (HAGA3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e HAGA S.A. INDUSTRIA E COMERCIO aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do HAGA3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe HAGA3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "HAGA S.A. INDUSTRIA E COMERCIO — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "HAGA3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker HAGA3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "OBTC3F",
+    companyName: "ORANJEBTC S.A. - EDUCAÇÃO E INVESTIMENTO",
+    sectorSlug: "consumo",
+    shortDescription: "ORANJEBTC S.A. - EDUCAÇÃO E INVESTIMENTO (OBTC3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do OBTC3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe OBTC3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ORANJEBTC S.A. - EDUCAÇÃO E INVESTIMENTO — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "OBTC3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker OBTC3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CEBR3",
+    companyName: "CIA ENERGETICA DE BRASILIA",
+    sectorSlug: "bancos",
+    shortDescription: "CIA ENERGETICA DE BRASILIA (CEBR3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e CIA ENERGETICA DE BRASILIA aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do CEBR3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe CEBR3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "CIA ENERGETICA DE BRASILIA — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "CEBR3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker CEBR3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "NUTR3",
+    companyName: "NUTRIPLANT INDUSTRIA E COMERCIO S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "NUTRIPLANT INDUSTRIA E COMERCIO S.A. (NUTR3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e NUTRIPLANT INDUSTRIA E COMERCIO S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do NUTR3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe NUTR3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "NUTRIPLANT INDUSTRIA E COMERCIO S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "NUTR3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker NUTR3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "SHUL4F",
+    companyName: "SCHULZ S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "SCHULZ S.A. (SHUL4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do SHUL4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe SHUL4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "SCHULZ S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "SHUL4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker SHUL4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CYRE4F",
+    companyName: "CYRELA BRAZIL REALTY S.A.EMPREEND E PART",
+    sectorSlug: "consumo",
+    shortDescription: "CYRELA BRAZIL REALTY S.A.EMPREEND E PART (CYRE4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CYRE4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CYRE4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CYRELA BRAZIL REALTY S.A.EMPREEND E PART — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CYRE4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CYRE4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "EVEN3F",
+    companyName: "EVEN CONSTRUTORA E INCORPORADORA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "EVEN CONSTRUTORA E INCORPORADORA S.A. (EVEN3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do EVEN3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe EVEN3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "EVEN CONSTRUTORA E INCORPORADORA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "EVEN3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker EVEN3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "ALUP3",
+    companyName: "ALUPAR INVESTIMENTO S/A",
+    sectorSlug: "bancos",
+    shortDescription: "ALUPAR INVESTIMENTO S/A (ALUP3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e ALUPAR INVESTIMENTO S/A aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do ALUP3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe ALUP3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "ALUPAR INVESTIMENTO S/A — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "ALUP3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker ALUP3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "TRIS3F",
+    companyName: "TRISUL S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "TRISUL S.A. (TRIS3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do TRIS3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe TRIS3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "TRISUL S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "TRIS3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker TRIS3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "JALL3F",
+    companyName: "JALLES MACHADO S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "JALLES MACHADO S.A. (JALL3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do JALL3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe JALL3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "JALLES MACHADO S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "JALL3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker JALL3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "ORVR3F",
+    companyName: "ORIZON VALORIZACAO DE RESIDUOS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "ORIZON VALORIZACAO DE RESIDUOS S.A. (ORVR3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do ORVR3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe ORVR3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ORIZON VALORIZACAO DE RESIDUOS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "ORVR3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker ORVR3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "PTNT3",
+    companyName: "PETTENATI S.A. INDUSTRIA TEXTIL",
+    sectorSlug: "bancos",
+    shortDescription: "PETTENATI S.A. INDUSTRIA TEXTIL (PTNT3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e PETTENATI S.A. INDUSTRIA TEXTIL aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do PTNT3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe PTNT3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "PETTENATI S.A. INDUSTRIA TEXTIL — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "PTNT3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker PTNT3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "CEBR6",
+    companyName: "CIA ENERGETICA DE BRASILIA",
+    sectorSlug: "consumo",
+    shortDescription: "CIA ENERGETICA DE BRASILIA (CEBR6) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CEBR6 reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CEBR6 se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CIA ENERGETICA DE BRASILIA — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CEBR6 é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CEBR6 na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "SBFG3F",
+    companyName: "GRUPO SBF SA",
+    sectorSlug: "consumo",
+    shortDescription: "GRUPO SBF SA (SBFG3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do SBFG3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe SBFG3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "GRUPO SBF SA — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "SBFG3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker SBFG3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "POSI3F",
+    companyName: "POSITIVO TECNOLOGIA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "POSITIVO TECNOLOGIA S.A. (POSI3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do POSI3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe POSI3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "POSITIVO TECNOLOGIA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "POSI3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker POSI3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "DASA3F",
+    companyName: "DIAGNOSTICOS DA AMERICA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "DIAGNOSTICOS DA AMERICA S.A. (DASA3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do DASA3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe DASA3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "DIAGNOSTICOS DA AMERICA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "DASA3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker DASA3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "ENGI4",
+    companyName: "ENERGISA S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "ENERGISA S.A. (ENGI4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e ENERGISA S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do ENGI4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe ENGI4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "ENERGISA S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "ENGI4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker ENGI4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "UNIP3",
+    companyName: "UNIPAR CARBOCLORO S.A.",
+    sectorSlug: "industria",
+    shortDescription: "UNIPAR CARBOCLORO S.A. (UNIP3) é uma empresa industrial listada na B3, com exposição a capacidade de produção, exportação e custos de insumos. O setor distribui dividendos conforme resultado e ciclo de investimentos.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado operacional e política de capital da empresa.",
+    historySummary: "O histórico de proventos do UNIP3 alterna períodos de payout maior com ciclos de CAPEX intenso. Analise o fluxo de caixa livre e a alavancagem para entender a sustentabilidade dos dividendos.",
+    worthFollowing: "UNIP3 pode interessar a quem busca diversificação industrial com potencial de proventos em fases de geração de caixa. Volatilidade cambial e de insumos são fatores de risco relevantes.",
+    listDescription: "UNIPAR CARBOCLORO S.A. — indústria com histórico de proventos ligado ao ciclo produtivo.",
+    faqs: [
+      { question: "UNIP3 paga dividendos frequentes?", answer: "A frequência varia com o ciclo da companhia. Consulte RI e comunicados para o calendário atualizado." },
+      { question: "Como simular meus proventos?", answer: "Informe UNIP3 e a quantidade de ações na calculadora desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "VVEO3F",
+    companyName: "CM HOSPITALAR S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "CM HOSPITALAR S.A. (VVEO3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do VVEO3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe VVEO3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CM HOSPITALAR S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "VVEO3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker VVEO3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BAZA3",
+    companyName: "BCO AMAZONIA S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BCO AMAZONIA S.A. (BAZA3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BCO AMAZONIA S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do BAZA3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe BAZA3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BCO AMAZONIA S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "BAZA3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker BAZA3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "BMOB3F",
+    companyName: "BEMOBI MOBILE TECH S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "BEMOBI MOBILE TECH S.A. (BMOB3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BMOB3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BMOB3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BEMOBI MOBILE TECH S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BMOB3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BMOB3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "KIVO11",
+    companyName: "KIVO11",
+    sectorSlug: "consumo",
+    shortDescription: "KIVO11 (KIVO11) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do KIVO11 reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe KIVO11 se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "KIVO11 — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "KIVO11 é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker KIVO11 na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "VTRU3F",
+    companyName: "VITRU EDUCAÇÃO S.A",
+    sectorSlug: "consumo",
+    shortDescription: "VITRU EDUCAÇÃO S.A (VTRU3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do VTRU3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe VTRU3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "VITRU EDUCAÇÃO S.A — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "VTRU3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker VTRU3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BGIP4",
+    companyName: "BCO ESTADO DE SERGIPE S.A. - BANESE",
+    sectorSlug: "bancos",
+    shortDescription: "BCO ESTADO DE SERGIPE S.A. - BANESE (BGIP4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BCO ESTADO DE SERGIPE S.A. - BANESE aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do BGIP4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe BGIP4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BCO ESTADO DE SERGIPE S.A. - BANESE — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "BGIP4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker BGIP4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "MLAS3F",
+    companyName: "GRUPO MULTI S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "GRUPO MULTI S.A. (MLAS3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do MLAS3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe MLAS3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "GRUPO MULTI S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "MLAS3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker MLAS3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "GOAU3F",
+    companyName: "METALURGICA GERDAU S.A.",
+    sectorSlug: "mineracao",
+    shortDescription: "METALURGICA GERDAU S.A. (GOAU3F) está no setor de mineração, exposto a ciclos de commodities e demanda global. O dividend yield pode ser elevado em anos de preços altos e recuar em viradas de ciclo.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos variáveis conforme resultado e ciclo de commodities.",
+    historySummary: "O histórico de proventos do GOAU3F oscila com o preço das commodities. Anos de superciclo costumam trazer distribuições extraordinárias; quedas de preço reduzem o payout. Use o simulador para explorar o passado.",
+    worthFollowing: "Acompanhe GOAU3F se você aceita a ciclicidade do setor de mineração em troca de potencial de dividendos altos em momentos favoráveis. Diversificação e gestão de risco são fundamentais neste setor.",
+    listDescription: "METALURGICA GERDAU S.A. — mineração com exposição a commodities e histórico de dividendos cíclicos.",
+    faqs: [
+      { question: "Por que o yield do GOAU3F muda tanto?", answer: "O preço da ação e os pagamentos acompanham o ciclo de commodities. Um yield alto pode refletir queda do papel ou distribuição extraordinária." },
+      { question: "Onde vejo o histórico oficial?", answer: "Consulte o RI da companhia e comunicados à CVM. O simulador desta página usa dados via API como referência educacional." }
+    ],
+  },
+
+  {
+    ticker: "BEES3F",
+    companyName: "BANESTES S.A. - BCO EST ESPIRITO SANTO",
+    sectorSlug: "consumo",
+    shortDescription: "BANESTES S.A. - BCO EST ESPIRITO SANTO (BEES3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BEES3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BEES3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BANESTES S.A. - BCO EST ESPIRITO SANTO — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BEES3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BEES3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "RENT4F",
+    companyName: "LOCALIZA RENT A CAR S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "LOCALIZA RENT A CAR S.A. (RENT4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do RENT4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe RENT4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "LOCALIZA RENT A CAR S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "RENT4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker RENT4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "PNVL3F",
+    companyName: "DIMED S.A. DISTRIBUIDORA DE MEDICAMENTOS",
+    sectorSlug: "consumo",
+    shortDescription: "DIMED S.A. DISTRIBUIDORA DE MEDICAMENTOS (PNVL3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do PNVL3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe PNVL3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "DIMED S.A. DISTRIBUIDORA DE MEDICAMENTOS — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "PNVL3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker PNVL3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "GGBR3F",
+    companyName: "GERDAU S.A.",
+    sectorSlug: "mineracao",
+    shortDescription: "GERDAU S.A. (GGBR3F) está no setor de mineração, exposto a ciclos de commodities e demanda global. O dividend yield pode ser elevado em anos de preços altos e recuar em viradas de ciclo.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos variáveis conforme resultado e ciclo de commodities.",
+    historySummary: "O histórico de proventos do GGBR3F oscila com o preço das commodities. Anos de superciclo costumam trazer distribuições extraordinárias; quedas de preço reduzem o payout. Use o simulador para explorar o passado.",
+    worthFollowing: "Acompanhe GGBR3F se você aceita a ciclicidade do setor de mineração em troca de potencial de dividendos altos em momentos favoráveis. Diversificação e gestão de risco são fundamentais neste setor.",
+    listDescription: "GERDAU S.A. — mineração com exposição a commodities e histórico de dividendos cíclicos.",
+    faqs: [
+      { question: "Por que o yield do GGBR3F muda tanto?", answer: "O preço da ação e os pagamentos acompanham o ciclo de commodities. Um yield alto pode refletir queda do papel ou distribuição extraordinária." },
+      { question: "Onde vejo o histórico oficial?", answer: "Consulte o RI da companhia e comunicados à CVM. O simulador desta página usa dados via API como referência educacional." }
+    ],
+  },
+
+  {
+    ticker: "BRAP3F",
+    companyName: "BRADESPAR S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "BRADESPAR S.A. (BRAP3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BRAP3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BRAP3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BRADESPAR S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BRAP3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BRAP3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "TGMA3F",
+    companyName: "TEGMA GESTAO LOGISTICA S.A.",
+    sectorSlug: "industria",
+    shortDescription: "TEGMA GESTAO LOGISTICA S.A. (TGMA3F) é uma empresa industrial listada na B3, com exposição a capacidade de produção, exportação e custos de insumos. O setor distribui dividendos conforme resultado e ciclo de investimentos.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado operacional e política de capital da empresa.",
+    historySummary: "O histórico de proventos do TGMA3F alterna períodos de payout maior com ciclos de CAPEX intenso. Analise o fluxo de caixa livre e a alavancagem para entender a sustentabilidade dos dividendos.",
+    worthFollowing: "TGMA3F pode interessar a quem busca diversificação industrial com potencial de proventos em fases de geração de caixa. Volatilidade cambial e de insumos são fatores de risco relevantes.",
+    listDescription: "TEGMA GESTAO LOGISTICA S.A. — indústria com histórico de proventos ligado ao ciclo produtivo.",
+    faqs: [
+      { question: "TGMA3F paga dividendos frequentes?", answer: "A frequência varia com o ciclo da companhia. Consulte RI e comunicados para o calendário atualizado." },
+      { question: "Como simular meus proventos?", answer: "Informe TGMA3F e a quantidade de ações na calculadora desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "ALPA3",
+    companyName: "ALPARGATAS S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "ALPARGATAS S.A. (ALPA3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e ALPARGATAS S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do ALPA3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe ALPA3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "ALPARGATAS S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "ALPA3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker ALPA3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "PRNR3F",
+    companyName: "PRINER SERVIÇOS INDUSTRIAIS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "PRINER SERVIÇOS INDUSTRIAIS S.A. (PRNR3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do PRNR3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe PRNR3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "PRINER SERVIÇOS INDUSTRIAIS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "PRNR3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker PRNR3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "RCSL4F",
+    companyName: "RECRUSUL S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "RECRUSUL S.A. (RCSL4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do RCSL4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe RCSL4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "RECRUSUL S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "RCSL4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker RCSL4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "TELB4",
+    companyName: "TELEC BRASILEIRAS S.A. TELEBRAS",
+    sectorSlug: "bancos",
+    shortDescription: "TELEC BRASILEIRAS S.A. TELEBRAS (TELB4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e TELEC BRASILEIRAS S.A. TELEBRAS aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do TELB4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe TELB4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "TELEC BRASILEIRAS S.A. TELEBRAS — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "TELB4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker TELB4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "NORD3",
+    companyName: "NORDON INDUSTRIAS METALURGICAS S.A.",
+    sectorSlug: "mineracao",
+    shortDescription: "NORDON INDUSTRIAS METALURGICAS S.A. (NORD3) está no setor de mineração, exposto a ciclos de commodities e demanda global. O dividend yield pode ser elevado em anos de preços altos e recuar em viradas de ciclo.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos variáveis conforme resultado e ciclo de commodities.",
+    historySummary: "O histórico de proventos do NORD3 oscila com o preço das commodities. Anos de superciclo costumam trazer distribuições extraordinárias; quedas de preço reduzem o payout. Use o simulador para explorar o passado.",
+    worthFollowing: "Acompanhe NORD3 se você aceita a ciclicidade do setor de mineração em troca de potencial de dividendos altos em momentos favoráveis. Diversificação e gestão de risco são fundamentais neste setor.",
+    listDescription: "NORDON INDUSTRIAS METALURGICAS S.A. — mineração com exposição a commodities e histórico de dividendos cíclicos.",
+    faqs: [
+      { question: "Por que o yield do NORD3 muda tanto?", answer: "O preço da ação e os pagamentos acompanham o ciclo de commodities. Um yield alto pode refletir queda do papel ou distribuição extraordinária." },
+      { question: "Onde vejo o histórico oficial?", answer: "Consulte o RI da companhia e comunicados à CVM. O simulador desta página usa dados via API como referência educacional." }
+    ],
+  },
+
+  {
+    ticker: "MTSA4",
+    companyName: "METISA METALURGICA TIMBOENSE S.A.",
+    sectorSlug: "mineracao",
+    shortDescription: "METISA METALURGICA TIMBOENSE S.A. (MTSA4) está no setor de mineração, exposto a ciclos de commodities e demanda global. O dividend yield pode ser elevado em anos de preços altos e recuar em viradas de ciclo.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos variáveis conforme resultado e ciclo de commodities.",
+    historySummary: "O histórico de proventos do MTSA4 oscila com o preço das commodities. Anos de superciclo costumam trazer distribuições extraordinárias; quedas de preço reduzem o payout. Use o simulador para explorar o passado.",
+    worthFollowing: "Acompanhe MTSA4 se você aceita a ciclicidade do setor de mineração em troca de potencial de dividendos altos em momentos favoráveis. Diversificação e gestão de risco são fundamentais neste setor.",
+    listDescription: "METISA METALURGICA TIMBOENSE S.A. — mineração com exposição a commodities e histórico de dividendos cíclicos.",
+    faqs: [
+      { question: "Por que o yield do MTSA4 muda tanto?", answer: "O preço da ação e os pagamentos acompanham o ciclo de commodities. Um yield alto pode refletir queda do papel ou distribuição extraordinária." },
+      { question: "Onde vejo o histórico oficial?", answer: "Consulte o RI da companhia e comunicados à CVM. O simulador desta página usa dados via API como referência educacional." }
+    ],
+  },
+
+  {
+    ticker: "SNSY5",
+    companyName: "SANSUY S.A. INDUSTRIA DE PLASTICOS",
+    sectorSlug: "consumo",
+    shortDescription: "SANSUY S.A. INDUSTRIA DE PLASTICOS (SNSY5) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do SNSY5 reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe SNSY5 se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "SANSUY S.A. INDUSTRIA DE PLASTICOS — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "SNSY5 é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker SNSY5 na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "DTCY3",
+    companyName: "DTCOM - DIRECT TO COMPANY S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "DTCOM - DIRECT TO COMPANY S.A. (DTCY3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e DTCOM - DIRECT TO COMPANY S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do DTCY3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe DTCY3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "DTCOM - DIRECT TO COMPANY S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "DTCY3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker DTCY3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "LPSB3F",
+    companyName: "LPS BRASIL - CONSULTORIA DE IMOVEIS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "LPS BRASIL - CONSULTORIA DE IMOVEIS S.A. (LPSB3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do LPSB3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe LPSB3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "LPS BRASIL - CONSULTORIA DE IMOVEIS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "LPSB3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker LPSB3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "HBSA3F",
+    companyName: "HIDROVIAS DO BRASIL S.A.",
+    sectorSlug: "industria",
+    shortDescription: "HIDROVIAS DO BRASIL S.A. (HBSA3F) é uma empresa industrial listada na B3, com exposição a capacidade de produção, exportação e custos de insumos. O setor distribui dividendos conforme resultado e ciclo de investimentos.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado operacional e política de capital da empresa.",
+    historySummary: "O histórico de proventos do HBSA3F alterna períodos de payout maior com ciclos de CAPEX intenso. Analise o fluxo de caixa livre e a alavancagem para entender a sustentabilidade dos dividendos.",
+    worthFollowing: "HBSA3F pode interessar a quem busca diversificação industrial com potencial de proventos em fases de geração de caixa. Volatilidade cambial e de insumos são fatores de risco relevantes.",
+    listDescription: "HIDROVIAS DO BRASIL S.A. — indústria com histórico de proventos ligado ao ciclo produtivo.",
+    faqs: [
+      { question: "HBSA3F paga dividendos frequentes?", answer: "A frequência varia com o ciclo da companhia. Consulte RI e comunicados para o calendário atualizado." },
+      { question: "Como simular meus proventos?", answer: "Informe HBSA3F e a quantidade de ações na calculadora desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "FRAS3F",
+    companyName: "FRASLE MOBILITY S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "FRASLE MOBILITY S.A. (FRAS3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do FRAS3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe FRAS3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "FRASLE MOBILITY S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "FRAS3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker FRAS3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "ISAE3",
+    companyName: "ISA ENERGIA BRASIL S.A",
+    sectorSlug: "energia",
+    shortDescription: "ISA ENERGIA BRASIL S.A (ISAE3) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do ISAE3 reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "ISAE3 pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "ISA ENERGIA BRASIL S.A — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "ISAE3 é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker ISAE3 e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "MEAL3F",
+    companyName: "INTERNATIONAL MEAL COMPANY ALIMENTACAO S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "INTERNATIONAL MEAL COMPANY ALIMENTACAO S.A. (MEAL3F) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e INTERNATIONAL MEAL COMPANY ALIMENTACAO S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do MEAL3F acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe MEAL3F se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "INTERNATIONAL MEAL COMPANY ALIMENTACAO S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "MEAL3F paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker MEAL3F e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "PTBL3F",
+    companyName: "PBG S/A",
+    sectorSlug: "consumo",
+    shortDescription: "PBG S/A (PTBL3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do PTBL3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe PTBL3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "PBG S/A — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "PTBL3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker PTBL3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "PFRM3F",
+    companyName: "PROFARMA DISTRIB PROD FARMACEUTICOS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "PROFARMA DISTRIB PROD FARMACEUTICOS S.A. (PFRM3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do PFRM3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe PFRM3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "PROFARMA DISTRIB PROD FARMACEUTICOS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "PFRM3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker PFRM3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BEES4",
+    companyName: "BANESTES S.A. - BCO EST ESPIRITO SANTO",
+    sectorSlug: "bancos",
+    shortDescription: "BANESTES S.A. - BCO EST ESPIRITO SANTO (BEES4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BANESTES S.A. - BCO EST ESPIRITO SANTO aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do BEES4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe BEES4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BANESTES S.A. - BCO EST ESPIRITO SANTO — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "BEES4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker BEES4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "EUCA3",
+    companyName: "EUCATEX S.A. INDUSTRIA E COMERCIO",
+    sectorSlug: "bancos",
+    shortDescription: "EUCATEX S.A. INDUSTRIA E COMERCIO (EUCA3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e EUCATEX S.A. INDUSTRIA E COMERCIO aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do EUCA3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe EUCA3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "EUCATEX S.A. INDUSTRIA E COMERCIO — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "EUCA3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker EUCA3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "DEXP3F",
+    companyName: "DEXXOS PARTICIPACOES S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "DEXXOS PARTICIPACOES S.A. (DEXP3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do DEXP3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe DEXP3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "DEXXOS PARTICIPACOES S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "DEXP3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker DEXP3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "AZEV3F",
+    companyName: "AZEVEDO E TRAVASSOS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "AZEVEDO E TRAVASSOS S.A. (AZEV3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do AZEV3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe AZEV3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "AZEVEDO E TRAVASSOS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "AZEV3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker AZEV3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "ENMT3",
+    companyName: "ENERGISA MATO GROSSO-DISTRIBUIDORA DE ENERGIA S/A",
+    sectorSlug: "energia",
+    shortDescription: "ENERGISA MATO GROSSO-DISTRIBUIDORA DE ENERGIA S/A (ENMT3) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do ENMT3 reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "ENMT3 pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "ENERGISA MATO GROSSO-DISTRIBUIDORA DE ENERGIA S/A — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "ENMT3 é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker ENMT3 e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "WHRL3",
+    companyName: "WHIRLPOOL S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "WHIRLPOOL S.A. (WHRL3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e WHIRLPOOL S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do WHRL3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe WHRL3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "WHIRLPOOL S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "WHRL3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker WHRL3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "TPIS3F",
+    companyName: "TPI - TRIUNFO PARTICIP. E INVEST. S.A.",
+    sectorSlug: "industria",
+    shortDescription: "TPI - TRIUNFO PARTICIP. E INVEST. S.A. (TPIS3F) é uma empresa industrial listada na B3, com exposição a capacidade de produção, exportação e custos de insumos. O setor distribui dividendos conforme resultado e ciclo de investimentos.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado operacional e política de capital da empresa.",
+    historySummary: "O histórico de proventos do TPIS3F alterna períodos de payout maior com ciclos de CAPEX intenso. Analise o fluxo de caixa livre e a alavancagem para entender a sustentabilidade dos dividendos.",
+    worthFollowing: "TPIS3F pode interessar a quem busca diversificação industrial com potencial de proventos em fases de geração de caixa. Volatilidade cambial e de insumos são fatores de risco relevantes.",
+    listDescription: "TPI - TRIUNFO PARTICIP. E INVEST. S.A. — indústria com histórico de proventos ligado ao ciclo produtivo.",
+    faqs: [
+      { question: "TPIS3F paga dividendos frequentes?", answer: "A frequência varia com o ciclo da companhia. Consulte RI e comunicados para o calendário atualizado." },
+      { question: "Como simular meus proventos?", answer: "Informe TPIS3F e a quantidade de ações na calculadora desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "AGXY3F",
+    companyName: "AGROGALAXY PARTICIPAÇÕES S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "AGROGALAXY PARTICIPAÇÕES S.A. (AGXY3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do AGXY3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe AGXY3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "AGROGALAXY PARTICIPAÇÕES S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "AGXY3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker AGXY3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BMEB4F",
+    companyName: "BCO MERCANTIL DO BRASIL S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "BCO MERCANTIL DO BRASIL S.A. (BMEB4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BMEB4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BMEB4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BCO MERCANTIL DO BRASIL S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BMEB4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BMEB4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "EUCA4F",
+    companyName: "EUCATEX S.A. INDUSTRIA E COMERCIO",
+    sectorSlug: "consumo",
+    shortDescription: "EUCATEX S.A. INDUSTRIA E COMERCIO (EUCA4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do EUCA4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe EUCA4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "EUCATEX S.A. INDUSTRIA E COMERCIO — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "EUCA4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker EUCA4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "HBRE3F",
+    companyName: "HBR REALTY EMPREENDIMENTOS IMOBILIARIOS S/A",
+    sectorSlug: "consumo",
+    shortDescription: "HBR REALTY EMPREENDIMENTOS IMOBILIARIOS S/A (HBRE3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do HBRE3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe HBRE3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "HBR REALTY EMPREENDIMENTOS IMOBILIARIOS S/A — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "HBRE3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker HBRE3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CLSC4",
+    companyName: "CENTRAIS ELET DE SANTA CATARINA S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "CENTRAIS ELET DE SANTA CATARINA S.A. (CLSC4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e CENTRAIS ELET DE SANTA CATARINA S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do CLSC4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe CLSC4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "CENTRAIS ELET DE SANTA CATARINA S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "CLSC4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker CLSC4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "JFEN3",
+    companyName: "JOAO FORTES ENGENHARIA S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "JOAO FORTES ENGENHARIA S.A. (JFEN3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e JOAO FORTES ENGENHARIA S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do JFEN3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe JFEN3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "JOAO FORTES ENGENHARIA S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "JFEN3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker JFEN3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "TFCO4F",
+    companyName: "TRACK & FIELD CO S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "TRACK & FIELD CO S.A. (TFCO4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do TFCO4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe TFCO4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "TRACK & FIELD CO S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "TFCO4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker TFCO4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "ESPA3F",
+    companyName: "MPM CORPÓREOS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "MPM CORPÓREOS S.A. (ESPA3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do ESPA3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe ESPA3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "MPM CORPÓREOS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "ESPA3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker ESPA3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "AMAR3F",
+    companyName: "MARISA LOJAS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "MARISA LOJAS S.A. (AMAR3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do AMAR3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe AMAR3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "MARISA LOJAS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "AMAR3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker AMAR3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "ONCO11",
+    companyName: "ONCOCLINICAS DO BRASIL SERVICOS MEDICOS  S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "ONCOCLINICAS DO BRASIL SERVICOS MEDICOS  S.A. (ONCO11) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do ONCO11 reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe ONCO11 se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ONCOCLINICAS DO BRASIL SERVICOS MEDICOS  S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "ONCO11 é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker ONCO11 na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BRSR3F",
+    companyName: "BCO ESTADO DO RIO GRANDE DO SUL S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "BCO ESTADO DO RIO GRANDE DO SUL S.A. (BRSR3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BRSR3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BRSR3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BCO ESTADO DO RIO GRANDE DO SUL S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BRSR3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BRSR3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "DVFF11",
+    companyName: "DVFF11",
+    sectorSlug: "consumo",
+    shortDescription: "DVFF11 (DVFF11) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do DVFF11 reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe DVFF11 se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "DVFF11 — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "DVFF11 é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker DVFF11 na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "VITT3F",
+    companyName: "VITTIA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "VITTIA S.A. (VITT3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do VITT3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe VITT3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "VITTIA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "VITT3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker VITT3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "ARND3",
+    companyName: "ARND3",
+    sectorSlug: "bancos",
+    shortDescription: "ARND3 (ARND3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e ARND3 aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do ARND3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe ARND3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "ARND3 — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "ARND3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker ARND3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "EQPA3F",
+    companyName: "EQUATORIAL PARA DISTRIBUIDORA DE ENERGIA S.A.",
+    sectorSlug: "energia",
+    shortDescription: "EQUATORIAL PARA DISTRIBUIDORA DE ENERGIA S.A. (EQPA3F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do EQPA3F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "EQPA3F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "EQUATORIAL PARA DISTRIBUIDORA DE ENERGIA S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "EQPA3F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker EQPA3F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "OIBR3F",
+    companyName: "OI S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "OI S.A. (OIBR3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do OIBR3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe OIBR3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "OI S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "OIBR3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker OIBR3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BSLI4F",
+    companyName: "BRB BCO DE BRASILIA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "BRB BCO DE BRASILIA S.A. (BSLI4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BSLI4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BSLI4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BRB BCO DE BRASILIA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BSLI4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BSLI4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BIED3",
+    companyName: "BIOMA EDUCAÇÃO S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BIOMA EDUCAÇÃO S.A. (BIED3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BIOMA EDUCAÇÃO S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do BIED3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe BIED3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BIOMA EDUCAÇÃO S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "BIED3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker BIED3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "DEXP4",
+    companyName: "DEXXOS PARTICIPACOES S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "DEXXOS PARTICIPACOES S.A. (DEXP4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e DEXXOS PARTICIPACOES S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do DEXP4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe DEXP4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "DEXXOS PARTICIPACOES S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "DEXP4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker DEXP4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "HBOR3F",
+    companyName: "HELBOR EMPREENDIMENTOS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "HELBOR EMPREENDIMENTOS S.A. (HBOR3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do HBOR3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe HBOR3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "HELBOR EMPREENDIMENTOS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "HBOR3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker HBOR3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BRST3F",
+    companyName: "BRISANET SERVIÇOS DE TELECOMUNICAÇÕES S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "BRISANET SERVIÇOS DE TELECOMUNICAÇÕES S.A. (BRST3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BRST3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BRST3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BRISANET SERVIÇOS DE TELECOMUNICAÇÕES S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BRST3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BRST3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CRPG6",
+    companyName: "TRONOX PIGMENTOS DO BRASIL S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "TRONOX PIGMENTOS DO BRASIL S.A. (CRPG6) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CRPG6 reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CRPG6 se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "TRONOX PIGMENTOS DO BRASIL S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CRPG6 é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CRPG6 na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "PPLA11",
+    companyName: "PPLA PARTICIPATIONS LTD.",
+    sectorSlug: "consumo",
+    shortDescription: "PPLA PARTICIPATIONS LTD. (PPLA11) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do PPLA11 reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe PPLA11 se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "PPLA PARTICIPATIONS LTD. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "PPLA11 é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker PPLA11 na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "RENV11",
+    companyName: "RENV11",
+    sectorSlug: "consumo",
+    shortDescription: "RENV11 (RENV11) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do RENV11 reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe RENV11 se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "RENV11 — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "RENV11 é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker RENV11 na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "ENJU3F",
+    companyName: "ENJOEI S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "ENJOEI S.A. (ENJU3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do ENJU3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe ENJU3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ENJOEI S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "ENJU3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker ENJU3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "ETER3F",
+    companyName: "ETERNIT S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "ETERNIT S.A. (ETER3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do ETER3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe ETER3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ETERNIT S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "ETER3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker ETER3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "OSXB3",
+    companyName: "OSX BRASIL S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "OSX BRASIL S.A. (OSXB3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e OSX BRASIL S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do OSXB3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe OSXB3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "OSX BRASIL S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "OSXB3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker OSXB3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "EKTR4",
+    companyName: "ELEKTRO REDES S.A.",
+    sectorSlug: "servicos_financeiros",
+    shortDescription: "ELEKTRO REDES S.A. (EKTR4) atua em serviços financeiros — como bolsa, clearing, meios de pagamento ou fintechs listadas na B3. O resultado está ligado a volume de transações, tecnologia e regulação do setor.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia.",
+    historySummary: "O histórico de proventos do EKTR4 acompanha a evolução do mercado de capitais e de pagamentos no Brasil. Use o simulador para explorar o passado e combine com análise de crescimento e margem.",
+    worthFollowing: "Acompanhe EKTR4 se você quer exposição a infraestrutura financeira e aceita risco de regulação e ciclo de mercado. Proventos tendem a acompanhar crescimento de volume e lucratividade.",
+    listDescription: "ELEKTRO REDES S.A. — serviços financeiros com histórico de distribuição ligado ao mercado de capitais.",
+    faqs: [
+      { question: "EKTR4 é equivalente a uma ação de banco?", answer: "Não. Serviços financeiros têm drivers diferentes de bancos tradicionais — foco em transações e tecnologia, não crédito." },
+      { question: "Como ver histórico de proventos?", answer: "Use o ticker EKTR4 nesta página para estimativas, e consulte o RI para dados oficiais." }
+    ],
+  },
+
+  {
+    ticker: "BGIP3",
+    companyName: "BCO ESTADO DE SERGIPE S.A. - BANESE",
+    sectorSlug: "bancos",
+    shortDescription: "BCO ESTADO DE SERGIPE S.A. - BANESE (BGIP3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BCO ESTADO DE SERGIPE S.A. - BANESE aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do BGIP3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe BGIP3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BCO ESTADO DE SERGIPE S.A. - BANESE — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "BGIP3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker BGIP3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "ENMT4",
+    companyName: "ENERGISA MATO GROSSO-DISTRIBUIDORA DE ENERGIA S/A",
+    sectorSlug: "energia",
+    shortDescription: "ENERGISA MATO GROSSO-DISTRIBUIDORA DE ENERGIA S/A (ENMT4) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do ENMT4 reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "ENMT4 pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "ENERGISA MATO GROSSO-DISTRIBUIDORA DE ENERGIA S/A — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "ENMT4 é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker ENMT4 e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "CEDO4",
+    companyName: "CIA FIACAO TECIDOS CEDRO CACHOEIRA",
+    sectorSlug: "bancos",
+    shortDescription: "CIA FIACAO TECIDOS CEDRO CACHOEIRA (CEDO4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e CIA FIACAO TECIDOS CEDRO CACHOEIRA aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do CEDO4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe CEDO4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "CIA FIACAO TECIDOS CEDRO CACHOEIRA — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "CEDO4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker CEDO4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "OPCT3F",
+    companyName: "OCEANPACT SERVICOS MARITIMOS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "OCEANPACT SERVICOS MARITIMOS S.A. (OPCT3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do OPCT3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe OPCT3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "OCEANPACT SERVICOS MARITIMOS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "OPCT3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker OPCT3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "SCAR3F",
+    companyName: "SAO CARLOS EMPREEND E PARTICIPACOES S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "SAO CARLOS EMPREEND E PARTICIPACOES S.A. (SCAR3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do SCAR3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe SCAR3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "SAO CARLOS EMPREEND E PARTICIPACOES S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "SCAR3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker SCAR3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "OFSA3F",
+    companyName: "OUROFINO S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "OUROFINO S.A. (OFSA3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do OFSA3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe OFSA3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "OUROFINO S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "OFSA3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker OFSA3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "INEP3F",
+    companyName: "INEPAR S.A. INDUSTRIA E CONSTRUCOES",
+    sectorSlug: "consumo",
+    shortDescription: "INEPAR S.A. INDUSTRIA E CONSTRUCOES (INEP3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do INEP3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe INEP3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "INEPAR S.A. INDUSTRIA E CONSTRUCOES — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "INEP3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker INEP3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CSED3F",
+    companyName: "CRUZEIRO DO SUL EDUCACIONAL S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "CRUZEIRO DO SUL EDUCACIONAL S.A. (CSED3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CSED3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CSED3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CRUZEIRO DO SUL EDUCACIONAL S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CSED3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CSED3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "GEPA3",
+    companyName: "RIO PARANAPANEMA ENERGIA S.A.",
+    sectorSlug: "energia",
+    shortDescription: "RIO PARANAPANEMA ENERGIA S.A. (GEPA3) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do GEPA3 reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "GEPA3 pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "RIO PARANAPANEMA ENERGIA S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "GEPA3 é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker GEPA3 e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "CGRA3",
+    companyName: "GRAZZIOTIN S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "GRAZZIOTIN S.A. (CGRA3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e GRAZZIOTIN S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do CGRA3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe CGRA3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "GRAZZIOTIN S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "CGRA3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker CGRA3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "BDLL4",
+    companyName: "BARDELLA S.A. INDUSTRIAS MECANICAS",
+    sectorSlug: "bancos",
+    shortDescription: "BARDELLA S.A. INDUSTRIAS MECANICAS (BDLL4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BARDELLA S.A. INDUSTRIAS MECANICAS aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do BDLL4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe BDLL4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BARDELLA S.A. INDUSTRIAS MECANICAS — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "BDLL4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker BDLL4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "MGEL4",
+    companyName: "MANGELS INDUSTRIAL S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "MANGELS INDUSTRIAL S.A. (MGEL4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e MANGELS INDUSTRIAL S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do MGEL4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe MGEL4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "MANGELS INDUSTRIAL S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "MGEL4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker MGEL4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "TASA3F",
+    companyName: "TAURUS ARMAS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "TAURUS ARMAS S.A. (TASA3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do TASA3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe TASA3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "TAURUS ARMAS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "TASA3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker TASA3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BEES4F",
+    companyName: "BANESTES S.A. - BCO EST ESPIRITO SANTO",
+    sectorSlug: "consumo",
+    shortDescription: "BANESTES S.A. - BCO EST ESPIRITO SANTO (BEES4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BEES4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BEES4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BANESTES S.A. - BCO EST ESPIRITO SANTO — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BEES4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BEES4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CGRA4F",
+    companyName: "GRAZZIOTIN S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "GRAZZIOTIN S.A. (CGRA4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CGRA4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CGRA4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "GRAZZIOTIN S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CGRA4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CGRA4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "RPMG3F",
+    companyName: "REFINARIA DE PETROLEOS MANGUINHOS S.A.",
+    sectorSlug: "petroleo",
+    shortDescription: "REFINARIA DE PETROLEOS MANGUINHOS S.A. (RPMG3F) atua no setor de petróleo e gás, com resultado ligado ao preço do barril, produção e câmbio. É uma das indústrias com maior potencial de dividendos em momentos de preço favorável.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Distribuição vinculada ao resultado e à política de capital da companhia.",
+    historySummary: "O histórico de proventos do RPMG3F varia com o preço do petróleo e decisões estratégicas da empresa. Simule com base no passado disponível e acompanhe comunicados para entender o próximo ciclo.",
+    worthFollowing: "RPMG3F pode ser relevante para quem busca exposição ao setor de energia com potencial de dividendos expressivos. Considere também volatilidade de commodities e risco político.",
+    listDescription: "REFINARIA DE PETROLEOS MANGUINHOS S.A. — petróleo e gás com dividendos ligados ao ciclo de commodities.",
+    faqs: [
+      { question: "RPMG3F paga dividendos regulares?", answer: "A regularidade depende do preço do petróleo e da política da empresa. Simulações passadas não garantem o futuro." },
+      { question: "Como estimar meus proventos?", answer: "Informe RPMG3F e sua quantidade de ações no simulador desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "CAMB3F",
+    companyName: "CAMBUCI S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "CAMBUCI S.A. (CAMB3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CAMB3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CAMB3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CAMBUCI S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CAMB3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CAMB3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CEBR5",
+    companyName: "CIA ENERGETICA DE BRASILIA",
+    sectorSlug: "consumo",
+    shortDescription: "CIA ENERGETICA DE BRASILIA (CEBR5) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CEBR5 reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CEBR5 se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CIA ENERGETICA DE BRASILIA — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CEBR5 é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CEBR5 na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "ATED3",
+    companyName: "ATOM EDUCAÇÃO E EDITORA S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "ATOM EDUCAÇÃO E EDITORA S.A. (ATED3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e ATOM EDUCAÇÃO E EDITORA S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do ATED3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe ATED3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "ATOM EDUCAÇÃO E EDITORA S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "ATED3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker ATED3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "ISAE3F",
+    companyName: "ISA ENERGIA BRASIL S.A",
+    sectorSlug: "energia",
+    shortDescription: "ISA ENERGIA BRASIL S.A (ISAE3F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do ISAE3F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "ISAE3F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "ISA ENERGIA BRASIL S.A — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "ISAE3F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker ISAE3F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "DESK3F",
+    companyName: "DESKTOP S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "DESKTOP S.A. (DESK3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do DESK3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe DESK3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "DESKTOP S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "DESK3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker DESK3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "PINE3F",
+    companyName: "BCO PINE S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BCO PINE S.A. (PINE3F) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BCO PINE S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do PINE3F acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe PINE3F se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BCO PINE S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "PINE3F paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker PINE3F e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "UNIP3F",
+    companyName: "UNIPAR CARBOCLORO S.A.",
+    sectorSlug: "industria",
+    shortDescription: "UNIPAR CARBOCLORO S.A. (UNIP3F) é uma empresa industrial listada na B3, com exposição a capacidade de produção, exportação e custos de insumos. O setor distribui dividendos conforme resultado e ciclo de investimentos.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado operacional e política de capital da empresa.",
+    historySummary: "O histórico de proventos do UNIP3F alterna períodos de payout maior com ciclos de CAPEX intenso. Analise o fluxo de caixa livre e a alavancagem para entender a sustentabilidade dos dividendos.",
+    worthFollowing: "UNIP3F pode interessar a quem busca diversificação industrial com potencial de proventos em fases de geração de caixa. Volatilidade cambial e de insumos são fatores de risco relevantes.",
+    listDescription: "UNIPAR CARBOCLORO S.A. — indústria com histórico de proventos ligado ao ciclo produtivo.",
+    faqs: [
+      { question: "UNIP3F paga dividendos frequentes?", answer: "A frequência varia com o ciclo da companhia. Consulte RI e comunicados para o calendário atualizado." },
+      { question: "Como simular meus proventos?", answer: "Informe UNIP3F e a quantidade de ações na calculadora desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "ALUP3F",
+    companyName: "ALUPAR INVESTIMENTO S/A",
+    sectorSlug: "consumo",
+    shortDescription: "ALUPAR INVESTIMENTO S/A (ALUP3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do ALUP3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe ALUP3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ALUPAR INVESTIMENTO S/A — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "ALUP3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker ALUP3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CGAS5F",
+    companyName: "CIA GAS DE SAO PAULO - COMGAS",
+    sectorSlug: "petroleo",
+    shortDescription: "CIA GAS DE SAO PAULO - COMGAS (CGAS5F) atua no setor de petróleo e gás, com resultado ligado ao preço do barril, produção e câmbio. É uma das indústrias com maior potencial de dividendos em momentos de preço favorável.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Distribuição vinculada ao resultado e à política de capital da companhia.",
+    historySummary: "O histórico de proventos do CGAS5F varia com o preço do petróleo e decisões estratégicas da empresa. Simule com base no passado disponível e acompanhe comunicados para entender o próximo ciclo.",
+    worthFollowing: "CGAS5F pode ser relevante para quem busca exposição ao setor de energia com potencial de dividendos expressivos. Considere também volatilidade de commodities e risco político.",
+    listDescription: "CIA GAS DE SAO PAULO - COMGAS — petróleo e gás com dividendos ligados ao ciclo de commodities.",
+    faqs: [
+      { question: "CGAS5F paga dividendos regulares?", answer: "A regularidade depende do preço do petróleo e da política da empresa. Simulações passadas não garantem o futuro." },
+      { question: "Como estimar meus proventos?", answer: "Informe CGAS5F e sua quantidade de ações no simulador desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "MWET4",
+    companyName: "WETZEL S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "WETZEL S.A. (MWET4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e WETZEL S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do MWET4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe MWET4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "WETZEL S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "MWET4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker MWET4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "IGTI4",
+    companyName: "IGUATEMI S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "IGUATEMI S.A. (IGTI4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e IGUATEMI S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do IGTI4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe IGTI4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "IGUATEMI S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "IGTI4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker IGTI4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "REDE3",
+    companyName: "REDE ENERGIA PARTICIPAÇÕES S.A.",
+    sectorSlug: "energia",
+    shortDescription: "REDE ENERGIA PARTICIPAÇÕES S.A. (REDE3) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do REDE3 reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "REDE3 pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "REDE ENERGIA PARTICIPAÇÕES S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "REDE3 é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker REDE3 e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "OIBR4",
+    companyName: "OI S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "OI S.A. (OIBR4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e OI S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do OIBR4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe OIBR4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "OI S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "OIBR4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker OIBR4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "EPAR3F",
+    companyName: "EMBPAR PARTICIPACOES S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "EMBPAR PARTICIPACOES S.A. (EPAR3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do EPAR3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe EPAR3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "EMBPAR PARTICIPACOES S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "EPAR3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker EPAR3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "TECN3F",
+    companyName: "TECHNOS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "TECHNOS S.A. (TECN3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do TECN3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe TECN3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "TECHNOS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "TECN3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker TECN3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BGIP4F",
+    companyName: "BCO ESTADO DE SERGIPE S.A. - BANESE",
+    sectorSlug: "consumo",
+    shortDescription: "BCO ESTADO DE SERGIPE S.A. - BANESE (BGIP4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BGIP4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BGIP4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BCO ESTADO DE SERGIPE S.A. - BANESE — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BGIP4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BGIP4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "IGTI3F",
+    companyName: "IGUATEMI S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "IGUATEMI S.A. (IGTI3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do IGTI3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe IGTI3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "IGUATEMI S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "IGTI3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker IGTI3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "WEST3F",
+    companyName: "WESTWING COMERCIO VAREJISTA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "WESTWING COMERCIO VAREJISTA S.A. (WEST3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do WEST3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe WEST3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "WESTWING COMERCIO VAREJISTA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "WEST3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker WEST3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "FICT3F",
+    companyName: "FICTOR ALIMENTOS S.A",
+    sectorSlug: "consumo",
+    shortDescription: "FICTOR ALIMENTOS S.A (FICT3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do FICT3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe FICT3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "FICTOR ALIMENTOS S.A — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "FICT3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker FICT3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "EALT4F",
+    companyName: "ELECTRO ACO ALTONA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "ELECTRO ACO ALTONA S.A. (EALT4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do EALT4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe EALT4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ELECTRO ACO ALTONA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "EALT4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker EALT4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "ENGI3F",
+    companyName: "ENERGISA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "ENERGISA S.A. (ENGI3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do ENGI3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe ENGI3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ENERGISA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "ENGI3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker ENGI3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "GEPA4",
+    companyName: "RIO PARANAPANEMA ENERGIA S.A.",
+    sectorSlug: "energia",
+    shortDescription: "RIO PARANAPANEMA ENERGIA S.A. (GEPA4) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do GEPA4 reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "GEPA4 pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "RIO PARANAPANEMA ENERGIA S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "GEPA4 é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker GEPA4 e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "PLAS3",
+    companyName: "PLASCAR PARTICIPACOES INDUSTRIAIS S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "PLASCAR PARTICIPACOES INDUSTRIAIS S.A. (PLAS3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e PLASCAR PARTICIPACOES INDUSTRIAIS S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do PLAS3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe PLAS3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "PLASCAR PARTICIPACOES INDUSTRIAIS S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "PLAS3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker PLAS3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "WLMM4",
+    companyName: "WLM PART. E COMÉRCIO DE MÁQUINAS E VEÍCULOS S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "WLM PART. E COMÉRCIO DE MÁQUINAS E VEÍCULOS S.A. (WLMM4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e WLM PART. E COMÉRCIO DE MÁQUINAS E VEÍCULOS S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do WLMM4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe WLMM4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "WLM PART. E COMÉRCIO DE MÁQUINAS E VEÍCULOS S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "WLMM4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker WLMM4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "TCSA3F",
+    companyName: "TECNISA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "TECNISA S.A. (TCSA3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do TCSA3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe TCSA3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "TECNISA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "TCSA3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker TCSA3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "AFLT3",
+    companyName: "AFLUENTE TRANSMISSÃO DE ENERGIA ELÉTRICA S/A",
+    sectorSlug: "energia",
+    shortDescription: "AFLUENTE TRANSMISSÃO DE ENERGIA ELÉTRICA S/A (AFLT3) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do AFLT3 reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "AFLT3 pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "AFLUENTE TRANSMISSÃO DE ENERGIA ELÉTRICA S/A — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "AFLT3 é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker AFLT3 e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "RCSL3F",
+    companyName: "RECRUSUL S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "RECRUSUL S.A. (RCSL3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do RCSL3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe RCSL3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "RECRUSUL S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "RCSL3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker RCSL3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CEBR6F",
+    companyName: "CIA ENERGETICA DE BRASILIA",
+    sectorSlug: "consumo",
+    shortDescription: "CIA ENERGETICA DE BRASILIA (CEBR6F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CEBR6F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CEBR6F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CIA ENERGETICA DE BRASILIA — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CEBR6F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CEBR6F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CEBR3F",
+    companyName: "CIA ENERGETICA DE BRASILIA",
+    sectorSlug: "consumo",
+    shortDescription: "CIA ENERGETICA DE BRASILIA (CEBR3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CEBR3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CEBR3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CIA ENERGETICA DE BRASILIA — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CEBR3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CEBR3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "WHRL4F",
+    companyName: "WHIRLPOOL S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "WHIRLPOOL S.A. (WHRL4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do WHRL4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe WHRL4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "WHIRLPOOL S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "WHRL4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker WHRL4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "ENGI4F",
+    companyName: "ENERGISA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "ENERGISA S.A. (ENGI4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do ENGI4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe ENGI4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ENERGISA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "ENGI4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker ENGI4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BMEB3F",
+    companyName: "BCO MERCANTIL DO BRASIL S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "BCO MERCANTIL DO BRASIL S.A. (BMEB3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BMEB3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BMEB3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BCO MERCANTIL DO BRASIL S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BMEB3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BMEB3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "WHRL3F",
+    companyName: "WHIRLPOOL S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "WHIRLPOOL S.A. (WHRL3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do WHRL3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe WHRL3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "WHIRLPOOL S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "WHRL3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker WHRL3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "DMVF3F",
+    companyName: "D1000 VAREJO FARMA PARTICIPAÇÕES S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "D1000 VAREJO FARMA PARTICIPAÇÕES S.A. (DMVF3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do DMVF3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe DMVF3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "D1000 VAREJO FARMA PARTICIPAÇÕES S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "DMVF3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker DMVF3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "RNEW4F",
+    companyName: "RENOVA ENERGIA S.A.",
+    sectorSlug: "energia",
+    shortDescription: "RENOVA ENERGIA S.A. (RNEW4F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do RNEW4F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "RNEW4F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "RENOVA ENERGIA S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "RNEW4F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker RNEW4F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "RPAD6",
+    companyName: "ALFA HOLDINGS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "ALFA HOLDINGS S.A. (RPAD6) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do RPAD6 reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe RPAD6 se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ALFA HOLDINGS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "RPAD6 é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker RPAD6 na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "DOHL4",
+    companyName: "DOHLER S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "DOHLER S.A. (DOHL4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e DOHLER S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do DOHL4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe DOHL4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "DOHLER S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "DOHL4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker DOHL4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "LUPA3F",
+    companyName: "LUPATECH S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "LUPATECH S.A. (LUPA3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do LUPA3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe LUPA3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "LUPATECH S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "LUPA3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker LUPA3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "DOTZ3F",
+    companyName: "DOTZ S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "DOTZ S.A. (DOTZ3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do DOTZ3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe DOTZ3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "DOTZ S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "DOTZ3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker DOTZ3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "AALR3F",
+    companyName: "ALLIANÇA SAÚDE E PARTICIPAÇÕES S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "ALLIANÇA SAÚDE E PARTICIPAÇÕES S.A. (AALR3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do AALR3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe AALR3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ALLIANÇA SAÚDE E PARTICIPAÇÕES S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "AALR3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker AALR3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "AVLL3F",
+    companyName: "ALPHAVILLE S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "ALPHAVILLE S.A. (AVLL3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do AVLL3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe AVLL3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ALPHAVILLE S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "AVLL3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker AVLL3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "NORD3F",
+    companyName: "NORDON INDUSTRIAS METALURGICAS S.A.",
+    sectorSlug: "mineracao",
+    shortDescription: "NORDON INDUSTRIAS METALURGICAS S.A. (NORD3F) está no setor de mineração, exposto a ciclos de commodities e demanda global. O dividend yield pode ser elevado em anos de preços altos e recuar em viradas de ciclo.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos variáveis conforme resultado e ciclo de commodities.",
+    historySummary: "O histórico de proventos do NORD3F oscila com o preço das commodities. Anos de superciclo costumam trazer distribuições extraordinárias; quedas de preço reduzem o payout. Use o simulador para explorar o passado.",
+    worthFollowing: "Acompanhe NORD3F se você aceita a ciclicidade do setor de mineração em troca de potencial de dividendos altos em momentos favoráveis. Diversificação e gestão de risco são fundamentais neste setor.",
+    listDescription: "NORDON INDUSTRIAS METALURGICAS S.A. — mineração com exposição a commodities e histórico de dividendos cíclicos.",
+    faqs: [
+      { question: "Por que o yield do NORD3F muda tanto?", answer: "O preço da ação e os pagamentos acompanham o ciclo de commodities. Um yield alto pode refletir queda do papel ou distribuição extraordinária." },
+      { question: "Onde vejo o histórico oficial?", answer: "Consulte o RI da companhia e comunicados à CVM. O simulador desta página usa dados via API como referência educacional." }
+    ],
+  },
+
+  {
+    ticker: "CGRA3F",
+    companyName: "GRAZZIOTIN S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "GRAZZIOTIN S.A. (CGRA3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CGRA3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CGRA3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "GRAZZIOTIN S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CGRA3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CGRA3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "VAMO9F",
+    companyName: "VAMOS LOCAÇÃO DE CAMINHÕES. MÁQUINAS E EQUIP. S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "VAMOS LOCAÇÃO DE CAMINHÕES. MÁQUINAS E EQUIP. S.A. (VAMO9F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do VAMO9F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe VAMO9F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "VAMOS LOCAÇÃO DE CAMINHÕES. MÁQUINAS E EQUIP. S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "VAMO9F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker VAMO9F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "UCAS3F",
+    companyName: "UNICASA INDÚSTRIA DE MÓVEIS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "UNICASA INDÚSTRIA DE MÓVEIS S.A. (UCAS3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do UCAS3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe UCAS3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "UNICASA INDÚSTRIA DE MÓVEIS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "UCAS3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker UCAS3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "RAPT3F",
+    companyName: "RANDONCORP S.A.",
+    sectorSlug: "industria",
+    shortDescription: "RANDONCORP S.A. (RAPT3F) é uma empresa industrial listada na B3, com exposição a capacidade de produção, exportação e custos de insumos. O setor distribui dividendos conforme resultado e ciclo de investimentos.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado operacional e política de capital da empresa.",
+    historySummary: "O histórico de proventos do RAPT3F alterna períodos de payout maior com ciclos de CAPEX intenso. Analise o fluxo de caixa livre e a alavancagem para entender a sustentabilidade dos dividendos.",
+    worthFollowing: "RAPT3F pode interessar a quem busca diversificação industrial com potencial de proventos em fases de geração de caixa. Volatilidade cambial e de insumos são fatores de risco relevantes.",
+    listDescription: "RANDONCORP S.A. — indústria com histórico de proventos ligado ao ciclo produtivo.",
+    faqs: [
+      { question: "RAPT3F paga dividendos frequentes?", answer: "A frequência varia com o ciclo da companhia. Consulte RI e comunicados para o calendário atualizado." },
+      { question: "Como simular meus proventos?", answer: "Informe RAPT3F e a quantidade de ações na calculadora desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "PDTC3F",
+    companyName: "PADTEC HOLDING S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "PADTEC HOLDING S.A. (PDTC3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do PDTC3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe PDTC3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "PADTEC HOLDING S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "PDTC3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker PDTC3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "ENMT4F",
+    companyName: "ENERGISA MATO GROSSO-DISTRIBUIDORA DE ENERGIA S/A",
+    sectorSlug: "energia",
+    shortDescription: "ENERGISA MATO GROSSO-DISTRIBUIDORA DE ENERGIA S/A (ENMT4F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do ENMT4F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "ENMT4F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "ENERGISA MATO GROSSO-DISTRIBUIDORA DE ENERGIA S/A — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "ENMT4F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker ENMT4F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "INEP4F",
+    companyName: "INEPAR S.A. INDUSTRIA E CONSTRUCOES",
+    sectorSlug: "consumo",
+    shortDescription: "INEPAR S.A. INDUSTRIA E CONSTRUCOES (INEP4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do INEP4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe INEP4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "INEPAR S.A. INDUSTRIA E CONSTRUCOES — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "INEP4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker INEP4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "EALT3",
+    companyName: "ELECTRO ACO ALTONA S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "ELECTRO ACO ALTONA S.A. (EALT3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e ELECTRO ACO ALTONA S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do EALT3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe EALT3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "ELECTRO ACO ALTONA S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "EALT3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker EALT3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "BAUH4",
+    companyName: "EXCELSIOR ALIMENTOS S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "EXCELSIOR ALIMENTOS S.A. (BAUH4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e EXCELSIOR ALIMENTOS S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do BAUH4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe BAUH4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "EXCELSIOR ALIMENTOS S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "BAUH4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker BAUH4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "AHEB3",
+    companyName: "SAO PAULO TURISMO S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "SAO PAULO TURISMO S.A. (AHEB3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e SAO PAULO TURISMO S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do AHEB3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe AHEB3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "SAO PAULO TURISMO S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "AHEB3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker AHEB3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "MRSA5B",
+    companyName: "MRS LOGISTICA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "MRS LOGISTICA S.A. (MRSA5B) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do MRSA5B reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe MRSA5B se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "MRS LOGISTICA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "MRSA5B é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker MRSA5B na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CALI3",
+    companyName: "CONSTRUTORA ADOLPHO LINDENBERG S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "CONSTRUTORA ADOLPHO LINDENBERG S.A. (CALI3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e CONSTRUTORA ADOLPHO LINDENBERG S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do CALI3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe CALI3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "CONSTRUTORA ADOLPHO LINDENBERG S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "CALI3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker CALI3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "CBEE3",
+    companyName: "AMPLA ENERGIA E SERVICOS S.A.",
+    sectorSlug: "energia",
+    shortDescription: "AMPLA ENERGIA E SERVICOS S.A. (CBEE3) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do CBEE3 reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "CBEE3 pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "AMPLA ENERGIA E SERVICOS S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "CBEE3 é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker CBEE3 e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "FHER3",
+    companyName: "FERTILIZANTES HERINGER S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "FERTILIZANTES HERINGER S.A. (FHER3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e FERTILIZANTES HERINGER S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do FHER3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe FHER3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "FERTILIZANTES HERINGER S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "FHER3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker FHER3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "PSVM11",
+    companyName: "PORTO SUDESTE V.M. S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "PORTO SUDESTE V.M. S.A. (PSVM11) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do PSVM11 reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe PSVM11 se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "PORTO SUDESTE V.M. S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "PSVM11 é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker PSVM11 na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BAZA3F",
+    companyName: "BCO AMAZONIA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "BCO AMAZONIA S.A. (BAZA3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BAZA3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BAZA3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BCO AMAZONIA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BAZA3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BAZA3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "LUXM4F",
+    companyName: "TREVISA INVESTIMENTOS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "TREVISA INVESTIMENTOS S.A. (LUXM4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do LUXM4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe LUXM4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "TREVISA INVESTIMENTOS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "LUXM4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker LUXM4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "MATD3F",
+    companyName: "HOSPITAL MATER DEI S/A",
+    sectorSlug: "consumo",
+    shortDescription: "HOSPITAL MATER DEI S/A (MATD3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do MATD3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe MATD3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "HOSPITAL MATER DEI S/A — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "MATD3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker MATD3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CEBR5F",
+    companyName: "CIA ENERGETICA DE BRASILIA",
+    sectorSlug: "consumo",
+    shortDescription: "CIA ENERGETICA DE BRASILIA (CEBR5F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CEBR5F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CEBR5F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CIA ENERGETICA DE BRASILIA — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CEBR5F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CEBR5F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "GEPA4F",
+    companyName: "RIO PARANAPANEMA ENERGIA S.A.",
+    sectorSlug: "energia",
+    shortDescription: "RIO PARANAPANEMA ENERGIA S.A. (GEPA4F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do GEPA4F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "GEPA4F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "RIO PARANAPANEMA ENERGIA S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "GEPA4F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker GEPA4F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "COCE5F",
+    companyName: "CIA ENERGETICA DO CEARA - COELCE",
+    sectorSlug: "consumo",
+    shortDescription: "CIA ENERGETICA DO CEARA - COELCE (COCE5F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do COCE5F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe COCE5F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CIA ENERGETICA DO CEARA - COELCE — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "COCE5F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker COCE5F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BIOM3F",
+    companyName: "BIOMM S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "BIOMM S.A. (BIOM3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BIOM3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BIOM3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BIOMM S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BIOM3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BIOM3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "ALPA3F",
+    companyName: "ALPARGATAS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "ALPARGATAS S.A. (ALPA3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do ALPA3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe ALPA3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ALPARGATAS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "ALPA3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker ALPA3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "RSUL4F",
+    companyName: "METALURGICA RIOSULENSE S.A.",
+    sectorSlug: "mineracao",
+    shortDescription: "METALURGICA RIOSULENSE S.A. (RSUL4F) está no setor de mineração, exposto a ciclos de commodities e demanda global. O dividend yield pode ser elevado em anos de preços altos e recuar em viradas de ciclo.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos variáveis conforme resultado e ciclo de commodities.",
+    historySummary: "O histórico de proventos do RSUL4F oscila com o preço das commodities. Anos de superciclo costumam trazer distribuições extraordinárias; quedas de preço reduzem o payout. Use o simulador para explorar o passado.",
+    worthFollowing: "Acompanhe RSUL4F se você aceita a ciclicidade do setor de mineração em troca de potencial de dividendos altos em momentos favoráveis. Diversificação e gestão de risco são fundamentais neste setor.",
+    listDescription: "METALURGICA RIOSULENSE S.A. — mineração com exposição a commodities e histórico de dividendos cíclicos.",
+    faqs: [
+      { question: "Por que o yield do RSUL4F muda tanto?", answer: "O preço da ação e os pagamentos acompanham o ciclo de commodities. Um yield alto pode refletir queda do papel ou distribuição extraordinária." },
+      { question: "Onde vejo o histórico oficial?", answer: "Consulte o RI da companhia e comunicados à CVM. O simulador desta página usa dados via API como referência educacional." }
+    ],
+  },
+
+  {
+    ticker: "SHOW3F",
+    companyName: "T4F ENTRETENIMENTO S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "T4F ENTRETENIMENTO S.A. (SHOW3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do SHOW3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe SHOW3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "T4F ENTRETENIMENTO S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "SHOW3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker SHOW3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "RNEW3F",
+    companyName: "RENOVA ENERGIA S.A.",
+    sectorSlug: "energia",
+    shortDescription: "RENOVA ENERGIA S.A. (RNEW3F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do RNEW3F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "RNEW3F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "RENOVA ENERGIA S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "RNEW3F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker RNEW3F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "TRAD3F",
+    companyName: "TC S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "TC S.A. (TRAD3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do TRAD3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe TRAD3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "TC S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "TRAD3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker TRAD3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "VIVR3F",
+    companyName: "VIVER INCORPORADORA E CONSTRUTORA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "VIVER INCORPORADORA E CONSTRUTORA S.A. (VIVR3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do VIVR3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe VIVR3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "VIVER INCORPORADORA E CONSTRUTORA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "VIVR3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker VIVR3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "HAGA4F",
+    companyName: "HAGA S.A. INDUSTRIA E COMERCIO",
+    sectorSlug: "consumo",
+    shortDescription: "HAGA S.A. INDUSTRIA E COMERCIO (HAGA4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do HAGA4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe HAGA4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "HAGA S.A. INDUSTRIA E COMERCIO — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "HAGA4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker HAGA4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "TOKY3F",
+    companyName: "TOKY3F",
+    sectorSlug: "consumo",
+    shortDescription: "TOKY3F (TOKY3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do TOKY3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe TOKY3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "TOKY3F — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "TOKY3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker TOKY3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BRKM6",
+    companyName: "BRASKEM S.A.",
+    sectorSlug: "industria",
+    shortDescription: "BRASKEM S.A. (BRKM6) é uma empresa industrial listada na B3, com exposição a capacidade de produção, exportação e custos de insumos. O setor distribui dividendos conforme resultado e ciclo de investimentos.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado operacional e política de capital da empresa.",
+    historySummary: "O histórico de proventos do BRKM6 alterna períodos de payout maior com ciclos de CAPEX intenso. Analise o fluxo de caixa livre e a alavancagem para entender a sustentabilidade dos dividendos.",
+    worthFollowing: "BRKM6 pode interessar a quem busca diversificação industrial com potencial de proventos em fases de geração de caixa. Volatilidade cambial e de insumos são fatores de risco relevantes.",
+    listDescription: "BRASKEM S.A. — indústria com histórico de proventos ligado ao ciclo produtivo.",
+    faqs: [
+      { question: "BRKM6 paga dividendos frequentes?", answer: "A frequência varia com o ciclo da companhia. Consulte RI e comunicados para o calendário atualizado." },
+      { question: "Como simular meus proventos?", answer: "Informe BRKM6 e a quantidade de ações na calculadora desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "RVEE3",
+    companyName: "REVEE S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "REVEE S.A. (RVEE3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e REVEE S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do RVEE3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe RVEE3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "REVEE S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "RVEE3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker RVEE3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "SOND5",
+    companyName: "SONDOTECNICA ENGENHARIA SOLOS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "SONDOTECNICA ENGENHARIA SOLOS S.A. (SOND5) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do SOND5 reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe SOND5 se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "SONDOTECNICA ENGENHARIA SOLOS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "SOND5 é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker SOND5 na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "MNDL3",
+    companyName: "MUNDIAL S.A. - PRODUTOS DE CONSUMO",
+    sectorSlug: "bancos",
+    shortDescription: "MUNDIAL S.A. - PRODUTOS DE CONSUMO (MNDL3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e MUNDIAL S.A. - PRODUTOS DE CONSUMO aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do MNDL3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe MNDL3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "MUNDIAL S.A. - PRODUTOS DE CONSUMO — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "MNDL3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker MNDL3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "USIM6",
+    companyName: "USINAS SID DE MINAS GERAIS S.A.-USIMINAS",
+    sectorSlug: "mineracao",
+    shortDescription: "USINAS SID DE MINAS GERAIS S.A.-USIMINAS (USIM6) está no setor de mineração, exposto a ciclos de commodities e demanda global. O dividend yield pode ser elevado em anos de preços altos e recuar em viradas de ciclo.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos variáveis conforme resultado e ciclo de commodities.",
+    historySummary: "O histórico de proventos do USIM6 oscila com o preço das commodities. Anos de superciclo costumam trazer distribuições extraordinárias; quedas de preço reduzem o payout. Use o simulador para explorar o passado.",
+    worthFollowing: "Acompanhe USIM6 se você aceita a ciclicidade do setor de mineração em troca de potencial de dividendos altos em momentos favoráveis. Diversificação e gestão de risco são fundamentais neste setor.",
+    listDescription: "USINAS SID DE MINAS GERAIS S.A.-USIMINAS — mineração com exposição a commodities e histórico de dividendos cíclicos.",
+    faqs: [
+      { question: "Por que o yield do USIM6 muda tanto?", answer: "O preço da ação e os pagamentos acompanham o ciclo de commodities. Um yield alto pode refletir queda do papel ou distribuição extraordinária." },
+      { question: "Onde vejo o histórico oficial?", answer: "Consulte o RI da companhia e comunicados à CVM. O simulador desta página usa dados via API como referência educacional." }
+    ],
+  },
+
+  {
+    ticker: "PATI3",
+    companyName: "PANATLANTICA S.A.",
+    sectorSlug: "industria",
+    shortDescription: "PANATLANTICA S.A. (PATI3) é uma empresa industrial listada na B3, com exposição a capacidade de produção, exportação e custos de insumos. O setor distribui dividendos conforme resultado e ciclo de investimentos.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado operacional e política de capital da empresa.",
+    historySummary: "O histórico de proventos do PATI3 alterna períodos de payout maior com ciclos de CAPEX intenso. Analise o fluxo de caixa livre e a alavancagem para entender a sustentabilidade dos dividendos.",
+    worthFollowing: "PATI3 pode interessar a quem busca diversificação industrial com potencial de proventos em fases de geração de caixa. Volatilidade cambial e de insumos são fatores de risco relevantes.",
+    listDescription: "PANATLANTICA S.A. — indústria com histórico de proventos ligado ao ciclo produtivo.",
+    faqs: [
+      { question: "PATI3 paga dividendos frequentes?", answer: "A frequência varia com o ciclo da companhia. Consulte RI e comunicados para o calendário atualizado." },
+      { question: "Como simular meus proventos?", answer: "Informe PATI3 e a quantidade de ações na calculadora desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "JOPA4",
+    companyName: "JOSAPAR-JOAQUIM OLIVEIRA S.A. - PARTICIP",
+    sectorSlug: "bancos",
+    shortDescription: "JOSAPAR-JOAQUIM OLIVEIRA S.A. - PARTICIP (JOPA4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e JOSAPAR-JOAQUIM OLIVEIRA S.A. - PARTICIP aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do JOPA4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe JOPA4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "JOSAPAR-JOAQUIM OLIVEIRA S.A. - PARTICIP — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "JOPA4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker JOPA4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "MRSA6B",
+    companyName: "MRS LOGISTICA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "MRS LOGISTICA S.A. (MRSA6B) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do MRSA6B reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe MRSA6B se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "MRS LOGISTICA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "MRSA6B é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker MRSA6B na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CEDO3",
+    companyName: "CIA FIACAO TECIDOS CEDRO CACHOEIRA",
+    sectorSlug: "bancos",
+    shortDescription: "CIA FIACAO TECIDOS CEDRO CACHOEIRA (CEDO3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e CIA FIACAO TECIDOS CEDRO CACHOEIRA aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do CEDO3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe CEDO3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "CIA FIACAO TECIDOS CEDRO CACHOEIRA — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "CEDO3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker CEDO3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "HETA4",
+    companyName: "HERCULES S.A. FABRICA DE TALHERES",
+    sectorSlug: "bancos",
+    shortDescription: "HERCULES S.A. FABRICA DE TALHERES (HETA4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e HERCULES S.A. FABRICA DE TALHERES aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do HETA4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe HETA4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "HERCULES S.A. FABRICA DE TALHERES — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "HETA4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker HETA4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "RPAD5",
+    companyName: "ALFA HOLDINGS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "ALFA HOLDINGS S.A. (RPAD5) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do RPAD5 reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe RPAD5 se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ALFA HOLDINGS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "RPAD5 é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker RPAD5 na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "TELB3",
+    companyName: "TELEC BRASILEIRAS S.A. TELEBRAS",
+    sectorSlug: "bancos",
+    shortDescription: "TELEC BRASILEIRAS S.A. TELEBRAS (TELB3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e TELEC BRASILEIRAS S.A. TELEBRAS aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do TELB3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe TELB3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "TELEC BRASILEIRAS S.A. TELEBRAS — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "TELB3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker TELB3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "FESA3",
+    companyName: "CIA FERRO LIGAS DA BAHIA - FERBASA",
+    sectorSlug: "petroleo",
+    shortDescription: "CIA FERRO LIGAS DA BAHIA - FERBASA (FESA3) atua no setor de petróleo e gás, com resultado ligado ao preço do barril, produção e câmbio. É uma das indústrias com maior potencial de dividendos em momentos de preço favorável.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Distribuição vinculada ao resultado e à política de capital da companhia.",
+    historySummary: "O histórico de proventos do FESA3 varia com o preço do petróleo e decisões estratégicas da empresa. Simule com base no passado disponível e acompanhe comunicados para entender o próximo ciclo.",
+    worthFollowing: "FESA3 pode ser relevante para quem busca exposição ao setor de energia com potencial de dividendos expressivos. Considere também volatilidade de commodities e risco político.",
+    listDescription: "CIA FERRO LIGAS DA BAHIA - FERBASA — petróleo e gás com dividendos ligados ao ciclo de commodities.",
+    faqs: [
+      { question: "FESA3 paga dividendos regulares?", answer: "A regularidade depende do preço do petróleo e da política da empresa. Simulações passadas não garantem o futuro." },
+      { question: "Como estimar meus proventos?", answer: "Informe FESA3 e sua quantidade de ações no simulador desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "CEEB5",
+    companyName: "CIA ELETRICIDADE EST. DA BAHIA - COELBA",
+    sectorSlug: "energia",
+    shortDescription: "CIA ELETRICIDADE EST. DA BAHIA - COELBA (CEEB5) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do CEEB5 reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "CEEB5 pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "CIA ELETRICIDADE EST. DA BAHIA - COELBA — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "CEEB5 é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker CEEB5 e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "PEAB4",
+    companyName: "CIA PARTICIPACOES ALIANCA DA BAHIA",
+    sectorSlug: "bancos",
+    shortDescription: "CIA PARTICIPACOES ALIANCA DA BAHIA (PEAB4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e CIA PARTICIPACOES ALIANCA DA BAHIA aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do PEAB4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe PEAB4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "CIA PARTICIPACOES ALIANCA DA BAHIA — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "PEAB4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker PEAB4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "BALM3",
+    companyName: "BAUMER S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BAUMER S.A. (BALM3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BAUMER S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do BALM3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe BALM3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BAUMER S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "BALM3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker BALM3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "CLSC4F",
+    companyName: "CENTRAIS ELET DE SANTA CATARINA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "CENTRAIS ELET DE SANTA CATARINA S.A. (CLSC4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CLSC4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CLSC4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CENTRAIS ELET DE SANTA CATARINA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CLSC4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CLSC4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "VSTE3F",
+    companyName: "VESTE S.A. ESTILO",
+    sectorSlug: "consumo",
+    shortDescription: "VESTE S.A. ESTILO (VSTE3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do VSTE3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe VSTE3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "VESTE S.A. ESTILO — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "VSTE3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker VSTE3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "OIBR4F",
+    companyName: "OI S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "OI S.A. (OIBR4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do OIBR4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe OIBR4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "OI S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "OIBR4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker OIBR4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "LOGN3F",
+    companyName: "LOG-IN LOGISTICA INTERMODAL S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "LOG-IN LOGISTICA INTERMODAL S.A. (LOGN3F) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e LOG-IN LOGISTICA INTERMODAL S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do LOGN3F acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe LOGN3F se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "LOG-IN LOGISTICA INTERMODAL S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "LOGN3F paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker LOGN3F e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "DEXP4F",
+    companyName: "DEXXOS PARTICIPACOES S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "DEXXOS PARTICIPACOES S.A. (DEXP4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do DEXP4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe DEXP4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "DEXXOS PARTICIPACOES S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "DEXP4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker DEXP4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "ENMT3F",
+    companyName: "ENERGISA MATO GROSSO-DISTRIBUIDORA DE ENERGIA S/A",
+    sectorSlug: "energia",
+    shortDescription: "ENERGISA MATO GROSSO-DISTRIBUIDORA DE ENERGIA S/A (ENMT3F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do ENMT3F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "ENMT3F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "ENERGISA MATO GROSSO-DISTRIBUIDORA DE ENERGIA S/A — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "ENMT3F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker ENMT3F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "HOOT4F",
+    companyName: "HOTEIS OTHON S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "HOTEIS OTHON S.A. (HOOT4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do HOOT4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe HOOT4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "HOTEIS OTHON S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "HOOT4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker HOOT4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "REDE3F",
+    companyName: "REDE ENERGIA PARTICIPAÇÕES S.A.",
+    sectorSlug: "energia",
+    shortDescription: "REDE ENERGIA PARTICIPAÇÕES S.A. (REDE3F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do REDE3F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "REDE3F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "REDE ENERGIA PARTICIPAÇÕES S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "REDE3F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker REDE3F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "ISNN11",
+    companyName: "ISNN11",
+    sectorSlug: "consumo",
+    shortDescription: "ISNN11 (ISNN11) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do ISNN11 reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe ISNN11 se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ISNN11 — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "ISNN11 é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker ISNN11 na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "PDGR3F",
+    companyName: "PDG REALTY S.A. EMPREEND E PARTICIPACOES",
+    sectorSlug: "consumo",
+    shortDescription: "PDG REALTY S.A. EMPREEND E PARTICIPACOES (PDGR3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do PDGR3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe PDGR3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "PDG REALTY S.A. EMPREEND E PARTICIPACOES — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "PDGR3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker PDGR3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "EMAE4F",
+    companyName: "EMAE - EMPRESA METROP.AGUAS ENERGIA S.A.",
+    sectorSlug: "energia",
+    shortDescription: "EMAE - EMPRESA METROP.AGUAS ENERGIA S.A. (EMAE4F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do EMAE4F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "EMAE4F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "EMAE - EMPRESA METROP.AGUAS ENERGIA S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "EMAE4F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker EMAE4F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "LAND3F",
+    companyName: "TERRA SANTA PROPRIEDADES AGRICOLAS S.A.",
+    sectorSlug: "servicos_financeiros",
+    shortDescription: "TERRA SANTA PROPRIEDADES AGRICOLAS S.A. (LAND3F) atua em serviços financeiros — como bolsa, clearing, meios de pagamento ou fintechs listadas na B3. O resultado está ligado a volume de transações, tecnologia e regulação do setor.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia.",
+    historySummary: "O histórico de proventos do LAND3F acompanha a evolução do mercado de capitais e de pagamentos no Brasil. Use o simulador para explorar o passado e combine com análise de crescimento e margem.",
+    worthFollowing: "Acompanhe LAND3F se você quer exposição a infraestrutura financeira e aceita risco de regulação e ciclo de mercado. Proventos tendem a acompanhar crescimento de volume e lucratividade.",
+    listDescription: "TERRA SANTA PROPRIEDADES AGRICOLAS S.A. — serviços financeiros com histórico de distribuição ligado ao mercado de capitais.",
+    faqs: [
+      { question: "LAND3F é equivalente a uma ação de banco?", answer: "Não. Serviços financeiros têm drivers diferentes de bancos tradicionais — foco em transações e tecnologia, não crédito." },
+      { question: "Como ver histórico de proventos?", answer: "Use o ticker LAND3F nesta página para estimativas, e consulte o RI para dados oficiais." }
+    ],
+  },
+
+  {
+    ticker: "FHER3F",
+    companyName: "FERTILIZANTES HERINGER S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "FERTILIZANTES HERINGER S.A. (FHER3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do FHER3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe FHER3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "FERTILIZANTES HERINGER S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "FHER3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker FHER3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "EUCA3F",
+    companyName: "EUCATEX S.A. INDUSTRIA E COMERCIO",
+    sectorSlug: "consumo",
+    shortDescription: "EUCATEX S.A. INDUSTRIA E COMERCIO (EUCA3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do EUCA3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe EUCA3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "EUCATEX S.A. INDUSTRIA E COMERCIO — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "EUCA3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker EUCA3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BOBR4F",
+    companyName: "BOMBRIL S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "BOMBRIL S.A. (BOBR4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BOBR4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BOBR4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BOMBRIL S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BOBR4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BOBR4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "FSPE11F",
+    companyName: "FSPE11F",
+    sectorSlug: "consumo",
+    shortDescription: "FSPE11F (FSPE11F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do FSPE11F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe FSPE11F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "FSPE11F — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "FSPE11F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker FSPE11F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "TELB3F",
+    companyName: "TELEC BRASILEIRAS S.A. TELEBRAS",
+    sectorSlug: "consumo",
+    shortDescription: "TELEC BRASILEIRAS S.A. TELEBRAS (TELB3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do TELB3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe TELB3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "TELEC BRASILEIRAS S.A. TELEBRAS — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "TELB3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker TELB3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "EKTR4F",
+    companyName: "ELEKTRO REDES S.A.",
+    sectorSlug: "servicos_financeiros",
+    shortDescription: "ELEKTRO REDES S.A. (EKTR4F) atua em serviços financeiros — como bolsa, clearing, meios de pagamento ou fintechs listadas na B3. O resultado está ligado a volume de transações, tecnologia e regulação do setor.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia.",
+    historySummary: "O histórico de proventos do EKTR4F acompanha a evolução do mercado de capitais e de pagamentos no Brasil. Use o simulador para explorar o passado e combine com análise de crescimento e margem.",
+    worthFollowing: "Acompanhe EKTR4F se você quer exposição a infraestrutura financeira e aceita risco de regulação e ciclo de mercado. Proventos tendem a acompanhar crescimento de volume e lucratividade.",
+    listDescription: "ELEKTRO REDES S.A. — serviços financeiros com histórico de distribuição ligado ao mercado de capitais.",
+    faqs: [
+      { question: "EKTR4F é equivalente a uma ação de banco?", answer: "Não. Serviços financeiros têm drivers diferentes de bancos tradicionais — foco em transações e tecnologia, não crédito." },
+      { question: "Como ver histórico de proventos?", answer: "Use o ticker EKTR4F nesta página para estimativas, e consulte o RI para dados oficiais." }
+    ],
+  },
+
+  {
+    ticker: "CLSC3",
+    companyName: "CENTRAIS ELET DE SANTA CATARINA S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "CENTRAIS ELET DE SANTA CATARINA S.A. (CLSC3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e CENTRAIS ELET DE SANTA CATARINA S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do CLSC3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe CLSC3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "CENTRAIS ELET DE SANTA CATARINA S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "CLSC3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker CLSC3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "BPAR3",
+    companyName: "BCO ESTADO DO PARA S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BCO ESTADO DO PARA S.A. (BPAR3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BCO ESTADO DO PARA S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do BPAR3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe BPAR3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BCO ESTADO DO PARA S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "BPAR3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker BPAR3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "BRSR5",
+    companyName: "BCO ESTADO DO RIO GRANDE DO SUL S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "BCO ESTADO DO RIO GRANDE DO SUL S.A. (BRSR5) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BRSR5 reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BRSR5 se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BCO ESTADO DO RIO GRANDE DO SUL S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BRSR5 é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BRSR5 na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CEEB3",
+    companyName: "CIA ELETRICIDADE EST. DA BAHIA - COELBA",
+    sectorSlug: "energia",
+    shortDescription: "CIA ELETRICIDADE EST. DA BAHIA - COELBA (CEEB3) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do CEEB3 reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "CEEB3 pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "CIA ELETRICIDADE EST. DA BAHIA - COELBA — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "CEEB3 é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker CEEB3 e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "CTSA4",
+    companyName: "CIA TECIDOS SANTANENSE",
+    sectorSlug: "bancos",
+    shortDescription: "CIA TECIDOS SANTANENSE (CTSA4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e CIA TECIDOS SANTANENSE aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do CTSA4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe CTSA4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "CIA TECIDOS SANTANENSE — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "CTSA4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker CTSA4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "CRPG3",
+    companyName: "TRONOX PIGMENTOS DO BRASIL S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "TRONOX PIGMENTOS DO BRASIL S.A. (CRPG3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e TRONOX PIGMENTOS DO BRASIL S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do CRPG3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe CRPG3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "TRONOX PIGMENTOS DO BRASIL S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "CRPG3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker CRPG3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "BNBR3",
+    companyName: "BCO NORDESTE DO BRASIL S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BCO NORDESTE DO BRASIL S.A. (BNBR3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BCO NORDESTE DO BRASIL S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do BNBR3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe BNBR3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BCO NORDESTE DO BRASIL S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "BNBR3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker BNBR3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "RPAD3",
+    companyName: "ALFA HOLDINGS S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "ALFA HOLDINGS S.A. (RPAD3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e ALFA HOLDINGS S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do RPAD3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe RPAD3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "ALFA HOLDINGS S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "RPAD3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker RPAD3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "CRPG5",
+    companyName: "TRONOX PIGMENTOS DO BRASIL S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "TRONOX PIGMENTOS DO BRASIL S.A. (CRPG5) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CRPG5 reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CRPG5 se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "TRONOX PIGMENTOS DO BRASIL S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CRPG5 é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CRPG5 na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "UNIP5",
+    companyName: "UNIPAR CARBOCLORO S.A.",
+    sectorSlug: "industria",
+    shortDescription: "UNIPAR CARBOCLORO S.A. (UNIP5) é uma empresa industrial listada na B3, com exposição a capacidade de produção, exportação e custos de insumos. O setor distribui dividendos conforme resultado e ciclo de investimentos.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado operacional e política de capital da empresa.",
+    historySummary: "O histórico de proventos do UNIP5 alterna períodos de payout maior com ciclos de CAPEX intenso. Analise o fluxo de caixa livre e a alavancagem para entender a sustentabilidade dos dividendos.",
+    worthFollowing: "UNIP5 pode interessar a quem busca diversificação industrial com potencial de proventos em fases de geração de caixa. Volatilidade cambial e de insumos são fatores de risco relevantes.",
+    listDescription: "UNIPAR CARBOCLORO S.A. — indústria com histórico de proventos ligado ao ciclo produtivo.",
+    faqs: [
+      { question: "UNIP5 paga dividendos frequentes?", answer: "A frequência varia com o ciclo da companhia. Consulte RI e comunicados para o calendário atualizado." },
+      { question: "Como simular meus proventos?", answer: "Informe UNIP5 e a quantidade de ações na calculadora desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "CTKA4",
+    companyName: "KARSTEN S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "KARSTEN S.A. (CTKA4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e KARSTEN S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do CTKA4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe CTKA4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "KARSTEN S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "CTKA4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker CTKA4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "MRSA3B",
+    companyName: "MRS LOGISTICA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "MRS LOGISTICA S.A. (MRSA3B) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do MRSA3B reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe MRSA3B se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "MRS LOGISTICA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "MRSA3B é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker MRSA3B na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "HAGA3F",
+    companyName: "HAGA S.A. INDUSTRIA E COMERCIO",
+    sectorSlug: "consumo",
+    shortDescription: "HAGA S.A. INDUSTRIA E COMERCIO (HAGA3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do HAGA3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe HAGA3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "HAGA S.A. INDUSTRIA E COMERCIO — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "HAGA3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker HAGA3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "TXRX4",
+    companyName: "TEXTIL RENAUXVIEW S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "TEXTIL RENAUXVIEW S.A. (TXRX4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e TEXTIL RENAUXVIEW S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do TXRX4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe TXRX4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "TEXTIL RENAUXVIEW S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "TXRX4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker TXRX4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "CTSA3",
+    companyName: "CIA TECIDOS SANTANENSE",
+    sectorSlug: "bancos",
+    shortDescription: "CIA TECIDOS SANTANENSE (CTSA3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e CIA TECIDOS SANTANENSE aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do CTSA3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe CTSA3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "CIA TECIDOS SANTANENSE — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "CTSA3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker CTSA3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "CGAS3",
+    companyName: "CIA GAS DE SAO PAULO - COMGAS",
+    sectorSlug: "petroleo",
+    shortDescription: "CIA GAS DE SAO PAULO - COMGAS (CGAS3) atua no setor de petróleo e gás, com resultado ligado ao preço do barril, produção e câmbio. É uma das indústrias com maior potencial de dividendos em momentos de preço favorável.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Distribuição vinculada ao resultado e à política de capital da companhia.",
+    historySummary: "O histórico de proventos do CGAS3 varia com o preço do petróleo e decisões estratégicas da empresa. Simule com base no passado disponível e acompanhe comunicados para entender o próximo ciclo.",
+    worthFollowing: "CGAS3 pode ser relevante para quem busca exposição ao setor de energia com potencial de dividendos expressivos. Considere também volatilidade de commodities e risco político.",
+    listDescription: "CIA GAS DE SAO PAULO - COMGAS — petróleo e gás com dividendos ligados ao ciclo de commodities.",
+    faqs: [
+      { question: "CGAS3 paga dividendos regulares?", answer: "A regularidade depende do preço do petróleo e da política da empresa. Simulações passadas não garantem o futuro." },
+      { question: "Como estimar meus proventos?", answer: "Informe CGAS3 e sua quantidade de ações no simulador desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "BALM4",
+    companyName: "BAUMER S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BAUMER S.A. (BALM4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BAUMER S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do BALM4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe BALM4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BAUMER S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "BALM4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker BALM4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "GSHP3",
+    companyName: "GENERAL SHOPPING E OUTLETS DO BRASIL S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "GENERAL SHOPPING E OUTLETS DO BRASIL S.A. (GSHP3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e GENERAL SHOPPING E OUTLETS DO BRASIL S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do GSHP3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe GSHP3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "GENERAL SHOPPING E OUTLETS DO BRASIL S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "GSHP3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker GSHP3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "BDLL3",
+    companyName: "BARDELLA S.A. INDUSTRIAS MECANICAS",
+    sectorSlug: "bancos",
+    shortDescription: "BARDELLA S.A. INDUSTRIAS MECANICAS (BDLL3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BARDELLA S.A. INDUSTRIAS MECANICAS aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do BDLL3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe BDLL3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BARDELLA S.A. INDUSTRIAS MECANICAS — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "BDLL3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker BDLL3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "BMIN4",
+    companyName: "BCO MERCANTIL DE INVESTIMENTOS S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BCO MERCANTIL DE INVESTIMENTOS S.A. (BMIN4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BCO MERCANTIL DE INVESTIMENTOS S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do BMIN4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe BMIN4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BCO MERCANTIL DE INVESTIMENTOS S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "BMIN4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker BMIN4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "HBTS5",
+    companyName: "CIA HABITASUL DE PARTICIPACOES",
+    sectorSlug: "consumo",
+    shortDescription: "CIA HABITASUL DE PARTICIPACOES (HBTS5) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do HBTS5 reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe HBTS5 se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CIA HABITASUL DE PARTICIPACOES — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "HBTS5 é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker HBTS5 na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "JOPA3",
+    companyName: "JOSAPAR-JOAQUIM OLIVEIRA S.A. - PARTICIP",
+    sectorSlug: "bancos",
+    shortDescription: "JOSAPAR-JOAQUIM OLIVEIRA S.A. - PARTICIP (JOPA3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e JOSAPAR-JOAQUIM OLIVEIRA S.A. - PARTICIP aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do JOPA3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe JOPA3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "JOSAPAR-JOAQUIM OLIVEIRA S.A. - PARTICIP — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "JOPA3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker JOPA3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "EQPA5",
+    companyName: "EQUATORIAL PARA DISTRIBUIDORA DE ENERGIA S.A.",
+    sectorSlug: "energia",
+    shortDescription: "EQUATORIAL PARA DISTRIBUIDORA DE ENERGIA S.A. (EQPA5) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do EQPA5 reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "EQPA5 pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "EQUATORIAL PARA DISTRIBUIDORA DE ENERGIA S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "EQPA5 é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker EQPA5 e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "SOND6",
+    companyName: "SONDOTECNICA ENGENHARIA SOLOS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "SONDOTECNICA ENGENHARIA SOLOS S.A. (SOND6) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do SOND6 reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe SOND6 se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "SONDOTECNICA ENGENHARIA SOLOS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "SOND6 é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker SOND6 na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "MAPT4",
+    companyName: "CEMEPE INVESTIMENTOS S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "CEMEPE INVESTIMENTOS S.A. (MAPT4) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e CEMEPE INVESTIMENTOS S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do MAPT4 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe MAPT4 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "CEMEPE INVESTIMENTOS S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "MAPT4 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker MAPT4 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "AXIA5",
+    companyName: "AXIA5",
+    sectorSlug: "consumo",
+    shortDescription: "AXIA5 (AXIA5) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do AXIA5 reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe AXIA5 se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "AXIA5 — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "AXIA5 é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker AXIA5 na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BDLL4F",
+    companyName: "BARDELLA S.A. INDUSTRIAS MECANICAS",
+    sectorSlug: "consumo",
+    shortDescription: "BARDELLA S.A. INDUSTRIAS MECANICAS (BDLL4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BDLL4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BDLL4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BARDELLA S.A. INDUSTRIAS MECANICAS — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BDLL4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BDLL4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "NEXP3F",
+    companyName: "NEXPE PARTICIPAÇÕES S.A",
+    sectorSlug: "servicos_financeiros",
+    shortDescription: "NEXPE PARTICIPAÇÕES S.A (NEXP3F) atua em serviços financeiros — como bolsa, clearing, meios de pagamento ou fintechs listadas na B3. O resultado está ligado a volume de transações, tecnologia e regulação do setor.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia.",
+    historySummary: "O histórico de proventos do NEXP3F acompanha a evolução do mercado de capitais e de pagamentos no Brasil. Use o simulador para explorar o passado e combine com análise de crescimento e margem.",
+    worthFollowing: "Acompanhe NEXP3F se você quer exposição a infraestrutura financeira e aceita risco de regulação e ciclo de mercado. Proventos tendem a acompanhar crescimento de volume e lucratividade.",
+    listDescription: "NEXPE PARTICIPAÇÕES S.A — serviços financeiros com histórico de distribuição ligado ao mercado de capitais.",
+    faqs: [
+      { question: "NEXP3F é equivalente a uma ação de banco?", answer: "Não. Serviços financeiros têm drivers diferentes de bancos tradicionais — foco em transações e tecnologia, não crédito." },
+      { question: "Como ver histórico de proventos?", answer: "Use o ticker NEXP3F nesta página para estimativas, e consulte o RI para dados oficiais." }
+    ],
+  },
+
+  {
+    ticker: "WDCN3F",
+    companyName: "WDCN3F",
+    sectorSlug: "consumo",
+    shortDescription: "WDCN3F (WDCN3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do WDCN3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe WDCN3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "WDCN3F — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "WDCN3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker WDCN3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CCTY3F",
+    companyName: "BELORA RDVC CITY DESENVOLVIMENTO  IMOBILIÁRIO S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "BELORA RDVC CITY DESENVOLVIMENTO  IMOBILIÁRIO S.A. (CCTY3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CCTY3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CCTY3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BELORA RDVC CITY DESENVOLVIMENTO  IMOBILIÁRIO S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CCTY3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CCTY3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "UNIP5F",
+    companyName: "UNIPAR CARBOCLORO S.A.",
+    sectorSlug: "industria",
+    shortDescription: "UNIPAR CARBOCLORO S.A. (UNIP5F) é uma empresa industrial listada na B3, com exposição a capacidade de produção, exportação e custos de insumos. O setor distribui dividendos conforme resultado e ciclo de investimentos.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado operacional e política de capital da empresa.",
+    historySummary: "O histórico de proventos do UNIP5F alterna períodos de payout maior com ciclos de CAPEX intenso. Analise o fluxo de caixa livre e a alavancagem para entender a sustentabilidade dos dividendos.",
+    worthFollowing: "UNIP5F pode interessar a quem busca diversificação industrial com potencial de proventos em fases de geração de caixa. Volatilidade cambial e de insumos são fatores de risco relevantes.",
+    listDescription: "UNIPAR CARBOCLORO S.A. — indústria com histórico de proventos ligado ao ciclo produtivo.",
+    faqs: [
+      { question: "UNIP5F paga dividendos frequentes?", answer: "A frequência varia com o ciclo da companhia. Consulte RI e comunicados para o calendário atualizado." },
+      { question: "Como simular meus proventos?", answer: "Informe UNIP5F e a quantidade de ações na calculadora desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "OSXB3F",
+    companyName: "OSX BRASIL S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "OSX BRASIL S.A. (OSXB3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do OSXB3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe OSXB3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "OSX BRASIL S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "OSXB3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker OSXB3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "GEPA3F",
+    companyName: "RIO PARANAPANEMA ENERGIA S.A.",
+    sectorSlug: "energia",
+    shortDescription: "RIO PARANAPANEMA ENERGIA S.A. (GEPA3F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do GEPA3F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "GEPA3F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "RIO PARANAPANEMA ENERGIA S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "GEPA3F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker GEPA3F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "BMIN4F",
+    companyName: "BCO MERCANTIL DE INVESTIMENTOS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "BCO MERCANTIL DE INVESTIMENTOS S.A. (BMIN4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BMIN4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BMIN4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BCO MERCANTIL DE INVESTIMENTOS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BMIN4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BMIN4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CTAX3F",
+    companyName: "CTAX3F",
+    sectorSlug: "consumo",
+    shortDescription: "CTAX3F (CTAX3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CTAX3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CTAX3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CTAX3F — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CTAX3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CTAX3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "TELB4F",
+    companyName: "TELEC BRASILEIRAS S.A. TELEBRAS",
+    sectorSlug: "consumo",
+    shortDescription: "TELEC BRASILEIRAS S.A. TELEBRAS (TELB4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do TELB4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe TELB4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "TELEC BRASILEIRAS S.A. TELEBRAS — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "TELB4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker TELB4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CLSC3F",
+    companyName: "CENTRAIS ELET DE SANTA CATARINA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "CENTRAIS ELET DE SANTA CATARINA S.A. (CLSC3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CLSC3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CLSC3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CENTRAIS ELET DE SANTA CATARINA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CLSC3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CLSC3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "MNPR3F",
+    companyName: "MINUPAR PARTICIPACOES S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "MINUPAR PARTICIPACOES S.A. (MNPR3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do MNPR3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe MNPR3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "MINUPAR PARTICIPACOES S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "MNPR3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker MNPR3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "MWET4F",
+    companyName: "WETZEL S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "WETZEL S.A. (MWET4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do MWET4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe MWET4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "WETZEL S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "MWET4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker MWET4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "NUTR3F",
+    companyName: "NUTRIPLANT INDUSTRIA E COMERCIO S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "NUTRIPLANT INDUSTRIA E COMERCIO S.A. (NUTR3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do NUTR3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe NUTR3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "NUTRIPLANT INDUSTRIA E COMERCIO S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "NUTR3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker NUTR3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CGAS3F",
+    companyName: "CIA GAS DE SAO PAULO - COMGAS",
+    sectorSlug: "petroleo",
+    shortDescription: "CIA GAS DE SAO PAULO - COMGAS (CGAS3F) atua no setor de petróleo e gás, com resultado ligado ao preço do barril, produção e câmbio. É uma das indústrias com maior potencial de dividendos em momentos de preço favorável.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Distribuição vinculada ao resultado e à política de capital da companhia.",
+    historySummary: "O histórico de proventos do CGAS3F varia com o preço do petróleo e decisões estratégicas da empresa. Simule com base no passado disponível e acompanhe comunicados para entender o próximo ciclo.",
+    worthFollowing: "CGAS3F pode ser relevante para quem busca exposição ao setor de energia com potencial de dividendos expressivos. Considere também volatilidade de commodities e risco político.",
+    listDescription: "CIA GAS DE SAO PAULO - COMGAS — petróleo e gás com dividendos ligados ao ciclo de commodities.",
+    faqs: [
+      { question: "CGAS3F paga dividendos regulares?", answer: "A regularidade depende do preço do petróleo e da política da empresa. Simulações passadas não garantem o futuro." },
+      { question: "Como estimar meus proventos?", answer: "Informe CGAS3F e sua quantidade de ações no simulador desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "EKTR3F",
+    companyName: "ELEKTRO REDES S.A.",
+    sectorSlug: "servicos_financeiros",
+    shortDescription: "ELEKTRO REDES S.A. (EKTR3F) atua em serviços financeiros — como bolsa, clearing, meios de pagamento ou fintechs listadas na B3. O resultado está ligado a volume de transações, tecnologia e regulação do setor.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia.",
+    historySummary: "O histórico de proventos do EKTR3F acompanha a evolução do mercado de capitais e de pagamentos no Brasil. Use o simulador para explorar o passado e combine com análise de crescimento e margem.",
+    worthFollowing: "Acompanhe EKTR3F se você quer exposição a infraestrutura financeira e aceita risco de regulação e ciclo de mercado. Proventos tendem a acompanhar crescimento de volume e lucratividade.",
+    listDescription: "ELEKTRO REDES S.A. — serviços financeiros com histórico de distribuição ligado ao mercado de capitais.",
+    faqs: [
+      { question: "EKTR3F é equivalente a uma ação de banco?", answer: "Não. Serviços financeiros têm drivers diferentes de bancos tradicionais — foco em transações e tecnologia, não crédito." },
+      { question: "Como ver histórico de proventos?", answer: "Use o ticker EKTR3F nesta página para estimativas, e consulte o RI para dados oficiais." }
+    ],
+  },
+
+  {
+    ticker: "FESA3F",
+    companyName: "CIA FERRO LIGAS DA BAHIA - FERBASA",
+    sectorSlug: "petroleo",
+    shortDescription: "CIA FERRO LIGAS DA BAHIA - FERBASA (FESA3F) atua no setor de petróleo e gás, com resultado ligado ao preço do barril, produção e câmbio. É uma das indústrias com maior potencial de dividendos em momentos de preço favorável.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Distribuição vinculada ao resultado e à política de capital da companhia.",
+    historySummary: "O histórico de proventos do FESA3F varia com o preço do petróleo e decisões estratégicas da empresa. Simule com base no passado disponível e acompanhe comunicados para entender o próximo ciclo.",
+    worthFollowing: "FESA3F pode ser relevante para quem busca exposição ao setor de energia com potencial de dividendos expressivos. Considere também volatilidade de commodities e risco político.",
+    listDescription: "CIA FERRO LIGAS DA BAHIA - FERBASA — petróleo e gás com dividendos ligados ao ciclo de commodities.",
+    faqs: [
+      { question: "FESA3F paga dividendos regulares?", answer: "A regularidade depende do preço do petróleo e da política da empresa. Simulações passadas não garantem o futuro." },
+      { question: "Como estimar meus proventos?", answer: "Informe FESA3F e sua quantidade de ações no simulador desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "SNSY5F",
+    companyName: "SANSUY S.A. INDUSTRIA DE PLASTICOS",
+    sectorSlug: "consumo",
+    shortDescription: "SANSUY S.A. INDUSTRIA DE PLASTICOS (SNSY5F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do SNSY5F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe SNSY5F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "SANSUY S.A. INDUSTRIA DE PLASTICOS — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "SNSY5F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker SNSY5F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BMKS3",
+    companyName: "BICICLETAS MONARK S.A.",
+    sectorSlug: "bancos",
+    shortDescription: "BICICLETAS MONARK S.A. (BMKS3) é uma instituição financeira listada na B3. O setor bancário costuma distribuir proventos via dividendos e JCP, e BICICLETAS MONARK S.A. aparece em carteiras voltadas a renda passiva no segmento financeiro.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos e JCP conforme política da companhia e calendário divulgado no RI.",
+    historySummary: "O histórico de proventos do BMKS3 acompanha ciclos de resultado, inadimplência e política de capital do banco. Compare o total distribuído nos últimos 12 meses com o preço atual para contextualizar o dividend yield, lembrando que o passado não garante o futuro.",
+    worthFollowing: "Acompanhe BMKS3 se você busca exposição ao setor financeiro com histórico de distribuição de proventos. Combine a simulação desta página com análise de balanço, guidance e spread de crédito antes de qualquer decisão.",
+    listDescription: "BICICLETAS MONARK S.A. — banco listado na B3 com histórico de distribuição de proventos.",
+    faqs: [
+      { question: "BMKS3 paga dividendos mensais?", answer: "A frequência depende da política da companhia. Confira os comunicados oficiais e o RI para o calendário atualizado." },
+      { question: "Como simular quanto recebo?", answer: "Informe o ticker BMKS3 e a quantidade de ações na calculadora desta página. Os valores são estimativas com base em dados públicos." }
+    ],
+  },
+
+  {
+    ticker: "GSHP3F",
+    companyName: "GENERAL SHOPPING E OUTLETS DO BRASIL S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "GENERAL SHOPPING E OUTLETS DO BRASIL S.A. (GSHP3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do GSHP3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe GSHP3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "GENERAL SHOPPING E OUTLETS DO BRASIL S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "GSHP3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker GSHP3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "JFEN3F",
+    companyName: "JOAO FORTES ENGENHARIA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "JOAO FORTES ENGENHARIA S.A. (JFEN3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do JFEN3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe JFEN3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "JOAO FORTES ENGENHARIA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "JFEN3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker JFEN3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "MNDL3F",
+    companyName: "MUNDIAL S.A. - PRODUTOS DE CONSUMO",
+    sectorSlug: "consumo",
+    shortDescription: "MUNDIAL S.A. - PRODUTOS DE CONSUMO (MNDL3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do MNDL3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe MNDL3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "MUNDIAL S.A. - PRODUTOS DE CONSUMO — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "MNDL3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker MNDL3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "DOHL4F",
+    companyName: "DOHLER S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "DOHLER S.A. (DOHL4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do DOHL4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe DOHL4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "DOHLER S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "DOHL4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker DOHL4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "SOND5F",
+    companyName: "SONDOTECNICA ENGENHARIA SOLOS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "SONDOTECNICA ENGENHARIA SOLOS S.A. (SOND5F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do SOND5F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe SOND5F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "SONDOTECNICA ENGENHARIA SOLOS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "SOND5F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker SOND5F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "TXRX4F",
+    companyName: "TEXTIL RENAUXVIEW S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "TEXTIL RENAUXVIEW S.A. (TXRX4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do TXRX4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe TXRX4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "TEXTIL RENAUXVIEW S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "TXRX4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker TXRX4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BALM4F",
+    companyName: "BAUMER S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "BAUMER S.A. (BALM4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BALM4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BALM4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BAUMER S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BALM4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BALM4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CEEB3F",
+    companyName: "CIA ELETRICIDADE EST. DA BAHIA - COELBA",
+    sectorSlug: "energia",
+    shortDescription: "CIA ELETRICIDADE EST. DA BAHIA - COELBA (CEEB3F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do CEEB3F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "CEEB3F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "CIA ELETRICIDADE EST. DA BAHIA - COELBA — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "CEEB3F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker CEEB3F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "PEAB3F",
+    companyName: "CIA PARTICIPACOES ALIANCA DA BAHIA",
+    sectorSlug: "consumo",
+    shortDescription: "CIA PARTICIPACOES ALIANCA DA BAHIA (PEAB3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do PEAB3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe PEAB3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CIA PARTICIPACOES ALIANCA DA BAHIA — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "PEAB3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker PEAB3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "AFLT3F",
+    companyName: "AFLUENTE TRANSMISSÃO DE ENERGIA ELÉTRICA S/A",
+    sectorSlug: "energia",
+    shortDescription: "AFLUENTE TRANSMISSÃO DE ENERGIA ELÉTRICA S/A (AFLT3F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do AFLT3F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "AFLT3F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "AFLUENTE TRANSMISSÃO DE ENERGIA ELÉTRICA S/A — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "AFLT3F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker AFLT3F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "PATI3F",
+    companyName: "PANATLANTICA S.A.",
+    sectorSlug: "industria",
+    shortDescription: "PANATLANTICA S.A. (PATI3F) é uma empresa industrial listada na B3, com exposição a capacidade de produção, exportação e custos de insumos. O setor distribui dividendos conforme resultado e ciclo de investimentos.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado operacional e política de capital da empresa.",
+    historySummary: "O histórico de proventos do PATI3F alterna períodos de payout maior com ciclos de CAPEX intenso. Analise o fluxo de caixa livre e a alavancagem para entender a sustentabilidade dos dividendos.",
+    worthFollowing: "PATI3F pode interessar a quem busca diversificação industrial com potencial de proventos em fases de geração de caixa. Volatilidade cambial e de insumos são fatores de risco relevantes.",
+    listDescription: "PANATLANTICA S.A. — indústria com histórico de proventos ligado ao ciclo produtivo.",
+    faqs: [
+      { question: "PATI3F paga dividendos frequentes?", answer: "A frequência varia com o ciclo da companhia. Consulte RI e comunicados para o calendário atualizado." },
+      { question: "Como simular meus proventos?", answer: "Informe PATI3F e a quantidade de ações na calculadora desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "BRSR5F",
+    companyName: "BCO ESTADO DO RIO GRANDE DO SUL S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "BCO ESTADO DO RIO GRANDE DO SUL S.A. (BRSR5F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BRSR5F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BRSR5F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BCO ESTADO DO RIO GRANDE DO SUL S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BRSR5F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BRSR5F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "ATED3F",
+    companyName: "ATOM EDUCAÇÃO E EDITORA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "ATOM EDUCAÇÃO E EDITORA S.A. (ATED3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do ATED3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe ATED3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ATOM EDUCAÇÃO E EDITORA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "ATED3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker ATED3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "AXIA5F",
+    companyName: "AXIA5F",
+    sectorSlug: "consumo",
+    shortDescription: "AXIA5F (AXIA5F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do AXIA5F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe AXIA5F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "AXIA5F — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "AXIA5F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker AXIA5F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "TKNO3F",
+    companyName: "TEKNO S.A. - INDUSTRIA E COMERCIO",
+    sectorSlug: "consumo",
+    shortDescription: "TEKNO S.A. - INDUSTRIA E COMERCIO (TKNO3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do TKNO3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe TKNO3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "TEKNO S.A. - INDUSTRIA E COMERCIO — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "TKNO3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker TKNO3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "WLMM4F",
+    companyName: "WLM PART. E COMÉRCIO DE MÁQUINAS E VEÍCULOS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "WLM PART. E COMÉRCIO DE MÁQUINAS E VEÍCULOS S.A. (WLMM4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do WLMM4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe WLMM4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "WLM PART. E COMÉRCIO DE MÁQUINAS E VEÍCULOS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "WLMM4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker WLMM4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "MGEL4F",
+    companyName: "MANGELS INDUSTRIAL S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "MANGELS INDUSTRIAL S.A. (MGEL4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do MGEL4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe MGEL4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "MANGELS INDUSTRIAL S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "MGEL4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker MGEL4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "FSTU11F",
+    companyName: "FSTU11F",
+    sectorSlug: "consumo",
+    shortDescription: "FSTU11F (FSTU11F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do FSTU11F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe FSTU11F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "FSTU11F — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "FSTU11F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker FSTU11F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "EALT3F",
+    companyName: "ELECTRO ACO ALTONA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "ELECTRO ACO ALTONA S.A. (EALT3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do EALT3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe EALT3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ELECTRO ACO ALTONA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "EALT3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker EALT3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CTKA4F",
+    companyName: "KARSTEN S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "KARSTEN S.A. (CTKA4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CTKA4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CTKA4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "KARSTEN S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CTKA4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CTKA4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "EQMA3BF",
+    companyName: "EQUATORIAL MARANHÃO DISTRIBUIDORA DE ENERGIA S.A.",
+    sectorSlug: "energia",
+    shortDescription: "EQUATORIAL MARANHÃO DISTRIBUIDORA DE ENERGIA S.A. (EQMA3BF) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do EQMA3BF reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "EQMA3BF pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "EQUATORIAL MARANHÃO DISTRIBUIDORA DE ENERGIA S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "EQMA3BF é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker EQMA3BF e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "MTSA4F",
+    companyName: "METISA METALURGICA TIMBOENSE S.A.",
+    sectorSlug: "mineracao",
+    shortDescription: "METISA METALURGICA TIMBOENSE S.A. (MTSA4F) está no setor de mineração, exposto a ciclos de commodities e demanda global. O dividend yield pode ser elevado em anos de preços altos e recuar em viradas de ciclo.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos variáveis conforme resultado e ciclo de commodities.",
+    historySummary: "O histórico de proventos do MTSA4F oscila com o preço das commodities. Anos de superciclo costumam trazer distribuições extraordinárias; quedas de preço reduzem o payout. Use o simulador para explorar o passado.",
+    worthFollowing: "Acompanhe MTSA4F se você aceita a ciclicidade do setor de mineração em troca de potencial de dividendos altos em momentos favoráveis. Diversificação e gestão de risco são fundamentais neste setor.",
+    listDescription: "METISA METALURGICA TIMBOENSE S.A. — mineração com exposição a commodities e histórico de dividendos cíclicos.",
+    faqs: [
+      { question: "Por que o yield do MTSA4F muda tanto?", answer: "O preço da ação e os pagamentos acompanham o ciclo de commodities. Um yield alto pode refletir queda do papel ou distribuição extraordinária." },
+      { question: "Onde vejo o histórico oficial?", answer: "Consulte o RI da companhia e comunicados à CVM. O simulador desta página usa dados via API como referência educacional." }
+    ],
+  },
+
+  {
+    ticker: "CRPG5F",
+    companyName: "TRONOX PIGMENTOS DO BRASIL S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "TRONOX PIGMENTOS DO BRASIL S.A. (CRPG5F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CRPG5F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CRPG5F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "TRONOX PIGMENTOS DO BRASIL S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CRPG5F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CRPG5F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CTSA4F",
+    companyName: "CIA TECIDOS SANTANENSE",
+    sectorSlug: "consumo",
+    shortDescription: "CIA TECIDOS SANTANENSE (CTSA4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CTSA4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CTSA4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CIA TECIDOS SANTANENSE — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CTSA4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CTSA4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "MRSA3BF",
+    companyName: "MRS LOGISTICA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "MRS LOGISTICA S.A. (MRSA3BF) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do MRSA3BF reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe MRSA3BF se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "MRS LOGISTICA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "MRSA3BF é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker MRSA3BF na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "RPAD5F",
+    companyName: "ALFA HOLDINGS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "ALFA HOLDINGS S.A. (RPAD5F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do RPAD5F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe RPAD5F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ALFA HOLDINGS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "RPAD5F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker RPAD5F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BALM3F",
+    companyName: "BAUMER S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "BAUMER S.A. (BALM3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BALM3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BALM3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BAUMER S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BALM3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BALM3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BRKM6F",
+    companyName: "BRASKEM S.A.",
+    sectorSlug: "industria",
+    shortDescription: "BRASKEM S.A. (BRKM6F) é uma empresa industrial listada na B3, com exposição a capacidade de produção, exportação e custos de insumos. O setor distribui dividendos conforme resultado e ciclo de investimentos.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado operacional e política de capital da empresa.",
+    historySummary: "O histórico de proventos do BRKM6F alterna períodos de payout maior com ciclos de CAPEX intenso. Analise o fluxo de caixa livre e a alavancagem para entender a sustentabilidade dos dividendos.",
+    worthFollowing: "BRKM6F pode interessar a quem busca diversificação industrial com potencial de proventos em fases de geração de caixa. Volatilidade cambial e de insumos são fatores de risco relevantes.",
+    listDescription: "BRASKEM S.A. — indústria com histórico de proventos ligado ao ciclo produtivo.",
+    faqs: [
+      { question: "BRKM6F paga dividendos frequentes?", answer: "A frequência varia com o ciclo da companhia. Consulte RI e comunicados para o calendário atualizado." },
+      { question: "Como simular meus proventos?", answer: "Informe BRKM6F e a quantidade de ações na calculadora desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "FIEI3F",
+    companyName: "FICA EMPREENDIMENTOS IMOBILIÁRIOS S.A",
+    sectorSlug: "consumo",
+    shortDescription: "FICA EMPREENDIMENTOS IMOBILIÁRIOS S.A (FIEI3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do FIEI3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe FIEI3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "FICA EMPREENDIMENTOS IMOBILIÁRIOS S.A — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "FIEI3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker FIEI3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "JOPA3F",
+    companyName: "JOSAPAR-JOAQUIM OLIVEIRA S.A. - PARTICIP",
+    sectorSlug: "consumo",
+    shortDescription: "JOSAPAR-JOAQUIM OLIVEIRA S.A. - PARTICIP (JOPA3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do JOPA3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe JOPA3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "JOSAPAR-JOAQUIM OLIVEIRA S.A. - PARTICIP — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "JOPA3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker JOPA3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CASN3F",
+    companyName: "CIA CATARINENSE DE AGUAS E SANEAM.-CASAN",
+    sectorSlug: "consumo",
+    shortDescription: "CIA CATARINENSE DE AGUAS E SANEAM.-CASAN (CASN3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CASN3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CASN3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CIA CATARINENSE DE AGUAS E SANEAM.-CASAN — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CASN3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CASN3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "EQPA5F",
+    companyName: "EQUATORIAL PARA DISTRIBUIDORA DE ENERGIA S.A.",
+    sectorSlug: "energia",
+    shortDescription: "EQUATORIAL PARA DISTRIBUIDORA DE ENERGIA S.A. (EQPA5F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do EQPA5F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "EQPA5F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "EQUATORIAL PARA DISTRIBUIDORA DE ENERGIA S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "EQPA5F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker EQPA5F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "CTSA3F",
+    companyName: "CIA TECIDOS SANTANENSE",
+    sectorSlug: "consumo",
+    shortDescription: "CIA TECIDOS SANTANENSE (CTSA3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CTSA3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CTSA3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CIA TECIDOS SANTANENSE — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CTSA3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CTSA3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "RSID3F",
+    companyName: "ROSSI RESIDENCIAL S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "ROSSI RESIDENCIAL S.A. (RSID3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do RSID3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe RSID3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ROSSI RESIDENCIAL S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "RSID3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker RSID3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CTKA3F",
+    companyName: "KARSTEN S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "KARSTEN S.A. (CTKA3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CTKA3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CTKA3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "KARSTEN S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CTKA3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CTKA3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "RVEE3F",
+    companyName: "REVEE S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "REVEE S.A. (RVEE3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do RVEE3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe RVEE3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "REVEE S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "RVEE3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker RVEE3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "EQPA6F",
+    companyName: "EQUATORIAL PARA DISTRIBUIDORA DE ENERGIA S.A.",
+    sectorSlug: "energia",
+    shortDescription: "EQUATORIAL PARA DISTRIBUIDORA DE ENERGIA S.A. (EQPA6F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do EQPA6F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "EQPA6F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "EQUATORIAL PARA DISTRIBUIDORA DE ENERGIA S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "EQPA6F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker EQPA6F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "TXRX3F",
+    companyName: "TEXTIL RENAUXVIEW S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "TEXTIL RENAUXVIEW S.A. (TXRX3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do TXRX3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe TXRX3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "TEXTIL RENAUXVIEW S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "TXRX3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker TXRX3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "GPAR3F",
+    companyName: "CIA CELG DE PARTICIPACOES - CELGPAR",
+    sectorSlug: "consumo",
+    shortDescription: "CIA CELG DE PARTICIPACOES - CELGPAR (GPAR3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do GPAR3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe GPAR3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CIA CELG DE PARTICIPACOES - CELGPAR — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "GPAR3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker GPAR3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "DOHL3F",
+    companyName: "DOHLER S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "DOHLER S.A. (DOHL3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do DOHL3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe DOHL3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "DOHLER S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "DOHL3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker DOHL3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CEDO4F",
+    companyName: "CIA FIACAO TECIDOS CEDRO CACHOEIRA",
+    sectorSlug: "consumo",
+    shortDescription: "CIA FIACAO TECIDOS CEDRO CACHOEIRA (CEDO4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CEDO4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CEDO4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CIA FIACAO TECIDOS CEDRO CACHOEIRA — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CEDO4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CEDO4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "MRSA6BF",
+    companyName: "MRS LOGISTICA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "MRS LOGISTICA S.A. (MRSA6BF) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do MRSA6BF reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe MRSA6BF se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "MRS LOGISTICA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "MRSA6BF é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker MRSA6BF na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BGIP3F",
+    companyName: "BCO ESTADO DE SERGIPE S.A. - BANESE",
+    sectorSlug: "consumo",
+    shortDescription: "BCO ESTADO DE SERGIPE S.A. - BANESE (BGIP3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BGIP3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BGIP3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BCO ESTADO DE SERGIPE S.A. - BANESE — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BGIP3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BGIP3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "ODER4F",
+    companyName: "CONSERVAS ODERICH S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "CONSERVAS ODERICH S.A. (ODER4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do ODER4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe ODER4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CONSERVAS ODERICH S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "ODER4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker ODER4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BIED3F",
+    companyName: "BIOMA EDUCAÇÃO S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "BIOMA EDUCAÇÃO S.A. (BIED3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BIED3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BIED3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BIOMA EDUCAÇÃO S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BIED3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BIED3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "HETA4F",
+    companyName: "HERCULES S.A. FABRICA DE TALHERES",
+    sectorSlug: "consumo",
+    shortDescription: "HERCULES S.A. FABRICA DE TALHERES (HETA4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do HETA4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe HETA4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "HERCULES S.A. FABRICA DE TALHERES — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "HETA4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker HETA4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BNBR3F",
+    companyName: "BCO NORDESTE DO BRASIL S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "BCO NORDESTE DO BRASIL S.A. (BNBR3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BNBR3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BNBR3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BCO NORDESTE DO BRASIL S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BNBR3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BNBR3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "PSVM11F",
+    companyName: "PORTO SUDESTE V.M. S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "PORTO SUDESTE V.M. S.A. (PSVM11F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do PSVM11F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe PSVM11F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "PORTO SUDESTE V.M. S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "PSVM11F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker PSVM11F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "SNSY3F",
+    companyName: "SANSUY S.A. INDUSTRIA DE PLASTICOS",
+    sectorSlug: "consumo",
+    shortDescription: "SANSUY S.A. INDUSTRIA DE PLASTICOS (SNSY3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do SNSY3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe SNSY3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "SANSUY S.A. INDUSTRIA DE PLASTICOS — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "SNSY3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker SNSY3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "SOND6F",
+    companyName: "SONDOTECNICA ENGENHARIA SOLOS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "SONDOTECNICA ENGENHARIA SOLOS S.A. (SOND6F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do SOND6F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe SOND6F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "SONDOTECNICA ENGENHARIA SOLOS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "SOND6F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker SOND6F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "MAPT4F",
+    companyName: "CEMEPE INVESTIMENTOS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "CEMEPE INVESTIMENTOS S.A. (MAPT4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do MAPT4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe MAPT4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CEMEPE INVESTIMENTOS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "MAPT4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker MAPT4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "PATI4F",
+    companyName: "PANATLANTICA S.A.",
+    sectorSlug: "industria",
+    shortDescription: "PANATLANTICA S.A. (PATI4F) é uma empresa industrial listada na B3, com exposição a capacidade de produção, exportação e custos de insumos. O setor distribui dividendos conforme resultado e ciclo de investimentos.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado operacional e política de capital da empresa.",
+    historySummary: "O histórico de proventos do PATI4F alterna períodos de payout maior com ciclos de CAPEX intenso. Analise o fluxo de caixa livre e a alavancagem para entender a sustentabilidade dos dividendos.",
+    worthFollowing: "PATI4F pode interessar a quem busca diversificação industrial com potencial de proventos em fases de geração de caixa. Volatilidade cambial e de insumos são fatores de risco relevantes.",
+    listDescription: "PANATLANTICA S.A. — indústria com histórico de proventos ligado ao ciclo produtivo.",
+    faqs: [
+      { question: "PATI4F paga dividendos frequentes?", answer: "A frequência varia com o ciclo da companhia. Consulte RI e comunicados para o calendário atualizado." },
+      { question: "Como simular meus proventos?", answer: "Informe PATI4F e a quantidade de ações na calculadora desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "ESTR4F",
+    companyName: "MANUFATURA DE BRINQUEDOS ESTRELA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "MANUFATURA DE BRINQUEDOS ESTRELA S.A. (ESTR4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do ESTR4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe ESTR4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "MANUFATURA DE BRINQUEDOS ESTRELA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "ESTR4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker ESTR4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "HBTS5F",
+    companyName: "CIA HABITASUL DE PARTICIPACOES",
+    sectorSlug: "consumo",
+    shortDescription: "CIA HABITASUL DE PARTICIPACOES (HBTS5F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do HBTS5F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe HBTS5F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CIA HABITASUL DE PARTICIPACOES — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "HBTS5F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker HBTS5F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "PTNT3F",
+    companyName: "PETTENATI S.A. INDUSTRIA TEXTIL",
+    sectorSlug: "consumo",
+    shortDescription: "PETTENATI S.A. INDUSTRIA TEXTIL (PTNT3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do PTNT3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe PTNT3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "PETTENATI S.A. INDUSTRIA TEXTIL — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "PTNT3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker PTNT3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "ONCO11F",
+    companyName: "ONCOCLINICAS DO BRASIL SERVICOS MEDICOS  S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "ONCOCLINICAS DO BRASIL SERVICOS MEDICOS  S.A. (ONCO11F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do ONCO11F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe ONCO11F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ONCOCLINICAS DO BRASIL SERVICOS MEDICOS  S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "ONCO11F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker ONCO11F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "AHEB3F",
+    companyName: "SAO PAULO TURISMO S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "SAO PAULO TURISMO S.A. (AHEB3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do AHEB3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe AHEB3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "SAO PAULO TURISMO S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "AHEB3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker AHEB3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CEDO3F",
+    companyName: "CIA FIACAO TECIDOS CEDRO CACHOEIRA",
+    sectorSlug: "consumo",
+    shortDescription: "CIA FIACAO TECIDOS CEDRO CACHOEIRA (CEDO3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CEDO3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CEDO3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CIA FIACAO TECIDOS CEDRO CACHOEIRA — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CEDO3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CEDO3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "DTCY3F",
+    companyName: "DTCOM - DIRECT TO COMPANY S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "DTCOM - DIRECT TO COMPANY S.A. (DTCY3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do DTCY3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe DTCY3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "DTCOM - DIRECT TO COMPANY S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "DTCY3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker DTCY3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "USIM6F",
+    companyName: "USINAS SID DE MINAS GERAIS S.A.-USIMINAS",
+    sectorSlug: "mineracao",
+    shortDescription: "USINAS SID DE MINAS GERAIS S.A.-USIMINAS (USIM6F) está no setor de mineração, exposto a ciclos de commodities e demanda global. O dividend yield pode ser elevado em anos de preços altos e recuar em viradas de ciclo.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos variáveis conforme resultado e ciclo de commodities.",
+    historySummary: "O histórico de proventos do USIM6F oscila com o preço das commodities. Anos de superciclo costumam trazer distribuições extraordinárias; quedas de preço reduzem o payout. Use o simulador para explorar o passado.",
+    worthFollowing: "Acompanhe USIM6F se você aceita a ciclicidade do setor de mineração em troca de potencial de dividendos altos em momentos favoráveis. Diversificação e gestão de risco são fundamentais neste setor.",
+    listDescription: "USINAS SID DE MINAS GERAIS S.A.-USIMINAS — mineração com exposição a commodities e histórico de dividendos cíclicos.",
+    faqs: [
+      { question: "Por que o yield do USIM6F muda tanto?", answer: "O preço da ação e os pagamentos acompanham o ciclo de commodities. Um yield alto pode refletir queda do papel ou distribuição extraordinária." },
+      { question: "Onde vejo o histórico oficial?", answer: "Consulte o RI da companhia e comunicados à CVM. O simulador desta página usa dados via API como referência educacional." }
+    ],
+  },
+
+  {
+    ticker: "FRIO3F",
+    companyName: "METALFRIO SOLUTIONS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "METALFRIO SOLUTIONS S.A. (FRIO3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do FRIO3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe FRIO3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "METALFRIO SOLUTIONS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "FRIO3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker FRIO3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "AHEB5F",
+    companyName: "SAO PAULO TURISMO S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "SAO PAULO TURISMO S.A. (AHEB5F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do AHEB5F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe AHEB5F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "SAO PAULO TURISMO S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "AHEB5F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker AHEB5F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "ARND3F",
+    companyName: "ARND3F",
+    sectorSlug: "consumo",
+    shortDescription: "ARND3F (ARND3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do ARND3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe ARND3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ARND3F — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "ARND3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker ARND3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CEEB5F",
+    companyName: "CIA ELETRICIDADE EST. DA BAHIA - COELBA",
+    sectorSlug: "energia",
+    shortDescription: "CIA ELETRICIDADE EST. DA BAHIA - COELBA (CEEB5F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do CEEB5F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "CEEB5F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "CIA ELETRICIDADE EST. DA BAHIA - COELBA — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "CEEB5F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker CEEB5F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "IGTI4F",
+    companyName: "IGUATEMI S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "IGUATEMI S.A. (IGTI4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do IGTI4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe IGTI4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "IGUATEMI S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "IGTI4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker IGTI4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BPAR3F",
+    companyName: "BCO ESTADO DO PARA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "BCO ESTADO DO PARA S.A. (BPAR3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BPAR3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BPAR3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BCO ESTADO DO PARA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BPAR3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BPAR3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "FIGE3F",
+    companyName: "INVESTIMENTOS BEMGE S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "INVESTIMENTOS BEMGE S.A. (FIGE3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do FIGE3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe FIGE3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "INVESTIMENTOS BEMGE S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "FIGE3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker FIGE3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "WLMM3F",
+    companyName: "WLM PART. E COMÉRCIO DE MÁQUINAS E VEÍCULOS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "WLM PART. E COMÉRCIO DE MÁQUINAS E VEÍCULOS S.A. (WLMM3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do WLMM3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe WLMM3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "WLM PART. E COMÉRCIO DE MÁQUINAS E VEÍCULOS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "WLMM3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker WLMM3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "PEAB4F",
+    companyName: "CIA PARTICIPACOES ALIANCA DA BAHIA",
+    sectorSlug: "consumo",
+    shortDescription: "CIA PARTICIPACOES ALIANCA DA BAHIA (PEAB4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do PEAB4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe PEAB4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CIA PARTICIPACOES ALIANCA DA BAHIA — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "PEAB4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker PEAB4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "RPAD6F",
+    companyName: "ALFA HOLDINGS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "ALFA HOLDINGS S.A. (RPAD6F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do RPAD6F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe RPAD6F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ALFA HOLDINGS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "RPAD6F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker RPAD6F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CRPG6F",
+    companyName: "TRONOX PIGMENTOS DO BRASIL S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "TRONOX PIGMENTOS DO BRASIL S.A. (CRPG6F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CRPG6F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CRPG6F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "TRONOX PIGMENTOS DO BRASIL S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CRPG6F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CRPG6F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "MRSA5BF",
+    companyName: "MRS LOGISTICA S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "MRS LOGISTICA S.A. (MRSA5BF) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do MRSA5BF reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe MRSA5BF se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "MRS LOGISTICA S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "MRSA5BF é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker MRSA5BF na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "COCE3F",
+    companyName: "CIA ENERGETICA DO CEARA - COELCE",
+    sectorSlug: "consumo",
+    shortDescription: "CIA ENERGETICA DO CEARA - COELCE (COCE3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do COCE3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe COCE3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CIA ENERGETICA DO CEARA - COELCE — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "COCE3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker COCE3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BDLL3F",
+    companyName: "BARDELLA S.A. INDUSTRIAS MECANICAS",
+    sectorSlug: "consumo",
+    shortDescription: "BARDELLA S.A. INDUSTRIAS MECANICAS (BDLL3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BDLL3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BDLL3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BARDELLA S.A. INDUSTRIAS MECANICAS — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BDLL3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BDLL3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "JOPA4F",
+    companyName: "JOSAPAR-JOAQUIM OLIVEIRA S.A. - PARTICIP",
+    sectorSlug: "consumo",
+    shortDescription: "JOSAPAR-JOAQUIM OLIVEIRA S.A. - PARTICIP (JOPA4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do JOPA4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe JOPA4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "JOSAPAR-JOAQUIM OLIVEIRA S.A. - PARTICIP — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "JOPA4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker JOPA4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "TKNO4F",
+    companyName: "TEKNO S.A. - INDUSTRIA E COMERCIO",
+    sectorSlug: "consumo",
+    shortDescription: "TEKNO S.A. - INDUSTRIA E COMERCIO (TKNO4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do TKNO4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe TKNO4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "TEKNO S.A. - INDUSTRIA E COMERCIO — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "TKNO4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker TKNO4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CEED3F",
+    companyName: "CIA ESTADUAL DE DISTRIB ENER ELET-CEEE-D",
+    sectorSlug: "consumo",
+    shortDescription: "CIA ESTADUAL DE DISTRIB ENER ELET-CEEE-D (CEED3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CEED3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CEED3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CIA ESTADUAL DE DISTRIB ENER ELET-CEEE-D — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CEED3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CEED3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "MSPA3F",
+    companyName: "CIA MELHORAMENTOS DE SAO PAULO",
+    sectorSlug: "consumo",
+    shortDescription: "CIA MELHORAMENTOS DE SAO PAULO (MSPA3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do MSPA3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe MSPA3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CIA MELHORAMENTOS DE SAO PAULO — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "MSPA3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker MSPA3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CEGR3F",
+    companyName: "CIA DISTRIB DE GAS DO RIO DE JANEIRO-CEG",
+    sectorSlug: "petroleo",
+    shortDescription: "CIA DISTRIB DE GAS DO RIO DE JANEIRO-CEG (CEGR3F) atua no setor de petróleo e gás, com resultado ligado ao preço do barril, produção e câmbio. É uma das indústrias com maior potencial de dividendos em momentos de preço favorável.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Distribuição vinculada ao resultado e à política de capital da companhia.",
+    historySummary: "O histórico de proventos do CEGR3F varia com o preço do petróleo e decisões estratégicas da empresa. Simule com base no passado disponível e acompanhe comunicados para entender o próximo ciclo.",
+    worthFollowing: "CEGR3F pode ser relevante para quem busca exposição ao setor de energia com potencial de dividendos expressivos. Considere também volatilidade de commodities e risco político.",
+    listDescription: "CIA DISTRIB DE GAS DO RIO DE JANEIRO-CEG — petróleo e gás com dividendos ligados ao ciclo de commodities.",
+    faqs: [
+      { question: "CEGR3F paga dividendos regulares?", answer: "A regularidade depende do preço do petróleo e da política da empresa. Simulações passadas não garantem o futuro." },
+      { question: "Como estimar meus proventos?", answer: "Informe CEGR3F e sua quantidade de ações no simulador desta página para uma estimativa educacional." }
+    ],
+  },
+
+  {
+    ticker: "CRPG3F",
+    companyName: "TRONOX PIGMENTOS DO BRASIL S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "TRONOX PIGMENTOS DO BRASIL S.A. (CRPG3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CRPG3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CRPG3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "TRONOX PIGMENTOS DO BRASIL S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CRPG3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CRPG3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "RPAD3F",
+    companyName: "ALFA HOLDINGS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "ALFA HOLDINGS S.A. (RPAD3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do RPAD3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe RPAD3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "ALFA HOLDINGS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "RPAD3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker RPAD3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "PLAS3F",
+    companyName: "PLASCAR PARTICIPACOES INDUSTRIAIS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "PLASCAR PARTICIPACOES INDUSTRIAIS S.A. (PLAS3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do PLAS3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe PLAS3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "PLASCAR PARTICIPACOES INDUSTRIAIS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "PLAS3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker PLAS3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "B1003F",
+    companyName: "CIABRASF CIA BRASILEIRA DE SERVIÇOS FINANCEIROS SA",
+    sectorSlug: "consumo",
+    shortDescription: "CIABRASF CIA BRASILEIRA DE SERVIÇOS FINANCEIROS SA (B1003F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do B1003F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe B1003F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CIABRASF CIA BRASILEIRA DE SERVIÇOS FINANCEIROS SA — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "B1003F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker B1003F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BMIN3F",
+    companyName: "BCO MERCANTIL DE INVESTIMENTOS S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "BCO MERCANTIL DE INVESTIMENTOS S.A. (BMIN3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BMIN3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BMIN3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BCO MERCANTIL DE INVESTIMENTOS S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BMIN3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BMIN3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "PTNT4F",
+    companyName: "PETTENATI S.A. INDUSTRIA TEXTIL",
+    sectorSlug: "consumo",
+    shortDescription: "PETTENATI S.A. INDUSTRIA TEXTIL (PTNT4F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do PTNT4F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe PTNT4F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "PETTENATI S.A. INDUSTRIA TEXTIL — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "PTNT4F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker PTNT4F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CALI3F",
+    companyName: "CONSTRUTORA ADOLPHO LINDENBERG S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "CONSTRUTORA ADOLPHO LINDENBERG S.A. (CALI3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do CALI3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe CALI3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "CONSTRUTORA ADOLPHO LINDENBERG S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "CALI3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker CALI3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "CBEE3F",
+    companyName: "AMPLA ENERGIA E SERVICOS S.A.",
+    sectorSlug: "energia",
+    shortDescription: "AMPLA ENERGIA E SERVICOS S.A. (CBEE3F) atua no setor elétrico brasileiro, com geração, transmissão ou distribuição de energia. Empresas de energia costumam ter receita contratada e são acompanhadas por investidores de dividendos que buscam visibilidade de fluxo de caixa.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Proventos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de proventos do CBEE3F reflete contratos de concessão, revisões tarifárias e decisões de CAPEX. Simule com base no passado, mas acompanhe comunicados regulatórios antes de projetar o futuro.",
+    worthFollowing: "CBEE3F pode interessar a quem busca uma ação com receita relativamente previsível no setor de utilities. Considere também risco regulatório e o ciclo de renovação de concessões.",
+    listDescription: "AMPLA ENERGIA E SERVICOS S.A. — empresa do setor elétrico com histórico de proventos.",
+    faqs: [
+      { question: "CBEE3F é uma ação defensiva?", answer: "Empresas de energia tendem a ter receita mais estável, mas risco regulatório e de CAPEX existem. O histórico de dividendos não garante o próximo pagamento." },
+      { question: "Como calcular meus dividendos?", answer: "Use a calculadora desta página com o ticker CBEE3F e sua quantidade de ações." }
+    ],
+  },
+
+  {
+    ticker: "MWET3F",
+    companyName: "WETZEL S.A.",
+    sectorSlug: "consumo",
+    shortDescription: "WETZEL S.A. (MWET3F) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do MWET3F reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe MWET3F se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "WETZEL S.A. — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "MWET3F é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker MWET3F na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
+
+  {
+    ticker: "BRAX",
+    companyName: "BRAX",
+    sectorSlug: "consumo",
+    shortDescription: "BRAX (BRAX) atua no setor de consumo, com receita ligada ao varejo e ao poder de compra da população. O histórico de proventos acompanha margens, expansão e geração de caixa da companhia.",
+    dividendYieldPct: 0,
+    payoutPct: 0,
+    priceBrl: 0,
+    paymentFrequency: "Dividendos conforme resultado e política de distribuição da companhia.",
+    historySummary: "O histórico de dividendos do BRAX reflete ciclos de consumo, competição e estratégia de expansão. Compare o fluxo recebido nos últimos 12 meses com o preço atual para avaliar o yield em contexto.",
+    worthFollowing: "Acompanhe BRAX se você busca exposição ao consumo doméstico com algum histórico de distribuição. Margens e crescimento competem com o payout — analise os relatórios trimestrais.",
+    listDescription: "BRAX — consumo com histórico de proventos ligado ao mercado interno.",
+    faqs: [
+      { question: "BRAX é uma ação defensiva?", answer: "Empresas de consumo básico tendem a ser mais resilientes, mas não há garantia de dividendos estáveis. Confira sempre os comunicados." },
+      { question: "Como simular dividendos?", answer: "Use o ticker BRAX na calculadora desta página para estimativas com base em dados históricos disponíveis." }
+    ],
+  },
 ];
