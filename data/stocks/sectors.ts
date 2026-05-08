@@ -7,6 +7,7 @@ export const SECTORS: Record<SectorSlug, SectorRecord> = {
   bancos: {
     slug: "bancos",
     name: "Bancos",
+    icon: "account_balance",
     intro:
       "O setor bancário na B3 concentra grandes instituições de crédito e serviços financeiros com histórico de distribuição de lucros aos acionistas. Bancos costumam combinar dividendos e juros sobre capital próprio (JCP), o que altera a forma como o investidor tributa e acompanha os proventos.",
     dividendRelevance:
@@ -32,6 +33,7 @@ export const SECTORS: Record<SectorSlug, SectorRecord> = {
   energia: {
     slug: "energia",
     name: "Energia elétrica",
+    icon: "bolt",
     intro:
       "Empresas de geração, transmissão e comercialização de energia elétrica costumam ter contratos e regulação que influenciam fluxo de caixa e distribuição de resultados. Na B3, há nomes ligados a concessões, renováveis e infraestrutura.",
     dividendRelevance:
@@ -57,6 +59,7 @@ export const SECTORS: Record<SectorSlug, SectorRecord> = {
   mineracao: {
     slug: "mineracao",
     name: "Mineração",
+    icon: "landscape",
     intro:
       "A mineração brasileira é marcada por empresas globais em minério de ferro e outros metais. O setor é fortemente cíclico: preço de commodities, demanda internacional e custos operacionais movem lucros e, consequentemente, políticas de dividendos.",
     dividendRelevance:
@@ -82,6 +85,7 @@ export const SECTORS: Record<SectorSlug, SectorRecord> = {
   consumo: {
     slug: "consumo",
     name: "Consumo",
+    icon: "shopping_bag",
     intro:
       "Empresas de bens de consumo (bebidas, alimentos, higiene e similares) costumam ter receitas ligadas ao varejo e ao poder de compra da população. Na B3, há nomes com escala nacional e exposição a câmbio e commodities agrícolas indiretamente.",
     dividendRelevance:
@@ -102,6 +106,7 @@ export const SECTORS: Record<SectorSlug, SectorRecord> = {
   industria: {
     slug: "industria",
     name: "Indústria",
+    icon: "factory",
     intro:
       "Fabricantes de equipamentos, papel e celulose, entre outros segmentos industriais, aparecem na B3 com perfis de risco e ciclo diferentes de bancos ou commodities puras. Lucro e distribuição variam com capacidade ociosa, exportação e custo de capital.",
     dividendRelevance:
@@ -122,6 +127,7 @@ export const SECTORS: Record<SectorSlug, SectorRecord> = {
   petroleo: {
     slug: "petroleo",
     name: "Petróleo e gás",
+    icon: "oil_barrel",
     intro:
       "O setor de petróleo e gás na B3 é dominado pela Petrobras, empresa de capital misto com forte peso no Ibovespa. Resultados e política de dividendos estão ligados ao preço do barril, câmbio, produção e decisões estratégicas da companhia.",
     dividendRelevance:
@@ -147,6 +153,7 @@ export const SECTORS: Record<SectorSlug, SectorRecord> = {
   servicos_financeiros: {
     slug: "servicos_financeiros",
     name: "Serviços financeiros",
+    icon: "payments",
     intro:
       "Além de bancos tradicionais, a B3 inclui infraestrutura de mercado: bolsa, câmara de compensação e serviços correlatos. Esses negócios costumam estar ligados a volume de negócios, listagens e produtos derivados.",
     dividendRelevance:

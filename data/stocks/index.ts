@@ -78,10 +78,11 @@ export function formatPercent(value: number, fractionDigits = 1): string {
 }
 
 /** Links para UI (home, simulador): um item por setor cadastrado. */
-export function getSectorNavItems(): { slug: SectorSlug; label: string; href: string }[] {
+export function getSectorNavItems(): { slug: SectorSlug; label: string; href: string; icon: string }[] {
   return getAllSectorSlugs().map((slug) => ({
     slug,
     label: SECTORS[slug].name,
     href: getSectorPath(slug),
+    icon: SECTORS[slug].icon,
   }));
 }

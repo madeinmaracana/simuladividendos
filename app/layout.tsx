@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
+import { IBM_Plex_Mono, Inter, Merriweather } from "next/font/google";
 import { getSeoBaseUrl } from "@/lib/site";
 import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { SiteFooter } from "@/components/layout/SiteFooter";
@@ -8,13 +8,24 @@ import { cn } from "@/lib/cn";
 import { ui } from "@/components/ui/classes";
 import "./globals.css";
 
-const plexSans = IBM_Plex_Sans({
+/** UI principal — Inter com zero cortado (feature "zero") */
+const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-sans",
   display: "swap",
 });
 
+/** Editorial / artigos — Merriweather serif */
+const merriweather = Merriweather({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-serif",
+  display: "swap",
+});
+
+/** Monospace — IBM Plex Mono para código/números tabulares */
 const plexMono = IBM_Plex_Mono({
   subsets: ["latin"],
   weight: ["400", "500", "600"],
@@ -79,8 +90,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`${plexSans.variable} ${plexMono.variable}`}>
-      <body className={`${plexSans.className} min-h-screen antialiased`}>
+    <html lang="pt-BR" className={`${inter.variable} ${merriweather.variable} ${plexMono.variable}`}>
+      <head>
+        {/* Material Symbols Outlined — ícones do Google usados no design system */}
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block"
+        />
+      </head>
+      <body className={`${inter.className} min-h-screen antialiased`}>
         <GoogleAnalytics />
         <div className="flex min-h-screen flex-col">
           <div
