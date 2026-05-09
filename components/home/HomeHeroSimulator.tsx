@@ -257,7 +257,7 @@ export function HomeHeroSimulator() {
             "disabled:cursor-not-allowed disabled:opacity-40",
           )}
         >
-          <span className="text-xl font-medium tracking-[-0.6px] text-black">
+          <span className="text-[1.25rem] font-medium tracking-[-0.6px] text-black">
             {loading ? "Carregando..." : "Simular dividendos"}
           </span>
           <span className="flex h-[72px] w-[72px] shrink-0 items-center justify-center rounded-full bg-black">

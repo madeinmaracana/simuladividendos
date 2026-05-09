@@ -10,11 +10,11 @@ export function ArticleCard({ article }: ArticleCardProps) {
     <article className="flex">
       <Link
         href={`/artigos/${article.slug}`}
-        className="flex flex-1 flex-col justify-end gap-4 rounded-2xl bg-white p-6 no-underline transition hover:shadow-md"
+        className="flex flex-1 flex-col justify-end gap-4 rounded-2xl bg-[var(--color-surface)] p-6 no-underline transition hover:shadow-md"
         style={{ minHeight: "240px" }}
       >
         {/* Image placeholder */}
-        <div className="flex-1 rounded-xl bg-neutral-100 min-h-[80px]" />
+        <div className="flex-1 rounded-xl bg-[var(--color-surface-muted)] min-h-[80px]" />
 
         {/* Title at bottom — Merriweather italic */}
         <h2 className="font-serif line-clamp-3 text-base font-medium italic leading-snug text-[var(--color-text)]">

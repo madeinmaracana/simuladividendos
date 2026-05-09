@@ -116,7 +116,7 @@ export default function HomePage() {
               <li key={slug} className="flex-1">
                 <Link
                   href={href}
-                  className="flex h-[140px] flex-col justify-between rounded-2xl bg-white p-4 no-underline transition hover:shadow-md"
+                  className="flex h-[140px] flex-col justify-between rounded-2xl bg-[var(--color-surface)] p-4 no-underline transition hover:shadow-md"
                 >
                   <Icon name={icon} size="md" className="text-[var(--color-text)]" />
                   <span className="text-sm font-medium text-[var(--color-text)]">{label}</span>
@@ -153,7 +153,7 @@ export default function HomePage() {
           <ul className="flex flex-col gap-2">
             {FAQ_ITEMS.map((item) => (
               <li key={item.question}>
-                <details className="group rounded-2xl bg-white">
+                <details className="group rounded-2xl bg-[var(--color-surface)]">
                   <summary className="flex cursor-pointer list-none items-center justify-between px-6 py-5 marker:content-none [&::-webkit-details-marker]:hidden">
                     <p className="text-sm font-medium text-[var(--color-text)]">{item.question}</p>
                     <svg
