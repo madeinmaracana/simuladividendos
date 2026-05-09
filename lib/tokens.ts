@@ -20,9 +20,9 @@
 // ---------------------------------------------------------------------------
 
 export const fontFamily = {
-  sans:  "Inter",          // UI principal — carregada via next/font, var(--font-sans)
-  serif: "Merriweather",   // Editorial / artigos — var(--font-serif)
-  mono:  "IBM Plex Mono",  // Código / números tabulares — var(--font-mono)
+  sans:  "Inter",         // UI principal — carregada via next/font, var(--font-sans)
+  serif: "Merriweather",  // Editorial / artigos — var(--font-serif)
+  mono:  "Inter",         // Números tabulares — Inter com slashed-zero ("zero" 1), var(--font-mono)
 } as const;
 
 // ---------------------------------------------------------------------------
@@ -55,22 +55,33 @@ export const lineHeight = {
 // Espaçamento — Variable collection Figma: 4 · 8 · 16 · 24 · 40
 // ---------------------------------------------------------------------------
 
-/** Escala de espaçamento em rem (baseada nos valores exatos do Figma) */
+/**
+ * Escala de espaçamento em rem — cobre todos os valores em uso no codebase.
+ * Âncoras Figma: 1 · 2 · 4 · 6 · 10 (4 · 8 · 16 · 24 · 40px).
+ * Corresponde 1:1 aos utilitários Tailwind gap-N / p-N / m-N.
+ */
 export const space = {
-  1:  "0.25rem",  //  4px
-  2:  "0.5rem",   //  8px
-  4:  "1rem",     // 16px
-  6:  "1.5rem",   // 24px
-  10: "2.5rem",   // 40px
+  "0.5": "0.125rem",  //  2px
+  1:     "0.25rem",   //  4px ★
+  "1.5": "0.375rem",  //  6px
+  2:     "0.5rem",    //  8px ★
+  "2.5": "0.625rem",  // 10px
+  3:     "0.75rem",   // 12px
+  4:     "1rem",      // 16px ★
+  5:     "1.25rem",   // 20px
+  6:     "1.5rem",    // 24px ★
+  8:     "2rem",      // 32px
+  12:    "3rem",      // 48px
+  20:    "5rem",      // 80px
 } as const;
 
 /** Aliases semânticos para gap/padding */
 export const gap = {
-  xs: space[1],   //  4px — ícone ↔ texto, entre badges
-  sm: space[2],   //  8px — entre itens de lista
-  md: space[4],   // 16px — entre componentes
-  lg: space[6],   // 24px — entre seções internas
-  xl: space[10],  // 40px — entre seções de página
+  xs: space[1],    //  4px — ícone ↔ texto, entre badges
+  sm: space[2],    //  8px — entre itens de lista
+  md: space[4],    // 16px — entre componentes
+  lg: space[6],    // 24px — entre seções internas
+  xl: space[12],   // 48px — entre seções de página
 } as const;
 
 // ---------------------------------------------------------------------------

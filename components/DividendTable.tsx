@@ -19,7 +19,7 @@ export function DividendTable({
       <p
         className={cn(
           ui.body,
-          "rounded-xl border border-dashed border-[var(--border)] bg-neutral-50/80 px-4 py-10 text-center dark:bg-neutral-900/40"
+          "rounded-xl border border-dashed border-[var(--border)] bg-neutral-50/80 px-4 py-12 text-center dark:bg-neutral-900/40"
         )}
       >
         {emptyMessage}

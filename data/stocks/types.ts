@@ -20,7 +20,8 @@ export type SectorRecord = {
   /** Nome exibido, ex.: "Bancos" */
   name: string;
   intro: string;
-  dividendRelevance: string;
+  /** Texto editorial sobre dividendos no setor. Array de parágrafos ou string simples. */
+  dividendRelevance: string | string[];
   faqs: FaqItem[];
   /**
    * Nome do ícone no Google Fonts Material Symbols Outlined.

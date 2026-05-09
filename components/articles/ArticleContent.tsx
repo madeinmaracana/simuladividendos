@@ -8,7 +8,7 @@ type ArticleContentProps = {
 
 export function ArticleContent({ sections }: ArticleContentProps) {
   return (
-    <div className="article-body flex flex-col gap-8 sm:gap-10">
+    <div className="article-body flex flex-col gap-8 sm:gap-12">
       {sections.map((section) => (
         <section key={section.heading} aria-label={section.heading} className="flex flex-col gap-3">
           <h2 className={cn("text-left", ui.sectionTitle)}>{section.heading}</h2>

@@ -14,6 +14,7 @@ import {
 } from "@/components/fii";
 import {
   CompanyInfoSection,
+  DividendHistoryChart,
   DividendHistorySection,
   DividendSummaryText,
   DividendTableSimple,
@@ -273,6 +274,16 @@ export default async function FiiSlugPage({ params }: PageProps) {
         <TickerPageRow>
           <DividendTableSimple rows={tableRows} />
         </TickerPageRow>
+
+        {dividends.length > 0 && (
+          <TickerPageRow>
+            <DividendHistoryChart
+              dividends={dividends}
+              currency={currency}
+              frequencyHint={frequencyHint}
+            />
+          </TickerPageRow>
+        )}
 
         <TickerPageRow>
           <DividendHistorySection

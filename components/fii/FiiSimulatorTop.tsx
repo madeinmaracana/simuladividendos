@@ -61,7 +61,7 @@ export function FiiSimulatorTop({
   return (
     <section
       aria-labelledby="heading-simulacao-ticker"
-      className={cn(ui.pageSection, "flex flex-col gap-8 lg:gap-10", className)}
+      className={cn(ui.pageSection, "flex flex-col gap-8 lg:gap-12", className)}
     >
       <div className={ui.tickerTopGrid}>
         <div className={cn(ui.tickerTopMain, "order-1 flex flex-col gap-4")}>

@@ -41,6 +41,17 @@ code, pre, kbd, samp {
 }
 
 /* ---------------------------------------------------------------------------
+   font-mono → Inter com slashed-zero (feature "zero")
+   Todos os elementos que usam font-mono ganham o 0 com risco automaticamente.
+   --------------------------------------------------------------------------- */
+@layer utilities {
+  .font-mono {
+    font-family: var(--font-mono);
+    font-feature-settings: "zero" 1, "tnum" 1;
+  }
+}
+
+/* ---------------------------------------------------------------------------
    Utilitários tipográficos — escala Figma
    Uso: className="ds-text-xl ds-semibold"
    --------------------------------------------------------------------------- */
@@ -115,4 +126,15 @@ code, pre, kbd, samp {
 
 .simulator-cta-press:active:not(:disabled) {
   transform: scale(0.985);
+}
+
+/* Diagonal stripe decoration */
+.ds-stripe {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #000 0px,
+    #000 8px,
+    #A6FF00 8px,
+    #A6FF00 16px
+  );
 }

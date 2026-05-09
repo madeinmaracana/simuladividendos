@@ -9,9 +9,12 @@ export const SECTORS: Record<SectorSlug, SectorRecord> = {
     name: "Bancos",
     icon: "account_balance",
     intro:
-      "O setor bancário na B3 concentra grandes instituições de crédito e serviços financeiros com histórico de distribuição de lucros aos acionistas. Bancos costumam combinar dividendos e juros sobre capital próprio (JCP), o que altera a forma como o investidor tributa e acompanha os proventos.",
-    dividendRelevance:
-      "Para quem busca renda recorrente, bancos costumam ser um dos primeiros setores analisados por combinar escala, regulação conhecida e políticas de retorno ao acionista relativamente previsíveis — ainda assim, margens, inadimplência e o ciclo de juros mudam muito o cenário. Comparar dividend yield entre pares do mesmo setor ajuda a contextualizar, mas não substitui análise de fundamentos.",
+      "O setor bancário na B3 concentra grandes instituições de crédito e serviços financeiros com histórico de distribuição de lucros aos acionistas. Bancos costumam combinar dividendos e juros sobre capital próprio (JCP), o que altera tanto a tributação quanto a forma como o investidor acompanha os proventos ao longo do ano.",
+    dividendRelevance: [
+      "Para quem busca renda recorrente, bancos costumam ser um dos primeiros setores analisados. A lógica é direta: instituições financeiras lucrativas tendem a distribuir parte do resultado via dividendos e JCP, com políticas que em alguns casos são comunicadas explicitamente ao mercado — o que facilita o acompanhamento do fluxo esperado.",
+      "Na prática, o quadro é mais variado. Margens financeiras, inadimplência, provisões e o ciclo da Selic influenciam diretamente a geração de caixa de cada banco. Em períodos de aperto monetário, custo de captação e resultado de tesouraria se comportam de forma distinta entre instituições, a depender do mix de crédito, presença no agronegócio e exposição a seguros e outros produtos.",
+      "O dividend yield bancário pode parecer atrativo em certos momentos e menos competitivo em outros. Comparar apenas o yield entre pares ignora diferenças de capitalização, qualidade da carteira e perspectiva de resultado. Use as páginas individuais de cada ticker para ver o histórico real de proventos antes de qualquer conclusão.",
+    ],
     faqs: [
       {
         question: "Por que bancos pagam tantos proventos?",
@@ -35,9 +38,12 @@ export const SECTORS: Record<SectorSlug, SectorRecord> = {
     name: "Energia elétrica",
     icon: "bolt",
     intro:
-      "Empresas de geração, transmissão e comercialização de energia elétrica costumam ter contratos e regulação que influenciam fluxo de caixa e distribuição de resultados. Na B3, há nomes ligados a concessões, renováveis e infraestrutura.",
-    dividendRelevance:
-      "Investidores de dividendos frequentemente olham utilities e transmissão por buscarem visibilidade de receita contratada — mas revisões tarifárias, hidrologia (quando há geração hidráulica no mix) e políticas de CAPEX podem mudar o ritmo dos proventos.",
+      "O setor elétrico na B3 engloba geradoras, transmissoras e distribuidoras com perfis bastante distintos de receita e risco. A natureza regulada de boa parte das concessões atrai investidores que buscam previsibilidade de fluxo de caixa, mas nem todo ativo do setor tem o mesmo grau de proteção.",
+    dividendRelevance: [
+      "Empresas de transmissão de energia costumam ser vistas como as de perfil mais estável dentro do setor: a receita é basicamente contratual, com ajustes periódicos pela regulação da Aneel, e o CAPEX após a construção da linha tende a ser baixo. Isso cria condições para payout mais elevado — o que explica por que vários investidores de dividendos acompanham transmissoras de perto.",
+      "Geradoras trazem um fator de risco adicional: o hidrológico. Em anos de escassez hídrica, usinas que dependem de reservatórios podem precisar comprar energia no mercado spot a preços mais altos, comprimindo margem. Geradoras com mix diversificado (hidro + eólica + solar) têm mitigado parte dessa exposição nos últimos ciclos.",
+      "Revisões tarifárias periódicas e políticas de CAPEX para renovação de concessões são variáveis que podem alterar o ritmo de proventos de uma empresa para outra. Olhe o histórico de distribuição de cada ativo individualmente; o setor como um todo não garante uniformidade de rendimento.",
+    ],
     faqs: [
       {
         question: "Empresas de energia são defensivas?",
@@ -61,9 +67,12 @@ export const SECTORS: Record<SectorSlug, SectorRecord> = {
     name: "Mineração",
     icon: "landscape",
     intro:
-      "A mineração brasileira é marcada por empresas globais em minério de ferro e outros metais. O setor é fortemente cíclico: preço de commodities, demanda internacional e custos operacionais movem lucros e, consequentemente, políticas de dividendos.",
-    dividendRelevance:
-      "Em anos de superávit de caixa e preços altos, é comum ver dividendos extraordinários ou políticas agressivas de retorno; em viradas de ciclo, a empresa pode reduzir proventos para preservar balanço. Por isso o yield pode parecer alto em certos momentos sem que isso seja sustentável para sempre.",
+      "A mineração brasileira tem protagonismo global, sobretudo em minério de ferro. O setor é fortemente cíclico: preço de commodities, demanda internacional (especialmente da China) e custos operacionais movem lucros e políticas de dividendos de forma expressiva.",
+    dividendRelevance: [
+      "Em anos de preço elevado e volume alto, mineradoras costumam gerar caixa livre robusto e podem distribuir dividendos expressivos — incluindo pagamentos extraordinários que inflam o yield do período. Por isso, o investidor que acompanha o setor precisa separar o que é distribuição recorrente do que é pontual, relacionado a um ciclo favorável.",
+      "Quando o ciclo se inverte — queda no preço do minério, retração da demanda industrial global ou custos operacionais acima do esperado —, a empresa pode reduzir proventos para preservar balanço e financiar projetos. O dividend yield que parecia alto em retrospecto pode não se repetir nos anos seguintes.",
+      "Para contextualizar o histórico, vale acompanhar o preço do minério de ferro e o guidance de produção divulgado pelas companhias. Use as páginas individuais de cada ticker para ver o histórico real de proventos e simular cenários com a sua quantidade de cotas — sem tratar o passado como garantia do futuro.",
+    ],
     faqs: [
       {
         question: "Por que o dividend yield da mineração oscila tanto?",
@@ -87,9 +96,12 @@ export const SECTORS: Record<SectorSlug, SectorRecord> = {
     name: "Consumo",
     icon: "shopping_bag",
     intro:
-      "Empresas de bens de consumo (bebidas, alimentos, higiene e similares) costumam ter receitas ligadas ao varejo e ao poder de compra da população. Na B3, há nomes com escala nacional e exposição a câmbio e commodities agrícolas indiretamente.",
-    dividendRelevance:
-      "O retorno ao acionista depende de margens, geração de caixa e política de remuneração da companhia. Em consumo, é comum comparar consistência de dividendos com crescimento e reinvestimento — empresas em expansão podem priorizar CAPEX em certos ciclos.",
+      "Empresas de bens de consumo listadas na B3 atuam em bebidas, alimentos, higiene e segmentos correlatos. Elas costumam ter receitas ligadas ao varejo e ao poder de compra da população, com exposição indireta a câmbio e commodities agrícolas via custos de insumos.",
+    dividendRelevance: [
+      "O retorno ao acionista em consumo depende de margens operacionais, geração de caixa livre e política de remuneração da companhia. Empresas com marcas consolidadas e poder de repasse de preços ao consumidor tendem a ter mais consistência na distribuição; negócios em expansão agressiva costumam reter mais caixa para crescimento.",
+      "Inflação de custos — matérias-primas agrícolas, embalagens, logística — pressiona margem em certos ciclos. Quando o poder de repasse não acompanha o custo, o resultado cai e o espaço para payout se reduz. Por isso, anos de margem pressionada podem coincidir com dividendos menores mesmo em companhias com histórico robusto.",
+      "Acompanhe o ritmo de distribuição de cada ativo de forma individual. O rótulo 'defensivo' aplicado a consumo indica demanda recorrente, mas não garante dividendos estáveis em qualquer cenário. Use o histórico real de proventos de cada ticker como ponto de partida.",
+    ],
     faqs: [
       {
         question: "Consumo é “defensivo” para dividendos?",
@@ -108,9 +120,12 @@ export const SECTORS: Record<SectorSlug, SectorRecord> = {
     name: "Indústria",
     icon: "factory",
     intro:
-      "Fabricantes de equipamentos, papel e celulose, entre outros segmentos industriais, aparecem na B3 com perfis de risco e ciclo diferentes de bancos ou commodities puras. Lucro e distribuição variam com capacidade ociosa, exportação e custo de capital.",
-    dividendRelevance:
-      "Empresas industriais podem alternar anos de payout mais alto com períodos de investimento pesado. Por isso, o investidor de dividendos costuma olhar histórico longo e alavancagem, não só o último yield divulgado.",
+      "O setor industrial na B3 é heterogêneo: vai de fabricantes de bens de capital e equipamentos a papel, celulose e embalagens. Perfis de risco e ciclo variam bastante, assim como a capacidade de distribuir dividendos em diferentes momentos do negócio.",
+    dividendRelevance: [
+      "A capacidade de pagar dividendos em empresas industriais está diretamente ligada ao ciclo dos seus produtos. Fabricantes de bens de capital dependem de encomendas e CAPEX corporativo; produtores de papel e celulose oscilam com preço de commodity florestal e demanda de embalagens. Anos favoráveis permitem payout mais alto; ciclos de inversão costumam pressionar tanto margem quanto distribuição.",
+      "Companhias industriais com geração de caixa consistente, baixo endividamento e ciclos de investimento espaçados tendem a ter mais regularidade nos proventos. Mas períodos de expansão de capacidade, aquisições ou pressão de custo de matéria-prima podem reduzir o espaço para dividendos mesmo em empresas com bom histórico.",
+      "Para o investidor de dividendos, histórico longo e alavancagem são mais informativos do que o yield de um único ano. Use as páginas individuais de cada ticker para ver o comportamento real dos proventos ao longo do tempo.",
+    ],
     faqs: [
       {
         question: "Indústria paga dividendos mensais?",
@@ -127,11 +142,14 @@ export const SECTORS: Record<SectorSlug, SectorRecord> = {
   petroleo: {
     slug: "petroleo",
     name: "Petróleo e gás",
-    icon: "oil_barrel",
+    icon: "local_gas_station",
     intro:
-      "O setor de petróleo e gás na B3 é dominado pela Petrobras, empresa de capital misto com forte peso no Ibovespa. Resultados e política de dividendos estão ligados ao preço do barril, câmbio, produção e decisões estratégicas da companhia.",
-    dividendRelevance:
-      "Em períodos de preço de petróleo favorável e geração de caixa, a empresa pode elevar retorno aos acionistas; em cenários adversos, a prioridade pode ser dívida e investimento. Acompanhar comunicados ao mercado é essencial.",
+      "O setor de petróleo e gás na B3 tem forte concentração em grandes operadoras de exploração e produção offshore. Resultados e política de dividendos estão diretamente ligados ao preço do barril, ao câmbio, ao volume de produção e às decisões estratégicas das companhias.",
+    dividendRelevance: [
+      "Quando o preço do petróleo está elevado e a produção opera bem, empresas do setor podem gerar caixa expressivo e distribuir dividendos significativos — incluindo pagamentos extraordinários que elevam o yield do período de forma pontual. Nesses ciclos, o setor costuma aparecer entre os maiores pagadores de proventos da B3.",
+      "A volatilidade é o traço mais importante a considerar. Oscilações no preço do Brent, variações cambiais, custo de extração offshore e mudanças de política energética ou de gestão afetam diretamente o resultado. Dividendos extraordinários de anos de superciclo não devem ser usados como base para projeção recorrente.",
+      "Acompanhe o guidance de produção, o nível de endividamento e os comunicados de política de capital antes de interpretar qualquer número de yield. Use o histórico disponível em cada página de ticker para simular com base em dados reais, sem confundir passado com garantia futura.",
+    ],
     faqs: [
       {
         question: "A Petrobras sempre paga o mesmo dividendo?",
@@ -155,9 +173,12 @@ export const SECTORS: Record<SectorSlug, SectorRecord> = {
     name: "Serviços financeiros",
     icon: "payments",
     intro:
-      "Além de bancos tradicionais, a B3 inclui infraestrutura de mercado: bolsa, câmara de compensação e serviços correlatos. Esses negócios costumam estar ligados a volume de negócios, listagens e produtos derivados.",
-    dividendRelevance:
-      "A política de dividendos segue lucro, investimento em tecnologia e regulação. Como em qualquer ação, o passado não garante o futuro — use simulações como apoio educacional, não como promessa.",
+      "Além dos bancos, a B3 lista empresas de infraestrutura de mercado, gestoras, seguradoras e fintechs. Esses negócios têm perfis de receita e risco distintos entre si, o que também se reflete nas políticas de dividendos.",
+    dividendRelevance: [
+      "Empresas de infraestrutura de mercado — como bolsas e câmaras de compensação — costumam ter receitas atreladas ao volume de negócios, número de contratos e produtos financeiros em circulação. Em períodos de mercado aquecido, a geração de caixa tende a ser robusta; em momentos de baixa atividade, volumes caem e margens se comprimem.",
+      "Seguradoras e gestoras de ativos têm dinâmicas diferentes: resultado depende de sinistralidade, rentabilidade de carteira e captação. A política de dividendos de cada uma reflete essas particularidades — algumas têm payout explícito, outras são mais discricionárias na distribuição.",
+      "Comparar serviços financeiros com bancos apenas pelo yield costuma ser enganoso. Os drivers de receita, a exposição regulatória e o perfil de risco são diferentes. Analise cada companhia individualmente e use o histórico de proventos disponível nas páginas de ticker para contextualizar a métrica.",
+    ],
     faqs: [
       {
         question: "Ações de infraestrutura de mercado são iguais a bancos?",

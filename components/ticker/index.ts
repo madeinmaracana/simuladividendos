@@ -1,8 +1,11 @@
 export { TickerHero } from "./TickerHero";
+export { TickerHeroSimulatorCard } from "./TickerHeroSimulatorCard";
+export type { TickerHeroSimulatorCardProps } from "./TickerHeroSimulatorCard";
 export { SearchIntentTeaser } from "./SearchIntentTeaser";
 export { DividendSummaryText } from "./DividendSummaryText";
 export { DividendTableSimple } from "./DividendTableSimple";
 export type { DividendTableColumn } from "@/lib/ticker-page/table";
+export { DividendHistoryChart } from "./DividendHistoryChart";
 export { DividendHistorySection } from "./DividendHistorySection";
 export { DividendHistoryPreview } from "./DividendHistoryPreview";
 export { DividendHistoryExpandable } from "./DividendHistoryExpandable";

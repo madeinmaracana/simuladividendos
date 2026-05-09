@@ -745,4 +745,596 @@ export const ARTICLES: ArticleRecord[] = [
       },
     ],
   },
+
+  // ── Artigos por ticker ────────────────────────────────────────────────────
+
+  {
+    slug: "bbas3-dividendos",
+    lastModified: "2026-05-09",
+    title: "BBAS3 dividendos: histórico do Banco do Brasil e como simular",
+    description:
+      "Entenda o histórico de proventos do Banco do Brasil (BBAS3), como funciona a distribuição via dividendos e JCP, e como simular quanto você receberia com a sua quantidade de cotas.",
+    keywords: ["BBAS3 dividendos", "Banco do Brasil dividendos", "BBAS3 dividend yield", "BBAS3 proventos"],
+    relatedTickers: ["BBAS3", "ITUB4", "TAEE11", "VALE3"],
+    relatedSectors: ["bancos"],
+    relatedArticleSlugs: ["o-que-e-dividend-yield", "melhores-acoes-de-dividendos-brasil"],
+    sections: [
+      {
+        heading: "Sobre o Banco do Brasil (BBAS3)",
+        paragraphs: [
+          "O Banco do Brasil é uma instituição financeira de controle misto — com participação da União — e presença consolidada em crédito rural, agronegócio, varejo e atacado. É uma das maiores instituições do país e costuma ser acompanhada por investidores que buscam proventos no segmento bancário.",
+          "Por ser um banco de grande porte com política de retorno ao acionista comunicada ao mercado, BBAS3 aparece com frequência em carteiras voltadas a dividendos. A distribuição se dá via dividendos e juros sobre capital próprio (JCP), que têm tratamento tributário distinto — detalhe importante para quem declara imposto de renda.",
+        ],
+      },
+      {
+        heading: "Histórico de proventos e frequência",
+        paragraphs: [
+          "O histórico de proventos do BBAS3 reflete ciclos de lucro, política de capital e o cenário de juros no Brasil. Anos com resultado operacional forte costumam coincidir com distribuições mais expressivas; em momentos de maior cautela regulatória ou mercado adverso, o ritmo pode mudar.",
+          "A frequência de pagamento tende a ser periódica, mas o calendário oficial é divulgado pela própria companhia e pode variar. Consulte sempre o RI do Banco do Brasil para confirmar datas e valores antes de qualquer decisão.",
+        ],
+      },
+      {
+        heading: "Vale acompanhar BBAS3 para dividendos?",
+        paragraphs: [
+          "Faz sentido acompanhar BBAS3 se você quer exposição a um banco com capilaridade nacional e foco em agronegócio, e aceita os riscos inerentes a uma empresa com participação estatal — incluindo eventual interferência em política de crédito ou de capital.",
+          "Compare BBAS3 com outros bancos usando o dividend yield dos últimos 12 meses como ponto de partida, não como conclusão. Fundamentos, endividamento e perspectiva de resultado completam a análise.",
+        ],
+      },
+      {
+        heading: "Como simular dividendos de BBAS3",
+        paragraphs: [
+          "Na página de BBAS3 no Simula Dividendos, informe a quantidade de cotas que você possui. O simulador multiplica o histórico de proventos por cota pela sua posição e mostra uma estimativa educacional do que teria sido pago nos últimos 12 meses.",
+          "Os valores são baseados em dados públicos disponíveis e não constituem promessa de rendimento futuro. Use a simulação para entender a ordem de grandeza e combine com análise de resultado e comunicados oficiais.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "BBAS3 paga dividendos mensalmente?",
+        answer:
+          "Não necessariamente. O calendário é divulgado pela companhia conforme aprovações e política de capital. Consulte o RI do Banco do Brasil para as datas atualizadas.",
+      },
+      {
+        question: "Qual a diferença entre dividendo e JCP no BBAS3?",
+        answer:
+          "Ambos são formas de retorno ao acionista, mas têm tratamento contábil e tributário diferentes. O JCP é dedutível para a empresa; para o investidor, há retenção na fonte. Consulte um contador para entender o impacto na sua declaração.",
+      },
+      {
+        question: "O dividend yield do BBAS3 é garantido?",
+        answer:
+          "Não. O yield reflete o histórico de um período e varia conforme resultado, preço da ação e política de remuneração. Simulações são educacionais e não projetam o futuro.",
+      },
+    ],
+  },
+
+  {
+    slug: "itub4-dividendos",
+    lastModified: "2026-05-09",
+    title: "ITUB4 dividendos: histórico do Itaú Unibanco e como simular",
+    description:
+      "Veja o histórico de proventos do Itaú Unibanco (ITUB4), como o maior banco privado do Brasil distribui dividendos e JCP, e simule quanto você receberia com a sua posição.",
+    keywords: ["ITUB4 dividendos", "Itaú dividendos", "ITUB4 dividend yield", "ITUB4 proventos"],
+    relatedTickers: ["ITUB4", "BBAS3", "B3SA3", "TAEE11"],
+    relatedSectors: ["bancos"],
+    relatedArticleSlugs: ["o-que-e-dividend-yield", "melhores-acoes-de-dividendos-brasil"],
+    sections: [
+      {
+        heading: "Sobre o Itaú Unibanco (ITUB4)",
+        paragraphs: [
+          "O Itaú Unibanco é o maior banco privado da América Latina por ativos. Com operações em crédito, seguros, gestão de patrimônio e banco de investimento, o grupo tem diversificação de receita que influencia sua capacidade de distribuição ao longo dos ciclos econômicos.",
+          "ITUB4 — as ações preferenciais — é uma das ações mais negociadas da B3 e aparece com frequência em carteiras orientadas a dividendos do setor financeiro. A distribuição combina dividendos e JCP, conforme calendário divulgado pela companhia.",
+        ],
+      },
+      {
+        heading: "Histórico de proventos e frequência",
+        paragraphs: [
+          "O Itaú tem histórico de distribuição periódica ao longo do ano, com combinação de JCP e dividendos aprovados em reuniões do conselho e assembleias. A consistência do resultado financeiro da instituição em vários ciclos contribui para um fluxo de proventos relativamente regular — ainda que os valores variem conforme o ambiente de juros e crédito.",
+          "O volume distribuído em cada período depende do lucro líquido, das exigências de capital regulatório (Basileia) e da política de payout da companhia. Consulte o RI do Itaú para confirmar calendário e tipo de provento.",
+        ],
+      },
+      {
+        heading: "Vale acompanhar ITUB4 para dividendos?",
+        paragraphs: [
+          "O Itaú costuma ser comparado ao Banco do Brasil pelo yield e pela regularidade dos proventos, mas os perfis diferem: ITUB4 tem menor interferência estatal e foco mais acentuado em eficiência operacional e expansão de produtos financeiros.",
+          "Use o histórico disponível como referência e acompanhe resultados trimestrais para avaliar se o ritmo de distribuição se mantém.",
+        ],
+      },
+      {
+        heading: "Como simular dividendos de ITUB4",
+        paragraphs: [
+          "Acesse a página de ITUB4 no Simula Dividendos e informe sua quantidade de cotas. O simulador calcula uma estimativa educacional com base nos proventos pagos nos últimos 12 meses por cota, multiplicados pela sua posição.",
+          "Os valores são educacionais e não constituem projeção. Combine a estimativa com análise de resultado e comunicados oficiais.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "ITUB4 paga mais dividendos que BBAS3?",
+        answer:
+          "A comparação varia conforme o período e o preço de cada ação. Use o histórico de proventos por cota e o yield relativo para comparar — levando em conta que os perfis de risco são diferentes.",
+      },
+      {
+        question: "Qual a frequência de pagamento do ITUB4?",
+        answer:
+          "O Itaú costuma distribuir ao longo do ano via JCP e dividendos. O calendário exato é divulgado pela companhia; consulte o RI para datas atualizadas.",
+      },
+      {
+        question: "O Itaú pode reduzir dividendos?",
+        answer:
+          "Sim. Dividendos dependem de resultado, política de capital e aprovação em assembleia. Não há garantia de manutenção do nível histórico.",
+      },
+    ],
+  },
+
+  {
+    slug: "petr4-dividendos",
+    lastModified: "2026-05-09",
+    title: "PETR4 dividendos: histórico da Petrobras e como simular",
+    description:
+      "Entenda o histórico de proventos da Petrobras (PETR4), por que o dividend yield varia tanto e como simular quanto você receberia com a sua quantidade de ações.",
+    keywords: ["PETR4 dividendos", "Petrobras dividendos", "PETR4 dividend yield", "PETR4 proventos"],
+    relatedTickers: ["PETR4", "VALE3", "BBAS3", "EGIE3"],
+    relatedSectors: ["petroleo"],
+    relatedArticleSlugs: ["o-que-e-dividend-yield", "melhores-acoes-de-dividendos-brasil"],
+    sections: [
+      {
+        heading: "Sobre a Petrobras (PETR4)",
+        paragraphs: [
+          "A Petrobras é uma empresa de capital misto com controle da União e operações concentradas em exploração e produção de petróleo e gás, especialmente no pré-sal offshore. É uma das maiores produtoras de petróleo do mundo e tem peso expressivo no Ibovespa.",
+          "PETR4 são as ações preferenciais da companhia. A política de retorno ao acionista inclui dividendos ordinários e, em alguns ciclos, extraordinários — pagamentos pontuais que podem elevar muito o yield de um determinado período sem refletir um nível recorrente.",
+        ],
+      },
+      {
+        heading: "Por que o dividend yield da Petrobras oscila tanto?",
+        paragraphs: [
+          "O resultado da Petrobras está diretamente ligado ao preço internacional do petróleo (Brent), ao câmbio e ao volume de produção. Em períodos de petróleo a preços altos e produção robusta, a geração de caixa permite distribuições expressivas. Em ciclos adversos, o espaço para dividendos se reduz.",
+          "Dividendos extraordinários, comuns em anos de superciclo de commodity, inflam o yield histórico de um período específico. Antes de interpretar o yield da Petrobras, vale identificar se o provento foi ordinário (recorrente) ou extraordinário (pontual).",
+        ],
+      },
+      {
+        heading: "Vale acompanhar PETR4 para dividendos?",
+        paragraphs: [
+          "PETR4 pode fazer sentido em carteiras que aceitam exposição a commodities e volatilidade de resultado. O risco de ser uma empresa com controle estatal — incluindo possíveis mudanças de política de preços ou de capital — é um fator que o investidor de renda precisa considerar.",
+          "Não trate o dividend yield histórico da Petrobras como referência de rendimento futuro, especialmente se ele inclui períodos de distribuições extraordinárias.",
+        ],
+      },
+      {
+        heading: "Como simular dividendos de PETR4",
+        paragraphs: [
+          "Na página de PETR4 no Simula Dividendos, informe quantas ações você possui. O simulador mostra uma estimativa baseada nos proventos pagos nos últimos 12 meses por cota. Se o período capturou um pagamento extraordinário, o total estimado será mais alto do que a expectativa recorrente.",
+          "Use a simulação como ferramenta educacional para entender a magnitude do fluxo de proventos — sem confundir estimativa histórica com garantia futura.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "PETR4 paga dividendos todo ano?",
+        answer:
+          "Historicamente sim, mas o valor varia muito. Em anos de resultado fraco ou mudança de política de capital, a distribuição pode ser menor ou não ocorrer nos moldes esperados.",
+      },
+      {
+        question: "O que é dividendo extraordinário na Petrobras?",
+        answer:
+          "São pagamentos adicionais além da distribuição ordinária, aprovados quando há excesso de caixa em ciclos favoráveis. Inflam o yield do período, mas não devem ser tratados como recorrentes.",
+      },
+      {
+        question: "PETR4 ou PETR3 para dividendos?",
+        answer:
+          "PETR4 são preferenciais e PETR3 são ordinárias. Ambas participam dos dividendos, mas podem ter tratamento diferente. Verifique a política da companhia e os comunicados para comparar.",
+      },
+    ],
+  },
+
+  {
+    slug: "vale3-dividendos",
+    lastModified: "2026-05-09",
+    title: "VALE3 dividendos: histórico da Vale e como simular",
+    description:
+      "Entenda como a Vale (VALE3) distribui dividendos, por que o yield oscila com o ciclo de minério de ferro e como simular quanto você receberia com a sua posição.",
+    keywords: ["VALE3 dividendos", "Vale dividendos", "VALE3 dividend yield", "VALE3 proventos"],
+    relatedTickers: ["VALE3", "PETR4", "BBAS3", "KLBN11"],
+    relatedSectors: ["mineracao"],
+    relatedArticleSlugs: ["o-que-e-dividend-yield", "melhores-acoes-de-dividendos-brasil"],
+    sections: [
+      {
+        heading: "Sobre a Vale (VALE3)",
+        paragraphs: [
+          "A Vale é uma das maiores mineradoras do mundo, com operações focadas em minério de ferro, pelotas, níquel e cobre. Suas exportações dependem fortemente da demanda industrial global — especialmente da China —, o que torna o negócio altamente sensível a ciclos econômicos internacionais.",
+          "Por ter geração de caixa expressiva em momentos de preço elevado de commodity, a Vale já figurou entre as maiores pagadoras de dividendos da B3. Mas o perfil cíclico faz com que o ritmo de distribuição varie significativamente de um ano para o outro.",
+        ],
+      },
+      {
+        heading: "Como a Vale distribui dividendos",
+        paragraphs: [
+          "A política de capital da Vale contempla dividendos ordinários e, em ciclos favoráveis, pagamentos extraordinários atrelados à geração de caixa livre acima de determinado nível. Em anos de preço do minério elevado, as distribuições podem ser expressivas; em reversões de ciclo, a empresa preserva balanço.",
+          "Essa variabilidade é o traço mais importante para quem acompanha VALE3 pelo ângulo de dividendos. Um yield alto em um determinado período pode refletir uma distribuição extraordinária que não se repete nos anos seguintes.",
+        ],
+      },
+      {
+        heading: "Vale acompanhar VALE3 para dividendos?",
+        paragraphs: [
+          "VALE3 pode compor uma carteira de dividendos para quem aceita exposição ao ciclo de commodities e às oscilações de preço do minério de ferro. Investidores que buscam previsibilidade de rendimento tendem a ter menos conforto com a volatilidade de resultado e distribuição da mineração.",
+          "Acompanhe o preço do minério, o guidance de produção e o nível de dívida para contextualizar o histórico de proventos.",
+        ],
+      },
+      {
+        heading: "Como simular dividendos de VALE3",
+        paragraphs: [
+          "Acesse a página de VALE3 no Simula Dividendos, informe sua posição em cotas e veja a estimativa baseada nos proventos dos últimos 12 meses. Se o período capturou distribuições extraordinárias, o resultado será mais alto do que a expectativa de um ano comum.",
+          "Use a simulação como referência educacional e leia o histórico de eventos individualmente para distinguir proventos ordinários de extraordinários.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Por que o dividend yield da Vale muda tanto?",
+        answer:
+          "Porque o resultado depende do preço do minério de ferro, do câmbio e do volume de produção. Em anos favoráveis, distribuições podem ser altas; em reversões de ciclo, o payout cai.",
+      },
+      {
+        question: "Vale paga dividendos todo ano?",
+        answer:
+          "Historicamente sim, mas os valores variam bastante. A companhia tem política de dividendos mínimos e pode pagar extras conforme geração de caixa.",
+      },
+      {
+        question: "VALE3 é boa para quem busca renda mensal?",
+        answer:
+          "O perfil da Vale é mais de dividendos concentrados em determinados períodos do ano. Para renda mensal, FIIs costumam ser mais adequados.",
+      },
+    ],
+  },
+
+  {
+    slug: "taee11-dividendos",
+    lastModified: "2026-05-09",
+    title: "TAEE11 dividendos: histórico da Taesa e como simular",
+    description:
+      "Veja o histórico de proventos da Taesa (TAEE11), por que a transmissão de energia é acompanhada por investidores de dividendos e como simular o fluxo com a sua posição.",
+    keywords: ["TAEE11 dividendos", "Taesa dividendos", "TAEE11 dividend yield", "TAEE11 proventos"],
+    relatedTickers: ["TAEE11", "EGIE3", "BBAS3", "ITUB4"],
+    relatedSectors: ["energia"],
+    relatedArticleSlugs: ["o-que-e-dividend-yield", "acoes-que-pagam-dividendos-todo-mes"],
+    sections: [
+      {
+        heading: "Sobre a Taesa (TAEE11)",
+        paragraphs: [
+          "A Taesa é uma das maiores transmissoras de energia elétrica do Brasil, com concessões de linhas em várias regiões do país. O negócio de transmissão tem características que atraem investidores de dividendos: receita contratual de longo prazo, baixo CAPEX após a construção das linhas e previsibilidade relativa de resultado.",
+          "TAEE11 é uma unit — estrutura que combina ações ordinárias e preferenciais em um único certificado. Ao simular dividendos, use TAEE11 como ticker para capturar o histórico de proventos da unit.",
+        ],
+      },
+      {
+        heading: "Histórico de proventos da Taesa",
+        paragraphs: [
+          "A Taesa tem histórico de payout elevado, compatível com o perfil de transmissora madura — poucas novas linhas em construção significam menor necessidade de reter caixa para CAPEX. A distribuição costuma ser periódica ao longo do ano, mas o calendário e os valores dependem do resultado e das aprovações.",
+          "O principal risco para o fluxo de proventos está nas revisões tarifárias periódicas conduzidas pela Aneel e no vencimento de concessões. Esses eventos podem alterar a receita futura e a capacidade de distribuição.",
+        ],
+      },
+      {
+        heading: "Vale acompanhar TAEE11 para dividendos?",
+        paragraphs: [
+          "Para investidores que buscam previsibilidade de fluxo e aceitam o risco regulatório de um setor concessionado, TAEE11 costuma aparecer entre as ações mais acompanhadas. O payout histórico elevado e a natureza contratual da receita diferenciam transmissoras de setores mais cíclicos.",
+          "Acompanhe comunicados sobre renovação de concessões e revisões tarifárias para antecipar possíveis mudanças no fluxo de proventos.",
+        ],
+      },
+      {
+        heading: "Como simular dividendos de TAEE11",
+        paragraphs: [
+          "Na página de TAEE11 no Simula Dividendos, informe a quantidade de units que você possui. O simulador calcula uma estimativa educacional com base nos proventos pagos nos últimos 12 meses por cota.",
+          "Lembre que os valores são baseados em histórico público e não constituem projeção. Proventos futuros dependem de resultado, aprovações e eventuais mudanças regulatórias.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "TAEE11 é ação ou FII?",
+        answer:
+          "É uma ação (unit) de uma empresa de transmissão de energia elétrica, não um FII. O perfil de proventos pode lembrar FIIs em alguns aspectos, mas os riscos e a estrutura são diferentes.",
+      },
+      {
+        question: "A Taesa paga dividendos com que frequência?",
+        answer:
+          "A distribuição é periódica; o calendário exato é divulgado pela companhia. Consulte o RI da Taesa para confirmar datas e tipos de provento.",
+      },
+      {
+        question: "O risco regulatório afeta o dividendo da Taesa?",
+        answer:
+          "Sim. Revisões tarifárias pela Aneel e vencimentos de concessão podem alterar a receita e, consequentemente, o volume distribuído.",
+      },
+    ],
+  },
+
+  {
+    slug: "egie3-dividendos",
+    lastModified: "2026-05-09",
+    title: "EGIE3 dividendos: histórico da Engie Brasil e como simular",
+    description:
+      "Entenda o histórico de proventos da Engie Brasil Energia (EGIE3), como a geração de energia influencia o fluxo de dividendos e como simular o retorno com a sua posição.",
+    keywords: ["EGIE3 dividendos", "Engie dividendos", "EGIE3 dividend yield", "EGIE3 proventos"],
+    relatedTickers: ["EGIE3", "TAEE11", "BBAS3", "PETR4"],
+    relatedSectors: ["energia"],
+    relatedArticleSlugs: ["o-que-e-dividend-yield", "acoes-que-pagam-dividendos-todo-mes"],
+    sections: [
+      {
+        heading: "Sobre a Engie Brasil (EGIE3)",
+        paragraphs: [
+          "A Engie Brasil Energia é uma das maiores geradoras privadas de energia elétrica do país, com portfólio diversificado entre usinas hidráulicas, eólicas e solares. A diversificação de fontes reduz — mas não elimina — a exposição ao risco hidrológico.",
+          "A companhia também atua em transmissão e comercialização de energia, o que adiciona receitas contratuais ao resultado. Esse perfil híbrido contribui para uma geração de caixa relativamente mais estável comparada a geradoras puras de hidro.",
+        ],
+      },
+      {
+        heading: "Histórico de proventos da Engie Brasil",
+        paragraphs: [
+          "A Engie Brasil tem histórico de payout elevado e distribuições periódicas ao longo do ano. A política de remuneração costuma prever percentual mínimo do lucro ajustado. Em anos de boa geração hidrológica e preços de energia favoráveis, o volume distribuído tende a ser maior.",
+          "Em períodos de estiagem severa, o custo de compra de energia no mercado spot pode comprimir margem. Geradoras com presença em eólica e solar mitigam parte desse risco, mas o impacto hidrológico ainda existe para usinas hidráulicas do portfólio.",
+        ],
+      },
+      {
+        heading: "Vale acompanhar EGIE3 para dividendos?",
+        paragraphs: [
+          "Para quem busca exposição ao setor de energia com perfil mais equilibrado, EGIE3 costuma ser comparada a transmissoras puras — com a diferença de que o resultado depende também de condições de despacho e preço de energia.",
+          "O risco regulatório e o hidrológico são os fatores centrais a acompanhar. Use o histórico disponível na página do ticker para ver como o fluxo se comportou em diferentes condições.",
+        ],
+      },
+      {
+        heading: "Como simular dividendos de EGIE3",
+        paragraphs: [
+          "Acesse a página de EGIE3 no Simula Dividendos e informe sua quantidade de ações. O resultado é uma estimativa educacional baseada nos proventos pagos nos últimos 12 meses por cota.",
+          "Use a simulação para entender a magnitude do fluxo de proventos com a sua posição atual — sem tratar o histórico como garantia dos próximos pagamentos.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "EGIE3 ou TAEE11 para dividendos?",
+        answer:
+          "Os perfis diferem: TAEE11 é transmissão (receita mais contratual), EGIE3 é geração + transmissão (mais exposição a hidrologia e preço de energia). A escolha depende do nível de previsibilidade que você busca.",
+      },
+      {
+        question: "A Engie paga dividendos com que frequência?",
+        answer:
+          "A distribuição costuma ocorrer algumas vezes ao ano. Consulte o RI da Engie Brasil para o calendário atualizado.",
+      },
+      {
+        question: "O que é risco hidrológico e como afeta os dividendos?",
+        answer:
+          "Em anos de seca, usinas hidráulicas geram menos e precisam comprar energia cara no spot, comprimindo margem. A diversificação com eólica e solar reduz, mas não elimina esse risco.",
+      },
+    ],
+  },
+
+  {
+    slug: "b3sa3-dividendos",
+    lastModified: "2026-05-09",
+    title: "B3SA3 dividendos: histórico da B3 e como simular",
+    description:
+      "Entenda como a B3 (B3SA3) distribui dividendos, como o volume de mercado influencia o resultado e como simular quanto você receberia com a sua posição.",
+    keywords: ["B3SA3 dividendos", "B3 bolsa dividendos", "B3SA3 dividend yield", "B3SA3 proventos"],
+    relatedTickers: ["B3SA3", "BBAS3", "ITUB4", "WEGE3"],
+    relatedSectors: ["servicos_financeiros"],
+    relatedArticleSlugs: ["o-que-e-dividend-yield"],
+    sections: [
+      {
+        heading: "Sobre a B3 (B3SA3)",
+        paragraphs: [
+          "A B3 é a principal bolsa de valores, câmara de compensação e depositária de ativos do Brasil. Sua receita está diretamente ligada ao volume de negócios no mercado de capitais: quanto mais ações, derivativos, títulos e outros instrumentos são negociados, mais a empresa fatura.",
+          "Por operar em um segmento de infraestrutura financeira com altas barreiras de entrada, a B3 tem posição de mercado relevante. Mas isso não isola o resultado de ciclos do mercado de capitais — períodos de baixa atividade afetam receita e podem influenciar o volume distribuído.",
+        ],
+      },
+      {
+        heading: "Como a B3 distribui proventos",
+        paragraphs: [
+          "A política de remuneração ao acionista da B3 combina dividendos e JCP, com distribuições ao longo do ano conforme o resultado. A companhia também realiza programas de recompra de ações, que complementam o retorno ao acionista de forma indireta.",
+          "O volume distribuído varia conforme o resultado, que depende do nível de atividade no mercado. Anos com crescimento de listagens, volume de negócios e produtos derivativos tendem a ser favoráveis.",
+        ],
+      },
+      {
+        heading: "Vale acompanhar B3SA3 para dividendos?",
+        paragraphs: [
+          "B3SA3 pode fazer sentido para quem quer exposição ao crescimento do mercado de capitais brasileiro com algum retorno via proventos. A posição dominante reduz risco competitivo, mas não elimina a correlação com o ciclo de atividade financeira.",
+          "Compare o yield histórico com o contexto do período — se o mercado estava aquecido ou em retração — antes de extrapolar para o futuro.",
+        ],
+      },
+      {
+        heading: "Como simular dividendos de B3SA3",
+        paragraphs: [
+          "Na página de B3SA3 no Simula Dividendos, informe a quantidade de ações que você possui para ver a estimativa educacional baseada nos últimos 12 meses de proventos por cota.",
+          "Os valores são baseados em histórico público e não constituem garantia de rendimento futuro.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "A B3 sempre paga dividendos?",
+        answer:
+          "A companhia tem histórico de distribuições periódicas, mas o valor depende do resultado, que oscila com o volume do mercado. Consulte os comunicados oficiais para o calendário atualizado.",
+      },
+      {
+        question: "Recompra de ações conta como dividendo?",
+        answer:
+          "Não diretamente. Recompras reduzem o número de ações em circulação e podem elevar o preço por ação, mas não são dividendos. São formas complementares de retorno ao acionista.",
+      },
+      {
+        question: "B3SA3 é ação defensiva?",
+        answer:
+          "Tem características de empresa com posição dominante, mas o resultado é sensível ao volume do mercado de capitais. Não é defensiva no mesmo sentido de utilitárias.",
+      },
+    ],
+  },
+
+  {
+    slug: "wege3-dividendos",
+    lastModified: "2026-05-09",
+    title: "WEGE3 dividendos: histórico da WEG e como simular",
+    description:
+      "Veja o histórico de proventos da WEG (WEGE3), como uma empresa industrial de crescimento distribui dividendos de forma consistente e como simular com a sua posição.",
+    keywords: ["WEGE3 dividendos", "WEG dividendos", "WEGE3 dividend yield", "WEGE3 proventos"],
+    relatedTickers: ["WEGE3", "KLBN11", "ABEV3", "B3SA3"],
+    relatedSectors: ["industria"],
+    relatedArticleSlugs: ["o-que-e-dividend-yield", "melhores-acoes-de-dividendos-brasil"],
+    sections: [
+      {
+        heading: "Sobre a WEG (WEGE3)",
+        paragraphs: [
+          "A WEG é uma fabricante brasileira de motores elétricos, automação industrial, transformadores e equipamentos de energia, com operações em mais de 135 países. É reconhecida pela consistência de resultado e pela expansão global ao longo de décadas.",
+          "Por reinvestir parcela relevante do lucro no crescimento, a WEG pratica um payout relativamente baixo frente a setores mais maduros — resultando em dividend yield historicamente menor do que bancos ou transmissoras. Mas a consistência dos pagamentos e o crescimento do lucro base são diferenciais para horizontes longos.",
+        ],
+      },
+      {
+        heading: "Histórico de proventos da WEG",
+        paragraphs: [
+          "A WEG tem histórico de distribuições regulares, com crescimento gradual no valor por cota acompanhando o crescimento do lucro. O yield absoluto costuma ser menor do que outros nomes da B3 — mas a consistência e a trajetória de crescimento são diferenciais para investidores de longo prazo.",
+          "Os proventos são distribuídos conforme a política de remuneração da companhia e aprovações do conselho. Consulte o RI da WEG para o calendário atualizado.",
+        ],
+      },
+      {
+        heading: "Vale acompanhar WEGE3 para dividendos?",
+        paragraphs: [
+          "WEGE3 é mais adequada para quem combina expectativa de crescimento com renda crescente ao longo do tempo (dividend growth) do que para quem busca yield alto no curto prazo. O perfil industrial exportador protege parte do resultado da volatilidade do mercado interno.",
+          "Para carteiras orientadas a yield imediato, WEGE3 pode ser complementar — não substituta — de ativos com payout mais alto.",
+        ],
+      },
+      {
+        heading: "Como simular dividendos de WEGE3",
+        paragraphs: [
+          "Acesse a página de WEGE3 no Simula Dividendos e informe sua posição em ações. O simulador mostra a estimativa de proventos dos últimos 12 meses por cota, multiplicados pela sua quantidade.",
+          "O yield histórico de WEGE3 tende a ser mais baixo do que outros setores — use a simulação para entender o fluxo real com a sua posição atual.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Por que o yield da WEG é menor que o de bancos?",
+        answer:
+          "A WEG reinveste parcela relevante do lucro para crescimento. O payout é menor, mas o crescimento do lucro base faz com que o valor pago por cota aumente ao longo do tempo.",
+      },
+      {
+        question: "WEG paga dividendos com que frequência?",
+        answer:
+          "A distribuição é periódica conforme política da companhia. Consulte o RI da WEG para o calendário atualizado.",
+      },
+      {
+        question: "WEGE3 é boa para renda passiva?",
+        answer:
+          "Pode ser parte de uma carteira de renda passiva para horizontes longos, especialmente para quem valoriza crescimento consistente de proventos. Para yield alto imediato, outros setores costumam ser mais indicados.",
+      },
+    ],
+  },
+
+  {
+    slug: "abev3-dividendos",
+    lastModified: "2026-05-09",
+    title: "ABEV3 dividendos: histórico da Ambev e como simular",
+    description:
+      "Entenda como a Ambev (ABEV3) distribui dividendos, como margens e volumes de bebidas influenciam os proventos e como simular quanto você receberia com a sua posição.",
+    keywords: ["ABEV3 dividendos", "Ambev dividendos", "ABEV3 dividend yield", "ABEV3 proventos"],
+    relatedTickers: ["ABEV3", "WEGE3", "BBAS3", "VALE3"],
+    relatedSectors: ["consumo"],
+    relatedArticleSlugs: ["o-que-e-dividend-yield", "melhores-acoes-de-dividendos-brasil"],
+    sections: [
+      {
+        heading: "Sobre a Ambev (ABEV3)",
+        paragraphs: [
+          "A Ambev é uma das maiores empresas de bebidas do mundo, com operações em cerveja, refrigerantes, sucos e água em vários países da América Latina. No Brasil, detém marcas com participação de mercado relevante no segmento de cervejas e não-alcoólicos.",
+          "Por atuar em consumo de massa com marcas consolidadas, a Ambev tem perfil de empresa geradora de caixa recorrente. Mas pressões de custo de insumos (malte, lúpulo, embalagens, energia) e competição no varejo afetam margem e, por consequência, o volume distribuído.",
+        ],
+      },
+      {
+        heading: "Como a Ambev distribui proventos",
+        paragraphs: [
+          "A Ambev distribui dividendos e JCP periodicamente ao longo do ano, conforme o resultado e aprovações. A política de remuneração costuma contemplar um patamar mínimo de distribuição, mas o valor varia com o desempenho operacional.",
+          "Em anos de margens pressionadas por custo de commodities ou câmbio desfavorável, o volume distribuído pode ser menor. Em ciclos de recuperação de margem, o retorno ao acionista tende a aumentar.",
+        ],
+      },
+      {
+        heading: "Vale acompanhar ABEV3 para dividendos?",
+        paragraphs: [
+          "ABEV3 costuma ser analisada como uma ação de dividendos de consumo por combinar geração de caixa recorrente com marcas que dificultam a substituição rápida. O risco principal para o fluxo de proventos está em compressão de margem ou perda de participação de mercado.",
+          "Acompanhe resultados trimestrais e os comunicados sobre política de capital para entender a perspectiva de distribuição em cada ciclo.",
+        ],
+      },
+      {
+        heading: "Como simular dividendos de ABEV3",
+        paragraphs: [
+          "Na página de ABEV3 no Simula Dividendos, informe a quantidade de ações que você possui. O simulador calcula uma estimativa educacional com base nos proventos pagos nos últimos 12 meses por cota.",
+          "Use o histórico como referência para entender o fluxo com a sua posição atual, sem confundir passado com garantia futura.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "A Ambev paga dividendos todos os anos?",
+        answer:
+          "Historicamente sim, mas o valor varia com resultado operacional, margens e política de capital. Consulte o RI da Ambev para o calendário atualizado.",
+      },
+      {
+        question: "Por que o yield da Ambev oscila?",
+        answer:
+          "Porque o dividend yield depende tanto do valor distribuído quanto do preço da ação. Compressão de margem pode reduzir o provento; queda do preço da ação pode elevar o yield matematicamente sem melhora no negócio.",
+      },
+      {
+        question: "ABEV3 é defensiva?",
+        answer:
+          "Tem demanda relativamente recorrente, mas não é imune a ciclos de consumo, aumento de custos ou pressão competitiva. O rótulo 'defensivo' é uma simplificação.",
+      },
+    ],
+  },
+
+  {
+    slug: "klbn11-dividendos",
+    lastModified: "2026-05-09",
+    title: "KLBN11 dividendos: histórico da Klabin e como simular",
+    description:
+      "Entenda como a Klabin (KLBN11) distribui proventos, como o ciclo de papel e celulose influencia os dividendos e como simular quanto você receberia com a sua posição.",
+    keywords: ["KLBN11 dividendos", "Klabin dividendos", "KLBN11 dividend yield", "KLBN11 proventos"],
+    relatedTickers: ["KLBN11", "WEGE3", "VALE3", "ABEV3"],
+    relatedSectors: ["industria"],
+    relatedArticleSlugs: ["o-que-e-dividend-yield"],
+    sections: [
+      {
+        heading: "Sobre a Klabin (KLBN11)",
+        paragraphs: [
+          "A Klabin é a maior produtora e exportadora de papéis para embalagens do Brasil, com integração florestal e atuação em celulose, papelão, sacos industriais e embalagens de papel. O negócio combina ciclo de commodity florestal com demanda estrutural de embalagens.",
+          "KLBN11 é uma unit — certificado composto por mais de um tipo de ação. Isso tem implicações na estrutura de direitos e tributação. Verifique o prospecto e o RI da Klabin antes de comparar diretamente com ações ordinárias ou preferenciais de outras empresas.",
+        ],
+      },
+      {
+        heading: "Histórico de proventos da Klabin",
+        paragraphs: [
+          "O histórico de proventos da Klabin reflete o ciclo de preços de celulose e papéis para embalagens. Em anos de preço favorável e demanda aquecida, a geração de caixa permite distribuições mais expressivas; em reversões de ciclo ou períodos de CAPEX intenso, o payout pode ser comprimido.",
+          "A companhia tem projetos de expansão de capacidade recorrentes que demandam capital significativo e podem influenciar o volume disponível para distribuição em determinados anos.",
+        ],
+      },
+      {
+        heading: "Vale acompanhar KLBN11 para dividendos?",
+        paragraphs: [
+          "KLBN11 pode fazer parte de carteiras que buscam exposição ao setor florestal e de embalagens, com tolerância à volatilidade de commodity. O crescimento estrutural do mercado de embalagens sustentáveis é um argumento de tese de longo prazo, mas os proventos não são tão previsíveis quanto os de setores regulados.",
+          "Acompanhe o preço de celulose no mercado internacional e os comunicados sobre projetos de CAPEX da companhia para contextualizar o histórico.",
+        ],
+      },
+      {
+        heading: "Como simular dividendos de KLBN11",
+        paragraphs: [
+          "Acesse a página de KLBN11 no Simula Dividendos e informe sua quantidade de units. O simulador calcula uma estimativa educacional baseada nos proventos pagos nos últimos 12 meses por cota.",
+          "Lembre que KLBN11 é uma unit com estrutura específica — confirme os detalhes no RI da Klabin antes de comparar diretamente com outras ações.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "O que é KLBN11 — unit ou ação comum?",
+        answer:
+          "KLBN11 é uma unit, estrutura que combina mais de um tipo de ação em um único certificado. A composição exata está descrita no prospecto e no RI da Klabin.",
+      },
+      {
+        question: "A Klabin paga dividendos com que frequência?",
+        answer:
+          "A distribuição é periódica conforme resultado e aprovações. Consulte o RI da Klabin para o calendário atualizado.",
+      },
+      {
+        question: "KLBN11 é parecida com VALE3 por ser commodity?",
+        answer:
+          "Ambas têm ciclicidade, mas os drivers são diferentes: Klabin depende de preço de celulose e demanda por embalagens; Vale depende do preço do minério de ferro. Os riscos e correlações são distintos.",
+      },
+    ],
+  },
 ];
