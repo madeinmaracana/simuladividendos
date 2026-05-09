@@ -66,7 +66,7 @@ export function TickerHeroSimulatorCard({
     lastPayment,
     nextPayment,
     onSimulate,
-  } = useDividendSimulator(ticker, initialStock, serverError, defaultShares, "tickerHeroCard");
+  } = useDividendSimulator(ticker, initialStock, serverError, defaultShares, "tickerPage");
 
   const perShareValue =
     lastPayment && Number(sharesStr || 1) > 0 ? lastPayment.totalPerShare : null;
