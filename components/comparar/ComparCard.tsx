@@ -7,22 +7,14 @@ import { ui } from "@/components/ui/classes";
 
 interface ComparCardProps {
   data: TickerComparData;
-  isWinner: boolean;
   shares: number;
 }
 
-export function ComparCard({ data, isWinner, shares }: ComparCardProps) {
+export function ComparCard({ data, shares }: ComparCardProps) {
   const { ticker, shortName, logoUrl, currentPrice, calc, currency } = data;
 
   return (
-    <div
-      className={cn(
-        "flex flex-col gap-5 rounded-2xl border p-5 sm:p-6",
-        isWinner
-          ? "border-[var(--brand)] bg-[var(--color-surface)] shadow-[0_0_0_2px_var(--brand)]"
-          : "border-[var(--color-border)] bg-[var(--color-surface)]"
-      )}
-    >
+    <div className="flex flex-col gap-5 rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-5 sm:p-6">
       {/* Header */}
       <div className="flex items-center gap-3">
         {logoUrl ? (
@@ -42,11 +34,6 @@ export function ComparCard({ data, isWinner, shares }: ComparCardProps) {
           <p className="text-xl font-bold text-[var(--color-text)]">{ticker}</p>
           <p className="text-xs text-[var(--color-text-soft)] line-clamp-1">{shortName}</p>
         </div>
-        {isWinner && (
-          <span className="ml-auto rounded-full bg-[var(--brand)] px-2.5 py-0.5 text-xs font-bold text-[var(--brand-foreground)]">
-            Pagou mais
-          </span>
-        )}
       </div>
 
       {/* Métricas */}
@@ -54,12 +41,10 @@ export function ComparCard({ data, isWinner, shares }: ComparCardProps) {
         <Metric
           label="Últimos 12m (por cota)"
           value={calc.perShare12m > 0 ? formatBRL(calc.perShare12m, currency) : "—"}
-          highlight={isWinner}
         />
         <Metric
           label={`Total (${shares} cotas)`}
           value={calc.total12mEstimate > 0 ? formatBRL(calc.total12mEstimate, currency) : "—"}
-          highlight={isWinner}
         />
         <Metric
           label="Média mensal (por cota)"
@@ -95,24 +80,11 @@ export function ComparCard({ data, isWinner, shares }: ComparCardProps) {
   );
 }
 
-function Metric({
-  label,
-  value,
-  highlight,
-}: {
-  label: string;
-  value: string;
-  highlight?: boolean;
-}) {
+function Metric({ label, value }: { label: string; value: string }) {
   return (
     <div className="flex flex-col gap-0.5">
       <p className={ui.metricLabel}>{label}</p>
-      <p
-        className={cn(
-          "text-base font-semibold tabular-nums",
-          highlight ? "text-[var(--brand)]" : "text-[var(--color-text)]"
-        )}
-      >
+      <p className="text-base font-semibold tabular-nums text-[var(--color-text)]">
         {value}
       </p>
     </div>

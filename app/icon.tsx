@@ -3,7 +3,7 @@ import { ImageResponse } from "next/og";
 export const size = { width: 32, height: 32 };
 export const contentType = "image/png";
 
-/** Favicon — fundo escuro e acento verde (#00E676), alinhado às OG dinâmicas. */
+/** Favicon — quadrado lemon (#A6FF00), cor brand do design system. */
 export default function Icon() {
   return new ImageResponse(
     (
@@ -11,16 +11,10 @@ export default function Icon() {
         style={{
           width: "100%",
           height: "100%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          backgroundColor: "#000000",
-          borderRadius: 8,
-          fontFamily: 'ui-sans-serif, system-ui, sans-serif',
+          backgroundColor: "#A6FF00",
+          borderRadius: 7,
         }}
-      >
-        <span style={{ fontSize: 20, fontWeight: 800, color: "#00E676", letterSpacing: -1 }}>D</span>
-      </div>
+      />
     ),
     { ...size }
   );

@@ -103,16 +103,8 @@ export default async function ComparSlugPage({ params }: Props) {
 
       {/* Cards lado a lado */}
       <section className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-        <ComparCard
-          data={result.a}
-          isWinner={result.winner12m === "a"}
-          shares={DEFAULT_SHARES}
-        />
-        <ComparCard
-          data={result.b}
-          isWinner={result.winner12m === "b"}
-          shares={DEFAULT_SHARES}
-        />
+        <ComparCard data={result.a} shares={DEFAULT_SHARES} />
+        <ComparCard data={result.b} shares={DEFAULT_SHARES} />
       </section>
 
       {/* Nova comparação */}

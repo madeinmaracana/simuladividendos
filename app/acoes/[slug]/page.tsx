@@ -8,6 +8,7 @@ import { RelatedArticlesSection } from "@/components/seo/RelatedArticlesSection"
 import { StockQuickAnswer } from "@/components/stocks/StockQuickAnswer";
 import {
   CompanyInfoSection,
+  DividendHistoryChart,
   DividendHistorySection,
   DividendSummaryText,
   DividendTableSimple,
@@ -310,6 +311,16 @@ export default async function AcaoSlugPage({ params }: PageProps) {
               yieldDisplay={yieldDisp}
               avgMonthlyPerShare={metrics.avgMonthlyPerShare}
               total12mPerShare={metrics.total12mPerShare}
+            />
+          </TickerPageRow>
+        )}
+
+        {dividends.length > 0 && (
+          <TickerPageRow>
+            <DividendHistoryChart
+              dividends={dividends}
+              currency={currency}
+              frequencyHint={frequencyHint}
             />
           </TickerPageRow>
         )}

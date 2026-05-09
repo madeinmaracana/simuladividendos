@@ -2,7 +2,6 @@ import Link from "next/link";
 import { LogoMark } from "@/components/ui/LogoMark";
 
 const nav = [
-  { href: "/simulador", label: "Simulador" },
   { href: "/comparar", label: "Comparar" },
   { href: "/fiis", label: "FIIs" },
   { href: "/setores", label: "Setores" },

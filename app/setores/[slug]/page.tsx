@@ -69,7 +69,12 @@ export default function SetorPage({ params }: PageProps) {
           <h2 id="heading-relevancia-dividendos" className={cn("text-left", ui.sectionTitle)}>
             Por que esse setor importa para quem busca dividendos
           </h2>
-          <p className={cn(ui.body, "mt-3")}>{sector.dividendRelevance}</p>
+          {(Array.isArray(sector.dividendRelevance)
+            ? sector.dividendRelevance
+            : [sector.dividendRelevance]
+          ).map((p, i) => (
+            <p key={i} className={cn(ui.body, "mt-3")}>{p}</p>
+          ))}
           <p className={cn(ui.body, "mt-4")}>
             Quer comparar tickers? Abra cada ação acima ou volte à{" "}
             <TextLink href="/" className="text-sm">

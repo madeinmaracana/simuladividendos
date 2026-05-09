@@ -5,6 +5,15 @@ const nextConfig = {
       { protocol: "https", hostname: "icons.brapi.dev", pathname: "/icons/**" },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/simulador",
+        destination: "/",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

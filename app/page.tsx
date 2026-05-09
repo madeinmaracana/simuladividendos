@@ -38,13 +38,6 @@ const FAQ_ITEMS = [
   { question: "De onde vêm os dados?", answer: "De uma fonte pública de cotações e proventos. Sempre confira RI e comunicados da empresa para decisões reais." },
 ];
 
-function AdBanner() {
-  return (
-    <div className="flex h-[60px] w-full items-center justify-center rounded-2xl bg-neutral-200 text-xs font-medium text-neutral-400">
-      Adsense Banner
-    </div>
-  );
-}
 
 export default function HomePage() {
   const popularTickers = getAllMockTickers().slice(0, 8);
@@ -89,7 +82,7 @@ export default function HomePage() {
         {/* ── Ações populares ── */}
         <SectionBlock
           title="Ações populares"
-          subtitle="Descrições para ações populares"
+          subtitle="Explore os principais pagadores de dividendos da B3"
           viewAllHref="/setores"
         >
           <ul className="flex flex-wrap gap-2">
@@ -133,8 +126,7 @@ export default function HomePage() {
           </ul>
         </SectionBlock>
 
-        {/* ── Adsense Banner ── */}
-        <AdBanner />
+        {/* ── Ad slot (aguardando integração AdSense) ── */}
 
         {/* ── Artigos ── */}
         <SectionBlock
@@ -149,8 +141,7 @@ export default function HomePage() {
           </div>
         </SectionBlock>
 
-        {/* ── Adsense Banner ── */}
-        <AdBanner />
+        {/* ── Ad slot (aguardando integração AdSense) ── */}
 
         {/* ── FAQ ── */}
         <SectionBlock
@@ -159,13 +150,26 @@ export default function HomePage() {
           viewAllHref="/artigos"
           viewAllLabel="Ver todos →"
         >
-          <ul className="flex flex-col gap-3">
+          <ul className="flex flex-col gap-2">
             {FAQ_ITEMS.map((item) => (
               <li key={item.question}>
-                <div className="flex items-center justify-between rounded-2xl bg-white px-6 py-5">
-                  <p className="text-sm font-medium text-[var(--color-text)]">{item.question}</p>
-                  <span className="text-[var(--color-text-muted)]">→</span>
-                </div>
+                <details className="group rounded-2xl bg-white">
+                  <summary className="flex cursor-pointer list-none items-center justify-between px-6 py-5 marker:content-none [&::-webkit-details-marker]:hidden">
+                    <p className="text-sm font-medium text-[var(--color-text)]">{item.question}</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden
+                      className="h-5 w-5 shrink-0 text-[var(--color-text-muted)] transition-transform duration-200 group-open:rotate-180"
+                    >
+                      <path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+                    </svg>
+                  </summary>
+                  <p className="px-6 pb-5 text-sm leading-relaxed text-[var(--color-text-muted)]">
+                    {item.answer}
+                  </p>
+                </details>
               </li>
             ))}
           </ul>
