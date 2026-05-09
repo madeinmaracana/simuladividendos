@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Mono, Inter, Merriweather } from "next/font/google";
+import { Inter, Merriweather } from "next/font/google";
 import { getSeoBaseUrl } from "@/lib/site";
 import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { SiteFooter } from "@/components/layout/SiteFooter";
@@ -8,7 +8,7 @@ import { cn } from "@/lib/cn";
 import { ui } from "@/components/ui/classes";
 import "./globals.css";
 
-/** UI principal — Inter com zero cortado (feature "zero") */
+/** UI principal — Inter */
 const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -25,13 +25,6 @@ const merriweather = Merriweather({
   display: "swap",
 });
 
-/** Monospace — IBM Plex Mono para código/números tabulares */
-const plexMono = IBM_Plex_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-mono",
-  display: "swap",
-});
 
 const seoBase = getSeoBaseUrl();
 const defaultTitle = "Simula Dividendos | Simulador de renda passiva";
@@ -90,7 +83,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`${inter.variable} ${merriweather.variable} ${plexMono.variable}`}>
+    <html lang="pt-BR" className={`${inter.variable} ${merriweather.variable}`}>
       <head>
         {/* Material Symbols Outlined — ícones do Google usados no design system */}
         <link
@@ -103,7 +96,7 @@ export default function RootLayout({
         <div className="flex min-h-screen flex-col">
           <div
             className={cn(
-              "flex min-h-0 flex-1 flex-col pb-0 pt-2 sm:pt-4",
+              "flex min-h-0 flex-1 flex-col",
               ui.pageShell
             )}
           >

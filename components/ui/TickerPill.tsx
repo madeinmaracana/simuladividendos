@@ -43,7 +43,7 @@ export function TickerPill({ ticker, href, className }: TickerPillProps) {
     >
       {imgError ? (
         /* fallback: círculo com a inicial */
-        <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[var(--color-surface-muted)] text-[10px] font-bold text-[var(--color-text-soft)]">
+        <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[var(--color-surface-muted)] text-xs font-bold text-[var(--color-text-soft)]">
           {ticker[0]}
         </span>
       ) : (

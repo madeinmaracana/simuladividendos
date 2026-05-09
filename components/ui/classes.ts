@@ -12,7 +12,7 @@ export const ui = {
     "text-xs font-medium uppercase tracking-wide text-[color:var(--text-soft)]",
   /** Título principal de página (h1) */
   pageTitle:
-    "text-2xl font-semibold tracking-tight text-[color:var(--text)] sm:text-[32px]",
+    "text-2xl font-semibold tracking-tight text-[color:var(--text)] sm:text-3xl",
   /** Título de seção (h2) */
   sectionTitle: "text-2xl font-semibold tracking-tight text-[color:var(--text)]",
   /** Subtítulo de seção (h3) */
@@ -49,7 +49,7 @@ export const ui = {
   input:
     "w-full rounded-[length:var(--radius-md)] border border-[var(--border)] bg-[var(--surface)] px-3 py-2.5 text-base text-[color:var(--text)] shadow-[var(--shadow-sm)] outline-none transition placeholder:text-[color:var(--text-soft)] focus:border-[var(--border-strong)] focus:ring-2 focus:ring-[color:var(--accent)]/15 disabled:cursor-not-allowed disabled:opacity-60",
   /** Espaçamento vertical entre seções principais (largura total da área útil do layout). */
-  stackPage: "flex w-full min-w-0 flex-col gap-10 sm:gap-12",
+  stackPage: "flex w-full min-w-0 flex-col gap-12 sm:gap-12",
   stackSection: "flex w-full min-w-0 flex-col gap-4",
   /**
    * Seção ou bloco que deve alinhar à mesma coluna que o restante da página.
@@ -60,7 +60,7 @@ export const ui = {
    * Shell horizontal único do site — deve espelhar `app/layout.tsx`.
    * max-width + padding X; não repetir px/max-width em páginas internas.
    */
-  pageShell: "mx-auto w-full max-w-[var(--page-max)] px-4 sm:px-6 lg:px-10",
+  pageShell: "mx-auto w-full max-w-[var(--page-max)] px-4 sm:px-6 lg:px-12",
   /**
    * Grade da página de ticker: 1 coluna no mobile, 12 colunas no desktop.
    * `gap-x-6` alinha com o gutter entre hero e simulador no topo.

@@ -14,6 +14,7 @@ import {
   MOCK_STOCKS,
 } from "@/data/sitemap-sources";
 import { fiiPathFromSlug, parseFiiSlug } from "@/lib/fiis/fii-slug";
+import { buildPopularPairs, buildComparSlug } from "@/lib/comparar";
 
 /** Fallback de lastmod quando o conteúdo não declara data (ex.: setores, home). */
 function defaultLastModified(): Date {
@@ -41,6 +42,7 @@ export function buildSitemap(baseUrl: string): MetadataRoute.Sitemap {
     { url: `${base}/setores`, lastModified: fallback, changeFrequency: "weekly", priority: 0.85 },
     { url: `${base}/artigos`, lastModified: fallback, changeFrequency: "weekly", priority: 0.75 },
     { url: `${base}/fiis`, lastModified: fallback, changeFrequency: "weekly", priority: 0.88 },
+    { url: `${base}/comparar`, lastModified: fallback, changeFrequency: "weekly", priority: 0.85 },
   ];
 
   const sectorRoutes = getAllSectorSlugs().map((slug) => ({
@@ -100,5 +102,12 @@ export function buildSitemap(baseUrl: string): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticRoutes, ...sectorRoutes, ...tickerRoutes, ...fiiRoutes, ...articleRoutes];
+  const comparRoutes = buildPopularPairs().map(([a, b]) => ({
+    url: `${base}/comparar/${buildComparSlug(a, b)}`,
+    lastModified: fallback,
+    changeFrequency: "weekly" as const,
+    priority: 0.75,
+  }));
+
+  return [...staticRoutes, ...sectorRoutes, ...tickerRoutes, ...fiiRoutes, ...articleRoutes, ...comparRoutes];
 }

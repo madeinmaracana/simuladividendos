@@ -1,18 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { DividendCalculator } from "@/components/DividendCalculator";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { StockFAQ } from "@/components/stocks/StockFAQ";
 import { ArticleCard } from "@/components/articles/ArticleCard";
 import { TickerPill } from "@/components/ui/TickerPill";
 import { Icon } from "@/components/ui/Icon";
-import type { FaqItem } from "@/lib/stocks-data";
+import { SectionBlock } from "@/components/ui/SectionBlock";
+import { HomeHeroSimulator } from "@/components/home/HomeHeroSimulator";
 import { getAllMockTickers, getSectorNavItems } from "@/lib/stocks-data";
 import { ALL_ARTICLES, type ArticleRecord } from "@/data/articles";
 import { getAllMockFiiTickers, getFiiPath } from "@/data/fiis";
 import { getTickerPath } from "@/data/stocks";
-import { cn } from "@/lib/cn";
-import { ui } from "@/components/ui/classes";
 import { buildPageMetadata, buildWebPageSchema, SITE_NAME } from "@/lib/seo";
 
 const HOME_TITLE = "Simulador de dividendos e renda passiva com ações na B3";
@@ -23,42 +20,10 @@ export const metadata: Metadata = buildPageMetadata({
   title: HOME_TITLE,
   description: HOME_DESCRIPTION,
   canonicalPath: "/",
-  keywords: [
-    "simulador de dividendos",
-    "dividendos ações",
-    "renda passiva",
-    "calcular dividendos",
-    "B3",
-    "proventos",
-    "ações",
-    "FII",
-    "fundos imobiliários",
-  ],
+  keywords: ["simulador de dividendos", "dividendos ações", "renda passiva", "calcular dividendos", "B3", "proventos", "ações", "FII"],
 });
 
-const faq: FaqItem[] = [
-  {
-    question: "O que este simulador faz?",
-    answer:
-      "Multiplica o dividendo por ação (lista pública) pela quantidade de cotas que você informa. Serve para entender o histórico recente em valores, sem prever o futuro.",
-  },
-  {
-    question: "Os valores são garantidos?",
-    answer:
-      "Não. Dividendos dependem da companhia e do calendário oficial. O site é educacional e não recomenda compra ou venda de ativos.",
-  },
-  {
-    question: "De onde vêm os dados?",
-    answer:
-      "De uma fonte pública de cotações e proventos. Sempre confira RI e comunicados da empresa para decisões reais.",
-  },
-];
-
-const sectionGap = "flex w-full min-w-0 flex-col gap-3 sm:gap-4";
-const sectionTitle = ui.sectionTitle;
-
-/** Artigos em destaque na home (intenção de busca + FIIs). */
-const HOME_ARTICLE_SLUGS: string[] = [
+const HOME_ARTICLE_SLUGS = [
   "melhores-fiis-para-renda-mensal",
   "quanto-investir-para-viver-de-dividendos",
   "o-que-e-dividend-yield",
@@ -67,9 +32,17 @@ const HOME_ARTICLE_SLUGS: string[] = [
   "melhores-acoes-de-dividendos-brasil",
 ];
 
-function homeFeaturedArticles(): ArticleRecord[] {
-  return HOME_ARTICLE_SLUGS.map((slug) => ALL_ARTICLES.find((a) => a.slug === slug)).filter(
-    (a): a is ArticleRecord => Boolean(a)
+const FAQ_ITEMS = [
+  { question: "O que este simulador faz?", answer: "Multiplica o dividendo por ação pela quantidade de cotas que você informa. Serve para entender o histórico recente em valores, sem prever o futuro." },
+  { question: "Os valores são garantidos?", answer: "Não. Dividendos dependem da companhia e do calendário oficial. O site é educacional e não recomenda compra ou venda de ativos." },
+  { question: "De onde vêm os dados?", answer: "De uma fonte pública de cotações e proventos. Sempre confira RI e comunicados da empresa para decisões reais." },
+];
+
+function AdBanner() {
+  return (
+    <div className="flex h-[60px] w-full items-center justify-center rounded-2xl bg-neutral-200 text-xs font-medium text-neutral-400">
+      Adsense Banner
+    </div>
   );
 }
 
@@ -78,162 +51,127 @@ export default function HomePage() {
   const popularFiis = getAllMockFiiTickers().filter((t) =>
     ["MXRF11", "HGLG11", "XPLG11", "KNRI11", "VGHF11"].includes(t)
   );
-  const homeArticles = homeFeaturedArticles();
+  const homeArticles = HOME_ARTICLE_SLUGS
+    .map((slug) => ALL_ARTICLES.find((a) => a.slug === slug))
+    .filter((a): a is ArticleRecord => Boolean(a));
 
   return (
-    <main className={cn(ui.stackPage, "gap-12 sm:gap-16 lg:gap-20")}>
-      <JsonLd
-        data={buildWebPageSchema({
-          name: `${HOME_TITLE} | ${SITE_NAME}`,
-          description: HOME_DESCRIPTION,
-          path: "/",
-        })}
-      />
+    <main className="flex w-full flex-col items-center">
+      <JsonLd data={buildWebPageSchema({ name: `${HOME_TITLE} | ${SITE_NAME}`, description: HOME_DESCRIPTION, path: "/" })} />
 
-      <section aria-labelledby="heading-hero-sim" className="grid grid-cols-1 gap-9 lg:grid-cols-12 lg:gap-10">
-        <div className="flex flex-col gap-5 lg:col-span-6 lg:pt-10">
-          <p className={ui.eyebrow}>Simulador de dividendos</p>
-          <h1
-            id="heading-hero-sim"
-            className={cn(ui.pageTitle, "max-w-[18ch] text-4xl leading-[1.06] sm:text-5xl sm:leading-[1.04]")}
-          >
+      {/* Max-width container for all content */}
+      <div className="flex w-full max-w-[840px] flex-col gap-20 pb-20">
+
+        {/* ── Hero ── */}
+        <section className="flex flex-col items-center gap-6 pt-12 text-center">
+          <h1 className="max-w-[18ch] text-xl font-semibold leading-tight tracking-tight text-[var(--color-text)]">
             Simule quanto você pode receber em dividendos
           </h1>
-          <p className={cn(ui.body, "max-w-[56ch] text-base leading-relaxed text-[color:var(--text-muted)] sm:text-base")}>
+          <p className="max-w-[52ch] text-base text-[var(--color-text-muted)]">
             Compare ações, estime pagamentos e visualize a renda potencial da sua carteira em poucos segundos.
           </p>
+        </section>
 
-          <div className="mt-1 flex flex-wrap gap-3">
-            <Link
-              href="#home-ticker-field"
-              className={cn(
-                "no-underline",
-                ui.ctaSecondary,
-                "bg-[var(--surface-muted)] px-6 text-[var(--text)] hover:bg-[var(--border)]"
-              )}
-            >
-              Simular agora
-            </Link>
-            <Link href="/setores" className={cn(ui.ctaSecondary, "no-underline")}>
-              Ver ações
-            </Link>
+        {/* ── Split Simulator Card ── */}
+        <section className="-mt-12">
+          <HomeHeroSimulator />
+          <div className="mt-6 flex flex-col gap-2 text-xs text-[var(--color-text-soft)]">
+            <p>⚠ Não é recomendação de investimento. Fonte pública de proventos.</p>
+            <p className="font-medium">Como funciona</p>
+            <ol className="ml-4 list-decimal space-y-1">
+              <li>Escolha o ticker (sugestões após duas letras).</li>
+              <li>Informe a quantidade de ações e clique em Simular dividendos.</li>
+              <li>Confira último e próximo pagamento logo abaixo.</li>
+            </ol>
           </div>
-        </div>
+        </section>
 
-        <div className="lg:col-span-6 lg:pl-1">
-          <DividendCalculator
-            initialTicker=""
-            showTickerPicker
-            defaultShares={100}
-            simulatorFetchMode="manual"
-            compactHero
-          />
-        </div>
-      </section>
+        {/* ── Ações populares ── */}
+        <SectionBlock
+          title="Ações populares"
+          subtitle="Descrições para ações populares"
+          viewAllHref="/setores"
+        >
+          <ul className="flex flex-wrap gap-2">
+            {popularTickers.map((t) => (
+              <li key={t}><TickerPill ticker={t} href={getTickerPath(t)} /></li>
+            ))}
+          </ul>
+        </SectionBlock>
 
-      <section aria-labelledby="heading-como" className={sectionGap}>
-        <h2 id="heading-como" className={sectionTitle}>
-          Como funciona
-        </h2>
-        <ol className="ml-5 max-w-xl list-decimal space-y-1.5 text-sm leading-snug text-neutral-600 dark:text-neutral-400">
-          <li>Escolha o ticker (sugestões após duas letras).</li>
-          <li>Informe a quantidade de ações e clique em Simular dividendos.</li>
-          <li>Confira último e próximo pagamento logo abaixo.</li>
-        </ol>
-      </section>
+        {/* ── FIIs ── */}
+        <SectionBlock
+          title="FIIs"
+          subtitle="Principais fundos imobiliários para renda mensal"
+          viewAllHref="/fiis"
+        >
+          <ul className="flex flex-wrap gap-2">
+            {popularFiis.map((t) => (
+              <li key={t}><TickerPill ticker={t} href={getFiiPath(t)} /></li>
+            ))}
+          </ul>
+        </SectionBlock>
 
-      <p className="max-w-2xl text-xs leading-relaxed text-neutral-500 dark:text-neutral-500">
-        Ferramenta educacional. Para comparar contexto, abra{" "}
-        <Link href="/setores" className={cn(ui.link, "text-xs")}>
-          setores
-        </Link>{" "}
-        ou a{" "}
-        <Link href="/simulador" className={cn(ui.link, "text-xs")}>
-          página do simulador
-        </Link>{" "}
-        (carrega proventos automaticamente ao digitar o ticker).
-      </p>
+        {/* ── Setores ── */}
+        <SectionBlock
+          title="Setores"
+          subtitle="Descubra ações por setor da economia"
+          viewAllHref="/setores"
+        >
+          <ul className="flex gap-3">
+            {getSectorNavItems().slice(0, 5).map(({ slug, label, href, icon }) => (
+              <li key={slug} className="flex-1">
+                <Link
+                  href={href}
+                  className="flex h-[140px] flex-col justify-between rounded-2xl bg-white p-4 no-underline transition hover:shadow-md"
+                >
+                  <Icon name={icon} size="md" className="text-[var(--color-text)]" />
+                  <span className="text-sm font-medium text-[var(--color-text)]">{label}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </SectionBlock>
 
-      <section aria-labelledby="heading-populares" className={sectionGap}>
-        <h2 id="heading-populares" className={sectionTitle}>
-          Ações populares
-        </h2>
-        <ul className="flex flex-wrap gap-2">
-          {popularTickers.map((t) => (
-            <li key={t}>
-              <TickerPill ticker={t} href={getTickerPath(t)} />
-            </li>
-          ))}
-        </ul>
-      </section>
+        {/* ── Adsense Banner ── */}
+        <AdBanner />
 
-      <section aria-labelledby="heading-fiis-home" className={sectionGap}>
-        <h2 id="heading-fiis-home" className={sectionTitle}>
-          Simular FIIs
-        </h2>
-        <p className="max-w-xl text-sm leading-snug text-neutral-600 dark:text-neutral-400">
-          Páginas dedicadas com renda mensal de referência e histórico de rendimentos.
-        </p>
-        <ul className="flex flex-wrap gap-2">
-          {popularFiis.map((t) => (
-            <li key={t}>
-              <TickerPill ticker={t} href={getFiiPath(t)} />
-            </li>
-          ))}
-          <li>
-            <Link href="/fiis" className={cn(ui.pillGhost, "no-underline")}>
-              Ver todos os FIIs →
-            </Link>
-          </li>
-        </ul>
-      </section>
+        {/* ── Artigos ── */}
+        <SectionBlock
+          title="Artigos"
+          subtitle="Aprenda sobre dividendos e renda passiva"
+          viewAllHref="/artigos"
+        >
+          <div className="grid grid-cols-3 gap-3">
+            {homeArticles.map((article) => (
+              <ArticleCard key={article.slug} article={article} />
+            ))}
+          </div>
+        </SectionBlock>
 
-      <section aria-labelledby="heading-setores" className={sectionGap}>
-        <h2 id="heading-setores" className={sectionTitle}>
-          Setores
-        </h2>
-        <ul className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
-          {getSectorNavItems().slice(0, 5).map(({ slug, label, href, icon }) => (
-            <li key={slug}>
-              <Link
-                href={href}
-                className={cn(
-                  "flex h-[140px] flex-col justify-between no-underline",
-                  "rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)]",
-                  "p-4 transition-colors",
-                  "hover:border-[var(--color-border-strong)] hover:bg-[var(--color-surface-muted)]"
-                )}
-              >
-                <Icon name={icon} size="md" className="text-[var(--color-text)]" />
-                <span className="mt-8 block text-base font-medium text-[var(--color-text)]">
-                  {label}
-                </span>
-              </Link>
-            </li>
-          ))}
-        </ul>
-        <Link href="/setores" className={cn(ui.link, "text-sm")}>
-          Ver todos →
-        </Link>
-      </section>
+        {/* ── Adsense Banner ── */}
+        <AdBanner />
 
-      <section aria-labelledby="heading-artigos" className={sectionGap}>
-        <h2 id="heading-artigos" className={sectionTitle}>
-          Artigos
-        </h2>
-        <div className="grid gap-4 sm:grid-cols-2">
-          {homeArticles.map((article) => (
-            <ArticleCard key={article.slug} article={article} />
-          ))}
-        </div>
-        <Link href="/artigos" className={cn(ui.link, "text-sm")}>
-          Ver todos →
-        </Link>
-      </section>
+        {/* ── FAQ ── */}
+        <SectionBlock
+          title="Perguntas frequentes"
+          subtitle="Tire suas dúvidas sobre o simulador"
+          viewAllHref="/artigos"
+          viewAllLabel="Ver todos →"
+        >
+          <ul className="flex flex-col gap-3">
+            {FAQ_ITEMS.map((item) => (
+              <li key={item.question}>
+                <div className="flex items-center justify-between rounded-2xl bg-white px-6 py-5">
+                  <p className="text-sm font-medium text-[var(--color-text)]">{item.question}</p>
+                  <span className="text-[var(--color-text-muted)]">→</span>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </SectionBlock>
 
-      <section aria-labelledby="heading-faq-home" className="pt-2">
-        <StockFAQ title="Perguntas frequentes" items={faq} id="heading-faq-home" />
-      </section>
+      </div>
     </main>
   );
 }

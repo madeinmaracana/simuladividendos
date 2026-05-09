@@ -1,4 +1,6 @@
 export { TickerHero } from "./TickerHero";
+export { TickerHeroSimulatorCard } from "./TickerHeroSimulatorCard";
+export type { TickerHeroSimulatorCardProps } from "./TickerHeroSimulatorCard";
 export { SearchIntentTeaser } from "./SearchIntentTeaser";
 export { DividendSummaryText } from "./DividendSummaryText";
 export { DividendTableSimple } from "./DividendTableSimple";

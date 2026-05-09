@@ -13,6 +13,7 @@ import {
   DividendTableSimple,
   SearchIntentTeaser,
   TickerHero,
+  TickerHeroSimulatorCard,
   TickerInternalNav,
   TickerMiniMetrics,
   TickerEditorialSection,
@@ -202,40 +203,45 @@ export default async function AcaoSlugPage({ params }: PageProps) {
         }
       />
       <TickerPageLayout>
+        {/* ── Hero title section ── */}
         <TickerPageRow>
-          <TickerSimulatorTop
-            ticker={symbol}
-            initialStock={initialStock}
-            serverError={serverError}
-            defaultShares={100}
-            hero={
-              <TickerHero
-                variant="split"
-                symbol={symbol}
-                companyName={displayName}
-                sectorLabel={sectorLabel}
-                shortDescription={shortDescription}
-                logoUrl={initialStock?.logoUrl ?? undefined}
-                currentPrice={initialStock?.currentPrice ?? initialStock?.regularMarketPrice ?? null}
-                currency={currency}
-                lastUpdated={initialStock?.lastUpdated}
-                title={heroTitle}
-                afterTitle={
-                  <>
-                    <p className="text-sm text-[color:var(--text-secondary)]">{introText}</p>
-                    <SearchIntentTeaser
-                      symbol={symbol}
-                      currency={currency}
-                      dividends={dividends}
-                      simulationShares={variant === "paga-quanto" ? 100 : intentSimulationShares}
-                      assetKind="stock"
-                      stockCopyProfile={variant === "paga-quanto" ? "paga-quanto" : "default"}
-                    />
-                  </>
-                }
-              />
-            }
-          />
+          <header className="flex flex-col gap-4">
+            <div className="flex flex-wrap items-center gap-2">
+              <p className="font-mono text-xs font-medium uppercase tracking-normal text-[color:var(--text-soft)]">
+                {symbol}
+              </p>
+              <span className="rounded-full border border-[var(--border)] bg-[var(--surface-muted)] px-2.5 py-0.5 text-xs font-medium text-[color:var(--text-secondary)]">
+                {sectorLabel}
+              </span>
+            </div>
+            <h1 className="text-3xl font-bold tracking-tight text-[color:var(--text)] sm:text-4xl">
+              {heroTitle}
+            </h1>
+            <p className="text-sm text-[color:var(--text-secondary)]">{introText}</p>
+            <SearchIntentTeaser
+              symbol={symbol}
+              currency={currency}
+              dividends={dividends}
+              simulationShares={variant === "paga-quanto" ? 100 : intentSimulationShares}
+              assetKind="stock"
+              stockCopyProfile={variant === "paga-quanto" ? "paga-quanto" : "default"}
+            />
+          </header>
+        </TickerPageRow>
+
+        {/* ── New teal+white simulator card ── */}
+        <TickerPageRow>
+          <div className="w-full max-w-[840px]">
+            <TickerHeroSimulatorCard
+              ticker={symbol}
+              companyName={displayName}
+              logoUrl={initialStock?.logoUrl ?? null}
+              initialStock={initialStock}
+              serverError={serverError}
+              defaultShares={100}
+              dividendSummary={summaryText}
+            />
+          </div>
         </TickerPageRow>
 
         <TickerPageRow>

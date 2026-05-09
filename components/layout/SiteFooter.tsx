@@ -1,48 +1,31 @@
 import Link from "next/link";
-import { ui } from "@/components/ui/classes";
-import { cn } from "@/lib/cn";
+import { LogoMark } from "@/components/ui/LogoMark";
 
 const links = [
   { href: "/simulador", label: "Simulador" },
+  { href: "/fiis", label: "FIIs" },
   { href: "/setores", label: "Setores" },
   { href: "/artigos", label: "Artigos" },
 ] as const;
 
 export function SiteFooter() {
   return (
-    <footer className="mt-16 w-full border-t border-[#1f1f1f] bg-[var(--dark-bg)] text-[var(--dark-text)]">
-      <div className={cn(ui.pageShell, "pb-10 pt-10")}>
-        <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
-          <div className="max-w-md space-y-2">
-            <p className="text-[0.8125rem] leading-relaxed text-[var(--dark-muted)]">
-              Simula Dividendos é uma ferramenta educacional. Não constitui recomendação de investimento,
-              consultoria financeira ou promessa de retorno.
-            </p>
-            <p className="text-xs text-[var(--dark-muted)]">
-              Uso por sua conta e risco; não é aconselhamento financeiro.
-            </p>
-          </div>
-          <nav aria-label="Links úteis" className="flex flex-col gap-2 sm:items-end">
-            <span className="mb-1 text-left text-xs font-medium uppercase tracking-wide text-[var(--dark-muted)] sm:text-right">
-              Navegação
-            </span>
-            <div className="flex flex-wrap gap-x-4 gap-y-2 sm:justify-end">
-              {links.map(({ href, label }) => (
-                <Link
-                  key={href}
-                  href={href}
-                  className="text-sm text-[var(--dark-muted)] transition hover:text-[var(--dark-text)]"
-                >
-                  {label}
-                </Link>
-              ))}
-              <Link
-                href="/"
-                className="text-sm text-[var(--dark-muted)] transition hover:text-[var(--dark-text)]"
-              >
-                Início
-              </Link>
+    <footer className="mt-20 w-full bg-black">
+      <div className="mx-auto w-full max-w-[840px] px-4 py-8 sm:px-6">
+        <div className="flex items-center justify-between">
+          <Link href="/" className="flex items-center gap-3 no-underline">
+            <LogoMark />
+            <div className="flex flex-col leading-none gap-0.5">
+              <span className="text-[9px] font-semibold uppercase tracking-[0.18em] text-white/50">Simula</span>
+              <span className="text-sm font-bold tracking-wide text-white">Dividendos</span>
             </div>
+          </Link>
+          <nav className="flex items-center gap-5">
+            {links.map(({ href, label }) => (
+              <Link key={href} href={href} className="text-sm text-white/60 hover:text-white no-underline transition-colors">
+                {label}
+              </Link>
+            ))}
           </nav>
         </div>
       </div>
