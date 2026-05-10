@@ -149,12 +149,12 @@ export function HomeHeroSimulator() {
     : null;
 
   return (
-    <div className="flex w-full overflow-hidden rounded-[32px]">
+    <div className="flex w-full flex-col overflow-hidden rounded-[32px] md:flex-row">
 
       {/* ════════════════════════════════════════
           LEFT PANEL — black
       ════════════════════════════════════════ */}
-      <div className="flex w-[440px] shrink-0 flex-col gap-12 bg-black p-6">
+      <div className="flex w-full shrink-0 flex-col gap-12 bg-black p-6 md:w-[440px]">
         <p className="text-xs font-medium uppercase tracking-widest text-white/40">
           Comece por aqui
         </p>

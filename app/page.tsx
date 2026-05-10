@@ -53,7 +53,7 @@ export default function HomePage() {
       <JsonLd data={buildWebPageSchema({ name: `${HOME_TITLE} | ${SITE_NAME}`, description: HOME_DESCRIPTION, path: "/" })} />
 
       {/* Max-width container for all content */}
-      <div className="flex w-full max-w-[840px] flex-col gap-20 pb-20">
+      <div className="flex w-full max-w-[840px] flex-col gap-20 pb-20 px-4 sm:px-0">
 
         {/* ── Hero ── */}
         <section className="flex flex-col items-center gap-6 pt-12 text-center">
@@ -66,7 +66,7 @@ export default function HomePage() {
         </section>
 
         {/* ── Split Simulator Card ── */}
-        <section className="-mt-12">
+        <section className="md:-mt-12">
           <HomeHeroSimulator />
           <div className="mt-6 flex flex-col gap-2 text-xs text-[var(--color-text-soft)]">
             <p>⚠ Não é recomendação de investimento. Fonte pública de proventos.</p>
@@ -111,9 +111,9 @@ export default function HomePage() {
           subtitle="Descubra ações por setor da economia"
           viewAllHref="/setores"
         >
-          <ul className="flex gap-3">
+          <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:flex">
             {getSectorNavItems().slice(0, 5).map(({ slug, label, href, icon }) => (
-              <li key={slug} className="flex-1">
+              <li key={slug} className="flex-1 min-w-0">
                 <Link
                   href={href}
                   className="flex h-[140px] flex-col justify-between rounded-2xl bg-[var(--color-surface)] p-4 no-underline transition hover:shadow-md"
@@ -134,7 +134,7 @@ export default function HomePage() {
           subtitle="Aprenda sobre dividendos e renda passiva"
           viewAllHref="/artigos"
         >
-          <div className="grid grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3">
             {homeArticles.map((article) => (
               <ArticleCard key={article.slug} article={article} />
             ))}

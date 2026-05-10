@@ -2,10 +2,10 @@ import Link from "next/link";
 import { LogoMark } from "@/components/ui/LogoMark";
 
 const nav = [
-  { href: "/comparar", label: "Comparar" },
-  { href: "/fiis", label: "FIIs" },
-  { href: "/setores", label: "Setores" },
-  { href: "/artigos", label: "Artigos" },
+  { href: "/comparar", label: "Comparar", mobile: true },
+  { href: "/fiis", label: "FIIs", mobile: true },
+  { href: "/setores", label: "Setores", mobile: false },
+  { href: "/artigos", label: "Artigos", mobile: false },
 ] as const;
 
 export function SiteHeader() {
@@ -23,11 +23,11 @@ export function SiteHeader() {
 
         {/* Nav */}
         <nav aria-label="Navegação principal" className="flex items-center gap-1">
-          {nav.map(({ href, label }) => (
+          {nav.map(({ href, label, mobile }) => (
             <Link
               key={href}
               href={href}
-              className="rounded-lg px-3 py-2 text-sm font-medium text-[var(--color-text-muted)] transition hover:bg-black/5 hover:text-[var(--color-text)] no-underline"
+              className={`rounded-lg px-3 py-2 text-sm font-medium text-[var(--color-text-muted)] transition hover:bg-black/5 hover:text-[var(--color-text)] no-underline${mobile ? "" : " hidden sm:inline-flex"}`}
             >
               {label}
             </Link>

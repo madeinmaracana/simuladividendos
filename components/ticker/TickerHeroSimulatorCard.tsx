@@ -66,7 +66,7 @@ export function TickerHeroSimulatorCard({
     lastPayment,
     nextPayment,
     onSimulate,
-  } = useDividendSimulator(ticker, initialStock, serverError, defaultShares, "tickerHeroCard");
+  } = useDividendSimulator(ticker, initialStock, serverError, defaultShares, "tickerPage");
 
   const perShareValue =
     lastPayment && Number(sharesStr || 1) > 0 ? lastPayment.totalPerShare : null;
@@ -74,12 +74,12 @@ export function TickerHeroSimulatorCard({
   const symbol = ticker.toUpperCase();
 
   return (
-    <div className="flex w-full overflow-hidden rounded-[32px]">
+    <div className="flex w-full flex-col overflow-hidden rounded-[32px] md:flex-row">
 
       {/* ═══════════════════════════════════════
           LEFT PANEL — teal #00939A
       ═══════════════════════════════════════ */}
-      <div className="flex w-[440px] shrink-0 flex-col gap-8 bg-[#00939A] p-6">
+      <div className="flex w-full shrink-0 flex-col gap-8 bg-[#00939A] p-6 md:w-[440px]">
 
         {/* Company badge */}
         <div className="flex items-center gap-2 self-start rounded-full border border-white/20 bg-white/10 px-3 py-1.5">
