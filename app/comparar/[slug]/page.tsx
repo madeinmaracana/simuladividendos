@@ -11,6 +11,7 @@ import { buildPageMetadata } from "@/lib/seo";
 import { ComparCard } from "@/components/comparar/ComparCard";
 import { ComparVerdict } from "@/components/comparar/ComparVerdict";
 import { ComparForm } from "@/components/comparar/ComparForm";
+import { ComparPill } from "@/components/comparar/ComparPill";
 import { cn } from "@/lib/cn";
 import { ui } from "@/components/ui/classes";
 import Link from "next/link";
@@ -125,12 +126,11 @@ export default async function ComparSlugPage({ params }: Props) {
             .slice(0, 8)
             .map(([a, b]) => (
               <li key={`${a}-${b}`}>
-                <Link
+                <ComparPill
+                  tickerA={a}
+                  tickerB={b}
                   href={`/comparar/${buildComparSlug(a, b)}`}
-                  className={cn(ui.pill, "no-underline")}
-                >
-                  {a} vs {b}
-                </Link>
+                />
               </li>
             ))}
         </ul>
