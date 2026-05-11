@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { buildComparSlug } from "@/lib/comparar";
 import { cn } from "@/lib/cn";
-import { ui } from "@/components/ui/classes";
+import { TickerInput } from "@/components/ui/TickerInput";
 
 export function ComparForm() {
   const router = useRouter();
@@ -27,16 +27,13 @@ export function ComparForm() {
       onSubmit={handleSubmit}
       className="flex flex-col gap-4 sm:flex-row sm:items-end"
     >
-      <div className="flex flex-1 flex-col gap-1.5">
-        <label className={ui.label} htmlFor="ticker-a">Ativo A</label>
-        <input
+      <div className="flex-1">
+        <TickerInput
           id="ticker-a"
-          className={cn(ui.input, "uppercase")}
-          placeholder="Ex.: PETR4"
+          label="Ativo A"
           value={tickerA}
-          onChange={(e) => setTickerA(e.target.value.toUpperCase())}
-          maxLength={10}
-          autoComplete="off"
+          onChange={setTickerA}
+          placeholder="Ex.: PETR4"
         />
       </div>
 
@@ -44,16 +41,13 @@ export function ComparForm() {
         vs
       </span>
 
-      <div className="flex flex-1 flex-col gap-1.5">
-        <label className={ui.label} htmlFor="ticker-b">Ativo B</label>
-        <input
+      <div className="flex-1">
+        <TickerInput
           id="ticker-b"
-          className={cn(ui.input, "uppercase")}
-          placeholder="Ex.: VALE3"
+          label="Ativo B"
           value={tickerB}
-          onChange={(e) => setTickerB(e.target.value.toUpperCase())}
-          maxLength={10}
-          autoComplete="off"
+          onChange={setTickerB}
+          placeholder="Ex.: VALE3"
         />
       </div>
 
@@ -68,7 +62,7 @@ export function ComparForm() {
         Comparar
       </button>
 
-      {error && <p className="text-sm text-[var(--color-danger)]">{error}</p>}
+      {error && <p className="w-full text-sm text-[var(--color-danger)]">{error}</p>}
     </form>
   );
 }
