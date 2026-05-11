@@ -1,171 +1,174 @@
 /* =============================================================================
    DESIGN TOKENS — SimulaDividendos
-   Fonte: Figma "Simulador" (node 0-1)
-   Escala gerada a partir das variáveis e text styles do arquivo de design.
+   Direção: Premium Wealth Tech · Influência: Vercel / Linear / Mercury
    ============================================================================= */
 
 /* -----------------------------------------------------------------------------
    1. TIPOGRAFIA
-   Família: Inter (sans + mono) + Merriweather (editorial)
-   Escala (text styles Figma): 12 · 16 · 24 · 32 · 52  — line-height Auto
    ----------------------------------------------------------------------------- */
 :root {
-  --font-sans:  var(--font-sans, "Inter", ui-sans-serif, system-ui, sans-serif);
-  --font-serif: var(--font-serif, "Merriweather", Georgia, "Times New Roman", serif);
-  --font-mono:  var(--font-sans, "Inter", ui-sans-serif, system-ui, sans-serif);
+  --font-sans:  'Satoshi', 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Merriweather', Georgia, 'Times New Roman', serif;
+  --font-mono:  'Inter', ui-monospace, monospace;
 
-  /* Escala de tamanhos (px → rem) */
-  --text-2xs: 0.75rem;   /* 12px — Text · 12/Auto */
-  --text-sm:  1rem;      /* 16px — Text · 16/Auto */
-  --text-md:  1.5rem;    /* 24px — Text · 24/Auto */
-  --text-lg:  2rem;      /* 32px — Text · 32/Auto */
-  --text-xl:  3.25rem;   /* 52px — Text · 52/Auto */
+  /* Escala de texto — alinhada com Tailwind defaults para evitar conflitos */
+  --text-2xs: 0.6875rem;  /* 11px — labels, badges              */
+  --text-xs:  0.75rem;    /* 12px — captions                     */
+  --text-sm:  0.875rem;   /* 14px — body small, table            */
+  --text-md:  1rem;       /* 16px — body padrão                  */
+  --text-lg:  1.125rem;   /* 18px — lead                         */
+  --text-xl:  1.25rem;    /* 20px — subtítulos                   */
 
-  /* Aliases de compatibilidade com a escala Tailwind:
-     text-3xl e text-4xl → token lg (32px), em vez dos 30/36px padrão */
-  --text-3xl: var(--text-lg);   /* 32px */
-  --text-4xl: var(--text-lg);   /* 32px */
+  /* Display — hero, seções grandes. Use com ds-display-* */
+  --ds-display-xs: 1.5rem;   /* 24px */
+  --ds-display-sm: 2rem;     /* 32px */
+  --ds-display-md: 2.75rem;  /* 44px */
+  --ds-display-lg: 3.5rem;   /* 56px */
+  --ds-display-xl: 4.5rem;   /* 72px */
 
-  /* Line-height padrão ("Auto" no Figma ≈ 1.4–1.5 em corpo, mais apertado em display) */
-  --leading-body:    1.5;
-  --leading-snug:    1.3;
-  --leading-display: 1.08;
+  /* Line-heights */
+  --leading-body:    1.6;
+  --leading-snug:    1.35;
+  --leading-display: 1.06;
 
   /* Pesos */
-  --font-normal:    400;
-  --font-medium:    500;
-  --font-semibold:  600;
-  --font-bold:      700;
+  --font-normal:   400;
+  --font-medium:   500;
+  --font-semibold: 600;
+  --font-bold:     700;
 }
 
 /* -----------------------------------------------------------------------------
    2. ESPAÇAMENTO
-   Escala completa cobrindo todos os valores em uso no codebase.
-   Âncoras Figma marcadas com ★ (4 · 8 · 16 · 24 · 40px).
-   Correspondem 1:1 aos utilitários Tailwind: --space-N = gap-N, p-N, m-N…
-   (Tailwind v4 usa --spacing: 0.25rem como multiplicador; --space-* é nossa camada)
    ----------------------------------------------------------------------------- */
 :root {
-  --space-0\.5: 0.125rem;  /*  2px — py-0.5, px-0.5            */
-  --space-1:    0.25rem;   /*  4px ★ gap-1, p-1                */
-  --space-1\.5: 0.375rem;  /*  6px — py-1.5                    */
-  --space-2:    0.5rem;    /*  8px ★ gap-2, p-2                */
-  --space-2\.5: 0.625rem;  /* 10px — px-2.5, py-2.5            */
-  --space-3:    0.75rem;   /* 12px — gap-3, py-3, px-3 (mais usado) */
-  --space-4:    1rem;      /* 16px ★ gap-4, p-4, px-4          */
-  --space-5:    1.25rem;   /* 20px — gap-5, px-5               */
-  --space-6:    1.5rem;    /* 24px ★ gap-6, p-6, px-6          */
-  --space-8:    2rem;      /* 32px — gap-8, p-8                */
-  --space-12:   3rem;      /* 48px — gap-12, lg:px-12          */
-  --space-20:   5rem;      /* 80px — mt-20, pb-20              */
-
-  /* Aliases semânticos (baseados nos âncoras do Figma) */
-  --gap-xs: var(--space-1);    /*  4px — ícone ↔ texto, entre badges */
-  --gap-sm: var(--space-2);    /*  8px — entre itens de lista        */
-  --gap-md: var(--space-4);    /* 16px — entre componentes           */
-  --gap-lg: var(--space-6);    /* 24px — entre seções internas       */
-  --gap-xl: var(--space-12);   /* 48px — entre seções de página      */
+  --space-1:    0.25rem;   /*  4px */
+  --space-2:    0.5rem;    /*  8px */
+  --space-3:    0.75rem;   /* 12px */
+  --space-4:    1rem;      /* 16px */
+  --space-5:    1.25rem;   /* 20px */
+  --space-6:    1.5rem;    /* 24px */
+  --space-8:    2rem;      /* 32px */
+  --space-10:   2.5rem;    /* 40px */
+  --space-12:   3rem;      /* 48px */
+  --space-16:   4rem;      /* 64px */
+  --space-20:   5rem;      /* 80px */
+  --space-24:   6rem;      /* 96px */
 }
 
 /* -----------------------------------------------------------------------------
-   3. CORES
-   Paleta: fundo off-white · superfícies brancas · texto escuro · verde neon
-   Hex do verde: #CAFF00 (lime brand) — confirmar com Figma se necessário.
+   3. CORES — Brand primitives
    ----------------------------------------------------------------------------- */
 :root {
+  --color-black:    #050505;
+  --color-offblack: #0F1115;
+  --color-cream:    #F5F3EE;
+  --color-muted-fg: #A8ADB8;
+  --color-lavender: #B993FF;
+  --color-iceblue:  #8BE0FF;
+  --color-wealth:   #DFFF72;
+
   /* — Brand — */
-  --brand:            #A6FF00;   /* verde neon / lime — CTA, logo, destaque */
-  --brand-hover:      #8fe000;   /* -10% luminosidade para hover */
-  --brand-foreground: #0b0b0b;   /* texto sobre fundo brand */
+  --brand:            var(--color-wealth);   /* #DFFF72 — lima aspiracional */
+  --brand-hover:      #cbee5c;
+  --brand-foreground: var(--color-offblack); /* texto sobre fundo brand */
 
-  /* — Neutros (light mode) — */
-  --color-bg:           #f3f2ef; /* fundo de página */
-  --color-surface:      #ffffff; /* cards, inputs, superfícies */
-  --color-surface-muted:#f7f7f5; /* superfícies secundárias */
+  /* — Semânticas light mode — */
+  --color-bg:            var(--color-cream);  /* #F5F3EE */
+  --color-surface:       #FFFFFF;
+  --color-surface-muted: #FAFAF8;
 
-  --color-text:         #111111; /* texto primário */
-  --color-text-muted:   #4b4b4b; /* texto secundário */
-  --color-text-soft:    #7a7a7a; /* placeholders, labels suaves */
+  --color-text:          var(--color-offblack); /* #0F1115 */
+  --color-text-muted:    #5A5F6E;
+  --color-text-soft:     var(--color-muted-fg); /* #A8ADB8 */
 
-  --color-border:       #e6e6e6; /* divisores, bordas de card */
-  --color-border-strong:#d0d0d0; /* bordas em estado hover/focus */
+  --color-border:        rgba(0, 0, 0, 0.07);
+  --color-border-strong: rgba(0, 0, 0, 0.14);
 
-  /* — Dark surfaces (simulador card, footer, header escuro) — */
-  --color-dark-bg:      #0b0b0b;
-  --color-dark-surface: #161616;
-  --color-dark-border:  #2a2a2a;
-  --color-dark-text:    #ededed;
-  --color-dark-muted:   #8a8a8a;
+  /* — Dark surfaces (hero panel, footer, cta escuro) — */
+  --color-dark-bg:      var(--color-black);    /* #050505 */
+  --color-dark-surface: var(--color-offblack); /* #0F1115 */
+  --color-dark-border:  rgba(255, 255, 255, 0.07);
+  --color-dark-text:    #F0EEE9;
+  --color-dark-muted:   var(--color-muted-fg); /* #A8ADB8 */
 
-  /* — Semânticas — */
+  /* — Accents opcionais — */
+  --accent-lavender: var(--color-lavender);
+  --accent-iceblue:  var(--color-iceblue);
+  --accent:          #3B3BDB; /* azul profundo para focus rings */
+
+  /* — Semânticas de estado — */
   --color-success:      #22c55e;
   --color-success-soft: #dcfce7;
   --color-warning:      #f59e0b;
   --color-danger:       #ef4444;
 }
 
-/* Dark mode — sistema (prefers-color-scheme) */
+/* Dark mode — respeita preferência do sistema */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg:            var(--color-dark-bg);
-    --color-surface:       var(--color-dark-surface);
-    --color-surface-muted: #1c1c1c;
-    --color-text:          var(--color-dark-text);
-    --color-text-muted:    var(--color-dark-muted);
-    --color-text-soft:     #606060;
-    --color-border:        var(--color-dark-border);
-    --color-border-strong: #3a3a3a;
+    --color-bg:            var(--color-black);
+    --color-surface:       var(--color-offblack);
+    --color-surface-muted: #171B22;
+    --color-text:          #F0EEE9;
+    --color-text-muted:    #8A8F9E;
+    --color-text-soft:     #565B6A;
+    --color-border:        rgba(255, 255, 255, 0.07);
+    --color-border-strong: rgba(255, 255, 255, 0.13);
   }
 }
 
 /* -----------------------------------------------------------------------------
    4. BORDER RADIUS
-   Escala consistente: sm (inputs/tags) · md (botões) · lg (cards) · xl (modais)
    ----------------------------------------------------------------------------- */
 :root {
-  --radius-xs: 6px;   /* badges, chips pequenos */
-  --radius-sm: 10px;  /* inputs, pills           */
-  --radius-md: 14px;  /* botões, selects         */
-  --radius-lg: 18px;  /* cards                   */
-  --radius-xl: 24px;  /* modais, drawers         */
-  --radius-full: 9999px; /* pill completo         */
+  --radius-xs:   6px;
+  --radius-sm:   10px;
+  --radius-md:   12px;
+  --radius-lg:   16px;
+  --radius-xl:   20px;
+  --radius-2xl:  28px;
+  --radius-full: 9999px;
+
+  /* Aliases semânticos */
+  --radius-input: var(--radius-md);
+  --radius-card:  var(--radius-lg);
+  --radius-pill:  var(--radius-full);
 }
 
 /* -----------------------------------------------------------------------------
-   5. SOMBRAS
+   5. SOMBRAS — sutis, premium
    ----------------------------------------------------------------------------- */
 :root {
   --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
-  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.12);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.06), 0 4px 8px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.08), 0 8px 16px rgba(0, 0, 0, 0.05);
+  --shadow-card: var(--shadow-md);
 }
 
 /* -----------------------------------------------------------------------------
    6. LAYOUT
    ----------------------------------------------------------------------------- */
 :root {
-  --page-max:    80rem;   /* 1280px — largura máxima do conteúdo */
-  --page-gutter: var(--space-4);  /* 16px mobile */
+  --page-max:    80rem;   /* 1280px */
+  --page-gutter: 1rem;    /* 16px mobile */
 
-  /* Larguras de componentes específicos */
   --simulator-card-max: 50rem;
   --table-min-glance:   20rem;
   --table-min-history:  40rem;
 }
 
 @media (min-width: 640px) {
-  :root { --page-gutter: var(--space-6); } /* 24px tablet */
+  :root { --page-gutter: 1.5rem; }  /* 24px tablet */
 }
-
 @media (min-width: 1024px) {
-  :root { --page-gutter: 2.5rem; } /* 40px desktop */
+  :root { --page-gutter: 3rem; }    /* 48px desktop */
 }
 
 /* -----------------------------------------------------------------------------
    7. ALIASES DE RETROCOMPATIBILIDADE
-   Mantêm o código existente funcionando enquanto a migração acontece.
-   Prefixo legado sem "--color-" / "--font-" para não quebrar componentes atuais.
+   Mantidos enquanto componentes legados migram para --color-*.
    ----------------------------------------------------------------------------- */
 :root {
   /* Tipografia */
@@ -173,9 +176,9 @@
   --ds-font-serif: var(--font-serif);
   --ds-font-mono:  var(--font-mono);
 
-  /* OpenType features */
-  --font-features-ui:      "zero" 1, "ss01" 1;  /* zero cortado + alt 1 do Inter */
-  --font-features-numeric: "zero" 1, "tnum" 1;  /* zero cortado + tabular nums */
+  /* OpenType */
+  --font-features-ui:      "zero" 1, "ss01" 1;
+  --font-features-numeric: "zero" 1, "tnum" 1;
 
   /* Cores */
   --bg:               var(--color-bg);
@@ -187,9 +190,8 @@
   --text-soft:        var(--color-text-soft);
   --border:           var(--color-border);
   --border-strong:    var(--color-border-strong);
-  --primary:            var(--brand);            /* verde neon — CTA principal */
-  --primary-foreground: var(--brand-foreground); /* preto sobre verde */
-  --accent:             #2f2f2f;
+  --primary:            var(--brand);
+  --primary-foreground: var(--brand-foreground);
 
   --dark-bg:      var(--color-dark-bg);
   --dark-surface: var(--color-dark-surface);
@@ -200,12 +202,4 @@
   --success-soft: var(--color-success-soft);
   --warning:      var(--color-warning);
   --danger:       var(--color-danger);
-
-  /* Raios */
-  --radius-input: var(--radius-md);
-  --radius-card:  var(--radius-lg);
-
-  /* Sombras */
-  --shadow-card: var(--shadow-md);
-
 }

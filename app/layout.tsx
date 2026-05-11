@@ -8,11 +8,11 @@ import { cn } from "@/lib/cn";
 import { ui } from "@/components/ui/classes";
 import "./globals.css";
 
-/** UI principal — Inter */
+/** UI fallback — Inter (disponível como --font-inter; Satoshi é a primária via CDN) */
 const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
-  variable: "--font-sans",
+  variable: "--font-inter",
   display: "swap",
 });
 
@@ -83,15 +83,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`${inter.variable} ${merriweather.variable}`}>
+    <html lang="pt-BR" className={`${inter.variable} ${merriweather.variable}`} suppressHydrationWarning>
       <head>
+        {/* Satoshi — fonte primária do design system */}
+        <link rel="preconnect" href="https://api.fontshare.com" crossOrigin="" />
+        <link
+          rel="stylesheet"
+          href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&display=swap"
+        />
         {/* Material Symbols Outlined — ícones do Google usados no design system */}
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block"
         />
       </head>
-      <body className={`${inter.className} min-h-screen antialiased`}>
+      <body className="min-h-screen antialiased">
         <GoogleAnalytics />
         <div className="flex min-h-screen flex-col">
           <div
