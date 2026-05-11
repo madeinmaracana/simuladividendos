@@ -4,32 +4,8 @@ import { useState } from "react";
 import Image from "next/image";
 import { useDividendSimulator } from "@/components/simulator/useDividendSimulator";
 import { formatBRL, formatDatePt } from "@/lib/format";
+import { Amount } from "@/components/ui/Amount";
 import type { StockQuote } from "@/lib/types";
-
-/* ── helpers ──────────────────────────────────────────── */
-
-/** Bicolor "R$ " + number display — identical to HomeHeroSimulator */
-function Amount({
-  value,
-  currency,
-  highlight = false,
-}: {
-  value: number;
-  currency: string;
-  highlight?: boolean;
-}) {
-  const formatted = formatBRL(value, currency);
-  const match = formatted.match(/^(R\$[  \s]*)(.+)$/);
-  const prefix = match?.[1] ?? "R$ ";
-  const number = match?.[2] ?? formatted;
-
-  return (
-    <span className="text-3xl font-light leading-none tracking-[-0.64px]">
-      <span className={highlight ? "text-[#9B9B9B]" : "text-[#A3A3A3]"}>{prefix}</span>
-      <span className={highlight ? "text-black" : "text-[#A3A3A3]"}>{number}</span>
-    </span>
-  );
-}
 
 /* ── main component ───────────────────────────────────── */
 
