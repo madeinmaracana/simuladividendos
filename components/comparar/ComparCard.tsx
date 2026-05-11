@@ -4,6 +4,7 @@ import type { TickerComparData } from "@/lib/comparar";
 import { formatBRL } from "@/lib/format";
 import { cn } from "@/lib/cn";
 import { ui } from "@/components/ui/classes";
+import { MetricRow } from "@/components/ui/MetricRow";
 
 interface ComparCardProps {
   data: TickerComparData;
@@ -38,19 +39,19 @@ export function ComparCard({ data, shares }: ComparCardProps) {
 
       {/* Métricas */}
       <div className="grid grid-cols-2 gap-3">
-        <Metric
+        <MetricRow
           label="Últimos 12m (por cota)"
           value={calc.perShare12m > 0 ? formatBRL(calc.perShare12m, currency) : "—"}
         />
-        <Metric
+        <MetricRow
           label={`Total (${shares} cotas)`}
           value={calc.total12mEstimate > 0 ? formatBRL(calc.total12mEstimate, currency) : "—"}
         />
-        <Metric
+        <MetricRow
           label="Média mensal (por cota)"
           value={calc.monthlyAvgEstimate > 0 ? formatBRL(calc.monthlyAvgEstimate, currency) : "—"}
         />
-        <Metric
+        <MetricRow
           label="Último dividendo"
           value={
             calc.nextDividend && !calc.nextDividend.isFuture
@@ -59,9 +60,9 @@ export function ComparCard({ data, shares }: ComparCardProps) {
           }
         />
         {currentPrice && (
-          <Metric label="Preço atual" value={formatBRL(currentPrice, currency)} />
+          <MetricRow label="Preço atual" value={formatBRL(currentPrice, currency)} />
         )}
-        <Metric
+        <MetricRow
           label="Pagamentos (12m)"
           value={calc.dividendsLast12m.length > 0 ? String(calc.dividendsLast12m.length) : "—"}
         />
@@ -80,13 +81,3 @@ export function ComparCard({ data, shares }: ComparCardProps) {
   );
 }
 
-function Metric({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="flex flex-col gap-0.5">
-      <p className={ui.metricLabel}>{label}</p>
-      <p className="text-base font-semibold tabular-nums text-[var(--color-text)]">
-        {value}
-      </p>
-    </div>
-  );
-}
