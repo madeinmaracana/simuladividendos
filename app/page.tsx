@@ -33,50 +33,128 @@ const HOME_ARTICLE_SLUGS = [
 ];
 
 const FAQ_ITEMS = [
-  { question: "O que este simulador faz?", answer: "Multiplica o dividendo por ação pela quantidade de cotas que você informa. Serve para entender o histórico recente em valores, sem prever o futuro." },
-  { question: "Os valores são garantidos?", answer: "Não. Dividendos dependem da companhia e do calendário oficial. O site é educacional e não recomenda compra ou venda de ativos." },
-  { question: "De onde vêm os dados?", answer: "De uma fonte pública de cotações e proventos. Sempre confira RI e comunicados da empresa para decisões reais." },
+  {
+    question: "O que este simulador faz?",
+    answer:
+      "Multiplica o dividendo por ação pela quantidade de cotas que você informa. Serve para entender o histórico recente em valores, sem prever o futuro.",
+  },
+  {
+    question: "Os valores são garantidos?",
+    answer:
+      "Não. Dividendos dependem da companhia e do calendário oficial. O site é educacional e não recomenda compra ou venda de ativos.",
+  },
+  {
+    question: "De onde vêm os dados?",
+    answer:
+      "De uma fonte pública de cotações e proventos. Sempre confira RI e comunicados da empresa para decisões reais.",
+  },
 ];
 
+const HOW_IT_WORKS = [
+  {
+    step: "01",
+    title: "Escolha o ativo",
+    description: "Digite o ticker da ação ou FII — sugestões aparecem automaticamente.",
+  },
+  {
+    step: "02",
+    title: "Informe suas cotas",
+    description: "Coloque quantas ações você possui ou deseja simular.",
+  },
+  {
+    step: "03",
+    title: "Veja o resultado",
+    description: "Último dividendo pago e próximo pagamento estimado, em reais.",
+  },
+];
 
 export default function HomePage() {
   const popularTickers = getAllMockTickers().slice(0, 8);
   const popularFiis = getAllMockFiiTickers().filter((t) =>
     ["MXRF11", "HGLG11", "XPLG11", "KNRI11", "VGHF11"].includes(t)
   );
-  const homeArticles = HOME_ARTICLE_SLUGS
-    .map((slug) => ALL_ARTICLES.find((a) => a.slug === slug))
-    .filter((a): a is ArticleRecord => Boolean(a));
+  const homeArticles = HOME_ARTICLE_SLUGS.map((slug) =>
+    ALL_ARTICLES.find((a) => a.slug === slug)
+  ).filter((a): a is ArticleRecord => Boolean(a));
 
   return (
-    <main className="flex w-full flex-col items-center">
-      <JsonLd data={buildWebPageSchema({ name: `${HOME_TITLE} | ${SITE_NAME}`, description: HOME_DESCRIPTION, path: "/" })} />
+    <main className="flex w-full flex-col">
+      <JsonLd
+        data={buildWebPageSchema({
+          name: `${HOME_TITLE} | ${SITE_NAME}`,
+          description: HOME_DESCRIPTION,
+          path: "/",
+        })}
+      />
 
-      {/* Max-width container for all content */}
-      <div className="flex w-full max-w-[840px] flex-col gap-20 pb-20 px-4 sm:px-0">
+      {/* ══════════════════════════════════════════════════════════════
+          HERO — 2 colunas em lg+
+      ══════════════════════════════════════════════════════════════ */}
+      <section className="w-full border-b border-[var(--color-border)]">
+        <div className="mx-auto flex max-w-[var(--page-max)] flex-col gap-10 px-[var(--page-gutter)] py-14 lg:flex-row lg:items-center lg:gap-14 lg:py-20">
 
-        {/* ── Hero ── */}
-        <section className="flex flex-col items-center gap-6 pt-12 text-center">
-          <h1 className="max-w-[18ch] text-xl font-semibold leading-tight tracking-tight text-[var(--color-text)]">
-            Simule quanto você pode receber em dividendos
-          </h1>
-          <p className="max-w-[52ch] text-base text-[var(--color-text-muted)]">
-            Compare ações, estime pagamentos e visualize a renda potencial da sua carteira em poucos segundos.
-          </p>
-        </section>
-
-        {/* ── Split Simulator Card ── */}
-        <section className="md:-mt-12">
-          <HomeHeroSimulator />
-          <div className="mt-6 flex flex-col gap-2 text-xs text-[var(--color-text-soft)]">
-            <p>⚠ Não é recomendação de investimento. Fonte pública de proventos.</p>
-            <p className="font-medium">Como funciona</p>
-            <ol className="ml-4 list-decimal space-y-1">
-              <li>Escolha o ticker (sugestões após duas letras).</li>
-              <li>Informe a quantidade de ações e clique em Simular dividendos.</li>
-              <li>Confira último e próximo pagamento logo abaixo.</li>
-            </ol>
+          {/* Left — copy */}
+          <div className="flex flex-col gap-6 lg:max-w-[46ch]">
+            <h1 className="ds-display-sm font-bold tracking-tight text-[var(--color-text)] sm:ds-display-md">
+              Simule quanto você pode receber em dividendos
+            </h1>
+            <p className="text-lg leading-relaxed text-[var(--color-text-muted)]">
+              Compare ações, estime pagamentos e visualize a renda potencial da sua carteira em poucos segundos.
+            </p>
+            <ul className="flex flex-wrap gap-x-6 gap-y-1.5 text-sm text-[var(--color-text-soft)]">
+              <li className="flex items-center gap-1.5">
+                <span className="h-1.5 w-1.5 rounded-full bg-[var(--brand)]" />
+                Dados em tempo real
+              </li>
+              <li className="flex items-center gap-1.5">
+                <span className="h-1.5 w-1.5 rounded-full bg-[var(--brand)]" />
+                Ações e FIIs da B3
+              </li>
+              <li className="flex items-center gap-1.5">
+                <span className="h-1.5 w-1.5 rounded-full bg-[var(--brand)]" />
+                Gratuito
+              </li>
+            </ul>
           </div>
+
+          {/* Right — simulator */}
+          <div className="w-full min-w-0 lg:flex-1">
+            <HomeHeroSimulator />
+            <p className="mt-3 text-xs text-[var(--color-text-soft)]">
+              ⚠ Não é recomendação de investimento. Fonte pública de proventos B3.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════════════════
+          CONTEÚDO — max-width da página, espaçamento generoso
+      ══════════════════════════════════════════════════════════════ */}
+      <div className="mx-auto flex w-full max-w-[var(--page-max)] flex-col gap-20 px-[var(--page-gutter)] py-20">
+
+        {/* ── Como funciona ── */}
+        <section id="como-funciona" className="flex flex-col gap-8">
+          <div className="flex flex-col gap-2">
+            <h2 className="ds-display-xs font-bold tracking-tight text-[var(--color-text)]">
+              Como funciona
+            </h2>
+            <p className="text-base text-[var(--color-text-muted)]">
+              Três passos para descobrir sua renda de dividendos.
+            </p>
+          </div>
+          <ol className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+            {HOW_IT_WORKS.map(({ step, title, description }) => (
+              <li
+                key={step}
+                className="flex flex-col gap-3 rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] p-6 shadow-[var(--shadow-sm)]"
+              >
+                <span className="font-mono text-xs font-semibold text-[var(--brand)]">{step}</span>
+                <p className="font-semibold text-[var(--color-text)]">{title}</p>
+                <p className="text-sm leading-relaxed text-[var(--color-text-muted)]">{description}</p>
+              </li>
+            ))}
+          </ol>
         </section>
 
         {/* ── Ações populares ── */}
@@ -87,20 +165,24 @@ export default function HomePage() {
         >
           <ul className="flex flex-wrap gap-2">
             {popularTickers.map((t) => (
-              <li key={t}><TickerPill ticker={t} href={getTickerPath(t)} /></li>
+              <li key={t}>
+                <TickerPill ticker={t} href={getTickerPath(t)} />
+              </li>
             ))}
           </ul>
         </SectionBlock>
 
         {/* ── FIIs ── */}
         <SectionBlock
-          title="FIIs"
-          subtitle="Principais fundos imobiliários para renda mensal"
+          title="Fundos Imobiliários"
+          subtitle="Principais FIIs para renda mensal"
           viewAllHref="/fiis"
         >
           <ul className="flex flex-wrap gap-2">
             {popularFiis.map((t) => (
-              <li key={t}><TickerPill ticker={t} href={getFiiPath(t)} /></li>
+              <li key={t}>
+                <TickerPill ticker={t} href={getFiiPath(t)} />
+              </li>
             ))}
           </ul>
         </SectionBlock>
@@ -112,21 +194,21 @@ export default function HomePage() {
           viewAllHref="/setores"
         >
           <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:flex">
-            {getSectorNavItems().slice(0, 5).map(({ slug, label, href, icon }) => (
-              <li key={slug} className="flex-1 min-w-0">
-                <Link
-                  href={href}
-                  className="flex h-[140px] flex-col justify-between rounded-2xl bg-[var(--color-surface)] p-4 no-underline transition hover:shadow-md"
-                >
-                  <Icon name={icon} size="md" className="text-[var(--color-text)]" />
-                  <span className="text-sm font-medium text-[var(--color-text)]">{label}</span>
-                </Link>
-              </li>
-            ))}
+            {getSectorNavItems()
+              .slice(0, 5)
+              .map(({ slug, label, href, icon }) => (
+                <li key={slug} className="flex-1 min-w-0">
+                  <Link
+                    href={href}
+                    className="flex h-[130px] flex-col justify-between rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] p-4 no-underline shadow-[var(--shadow-sm)] transition hover:border-[var(--color-border-strong)] hover:shadow-[var(--shadow-md)]"
+                  >
+                    <Icon name={icon} size="md" className="text-[var(--color-text-muted)]" />
+                    <span className="text-sm font-medium text-[var(--color-text)]">{label}</span>
+                  </Link>
+                </li>
+              ))}
           </ul>
         </SectionBlock>
-
-        {/* ── Ad slot (aguardando integração AdSense) ── */}
 
         {/* ── Artigos ── */}
         <SectionBlock
@@ -134,34 +216,32 @@ export default function HomePage() {
           subtitle="Aprenda sobre dividendos e renda passiva"
           viewAllHref="/artigos"
         >
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {homeArticles.map((article) => (
               <ArticleCard key={article.slug} article={article} />
             ))}
           </div>
         </SectionBlock>
 
-        {/* ── Ad slot (aguardando integração AdSense) ── */}
-
         {/* ── FAQ ── */}
         <SectionBlock
           title="Perguntas frequentes"
           subtitle="Tire suas dúvidas sobre o simulador"
           viewAllHref="/artigos"
-          viewAllLabel="Ver todos →"
+          viewAllLabel="Ver artigos →"
         >
           <ul className="flex flex-col gap-2">
             {FAQ_ITEMS.map((item) => (
               <li key={item.question}>
-                <details className="group rounded-2xl bg-[var(--color-surface)]">
+                <details className="group rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[var(--shadow-xs)]">
                   <summary className="flex cursor-pointer list-none items-center justify-between px-6 py-5 marker:content-none [&::-webkit-details-marker]:hidden">
-                    <p className="text-sm font-medium text-[var(--color-text)]">{item.question}</p>
+                    <p className="text-sm font-semibold text-[var(--color-text)]">{item.question}</p>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       fill="currentColor"
                       aria-hidden
-                      className="h-5 w-5 shrink-0 text-[var(--color-text-muted)] transition-transform duration-200 group-open:rotate-180"
+                      className="h-5 w-5 shrink-0 text-[var(--color-text-soft)] transition-transform duration-200 group-open:rotate-180"
                     >
                       <path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z" />
                     </svg>
@@ -174,6 +254,31 @@ export default function HomePage() {
             ))}
           </ul>
         </SectionBlock>
+
+        {/* ── Dark CTA ── */}
+        <section className="overflow-hidden rounded-[var(--radius-2xl)] bg-[var(--color-dark-bg)] px-8 py-12 text-center sm:px-16">
+          <div className="mx-auto flex max-w-[42ch] flex-col items-center gap-6">
+            <h2 className="ds-display-xs font-bold tracking-tight text-[var(--color-dark-text)] sm:ds-display-sm">
+              Descubra o potencial da sua carteira
+            </h2>
+            <p className="text-base text-[var(--color-dark-muted)]">
+              Simule dividendos de qualquer ação ou FII da B3 em segundos. Gratuito e sem cadastro.
+            </p>
+            <Link
+              href="#"
+              onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+              className="inline-flex items-center gap-2 rounded-full bg-[var(--brand)] px-7 py-3 text-sm font-semibold text-[var(--brand-foreground)] no-underline transition hover:bg-[var(--brand-hover)]"
+            >
+              Simular agora
+              <span
+                className="material-symbols-outlined leading-none"
+                style={{ fontSize: 18, fontVariationSettings: "'opsz' 20, 'wght' 500, 'FILL' 0, 'GRAD' 0" }}
+              >
+                arrow_upward
+              </span>
+            </Link>
+          </div>
+        </section>
 
       </div>
     </main>

@@ -89,14 +89,14 @@ code, pre, kbd, samp {
 
 .article-body {
   font-family: var(--font-serif);
-  font-size: var(--text-sm);       /* 16px */
+  font-size: 1rem;                 /* 16px — explícito para não variar com tokens */
   line-height: 1.75;               /* mais espaçado para leitura longa */
   color: var(--color-text);
 }
 
 .article-body h2 {
   font-family: var(--font-sans);
-  font-size: var(--text-md);       /* 24px */
+  font-size: 1.25rem;              /* 20px — explícito */
   font-weight: var(--font-semibold);
   line-height: var(--leading-snug);
   margin-top: 2em;
@@ -105,7 +105,7 @@ code, pre, kbd, samp {
 
 .article-body h3 {
   font-family: var(--font-sans);
-  font-size: var(--text-sm);       /* 16px */
+  font-size: 1rem;                 /* 16px — explícito */
   font-weight: var(--font-semibold);
   line-height: var(--leading-snug);
   margin-top: 1.5em;
@@ -128,13 +128,23 @@ code, pre, kbd, samp {
   transform: scale(0.985);
 }
 
+/* ---------------------------------------------------------------------------
+   Display — títulos grandes (hero, seções). Uso: className="ds-display-md"
+   Usa --ds-display-* de tokens.css; não conflita com utilitários do Tailwind.
+   --------------------------------------------------------------------------- */
+.ds-display-xs { font-size: var(--ds-display-xs); line-height: var(--leading-display); }
+.ds-display-sm { font-size: var(--ds-display-sm); line-height: var(--leading-display); }
+.ds-display-md { font-size: var(--ds-display-md); line-height: var(--leading-display); }
+.ds-display-lg { font-size: var(--ds-display-lg); line-height: var(--leading-display); }
+.ds-display-xl { font-size: var(--ds-display-xl); line-height: var(--leading-display); }
+
 /* Diagonal stripe decoration */
 .ds-stripe {
   background-image: repeating-linear-gradient(
     -45deg,
     #000 0px,
     #000 8px,
-    #A6FF00 8px,
-    #A6FF00 16px
+    var(--brand) 8px,
+    var(--brand) 16px
   );
 }
