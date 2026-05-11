@@ -89,20 +89,20 @@ export default function HomePage() {
       />
 
       {/* ══════════════════════════════════════════════════════════════
-          HERO — 2 colunas em lg+
+          HERO — título centralizado + simulador abaixo em largura total
       ══════════════════════════════════════════════════════════════ */}
       <section className="w-full border-b border-[var(--color-border)]">
-        <div className="mx-auto flex max-w-[var(--page-max)] flex-col gap-10 px-[var(--page-gutter)] py-14 lg:flex-row lg:items-center lg:gap-14 lg:py-20">
+        <div className="mx-auto flex max-w-[var(--page-max)] flex-col items-center gap-10 px-[var(--page-gutter)] py-14 text-center lg:py-20">
 
-          {/* Left — copy */}
-          <div className="flex flex-col gap-6 lg:max-w-[46ch]">
+          {/* Copy — centralizado */}
+          <div className="flex flex-col items-center gap-5 max-w-[54ch]">
             <h1 className="ds-display-sm font-bold tracking-tight text-[var(--color-text)] sm:ds-display-md">
               Simule quanto você pode receber em dividendos
             </h1>
             <p className="text-lg leading-relaxed text-[var(--color-text-muted)]">
-              Compare ações, estime pagamentos e visualize a renda potencial da sua carteira em poucos segundos.
+              Escolha o ticker, informe suas cotas e veja o último e próximo pagamento de dividendos em segundos.
             </p>
-            <ul className="flex flex-wrap gap-x-6 gap-y-1.5 text-sm text-[var(--color-text-soft)]">
+            <ul className="flex flex-wrap justify-center gap-x-6 gap-y-1.5 text-sm text-[var(--color-text-soft)]">
               <li className="flex items-center gap-1.5">
                 <span className="h-1.5 w-1.5 rounded-full bg-[var(--brand)]" />
                 Dados em tempo real
@@ -118,8 +118,8 @@ export default function HomePage() {
             </ul>
           </div>
 
-          {/* Right — simulator */}
-          <div className="w-full min-w-0 lg:flex-1">
+          {/* Simulator — largura generosa, centralizado */}
+          <div className="w-full max-w-[var(--simulator-card-max)] text-left">
             <HomeHeroSimulator />
             <p className="mt-3 text-xs text-[var(--color-text-soft)]">
               ⚠ Não é recomendação de investimento. Fonte pública de proventos B3.
