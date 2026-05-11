@@ -30,7 +30,7 @@ export function TickerInput({
       </label>
 
       <div className="relative">
-        <div className="flex items-center gap-2 rounded-[length:var(--radius-md)] border border-[var(--border)] bg-[var(--surface)] px-3 shadow-[var(--shadow-sm)] transition focus-within:border-[var(--brand)] focus-within:ring-2 focus-within:ring-[var(--brand)]/20">
+        <div className="flex items-center gap-2 rounded-[length:var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-surface)] px-3 shadow-[var(--shadow-sm)] transition focus-within:border-[var(--brand)] focus-within:ring-2 focus-within:ring-[var(--brand)]/20">
           <input
             id={id}
             type="text"

@@ -1,5 +1,6 @@
 import type { ComparResult } from "@/lib/comparar";
 import { formatBRL } from "@/lib/format";
+import { MetricRow } from "@/components/ui/MetricRow";
 
 interface ComparVerdictProps {
   result: ComparResult;
@@ -15,17 +16,17 @@ export function ComparVerdict({ result }: ComparVerdictProps) {
       </p>
 
       <div className="grid grid-cols-2 gap-4">
-        <SummaryItem
-          ticker={a.ticker}
-          perShare={a.calc.perShare12m}
-          currency={a.currency}
-          yield_={yieldA}
+        <MetricRow
+          label={a.ticker}
+          value={a.calc.perShare12m > 0 ? `${formatBRL(a.calc.perShare12m, a.currency)}/cota` : "—"}
+          sub={yieldA !== null ? `Dividend yield estimado: ${yieldA}%` : undefined}
+          valueSize="lg"
         />
-        <SummaryItem
-          ticker={b.ticker}
-          perShare={b.calc.perShare12m}
-          currency={b.currency}
-          yield_={yieldB}
+        <MetricRow
+          label={b.ticker}
+          value={b.calc.perShare12m > 0 ? `${formatBRL(b.calc.perShare12m, b.currency)}/cota` : "—"}
+          sub={yieldB !== null ? `Dividend yield estimado: ${yieldB}%` : undefined}
+          valueSize="lg"
         />
       </div>
 
@@ -37,30 +38,3 @@ export function ComparVerdict({ result }: ComparVerdictProps) {
   );
 }
 
-function SummaryItem({
-  ticker,
-  perShare,
-  currency,
-  yield_,
-}: {
-  ticker: string;
-  perShare: number;
-  currency: string;
-  yield_: number | null;
-}) {
-  return (
-    <div className="flex flex-col gap-1">
-      <p className="text-xs font-semibold uppercase tracking-wide text-[var(--color-text-soft)]">
-        {ticker}
-      </p>
-      <p className="text-lg font-semibold tabular-nums text-[var(--color-text)]">
-        {perShare > 0 ? `${formatBRL(perShare, currency)}/cota` : "—"}
-      </p>
-      {yield_ !== null && (
-        <p className="text-xs text-[var(--color-text-muted)]">
-          Dividend yield estimado: <span className="font-medium">{yield_}%</span>
-        </p>
-      )}
-    </div>
-  );
-}
