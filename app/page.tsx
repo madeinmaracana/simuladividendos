@@ -6,6 +6,7 @@ import { TickerPill } from "@/components/ui/TickerPill";
 import { Icon } from "@/components/ui/Icon";
 import { SectionBlock } from "@/components/ui/SectionBlock";
 import { HomeHeroSimulator } from "@/components/home/HomeHeroSimulator";
+import { ScrollToTopCTA } from "@/components/home/ScrollToTopCTA";
 import { getAllMockTickers, getSectorNavItems } from "@/lib/stocks-data";
 import { ALL_ARTICLES, type ArticleRecord } from "@/data/articles";
 import { getAllMockFiiTickers, getFiiPath } from "@/data/fiis";
@@ -264,19 +265,7 @@ export default function HomePage() {
             <p className="text-base text-[var(--color-dark-muted)]">
               Simule dividendos de qualquer ação ou FII da B3 em segundos. Gratuito e sem cadastro.
             </p>
-            <Link
-              href="#"
-              onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-              className="inline-flex items-center gap-2 rounded-full bg-[var(--brand)] px-7 py-3 text-sm font-semibold text-[var(--brand-foreground)] no-underline transition hover:bg-[var(--brand-hover)]"
-            >
-              Simular agora
-              <span
-                className="material-symbols-outlined leading-none"
-                style={{ fontSize: 18, fontVariationSettings: "'opsz' 20, 'wght' 500, 'FILL' 0, 'GRAD' 0" }}
-              >
-                arrow_upward
-              </span>
-            </Link>
+            <ScrollToTopCTA />
           </div>
         </section>
 
