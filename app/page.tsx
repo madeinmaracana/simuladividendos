@@ -188,7 +188,7 @@ export default function HomePage() {
                     className="flex h-[120px] w-full flex-col justify-between rounded-[16px] p-4 no-underline transition hover:opacity-90"
                     style={{ backgroundColor: bg }}
                   >
-                    <Icon name={icon} size="md" className="text-black/70" />
+                    <Icon name={icon} size="md" className="text-black" />
                     <span className="text-sm font-semibold text-black">{label}</span>
                   </Link>
                 </li>
