@@ -12,13 +12,16 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 bg-[var(--color-bg)]/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-[var(--page-max)] items-center justify-between px-[var(--page-gutter)] py-4">
 
-        {/* Logo — apenas ícone wallet na cor brand */}
-        <Link href="/" aria-label="Simula Dividendos — início" className="flex shrink-0 items-center no-underline">
+        {/* Logo — ícone + nome do site */}
+        <Link href="/" className="flex shrink-0 items-center gap-2 no-underline">
           <span
             className="material-symbols-outlined leading-none text-[var(--brand)]"
             style={{ fontSize: 28, fontVariationSettings: "'opsz' 24, 'wght' 500, 'FILL' 1, 'GRAD' 0" }}
           >
             wallet
+          </span>
+          <span className="text-[15px] font-medium text-white">
+            Simula Dividendos
           </span>
         </Link>
 
