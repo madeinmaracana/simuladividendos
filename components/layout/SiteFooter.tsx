@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { LogoMark } from "@/components/ui/LogoMark";
 
 const links = [
   { href: "/setores",  label: "Setores" },
@@ -10,48 +9,42 @@ const links = [
 
 export function SiteFooter() {
   return (
-    <footer className="w-full border-t border-[var(--color-border)]">
-      <div className="mx-auto flex max-w-[var(--page-max)] flex-col gap-6 px-[var(--page-gutter)] py-8">
+    <footer className="w-full">
+      <div className="mx-auto flex max-w-[var(--page-max)] flex-col gap-10 px-[var(--page-gutter)] py-6">
 
-        {/* Top row */}
-        <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
-          <Link href="/" className="flex items-center gap-2.5 no-underline">
-            <LogoMark />
-            <span className="text-sm font-bold tracking-wide text-[var(--color-text)]">
+        {/* Linha 1 — logo + nav */}
+        <div className="flex items-center justify-between">
+
+          <Link href="/" className="flex items-center gap-2 no-underline">
+            <span
+              className="material-symbols-outlined leading-none text-[var(--brand)]"
+              style={{ fontSize: 24, fontVariationSettings: "'opsz' 24, 'wght' 500, 'FILL' 1, 'GRAD' 0" }}
+            >
+              wallet
+            </span>
+            <span className="text-[15px] font-medium text-white">
               Simula Dividendos
             </span>
           </Link>
 
-          <nav className="flex flex-wrap gap-x-6 gap-y-2">
+          <nav className="flex items-center gap-6">
             {links.map(({ href, label }) => (
               <Link
                 key={href}
                 href={href}
-                className="text-sm text-[var(--color-text-muted)] no-underline transition-colors hover:text-[var(--color-text)]"
+                className="text-[13px] font-medium text-white no-underline transition-opacity hover:opacity-60"
               >
                 {label}
               </Link>
             ))}
           </nav>
+
         </div>
 
-        {/* Bottom row */}
-        <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-xs text-[var(--color-text-soft)]">
-            © {new Date().getFullYear()} Simula Dividendos · Uso educacional. Não é recomendação de investimento.
-          </p>
-          <p className="text-xs text-[var(--color-text-soft)]">
-            Dados via{" "}
-            <a
-              href="https://brapi.dev"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-[var(--color-text-muted)] transition-colors"
-            >
-              brapi.dev
-            </a>
-          </p>
-        </div>
+        {/* Linha 2 — copyright */}
+        <p className="text-[13px] font-medium text-[#808080]">
+          © {new Date().getFullYear()} Simula Dividendos · Uso educacional. Não é recomendação de investimento.
+        </p>
 
       </div>
     </footer>

@@ -234,16 +234,16 @@ export default function HomePage() {
           <ul className="flex flex-col gap-2">
             {FAQ_ITEMS.map((item) => (
               <li key={item.question}>
-                <details className="group rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)]">
-                  <summary className="flex cursor-pointer list-none items-center justify-between px-5 py-4 marker:content-none [&::-webkit-details-marker]:hidden">
-                    <p className="text-sm font-medium text-[var(--color-text)]">{item.question}</p>
-                    <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[var(--color-surface-muted)] text-[var(--color-text-muted)] transition-transform duration-200 group-open:rotate-180">
-                      <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4" aria-hidden>
-                        <path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z" />
-                      </svg>
+                <details className="group rounded-[16px] border border-[rgba(120,120,120,0.20)] bg-[rgba(120,120,120,0.18)]">
+                  <summary className="flex cursor-pointer list-none items-center justify-between px-4 py-4 marker:content-none [&::-webkit-details-marker]:hidden">
+                    <p className="text-[13px] font-medium text-white">{item.question}</p>
+                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[rgba(120,120,120,0.40)] text-[#808080] transition-transform duration-200 group-open:rotate-180">
+                      <span className="material-symbols-outlined leading-none" style={{ fontSize: 20, fontVariationSettings: "'opsz' 20, 'wght' 400, 'FILL' 0, 'GRAD' 0" }}>
+                        expand_more
+                      </span>
                     </span>
                   </summary>
-                  <p className="px-5 pb-4 text-sm leading-relaxed text-[var(--color-text-muted)]">
+                  <p className="px-4 pb-4 text-[13px] font-medium leading-relaxed text-[#808080]">
                     {item.answer}
                   </p>
                 </details>
