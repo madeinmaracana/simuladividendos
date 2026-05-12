@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { ArticleCard } from "@/components/articles/ArticleCard";
-import { TickerCard } from "@/components/ui/TickerCard";
+import { TickerCard, tickerAccentColor } from "@/components/ui/TickerCard";
 import { Icon } from "@/components/ui/Icon";
 import { HomeHeroSimulator } from "@/components/home/HomeHeroSimulator";
 import { ScrollToTopCTA } from "@/components/home/ScrollToTopCTA";
@@ -161,7 +161,7 @@ export default function HomePage() {
           <ul className="grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-5">
             {popularFiis.map((t) => (
               <li key={t}>
-                <TickerCard ticker={t} href={getFiiPath(t)} />
+                <TickerCard ticker={t} href={getFiiPath(t)} accentColor={tickerAccentColor(t)} />
               </li>
             ))}
           </ul>

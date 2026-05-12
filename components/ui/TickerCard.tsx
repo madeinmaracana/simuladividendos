@@ -7,29 +7,68 @@ import Link from "next/link";
 interface TickerCardProps {
   ticker: string;
   href: string;
+  /**
+   * Quando fornecida, exibe sempre um círculo colorido no lugar da logo
+   * (ideal para FIIs onde logos externas costumam não existir).
+   * Use `tickerAccentColor(ticker)` para gerar deterministicamente.
+   */
+  accentColor?: string;
 }
 
 const BRAPI_LOGO = (t: string) =>
   `https://icons.brapi.dev/icons/${t.toUpperCase()}.svg`;
+
+/** Paleta de cores para círculos de ativos sem logo */
+const ACCENT_PALETTE = [
+  "#4CAF50", // verde
+  "#2196F3", // azul
+  "#FF9800", // laranja
+  "#E91E63", // pink
+  "#9C27B0", // roxo
+  "#00BCD4", // ciano
+  "#FF5722", // laranja-escuro
+  "#3F51B5", // índigo
+  "#009688", // teal
+  "#F44336", // vermelho
+];
+
+/** Gera uma cor accent determinística a partir do ticker */
+export function tickerAccentColor(ticker: string): string {
+  let hash = 0;
+  for (let i = 0; i < ticker.length; i++) {
+    hash = (hash * 31 + ticker.charCodeAt(i)) & 0xffff;
+  }
+  return ACCENT_PALETTE[hash % ACCENT_PALETTE.length];
+}
 
 /**
  * Card de ticker — specs Figma:
  *   height: 120px · padding: 16px · border-radius: 16px
  *   flex-col · justify-between · align-items: flex-start
  *   logo 36px (circular) topo · ticker name base
+ *
+ * Quando `accentColor` é passado, exibe sempre o círculo colorido
+ * (sem tentar carregar imagem externa) — padrão para FIIs.
  */
-export function TickerCard({ ticker, href }: TickerCardProps) {
+export function TickerCard({ ticker, href, accentColor }: TickerCardProps) {
   const [imgError, setImgError] = useState(false);
+
+  const showCircle = Boolean(accentColor) || imgError;
+  const circleBg = accentColor ?? "var(--color-surface-muted)";
+  const circleText = accentColor ? "#ffffff" : "var(--color-text-soft)";
 
   return (
     <Link
       href={href}
       className="flex h-[120px] w-full flex-col justify-between rounded-[16px] border border-[var(--color-border)] bg-[var(--color-surface)] p-4 no-underline transition hover:border-[var(--color-border-strong)] hover:bg-[var(--color-surface-muted)]"
     >
-      {/* Logo — topo esquerdo */}
-      {imgError ? (
-        <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[var(--color-surface-muted)] text-sm font-bold text-[var(--color-text-soft)]">
-          {ticker[0]}
+      {/* Logo / círculo colorido — topo esquerdo */}
+      {showCircle ? (
+        <span
+          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-xs font-bold"
+          style={{ backgroundColor: circleBg, color: circleText }}
+        >
+          {ticker.slice(0, 2)}
         </span>
       ) : (
         <Image
