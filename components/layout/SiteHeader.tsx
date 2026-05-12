@@ -14,20 +14,20 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-[var(--page-max)] items-center justify-between px-[var(--page-gutter)] py-4">
 
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2.5 no-underline">
+        <Link href="/" className="flex items-center gap-2 no-underline">
           <LogoMark />
-          <span className="text-sm font-bold tracking-wide text-[var(--color-text)]">
+          <span className="text-[15px] font-medium text-white">
             Simula Dividendos
           </span>
         </Link>
 
         {/* Nav — oculto em mobile */}
-        <nav aria-label="Navegação principal" className="hidden items-center gap-1 sm:flex">
+        <nav aria-label="Navegação principal" className="hidden items-center gap-6 sm:flex">
           {nav.map(({ href, label }) => (
             <Link
               key={href}
               href={href}
-              className="px-3 py-2 text-sm text-[var(--color-text-muted)] no-underline transition hover:text-[var(--color-text)]"
+              className="text-[13px] font-medium text-white no-underline transition-opacity hover:opacity-60"
             >
               {label}
             </Link>
@@ -38,7 +38,7 @@ export function SiteHeader() {
         <button
           type="button"
           aria-label="Buscar"
-          className="flex h-9 w-9 items-center justify-center text-[var(--color-text-muted)] transition hover:text-[var(--color-text)]"
+          className="flex h-9 w-9 items-center justify-center text-white transition-opacity hover:opacity-60"
         >
           <span
             className="material-symbols-outlined leading-none"
