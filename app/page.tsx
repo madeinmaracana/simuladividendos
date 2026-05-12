@@ -133,8 +133,8 @@ export default function HomePage() {
         {/* ── Ações populares ── */}
         <section className="flex flex-col gap-5">
           <div className="flex flex-col gap-1">
-            <h2 className="text-2xl font-bold text-[var(--color-text)]">Ações populares</h2>
-            <p className="text-sm text-[var(--color-text-muted)]">
+            <h2 className="text-[27px] font-medium leading-tight text-[var(--color-text)]">Ações populares</h2>
+            <p className="text-[13px] font-medium text-[#808080]">
               Explore os principais pagadores de dividendos da B3
             </p>
           </div>
@@ -145,16 +145,17 @@ export default function HomePage() {
               </li>
             ))}
           </ul>
-          <Link href="/setores" className="text-sm text-[var(--color-text-muted)] no-underline hover:text-[var(--color-text)] transition-colors">
-            Ver todos →
+          <Link href="/setores" className="flex items-center gap-2 text-[13px] font-medium text-white no-underline transition-opacity hover:opacity-70">
+            Ver todos
+            <span className="material-symbols-outlined" style={{ fontSize: 16 }}>arrow_forward</span>
           </Link>
         </section>
 
         {/* ── Fundos imobiliários ── */}
         <section className="flex flex-col gap-5">
           <div className="flex flex-col gap-1">
-            <h2 className="text-2xl font-bold text-[var(--color-text)]">Fundos imobiliários</h2>
-            <p className="text-sm text-[var(--color-text-muted)]">
+            <h2 className="text-[27px] font-medium leading-tight text-[var(--color-text)]">Fundos imobiliários</h2>
+            <p className="text-[13px] font-medium text-[#808080]">
               Principais FIIs da B3 para investir
             </p>
           </div>
@@ -165,16 +166,17 @@ export default function HomePage() {
               </li>
             ))}
           </ul>
-          <Link href="/fiis" className="text-sm text-[var(--color-text-muted)] no-underline hover:text-[var(--color-text)] transition-colors">
-            Ver todos →
+          <Link href="/fiis" className="flex items-center gap-2 text-[13px] font-medium text-white no-underline transition-opacity hover:opacity-70">
+            Ver todos
+            <span className="material-symbols-outlined" style={{ fontSize: 16 }}>arrow_forward</span>
           </Link>
         </section>
 
         {/* ── Setores ── */}
         <section className="flex flex-col gap-5">
           <div className="flex flex-col gap-1">
-            <h2 className="text-2xl font-bold text-[var(--color-text)]">Setores</h2>
-            <p className="text-sm text-[var(--color-text-muted)]">
+            <h2 className="text-[27px] font-medium leading-tight text-[var(--color-text)]">Setores</h2>
+            <p className="text-[13px] font-medium text-[#808080]">
               Descubra ações por setor da economia
             </p>
           </div>
@@ -195,16 +197,17 @@ export default function HomePage() {
               );
             })}
           </ul>
-          <Link href="/setores" className="text-sm text-[var(--color-text-muted)] no-underline hover:text-[var(--color-text)] transition-colors">
-            Ver todos →
+          <Link href="/setores" className="flex items-center gap-2 text-[13px] font-medium text-white no-underline transition-opacity hover:opacity-70">
+            Ver todos
+            <span className="material-symbols-outlined" style={{ fontSize: 16 }}>arrow_forward</span>
           </Link>
         </section>
 
         {/* ── Artigos ── */}
         <section className="flex flex-col gap-5">
           <div className="flex flex-col gap-1">
-            <h2 className="text-2xl font-bold text-[var(--color-text)]">Artigos</h2>
-            <p className="text-sm text-[var(--color-text-muted)]">
+            <h2 className="text-[27px] font-medium leading-tight text-[var(--color-text)]">Artigos</h2>
+            <p className="text-[13px] font-medium text-[#808080]">
               Aprenda sobre dividendos e renda passiva
             </p>
           </div>
@@ -213,16 +216,17 @@ export default function HomePage() {
               <ArticleCard key={article.slug} article={article} />
             ))}
           </div>
-          <Link href="/artigos" className="text-sm text-[var(--color-text-muted)] no-underline hover:text-[var(--color-text)] transition-colors">
-            Ver todos →
+          <Link href="/artigos" className="flex items-center gap-2 text-[13px] font-medium text-white no-underline transition-opacity hover:opacity-70">
+            Ver todos
+            <span className="material-symbols-outlined" style={{ fontSize: 16 }}>arrow_forward</span>
           </Link>
         </section>
 
         {/* ── FAQ ── */}
         <section className="flex flex-col gap-5">
           <div className="flex flex-col gap-1">
-            <h2 className="text-2xl font-bold text-[var(--color-text)]">Perguntas frequentes</h2>
-            <p className="text-sm text-[var(--color-text-muted)]">
+            <h2 className="text-[27px] font-medium leading-tight text-[var(--color-text)]">Perguntas frequentes</h2>
+            <p className="text-[13px] font-medium text-[#808080]">
               Tire suas dúvidas sobre o simulador
             </p>
           </div>
@@ -245,8 +249,9 @@ export default function HomePage() {
               </li>
             ))}
           </ul>
-          <Link href="/artigos" className="text-sm text-[var(--color-text-muted)] no-underline hover:text-[var(--color-text)] transition-colors">
-            Ver artigos →
+          <Link href="/artigos" className="flex items-center gap-2 text-[13px] font-medium text-white no-underline transition-opacity hover:opacity-70">
+            Ver artigos
+            <span className="material-symbols-outlined" style={{ fontSize: 16 }}>arrow_forward</span>
           </Link>
         </section>
 
