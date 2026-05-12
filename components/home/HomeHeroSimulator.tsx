@@ -42,18 +42,30 @@ export function HomeHeroSimulator() {
     lastPayment && Number(sharesStr || 1) > 0 ? lastPayment.totalPerShare : null;
 
   return (
-    <div className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-5 sm:p-6">
+    <div
+      className="rounded-[24px] border border-white/10 p-[24px]"
+      style={{ background: "rgba(111,111,111,0.18)", backdropFilter: "blur(16px)" }}
+    >
 
-      {/* ── Inputs lado a lado ── */}
-      <div className="grid grid-cols-2 gap-3">
+      {/* ── Labels + Inputs ── */}
+      <div className="flex flex-col gap-3">
 
-        {/* Ticker */}
-        <div className="flex flex-col gap-2" ref={wrapRef}>
-          <label htmlFor="hero-ticker" className="text-xs text-[var(--color-text-muted)]">
+        {/* Labels */}
+        <div className="grid grid-cols-2 gap-3">
+          <label htmlFor="hero-ticker" className="text-[13px] font-medium text-[#808080]">
             Ação ou FII (ticker B3)
           </label>
-          <div className="relative">
-            <div className="flex items-center gap-2 rounded-full border border-[var(--color-border)] bg-[var(--color-surface-muted)] px-3 py-3 transition focus-within:border-[var(--color-border-strong)]">
+          <label htmlFor="hero-shares" className="text-[13px] font-medium text-[#808080]">
+            Quantidade
+          </label>
+        </div>
+
+        {/* Inputs */}
+        <div className="grid grid-cols-2 gap-3">
+
+          {/* Ticker */}
+          <div className="relative" ref={wrapRef}>
+            <div className="flex items-center gap-2 rounded-full border border-white/15 bg-[rgba(255,255,255,0.06)] px-4 py-[14px] transition focus-within:border-white/30">
               <TickerLogo ticker={displayTicker} size={24} theme="dark" />
               <input
                 id="hero-ticker"
@@ -71,10 +83,10 @@ export function HomeHeroSimulator() {
                 maxLength={8}
                 autoComplete="off"
                 autoCapitalize="characters"
-                className="min-w-0 flex-1 bg-transparent text-sm font-semibold text-[var(--color-text)] outline-none placeholder:font-normal placeholder:text-[var(--color-text-soft)]"
+                className="min-w-0 flex-1 bg-transparent text-sm font-semibold text-white outline-none placeholder:font-normal placeholder:text-[#808080]"
               />
               {sugLoading && (
-                <span className="shrink-0 text-xs text-[var(--color-text-soft)]">…</span>
+                <span className="shrink-0 text-xs text-[#808080]">…</span>
               )}
             </div>
             <SuggestionDropdown
@@ -86,32 +98,27 @@ export function HomeHeroSimulator() {
               theme="dark"
             />
           </div>
-        </div>
 
-        {/* Quantidade */}
-        <div className="flex flex-col gap-2">
-          <label htmlFor="hero-shares" className="text-xs text-[var(--color-text-muted)]">
-            Quantidade
-          </label>
+          {/* Quantidade */}
           <input
             id="hero-shares"
             type="text"
             inputMode="numeric"
             value={sharesStr}
             onChange={(e) => setSharesStr(e.target.value.replace(/\D/g, ""))}
-            className="rounded-full border border-[var(--color-border)] bg-[var(--color-surface-muted)] px-4 py-3 text-sm font-semibold tabular-nums text-[var(--color-text)] outline-none transition focus:border-[var(--color-border-strong)]"
+            className="rounded-full border border-white/15 bg-[rgba(255,255,255,0.06)] px-4 py-[14px] text-sm font-semibold tabular-nums text-white outline-none transition focus:border-white/30 placeholder:text-[#808080]"
           />
         </div>
       </div>
 
-      {/* ── CTA ── */}
+      {/* ── CTA — 40px acima dos inputs ── */}
       <button
         type="button"
         onClick={() => void onSimulate()}
         disabled={loading || !hasValidTicker}
-        className="mt-4 flex w-full items-center gap-4 rounded-full bg-[var(--brand)] px-5 py-[14px] transition hover:bg-[var(--brand-hover)] disabled:cursor-not-allowed disabled:opacity-40"
+        className="mt-10 flex w-full items-center gap-4 rounded-full bg-[var(--brand)] px-5 py-[14px] transition hover:bg-[var(--brand-hover)] disabled:cursor-not-allowed disabled:opacity-40"
       >
-        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-black">
+        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-black">
           <span
             className="material-symbols-outlined leading-none text-[var(--brand)]"
             style={{ fontSize: 18, fontVariationSettings: "'opsz' 20, 'wght' 500, 'FILL' 0, 'GRAD' 0" }}
@@ -119,20 +126,20 @@ export function HomeHeroSimulator() {
             arrow_forward
           </span>
         </span>
-        <span className="text-base font-semibold tracking-tight text-[var(--brand-foreground)]">
+        <span className="text-base font-semibold text-[var(--brand-foreground)]">
           {loading ? "Carregando…" : "Simular dividendos"}
         </span>
       </button>
 
-      {/* ── Resultados ── */}
+      {/* ── Resultados — 16px abaixo do botão ── */}
       {showResults && stock ? (
-        <div className="mt-5 flex flex-col gap-4 border-t border-[var(--color-border)] pt-5">
+        <div className="mt-4 flex flex-col gap-[40px]">
 
           {/* Preço atual */}
           {stock.regularMarketPrice != null && (
             <div className="flex items-center justify-between">
-              <p className="text-xs text-[var(--color-text-muted)]">Preço atual da ação</p>
-              <p className="text-sm font-semibold tabular-nums text-[var(--color-text)]">
+              <p className="text-[13px] font-medium text-[#808080]">Preço atual da ação:</p>
+              <p className="text-[13px] font-semibold tabular-nums text-white">
                 {formatBRL(stock.regularMarketPrice, currency)}
               </p>
             </div>
@@ -142,14 +149,14 @@ export function HomeHeroSimulator() {
           {lastPayment && (
             <div className="flex items-start justify-between gap-4">
               <div>
-                <p className="text-xs text-[var(--color-text-muted)]">Último dividendo</p>
+                <p className="text-[13px] font-medium text-[#808080]">Último dividendo</p>
                 {lastPayment.paymentDate && (
-                  <p className="mt-0.5 text-[11px] text-[var(--color-text-soft)]">
+                  <p className="mt-0.5 text-[13px] font-medium text-[#808080]">
                     Pago em {formatDatePt(lastPayment.paymentDate)}
                   </p>
                 )}
               </div>
-              <p className="shrink-0 text-sm font-semibold tabular-nums text-[var(--color-text)]">
+              <p className="shrink-0 text-[13px] font-semibold tabular-nums text-white">
                 {formatBRL(lastPayment.totalForShares, currency)}
               </p>
             </div>
@@ -158,9 +165,9 @@ export function HomeHeroSimulator() {
           {/* Próximo pagamento — destaque */}
           <div className="flex items-end justify-between gap-4">
             <div>
-              <p className="text-xs text-[var(--color-text-muted)]">Próximo pagamento</p>
+              <p className="text-[13px] font-medium text-[#808080]">Próximo pagamento</p>
               {nextPayment?.paymentDate && (
-                <p className="mt-0.5 text-[11px] text-[var(--color-text-soft)]">
+                <p className="mt-0.5 text-[13px] font-medium text-[#808080]">
                   Previsão: {formatDatePt(nextPayment.paymentDate)}
                 </p>
               )}
@@ -168,36 +175,39 @@ export function HomeHeroSimulator() {
             <div className="shrink-0 text-right">
               {nextPayment ? (
                 <>
-                  <p className="text-2xl font-bold tabular-nums text-[var(--color-text)]">
+                  <p className="text-[32px] font-semibold leading-tight tabular-nums text-white">
                     {formatBRL(nextPayment.totalForShares, currency)}
                   </p>
-                  <p className="text-[11px] text-[var(--color-text-soft)]">
+                  <p className="mt-1 text-[13px] font-medium text-[#808080]">
                     {perShareValue != null
                       ? `Cerca de ${formatBRL(perShareValue, currency)} por cota`
                       : "—"}
                   </p>
                 </>
               ) : (
-                <p className="text-2xl font-bold text-[var(--color-text-soft)]">—</p>
+                <p className="text-[32px] font-semibold text-[#808080]">—</p>
               )}
             </div>
           </div>
 
           {/* Link */}
           {displayTicker && (
-            <div className="border-t border-[var(--color-border)] pt-4 text-center">
+            <div className="border-t border-white/10 pt-[24px] text-center">
               <Link
                 href={`/acoes/${displayTicker.toLowerCase()}`}
-                className="text-sm text-[var(--color-text-muted)] no-underline transition-colors hover:text-[var(--color-text)]"
+                className="flex items-center justify-center gap-2 text-[13px] font-medium text-white no-underline transition-opacity hover:opacity-60"
               >
-                Mais sobre {displayTicker} →
+                Mais sobre {displayTicker}
+                <span className="material-symbols-outlined leading-none" style={{ fontSize: 16 }}>
+                  arrow_forward
+                </span>
               </Link>
             </div>
           )}
         </div>
       ) : error ? (
-        <div className="mt-5 border-t border-[var(--color-border)] pt-5">
-          <p className="text-sm text-[var(--color-text-muted)]">
+        <div className="mt-4 flex flex-col gap-2">
+          <p className="text-[13px] font-medium text-[#808080]">
             {/bloqueia|token|plano pago/i.test(error)
               ? "Este ticker precisa de autenticação na API."
               : /não encontrado|inválido/i.test(error)
@@ -205,8 +215,10 @@ export function HomeHeroSimulator() {
               : "Não foi possível buscar este ticker."}
           </p>
           {/bloqueia|token|plano pago/i.test(error) && (
-            <p className="mt-1 text-xs text-[var(--color-text-soft)]">
-              Tente: <strong>ITUB4</strong>, <strong>PETR4</strong>, <strong>VALE3</strong>
+            <p className="text-[11px] text-[#808080]">
+              Tente: <strong className="text-white">ITUB4</strong>,{" "}
+              <strong className="text-white">PETR4</strong>,{" "}
+              <strong className="text-white">VALE3</strong>
             </p>
           )}
         </div>
