@@ -106,8 +106,8 @@ export default function RootLayout({
           >
             <SiteHeader />
             <div className="flex-1">{children}</div>
+            <SiteFooter />
           </div>
-          <SiteFooter />
         </div>
       </body>
     </html>
