@@ -182,8 +182,20 @@ export default async function FiiSlugPage({ params }: PageProps) {
           <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-12 lg:gap-x-8">
             {/* Esquerda — copy */}
             <div className="flex flex-col gap-8 lg:col-span-7">
-              <div className="flex flex-wrap items-center gap-2">
-                <span className="text-[13px] font-medium text-[#808080]">{symbol}</span>
+              {/* Logo + ticker + badge */}
+              <div className="flex items-center justify-between gap-3">
+                <div className="flex items-center gap-2">
+                  {initialStock?.logoUrl ? (
+                    <Image
+                      src={initialStock.logoUrl}
+                      alt={symbol}
+                      width={32}
+                      height={32}
+                      className="h-8 w-8 shrink-0 rounded-full object-contain"
+                    />
+                  ) : null}
+                  <span className="text-[13px] font-medium text-[#808080]">{symbol}</span>
+                </div>
                 <span className="rounded-full border border-[rgba(120,120,120,0.20)] bg-[rgba(120,120,120,0.18)] px-2.5 py-0.5 text-[13px] font-medium text-[#808080]">
                   Fundo imobiliário
                 </span>
