@@ -1,6 +1,5 @@
 import type { ReactNode } from "react";
 import { cn } from "@/lib/cn";
-import { ui } from "@/components/ui/classes";
 
 type TickerPageLayoutProps = {
   children: ReactNode;
@@ -12,7 +11,11 @@ type TickerPageLayoutProps = {
  * Cada bloco principal deve usar `TickerPageRow` para ocupar `col-span-full` e alinhar bordas.
  */
 export function TickerPageLayout({ children, className }: TickerPageLayoutProps) {
-  return <div className={cn(ui.tickerPageGrid, className)}>{children}</div>;
+  return (
+    <div className={cn("mx-auto flex w-full max-w-[var(--page-max)] flex-col gap-16 px-[var(--page-gutter)]", className)}>
+      {children}
+    </div>
+  );
 }
 
 type TickerPageRowProps = {
@@ -21,5 +24,5 @@ type TickerPageRowProps = {
 };
 
 export function TickerPageRow({ children, className }: TickerPageRowProps) {
-  return <div className={cn(ui.tickerPageRow, className)}>{children}</div>;
+  return <div className={cn("w-full min-w-0", className)}>{children}</div>;
 }

@@ -7,11 +7,9 @@ type DividendHistoryTableProps = {
   rows: DividendEntry[];
   currency: string;
   className?: string;
-  /** Acessibilidade: resumo da tabela para leitores de tela. */
   caption?: string;
 };
 
-/** Tabela completa do histórico (uso após expansão ou páginas que precisem só da tabela). */
 export function DividendHistoryTable({
   rows,
   currency,
@@ -25,48 +23,35 @@ export function DividendHistoryTable({
   return (
     <div
       className={cn(
-        "w-full min-w-0 overflow-x-auto rounded-[length:var(--radius-lg)] border border-[var(--border)] bg-[var(--surface)] shadow-[var(--shadow-sm)]",
+        "w-full min-w-0 overflow-x-auto rounded-[16px] border border-[rgba(120,120,120,0.20)] bg-[rgba(120,120,120,0.18)]",
         className
       )}
     >
-      <table className="w-full min-w-[var(--table-min-history)] text-left text-sm">
+      <table className="w-full text-left">
         {caption ? <caption className="sr-only">{caption}</caption> : null}
         <thead>
-          <tr className="border-b border-[var(--border)] bg-[var(--surface-muted)]">
-            <th className="whitespace-nowrap px-3 py-3 text-xs font-semibold uppercase tracking-wide text-[color:var(--text-soft)] sm:px-4">
-              Pagamento
-            </th>
-            <th className="whitespace-nowrap px-3 py-3 text-xs font-semibold uppercase tracking-wide text-[color:var(--text-soft)] sm:px-4">
-              Data ex
-            </th>
-            <th className="whitespace-nowrap px-3 py-3 text-right text-xs font-semibold uppercase tracking-wide text-[color:var(--text-soft)] sm:px-4">
-              Valor / ação
-            </th>
-            <th className="min-w-28 px-3 py-3 text-xs font-semibold uppercase tracking-wide text-[color:var(--text-soft)] sm:px-4">
-              Tipo
-            </th>
-            <th className="whitespace-nowrap px-3 py-3 text-xs font-semibold uppercase tracking-wide text-[color:var(--text-soft)] sm:px-4">
-              Status
-            </th>
+          <tr className="border-b border-[rgba(120,120,120,0.20)]">
+            <th className="whitespace-nowrap px-4 py-3 text-[13px] font-medium text-[#808080]">Pagamento</th>
+            <th className="whitespace-nowrap px-4 py-3 text-[13px] font-medium text-[#808080]">Data ex</th>
+            <th className="whitespace-nowrap px-4 py-3 text-right text-[13px] font-medium text-[#808080]">Valor / ação</th>
+            <th className="min-w-28 px-4 py-3 text-[13px] font-medium text-[#808080]">Tipo</th>
+            <th className="whitespace-nowrap px-4 py-3 text-[13px] font-medium text-[#808080]">Status</th>
           </tr>
         </thead>
-        <tbody className="divide-y divide-[var(--border)]">
+        <tbody className="divide-y divide-[rgba(120,120,120,0.20)]">
           {sorted.map((e, i) => (
-            <tr
-              key={`${e.paymentDate}-${i}-${e.ratePerShare}`}
-              className="odd:bg-[var(--surface)] even:bg-[var(--surface)]"
-            >
-              <td className="whitespace-nowrap px-3 py-3 font-mono tabular-nums text-[color:var(--text)] sm:px-4">
+            <tr key={`${e.paymentDate}-${i}-${e.ratePerShare}`}>
+              <td className="whitespace-nowrap px-4 py-3 text-[13px] font-medium tabular-nums text-white">
                 {formatDatePt(e.paymentDate)}
               </td>
-              <td className="whitespace-nowrap px-3 py-3 font-mono tabular-nums text-[color:var(--text-secondary)] sm:px-4">
+              <td className="whitespace-nowrap px-4 py-3 text-[13px] font-medium tabular-nums text-[#808080]">
                 {e.exDate ? formatDatePt(e.exDate) : "—"}
               </td>
-              <td className="whitespace-nowrap px-3 py-3 text-right font-mono font-semibold tabular-nums text-[color:var(--text)] sm:px-4">
+              <td className="whitespace-nowrap px-4 py-3 text-right text-[13px] font-semibold tabular-nums text-white">
                 {formatBRL(e.ratePerShare, currency)}
               </td>
-              <td className="px-3 py-3 text-[color:var(--text-secondary)] sm:px-4">{e.label}</td>
-              <td className="whitespace-nowrap px-3 py-3 text-[color:var(--text-secondary)] sm:px-4">
+              <td className="px-4 py-3 text-[13px] font-medium text-[#808080]">{e.label}</td>
+              <td className="whitespace-nowrap px-4 py-3 text-[13px] font-medium text-[#808080]">
                 {dividendPaymentStatus(e.paymentDate)}
               </td>
             </tr>

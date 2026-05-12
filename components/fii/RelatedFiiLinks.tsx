@@ -1,8 +1,7 @@
-import { Card } from "@/components/ui/Card";
-import { TextLink } from "@/components/ui/TextLink";
-import { cn } from "@/lib/cn";
-import { ui } from "@/components/ui/classes";
-import type { FiiSeoRecord } from "@/data/fiis";
+import Link from "next/link";
+import { TickerCard } from "@/components/ui/TickerCard";
+import { tickerAccentColor } from "@/lib/ticker-colors";
+import { getFiiPath, type FiiSeoRecord } from "@/data/fiis";
 
 export type RelatedFiiLinksProps = {
   symbol: string;
@@ -10,33 +9,39 @@ export type RelatedFiiLinksProps = {
   hasRelatedArticles?: boolean;
 };
 
-export function RelatedFiiLinks({ symbol: _symbol, peers: _peers, hasRelatedArticles = false }: RelatedFiiLinksProps) {
-  return (
-    <section aria-labelledby="heading-related-fiis" className={ui.pageSection}>
-      <h2 id="heading-related-fiis" className={cn("text-left", ui.sectionTitle)}>
-        Lista de FIIs e simulador
-      </h2>
-      <Card className="mt-4 border-dashed bg-neutral-50/60 dark:bg-neutral-900/35">
-        <p className={cn(ui.body, "mt-0")}>
-          Explore mais fundos na{" "}
-          <TextLink href="/fiis" className="text-sm font-medium">
-            lista de FIIs
-          </TextLink>{" "}
-          ou use o{" "}
-          <TextLink href="/simulador" className="text-sm font-medium">
-            simulador
-          </TextLink>{" "}
-          com busca por ticker.
-        </p>
+export function RelatedFiiLinks({ symbol: _symbol, peers }: RelatedFiiLinksProps) {
+  if (!peers.length) return null;
 
-        {hasRelatedArticles ? (
-          <p className={cn(ui.body, "mt-4 border-t border-[var(--border)] pt-4 dark:border-neutral-800")}>
-            <TextLink href="#heading-artigos-relacionados-fii" className="text-sm font-medium">
-              Artigos relacionados
-            </TextLink>
-          </p>
-        ) : null}
-      </Card>
+  const displayed = peers.slice(0, 5);
+
+  return (
+    <section aria-labelledby="heading-fiis-similares" className="flex flex-col gap-5">
+      <div className="flex flex-col gap-1">
+        <h2 id="heading-fiis-similares" className="text-[27px] font-medium leading-tight text-white">
+          FIIs similares
+        </h2>
+        <p className="text-[13px] font-medium text-[#808080]">
+          Outros fundos imobiliários para explorar
+        </p>
+      </div>
+      <ul className="grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-5">
+        {displayed.map((fii) => (
+          <li key={fii.ticker}>
+            <TickerCard
+              ticker={fii.ticker}
+              href={getFiiPath(fii.ticker)}
+              accentColor={tickerAccentColor(fii.ticker)}
+            />
+          </li>
+        ))}
+      </ul>
+      <Link
+        href="/fiis"
+        className="flex items-center gap-2 text-[13px] font-medium text-white no-underline transition-opacity hover:opacity-70"
+      >
+        Ver todos
+        <span className="material-symbols-outlined" style={{ fontSize: 16 }}>arrow_forward</span>
+      </Link>
     </section>
   );
 }

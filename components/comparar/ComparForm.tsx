@@ -3,8 +3,61 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { buildComparSlug } from "@/lib/comparar";
-import { cn } from "@/lib/cn";
-import { TickerInput } from "@/components/ui/TickerInput";
+import { useTickerSuggestions } from "@/hooks/useTickerSuggestions";
+import { SuggestionDropdown } from "@/components/ui/SuggestionDropdown";
+
+function ComparTickerInput({
+  id,
+  label,
+  value,
+  onChange,
+  placeholder,
+}: {
+  id: string;
+  label: string;
+  value: string;
+  onChange: (v: string) => void;
+  placeholder?: string;
+}) {
+  const { suggestions, isOpen, setIsOpen, highlight, setHighlight, wrapRef, pick, handleKeyDown } =
+    useTickerSuggestions(value, onChange);
+
+  return (
+    <div className="flex min-w-0 flex-1 flex-col gap-2" ref={wrapRef}>
+      <label htmlFor={id} className="text-[13px] font-medium text-[#808080]">
+        {label}
+      </label>
+      <div className="relative">
+        <input
+          id={id}
+          type="text"
+          role="combobox"
+          aria-autocomplete="list"
+          aria-expanded={isOpen && suggestions.length > 0}
+          value={value}
+          onChange={(e) => {
+            onChange(e.target.value.toUpperCase().replace(/[^A-Z0-9]/g, ""));
+            setIsOpen(true);
+          }}
+          onKeyDown={handleKeyDown}
+          placeholder={placeholder ?? "Ex.: PETR4"}
+          maxLength={8}
+          autoComplete="off"
+          autoCapitalize="characters"
+          className="w-full rounded-full border border-white/15 bg-[rgba(255,255,255,0.06)] px-4 py-[14px] text-[13px] font-medium uppercase text-white outline-none placeholder:font-normal placeholder:normal-case placeholder:text-[#808080] focus:border-white/30"
+        />
+        <SuggestionDropdown
+          suggestions={suggestions}
+          isOpen={isOpen && suggestions.length > 0}
+          highlight={highlight}
+          onHighlight={setHighlight}
+          onPick={pick}
+          theme="dark"
+        />
+      </div>
+    </div>
+  );
+}
 
 export function ComparForm() {
   const router = useRouter();
@@ -25,44 +78,47 @@ export function ComparForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col gap-4 sm:flex-row sm:items-end"
+      className="flex flex-col gap-4 rounded-[24px] border border-white/10 p-6"
+      style={{ background: "rgba(111,111,111,0.18)", backdropFilter: "blur(16px)" }}
     >
-      <div className="flex-1">
-        <TickerInput
+      {/* Inputs + button in a row */}
+      <div className="flex flex-col items-end gap-4 sm:flex-row">
+        <ComparTickerInput
           id="ticker-a"
           label="Ativo A"
           value={tickerA}
           onChange={setTickerA}
           placeholder="Ex.: PETR4"
         />
-      </div>
-
-      <span className="hidden self-center pb-1 text-lg font-semibold text-[var(--color-text-soft)] sm:block">
-        vs
-      </span>
-
-      <div className="flex-1">
-        <TickerInput
+        <ComparTickerInput
           id="ticker-b"
           label="Ativo B"
           value={tickerB}
           onChange={setTickerB}
           placeholder="Ex.: VALE3"
         />
+        {/* Button sits at the bottom of the row (aligned with inputs) */}
+        <button
+          type="submit"
+          className="flex shrink-0 items-center gap-3 rounded-full bg-[#E5FE86] px-6 py-[14px] text-[13px] font-medium text-black transition-opacity hover:opacity-80"
+        >
+          <span
+            className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-black"
+          >
+            <span
+              className="material-symbols-outlined leading-none text-white"
+              style={{ fontSize: 16, fontVariationSettings: "'opsz' 20, 'wght' 500, 'FILL' 0, 'GRAD' 0" }}
+            >
+              arrow_forward
+            </span>
+          </span>
+          Comparar
+        </button>
       </div>
 
-      <button
-        type="submit"
-        className={cn(
-          "inline-flex h-[46px] items-center justify-center rounded-[length:var(--radius-md)]",
-          "bg-[var(--brand)] px-6 text-sm font-semibold text-[var(--brand-foreground)]",
-          "transition hover:bg-[var(--brand-hover)] sm:shrink-0"
-        )}
-      >
-        Comparar
-      </button>
-
-      {error && <p className="w-full text-sm text-[var(--color-danger)]">{error}</p>}
+      {error && (
+        <p className="text-[13px] font-medium text-red-400">{error}</p>
+      )}
     </form>
   );
 }

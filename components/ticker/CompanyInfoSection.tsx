@@ -1,10 +1,5 @@
-import { Card } from "@/components/ui/Card";
-import { cn } from "@/lib/cn";
-import { ui } from "@/components/ui/classes";
-
 type CompanyInfoSectionProps = {
   id?: string;
-  /** Título do bloco (ex.: “Sobre o fundo” em páginas de FII). */
   sectionHeading?: string;
   companyName: string;
   shortDescription: string;
@@ -13,21 +8,27 @@ type CompanyInfoSectionProps = {
 
 export function CompanyInfoSection({
   id = "heading-info-empresa",
-  sectionHeading = "Informações da empresa",
+  sectionHeading,
   companyName,
   shortDescription,
   extraParagraph,
 }: CompanyInfoSectionProps) {
   return (
-    <section aria-labelledby={id} className={ui.pageSection}>
-      <h2 id={id} className={cn("text-left", ui.sectionTitle)}>
-        {sectionHeading}
-      </h2>
-      <Card className="mt-4">
-        <h3 className={cn(ui.subsectionTitle, "text-left")}>{companyName}</h3>
-        <p className={cn(ui.body, "mt-3")}>{shortDescription}</p>
-        {extraParagraph ? <p className={cn(ui.body, "mt-4")}>{extraParagraph}</p> : null}
-      </Card>
+    <section aria-labelledby={id} className="flex flex-col gap-5">
+      <div className="flex flex-col gap-1">
+        <h2 id={id} className="text-[27px] font-medium leading-tight text-white">
+          {sectionHeading ?? companyName}
+        </h2>
+      </div>
+      <div className="flex flex-col gap-4">
+        {sectionHeading && (
+          <p className="text-[15px] font-medium text-white">{companyName}</p>
+        )}
+        <p className="text-[13px] font-medium leading-relaxed text-[#808080]">{shortDescription}</p>
+        {extraParagraph ? (
+          <p className="text-[13px] font-medium leading-relaxed text-[#808080]">{extraParagraph}</p>
+        ) : null}
+      </div>
     </section>
   );
 }

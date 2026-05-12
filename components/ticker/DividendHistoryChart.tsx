@@ -55,8 +55,8 @@ export function DividendHistoryChart({ dividends, currency = "BRL", frequencyHin
   return (
     <section className={cn(ui.pageSection, "flex flex-col gap-5")}>
       <div className="flex flex-col gap-1">
-        <h2 className={ui.sectionTitle}>Histórico de pagamentos</h2>
-        <p className="text-sm text-[var(--color-text-muted)]">Últimos 12 meses · valor por cota</p>
+        <h2 className="text-[27px] font-medium leading-tight text-white">Histórico de pagamentos</h2>
+        <p className="text-[13px] font-medium text-[#808080]">Últimos 12 meses · valor por cota</p>
       </div>
 
       {/* Gráfico de barras */}
@@ -95,7 +95,7 @@ export function DividendHistoryChart({ dividends, currency = "BRL", frequencyHin
       </div>
 
       {/* Consistência */}
-      <div className="flex flex-col gap-2 rounded-xl bg-[var(--color-surface-muted)] px-4 py-3">
+      <div className="flex flex-col gap-2 rounded-[16px] border border-[rgba(120,120,120,0.20)] bg-[rgba(120,120,120,0.18)] px-4 py-3">
         <div className="flex flex-wrap items-center gap-3">
           {/* Pontos visuais */}
           <div className="flex gap-[5px]" aria-label={`Pagou em ${paidMonths} dos últimos 12 meses`}>
@@ -113,22 +113,22 @@ export function DividendHistoryChart({ dividends, currency = "BRL", frequencyHin
             ))}
           </div>
 
-          <span className="text-sm text-[var(--color-text-muted)]">
+          <span className="text-[13px] font-medium text-[#808080]">
             Pagou em{" "}
-            <strong className="font-semibold text-[var(--color-text)]">{paidMonths}/12</strong>{" "}
+            <strong className="font-semibold text-white">{paidMonths}/12</strong>{" "}
             meses
           </span>
 
           {consecutiveRecent > 1 && (
-            <span className="rounded-full border border-[var(--color-border)] bg-[var(--color-surface)] px-2.5 py-0.5 text-xs font-medium text-[var(--color-text-muted)]">
+            <span className="rounded-full border border-[rgba(120,120,120,0.20)] bg-[rgba(120,120,120,0.18)] px-2.5 py-0.5 text-xs font-medium text-[#808080]">
               {consecutiveRecent} consecutivos
             </span>
           )}
         </div>
 
         {frequencyHint && (
-          <p className="text-xs text-[var(--color-text-soft)]">
-            Frequência estimada: <span className="font-medium text-[var(--color-text-muted)]">{frequencyHint}</span>
+          <p className="text-[13px] font-medium text-[#808080]">
+            Frequência estimada: <span className="font-medium text-white">{frequencyHint}</span>
           </p>
         )}
       </div>

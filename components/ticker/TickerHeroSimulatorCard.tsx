@@ -1,13 +1,8 @@
 "use client";
 
-import { useState } from "react";
-import Image from "next/image";
 import { useDividendSimulator } from "@/components/simulator/useDividendSimulator";
 import { formatBRL, formatDatePt } from "@/lib/format";
-import { Amount } from "@/components/ui/Amount";
 import type { StockQuote } from "@/lib/types";
-
-/* ── main component ───────────────────────────────────── */
 
 export type TickerHeroSimulatorCardProps = {
   ticker: string;
@@ -16,214 +11,117 @@ export type TickerHeroSimulatorCardProps = {
   initialStock?: StockQuote | null;
   serverError?: string | null;
   defaultShares?: number;
-  /** Short descriptive text shown at the bottom of the left panel */
   dividendSummary?: string | null;
 };
 
 export function TickerHeroSimulatorCard({
   ticker,
-  companyName,
-  logoUrl,
   initialStock = null,
   serverError = null,
   defaultShares = 100,
-  dividendSummary,
 }: TickerHeroSimulatorCardProps) {
-  const [logoErr, setLogoErr] = useState(false);
-
   const {
     sharesStr,
     setSharesStr,
     stock,
     error,
-    loading,
     showResults,
     currency,
     lastPayment,
     nextPayment,
-    onSimulate,
   } = useDividendSimulator(ticker, initialStock, serverError, defaultShares, "tickerPage");
 
   const perShareValue =
     lastPayment && Number(sharesStr || 1) > 0 ? lastPayment.totalPerShare : null;
 
-  const symbol = ticker.toUpperCase();
-
   return (
-    <div className="flex w-full flex-col overflow-hidden rounded-[32px] md:flex-row">
-
-      {/* ═══════════════════════════════════════
-          LEFT PANEL — teal #00939A
-      ═══════════════════════════════════════ */}
-      <div className="flex w-full shrink-0 flex-col gap-8 bg-[#00939A] p-6 md:w-[440px]">
-
-        {/* Company badge */}
-        <div className="flex items-center gap-2 self-start rounded-full border border-white/20 bg-white/10 px-3 py-1.5">
-          {logoUrl && !logoErr ? (
-            <Image
-              src={logoUrl}
-              alt={`Logo ${symbol}`}
-              width={20}
-              height={20}
-              unoptimized
-              className="h-5 w-5 shrink-0 rounded-full object-contain"
-              onError={() => setLogoErr(true)}
-            />
-          ) : (
-            <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-white/20 text-xs font-bold text-white">
-              {symbol[0]}
-            </span>
-          )}
-          <span className="text-sm font-semibold text-white">{symbol}</span>
-          <span className="text-xs text-white/60 truncate max-w-[120px]">{companyName}</span>
-        </div>
-
-        {/* Content */}
-        <div className="flex flex-1 flex-col justify-between gap-20">
-
-          {/* Quantity input */}
-          <div className="flex flex-col gap-2">
-            <label htmlFor="ticker-card-shares" className="text-xs font-medium text-white/60">
-              Quantidade
-            </label>
-            <input
-              id="ticker-card-shares"
-              type="text"
-              inputMode="numeric"
-              value={sharesStr}
-              onChange={(e) => {
-                setSharesStr(e.target.value.replace(/\D/g, ""));
-              }}
-              onKeyDown={(e) => {
-                if (e.key === "Enter") void onSimulate();
-              }}
-              className="rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-2xl font-light tabular-nums text-white outline-none focus:border-white/40 placeholder:text-white/30"
-              placeholder="100"
-            />
-            <button
-              type="button"
-              onClick={() => void onSimulate()}
-              disabled={loading}
-              className="mt-1 self-start rounded-full bg-white/15 px-4 py-1.5 text-sm font-medium text-white hover:bg-white/25 transition disabled:opacity-40"
-            >
-              {loading ? "Carregando…" : "Simular"}
-            </button>
-          </div>
-
-          {/* Dividend summary info */}
-          <div className="flex flex-col gap-2 rounded-2xl border border-white/15 bg-black/10 px-4 py-3">
-            <p className="text-xs font-semibold uppercase tracking-widest text-white/50">
-              Resumo de dividendos
-            </p>
-            {dividendSummary ? (
-              <p className="text-xs font-medium leading-relaxed text-white/80">
-                {dividendSummary.length > 140
-                  ? dividendSummary.slice(0, 137) + "…"
-                  : dividendSummary}
-              </p>
-            ) : lastPayment ? (
-              <p className="text-xs font-medium leading-relaxed text-white/80">
-                Último dividendo de {symbol}:{" "}
-                <span className="text-white font-semibold">
-                  {formatBRL(lastPayment.totalPerShare, currency)}
-                </span>{" "}
-                por cota
-                {lastPayment.paymentDate
-                  ? `, pago em ${formatDatePt(lastPayment.paymentDate)}`
-                  : ""}
-                .
-              </p>
-            ) : (
-              <p className="text-xs font-medium text-white/50">
-                Simule para ver os resultados.
-              </p>
-            )}
-          </div>
-        </div>
+    <div
+      className="rounded-[24px] border border-white/10 p-[24px]"
+      style={{ background: "rgba(111,111,111,0.18)", backdropFilter: "blur(16px)" }}
+    >
+      {/* ── Label + Input ── */}
+      <div className="flex flex-col gap-3">
+        <label htmlFor="ticker-page-shares" className="text-[13px] font-medium text-[#808080]">
+          Quantidade
+        </label>
+        <input
+          id="ticker-page-shares"
+          type="text"
+          inputMode="numeric"
+          value={sharesStr}
+          onChange={(e) => setSharesStr(e.target.value.replace(/\D/g, ""))}
+          placeholder="100"
+          className="rounded-full border border-white/15 bg-[rgba(255,255,255,0.06)] px-4 py-[14px] text-sm font-semibold tabular-nums text-white outline-none transition focus:border-white/30 placeholder:text-[#808080]"
+        />
       </div>
 
-      {/* ═══════════════════════════════════════
-          RIGHT PANEL — white, 3 sections
-      ═══════════════════════════════════════ */}
+      {/* ── Resultados ── */}
       {showResults && stock ? (
-        <div className="flex flex-1 flex-col divide-y divide-[#E5E5E5] bg-white">
+        <div className="mt-6 flex flex-col gap-[40px]">
 
-          {/* Section 1 — Preço atual */}
           {stock.regularMarketPrice != null && (
-            <div className="flex flex-col gap-1 p-6">
-              <p className="text-xs font-medium text-black">Preço atual da ação:</p>
-              <Amount value={stock.regularMarketPrice} currency={currency} />
+            <div className="flex items-center justify-between">
+              <p className="text-[13px] font-medium text-[#808080]">Preço atual da ação</p>
+              <p className="text-[13px] font-semibold tabular-nums text-white">
+                {formatBRL(stock.regularMarketPrice, currency)}
+              </p>
             </div>
           )}
 
-          {/* Section 2 — Último dividendo */}
           {lastPayment && (
-            <div className="flex flex-col gap-1 p-6">
-              <p className="text-xs font-medium text-black">Último dividendo</p>
-              <Amount value={lastPayment.totalForShares} currency={currency} />
-              {lastPayment.paymentDate && (
-                <p className="text-xs font-medium text-[#A3A3A3]">
-                  Pago em {formatDatePt(lastPayment.paymentDate)}
+            <div className="flex items-start justify-between gap-4">
+              <div>
+                <p className="text-[13px] font-medium text-[#808080]">Último dividendo</p>
+                {lastPayment.paymentDate && (
+                  <p className="mt-0.5 text-[13px] font-medium text-[#808080]">
+                    Pago em {formatDatePt(lastPayment.paymentDate)}
+                  </p>
+                )}
+              </div>
+              <p className="shrink-0 text-[13px] font-semibold tabular-nums text-white">
+                {formatBRL(lastPayment.totalForShares, currency)}
+              </p>
+            </div>
+          )}
+
+          <div className="flex items-end justify-between gap-4">
+            <div>
+              <p className="text-[13px] font-medium text-[#808080]">Próximo pagamento</p>
+              {nextPayment?.paymentDate && (
+                <p className="mt-0.5 text-[13px] font-medium text-[#808080]">
+                  Previsão: {formatDatePt(nextPayment.paymentDate)}
                 </p>
               )}
             </div>
-          )}
-
-          {/* Section 3 — Próximo pagamento */}
-          <div className="flex flex-1 flex-col justify-between p-6">
-            <div className="flex flex-col gap-1">
-              <p className="text-xs font-medium text-black">Próximo pagamento</p>
+            <div className="shrink-0 text-right">
               {nextPayment ? (
                 <>
-                  <Amount value={nextPayment.totalForShares} currency={currency} highlight />
-                  {nextPayment.paymentDate && (
-                    <p className="text-xs font-medium text-[#A3A3A3]">
-                      Previsto: {formatDatePt(nextPayment.paymentDate)}
-                    </p>
-                  )}
+                  <p className="text-[32px] font-semibold leading-tight tabular-nums text-white">
+                    {formatBRL(nextPayment.totalForShares, currency)}
+                  </p>
+                  <p className="mt-1 text-[13px] font-medium text-[#808080]">
+                    {perShareValue != null
+                      ? `Cerca de ${formatBRL(perShareValue, currency)} por cota`
+                      : "—"}
+                  </p>
                 </>
               ) : (
-                <p className="text-3xl font-light leading-none tracking-[-0.64px] text-[#A3A3A3]">
-                  —
-                </p>
+                <p className="text-[32px] font-semibold text-[#808080]">—</p>
               )}
             </div>
-
-            {/* Footer row */}
-            {perShareValue != null && (
-              <p className="pt-4 text-xs font-medium text-[#A3A3A3]">
-                Cerca de {formatBRL(perShareValue, currency)} por cota
-              </p>
-            )}
           </div>
         </div>
-      ) : (
-        /* Placeholder / Error */
-        <div className="flex flex-1 flex-col items-center justify-center gap-3 bg-white p-8 text-center">
-          {error ? (
-            <div className="flex flex-col items-center gap-2">
-              <span
-                className="material-symbols-outlined text-3xl leading-none text-neutral-300"
-                style={{ fontVariationSettings: "'opsz' 32, 'wght' 400, 'FILL' 0, 'GRAD' 0" }}
-              >
-                info
-              </span>
-              <p className="text-sm font-medium text-neutral-600">
-                {/bloqueia|token|plano pago/i.test(error)
-                  ? "Este ticker precisa de autenticação na API."
-                  : /não encontrado|inválido/i.test(error)
-                  ? "Ticker não encontrado."
-                  : "Não foi possível carregar os dados."}
-              </p>
-            </div>
-          ) : (
-            <p className="text-sm text-neutral-400">
-              Carregando dados de <span className="font-semibold text-neutral-600">{symbol}</span>…
-            </p>
-          )}
+      ) : error ? (
+        <div className="mt-6">
+          <p className="text-[13px] font-medium text-[#808080]">
+            {/bloqueia|token|plano pago/i.test(error)
+              ? "Este ticker precisa de autenticação na API."
+              : /não encontrado|inválido/i.test(error)
+              ? "Ticker não encontrado."
+              : "Não foi possível carregar os dados."}
+          </p>
         </div>
-      )}
-
+      ) : null}
     </div>
   );
 }

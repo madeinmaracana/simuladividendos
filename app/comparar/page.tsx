@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
-import { buildPageMetadata } from "@/lib/seo";
+import Link from "next/link";
 import { ComparForm } from "@/components/comparar/ComparForm";
 import { buildPopularPairs, buildComparSlug } from "@/lib/comparar";
-import { cn } from "@/lib/cn";
-import { ui } from "@/components/ui/classes";
-import Link from "next/link";
+import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "Comparador de dividendos",
@@ -13,68 +11,70 @@ export const metadata: Metadata = buildPageMetadata({
   canonicalPath: "/comparar",
 });
 
-const FEATURED_PAIRS = [
+const FEATURED_PAIRS: [string, string][] = [
   ["PETR4", "VALE3"],
   ["ITUB4", "BBAS3"],
   ["BBDC4", "ITUB4"],
   ["EGIE3", "TAEE11"],
   ["WEGE3", "RENT3"],
   ["ABEV3", "PRIO3"],
-] as const;
+];
 
 export default function ComparPage() {
   const popularPairs = buildPopularPairs().slice(0, 12);
 
   return (
-    <main className={cn(ui.stackPage, "gap-12")}>
-      {/* Hero */}
-      <section className="flex flex-col gap-4">
-        <p className={ui.eyebrow}>Comparador</p>
-        <h1 className={cn(ui.pageTitle, "max-w-[22ch]")}>
-          Compare dividendos de duas ações
-        </h1>
-        <p className={cn(ui.body, "max-w-[52ch]")}>
-          Escolha dois tickers e veja lado a lado qual pagou mais nos últimos
-          12 meses, o dividend yield estimado e o histórico de proventos.
-        </p>
-      </section>
+    <main className="w-full py-16 lg:py-24">
+      <div className="mx-auto flex max-w-[var(--page-max)] flex-col gap-12 px-[var(--page-gutter)]">
 
-      {/* Form */}
-      <ComparForm />
+        {/* Hero */}
+        <header className="flex flex-col gap-4">
+          <p className="text-[13px] font-medium text-[#808080]">Comparador</p>
+          <h1 className="max-w-[22ch] text-[53px] font-medium leading-[63px] text-white">
+            Compare dividendos de duas ações
+          </h1>
+          <p className="max-w-2xl text-[13px] font-medium leading-relaxed text-[#808080]">
+            Escolha dois tickers e veja lado a lado qual pagou mais nos últimos 12 meses,
+            o dividend yield estimado e o histórico de proventos.
+          </p>
+        </header>
 
-      {/* Pares em destaque */}
-      <section className="flex flex-col gap-4">
-        <h2 className={ui.sectionTitle}>Comparações populares</h2>
-        <ul className="flex flex-wrap gap-2">
-          {FEATURED_PAIRS.map(([a, b]) => (
-            <li key={`${a}-${b}`}>
+        {/* Form */}
+        <ComparForm />
+
+        {/* Comparações populares */}
+        <section className="flex flex-col gap-5">
+          <h2 className="text-[27px] font-medium leading-tight text-white">Comparações populares</h2>
+          <div className="flex flex-wrap gap-2">
+            {FEATURED_PAIRS.map(([a, b]) => (
               <Link
+                key={`${a}-${b}`}
                 href={`/comparar/${buildComparSlug(a, b)}`}
-                className={cn(ui.pill, "no-underline")}
+                className="rounded-full border border-[rgba(120,120,120,0.20)] bg-[rgba(120,120,120,0.18)] px-4 py-2 text-[13px] font-medium text-white no-underline transition-opacity hover:opacity-70"
               >
                 {a} vs {b}
               </Link>
-            </li>
-          ))}
-        </ul>
-      </section>
+            ))}
+          </div>
+        </section>
 
-      {/* Todos os pares populares */}
-      <section className="flex flex-col gap-4">
-        <h2 className={ui.sectionTitle}>Mais comparações</h2>
-        <ul className="flex flex-wrap gap-2">
-          {popularPairs.map(([a, b]) => (
-            <li key={`${a}-${b}`}>
+        {/* Mais comparações */}
+        <section className="flex flex-col gap-5">
+          <h2 className="text-[27px] font-medium leading-tight text-white">Mais comparações</h2>
+          <div className="flex flex-wrap gap-2">
+            {popularPairs.map(([a, b]) => (
               <Link
+                key={`${a}-${b}`}
                 href={`/comparar/${buildComparSlug(a, b)}`}
-                className={cn(ui.pillGhost, "no-underline")}
+                className="rounded-full border border-[rgba(120,120,120,0.20)] bg-[rgba(120,120,120,0.18)] px-4 py-2 text-[13px] font-medium text-white no-underline transition-opacity hover:opacity-70"
               >
                 {a} vs {b}
               </Link>
-            </li>
-          ))}
-        </ul>
-      </section>
+            ))}
+          </div>
+        </section>
+
+      </div>
     </main>
   );
 }

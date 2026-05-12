@@ -1,61 +1,44 @@
 import type { Metadata } from "next";
 import { ArticleCard } from "@/components/articles/ArticleCard";
-import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
-import { TextLink } from "@/components/ui/TextLink";
 import { ALL_ARTICLES } from "@/data/articles";
 import { getSeoBaseUrl } from "@/lib/site";
-import { cn } from "@/lib/cn";
-import { ui } from "@/components/ui/classes";
 
 export const metadata: Metadata = {
-  title: "Artigos sobre dividendos e renda passiva | SimulaDividendos",
+  title: "Artigos sobre dividendos e renda passiva | Simula Dividendos",
   description:
     "Guias e explicações educativas sobre dividendos, dividend yield, renda passiva e como planejar suas estimativas com o Simula Dividendos.",
   alternates: { canonical: "/artigos" },
   openGraph: {
-    title: "Artigos sobre dividendos e renda passiva | SimulaDividendos",
-    description:
-      "Guias e explicações educativas sobre dividendos, dividend yield e renda passiva.",
+    title: "Artigos sobre dividendos e renda passiva | Simula Dividendos",
+    description: "Guias e explicações educativas sobre dividendos, dividend yield e renda passiva.",
     url: `${getSeoBaseUrl()}/artigos`,
     locale: "pt_BR",
     type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Artigos sobre dividendos e renda passiva | SimulaDividendos",
-    description:
-      "Guias e explicações educativas sobre dividendos, dividend yield e renda passiva.",
   },
 };
 
 export default function ArtigosIndexPage() {
   return (
-    <main className={ui.stackPage}>
-      <Breadcrumbs
-        items={[
-          { label: "Início", href: "/" },
-          { label: "Artigos", href: undefined },
-        ]}
-      />
+    <main className="w-full py-16 lg:py-24">
+      <div className="mx-auto flex max-w-[var(--page-max)] flex-col gap-12 px-[var(--page-gutter)]">
 
-      <header className={cn(ui.divider, "flex flex-col gap-3")}>
-        <p className={ui.eyebrow}>Conteúdo</p>
-        <h1 className={cn("text-left", ui.pageTitle)}>Artigos</h1>
-        <p className={cn(ui.body, "max-w-2xl")}>
-          Conteúdo educativo para interpretar dividend yield, entender renda passiva e usar o simulador com mais
-          contexto.
-        </p>
-      </header>
+        {/* Hero */}
+        <header className="flex flex-col gap-4">
+          <p className="text-[13px] font-medium text-[#808080]">Conteúdo</p>
+          <h1 className="text-[53px] font-medium leading-[63px] text-white">Artigos</h1>
+          <p className="max-w-2xl text-[13px] font-medium leading-relaxed text-[#808080]">
+            Conteúdo educativo para interpretar dividend yield, entender renda passiva e usar o simulador com mais contexto.
+          </p>
+        </header>
 
-      <section aria-label="Lista de artigos" className="grid gap-4 sm:grid-cols-2">
-        {ALL_ARTICLES.map((article) => (
-          <ArticleCard key={article.slug} article={article} />
-        ))}
-      </section>
+        {/* Grid */}
+        <section aria-label="Lista de artigos" className="grid gap-3 sm:grid-cols-2">
+          {ALL_ARTICLES.map((article) => (
+            <ArticleCard key={article.slug} article={article} />
+          ))}
+        </section>
 
-      <p className={ui.body}>
-        Quer colocar a teoria em prática? <TextLink href="/simulador">Use o simulador →</TextLink>
-      </p>
+      </div>
     </main>
   );
 }

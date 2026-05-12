@@ -1,6 +1,5 @@
-import { SectionHeading } from "@/components/ui/SectionHeading";
-import { TextLink } from "@/components/ui/TextLink";
-import { ui } from "@/components/ui/classes";
+import Link from "next/link";
+import { ArticleCard } from "@/components/articles/ArticleCard";
 import type { ArticleRecord } from "@/data/articles";
 import { ROUTES } from "@/lib/seo/constants";
 
@@ -16,30 +15,30 @@ export function RelatedArticlesSection({
   articles,
   id = "heading-artigos-relacionados",
   title = "Artigos relacionados",
-  max = 3,
-  showSimuladorCta = false,
+  max = 4,
+  showSimuladorCta: _showSimuladorCta,
 }: RelatedArticlesSectionProps) {
   if (!articles.length) return null;
 
   const list = articles.slice(0, max);
 
   return (
-    <section aria-labelledby={id} className={ui.stackSection}>
-      <SectionHeading id={id} title={title} />
-      <ul className="flex flex-col gap-2">
+    <section aria-labelledby={id} className="flex flex-col gap-5">
+      <div className="flex flex-col gap-1">
+        <h2 id={id} className="text-[27px] font-medium leading-tight text-white">{title}</h2>
+      </div>
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
         {list.map((a) => (
-          <li key={a.slug}>
-            <TextLink href={ROUTES.artigo(a.slug)} className="text-sm">
-              {a.title}
-            </TextLink>
-          </li>
+          <ArticleCard key={a.slug} article={a} />
         ))}
-      </ul>
-      {showSimuladorCta ? (
-        <p className={ui.body}>
-          Quer simular agora? <TextLink href={ROUTES.simulador}>Abra o simulador</TextLink>.
-        </p>
-      ) : null}
+      </div>
+      <Link
+        href={ROUTES.artigos ?? "/artigos"}
+        className="flex items-center gap-2 text-[13px] font-medium text-white no-underline transition-opacity hover:opacity-70"
+      >
+        Ver todos
+        <span className="material-symbols-outlined" style={{ fontSize: 16 }}>arrow_forward</span>
+      </Link>
     </section>
   );
 }

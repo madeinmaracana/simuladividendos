@@ -1,55 +1,49 @@
-import { Card } from "@/components/ui/Card";
-import { TextLink } from "@/components/ui/TextLink";
-import { cn } from "@/lib/cn";
-import { ui } from "@/components/ui/classes";
-import { getSectorPath, type StockSeoRecord } from "@/lib/stocks-data";
+import Link from "next/link";
+import { TickerCard } from "@/components/ui/TickerCard";
+import { getSectorPath, getTickerPath, type StockSeoRecord } from "@/lib/stocks-data";
 
 export type RelatedTickersProps = {
   symbol: string;
   sectorSlug: string;
   sectorLabel: string;
   peers: StockSeoRecord[];
-  /** Se houver bloco de artigos na mesma página, oferece âncora interna. */
   hasRelatedArticles?: boolean;
 };
 
-/**
- * Rodapé de contexto: hub do setor, simulador e (opcional) artigos. Pares do setor ficam no bloco “Outros ativos relacionados” acima.
- */
 export function RelatedTickers({
-  symbol,
+  symbol: _symbol,
   sectorSlug,
   sectorLabel,
-  peers: _peers,
-  hasRelatedArticles = false,
+  peers,
 }: RelatedTickersProps) {
-  return (
-    <section aria-labelledby="heading-related-tickers" className={ui.pageSection}>
-      <h2 id="heading-related-tickers" className={cn("text-left", ui.sectionTitle)}>
-        Explorar setor e simulador
-      </h2>
-      <Card className="mt-4 border-dashed bg-neutral-50/60 dark:bg-neutral-900/35">
-        <p className={cn(ui.body, "mt-0")}>
-          Veja o contexto do setor de{" "}
-          <TextLink href={getSectorPath(sectorSlug)} className="text-sm font-medium">
-            {sectorLabel}
-          </TextLink>
-          . Para testar outro ticker com a mesma ferramenta, use o{" "}
-          <TextLink href="/simulador" className="text-sm font-medium">
-            simulador dedicado
-          </TextLink>
-          .
-        </p>
+  if (!peers.length) return null;
 
-        {hasRelatedArticles ? (
-          <p className={cn(ui.body, "mt-4 border-t border-[var(--border)] pt-4 dark:border-neutral-800")}>
-            <TextLink href="#heading-artigos-relacionados" className="text-sm font-medium">
-              Artigos relacionados a {symbol}
-            </TextLink>{" "}
-            — leitura educativa sobre métricas e contexto.
-          </p>
-        ) : null}
-      </Card>
+  const displayed = peers.slice(0, 7);
+
+  return (
+    <section aria-labelledby="heading-acoes-similares" className="flex flex-col gap-5">
+      <div className="flex flex-col gap-1">
+        <h2 id="heading-acoes-similares" className="text-[27px] font-medium leading-tight text-white">
+          Ações similares
+        </h2>
+        <p className="text-[13px] font-medium text-[#808080]">
+          Outras ações do setor de {sectorLabel}
+        </p>
+      </div>
+      <ul className="grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-7">
+        {displayed.map((stock) => (
+          <li key={stock.ticker}>
+            <TickerCard ticker={stock.ticker} href={getTickerPath(stock.ticker)} />
+          </li>
+        ))}
+      </ul>
+      <Link
+        href={getSectorPath(sectorSlug)}
+        className="flex items-center gap-2 text-[13px] font-medium text-white no-underline transition-opacity hover:opacity-70"
+      >
+        Ver todos
+        <span className="material-symbols-outlined" style={{ fontSize: 16 }}>arrow_forward</span>
+      </Link>
     </section>
   );
 }

@@ -1,13 +1,9 @@
-import { cn } from "@/lib/cn";
-import { ui } from "@/components/ui/classes";
-
 type TickerEditorialSectionProps = {
   paragraphs: string[];
   id?: string;
   sectionTitle?: string;
 };
 
-/** Bloco editorial pós-resumo: contexto do ativo e dividendos (dados reais/registry apenas). */
 export function TickerEditorialSection({
   paragraphs,
   id = "heading-contexto-dividendos",
@@ -16,13 +12,13 @@ export function TickerEditorialSection({
   if (!paragraphs.length) return null;
 
   return (
-    <section aria-labelledby={id} className={ui.pageSection}>
-      <h2 id={id} className={cn("text-left", ui.sectionTitle)}>
-        {sectionTitle}
-      </h2>
-      <div className="mt-4 flex flex-col gap-4">
+    <section aria-labelledby={id} className="flex flex-col gap-5">
+      <div className="flex flex-col gap-1">
+        <h2 id={id} className="text-[27px] font-medium leading-tight text-white">{sectionTitle}</h2>
+      </div>
+      <div className="flex flex-col gap-4">
         {paragraphs.map((p, i) => (
-          <p key={i} className={cn(ui.body, "text-pretty leading-relaxed")}>
+          <p key={i} className="text-[13px] font-medium leading-relaxed text-[#808080]">
             {p}
           </p>
         ))}

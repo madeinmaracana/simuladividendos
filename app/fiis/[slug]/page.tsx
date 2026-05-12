@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { ProgrammaticTickerInterlinking } from "@/components/seo/ProgrammaticTickerInterlinking";
 import { RelatedArticlesSection } from "@/components/seo/RelatedArticlesSection";
 import { StockFAQ } from "@/components/stocks/StockFAQ";
 import { TickerPageLayout, TickerPageRow } from "@/components/layout/TickerPageLayout";
 import {
-  FiiHero,
-  FiiSimulatorTop,
   FiiInternalNav,
   RelatedFiiLinks,
   FiiQuickAnswer,
 } from "@/components/fii";
+import { TickerHeroSimulatorCard } from "@/components/ticker";
 import {
   CompanyInfoSection,
   DividendHistoryChart,
@@ -122,12 +122,6 @@ export default async function FiiSlugPage({ params }: PageProps) {
   );
 
   const currency = initialStock?.currency ?? "BRL";
-  const estimatedYield =
-    lastSnap &&
-    initialStock?.regularMarketPrice &&
-    initialStock.regularMarketPrice > 0
-      ? `${((lastSnap.amountPerShare * 12 * 100) / initialStock.regularMarketPrice).toFixed(2)}%`
-      : "—";
   const tableRows = buildDividendTableRows(lastSnap, nextSnap, currency);
 
   const relatedArticles = getArticlesForFii(mock.ticker);
@@ -171,7 +165,7 @@ export default async function FiiSlugPage({ params }: PageProps) {
   const schemaMeta = indexable ? variantMeta : mainMeta;
 
   return (
-    <main className="w-full min-w-0">
+    <main className="w-full min-w-0 py-16 lg:py-24">
       <JsonLd
         data={[
           buildWebPageSchema({
@@ -183,61 +177,44 @@ export default async function FiiSlugPage({ params }: PageProps) {
         ]}
       />
       <TickerPageLayout>
+        {/* ── Hero: texto (esquerda) + simulador (direita) ── */}
         <TickerPageRow>
-          <FiiSimulatorTop
-            ticker={symbol}
-            initialStock={initialStock}
-            serverError={serverError}
-            defaultShares={100}
-            hero={
-              <FiiHero
-                symbol={symbol}
-                fundName={displayName}
-                shortDescription={shortDescription}
-                logoUrl={initialStock?.logoUrl ?? undefined}
-                currentPrice={initialStock?.currentPrice ?? initialStock?.regularMarketPrice ?? null}
-                currency={currency}
-                lastUpdated={initialStock?.lastUpdated}
-                title={heroTitle}
-                afterTitle={
-                  <>
-                    <p className="text-sm text-[color:var(--text-secondary)]">{introText}</p>
-                    <SearchIntentTeaser
-                      symbol={symbol}
-                      currency={currency}
-                      dividends={dividends}
-                      simulationShares={variantShares ?? 100}
-                      assetKind="fii"
-                    />
-                  </>
-                }
-              />
-            }
-          />
-        </TickerPageRow>
+          <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-12 lg:gap-x-8">
+            {/* Esquerda — copy */}
+            <div className="flex flex-col gap-8 lg:col-span-7">
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="text-[13px] font-medium text-[#808080]">{symbol}</span>
+                <span className="rounded-full border border-[rgba(120,120,120,0.20)] bg-[rgba(120,120,120,0.18)] px-2.5 py-0.5 text-[13px] font-medium text-[#808080]">
+                  Fundo imobiliário
+                </span>
+              </div>
+              <h1 className="text-[53px] font-medium leading-[63px] text-white">
+                {heroTitle}
+              </h1>
+              <div className="flex flex-col gap-3">
+                <p className="text-[13px] font-medium leading-relaxed text-[#808080]">{introText}</p>
+                <SearchIntentTeaser
+                  symbol={symbol}
+                  currency={currency}
+                  dividends={dividends}
+                  simulationShares={variantShares ?? 100}
+                  assetKind="fii"
+                />
+              </div>
+            </div>
 
-        <TickerPageRow>
-          <section className="rounded-[length:var(--radius-lg)] border border-[var(--border)] bg-[var(--surface)] p-5">
-            <h2 className="text-lg font-semibold text-[color:var(--text)]">{`Dividendos do ${symbol}`}</h2>
-            <dl className="mt-3 grid gap-2 text-sm text-[color:var(--text-secondary)] sm:grid-cols-2">
-              <div>
-                <dt className="font-medium">Último dividendo (R$)</dt>
-                <dd>{lastSnap ? formatBRL(lastSnap.amountPerShare, currency) : "—"}</dd>
-              </div>
-              <div>
-                <dt className="font-medium">Média mensal</dt>
-                <dd>{frequencyHint ? "Ver histórico" : "—"}</dd>
-              </div>
-              <div>
-                <dt className="font-medium">Dividend yield estimado</dt>
-                <dd>{estimatedYield}</dd>
-              </div>
-              <div>
-                <dt className="font-medium">Frequência de pagamento</dt>
-                <dd>{frequencyHint ?? "—"}</dd>
-              </div>
-            </dl>
-          </section>
+            {/* Direita — simulador */}
+            <div className="lg:col-span-5">
+              <TickerHeroSimulatorCard
+                ticker={symbol}
+                companyName={displayName}
+                logoUrl={initialStock?.logoUrl ?? null}
+                initialStock={initialStock}
+                serverError={serverError}
+                defaultShares={100}
+              />
+            </div>
+          </div>
         </TickerPageRow>
 
         <TickerPageRow>
@@ -336,19 +313,19 @@ export default async function FiiSlugPage({ params }: PageProps) {
         </TickerPageRow>
 
         <TickerPageRow>
-          <section className="text-sm text-[color:var(--text-secondary)]">
-            <p className="font-semibold text-[color:var(--text)]">{`Veja também sobre ${symbol}:`}</p>
-            <p className="mt-1 flex flex-wrap gap-x-3 gap-y-1">
-              <a href={fiiPathFromSlug(fiiVariantSlug(symbol, "paga-quanto"))} className="underline">
-                Dividendos por ação
+          <section className="flex flex-col gap-3">
+            <p className="text-[13px] font-medium text-[#808080]">{`Veja também sobre ${symbol}:`}</p>
+            <p className="flex flex-wrap gap-x-4 gap-y-2">
+              <a href={fiiPathFromSlug(fiiVariantSlug(symbol, "paga-quanto"))} className="text-[13px] font-medium text-white underline-offset-2 hover:underline">
+                Dividendos por cota
               </a>
-              <a href={fiiPathFromSlug(fiiVariantSlug(symbol, "quanto-rende-100-cotas"))} className="underline">
+              <a href={fiiPathFromSlug(fiiVariantSlug(symbol, "quanto-rende-100-cotas"))} className="text-[13px] font-medium text-white underline-offset-2 hover:underline">
                 Quanto rende 100 cotas
               </a>
-              <a href={fiiPathFromSlug(fiiVariantSlug(symbol, "simulador-de-dividendos"))} className="underline">
+              <a href={fiiPathFromSlug(fiiVariantSlug(symbol, "simulador-de-dividendos"))} className="text-[13px] font-medium text-white underline-offset-2 hover:underline">
                 Simulador
               </a>
-              <a href="/" className="underline">
+              <a href="/" className="text-[13px] font-medium text-white underline-offset-2 hover:underline">
                 Página inicial
               </a>
             </p>

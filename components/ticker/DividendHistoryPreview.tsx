@@ -1,7 +1,5 @@
 import type { DividendEntry } from "@/lib/types";
 import { formatBRL, formatDatePt } from "@/lib/format";
-import { cn } from "@/lib/cn";
-import { ui } from "@/components/ui/classes";
 
 type DividendHistoryPreviewProps = {
   items: DividendEntry[];
@@ -9,28 +7,25 @@ type DividendHistoryPreviewProps = {
   className?: string;
 };
 
-/** Lista curta dos últimos proventos (sem tabela). */
 export function DividendHistoryPreview({ items, currency, className }: DividendHistoryPreviewProps) {
   if (!items.length) return null;
 
   return (
-    <ul
-      className={cn(
-        "w-full min-w-0 divide-y divide-[var(--border)] rounded-xl border border-[var(--border)] bg-[var(--card)]",
-        className
-      )}
-    >
+    <ul className={`w-full min-w-0 rounded-[16px] border border-[rgba(120,120,120,0.20)] bg-[rgba(120,120,120,0.18)] overflow-hidden${className ? ` ${className}` : ""}`}>
       {items.map((e, i) => (
-        <li key={`${e.paymentDate}-${i}-${e.ratePerShare}`} className="px-4 py-3.5 sm:px-5 sm:py-4">
+        <li
+          key={`${e.paymentDate}-${i}-${e.ratePerShare}`}
+          className="border-b border-[rgba(120,120,120,0.20)] px-4 py-3.5 last:border-0"
+        >
           <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
-            <span className={cn(ui.body, "tabular-nums text-neutral-900 dark:text-neutral-100")}>
-              {formatDatePt(e.paymentDate)}
-            </span>
-            <span className="text-base font-semibold tabular-nums text-neutral-900 dark:text-neutral-50">
+            <div>
+              <p className="text-[13px] font-medium text-[#808080]">{e.label}</p>
+              <p className="text-[13px] font-medium text-white">{formatDatePt(e.paymentDate)}</p>
+            </div>
+            <span className="text-[13px] font-semibold tabular-nums text-white">
               {formatBRL(e.ratePerShare, currency)}
             </span>
           </div>
-          <p className={cn(ui.bodyMuted, "mt-1 text-xs sm:text-sm")}>{e.label}</p>
         </li>
       ))}
     </ul>

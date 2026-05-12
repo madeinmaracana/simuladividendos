@@ -1,6 +1,4 @@
 import type { DividendEntry } from "@/lib/types";
-import { cn } from "@/lib/cn";
-import { ui } from "@/components/ui/classes";
 import { HISTORY_PREVIEW_COUNT, sortDividendsByPaymentDesc } from "@/lib/dividend-history";
 import { DividendHistoryPreview } from "@/components/ticker/DividendHistoryPreview";
 import { DividendHistoryExpandable } from "@/components/ticker/DividendHistoryExpandable";
@@ -12,9 +10,6 @@ type DividendHistorySectionProps = {
   emptyMessage?: string;
 };
 
-/**
- * Histórico: preview (últimos 5) + expansão inline com tabela completa (lazy mount no cliente).
- */
 export function DividendHistorySection({
   id = "heading-historico-dividendos",
   rows,
@@ -26,26 +21,23 @@ export function DividendHistorySection({
   const hasMore = sorted.length > HISTORY_PREVIEW_COUNT;
 
   return (
-    <section aria-labelledby={id} className={ui.pageSection}>
-      <h2 id={id} className={cn("text-left", ui.sectionTitle)}>
-        Histórico de dividendos
-      </h2>
-      <p className={cn(ui.body, "mt-2")}>
-        Principais pagamentos recentes em lista compacta. Abra o histórico completo para todas as linhas, data ex
-        (quando a fonte informar) e status.
-      </p>
+    <section aria-labelledby={id} className="flex flex-col gap-5">
+      <div className="flex flex-col gap-1">
+        <h2 id={id} className="text-[27px] font-medium leading-tight text-white">
+          Histórico de dividendos
+        </h2>
+        <p className="text-[13px] font-medium text-[#808080]">
+          Principais pagamentos recentes em lista compacta.
+          Abra o histórico completo para todas as linhas, data ex (quando a fonte informar) e status.
+        </p>
+      </div>
 
       {!sorted.length ? (
-        <p
-          className={cn(
-            ui.body,
-            "mt-4 rounded-xl border border-dashed border-[var(--border)] bg-neutral-50/80 px-4 py-8 text-center dark:bg-neutral-900/40"
-          )}
-        >
+        <p className="rounded-[16px] border border-[rgba(120,120,120,0.20)] bg-[rgba(120,120,120,0.18)] px-4 py-8 text-center text-[13px] font-medium text-[#808080]">
           {emptyMessage}
         </p>
       ) : (
-        <div className="mt-4 flex flex-col gap-4">
+        <div className="flex flex-col gap-4">
           <DividendHistoryPreview items={previewItems} currency={currency} />
           {hasMore ? <DividendHistoryExpandable rows={sorted} currency={currency} /> : null}
         </div>
