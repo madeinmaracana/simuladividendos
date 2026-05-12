@@ -84,3 +84,39 @@ export function buildWebPageSchema({ name, description, path }: WebPageSchemaInp
     url,
   };
 }
+
+/** WebApplication schema — indica ao Google que o site é uma ferramenta financeira interativa. */
+export function buildWebApplicationSchema() {
+  const base = getSeoBaseUrl();
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: "Simula Dividendos",
+    url: base,
+    applicationCategory: "FinanceApplication",
+    operatingSystem: "All",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "BRL",
+    },
+    description:
+      "Simulador gratuito de dividendos da B3. Calcule renda passiva com ações e FIIs brasileiros.",
+    inLanguage: "pt-BR",
+  };
+}
+
+/**
+ * Converte BreadcrumbItem[] (com href opcional) em BreadcrumbListSchema,
+ * usando `currentPath` para o último item se ele não tiver href.
+ */
+export function buildBreadcrumbSchema(
+  items: { label: string; href?: string }[],
+  currentPath: string
+): ReturnType<typeof buildBreadcrumbListSchema> {
+  const filled: BreadcrumbSchemaItem[] = items.map((item, idx) => ({
+    label: item.label,
+    href: item.href ?? (idx === items.length - 1 ? currentPath : "/"),
+  }));
+  return buildBreadcrumbListSchema(filled);
+}

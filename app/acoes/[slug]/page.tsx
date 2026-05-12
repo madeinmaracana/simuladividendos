@@ -60,6 +60,8 @@ import { fetchQuoteForOg, resolvePerShareValueForOg } from "@/lib/og/ticker-og-d
 import {
   SITE_NAME,
   buildAcaoSlugPageMetadata,
+  breadcrumbsAcao,
+  buildBreadcrumbSchema,
   buildFaqPageSchema,
   buildWebPageSchema,
   withOpenGraphApiImage,
@@ -197,12 +199,16 @@ export default async function AcaoSlugPage({ params }: PageProps) {
     path: schemaPath,
   });
 
+  const breadcrumbJsonLd = buildBreadcrumbSchema(
+    breadcrumbsAcao(symbol, mock, variant),
+    pagePath
+  );
+
   return (
     <main className="w-full min-w-0 py-16 lg:py-24">
       <JsonLd
-        data={
-          [webPageJsonLd, buildFaqPageSchema(faqList.slice(0, 12))]
-        }
+        data={[webPageJsonLd, breadcrumbJsonLd, buildFaqPageSchema(faqList.slice(0, 12))]}
+
       />
       <TickerPageLayout>
         {/* ── Hero: texto (esquerda) + simulador (direita) ── */}

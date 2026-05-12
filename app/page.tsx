@@ -11,7 +11,7 @@ import { getAllMockTickers, getSectorNavItems } from "@/lib/stocks-data";
 import { ALL_ARTICLES, type ArticleRecord } from "@/data/articles";
 import { getAllMockFiiTickers, getFiiPath } from "@/data/fiis";
 import { getTickerPath } from "@/data/stocks";
-import { buildPageMetadata, buildWebPageSchema, SITE_NAME } from "@/lib/seo";
+import { buildPageMetadata, buildWebPageSchema, buildWebApplicationSchema, SITE_NAME } from "@/lib/seo";
 
 const HOME_TITLE = "Simulador de dividendos e renda passiva com ações na B3";
 const HOME_DESCRIPTION =
@@ -70,11 +70,14 @@ export default function HomePage() {
   return (
     <main className="flex w-full flex-col">
       <JsonLd
-        data={buildWebPageSchema({
-          name: `${HOME_TITLE} | ${SITE_NAME}`,
-          description: HOME_DESCRIPTION,
-          path: "/",
-        })}
+        data={[
+          buildWebPageSchema({
+            name: `${HOME_TITLE} | ${SITE_NAME}`,
+            description: HOME_DESCRIPTION,
+            path: "/",
+          }),
+          buildWebApplicationSchema(),
+        ]}
       />
 
       {/* ══════════════════════════════════════════════════════════════

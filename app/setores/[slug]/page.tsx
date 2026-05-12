@@ -12,7 +12,8 @@ import {
   getTickerPath,
   isSectorSlug,
 } from "@/lib/stocks-data";
-import { buildSectorPageMetadata } from "@/lib/seo";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { buildSectorPageMetadata, breadcrumbsSector, buildBreadcrumbSchema, buildFaqPageSchema } from "@/lib/seo";
 import { tickerAccentColor } from "@/lib/ticker-colors";
 
 type PageProps = { params: { slug: string } };
@@ -38,8 +39,16 @@ export default function SetorPage({ params }: PageProps) {
   const stocks = getStocksInSector(slug);
   const relatedArticles = getArticlesForSector(sector.slug);
 
+  const sectorPath = `/setores/${slug}`;
+
   return (
     <main className="w-full py-16 lg:py-24">
+      <JsonLd
+        data={[
+          buildBreadcrumbSchema(breadcrumbsSector(sector), sectorPath),
+          ...(sector.faqs.length > 0 ? [buildFaqPageSchema(sector.faqs.slice(0, 8))] : []),
+        ]}
+      />
       <div className="mx-auto flex max-w-[var(--page-max)] flex-col gap-12 px-[var(--page-gutter)]">
 
         {/* Hero */}

@@ -16,52 +16,28 @@ import {
 import { fiiPathFromSlug, parseFiiSlug } from "@/lib/fiis/fii-slug";
 import { buildPopularPairs, buildComparSlug } from "@/lib/comparar";
 
-/** Fallback de lastmod quando o conteúdo não declara data (ex.: setores, home). */
-function defaultLastModified(): Date {
+export function defaultLastModified(): Date {
   return new Date();
 }
 
-function lastModFromIso(iso?: string): Date {
+export function lastModFromIso(iso?: string): Date {
   if (!iso?.trim()) return defaultLastModified();
   const raw = iso.trim();
   const d = new Date(raw.length === 10 ? `${raw}T12:00:00.000Z` : raw);
   return Number.isNaN(d.getTime()) ? defaultLastModified() : d;
 }
 
-/**
- * Monta todas as entradas do sitemap a partir dos registros (ações, FIIs, artigos).
- * Sem I/O: adequado para centenas de URLs; acima de ~50k, considere sitemap index (Google).
- */
-export function buildSitemap(baseUrl: string): MetadataRoute.Sitemap {
-  const base = baseUrl.replace(/\/$/, "");
-  const fallback = defaultLastModified();
+// ── Per-type builders ──────────────────────────────────────────────────────
 
-  const staticRoutes: MetadataRoute.Sitemap = [
-    { url: base, lastModified: fallback, changeFrequency: "weekly", priority: 1 },
-    { url: `${base}/simulador`, lastModified: fallback, changeFrequency: "weekly", priority: 0.95 },
-    { url: `${base}/setores`, lastModified: fallback, changeFrequency: "weekly", priority: 0.85 },
-    { url: `${base}/artigos`, lastModified: fallback, changeFrequency: "weekly", priority: 0.75 },
-    { url: `${base}/fiis`, lastModified: fallback, changeFrequency: "weekly", priority: 0.88 },
-    { url: `${base}/comparar`, lastModified: fallback, changeFrequency: "weekly", priority: 0.85 },
-  ];
-
-  const sectorRoutes = getAllSectorSlugs().map((slug) => ({
-    url: `${base}${getSectorPath(slug)}`,
-    lastModified: fallback,
-    changeFrequency: "weekly" as const,
-    priority: 0.8,
-  }));
-
+export function buildAcoesSitemap(base: string): MetadataRoute.Sitemap {
   const tickerBySymbol = Object.fromEntries(MOCK_STOCKS.map((s) => [s.ticker.toUpperCase(), s]));
-
   const acaoSlugParams = buildAllAcaoSlugStaticParams();
-  const acaoSlugsForSitemap =
+  const slugsForSitemap =
     process.env.SITEMAP_EXCLUDE_ACAO_URL_VARIANTS === "1"
       ? acaoSlugParams.filter(({ slug }) => parseAcaoSlug(slug).variant === "main")
       : acaoSlugParams;
 
-  /** Só URLs com `index` explícito no metadata (alinha sitemap a robots). */
-  const tickerRoutes = acaoSlugsForSitemap
+  return slugsForSitemap
     .filter(({ slug }) => {
       const { ticker, variant } = parseAcaoSlug(slug);
       return isAcaoVariantIndexable(ticker, variant);
@@ -76,10 +52,11 @@ export function buildSitemap(baseUrl: string): MetadataRoute.Sitemap {
         priority: slug.includes("-") ? (0.72 as const) : (0.8 as const),
       };
     });
+}
 
+export function buildFiisSitemap(base: string): MetadataRoute.Sitemap {
   const fiiByTicker = Object.fromEntries(MOCK_FIIS.map((f) => [f.ticker.toUpperCase(), f]));
-
-  const fiiRoutes = buildAllFiiSlugStaticParams()
+  return buildAllFiiSlugStaticParams()
     .filter(({ slug }) => {
       const { ticker, variant } = parseFiiSlug(slug);
       return isFiiVariantIndexable(ticker, variant);
@@ -94,20 +71,48 @@ export function buildSitemap(baseUrl: string): MetadataRoute.Sitemap {
         priority: slug.includes("-") ? (0.72 as const) : (0.8 as const),
       };
     });
+}
 
-  const articleRoutes = ALL_ARTICLES.map((a) => ({
+export function buildArtigosSitemap(base: string): MetadataRoute.Sitemap {
+  return ALL_ARTICLES.map((a) => ({
     url: `${base}/artigos/${encodeURIComponent(a.slug)}`,
     lastModified: lastModFromIso(a.lastModified),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
+}
 
-  const comparRoutes = buildPopularPairs().map(([a, b]) => ({
+export function buildSetoresSitemap(base: string): MetadataRoute.Sitemap {
+  const fallback = defaultLastModified();
+  return getAllSectorSlugs().map((slug) => ({
+    url: `${base}${getSectorPath(slug)}`,
+    lastModified: fallback,
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  }));
+}
+
+export function buildCompararSitemap(base: string): MetadataRoute.Sitemap {
+  const fallback = defaultLastModified();
+  return buildPopularPairs().map(([a, b]) => ({
     url: `${base}/comparar/${buildComparSlug(a, b)}`,
     lastModified: fallback,
     changeFrequency: "weekly" as const,
     priority: 0.75,
   }));
+}
 
-  return [...staticRoutes, ...sectorRoutes, ...tickerRoutes, ...fiiRoutes, ...articleRoutes, ...comparRoutes];
+/** Sitemap principal: só rotas estáticas + hubs. */
+export function buildSitemap(base: string): MetadataRoute.Sitemap {
+  const fallback = defaultLastModified();
+  return [
+    { url: base, lastModified: fallback, changeFrequency: "weekly", priority: 1 },
+    { url: `${base}/simulador`, lastModified: fallback, changeFrequency: "weekly", priority: 0.95 },
+    { url: `${base}/comparar`, lastModified: fallback, changeFrequency: "weekly", priority: 0.85 },
+    { url: `${base}/setores`, lastModified: fallback, changeFrequency: "weekly", priority: 0.85 },
+    { url: `${base}/fiis`, lastModified: fallback, changeFrequency: "weekly", priority: 0.88 },
+    { url: `${base}/artigos`, lastModified: fallback, changeFrequency: "weekly", priority: 0.75 },
+    { url: `${base}/melhores-acoes-dividendos`, lastModified: fallback, changeFrequency: "weekly", priority: 0.85 },
+    { url: `${base}/melhores-fiis`, lastModified: fallback, changeFrequency: "weekly", priority: 0.85 },
+  ];
 }

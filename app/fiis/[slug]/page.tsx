@@ -49,6 +49,8 @@ import { buildAbsoluteOgApiUrl } from "@/lib/og/build-og-api-url";
 import { fetchQuoteForOg, resolvePerShareValueForOg } from "@/lib/og/ticker-og-data";
 import {
   SITE_NAME,
+  breadcrumbsFiiSlug,
+  buildBreadcrumbSchema,
   buildFaqPageSchema,
   buildFiiSlugPageMetadata,
   buildWebPageSchema,
@@ -173,6 +175,7 @@ export default async function FiiSlugPage({ params }: PageProps) {
             description: schemaMeta.description,
             path: schemaPath,
           }),
+          buildBreadcrumbSchema(breadcrumbsFiiSlug(symbol, variant), pagePath),
           buildFaqPageSchema(faqList.slice(0, 12)),
         ]}
       />

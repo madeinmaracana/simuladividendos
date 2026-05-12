@@ -8,6 +8,7 @@ export const ROUTES = {
   setores: "/setores",
   fiis: "/fiis",
   artigos: "/artigos",
+  comparar: "/comparar",
   acao: (ticker: string) => `/acoes/${encodeURIComponent(ticker.trim().toUpperCase())}`,
   fii: (ticker: string) => `/fiis/${encodeURIComponent(ticker.trim().toUpperCase())}`,
   setor: (slug: string) => `/setores/${encodeURIComponent(slug)}`,

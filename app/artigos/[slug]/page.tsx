@@ -8,7 +8,7 @@ import { getFiiPath } from "@/data/fiis";
 import { getSectorPath, getTickerPath } from "@/lib/stocks-data";
 import { getSector } from "@/data/stocks";
 import { ROUTES } from "@/lib/seo/constants";
-import { buildArticlePageMetadata, buildArticleSchemaFromPath } from "@/lib/seo";
+import { buildArticlePageMetadata, buildArticleSchemaFromPath, breadcrumbsArticle, buildBreadcrumbSchema } from "@/lib/seo";
 import type { ArticleSection } from "@/data/articles";
 
 type PageProps = { params: { slug: string } };
@@ -68,10 +68,11 @@ export default function ArtigoPage({ params }: PageProps) {
 
   const path = `/artigos/${encodeURIComponent(article.slug)}`;
   const articleSchema = buildArticleSchemaFromPath(article, path);
+  const breadcrumbSchema = buildBreadcrumbSchema(breadcrumbsArticle(article), path);
 
   return (
     <main className="w-full py-16 lg:py-24">
-      <JsonLd data={articleSchema} />
+      <JsonLd data={[articleSchema, breadcrumbSchema]} />
       <div className="mx-auto flex max-w-[var(--page-max)] flex-col gap-12 px-[var(--page-gutter)]">
 
         {/* Hero */}
