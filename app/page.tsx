@@ -85,18 +85,18 @@ export default function HomePage() {
 
           {/* Esquerda — copy + como funciona */}
           <div className="flex flex-col gap-10">
-            <div className="flex flex-col gap-5">
-              <h1 className="ds-display-sm font-bold leading-[1.1] tracking-tight text-[var(--color-text)] sm:ds-display-md">
+            <div className="flex flex-col gap-4">
+              <h1 className="text-[53px] font-medium leading-[63px] text-white">
                 Simule quanto você pode receber em dividendos
               </h1>
-              <p className="text-lg leading-relaxed text-[var(--color-text-muted)]">
+              <p className="text-[21px] font-normal text-white">
                 Compare ações, estime pagamentos e visualize a renda potencial da sua carteira em poucos segundos.
               </p>
             </div>
 
             {/* Como funciona */}
             <div className="flex flex-col gap-3">
-              <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-text-soft)]">
+              <p className="text-[13px] font-medium text-[#808080]">
                 Como funciona
               </p>
               <ol className="flex flex-col gap-2">
@@ -105,14 +105,14 @@ export default function HomePage() {
                   "Informe a quantidade de cotas e clique em Simular dividendos.",
                   "Confira o último e próximo pagamento.",
                 ].map((step, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-[var(--color-text-muted)]">
-                    <span className="mt-[2px] shrink-0 font-semibold text-[var(--color-text-soft)]">{i + 1}.</span>
+                  <li key={i} className="flex items-start gap-2 text-[13px] font-medium text-[#808080]">
+                    <span className="shrink-0">{i + 1}.</span>
                     {step}
                   </li>
                 ))}
               </ol>
-              <p className="mt-1 flex items-start gap-1.5 text-xs text-[var(--color-text-soft)]">
-                <span>⚠</span>
+              <p className="mt-1 flex items-start gap-1.5 text-[13px] font-medium text-[#808080]">
+                <span>◆</span>
                 <span>Não é recomendação de investimento. Fonte pública de proventos.</span>
               </p>
             </div>
