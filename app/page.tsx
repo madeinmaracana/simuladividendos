@@ -185,8 +185,8 @@ export default function HomePage() {
                 <li key={slug}>
                   <Link
                     href={href}
-                    className="flex flex-col justify-between gap-4 rounded-xl p-4 no-underline transition hover:opacity-90"
-                    style={{ backgroundColor: bg, minHeight: "100px" }}
+                    className="flex h-[120px] w-full flex-col justify-between rounded-[16px] p-4 no-underline transition hover:opacity-90"
+                    style={{ backgroundColor: bg }}
                   >
                     <Icon name={icon} size="md" className="text-black/70" />
                     <span className="text-sm font-semibold text-black">{label}</span>
