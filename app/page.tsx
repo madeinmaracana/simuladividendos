@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { ArticleCard } from "@/components/articles/ArticleCard";
-import { TickerPill } from "@/components/ui/TickerPill";
+import { TickerCard } from "@/components/ui/TickerCard";
 import { Icon } from "@/components/ui/Icon";
-import { SectionBlock } from "@/components/ui/SectionBlock";
 import { HomeHeroSimulator } from "@/components/home/HomeHeroSimulator";
 import { ScrollToTopCTA } from "@/components/home/ScrollToTopCTA";
 import { getAllMockTickers, getSectorNavItems } from "@/lib/stocks-data";
@@ -29,54 +28,43 @@ const HOME_ARTICLE_SLUGS = [
   "quanto-investir-para-viver-de-dividendos",
   "o-que-e-dividend-yield",
   "como-calcular-renda-passiva",
-  "acoes-que-pagam-dividendos-todo-mes",
-  "melhores-acoes-de-dividendos-brasil",
 ];
 
 const FAQ_ITEMS = [
   {
     question: "O que este simulador faz?",
-    answer:
-      "Multiplica o dividendo por ação pela quantidade de cotas que você informa. Serve para entender o histórico recente em valores, sem prever o futuro.",
+    answer: "Multiplica o dividendo por ação pela quantidade de cotas que você informa. Serve para entender o histórico recente em valores, sem prever o futuro.",
   },
   {
     question: "Os valores são garantidos?",
-    answer:
-      "Não. Dividendos dependem da companhia e do calendário oficial. O site é educacional e não recomenda compra ou venda de ativos.",
+    answer: "Não. Dividendos dependem da companhia e do calendário oficial. O site é educacional e não recomenda compra ou venda de ativos.",
   },
   {
     question: "De onde vêm os dados?",
-    answer:
-      "De uma fonte pública de cotações e proventos. Sempre confira RI e comunicados da empresa para decisões reais.",
+    answer: "De uma fonte pública de cotações e proventos. Sempre confira RI e comunicados da empresa para decisões reais.",
   },
 ];
 
-const HOW_IT_WORKS = [
-  {
-    step: "01",
-    title: "Escolha o ativo",
-    description: "Digite o ticker da ação ou FII — sugestões aparecem automaticamente.",
-  },
-  {
-    step: "02",
-    title: "Informe suas cotas",
-    description: "Coloque quantas ações você possui ou deseja simular.",
-  },
-  {
-    step: "03",
-    title: "Veja o resultado",
-    description: "Último dividendo pago e próximo pagamento estimado, em reais.",
-  },
-];
+/** Cor de fundo por setor — hex sólido, seguindo paleta do Figma */
+const SECTOR_COLORS: Record<string, string> = {
+  bancos:              "#4CAF50",
+  consumo:             "#2196F3",
+  energia:             "#FF9800",
+  mineracao:           "#E91E63",
+  industria:           "#F5C518",
+  petroleo:            "#9E9E9E",
+  servicos_financeiros:"#9C27B0",
+};
 
 export default function HomePage() {
-  const popularTickers = getAllMockTickers().slice(0, 8);
+  const popularTickers = getAllMockTickers().slice(0, 7);
   const popularFiis = getAllMockFiiTickers().filter((t) =>
     ["MXRF11", "HGLG11", "XPLG11", "KNRI11", "VGHF11"].includes(t)
   );
-  const homeArticles = HOME_ARTICLE_SLUGS.map((slug) =>
-    ALL_ARTICLES.find((a) => a.slug === slug)
-  ).filter((a): a is ArticleRecord => Boolean(a));
+  const homeArticles = HOME_ARTICLE_SLUGS
+    .map((slug) => ALL_ARTICLES.find((a) => a.slug === slug))
+    .filter((a): a is ArticleRecord => Boolean(a));
+  const sectors = getSectorNavItems();
 
   return (
     <main className="flex w-full flex-col">
@@ -89,184 +77,177 @@ export default function HomePage() {
       />
 
       {/* ══════════════════════════════════════════════════════════════
-          HERO — título centralizado + simulador abaixo em largura total
+          HERO — 2 colunas em lg+, empilhado em mobile
       ══════════════════════════════════════════════════════════════ */}
-      <section className="w-full border-b border-[var(--color-border)]">
-        <div className="mx-auto flex max-w-[var(--page-max)] flex-col items-center gap-10 px-[var(--page-gutter)] py-14 text-center lg:py-20">
+      <section className="w-full">
+        <div className="mx-auto grid max-w-[var(--page-max)] grid-cols-1 gap-12 px-[var(--page-gutter)] py-16 lg:grid-cols-2 lg:items-start lg:gap-16 lg:py-24">
 
-          {/* Copy — centralizado */}
-          <div className="flex flex-col items-center gap-5 max-w-[54ch]">
-            <h1 className="ds-display-sm font-bold tracking-tight text-[var(--color-text)] sm:ds-display-md">
-              Simule quanto você pode receber em dividendos
-            </h1>
-            <p className="text-lg leading-relaxed text-[var(--color-text-muted)]">
-              Escolha o ticker, informe suas cotas e veja o último e próximo pagamento de dividendos em segundos.
-            </p>
-            <ul className="flex flex-wrap justify-center gap-x-6 gap-y-1.5 text-sm text-[var(--color-text-soft)]">
-              <li className="flex items-center gap-1.5">
-                <span className="h-1.5 w-1.5 rounded-full bg-[var(--brand)]" />
-                Dados em tempo real
-              </li>
-              <li className="flex items-center gap-1.5">
-                <span className="h-1.5 w-1.5 rounded-full bg-[var(--brand)]" />
-                Ações e FIIs da B3
-              </li>
-              <li className="flex items-center gap-1.5">
-                <span className="h-1.5 w-1.5 rounded-full bg-[var(--brand)]" />
-                Gratuito
-              </li>
-            </ul>
+          {/* Esquerda — copy + como funciona */}
+          <div className="flex flex-col gap-10">
+            <div className="flex flex-col gap-5">
+              <h1 className="ds-display-sm font-bold leading-[1.1] tracking-tight text-[var(--color-text)] sm:ds-display-md">
+                Simule quanto você pode receber em dividendos
+              </h1>
+              <p className="text-lg leading-relaxed text-[var(--color-text-muted)]">
+                Compare ações, estime pagamentos e visualize a renda potencial da sua carteira em poucos segundos.
+              </p>
+            </div>
+
+            {/* Como funciona */}
+            <div className="flex flex-col gap-3">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-text-soft)]">
+                Como funciona
+              </p>
+              <ol className="flex flex-col gap-2">
+                {[
+                  "Escolha o ticker.",
+                  "Informe a quantidade de cotas e clique em Simular dividendos.",
+                  "Confira o último e próximo pagamento.",
+                ].map((step, i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm text-[var(--color-text-muted)]">
+                    <span className="mt-[2px] shrink-0 font-semibold text-[var(--color-text-soft)]">{i + 1}.</span>
+                    {step}
+                  </li>
+                ))}
+              </ol>
+              <p className="mt-1 flex items-start gap-1.5 text-xs text-[var(--color-text-soft)]">
+                <span>⚠</span>
+                <span>Não é recomendação de investimento. Fonte pública de proventos.</span>
+              </p>
+            </div>
           </div>
 
-          {/* Simulator — largura generosa, centralizado */}
-          <div className="w-full max-w-[var(--simulator-card-max)] text-left">
+          {/* Direita — simulador */}
+          <div id="simulador">
             <HomeHeroSimulator />
-            <p className="mt-3 text-xs text-[var(--color-text-soft)]">
-              ⚠ Não é recomendação de investimento. Fonte pública de proventos B3.
-            </p>
           </div>
 
         </div>
       </section>
 
       {/* ══════════════════════════════════════════════════════════════
-          CONTEÚDO — max-width da página, espaçamento generoso
+          SEÇÕES
       ══════════════════════════════════════════════════════════════ */}
-      <div className="mx-auto flex w-full max-w-[var(--page-max)] flex-col gap-20 px-[var(--page-gutter)] py-20">
-
-        {/* ── Como funciona ── */}
-        <section id="como-funciona" className="flex flex-col gap-8">
-          <div className="flex flex-col gap-2">
-            <h2 className="ds-display-xs font-bold tracking-tight text-[var(--color-text)]">
-              Como funciona
-            </h2>
-            <p className="text-base text-[var(--color-text-muted)]">
-              Três passos para descobrir sua renda de dividendos.
-            </p>
-          </div>
-          <ol className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-            {HOW_IT_WORKS.map(({ step, title, description }) => (
-              <li
-                key={step}
-                className="flex flex-col gap-3 rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] p-6 shadow-[var(--shadow-sm)]"
-              >
-                <span className="font-mono text-xs font-semibold text-[var(--brand)]">{step}</span>
-                <p className="font-semibold text-[var(--color-text)]">{title}</p>
-                <p className="text-sm leading-relaxed text-[var(--color-text-muted)]">{description}</p>
-              </li>
-            ))}
-          </ol>
-        </section>
+      <div className="mx-auto flex w-full max-w-[var(--page-max)] flex-col gap-16 px-[var(--page-gutter)] pb-24">
 
         {/* ── Ações populares ── */}
-        <SectionBlock
-          title="Ações populares"
-          subtitle="Explore os principais pagadores de dividendos da B3"
-          viewAllHref="/setores"
-        >
-          <ul className="flex flex-wrap gap-2">
+        <section className="flex flex-col gap-5">
+          <div className="flex flex-col gap-1">
+            <h2 className="text-2xl font-bold text-[var(--color-text)]">Ações populares</h2>
+            <p className="text-sm text-[var(--color-text-muted)]">
+              Explore os principais pagadores de dividendos da B3
+            </p>
+          </div>
+          <ul className="grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-7">
             {popularTickers.map((t) => (
               <li key={t}>
-                <TickerPill ticker={t} href={getTickerPath(t)} />
+                <TickerCard ticker={t} href={getTickerPath(t)} />
               </li>
             ))}
           </ul>
-        </SectionBlock>
+          <Link href="/setores" className="text-sm text-[var(--color-text-muted)] no-underline hover:text-[var(--color-text)] transition-colors">
+            Ver todos →
+          </Link>
+        </section>
 
-        {/* ── FIIs ── */}
-        <SectionBlock
-          title="Fundos Imobiliários"
-          subtitle="Principais FIIs para renda mensal"
-          viewAllHref="/fiis"
-        >
-          <ul className="flex flex-wrap gap-2">
+        {/* ── Fundos imobiliários ── */}
+        <section className="flex flex-col gap-5">
+          <div className="flex flex-col gap-1">
+            <h2 className="text-2xl font-bold text-[var(--color-text)]">Fundos imobiliários</h2>
+            <p className="text-sm text-[var(--color-text-muted)]">
+              Principais FIIs da B3 para investir
+            </p>
+          </div>
+          <ul className="grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-5">
             {popularFiis.map((t) => (
               <li key={t}>
-                <TickerPill ticker={t} href={getFiiPath(t)} />
+                <TickerCard ticker={t} href={getFiiPath(t)} />
               </li>
             ))}
           </ul>
-        </SectionBlock>
+          <Link href="/fiis" className="text-sm text-[var(--color-text-muted)] no-underline hover:text-[var(--color-text)] transition-colors">
+            Ver todos →
+          </Link>
+        </section>
 
         {/* ── Setores ── */}
-        <SectionBlock
-          title="Setores"
-          subtitle="Descubra ações por setor da economia"
-          viewAllHref="/setores"
-        >
-          <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:flex">
-            {getSectorNavItems()
-              .slice(0, 5)
-              .map(({ slug, label, href, icon }) => (
-                <li key={slug} className="flex-1 min-w-0">
+        <section className="flex flex-col gap-5">
+          <div className="flex flex-col gap-1">
+            <h2 className="text-2xl font-bold text-[var(--color-text)]">Setores</h2>
+            <p className="text-sm text-[var(--color-text-muted)]">
+              Descubra ações por setor da economia
+            </p>
+          </div>
+          <ul className="grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-7">
+            {sectors.slice(0, 7).map(({ slug, label, href, icon }) => {
+              const bg = SECTOR_COLORS[slug] ?? "#333333";
+              return (
+                <li key={slug}>
                   <Link
                     href={href}
-                    className="flex h-[130px] flex-col justify-between rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] p-4 no-underline shadow-[var(--shadow-sm)] transition hover:border-[var(--color-border-strong)] hover:shadow-[var(--shadow-md)]"
+                    className="flex flex-col justify-between gap-4 rounded-xl p-4 no-underline transition hover:opacity-90"
+                    style={{ backgroundColor: bg, minHeight: "100px" }}
                   >
-                    <Icon name={icon} size="md" className="text-[var(--color-text-muted)]" />
-                    <span className="text-sm font-medium text-[var(--color-text)]">{label}</span>
+                    <Icon name={icon} size="md" className="text-black/70" />
+                    <span className="text-sm font-semibold text-black">{label}</span>
                   </Link>
                 </li>
-              ))}
+              );
+            })}
           </ul>
-        </SectionBlock>
+          <Link href="/setores" className="text-sm text-[var(--color-text-muted)] no-underline hover:text-[var(--color-text)] transition-colors">
+            Ver todos →
+          </Link>
+        </section>
 
         {/* ── Artigos ── */}
-        <SectionBlock
-          title="Artigos"
-          subtitle="Aprenda sobre dividendos e renda passiva"
-          viewAllHref="/artigos"
-        >
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <section className="flex flex-col gap-5">
+          <div className="flex flex-col gap-1">
+            <h2 className="text-2xl font-bold text-[var(--color-text)]">Artigos</h2>
+            <p className="text-sm text-[var(--color-text-muted)]">
+              Aprenda sobre dividendos e renda passiva
+            </p>
+          </div>
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {homeArticles.map((article) => (
               <ArticleCard key={article.slug} article={article} />
             ))}
           </div>
-        </SectionBlock>
+          <Link href="/artigos" className="text-sm text-[var(--color-text-muted)] no-underline hover:text-[var(--color-text)] transition-colors">
+            Ver todos →
+          </Link>
+        </section>
 
         {/* ── FAQ ── */}
-        <SectionBlock
-          title="Perguntas frequentes"
-          subtitle="Tire suas dúvidas sobre o simulador"
-          viewAllHref="/artigos"
-          viewAllLabel="Ver artigos →"
-        >
+        <section className="flex flex-col gap-5">
+          <div className="flex flex-col gap-1">
+            <h2 className="text-2xl font-bold text-[var(--color-text)]">Perguntas frequentes</h2>
+            <p className="text-sm text-[var(--color-text-muted)]">
+              Tire suas dúvidas sobre o simulador
+            </p>
+          </div>
           <ul className="flex flex-col gap-2">
             {FAQ_ITEMS.map((item) => (
               <li key={item.question}>
-                <details className="group rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[var(--shadow-xs)]">
-                  <summary className="flex cursor-pointer list-none items-center justify-between px-6 py-5 marker:content-none [&::-webkit-details-marker]:hidden">
-                    <p className="text-sm font-semibold text-[var(--color-text)]">{item.question}</p>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      aria-hidden
-                      className="h-5 w-5 shrink-0 text-[var(--color-text-soft)] transition-transform duration-200 group-open:rotate-180"
-                    >
-                      <path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z" />
-                    </svg>
+                <details className="group rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)]">
+                  <summary className="flex cursor-pointer list-none items-center justify-between px-5 py-4 marker:content-none [&::-webkit-details-marker]:hidden">
+                    <p className="text-sm font-medium text-[var(--color-text)]">{item.question}</p>
+                    <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[var(--color-surface-muted)] text-[var(--color-text-muted)] transition-transform duration-200 group-open:rotate-180">
+                      <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4" aria-hidden>
+                        <path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+                      </svg>
+                    </span>
                   </summary>
-                  <p className="px-6 pb-5 text-sm leading-relaxed text-[var(--color-text-muted)]">
+                  <p className="px-5 pb-4 text-sm leading-relaxed text-[var(--color-text-muted)]">
                     {item.answer}
                   </p>
                 </details>
               </li>
             ))}
           </ul>
-        </SectionBlock>
-
-        {/* ── Dark CTA ── */}
-        <section className="overflow-hidden rounded-[var(--radius-2xl)] bg-[var(--color-dark-bg)] px-8 py-12 text-center sm:px-16">
-          <div className="mx-auto flex max-w-[42ch] flex-col items-center gap-6">
-            <h2 className="ds-display-xs font-bold tracking-tight text-[var(--color-dark-text)] sm:ds-display-sm">
-              Descubra o potencial da sua carteira
-            </h2>
-            <p className="text-base text-[var(--color-dark-muted)]">
-              Simule dividendos de qualquer ação ou FII da B3 em segundos. Gratuito e sem cadastro.
-            </p>
-            <ScrollToTopCTA />
-          </div>
+          <Link href="/artigos" className="text-sm text-[var(--color-text-muted)] no-underline hover:text-[var(--color-text)] transition-colors">
+            Ver artigos →
+          </Link>
         </section>
 
       </div>
