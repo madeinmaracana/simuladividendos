@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { MOCK_STOCKS } from "@/data/stocks";
-import { getTickerPath, getSectorPath, getSector } from "@/lib/stocks-data";
+import { getTickerPath, getSectorPath, getSector, getAllSectorSlugs } from "@/lib/stocks-data";
 import { tickerAccentColor } from "@/lib/ticker-colors";
 import { buildPageMetadata, buildWebPageSchema, buildBreadcrumbSchema, SITE_NAME } from "@/lib/seo";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -169,15 +169,35 @@ export default function MelhoresAcoesDividendosPage() {
           );
         })}
 
+        {/* Por setor */}
+        <section className="flex flex-col gap-5">
+          <h2 className="text-[27px] font-medium leading-tight text-white">Filtrar por setor</h2>
+          <div className="flex flex-wrap gap-2">
+            {getAllSectorSlugs().map((slug) => {
+              const sector = getSector(slug);
+              if (!sector) return null;
+              return (
+                <Link
+                  key={slug}
+                  href={`/melhores-acoes/${slug}`}
+                  className="rounded-full border border-[rgba(120,120,120,0.20)] bg-[rgba(120,120,120,0.18)] px-4 py-2 text-[13px] font-medium text-white no-underline transition-opacity hover:opacity-70"
+                >
+                  {sector.name}
+                </Link>
+              );
+            })}
+          </div>
+        </section>
+
         {/* CTA */}
         <section className="flex flex-col gap-5">
           <h2 className="text-[27px] font-medium leading-tight text-white">Próximos passos</h2>
           <div className="flex flex-wrap gap-2">
-            <Link href={ROUTES.fiis} className="rounded-full border border-[rgba(120,120,120,0.20)] bg-[rgba(120,120,120,0.18)] px-4 py-2 text-[13px] font-medium text-white no-underline transition-opacity hover:opacity-70">
-              Melhores FIIs
+            <Link href="/calculadora-renda-passiva" className="rounded-full border border-[rgba(120,120,120,0.20)] bg-[rgba(120,120,120,0.18)] px-4 py-2 text-[13px] font-medium text-white no-underline transition-opacity hover:opacity-70">
+              Calculadora de renda passiva
             </Link>
-            <Link href={ROUTES.setores} className="rounded-full border border-[rgba(120,120,120,0.20)] bg-[rgba(120,120,120,0.18)] px-4 py-2 text-[13px] font-medium text-white no-underline transition-opacity hover:opacity-70">
-              Explorar setores
+            <Link href="/melhores-fiis" className="rounded-full border border-[rgba(120,120,120,0.20)] bg-[rgba(120,120,120,0.18)] px-4 py-2 text-[13px] font-medium text-white no-underline transition-opacity hover:opacity-70">
+              Melhores FIIs
             </Link>
             <Link href={ROUTES.artigos} className="rounded-full border border-[rgba(120,120,120,0.20)] bg-[rgba(120,120,120,0.18)] px-4 py-2 text-[13px] font-medium text-white no-underline transition-opacity hover:opacity-70">
               Artigos sobre dividendos

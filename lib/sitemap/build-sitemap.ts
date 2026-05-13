@@ -113,6 +113,14 @@ export function buildSitemap(base: string): MetadataRoute.Sitemap {
     { url: `${base}/fiis`, lastModified: fallback, changeFrequency: "weekly", priority: 0.88 },
     { url: `${base}/artigos`, lastModified: fallback, changeFrequency: "weekly", priority: 0.75 },
     { url: `${base}/melhores-acoes-dividendos`, lastModified: fallback, changeFrequency: "weekly", priority: 0.85 },
+    { url: `${base}/melhores-acoes`, lastModified: fallback, changeFrequency: "weekly", priority: 0.85 },
     { url: `${base}/melhores-fiis`, lastModified: fallback, changeFrequency: "weekly", priority: 0.85 },
+    { url: `${base}/calculadora-renda-passiva`, lastModified: fallback, changeFrequency: "monthly", priority: 0.88 },
+    ...getAllSectorSlugs().map((slug) => ({
+      url: `${base}/melhores-acoes/${slug}`,
+      lastModified: fallback,
+      changeFrequency: "weekly" as const,
+      priority: 0.82 as const,
+    })),
   ];
 }

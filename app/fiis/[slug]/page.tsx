@@ -52,6 +52,7 @@ import {
   breadcrumbsFiiSlug,
   buildBreadcrumbSchema,
   buildFaqPageSchema,
+  buildFiiInvestmentFundSchema,
   buildFiiSlugPageMetadata,
   buildWebPageSchema,
   withOpenGraphApiImage,
@@ -176,6 +177,12 @@ export default async function FiiSlugPage({ params }: PageProps) {
             path: schemaPath,
           }),
           buildBreadcrumbSchema(breadcrumbsFiiSlug(symbol, variant), pagePath),
+          buildFiiInvestmentFundSchema({
+            ticker: symbol,
+            fundName: displayName,
+            description: schemaMeta.description,
+            path: schemaPath,
+          }),
           buildFaqPageSchema(faqList.slice(0, 12)),
         ]}
       />
@@ -342,6 +349,12 @@ export default async function FiiSlugPage({ params }: PageProps) {
               </a>
               <a href="/" className="text-[13px] font-medium text-white underline-offset-2 hover:underline">
                 Página inicial
+              </a>
+              <a href="/melhores-fiis" className="text-[13px] font-medium text-white underline-offset-2 hover:underline">
+                Melhores FIIs
+              </a>
+              <a href="/calculadora-renda-passiva" className="text-[13px] font-medium text-white underline-offset-2 hover:underline">
+                Calculadora de renda passiva
               </a>
             </p>
           </section>

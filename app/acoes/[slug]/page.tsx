@@ -63,6 +63,7 @@ import {
   breadcrumbsAcao,
   buildBreadcrumbSchema,
   buildFaqPageSchema,
+  buildStockFinancialProductSchema,
   buildWebPageSchema,
   withOpenGraphApiImage,
 } from "@/lib/seo";
@@ -204,10 +205,17 @@ export default async function AcaoSlugPage({ params }: PageProps) {
     pagePath
   );
 
+  const financialProductJsonLd = buildStockFinancialProductSchema({
+    ticker: symbol,
+    companyName: displayName,
+    description: schemaMeta.description,
+    path: schemaPath,
+  });
+
   return (
     <main className="w-full min-w-0 py-16 lg:py-24">
       <JsonLd
-        data={[webPageJsonLd, breadcrumbJsonLd, buildFaqPageSchema(faqList.slice(0, 12))]}
+        data={[webPageJsonLd, breadcrumbJsonLd, financialProductJsonLd, buildFaqPageSchema(faqList.slice(0, 12))]}
 
       />
       <TickerPageLayout>
@@ -393,6 +401,17 @@ export default async function AcaoSlugPage({ params }: PageProps) {
               </a>
               <a href="/" className="text-[13px] font-medium text-white underline-offset-2 hover:underline">
                 Página inicial
+              </a>
+              {mock?.sectorSlug && (
+                <a href={`/melhores-acoes/${mock.sectorSlug}`} className="text-[13px] font-medium text-white underline-offset-2 hover:underline">
+                  Melhores ações de {mock.sectorLabel}
+                </a>
+              )}
+              <a href="/melhores-acoes-dividendos" className="text-[13px] font-medium text-white underline-offset-2 hover:underline">
+                Melhores ações de dividendos
+              </a>
+              <a href="/calculadora-renda-passiva" className="text-[13px] font-medium text-white underline-offset-2 hover:underline">
+                Calculadora de renda passiva
               </a>
             </p>
           </section>

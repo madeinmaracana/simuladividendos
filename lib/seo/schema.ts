@@ -120,3 +120,69 @@ export function buildBreadcrumbSchema(
   }));
   return buildBreadcrumbListSchema(filled);
 }
+
+/** FinancialProduct schema para páginas de ação. */
+export function buildStockFinancialProductSchema({
+  ticker,
+  companyName,
+  description,
+  path,
+}: {
+  ticker: string;
+  companyName: string;
+  description: string;
+  path: string;
+}) {
+  const url = toAbsoluteUrl(path);
+  return {
+    "@context": "https://schema.org",
+    "@type": "FinancialProduct",
+    name: `${ticker} — ${companyName}`,
+    description,
+    url,
+    provider: {
+      "@type": "Organization",
+      name: "Simula Dividendos",
+      url: getSeoBaseUrl(),
+    },
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "BRL",
+      url,
+    },
+  };
+}
+
+/** InvestmentFund schema para páginas de FII (extends FinancialProduct). */
+export function buildFiiInvestmentFundSchema({
+  ticker,
+  fundName,
+  description,
+  path,
+}: {
+  ticker: string;
+  fundName: string;
+  description: string;
+  path: string;
+}) {
+  const url = toAbsoluteUrl(path);
+  return {
+    "@context": "https://schema.org",
+    "@type": "InvestmentFund",
+    name: `${ticker} — ${fundName}`,
+    description,
+    url,
+    provider: {
+      "@type": "Organization",
+      name: "Simula Dividendos",
+      url: getSeoBaseUrl(),
+    },
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "BRL",
+      url,
+    },
+  };
+}
