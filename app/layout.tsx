@@ -3,12 +3,9 @@ import { Inter, Merriweather } from "next/font/google";
 import { getSeoBaseUrl } from "@/lib/site";
 import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { SiteFooter } from "@/components/layout/SiteFooter";
-import { SiteHeader } from "@/components/layout/SiteHeader";
-import { cn } from "@/lib/cn";
-import { ui } from "@/components/ui/classes";
 import "./globals.css";
 
-/** UI fallback — Inter (disponível como --font-inter; Satoshi é a primária via CDN) */
+/** Inter — fonte primária do design system */
 const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -25,7 +22,6 @@ const merriweather = Merriweather({
   display: "swap",
 });
 
-
 const seoBase = getSeoBaseUrl();
 const defaultTitle = "Simula Dividendos | Simulador de renda passiva";
 const defaultDescription =
@@ -41,25 +37,14 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-64x64.png", sizes: "64x64", type: "image/png" },
     ],
     shortcut: "/favicon.ico",
     apple: "/apple-icon",
   },
-  keywords: [
-    "dividendos",
-    "ações",
-    "B3",
-    "simulador",
-    "renda passiva",
-    "proventos",
-    "investimentos",
-    "Brasil",
-  ],
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: { index: true, follow: true },
-  },
+  keywords: ["dividendos", "ações", "B3", "simulador", "renda passiva", "proventos", "investimentos", "Brasil"],
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     title: defaultTitle,
     description: defaultDescription,
@@ -68,46 +53,27 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Simula Dividendos",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: defaultTitle,
-    description: defaultDescription,
-  },
+  twitter: { card: "summary_large_image", title: defaultTitle, description: defaultDescription },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="pt-BR" className={`${inter.variable} ${merriweather.variable}`} suppressHydrationWarning>
       <head>
-        {/* Satoshi — fonte primária do design system */}
-        <link rel="preconnect" href="https://api.fontshare.com" crossOrigin="" />
-        <link
-          rel="stylesheet"
-          href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&display=swap"
-        />
-        {/* Material Symbols Outlined — ícones do Google usados no design system */}
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block"
         />
       </head>
-      <body className="min-h-screen antialiased">
+      <body className="min-h-screen antialiased" style={{ background: "#F3F4F6" }}>
         <GoogleAnalytics />
-        <div className="flex min-h-screen flex-col">
-          <div
-            className={cn(
-              "flex min-h-0 flex-1 flex-col",
-              ui.pageShell
-            )}
-          >
-            <SiteHeader />
-            <div className="flex-1">{children}</div>
-            <SiteFooter />
-          </div>
+        {/*
+          p-2 = 8px gap on all sides — cria a margem entre o card hero e as bordas do viewport.
+          Cada página inclui o SiteNav dentro do seu próprio card hero escuro.
+        */}
+        <div className="flex min-h-screen flex-col gap-0 p-2">
+          <div className="flex-1">{children}</div>
+          <SiteFooter />
         </div>
       </body>
     </html>

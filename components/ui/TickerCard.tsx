@@ -10,9 +10,10 @@ interface TickerCardProps {
   /**
    * Quando fornecida, exibe sempre um círculo colorido no lugar da logo
    * (ideal para FIIs onde logos externas costumam não existir).
-   * Use `tickerAccentColor(ticker)` de @/lib/ticker-colors para gerar deterministicamente.
    */
   accentColor?: string;
+  /** "light" = card branco sobre fundo claro (home sections). "dark" = glass dark (padrão). */
+  theme?: "light" | "dark";
 }
 
 const BRAPI_LOGO = (t: string) =>
@@ -20,29 +21,30 @@ const BRAPI_LOGO = (t: string) =>
 
 /**
  * Card de ticker — specs Figma:
- *   height: 120px · padding: 16px · border-radius: 16px
- *   flex-col · justify-between · align-items: flex-start
- *   logo 36px (circular) topo · ticker name base
- *
- * Quando `accentColor` é passado, exibe sempre o círculo colorido
- * (sem tentar carregar imagem externa) — padrão para FIIs.
+ *   height: 128px · padding: 16px · border-radius: 16px
+ *   logo 24×24 (circular) topo · ticker name base
  */
-export function TickerCard({ ticker, href, accentColor }: TickerCardProps) {
+export function TickerCard({ ticker, href, accentColor, theme = "dark" }: TickerCardProps) {
   const [imgError, setImgError] = useState(false);
 
   const showCircle = Boolean(accentColor) || imgError;
-  const circleBg = accentColor ?? "var(--color-surface-muted)";
-  const circleText = accentColor ? "#ffffff" : "var(--color-text-soft)";
+  const circleBg   = accentColor ?? (theme === "light" ? "#E5E7EB" : "rgba(255,255,255,0.12)");
+  const circleText = accentColor ? "#ffffff" : (theme === "light" ? "#374151" : "rgba(255,255,255,0.6)");
+
+  const cardClass = theme === "light"
+    ? "flex h-[128px] w-full flex-col justify-between rounded-[16px] border border-[rgba(0,0,0,0.08)] bg-white p-4 no-underline transition hover:border-[rgba(0,0,0,0.15)] hover:shadow-sm"
+    : "flex h-[128px] w-full flex-col justify-between rounded-[16px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4 no-underline transition hover:border-white/20 hover:bg-[rgba(255,255,255,0.07)]";
+
+  const labelClass = theme === "light"
+    ? "text-[13px] font-semibold text-[#111827]"
+    : "text-[13px] font-semibold text-white";
 
   return (
-    <Link
-      href={href}
-      className="flex h-[120px] w-full flex-col justify-between rounded-[16px] border border-[var(--color-border)] bg-[var(--color-surface)] p-4 no-underline transition hover:border-[var(--color-border-strong)] hover:bg-[var(--color-surface-muted)]"
-    >
-      {/* Logo / círculo colorido — topo esquerdo */}
+    <Link href={href} className={cardClass}>
+      {/* Logo 24×24 — topo esquerdo */}
       {showCircle ? (
         <span
-          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-xs font-bold"
+          className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-[10px] font-bold"
           style={{ backgroundColor: circleBg, color: circleText }}
         >
           {ticker.slice(0, 2)}
@@ -52,15 +54,15 @@ export function TickerCard({ ticker, href, accentColor }: TickerCardProps) {
           src={BRAPI_LOGO(ticker)}
           alt=""
           aria-hidden
-          width={36}
-          height={36}
-          className="rounded-full"
+          width={24}
+          height={24}
+          className="h-6 w-6 rounded-full object-contain"
           onError={() => setImgError(true)}
         />
       )}
 
       {/* Ticker — base esquerda */}
-      <span className="text-sm font-semibold text-[var(--color-text)]">{ticker}</span>
+      <span className={labelClass}>{ticker}</span>
     </Link>
   );
 }

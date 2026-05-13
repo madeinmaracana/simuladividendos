@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Image from "next/image";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { StockFAQ } from "@/components/stocks/StockFAQ";
 import { RelatedTickers } from "@/components/stocks/RelatedTickers";
@@ -21,6 +20,7 @@ import {
   TickerEditorialSection,
   TickerSimulatorTop,
 } from "@/components/ticker";
+import { TickerHeroSection } from "@/components/ticker/TickerHeroSection";
 import {
   acaoVariantSlug,
   acaoPathFromSlug,
@@ -60,10 +60,7 @@ import { fetchQuoteForOg, resolvePerShareValueForOg } from "@/lib/og/ticker-og-d
 import {
   SITE_NAME,
   buildAcaoSlugPageMetadata,
-  breadcrumbsAcao,
-  buildBreadcrumbSchema,
   buildFaqPageSchema,
-  buildStockFinancialProductSchema,
   buildWebPageSchema,
   withOpenGraphApiImage,
 } from "@/lib/seo";
@@ -200,85 +197,55 @@ export default async function AcaoSlugPage({ params }: PageProps) {
     path: schemaPath,
   });
 
-  const breadcrumbJsonLd = buildBreadcrumbSchema(
-    breadcrumbsAcao(symbol, mock, variant),
-    pagePath
-  );
-
-  const financialProductJsonLd = buildStockFinancialProductSchema({
-    ticker: symbol,
-    companyName: displayName,
-    description: schemaMeta.description,
-    path: schemaPath,
-  });
-
   return (
-    <main className="w-full min-w-0 py-16 lg:py-24">
+    <main className="w-full min-w-0">
       <JsonLd
-        data={[webPageJsonLd, breadcrumbJsonLd, financialProductJsonLd, buildFaqPageSchema(faqList.slice(0, 12))]}
-
+        data={
+          [webPageJsonLd, buildFaqPageSchema(faqList.slice(0, 12))]
+        }
       />
-      <TickerPageLayout>
-        {/* ── Hero: texto (esquerda) + simulador (direita) ── */}
-        <TickerPageRow>
-          <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-12 lg:gap-x-8">
-            {/* Esquerda — copy */}
-            <div className="flex flex-col gap-8 lg:col-span-7">
-              {/* Logo + ticker + setor */}
-              <div className="flex items-center justify-between gap-3">
-                <div className="flex items-center gap-2">
-                  {initialStock?.logoUrl ? (
-                    <Image
-                      src={initialStock.logoUrl}
-                      alt={symbol}
-                      width={32}
-                      height={32}
-                      className="h-8 w-8 shrink-0 rounded-full object-contain"
-                    />
-                  ) : null}
-                  <span className="text-[13px] font-medium text-[#808080]">{symbol}</span>
-                </div>
-                <span className="flex items-center gap-1 rounded-full border border-[rgba(120,120,120,0.20)] bg-[rgba(120,120,120,0.18)] px-2.5 py-0.5 text-[13px] font-medium text-[#808080]">
-                  <span
-                    className="material-symbols-outlined leading-none"
-                    style={{ fontSize: 14, fontVariationSettings: "'opsz' 16, 'wght' 400, 'FILL' 1, 'GRAD' 0" }}
-                  >
-                    bolt
-                  </span>
-                  {sectorLabel}
-                </span>
-              </div>
-              {/* Título */}
-              <h1 className="text-[53px] font-medium leading-[63px] text-white">
-                {heroTitle}
-              </h1>
-              {/* Descrição */}
-              <div className="flex flex-col gap-3">
-                <p className="text-[13px] font-medium leading-relaxed text-[#808080]">{introText}</p>
-                <SearchIntentTeaser
-                  symbol={symbol}
-                  currency={currency}
-                  dividends={dividends}
-                  simulationShares={variant === "paga-quanto" ? 100 : intentSimulationShares}
-                  assetKind="stock"
-                  stockCopyProfile={variant === "paga-quanto" ? "paga-quanto" : "default"}
-                />
-              </div>
-            </div>
 
-            {/* Direita — simulador */}
-            <div className="lg:col-span-5">
-              <TickerHeroSimulatorCard
-                ticker={symbol}
-                companyName={displayName}
-                logoUrl={initialStock?.logoUrl ?? null}
-                initialStock={initialStock}
-                serverError={serverError}
-                defaultShares={100}
-                dividendSummary={summaryText}
-              />
-            </div>
-          </div>
+      {/* ── Dark hero section ── */}
+      <TickerHeroSection
+        ticker={symbol}
+        sectorLabel={sectorLabel}
+        sectorHref={mock ? getSectorPath(mock.sectorSlug) : "/setores"}
+        logoUrl={initialStock?.logoUrl ?? null}
+        heroTitle={heroTitle}
+        introText={introText}
+        bodyText={summaryText?.slice(0, 200) ?? null}
+        initialStock={initialStock}
+        serverError={serverError}
+        defaultShares={100}
+      />
+
+      {/* ── Light content sections ── */}
+      <div className="w-full bg-[#F3F4F6]">
+        <div className="mx-auto w-full max-w-[var(--page-max)] px-[var(--page-gutter)] py-12 lg:py-16">
+      <TickerPageLayout>
+
+        <TickerPageRow>
+          <section className="rounded-[length:var(--radius-lg)] border border-[var(--border)] bg-[var(--surface)] p-5">
+            <h2 className="text-lg font-semibold text-[color:var(--text)]">{`Dividendos do ${symbol}`}</h2>
+            <dl className="mt-3 grid gap-2 text-sm text-[color:var(--text-secondary)] sm:grid-cols-2">
+              <div>
+                <dt className="font-medium">Último dividendo (R$)</dt>
+                <dd>{lastSnap ? formatBRL(lastSnap.amountPerShare, currency) : "—"}</dd>
+              </div>
+              <div>
+                <dt className="font-medium">Média mensal</dt>
+                <dd>{metrics.avgMonthlyPerShare ?? "—"}</dd>
+              </div>
+              <div>
+                <dt className="font-medium">Dividend yield estimado</dt>
+                <dd>{yieldDisp ?? "—"}</dd>
+              </div>
+              <div>
+                <dt className="font-medium">Frequência de pagamento</dt>
+                <dd>{frequencyHint ?? "—"}</dd>
+              </div>
+            </dl>
+          </section>
         </TickerPageRow>
 
         {variant !== "main" && variant !== "paga-quanto" && (
@@ -387,36 +354,37 @@ export default async function AcaoSlugPage({ params }: PageProps) {
         </TickerPageRow>
 
         <TickerPageRow>
-          <section className="flex flex-col gap-3">
-            <p className="text-[13px] font-medium text-[#808080]">{`Veja também sobre ${symbol}:`}</p>
-            <p className="flex flex-wrap gap-x-4 gap-y-2">
-              <a href={acaoPathFromSlug(acaoVariantSlug(symbol, "dividendos"))} className="text-[13px] font-medium text-white underline-offset-2 hover:underline">
+          <section className="text-sm text-[color:var(--text-secondary)]">
+            <p className="font-semibold text-[color:var(--text)]">{`Veja também sobre ${symbol}:`}</p>
+            <p className="mt-1 flex flex-wrap gap-x-3 gap-y-1">
+              <a href={acaoPathFromSlug(acaoVariantSlug(symbol, "dividendos"))} className="underline">
                 Dividendos por ação
               </a>
-              <a href={acaoPathFromSlug(acaoVariantSlug(symbol, "quanto-rende-100-cotas"))} className="text-[13px] font-medium text-white underline-offset-2 hover:underline">
+              <a href={acaoPathFromSlug(acaoVariantSlug(symbol, "quanto-rende-100-cotas"))} className="underline">
                 Quanto rende 100 cotas
               </a>
-              <a href={acaoPathFromSlug(acaoVariantSlug(symbol, "simulador-de-dividendos"))} className="text-[13px] font-medium text-white underline-offset-2 hover:underline">
+              <a href={acaoPathFromSlug(acaoVariantSlug(symbol, "simulador-de-dividendos"))} className="underline">
                 Simulador
               </a>
-              <a href="/" className="text-[13px] font-medium text-white underline-offset-2 hover:underline">
+              <a href="/" className="underline">
                 Página inicial
-              </a>
-              {mock?.sectorSlug && (
-                <a href={`/melhores-acoes/${mock.sectorSlug}`} className="text-[13px] font-medium text-white underline-offset-2 hover:underline">
-                  Melhores ações de {mock.sectorLabel}
-                </a>
-              )}
-              <a href="/melhores-acoes-dividendos" className="text-[13px] font-medium text-white underline-offset-2 hover:underline">
-                Melhores ações de dividendos
-              </a>
-              <a href="/calculadora-renda-passiva" className="text-[13px] font-medium text-white underline-offset-2 hover:underline">
-                Calculadora de renda passiva
               </a>
             </p>
           </section>
         </TickerPageRow>
+
+        {!mock ? (
+          <TickerPageRow>
+            <p className="flex flex-wrap gap-x-2 gap-y-1 text-xs leading-relaxed text-neutral-500 dark:text-neutral-500">
+              <a href="/setores" className="font-medium text-teal-700 hover:underline dark:text-teal-400">
+                Explorar setores
+              </a>
+            </p>
+          </TickerPageRow>
+        ) : null}
       </TickerPageLayout>
+        </div>
+      </div>
     </main>
   );
 }

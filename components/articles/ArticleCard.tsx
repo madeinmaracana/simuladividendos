@@ -3,6 +3,8 @@ import type { ArticleRecord } from "@/data/articles";
 
 type ArticleCardProps = {
   article: ArticleRecord;
+  /** "light" = card branco (home). "dark" = glass dark (padrão). */
+  theme?: "light" | "dark";
 };
 
 /** Estima tempo de leitura em minutos a partir das seções do artigo */
@@ -18,24 +20,48 @@ function estimateReadTime(article: ArticleRecord): number {
   return Math.max(1, Math.round(words / 200));
 }
 
-export function ArticleCard({ article }: ArticleCardProps) {
+export function ArticleCard({ article, theme = "dark" }: ArticleCardProps) {
   const readTime = estimateReadTime(article);
 
+  if (theme === "light") {
+    return (
+      <article className="flex h-full">
+        <Link
+          href={`/artigos/${article.slug}`}
+          className="flex flex-1 flex-col overflow-hidden rounded-[16px] border border-[rgba(0,0,0,0.08)] bg-white no-underline transition hover:border-[rgba(0,0,0,0.15)] hover:shadow-sm"
+        >
+          {/* Thumbnail */}
+          <div className="h-[160px] w-full shrink-0 bg-[#F3F4F6]" />
+
+          {/* Content */}
+          <div className="flex flex-1 flex-col gap-2 p-4">
+            <span className="text-[13px] font-medium text-[#6B7280]">
+              {readTime} min de leitura
+            </span>
+            <p className="line-clamp-3 font-serif text-[15px] font-normal italic leading-snug text-[#111827]">
+              {article.title}
+            </p>
+          </div>
+        </Link>
+      </article>
+    );
+  }
+
   return (
-    <article className="flex">
+    <article className="flex h-full">
       <Link
         href={`/artigos/${article.slug}`}
-        className="flex flex-1 flex-col justify-between gap-3 rounded-[16px] border border-[rgba(120,120,120,0.20)] bg-[rgba(120,120,120,0.18)] p-4 no-underline transition hover:border-[rgba(120,120,120,0.40)] hover:brightness-110"
+        className="flex flex-1 flex-col justify-between gap-3 rounded-[16px] border border-white/10 bg-[rgba(255,255,255,0.06)] p-4 no-underline transition hover:border-white/20 hover:brightness-105"
       >
         {/* Tempo de leitura — topo */}
         <span className="text-[13px] font-medium text-[#808080]">
-          {readTime} min
+          {readTime} min de leitura
         </span>
 
         {/* Título — base */}
-        <h2 className="line-clamp-3 font-serif text-[15px] font-normal italic leading-snug text-white">
+        <p className="line-clamp-3 font-serif text-[15px] font-normal italic leading-snug text-white">
           {article.title}
-        </h2>
+        </p>
       </Link>
     </article>
   );

@@ -111,22 +111,22 @@ export function HomeHeroSimulator() {
         </div>
       </div>
 
-      {/* ── CTA — 40px acima dos inputs ── */}
+      {/* ── CTA ── */}
       <button
         type="button"
         onClick={() => void onSimulate()}
         disabled={loading || !hasValidTicker}
-        className="mt-10 flex w-full items-center gap-4 rounded-full bg-[var(--brand)] px-5 py-[14px] transition hover:bg-[var(--brand-hover)] disabled:cursor-not-allowed disabled:opacity-40"
+        className="mt-10 flex w-full items-center gap-4 rounded-full bg-white px-5 py-[14px] transition hover:bg-white/90 disabled:cursor-not-allowed disabled:opacity-40"
       >
         <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-black">
           <span
-            className="material-symbols-outlined leading-none text-[var(--brand)]"
+            className="material-symbols-outlined leading-none text-white"
             style={{ fontSize: 18, fontVariationSettings: "'opsz' 20, 'wght' 500, 'FILL' 0, 'GRAD' 0" }}
           >
             arrow_forward
           </span>
         </span>
-        <span className="text-base font-semibold text-[var(--brand-foreground)]">
+        <span className="text-base font-semibold text-black">
           {loading ? "Carregando…" : "Simular dividendos"}
         </span>
       </button>

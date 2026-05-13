@@ -1,25 +1,25 @@
 /* =============================================================================
    DESIGN TOKENS — SimulaDividendos
-   Tema: Dark only — sem light/dark switching
+   Direção: Premium Wealth Tech · Influência: Vercel / Linear / Mercury
    ============================================================================= */
 
 /* -----------------------------------------------------------------------------
    1. TIPOGRAFIA
    ----------------------------------------------------------------------------- */
 :root {
-  --font-sans:  'Satoshi', 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-sans:  var(--font-inter, 'Inter'), ui-sans-serif, system-ui, sans-serif;
   --font-serif: 'Merriweather', Georgia, 'Times New Roman', serif;
   --font-mono:  'Inter', ui-monospace, monospace;
 
   /* Escala de texto — alinhada com Tailwind defaults para evitar conflitos */
-  --text-2xs: 0.6875rem;  /* 11px */
-  --text-xs:  0.75rem;    /* 12px */
-  --text-sm:  0.875rem;   /* 14px */
-  --text-md:  1rem;       /* 16px */
-  --text-lg:  1.125rem;   /* 18px */
-  --text-xl:  1.25rem;    /* 20px */
+  --text-2xs: 0.6875rem;  /* 11px — labels, badges              */
+  --text-xs:  0.75rem;    /* 12px — captions                     */
+  --text-sm:  0.875rem;   /* 14px — body small, table            */
+  --text-md:  1rem;       /* 16px — body padrão                  */
+  --text-lg:  1.125rem;   /* 18px — lead                         */
+  --text-xl:  1.25rem;    /* 20px — subtítulos                   */
 
-  /* Display — hero, seções grandes */
+  /* Display — hero, seções grandes. Use com ds-display-* */
   --ds-display-xs: 1.5rem;   /* 24px */
   --ds-display-sm: 2rem;     /* 32px */
   --ds-display-md: 2.75rem;  /* 44px */
@@ -57,52 +57,65 @@
 }
 
 /* -----------------------------------------------------------------------------
-   3. CORES — tema sempre escuro
+   3. CORES — Brand primitives
    ----------------------------------------------------------------------------- */
 :root {
-  /* Primitives */
-  --color-black:    #000000;
+  --color-black:    #050505;
   --color-offblack: #0F1115;
   --color-cream:    #F5F3EE;
-  --color-muted-fg: #8A8F9E;
+  --color-muted-fg: #A8ADB8;
   --color-lavender: #B993FF;
   --color-iceblue:  #8BE0FF;
   --color-wealth:   #DFFF72;
 
-  /* Brand */
-  --brand:            #DFFF72;
+  /* — Brand — */
+  --brand:            var(--color-wealth);   /* #DFFF72 — lima aspiracional */
   --brand-hover:      #cbee5c;
-  --brand-foreground: #000000;
+  --brand-foreground: var(--color-offblack); /* texto sobre fundo brand */
 
-  /* Semânticas — dark always */
-  --color-bg:            #000000;
-  --color-surface:       #111111;
-  --color-surface-muted: #1a1a1a;
+  /* — Semânticas light mode — */
+  --color-bg:            #F3F4F6;
+  --color-surface:       #FFFFFF;
+  --color-surface-muted: #FAFAF8;
 
-  --color-text:          #F0EEE9;
-  --color-text-muted:    #8A8F9E;
-  --color-text-soft:     #565B6A;
+  --color-text:          var(--color-offblack); /* #0F1115 */
+  --color-text-muted:    #5A5F6E;
+  --color-text-soft:     var(--color-muted-fg); /* #A8ADB8 */
 
-  --color-border:        rgba(255, 255, 255, 0.08);
-  --color-border-strong: rgba(255, 255, 255, 0.15);
+  --color-border:        rgba(0, 0, 0, 0.07);
+  --color-border-strong: rgba(0, 0, 0, 0.14);
 
-  /* Dark surfaces — aliases (compatibilidade) */
-  --color-dark-bg:      #000000;
-  --color-dark-surface: #111111;
-  --color-dark-border:  rgba(255, 255, 255, 0.08);
+  /* — Dark surfaces (hero panel, footer, cta escuro) — */
+  --color-dark-bg:      #1A1A1A;
+  --color-dark-surface: #2A2A2A;
+  --color-dark-border:  rgba(255, 255, 255, 0.07);
   --color-dark-text:    #F0EEE9;
-  --color-dark-muted:   #8A8F9E;
+  --color-dark-muted:   var(--color-muted-fg); /* #A8ADB8 */
 
-  /* Accents */
+  /* — Accents opcionais — */
   --accent-lavender: var(--color-lavender);
   --accent-iceblue:  var(--color-iceblue);
-  --accent:          #3B3BDB;
+  --accent:          #3B3BDB; /* azul profundo para focus rings */
 
-  /* Estado */
+  /* — Semânticas de estado — */
   --color-success:      #22c55e;
-  --color-success-soft: #14532d;
+  --color-success-soft: #dcfce7;
   --color-warning:      #f59e0b;
   --color-danger:       #ef4444;
+}
+
+/* Dark mode — respeita preferência do sistema */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg:            var(--color-black);
+    --color-surface:       var(--color-offblack);
+    --color-surface-muted: #171B22;
+    --color-text:          #F0EEE9;
+    --color-text-muted:    #8A8F9E;
+    --color-text-soft:     #565B6A;
+    --color-border:        rgba(255, 255, 255, 0.07);
+    --color-border-strong: rgba(255, 255, 255, 0.13);
+  }
 }
 
 /* -----------------------------------------------------------------------------
@@ -117,19 +130,20 @@
   --radius-2xl:  28px;
   --radius-full: 9999px;
 
+  /* Aliases semânticos */
   --radius-input: var(--radius-md);
   --radius-card:  var(--radius-lg);
   --radius-pill:  var(--radius-full);
 }
 
 /* -----------------------------------------------------------------------------
-   5. SOMBRAS
+   5. SOMBRAS — sutis, premium
    ----------------------------------------------------------------------------- */
 :root {
-  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.3);
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5), 0 4px 8px rgba(0, 0, 0, 0.3);
-  --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.6), 0 8px 16px rgba(0, 0, 0, 0.4);
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.06), 0 4px 8px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.08), 0 8px 16px rgba(0, 0, 0, 0.05);
   --shadow-card: var(--shadow-md);
 }
 
@@ -146,23 +160,27 @@
 }
 
 @media (min-width: 640px) {
-  :root { --page-gutter: 1.5rem; }
+  :root { --page-gutter: 1.5rem; }  /* 24px tablet */
 }
 @media (min-width: 1024px) {
-  :root { --page-gutter: 3rem; }
+  :root { --page-gutter: 3rem; }    /* 48px desktop */
 }
 
 /* -----------------------------------------------------------------------------
    7. ALIASES DE RETROCOMPATIBILIDADE
+   Mantidos enquanto componentes legados migram para --color-*.
    ----------------------------------------------------------------------------- */
 :root {
+  /* Tipografia */
   --ds-font-sans:  var(--font-sans);
   --ds-font-serif: var(--font-serif);
   --ds-font-mono:  var(--font-mono);
 
+  /* OpenType */
   --font-features-ui:      "zero" 1, "ss01" 1;
   --font-features-numeric: "zero" 1, "tnum" 1;
 
+  /* Cores */
   --bg:               var(--color-bg);
   --surface:          var(--color-surface);
   --surface-muted:    var(--color-surface-muted);
