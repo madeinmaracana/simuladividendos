@@ -13,7 +13,7 @@ export function SimulatorCardContainer({ children, className }: SimulatorCardCon
   return (
     <div
       className={cn(
-        "mx-auto w-full max-w-[var(--simulator-card-max)] rounded-[length:var(--radius-card)] border border-[var(--border)] bg-[var(--card)] p-6 shadow-card sm:p-8 md:p-12",
+        "mx-auto w-full max-w-[var(--simulator-card-max)] rounded-[16px] border border-[rgba(0,0,0,0.08)] bg-white p-6 shadow-sm sm:p-8 md:p-12",
         className
       )}
     >

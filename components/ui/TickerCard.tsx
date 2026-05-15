@@ -32,8 +32,8 @@ export function TickerCard({ ticker, href, accentColor, theme = "dark" }: Ticker
   const circleText = accentColor ? "#ffffff" : (theme === "light" ? "#374151" : "rgba(255,255,255,0.6)");
 
   const cardClass = theme === "light"
-    ? "flex h-[128px] w-full flex-col justify-between rounded-[16px] border border-[rgba(0,0,0,0.08)] bg-white p-4 no-underline transition hover:border-[rgba(0,0,0,0.15)] hover:shadow-sm"
-    : "flex h-[128px] w-full flex-col justify-between rounded-[16px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4 no-underline transition hover:border-white/20 hover:bg-[rgba(255,255,255,0.07)]";
+    ? "flex h-[131px] w-full flex-col items-start gap-[60px] rounded-[16px] border border-[rgba(0,0,0,0.08)] bg-white p-4 no-underline transition hover:border-[rgba(0,0,0,0.15)] hover:shadow-sm"
+    : "flex h-[131px] w-full flex-col items-start gap-[60px] rounded-[16px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4 no-underline transition hover:border-white/20 hover:bg-[rgba(255,255,255,0.07)]";
 
   const labelClass = theme === "light"
     ? "text-[13px] font-semibold text-[#111827]"

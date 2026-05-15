@@ -53,10 +53,10 @@ export function DividendHistoryChart({ dividends, currency = "BRL", frequencyHin
   }
 
   return (
-    <section className={cn(ui.pageSection, "flex flex-col gap-5")}>
+    <section className="flex flex-col gap-5">
       <div className="flex flex-col gap-1">
-        <h2 className="text-[27px] font-medium leading-tight text-white">Histórico de pagamentos</h2>
-        <p className="text-[13px] font-medium text-[#808080]">Últimos 12 meses · valor por cota</p>
+        <h2 className="text-[24px] font-medium leading-tight text-[#111827]">Histórico de pagamentos</h2>
+        <p className="text-[16px] font-normal text-[#808080]">Últimos 12 meses · valor por cota</p>
       </div>
 
       {/* Gráfico de barras */}
@@ -84,18 +84,18 @@ export function DividendHistoryChart({ dividends, currency = "BRL", frequencyHin
                 {value === 0 && (
                   <div
                     className="w-full rounded-t-[3px]"
-                    style={{ height: "3px", background: "var(--color-border)" }}
+                    style={{ height: "3px", background: "rgba(0,0,0,0.08)" }}
                   />
                 )}
               </div>
-              <span className="text-[9px] font-medium text-[var(--color-text-soft)]">{label}</span>
+              <span className="text-[9px] font-medium text-[#6B7280]">{label}</span>
             </div>
           );
         })}
       </div>
 
       {/* Consistência */}
-      <div className="flex flex-col gap-2 rounded-[16px] border border-[rgba(120,120,120,0.20)] bg-[rgba(120,120,120,0.18)] px-4 py-3">
+      <div className="flex flex-col gap-2 rounded-[16px] border border-[rgba(0,0,0,0.08)] bg-white px-4 py-3">
         <div className="flex flex-wrap items-center gap-3">
           {/* Pontos visuais */}
           <div className="flex gap-[5px]" aria-label={`Pagou em ${paidMonths} dos últimos 12 meses`}>
@@ -106,29 +106,29 @@ export function DividendHistoryChart({ dividends, currency = "BRL", frequencyHin
                 className={cn(
                   "h-2 w-2 rounded-full",
                   value > 0
-                    ? "bg-[var(--brand)]"
-                    : "border border-[var(--color-border-strong)] bg-transparent"
+                    ? "bg-[#111827]"
+                    : "border border-[rgba(0,0,0,0.15)] bg-transparent"
                 )}
               />
             ))}
           </div>
 
-          <span className="text-[13px] font-medium text-[#808080]">
+          <span className="text-[13px] font-medium text-[#6B7280]">
             Pagou em{" "}
-            <strong className="font-semibold text-white">{paidMonths}/12</strong>{" "}
+            <strong className="font-semibold text-[#111827]">{paidMonths}/12</strong>{" "}
             meses
           </span>
 
           {consecutiveRecent > 1 && (
-            <span className="rounded-full border border-[rgba(120,120,120,0.20)] bg-[rgba(120,120,120,0.18)] px-2.5 py-0.5 text-xs font-medium text-[#808080]">
+            <span className="rounded-full border border-[rgba(0,0,0,0.08)] bg-[#F3F4F6] px-2.5 py-0.5 text-xs font-medium text-[#6B7280]">
               {consecutiveRecent} consecutivos
             </span>
           )}
         </div>
 
         {frequencyHint && (
-          <p className="text-[13px] font-medium text-[#808080]">
-            Frequência estimada: <span className="font-medium text-white">{frequencyHint}</span>
+          <p className="text-[13px] font-medium text-[#6B7280]">
+            Frequência estimada: <span className="font-semibold text-[#111827]">{frequencyHint}</span>
           </p>
         )}
       </div>

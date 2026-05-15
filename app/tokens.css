@@ -104,19 +104,8 @@
   --color-danger:       #ef4444;
 }
 
-/* Dark mode — respeita preferência do sistema */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-bg:            var(--color-black);
-    --color-surface:       var(--color-offblack);
-    --color-surface-muted: #171B22;
-    --color-text:          #F0EEE9;
-    --color-text-muted:    #8A8F9E;
-    --color-text-soft:     #565B6A;
-    --color-border:        rgba(255, 255, 255, 0.07);
-    --color-border-strong: rgba(255, 255, 255, 0.13);
-  }
-}
+/* Dark mode desabilitado — app usa apenas tema claro.
+   Hardcoded colors in components prevent OS dark mode from breaking the UI. */
 
 /* -----------------------------------------------------------------------------
    4. BORDER RADIUS
@@ -151,7 +140,7 @@
    6. LAYOUT
    ----------------------------------------------------------------------------- */
 :root {
-  --page-max:    80rem;   /* 1280px */
+  --page-max:    61.25rem; /* 980px — alinhado com o hero Figma */
   --page-gutter: 1rem;    /* 16px mobile */
 
   --simulator-card-max: 50rem;
@@ -163,7 +152,7 @@
   :root { --page-gutter: 1.5rem; }  /* 24px tablet */
 }
 @media (min-width: 1024px) {
-  :root { --page-gutter: 3rem; }    /* 48px desktop */
+  :root { --page-gutter: 1rem; }    /* 16px desktop — igual ao px-4 do hero */
 }
 
 /* -----------------------------------------------------------------------------

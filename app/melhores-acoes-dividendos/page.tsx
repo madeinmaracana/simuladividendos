@@ -66,7 +66,7 @@ export default function MelhoresAcoesDividendosPage() {
 
         {/* Top 10 */}
         <section className="flex flex-col gap-5" aria-labelledby="heading-top10">
-          <h2 id="heading-top10" className="text-[27px] font-medium leading-tight text-white">
+          <h2 id="heading-top10" className="text-[24px] font-medium leading-tight text-white">
             Top 10 por dividend yield
           </h2>
           <ul className="flex flex-col gap-3">
@@ -118,7 +118,7 @@ export default function MelhoresAcoesDividendosPage() {
           return (
             <section key={sectorSlug} className="flex flex-col gap-5" aria-labelledby={`heading-setor-${sectorSlug}`}>
               <div className="flex items-baseline justify-between gap-4">
-                <h2 id={`heading-setor-${sectorSlug}`} className="text-[27px] font-medium leading-tight text-white">
+                <h2 id={`heading-setor-${sectorSlug}`} className="text-[24px] font-medium leading-tight text-white">
                   {sector.name}
                 </h2>
                 <Link
@@ -171,7 +171,7 @@ export default function MelhoresAcoesDividendosPage() {
 
         {/* Por setor */}
         <section className="flex flex-col gap-5">
-          <h2 className="text-[27px] font-medium leading-tight text-white">Filtrar por setor</h2>
+          <h2 className="text-[24px] font-medium leading-tight text-white">Filtrar por setor</h2>
           <div className="flex flex-wrap gap-2">
             {getAllSectorSlugs().map((slug) => {
               const sector = getSector(slug);
@@ -191,7 +191,7 @@ export default function MelhoresAcoesDividendosPage() {
 
         {/* CTA */}
         <section className="flex flex-col gap-5">
-          <h2 className="text-[27px] font-medium leading-tight text-white">Próximos passos</h2>
+          <h2 className="text-[24px] font-medium leading-tight text-white">Próximos passos</h2>
           <div className="flex flex-wrap gap-2">
             <Link href="/calculadora-renda-passiva" className="rounded-full border border-[rgba(120,120,120,0.20)] bg-[rgba(120,120,120,0.18)] px-4 py-2 text-[13px] font-medium text-white no-underline transition-opacity hover:opacity-70">
               Calculadora de renda passiva

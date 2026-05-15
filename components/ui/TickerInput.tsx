@@ -47,7 +47,7 @@ export function TickerInput({
             maxLength={8}
             autoComplete="off"
             autoCapitalize="characters"
-            className="h-[46px] flex-1 bg-transparent text-sm font-semibold uppercase outline-none placeholder:font-normal placeholder:normal-case placeholder:text-[var(--color-text-soft)]"
+            className="h-[46px] flex-1 bg-transparent text-[16px] font-normal uppercase outline-none placeholder:normal-case placeholder:text-[var(--color-text-soft)]"
           />
           {isLoading && (
             <span className="text-xs text-[var(--color-text-soft)]">…</span>

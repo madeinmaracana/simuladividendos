@@ -13,8 +13,8 @@ type StockPeerLinksProps = {
 export function StockPeerLinks({ sectorSlug, sectorLabel, peers }: StockPeerLinksProps) {
   return (
     <nav aria-label="Navegação por setor e pares" className={ui.pageSection}>
-      <Card className="border-dashed bg-neutral-50/60 dark:bg-neutral-900/35">
-        <p className="text-sm font-semibold text-neutral-900 dark:text-neutral-100">Continue navegando</p>
+      <Card className="border-dashed bg-[#F9FAFB]">
+        <p className="text-sm font-semibold text-[#111827]">Continue navegando</p>
         <p className={cn(ui.body, "mt-2")}>
           Setor:{" "}
           <TextLink href={getSectorPath(sectorSlug)} className="text-sm">

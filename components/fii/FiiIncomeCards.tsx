@@ -32,7 +32,7 @@ export function FiiIncomeCards({ stock, sharesStr, currency, className }: FiiInc
 
   if (!calc) {
     return (
-      <p className={cn(ui.bodyMuted, className)}>
+      <p className={cn("text-[13px] font-medium text-[#6B7280]", className)}>
         Sem histórico de distribuições nos dados para calcular renda de referência.
       </p>
     );
@@ -41,64 +41,40 @@ export function FiiIncomeCards({ stock, sharesStr, currency, className }: FiiInc
   const hasMonthly = calc.monthlyAvgEstimate > 0;
 
   return (
-    <div className={cn("grid w-full gap-4 sm:grid-cols-2 sm:gap-6", className)}>
-      <div
-        className={cn(
-          "flex flex-col rounded-2xl border border-[var(--border)] bg-neutral-50/80 p-6 sm:p-8",
-          "dark:border-neutral-800 dark:bg-neutral-900/40"
-        )}
-      >
-        <span className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
-          Renda mensal (referência)
-        </span>
-        <p className="mt-3 text-sm font-medium text-neutral-700 dark:text-neutral-300">
-          Você receberia em média
-        </p>
-        <p className="mt-2 text-3xl font-bold tabular-nums tracking-tight text-neutral-900 sm:text-4xl dark:text-neutral-50">
+    <div className={cn("grid w-full gap-3 sm:grid-cols-2", className)}>
+      <div className="flex flex-col gap-1 rounded-[16px] border border-[rgba(0,0,0,0.08)] bg-white p-5">
+        <span className="text-[13px] font-medium text-[#6B7280]">Você receberia em média</span>
+        <p className="text-[27px] font-medium leading-tight tabular-nums text-[#111827]">
           {hasMonthly ? `~${formatBRL(calc.monthlyAvgEstimate, currency)}` : "—"}
         </p>
-        <p className={cn(ui.bodyMuted, "mt-4")}>
-          Média simples: total distribuído nos últimos ~12 meses nos dados ÷ 12, aplicado às suas cotas. Não é
-          promessa de rendimento futuro.
+        <p className="text-[13px] font-medium text-[#6B7280]">por mês (referência)</p>
+        <p className="mt-2 text-[13px] font-medium text-[#6B7280]">
+          Média simples: total distribuído nos últimos ~12 meses ÷ 12, aplicado às suas cotas. Não é promessa de rendimento futuro.
         </p>
       </div>
 
-      <div
-        className={cn(
-          "flex flex-col rounded-2xl border border-[var(--border)] bg-neutral-50/80 p-6 sm:p-8",
-          "dark:border-neutral-800 dark:bg-neutral-900/40"
-        )}
-      >
-        <span className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
-          Rendimentos em ~12 meses
-        </span>
-        <p className="mt-3 text-sm font-medium text-neutral-700 dark:text-neutral-300">Total de referência</p>
-        <p className="mt-2 text-3xl font-bold tabular-nums tracking-tight text-neutral-900 sm:text-4xl dark:text-neutral-50">
+      <div className="flex flex-col gap-1 rounded-[16px] border border-[rgba(0,0,0,0.08)] bg-white p-5">
+        <span className="text-[13px] font-medium text-[#6B7280]">Total de referência</span>
+        <p className="text-[27px] font-medium leading-tight tabular-nums text-[#111827]">
           {calc.annualEstimate > 0 ? `~${formatBRL(calc.annualEstimate, currency)}` : "—"}
         </p>
-        <p className={cn(ui.bodyMuted, "mt-4")}>
+        <p className="text-[13px] font-medium text-[#6B7280]">em ~12 meses</p>
+        <p className="mt-2 text-[13px] font-medium text-[#6B7280]">
           Soma das distribuições por cota no período × número de cotas (conforme histórico disponível).
         </p>
       </div>
 
-      <div
-        className={cn(
-          "flex flex-col rounded-2xl border border-[var(--border)] bg-neutral-50/80 p-6 sm:p-8 sm:col-span-2",
-          "dark:border-neutral-800 dark:bg-neutral-900/40"
-        )}
-      >
-        <span className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
-          Último pagamento
-        </span>
+      <div className="flex flex-col gap-1 rounded-[16px] border border-[rgba(0,0,0,0.08)] bg-white p-5 sm:col-span-2">
+        <span className="text-[13px] font-medium text-[#6B7280]">Último pagamento</span>
         {last ? (
           <>
-            <p className="mt-3 text-2xl font-bold tabular-nums text-neutral-900 dark:text-neutral-50">
+            <p className="text-[27px] font-medium leading-tight tabular-nums text-[#111827]">
               {formatBRL(last.totalForShares, currency)}
             </p>
-            <p className={cn(ui.bodyMuted, "mt-2")}>Pago em {formatDatePt(last.paymentDate)}</p>
+            <p className="text-[13px] font-medium text-[#6B7280]">Pago em {formatDatePt(last.paymentDate)}</p>
           </>
         ) : (
-          <p className={cn(ui.bodyMuted, "mt-3")}>Não identificamos um pagamento passado com as datas atuais.</p>
+          <p className="text-[13px] font-medium text-[#6B7280]">Não identificamos um pagamento passado com as datas atuais.</p>
         )}
       </div>
     </div>

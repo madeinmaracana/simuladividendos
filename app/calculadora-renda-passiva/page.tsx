@@ -74,7 +74,7 @@ export default function CalculadoraRendaPassivaPage() {
 
         {/* Como funciona */}
         <section className="flex flex-col gap-4">
-          <h2 className="text-[27px] font-medium leading-tight text-white">Como funciona o cálculo</h2>
+          <h2 className="text-[24px] font-medium leading-tight text-white">Como funciona o cálculo</h2>
           <p className="text-[13px] font-medium leading-relaxed text-[#808080]">
             O cálculo é direto: para receber uma renda mensal R, você precisa de um patrimônio P tal que a renda anual (R × 12) seja igual a P × yield anual. Reorganizando: <strong className="text-white">P = (R × 12) / yield</strong>.
           </p>
@@ -88,7 +88,7 @@ export default function CalculadoraRendaPassivaPage() {
 
         {/* FAQ */}
         <section className="flex flex-col gap-5">
-          <h2 className="text-[27px] font-medium leading-tight text-white">Perguntas frequentes</h2>
+          <h2 className="text-[24px] font-medium leading-tight text-white">Perguntas frequentes</h2>
           <div className="flex flex-col gap-4">
             {FAQS.map((faq) => (
               <div key={faq.question} className="flex flex-col gap-2 rounded-[16px] border border-[rgba(120,120,120,0.20)] bg-[rgba(120,120,120,0.18)] p-5">
@@ -101,7 +101,7 @@ export default function CalculadoraRendaPassivaPage() {
 
         {/* Links */}
         <section className="flex flex-col gap-5">
-          <h2 className="text-[27px] font-medium leading-tight text-white">Próximos passos</h2>
+          <h2 className="text-[24px] font-medium leading-tight text-white">Próximos passos</h2>
           <div className="flex flex-wrap gap-2">
             <a href="/melhores-acoes-dividendos" className="rounded-full border border-[rgba(120,120,120,0.20)] bg-[rgba(120,120,120,0.18)] px-4 py-2 text-[13px] font-medium text-white no-underline transition-opacity hover:opacity-70">
               Melhores ações de dividendos

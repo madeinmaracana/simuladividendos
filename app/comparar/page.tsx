@@ -31,15 +31,15 @@ export default function ComparPage() {
 
       {/* ── Seções com fundo claro ── */}
       <div className="w-full bg-[#F3F4F6]">
-        <div className="mx-auto flex w-full max-w-[var(--page-max)] flex-col gap-12 px-[var(--page-gutter)] py-12 lg:py-16">
+        <div className="mx-auto flex w-full max-w-[var(--page-max)] flex-col gap-[60px] px-[var(--page-gutter)] py-16 lg:py-24">
 
           {/* Comparações em destaque */}
           <section className="flex flex-col gap-5">
             <div className="flex flex-col gap-1">
-              <h2 className="text-[27px] font-medium leading-tight text-[#111827]">
+              <h2 className="text-[24px] font-medium leading-tight text-[#111827]">
                 Comparações populares
               </h2>
-              <p className="text-[13px] font-medium text-[#6B7280]">
+              <p className="text-[16px] font-normal text-[#808080]">
                 Pares mais consultados no comparador
               </p>
             </div>
@@ -59,7 +59,7 @@ export default function ComparPage() {
 
           {/* Mais comparações */}
           <section className="flex flex-col gap-5">
-            <h2 className="text-[27px] font-medium leading-tight text-[#111827]">
+            <h2 className="text-[24px] font-medium leading-tight text-[#111827]">
               Mais comparações
             </h2>
             <ul className="flex flex-wrap gap-2">

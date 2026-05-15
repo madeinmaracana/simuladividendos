@@ -195,7 +195,7 @@ export function SearchInput({
           className={cn(
             ui.input,
             "min-h-[52px] py-3 text-base font-normal placeholder:font-normal",
-            value.trim().length > 0 && "font-semibold text-[color:var(--text)]",
+            value.trim().length > 0 && "font-semibold text-[#111827]",
             selectionMeta && value.trim().length > 0 && "pl-12 sm:pl-[3.25rem]"
           )}
         />
@@ -209,11 +209,11 @@ export function SearchInput({
                 width={28}
                 height={28}
                 unoptimized
-                className="h-7 w-7 rounded-md bg-white object-contain p-0.5 ring-1 ring-neutral-200 dark:bg-neutral-800 dark:ring-neutral-600 sm:h-8 sm:w-8"
+                className="h-7 w-7 rounded-md bg-white object-contain p-0.5 ring-1 ring-neutral-200 sm:h-8 sm:w-8"
               />
             ) : (
               <span
-                className="flex h-7 w-7 items-center justify-center rounded-md bg-neutral-100 text-xs font-semibold text-neutral-500 dark:bg-neutral-800 dark:text-neutral-400 sm:h-8 sm:w-8"
+                className="flex h-7 w-7 items-center justify-center rounded-md bg-neutral-100 text-xs font-semibold text-neutral-500 sm:h-8 sm:w-8"
                 aria-hidden
               >
                 {value.trim().slice(0, 2)}
@@ -232,7 +232,7 @@ export function SearchInput({
           <ul
             id={listId}
             role="listbox"
-            className="absolute z-50 mt-1 max-h-60 w-full overflow-auto rounded-[length:var(--radius-input)] border border-[var(--border)] bg-[var(--card)] py-1 shadow-lg dark:shadow-xl"
+            className="absolute z-50 mt-1 max-h-60 w-full overflow-auto rounded-[length:var(--radius-input)] border border-[rgba(0,0,0,0.08)] bg-white py-1 shadow-lg"
           >
             {suggestions.map((s, i) => (
               <li
@@ -242,8 +242,8 @@ export function SearchInput({
                 aria-selected={i === highlight}
                 className={`flex cursor-pointer items-center gap-2 px-2 py-1.5 text-sm ${
                   i === highlight
-                    ? "bg-[color:var(--primary-soft)] text-neutral-900 dark:text-neutral-100"
-                    : "text-neutral-800 dark:text-neutral-200"
+                    ? "bg-[#F3F4F6] text-[#111827]"
+                    : "text-[#111827]"
                 }`}
                 onMouseEnter={() => setHighlight(i)}
                 onMouseDown={(e) => e.preventDefault()}
@@ -256,11 +256,11 @@ export function SearchInput({
                     width={32}
                     height={32}
                     unoptimized
-                    className="h-8 w-8 shrink-0 rounded-md bg-white object-contain p-0.5 ring-1 ring-neutral-200 dark:bg-neutral-800 dark:ring-neutral-600"
+                    className="h-8 w-8 shrink-0 rounded-md bg-white object-contain p-0.5 ring-1 ring-neutral-200"
                   />
                 ) : (
                   <span
-                    className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-neutral-100 text-xs font-semibold text-neutral-500 dark:bg-neutral-800 dark:text-neutral-400"
+                    className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-neutral-100 text-xs font-semibold text-neutral-500"
                     aria-hidden
                   >
                     {s.symbol.slice(0, 2)}
@@ -268,7 +268,7 @@ export function SearchInput({
                 )}
                 <div className="min-w-0 flex-1">
                   <span className="font-semibold tabular-nums">{s.symbol}</span>
-                  <span className="mt-0.5 block truncate text-xs font-normal text-neutral-500 dark:text-neutral-400">
+                  <span className="mt-0.5 block truncate text-xs font-normal text-neutral-500">
                     {s.name}
                   </span>
                 </div>

@@ -2,16 +2,15 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { useDividendSimulator } from "@/components/simulator/useDividendSimulator";
 import { formatBRL, formatDatePt } from "@/lib/format";
 import type { StockQuote } from "@/lib/types";
 import { SiteNav } from "@/components/layout/SiteNav";
 
-interface TickerHeroSectionProps {
+interface FiiHeroSectionProps {
   ticker: string;
-  sectorLabel: string;
-  sectorHref: string;
+  fundName: string;
+  shortDescription: string;
   logoUrl?: string | null;
   heroTitle: string;
   introText: string;
@@ -21,10 +20,10 @@ interface TickerHeroSectionProps {
   defaultShares?: number;
 }
 
-export function TickerHeroSection({
+export function FiiHeroSection({
   ticker,
-  sectorLabel,
-  sectorHref,
+  fundName,
+  shortDescription,
   logoUrl,
   heroTitle,
   introText,
@@ -32,7 +31,7 @@ export function TickerHeroSection({
   initialStock = null,
   serverError = null,
   defaultShares = 100,
-}: TickerHeroSectionProps) {
+}: FiiHeroSectionProps) {
   const [logoErr, setLogoErr] = useState(false);
 
   const {
@@ -46,7 +45,7 @@ export function TickerHeroSection({
     lastPayment,
     nextPayment,
     onSimulate,
-  } = useDividendSimulator(ticker, initialStock, serverError, defaultShares, "tickerHero");
+  } = useDividendSimulator(ticker, initialStock, serverError, defaultShares, "fiiHero");
 
   const symbol = ticker.toUpperCase();
   const perShareValue =
@@ -73,7 +72,7 @@ export function TickerHeroSection({
         <div className="flex flex-1 flex-col justify-between gap-10 self-stretch">
 
           {/* Breadcrumb */}
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-2">
             {logoUrl && !logoErr ? (
               <Image
                 src={logoUrl}
@@ -91,18 +90,9 @@ export function TickerHeroSection({
             )}
             <span className="text-sm font-semibold text-white">{symbol}</span>
             <span className="select-none text-white/30">·</span>
-            <Link
-              href={sectorHref}
-              className="flex items-center gap-1 text-[13px] font-medium text-[#808080] no-underline transition hover:text-white/80"
-            >
-              <span
-                className="material-symbols-outlined leading-none"
-                style={{ fontSize: 16, fontVariationSettings: "'opsz' 20, 'wght' 400, 'FILL' 0, 'GRAD' 0" }}
-              >
-                apartment
-              </span>
-              {sectorLabel}
-            </Link>
+            <span className="rounded-full border border-white/20 px-2.5 py-0.5 text-[13px] font-medium text-[#808080]">
+              Fundo imobiliário
+            </span>
           </div>
 
           {/* Headline + subtitle */}
@@ -115,12 +105,15 @@ export function TickerHeroSection({
             </p>
           </div>
 
-          {/* Body text */}
-          {bodyText && (
-            <p className="text-[13px] font-medium leading-relaxed text-[#808080]">
-              {bodyText}
-            </p>
-          )}
+          {/* Fund name + description */}
+          <div className="flex flex-col gap-2">
+            <p className="text-sm font-semibold text-white/60">{fundName}</p>
+            {shortDescription && (
+              <p className="text-[13px] font-medium leading-relaxed text-[#808080]">
+                {shortDescription}
+              </p>
+            )}
+          </div>
 
           {/* Disclaimer */}
           <p className="flex items-start gap-1.5 text-[13px] font-medium text-[#808080]">
@@ -136,11 +129,11 @@ export function TickerHeroSection({
         >
           {/* Quantity input */}
           <div className="flex flex-col gap-3">
-            <label htmlFor="ticker-hero-shares" className="text-[13px] font-medium text-[#808080]">
-              Quantidade
+            <label htmlFor="fii-hero-shares" className="text-[13px] font-medium text-[#808080]">
+              Quantidade de cotas
             </label>
             <input
-              id="ticker-hero-shares"
+              id="fii-hero-shares"
               type="text"
               inputMode="numeric"
               value={sharesStr}
@@ -167,7 +160,7 @@ export function TickerHeroSection({
               </span>
             </span>
             <span className="text-base font-medium text-black">
-              {loading ? "Carregando…" : "Simular dividendos"}
+              {loading ? "Carregando…" : "Simular rendimentos"}
             </span>
           </button>
 
@@ -175,21 +168,21 @@ export function TickerHeroSection({
           {showResults && stock ? (
             <div className="mt-4 flex flex-col gap-[40px]">
 
-              {/* Preço atual */}
+              {/* Preço atual da cota */}
               {stock.regularMarketPrice != null && (
                 <div className="flex items-center justify-between">
-                  <p className="text-[13px] font-medium text-[#808080]">Preço atual da ação:</p>
+                  <p className="text-[13px] font-medium text-[#808080]">Preço atual da cota:</p>
                   <p className="text-[24px] font-light tabular-nums text-white">
                     {formatBRL(stock.regularMarketPrice, currency)}
                   </p>
                 </div>
               )}
 
-              {/* Último dividendo */}
+              {/* Último rendimento */}
               {lastPayment && (
                 <div className="flex items-start justify-between gap-4">
                   <div>
-                    <p className="text-[13px] font-medium text-[#808080]">Último dividendo</p>
+                    <p className="text-[13px] font-medium text-[#808080]">Último rendimento</p>
                     {lastPayment.paymentDate && (
                       <p className="mt-0.5 text-[13px] font-medium text-[#808080]">
                         Pago em {formatDatePt(lastPayment.paymentDate)}

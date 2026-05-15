@@ -9,7 +9,7 @@ type TickerInternalNavProps = {
 export function TickerInternalNav({ sectorHref, sectorLabel }: TickerInternalNavProps) {
   return (
     <nav aria-label="Links úteis" className="flex flex-col gap-3">
-      <p className="text-[13px] font-medium text-[#808080]">Navegue também</p>
+      <p className="text-[13px] font-medium text-[#6B7280]">Navegue também</p>
       <ul className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:gap-x-4">
         <li>
           <TextLink href={ROUTES.simulador}>Simulador geral</TextLink>

@@ -34,16 +34,16 @@ export function TickerPill({ ticker, href, className }: TickerPillProps) {
       className={cn(
         "inline-flex items-center gap-2 no-underline",
         "py-1 pl-1 pr-3",
-        "rounded-full border border-[var(--color-border)] bg-[var(--color-surface)]",
+        "rounded-full border border-[rgba(0,0,0,0.08)] bg-white",
         "shadow-[var(--shadow-xs)]",
-        "text-xs font-semibold text-[var(--color-text)]",
-        "transition-colors hover:border-[var(--color-border-strong)] hover:bg-[var(--color-surface-muted)]",
+        "text-xs font-semibold text-[#111827]",
+        "transition-colors hover:border-[rgba(0,0,0,0.15)] hover:bg-[#F3F4F6]",
         className
       )}
     >
       {imgError ? (
         /* fallback: círculo com a inicial */
-        <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[var(--color-surface-muted)] text-xs font-bold text-[var(--color-text-soft)]">
+        <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F3F4F6] text-xs font-bold text-[#6B7280]">
           {ticker[0]}
         </span>
       ) : (

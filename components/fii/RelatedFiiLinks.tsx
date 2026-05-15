@@ -17,10 +17,10 @@ export function RelatedFiiLinks({ symbol: _symbol, peers }: RelatedFiiLinksProps
   return (
     <section aria-labelledby="heading-fiis-similares" className="flex flex-col gap-5">
       <div className="flex flex-col gap-1">
-        <h2 id="heading-fiis-similares" className="text-[27px] font-medium leading-tight text-white">
+        <h2 id="heading-fiis-similares" className="text-[24px] font-medium leading-tight text-[#111827]">
           FIIs similares
         </h2>
-        <p className="text-[13px] font-medium text-[#808080]">
+        <p className="text-[16px] font-normal text-[#808080]">
           Outros fundos imobiliários para explorar
         </p>
       </div>
@@ -31,13 +31,14 @@ export function RelatedFiiLinks({ symbol: _symbol, peers }: RelatedFiiLinksProps
               ticker={fii.ticker}
               href={getFiiPath(fii.ticker)}
               accentColor={tickerAccentColor(fii.ticker)}
+              theme="light"
             />
           </li>
         ))}
       </ul>
       <Link
         href="/fiis"
-        className="flex items-center gap-2 text-[13px] font-medium text-white no-underline transition-opacity hover:opacity-70"
+        className="flex items-center gap-2 text-[13px] font-medium text-[#111827] no-underline transition-opacity hover:opacity-70"
       >
         Ver todos
         <span className="material-symbols-outlined" style={{ fontSize: 16 }}>arrow_forward</span>

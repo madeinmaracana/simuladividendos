@@ -127,7 +127,7 @@ export function CalculadoraClient() {
       {/* Resultado */}
       {patrimonioNecessario > 0 && (
         <section className="flex flex-col gap-5" aria-live="polite">
-          <h2 className="text-[27px] font-medium leading-tight text-white">Resultado</h2>
+          <h2 className="text-[24px] font-medium leading-tight text-white">Resultado</h2>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
             {/* Patrimônio necessário */}
@@ -198,7 +198,7 @@ export function CalculadoraClient() {
 
       {/* Ações de exemplo para simular */}
       <section className="flex flex-col gap-5">
-        <h2 className="text-[27px] font-medium leading-tight text-white">
+        <h2 className="text-[24px] font-medium leading-tight text-white">
           Simule com ativos reais
         </h2>
         <p className="text-[13px] font-medium text-[#808080]">

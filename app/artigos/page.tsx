@@ -1,12 +1,8 @@
 import type { Metadata } from "next";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { ArticleCard } from "@/components/articles/ArticleCard";
-import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
-import { TextLink } from "@/components/ui/TextLink";
 import { ALL_ARTICLES } from "@/data/articles";
 import { getSeoBaseUrl } from "@/lib/site";
-import { cn } from "@/lib/cn";
-import { ui } from "@/components/ui/classes";
 
 export const metadata: Metadata = {
   title: "Artigos sobre dividendos e renda passiva | SimulaDividendos",
@@ -32,33 +28,28 @@ export const metadata: Metadata = {
 export default function ArtigosIndexPage() {
   return (
     <main className="flex flex-col gap-0">
-      <SiteHeader />
-      <div className={`${ui.stackPage} px-[var(--page-gutter)] py-8`}>
-      <Breadcrumbs
-        items={[
-          { label: "Início", href: "/" },
-          { label: "Artigos", href: undefined },
-        ]}
+      <SiteHeader
+        title="Artigos"
+        description="Conteúdo educativo para interpretar dividend yield, entender renda passiva e usar o simulador com mais contexto."
       />
+      <div className="w-full bg-[#F3F4F6]">
+        <div className="mx-auto flex w-full max-w-[var(--page-max)] flex-col gap-[60px] px-[var(--page-gutter)] py-16 lg:py-24">
 
-      <header className={cn(ui.divider, "flex flex-col gap-3")}>
-        <p className={ui.eyebrow}>Conteúdo</p>
-        <h1 className={cn("text-left", ui.pageTitle)}>Artigos</h1>
-        <p className={cn(ui.body, "max-w-2xl")}>
-          Conteúdo educativo para interpretar dividend yield, entender renda passiva e usar o simulador com mais
-          contexto.
-        </p>
-      </header>
+          <section className="flex flex-col gap-5">
+            <div className="flex flex-col gap-1">
+              <h2 className="text-[24px] font-medium leading-tight text-[#111827]">Todos os artigos</h2>
+              <p className="text-[16px] font-normal text-[#808080]">
+                Conteúdo educativo sobre dividendos e renda passiva
+              </p>
+            </div>
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              {ALL_ARTICLES.map((article) => (
+                <ArticleCard key={article.slug} article={article} theme="light" />
+              ))}
+            </div>
+          </section>
 
-      <section aria-label="Lista de artigos" className="grid gap-4 sm:grid-cols-2">
-        {ALL_ARTICLES.map((article) => (
-          <ArticleCard key={article.slug} article={article} />
-        ))}
-      </section>
-
-      <p className={ui.body}>
-        Quer colocar a teoria em prática? <TextLink href="/simulador">Use o simulador →</TextLink>
-      </p>
+        </div>
       </div>
     </main>
   );

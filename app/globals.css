@@ -26,8 +26,8 @@
    Base
    --------------------------------------------------------------------------- */
 body {
-  background: var(--color-bg);
-  color: var(--color-text);
+  background: #F3F4F6;
+  color: #111827;
   font-family: var(--font-sans);
   font-feature-settings: var(--font-features-ui);
   line-height: var(--leading-body);
@@ -91,7 +91,7 @@ code, pre, kbd, samp {
   font-family: var(--font-serif);
   font-size: 1rem;                 /* 16px — explícito para não variar com tokens */
   line-height: 1.75;               /* mais espaçado para leitura longa */
-  color: var(--color-text);
+  color: #111827;
 }
 
 .article-body h2 {

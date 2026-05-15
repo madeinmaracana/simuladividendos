@@ -79,11 +79,11 @@ export function HomeHeroSimulator() {
                   setSugOpen(true);
                 }}
                 onKeyDown={handleSugKeyDown}
-                placeholder="Ex.: BBAS3"
+                placeholder="Ex. BBAS3"
                 maxLength={8}
                 autoComplete="off"
                 autoCapitalize="characters"
-                className="min-w-0 flex-1 bg-transparent text-sm font-semibold text-white outline-none placeholder:font-normal placeholder:text-[#808080]"
+                className="min-w-0 flex-1 bg-transparent text-[16px] font-normal text-white outline-none placeholder:text-[#808080]"
               />
               {sugLoading && (
                 <span className="shrink-0 text-xs text-[#808080]">…</span>
@@ -106,7 +106,8 @@ export function HomeHeroSimulator() {
             inputMode="numeric"
             value={sharesStr}
             onChange={(e) => setSharesStr(e.target.value.replace(/\D/g, ""))}
-            className="rounded-full border border-white/15 bg-[rgba(255,255,255,0.06)] px-4 py-[14px] text-sm font-semibold tabular-nums text-white outline-none transition focus:border-white/30 placeholder:text-[#808080]"
+            placeholder="000000"
+            className="rounded-full border border-white/15 bg-[rgba(255,255,255,0.06)] px-4 py-[14px] text-[16px] font-normal tabular-nums text-white outline-none transition focus:border-white/30 placeholder:text-[#808080]"
           />
         </div>
       </div>
@@ -116,30 +117,30 @@ export function HomeHeroSimulator() {
         type="button"
         onClick={() => void onSimulate()}
         disabled={loading || !hasValidTicker}
-        className="mt-10 flex w-full items-center gap-4 rounded-full bg-white px-5 py-[14px] transition hover:bg-white/90 disabled:cursor-not-allowed disabled:opacity-40"
+        className="mt-6 flex w-full items-center gap-4 rounded-full bg-white p-[4px] transition hover:bg-white/90 disabled:cursor-not-allowed disabled:opacity-40"
       >
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-black">
+        <span className="flex shrink-0 items-center justify-center rounded-full bg-black p-[10px]">
           <span
             className="material-symbols-outlined leading-none text-white"
-            style={{ fontSize: 18, fontVariationSettings: "'opsz' 20, 'wght' 500, 'FILL' 0, 'GRAD' 0" }}
+            style={{ fontSize: 24, fontVariationSettings: "'opsz' 24, 'wght' 500, 'FILL' 0, 'GRAD' 0" }}
           >
             arrow_forward
           </span>
         </span>
-        <span className="text-base font-semibold text-black">
+        <span className="text-base font-medium text-black">
           {loading ? "Carregando…" : "Simular dividendos"}
         </span>
       </button>
 
-      {/* ── Resultados — 16px abaixo do botão ── */}
+      {/* ── Resultados — 24px abaixo do botão ── */}
       {showResults && stock ? (
-        <div className="mt-4 flex flex-col gap-[40px]">
+        <div className="mt-6 flex flex-col gap-[40px]">
 
           {/* Preço atual */}
           {stock.regularMarketPrice != null && (
             <div className="flex items-center justify-between">
               <p className="text-[13px] font-medium text-[#808080]">Preço atual da ação:</p>
-              <p className="text-[13px] font-semibold tabular-nums text-white">
+              <p className="text-[24px] font-light tabular-nums text-white">
                 {formatBRL(stock.regularMarketPrice, currency)}
               </p>
             </div>
@@ -156,7 +157,7 @@ export function HomeHeroSimulator() {
                   </p>
                 )}
               </div>
-              <p className="shrink-0 text-[13px] font-semibold tabular-nums text-white">
+              <p className="shrink-0 text-[24px] font-light tabular-nums text-white">
                 {formatBRL(lastPayment.totalForShares, currency)}
               </p>
             </div>
@@ -175,7 +176,7 @@ export function HomeHeroSimulator() {
             <div className="shrink-0 text-right">
               {nextPayment ? (
                 <>
-                  <p className="text-[32px] font-semibold leading-tight tabular-nums text-white">
+                  <p className="text-[24px] font-light tabular-nums text-white">
                     {formatBRL(nextPayment.totalForShares, currency)}
                   </p>
                   <p className="mt-1 text-[13px] font-medium text-[#808080]">
@@ -185,7 +186,7 @@ export function HomeHeroSimulator() {
                   </p>
                 </>
               ) : (
-                <p className="text-[32px] font-semibold text-[#808080]">—</p>
+                <p className="text-[24px] font-light text-[#808080]">—</p>
               )}
             </div>
           </div>

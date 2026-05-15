@@ -9,8 +9,9 @@ import { useTickerSuggestions } from "@/hooks/useTickerSuggestions";
 import { SiteNav } from "@/components/layout/SiteNav";
 
 /**
- * Hero escuro para a página /comparar — fundo #1a1a1a com formulário horizontal.
- * Layout: "Ativo A" input | "Ativo B" input | → Comparar button
+ * Hero escuro para a página /comparar — Figma node-id=52-740.
+ * Frame 82: padding 24px top / 120px bottom, gap 120px (nav ↔ conteúdo), align-items center.
+ * Conteúdo 980px: Frame 84 (eyebrow + título + subtítulo, gap 40px) + form (gap 40px entre blocos).
  */
 export function ComparHero() {
   const router = useRouter();
@@ -32,26 +33,50 @@ export function ComparHero() {
   }
 
   return (
-    <section className="overflow-hidden rounded-[32px]" style={{ background: "url(/hero-bg.jpg) center / cover no-repeat, #1A1A1A" }}>
+    <section
+      className="flex w-full flex-col items-center rounded-[32px]"
+      style={{
+        backgroundImage: "url(/hero-bg.png)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundColor: "#2A2A2A",
+        paddingTop: 24,
+        paddingBottom: 120,
+        gap: 120,
+      }}
+    >
       <SiteNav />
-      <div className="mx-auto max-w-[var(--page-max)] px-[var(--page-gutter)] pb-16 lg:pb-24">
 
-        {/* Copy */}
-        <div className="flex flex-col gap-4">
+      {/* Conteúdo 980px */}
+      <div
+        className="flex w-full flex-col px-4"
+        style={{ maxWidth: 980, gap: 40 }}
+      >
+        {/* Copy block — eyebrow + título + subtítulo */}
+        <div className="flex flex-col" style={{ gap: 40 }}>
           <p className="text-[13px] font-medium text-[#808080]">Comparador</p>
-          <h1 className="text-[42px] font-medium leading-[1.15] text-white lg:text-[53px] lg:leading-[63px]">
-            Compare dividendos de duas ações
-          </h1>
-          <p className="max-w-[52ch] text-lg font-normal leading-relaxed text-white/70">
-            Escolha dois tickers e veja lado a lado qual pagou mais nos últimos 12 meses, o
-            dividend yield estimado e o histórico de proventos.
-          </p>
+          <div className="flex flex-col" style={{ gap: 32 }}>
+            <h1
+              className="text-white"
+              style={{ fontSize: 56, fontWeight: 300, lineHeight: "63px" }}
+            >
+              Compare dividendos de duas ações
+            </h1>
+            <p
+              className="text-white"
+              style={{ fontSize: 24, fontWeight: 300, lineHeight: "normal" }}
+            >
+              Escolha dois tickers e veja lado a lado qual pagou mais nos últimos 12 meses, o
+              dividend yield estimado e o histórico de proventos.
+            </p>
+          </div>
         </div>
 
         {/* Form */}
         <form
           onSubmit={handleSubmit}
-          className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-end"
+          className="flex flex-col gap-3 sm:flex-row sm:items-end"
         >
           {/* Ativo A */}
           <div className="flex flex-1 flex-col gap-2">
@@ -73,7 +98,7 @@ export function ComparHero() {
                   placeholder="Ex. BBAS3"
                   maxLength={8}
                   autoComplete="off"
-                  className="min-w-0 flex-1 bg-transparent text-sm font-semibold text-white outline-none placeholder:font-normal placeholder:text-[#808080]"
+                  className="min-w-0 flex-1 bg-transparent text-[16px] font-normal text-white outline-none placeholder:text-[#808080]"
                 />
                 {sugA.isLoading && <span className="shrink-0 text-xs text-[#808080]">…</span>}
               </div>
@@ -108,7 +133,7 @@ export function ComparHero() {
                   placeholder="Ex. BBAS3"
                   maxLength={8}
                   autoComplete="off"
-                  className="min-w-0 flex-1 bg-transparent text-sm font-semibold text-white outline-none placeholder:font-normal placeholder:text-[#808080]"
+                  className="min-w-0 flex-1 bg-transparent text-[16px] font-normal text-white outline-none placeholder:text-[#808080]"
                 />
                 {sugB.isLoading && <span className="shrink-0 text-xs text-[#808080]">…</span>}
               </div>
@@ -128,7 +153,7 @@ export function ComparHero() {
             <label className="hidden text-[13px] sm:block">&nbsp;</label>
             <button
               type="submit"
-              className="flex items-center gap-3 rounded-full bg-white px-6 py-[14px] text-base font-semibold text-black transition hover:bg-white/90"
+              className="flex items-center gap-3 rounded-full bg-white px-6 py-[14px] text-base font-medium text-black transition hover:bg-white/90"
             >
               <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-black">
                 <span
@@ -144,7 +169,7 @@ export function ComparHero() {
         </form>
 
         {error && (
-          <p className="mt-2 text-[13px] font-medium text-red-400">{error}</p>
+          <p className="text-[13px] font-medium text-red-400">{error}</p>
         )}
       </div>
     </section>

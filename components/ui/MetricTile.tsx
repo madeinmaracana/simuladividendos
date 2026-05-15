@@ -12,12 +12,12 @@ export function MetricTile({ label, children, className }: MetricTileProps) {
   return (
     <div
       className={cn(
-        "rounded-[length:var(--radius-md)] border border-[var(--color-border)] bg-[var(--color-surface-muted)] p-4 shadow-[var(--shadow-sm)]",
+        "rounded-[12px] border border-[rgba(0,0,0,0.08)] bg-[#F3F4F6] p-4 shadow-sm",
         className
       )}
     >
       <p className={ui.metricLabel}>{label}</p>
-      <p className="mt-1.5 font-mono text-base font-semibold tabular-nums text-[var(--color-text)]">
+      <p className="mt-1.5 font-mono text-base font-semibold tabular-nums text-[#111827]">
         {children}
       </p>
     </div>

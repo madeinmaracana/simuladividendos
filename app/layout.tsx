@@ -71,8 +71,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           p-2 = 8px gap on all sides — cria a margem entre o card hero e as bordas do viewport.
           Cada página inclui o SiteNav dentro do seu próprio card hero escuro.
         */}
-        <div className="flex min-h-screen flex-col gap-0 p-2">
-          <div className="flex-1">{children}</div>
+        <div className="flex min-h-screen flex-col gap-0">
+          {/* p-2 = 8px gap que cria a margem flutuante dos cards hero */}
+          <div className="flex-1 p-2">{children}</div>
+          {/* Footer fora do p-2 → sem margin lateral, sem cantos arredondados */}
           <SiteFooter />
         </div>
       </body>

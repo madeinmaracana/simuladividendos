@@ -52,7 +52,7 @@ export default function MelhoresAcoesIndexPage() {
 
         {/* Grade de setores */}
         <section className="flex flex-col gap-5" aria-labelledby="heading-setores">
-          <h2 id="heading-setores" className="text-[27px] font-medium leading-tight text-white">
+          <h2 id="heading-setores" className="text-[24px] font-medium leading-tight text-white">
             Escolha um setor
           </h2>
           <ul className="flex flex-col gap-3">
@@ -107,7 +107,7 @@ export default function MelhoresAcoesIndexPage() {
 
         {/* Links relacionados */}
         <section className="flex flex-col gap-5">
-          <h2 className="text-[27px] font-medium leading-tight text-white">Ver também</h2>
+          <h2 className="text-[24px] font-medium leading-tight text-white">Ver também</h2>
           <div className="flex flex-wrap gap-2">
             <Link href="/melhores-acoes-dividendos" className="rounded-full border border-[rgba(120,120,120,0.20)] bg-[rgba(120,120,120,0.18)] px-4 py-2 text-[13px] font-medium text-white no-underline transition-opacity hover:opacity-70">
               Top 10 por dividend yield

@@ -23,17 +23,17 @@ export function DividendHistorySection({
   return (
     <section aria-labelledby={id} className="flex flex-col gap-5">
       <div className="flex flex-col gap-1">
-        <h2 id={id} className="text-[27px] font-medium leading-tight text-white">
+        <h2 id={id} className="text-[24px] font-medium leading-tight text-[#111827]">
           Histórico de dividendos
         </h2>
-        <p className="text-[13px] font-medium text-[#808080]">
+        <p className="text-[16px] font-normal text-[#808080]">
           Principais pagamentos recentes em lista compacta.
           Abra o histórico completo para todas as linhas, data ex (quando a fonte informar) e status.
         </p>
       </div>
 
       {!sorted.length ? (
-        <p className="rounded-[16px] border border-[rgba(120,120,120,0.20)] bg-[rgba(120,120,120,0.18)] px-4 py-8 text-center text-[13px] font-medium text-[#808080]">
+        <p className="rounded-[16px] border border-[rgba(0,0,0,0.08)] bg-white px-4 py-8 text-center text-[13px] font-medium text-[#6B7280]">
           {emptyMessage}
         </p>
       ) : (

@@ -23,7 +23,7 @@ export function RelatedTickers({
   return (
     <section aria-labelledby="heading-acoes-similares" className="flex flex-col gap-5">
       <div className="flex flex-col gap-1">
-        <h2 id="heading-acoes-similares" className="text-[27px] font-medium leading-tight text-white">
+        <h2 id="heading-acoes-similares" className="text-[24px] font-medium leading-tight text-white">
           Ações similares
         </h2>
         <p className="text-[13px] font-medium text-[#808080]">

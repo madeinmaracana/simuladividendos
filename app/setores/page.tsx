@@ -1,13 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteHeader } from "@/components/layout/SiteHeader";
-import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
-import { Card } from "@/components/ui/Card";
-import { TextLink } from "@/components/ui/TextLink";
 import { getAllSectorSlugs, getSector, getSectorPath } from "@/lib/stocks-data";
 import { getSeoBaseUrl } from "@/lib/site";
-import { cn } from "@/lib/cn";
-import { ui } from "@/components/ui/classes";
+
+const SECTOR_ICONS: Record<string, string> = {
+  bancos:               "account_balance",
+  consumo:              "shopping_bag",
+  energia:              "bolt",
+  mineracao:            "diamond",
+  industria:            "factory",
+  petroleo:             "local_gas_station",
+  servicos_financeiros: "payments",
+};
 
 const base = getSeoBaseUrl();
 
@@ -39,54 +44,58 @@ export default function SetoresIndexPage() {
 
   return (
     <main className="flex flex-col gap-0">
-      <SiteHeader />
-      <div className={`${ui.stackPage} px-[var(--page-gutter)] py-8`}>
-      <Breadcrumbs
-        items={[
-          { label: "Início", href: "/" },
-          { label: "Setores", href: undefined },
-        ]}
+      <SiteHeader
+        title="Setores na B3"
+        description="Escolha um setor para ver ações com contexto sobre dividendos e atalhos para a calculadora do Simula Dividendos."
       />
+      <div className="w-full bg-[#F3F4F6]">
+        <div className="mx-auto flex w-full max-w-[var(--page-max)] flex-col gap-[60px] px-[var(--page-gutter)] py-16 lg:py-24">
 
-      <header className={cn(ui.divider, "flex flex-col gap-3")}>
-        <p className={ui.eyebrow}>Navegação</p>
-        <h1 className={cn("text-left", ui.pageTitle)}>Setores na B3</h1>
-        <p className={cn(ui.body, "max-w-2xl")}>
-          Escolha um setor para ver ações com contexto sobre dividendos e atalhos para a calculadora do Simula Dividendos.
-        </p>
-      </header>
+          <section className="flex flex-col gap-5">
+            <div className="flex flex-col gap-1">
+              <h2 className="text-[24px] font-medium leading-tight text-[#111827]">Todos os setores</h2>
+              <p className="text-[16px] font-normal text-[#808080]">
+                Descubra ações por setor da economia
+              </p>
+            </div>
+            <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {slugs.map((slug) => {
+                const sector = getSector(slug);
+                if (!sector) return null;
+                const href = getSectorPath(slug);
+                const iconName = SECTOR_ICONS[slug] ?? "apartment";
+                return (
+                  <li key={slug}>
+                    <Link
+                      href={href}
+                      className="flex flex-col gap-4 rounded-[16px] border border-[rgba(0,0,0,0.08)] bg-white p-5 no-underline transition hover:border-[rgba(0,0,0,0.15)] hover:shadow-sm"
+                    >
+                      <span
+                        className="material-symbols-outlined leading-none text-[#374151]"
+                        style={{ fontSize: 24, fontVariationSettings: "'opsz' 24, 'wght' 400, 'FILL' 0, 'GRAD' 0" }}
+                      >
+                        {iconName}
+                      </span>
+                      <div className="flex flex-col gap-1">
+                        <span className="text-sm font-semibold text-[#111827]">{sector.name}</span>
+                        <p className="line-clamp-2 text-[13px] font-medium leading-relaxed text-[#6B7280]">
+                          {sector.intro}
+                        </p>
+                      </div>
+                      <span className="flex items-center gap-1 text-[13px] font-medium text-[#111827]">
+                        Ver ações
+                        <span className="material-symbols-outlined leading-none" style={{ fontSize: 14 }}>
+                          arrow_forward
+                        </span>
+                      </span>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </section>
 
-      <ul className="flex flex-col gap-4">
-        {slugs.map((slug) => {
-          const sector = getSector(slug);
-          if (!sector) return null;
-          const href = getSectorPath(slug);
-          return (
-            <li key={slug}>
-              <Card>
-                <Link href={href} className={cn(ui.subsectionTitle, "text-teal-800 hover:underline dark:text-teal-300")}>
-                  {sector.name}
-                </Link>
-                <p className={cn(ui.body, "mt-2")}>
-                  {sector.intro.slice(0, 180)}
-                  {sector.intro.length > 180 ? "…" : ""}
-                </p>
-                <p className="mt-4">
-                  <TextLink href={href} className="text-sm">
-                    Ver ações do setor →
-                  </TextLink>
-                </p>
-              </Card>
-            </li>
-          );
-        })}
-      </ul>
-
-      <p className={ui.bodyMuted}>
-        <TextLink href="/" className="text-xs font-medium">
-          ← Voltar ao início
-        </TextLink>
-      </p>
+        </div>
       </div>
     </main>
   );

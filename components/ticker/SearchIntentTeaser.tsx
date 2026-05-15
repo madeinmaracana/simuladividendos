@@ -11,10 +11,10 @@ export type SearchIntentTeaserProps = SearchIntentTeaserInput & {
 
 function IntentLine({ segments }: { segments: IntentTeaserSegment[] }) {
   return (
-    <p className="text-sm leading-snug text-[color:var(--text-secondary)]">
+    <p className="text-sm leading-snug text-[#6B7280]">
       {segments.map((seg, i) =>
         seg.bold ? (
-          <strong key={i} className="font-semibold text-[color:var(--text)]">
+          <strong key={i} className="font-semibold text-[#111827]">
             {seg.text}
           </strong>
         ) : (

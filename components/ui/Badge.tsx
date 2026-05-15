@@ -10,7 +10,7 @@ export type BadgeProps = {
 
 const toneClass: Record<Tone, string> = {
   neutral:
-    "border-[var(--border)] bg-[var(--surface-muted)] text-[color:var(--text-secondary)]",
+    "border-[rgba(0,0,0,0.08)] bg-[#F3F4F6] text-[#6B7280]",
   accent: "border-[color:var(--accent)]/25 bg-[color:var(--accent)]/10 text-[color:var(--accent)]",
   success:
     "border-[color:var(--success)]/25 bg-[color:var(--success)]/10 text-[color:var(--success)]",

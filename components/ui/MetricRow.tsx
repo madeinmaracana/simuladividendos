@@ -34,14 +34,14 @@ export function MetricRow({
       <p className={ui.metricLabel}>{label}</p>
       <p
         className={cn(
-          "font-semibold tabular-nums text-[var(--color-text)]",
+          "font-semibold tabular-nums text-[#111827]",
           valueSize === "lg" ? "text-lg" : "text-base",
         )}
       >
         {value}
       </p>
       {sub && (
-        <p className="text-xs text-[var(--color-text-muted)]">{sub}</p>
+        <p className="text-xs text-[#6B7280]">{sub}</p>
       )}
     </div>
   );

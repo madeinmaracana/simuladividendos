@@ -221,28 +221,28 @@ export default async function AcaoSlugPage({ params }: PageProps) {
 
       {/* ── Light content sections ── */}
       <div className="w-full bg-[#F3F4F6]">
-        <div className="mx-auto w-full max-w-[var(--page-max)] px-[var(--page-gutter)] py-12 lg:py-16">
+        <div className="mx-auto flex w-full max-w-[var(--page-max)] flex-col gap-16 px-[var(--page-gutter)] py-16 lg:py-24">
       <TickerPageLayout>
 
         <TickerPageRow>
-          <section className="rounded-[length:var(--radius-lg)] border border-[var(--border)] bg-[var(--surface)] p-5">
-            <h2 className="text-lg font-semibold text-[color:var(--text)]">{`Dividendos do ${symbol}`}</h2>
-            <dl className="mt-3 grid gap-2 text-sm text-[color:var(--text-secondary)] sm:grid-cols-2">
+          <section className="rounded-[16px] border border-[rgba(0,0,0,0.08)] bg-white p-5">
+            <h2 className="text-[24px] font-medium leading-tight text-[#111827]">{`Dividendos do ${symbol}`}</h2>
+            <dl className="mt-4 grid gap-3 sm:grid-cols-2">
               <div>
-                <dt className="font-medium">Último dividendo (R$)</dt>
-                <dd>{lastSnap ? formatBRL(lastSnap.amountPerShare, currency) : "—"}</dd>
+                <dt className="text-[13px] font-medium text-[#6B7280]">Último dividendo (R$)</dt>
+                <dd className="mt-0.5 text-[13px] font-semibold text-[#111827]">{lastSnap ? formatBRL(lastSnap.amountPerShare, currency) : "—"}</dd>
               </div>
               <div>
-                <dt className="font-medium">Média mensal</dt>
-                <dd>{metrics.avgMonthlyPerShare ?? "—"}</dd>
+                <dt className="text-[13px] font-medium text-[#6B7280]">Média mensal</dt>
+                <dd className="mt-0.5 text-[13px] font-semibold text-[#111827]">{metrics.avgMonthlyPerShare ?? "—"}</dd>
               </div>
               <div>
-                <dt className="font-medium">Dividend yield estimado</dt>
-                <dd>{yieldDisp ?? "—"}</dd>
+                <dt className="text-[13px] font-medium text-[#6B7280]">Dividend yield estimado</dt>
+                <dd className="mt-0.5 text-[13px] font-semibold text-[#111827]">{yieldDisp ?? "—"}</dd>
               </div>
               <div>
-                <dt className="font-medium">Frequência de pagamento</dt>
-                <dd>{frequencyHint ?? "—"}</dd>
+                <dt className="text-[13px] font-medium text-[#6B7280]">Frequência de pagamento</dt>
+                <dd className="mt-0.5 text-[13px] font-semibold text-[#111827]">{frequencyHint ?? "—"}</dd>
               </div>
             </dl>
           </section>
@@ -354,8 +354,8 @@ export default async function AcaoSlugPage({ params }: PageProps) {
         </TickerPageRow>
 
         <TickerPageRow>
-          <section className="text-sm text-[color:var(--text-secondary)]">
-            <p className="font-semibold text-[color:var(--text)]">{`Veja também sobre ${symbol}:`}</p>
+          <section className="text-sm text-[#6B7280]">
+            <p className="font-semibold text-[#111827]">{`Veja também sobre ${symbol}:`}</p>
             <p className="mt-1 flex flex-wrap gap-x-3 gap-y-1">
               <a href={acaoPathFromSlug(acaoVariantSlug(symbol, "dividendos"))} className="underline">
                 Dividendos por ação
@@ -375,8 +375,8 @@ export default async function AcaoSlugPage({ params }: PageProps) {
 
         {!mock ? (
           <TickerPageRow>
-            <p className="flex flex-wrap gap-x-2 gap-y-1 text-xs leading-relaxed text-neutral-500 dark:text-neutral-500">
-              <a href="/setores" className="font-medium text-teal-700 hover:underline dark:text-teal-400">
+            <p className="flex flex-wrap gap-x-2 gap-y-1 text-xs leading-relaxed text-[#6B7280]">
+              <a href="/setores" className="font-medium text-[#111827] hover:underline">
                 Explorar setores
               </a>
             </p>

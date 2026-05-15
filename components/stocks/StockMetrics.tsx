@@ -38,9 +38,9 @@ export function StockMetrics({
           <MetricTile label="Preço de referência">{formatBRL(priceBrl)}</MetricTile>
           <MetricTile label="Dividend yield (ref.)">{formatPercent(dividendYieldPct)}</MetricTile>
           <MetricTile label="Payout (ref.)">{formatPercent(payoutPct, 0)}</MetricTile>
-          <div className="rounded-xl border border-[var(--border)] bg-neutral-50/90 p-4 sm:col-span-2 dark:bg-neutral-950/50">
+          <div className="rounded-xl border border-[rgba(0,0,0,0.08)] bg-white p-4 sm:col-span-2">
             <p className={ui.metricLabel}>Frequência de pagamento</p>
-            <p className={cn(ui.body, "mt-2 font-normal text-neutral-700 dark:text-neutral-300")}>
+            <p className={cn(ui.body, "mt-2 font-normal text-[#374151]")}>
               {paymentFrequency}
             </p>
           </div>

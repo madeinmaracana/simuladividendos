@@ -51,7 +51,7 @@ export function TickerHeroSimulatorCard({
           value={sharesStr}
           onChange={(e) => setSharesStr(e.target.value.replace(/\D/g, ""))}
           placeholder="100"
-          className="rounded-full border border-white/15 bg-[rgba(255,255,255,0.06)] px-4 py-[14px] text-sm font-semibold tabular-nums text-white outline-none transition focus:border-white/30 placeholder:text-[#808080]"
+          className="rounded-full border border-white/15 bg-[rgba(255,255,255,0.06)] px-4 py-[14px] text-[16px] font-normal tabular-nums text-white outline-none transition focus:border-white/30 placeholder:text-[#808080]"
         />
       </div>
 
@@ -62,7 +62,7 @@ export function TickerHeroSimulatorCard({
           {stock.regularMarketPrice != null && (
             <div className="flex items-center justify-between">
               <p className="text-[13px] font-medium text-[#808080]">Preço atual da ação</p>
-              <p className="text-[13px] font-semibold tabular-nums text-white">
+              <p className="text-[24px] font-light tabular-nums text-white">
                 {formatBRL(stock.regularMarketPrice, currency)}
               </p>
             </div>
@@ -78,7 +78,7 @@ export function TickerHeroSimulatorCard({
                   </p>
                 )}
               </div>
-              <p className="shrink-0 text-[13px] font-semibold tabular-nums text-white">
+              <p className="shrink-0 text-[24px] font-light tabular-nums text-white">
                 {formatBRL(lastPayment.totalForShares, currency)}
               </p>
             </div>
@@ -96,7 +96,7 @@ export function TickerHeroSimulatorCard({
             <div className="shrink-0 text-right">
               {nextPayment ? (
                 <>
-                  <p className="text-[32px] font-semibold leading-tight tabular-nums text-white">
+                  <p className="text-[24px] font-light tabular-nums text-white">
                     {formatBRL(nextPayment.totalForShares, currency)}
                   </p>
                   <p className="mt-1 text-[13px] font-medium text-[#808080]">
@@ -106,7 +106,7 @@ export function TickerHeroSimulatorCard({
                   </p>
                 </>
               ) : (
-                <p className="text-[32px] font-semibold text-[#808080]">—</p>
+                <p className="text-[24px] font-light text-[#808080]">—</p>
               )}
             </div>
           </div>

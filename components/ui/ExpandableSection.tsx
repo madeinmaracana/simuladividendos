@@ -40,7 +40,7 @@ export function ExpandableSection({
         onClick={toggle}
         aria-expanded={open}
         className={cn(
-          "w-full rounded-full border border-[rgba(120,120,120,0.20)] bg-[rgba(120,120,120,0.18)] px-5 py-3 text-left text-[13px] font-medium text-white transition-opacity hover:opacity-70 sm:w-auto",
+          "w-full rounded-full border border-[rgba(0,0,0,0.08)] bg-white px-5 py-3 text-left text-[13px] font-medium text-[#111827] transition-opacity hover:opacity-70 sm:w-auto",
           buttonClassName
         )}
       >

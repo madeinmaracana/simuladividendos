@@ -19,7 +19,7 @@ export function DividendTable({
       <p
         className={cn(
           ui.body,
-          "rounded-xl border border-dashed border-[var(--border)] bg-neutral-50/80 px-4 py-12 text-center dark:bg-neutral-900/40"
+          "rounded-xl border border-dashed border-[rgba(0,0,0,0.08)] bg-white px-4 py-12 text-center"
         )}
       >
         {emptyMessage}
@@ -28,18 +28,18 @@ export function DividendTable({
   }
 
   return (
-    <div className="overflow-hidden rounded-2xl border border-[var(--border)] shadow-sm dark:shadow-none">
+    <div className="overflow-hidden rounded-2xl border border-[rgba(0,0,0,0.08)] shadow-sm">
       <div className="overflow-x-auto">
         <table className="w-full min-w-[320px] text-left text-sm">
           <thead>
-            <tr className="border-b border-[var(--border)] bg-neutral-50 dark:border-neutral-800 dark:bg-neutral-900/90">
-              <th className="px-4 py-3.5 text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+            <tr className="border-b border-[rgba(0,0,0,0.08)] bg-[#F9FAFB]">
+              <th className="px-4 py-3.5 text-xs font-semibold uppercase tracking-wide text-[#6B7280]">
                 Data de pagamento
               </th>
-              <th className="px-4 py-3.5 text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+              <th className="px-4 py-3.5 text-xs font-semibold uppercase tracking-wide text-[#6B7280]">
                 Tipo
               </th>
-              <th className="px-4 py-3.5 text-right text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+              <th className="px-4 py-3.5 text-right text-xs font-semibold uppercase tracking-wide text-[#6B7280]">
                 Valor / cota (estim.)
               </th>
             </tr>
@@ -48,13 +48,13 @@ export function DividendTable({
             {rows.map((row, i) => (
               <tr
                 key={`${row.paymentDate}-${row.label}-${i}`}
-                className="border-b border-[var(--border)] last:border-0 dark:border-neutral-800/80"
+                className="border-b border-[rgba(0,0,0,0.08)] last:border-0"
               >
-                <td className="px-4 py-3 tabular-nums text-neutral-800 dark:text-neutral-200">
+                <td className="px-4 py-3 tabular-nums text-[#111827]">
                   {formatDatePt(row.paymentDate)}
                 </td>
-                <td className="px-4 py-3 text-neutral-600 dark:text-neutral-400">{row.label}</td>
-                <td className="px-4 py-3 text-right text-sm font-semibold tabular-nums text-neutral-900 dark:text-neutral-100">
+                <td className="px-4 py-3 text-[#6B7280]">{row.label}</td>
+                <td className="px-4 py-3 text-right text-sm font-semibold tabular-nums text-[#111827]">
                   {formatBRL(row.ratePerShare, currency)}
                 </td>
               </tr>

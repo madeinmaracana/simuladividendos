@@ -61,7 +61,7 @@ export function StockQuickAnswer({ symbol, lastSnap, currency, variant }: StockQ
         Exemplo com <strong>{exampleCotas} cotas</strong> (só ilustra a conta): total aproximado do último evento ≈{" "}
         <strong>{formatBRL(totalEx, currency)}</strong>. Ajuste a quantidade no simulador ao lado para o seu caso.
       </p>
-      <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+      <p className="mt-2 text-sm text-[#6B7280]">
         Proventos não são mensalidade fixa: valores e datas mudam conforme a companhia.
       </p>
     </QuickAnswer>

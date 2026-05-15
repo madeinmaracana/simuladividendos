@@ -23,7 +23,7 @@ export function SharesInput({
     <div className="flex flex-col gap-2">
       <label
         htmlFor={id}
-        className={cn(ui.label, size === "lg" && "text-base font-medium text-[color:var(--text)]")}
+        className={cn(ui.label, size === "lg" && "text-base font-medium text-[#111827]")}
       >
         Quantidade de ações
       </label>

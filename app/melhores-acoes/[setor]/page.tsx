@@ -77,7 +77,7 @@ export default function MelhoresAcoesPorSetorPage({ params }: PageProps) {
 
         {/* Lista ordenada por yield */}
         <section className="flex flex-col gap-5" aria-labelledby="heading-lista">
-          <h2 id="heading-lista" className="text-[27px] font-medium leading-tight text-white">
+          <h2 id="heading-lista" className="text-[24px] font-medium leading-tight text-white">
             Ações por dividend yield de referência
           </h2>
           <ul className="flex flex-col gap-3">
@@ -125,7 +125,7 @@ export default function MelhoresAcoesPorSetorPage({ params }: PageProps) {
         {/* Contexto do setor */}
         {Array.isArray(sector.dividendRelevance) && sector.dividendRelevance.length > 1 && (
           <section className="flex flex-col gap-4">
-            <h2 className="text-[27px] font-medium leading-tight text-white">
+            <h2 className="text-[24px] font-medium leading-tight text-white">
               Por que {sector.name} para dividendos
             </h2>
             <div className="flex flex-col gap-3">
@@ -138,7 +138,7 @@ export default function MelhoresAcoesPorSetorPage({ params }: PageProps) {
 
         {/* Links */}
         <section className="flex flex-col gap-5">
-          <h2 className="text-[27px] font-medium leading-tight text-white">Ver também</h2>
+          <h2 className="text-[24px] font-medium leading-tight text-white">Ver também</h2>
           <div className="flex flex-wrap gap-2">
             <Link
               href={getSectorPath(slug)}

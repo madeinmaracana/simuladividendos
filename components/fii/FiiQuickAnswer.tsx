@@ -55,7 +55,7 @@ export function FiiQuickAnswer({ symbol, lastSnap, nextSnap, currency, variant }
         Com <strong>{exampleCotas} cotas</strong>, o último evento equivale a cerca de{" "}
         <strong>{formatBRL(totalEx, currency)}</strong> — ajuste no simulador para a sua posição.
       </p>
-      <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+      <p className="mt-2 text-sm text-[#6B7280]">
         Próximos rendimentos dependem do fundo; confirme no site do administrador.
       </p>
     </QuickAnswer>

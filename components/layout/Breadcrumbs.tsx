@@ -19,34 +19,35 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
   const breadcrumbSchema = buildBreadcrumbListSchema(schemaItems);
 
   return (
-    <nav aria-label="Breadcrumb" className="w-full min-w-0">
-      <ol
-        className={cn(
-          "flex w-full min-w-0 flex-wrap items-center gap-x-1 gap-y-1 rounded-xl border border-[var(--border)] bg-neutral-50/80 px-3 py-2.5 text-xs sm:text-sm dark:bg-neutral-900/40"
-        )}
-      >
-        {items.map((item, idx) => (
-          <li key={`${item.label}-${idx}`} className="flex items-center gap-1">
-            {item.href ? (
-              <Link href={item.href} className={cn(ui.link, "text-sm font-medium")}>
-                {item.label}
-              </Link>
-            ) : (
-              <span
-                aria-current="page"
-                className="max-w-[min(100%,12rem)] truncate font-medium text-neutral-800 dark:text-neutral-200 sm:max-w-[20rem]"
-              >
-                {item.label}
-              </span>
-            )}
-            {idx < items.length - 1 ? (
-              <span aria-hidden="true" className="px-1 text-neutral-300 dark:text-neutral-600">
-                /
-              </span>
-            ) : null}
-          </li>
-        ))}
-      </ol>
+    <nav aria-label="Breadcrumb" className="w-full bg-[#F3F4F6]">
+      <div className="mx-auto w-full max-w-[var(--page-max)] px-4 py-3 sm:px-6 lg:px-4">
+        <ol className="flex min-w-0 flex-wrap items-center gap-x-1 gap-y-0.5">
+          {items.map((item, idx) => (
+            <li key={`${item.label}-${idx}`} className="flex min-w-0 items-center gap-1">
+              {item.href ? (
+                <Link
+                  href={item.href}
+                  className="text-[13px] font-medium text-[#6B7280] transition-colors hover:text-[#111827]"
+                >
+                  {item.label}
+                </Link>
+              ) : (
+                <span
+                  aria-current="page"
+                  className="max-w-[min(100%,16rem)] truncate text-[13px] font-medium text-[#111827] sm:max-w-xs"
+                >
+                  {item.label}
+                </span>
+              )}
+              {idx < items.length - 1 ? (
+                <span aria-hidden="true" className="text-[13px] text-[#D1D5DB]">
+                  /
+                </span>
+              ) : null}
+            </li>
+          ))}
+        </ol>
+      </div>
 
       <JsonLd data={breadcrumbSchema} />
     </nav>

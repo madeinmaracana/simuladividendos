@@ -22,7 +22,7 @@ export function TickerLogo({ ticker, size = 28, theme = "dark" }: TickerLogoProp
     const fallbackClass =
       theme === "dark"
         ? "bg-white/20 text-white"
-        : "bg-[var(--color-surface-muted)] text-[var(--color-text-muted)]";
+        : "bg-[#F3F4F6] text-[#6B7280]";
 
     return (
       <span

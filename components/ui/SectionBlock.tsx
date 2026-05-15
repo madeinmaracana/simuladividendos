@@ -21,11 +21,11 @@ export function SectionBlock({
   return (
     <section className={cn("flex flex-col gap-3", className)}>
       <div className="flex flex-col gap-1">
-        <h2 className="text-2xl font-semibold tracking-tight text-[var(--color-text)]">
+        <h2 className="text-2xl font-semibold tracking-tight text-[#111827]">
           {title}
         </h2>
         {subtitle && (
-          <p className="text-sm text-[var(--color-text-muted)]">{subtitle}</p>
+          <p className="text-sm text-[#6B7280]">{subtitle}</p>
         )}
       </div>
 
@@ -34,7 +34,7 @@ export function SectionBlock({
       {viewAllHref && (
         <Link
           href={viewAllHref}
-          className="text-sm font-medium text-[var(--color-text)] hover:underline no-underline w-fit"
+          className="text-sm font-medium text-[#111827] hover:underline no-underline w-fit"
         >
           {viewAllLabel}
         </Link>

@@ -4,6 +4,8 @@ import { SiteNav } from "@/components/layout/SiteNav";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { ArticleCard } from "@/components/articles/ArticleCard";
 import { TickerCard } from "@/components/ui/TickerCard";
+import { SectionHeader } from "@/components/ui/SectionHeader";
+import { SectionLink } from "@/components/ui/SectionLink";
 import { tickerAccentColor } from "@/lib/ticker-colors";
 import { HomeHeroSimulator } from "@/components/home/HomeHeroSimulator";
 import { getAllMockTickers, getSectorNavItems } from "@/lib/stocks-data";
@@ -57,7 +59,7 @@ const SECTOR_ICONS: Record<string, string> = {
 };
 
 export default function HomePage() {
-  const popularTickers = getAllMockTickers().slice(0, 7);
+  const popularTickers = getAllMockTickers().slice(0, 5);
   const popularFiis = getAllMockFiiTickers().filter((t) =>
     ["MXRF11", "HGLG11", "XPLG11", "KNRI11", "VGHF11"].includes(t)
   );
@@ -80,30 +82,53 @@ export default function HomePage() {
       />
 
       {/* ══════════════════════════════════════════════════════════════
-          HERO — card escuro flutuante, rounded-[32px], 8px margin via layout p-2
+          HERO — Figma node-id=40-903
+          Frame 82: rounded-[32px], padding 24px top / 120px bottom,
+          gap 120px entre nav e conteúdo, bg #2A2A2A + imagem
       ══════════════════════════════════════════════════════════════ */}
       <section
-        className="overflow-hidden rounded-[32px]"
-        style={{ background: "url(/hero-bg.jpg) center / cover no-repeat, #1A1A1A" }}
+        className="flex w-full flex-col items-center rounded-[32px]"
+        style={{
+          backgroundImage: "url(/hero-bg.png)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundColor: "#2A2A2A",
+          paddingTop: 24,
+          paddingBottom: 120,
+          gap: 120,
+        }}
       >
-        {/* Nav dentro do card hero */}
+        {/* Topbar — max 980px, alinhado com conteúdo */}
         <SiteNav />
 
-        <div className="mx-auto grid max-w-[var(--page-max)] grid-cols-1 gap-12 px-[var(--page-gutter)] pb-16 lg:grid-cols-2 lg:items-start lg:gap-16 lg:pb-24">
+        {/* Conteúdo — max 980px, 2 colunas, gap 40px */}
+        <div
+          className="flex w-full flex-col items-start gap-[40px] px-4 lg:flex-row"
+          style={{ maxWidth: 980 }}
+        >
 
-          {/* Esquerda — copy + como funciona */}
-          <div className="flex flex-col gap-10">
-            <div className="flex flex-col gap-4">
-              <h1 className="text-[53px] font-medium leading-[63px] text-white">
+          {/* Coluna esquerda — título + subtítulo (topo) | Como funciona (baixo) */}
+          <div className="flex flex-1 flex-col justify-between gap-10 self-stretch">
+
+            {/* Título + subtítulo — gap 32px */}
+            <div className="flex flex-col gap-8">
+              <h1
+                className="text-white"
+                style={{ fontSize: 56, fontWeight: 300, lineHeight: "63px" }}
+              >
                 Simule quanto você pode receber em dividendos.
               </h1>
-              <p className="text-[21px] font-normal leading-relaxed text-white/70">
+              <p
+                className="text-white"
+                style={{ fontSize: 24, fontWeight: 300, lineHeight: "normal" }}
+              >
                 Compare ações, estime pagamentos e visualize a renda potencial da sua carteira em poucos segundos.
               </p>
             </div>
 
-            {/* Como funciona */}
-            <div className="flex flex-col gap-3">
+            {/* Como funciona — fixado no fundo da coluna */}
+            <div className="flex flex-col gap-4">
               <p className="text-[13px] font-medium text-[#808080]">
                 Como funciona
               </p>
@@ -119,15 +144,15 @@ export default function HomePage() {
                   </li>
                 ))}
               </ol>
-              <p className="mt-1 flex items-start gap-1.5 text-[13px] font-medium text-[#808080]">
+              <p className="flex items-start gap-1.5 text-[13px] font-medium text-[#808080]">
                 <span>◆</span>
                 <span>Não é recomendação de investimento. Fonte pública de proventos.</span>
               </p>
             </div>
           </div>
 
-          {/* Direita — simulador */}
-          <div id="simulador">
+          {/* Coluna direita — simulador, 410px fixo */}
+          <div id="simulador" className="w-full flex-shrink-0 lg:w-[410px]">
             <HomeHeroSimulator />
           </div>
 
@@ -138,112 +163,90 @@ export default function HomePage() {
           SEÇÕES — fundo claro
       ══════════════════════════════════════════════════════════════ */}
       <div className="w-full bg-[#F3F4F6]">
-        <div className="mx-auto flex w-full max-w-[var(--page-max)] flex-col gap-16 px-[var(--page-gutter)] py-16 lg:py-24">
+        <div className="mx-auto flex w-full max-w-[var(--page-max)] flex-col gap-[60px] px-[var(--page-gutter)] py-16 lg:py-24">
 
           {/* ── Ações populares ── */}
-          <section className="flex flex-col gap-5">
-            <div className="flex flex-col gap-1">
-              <h2 className="text-[27px] font-medium leading-tight text-[#111827]">Ações populares</h2>
-              <p className="text-[13px] font-medium text-[#6B7280]">
-                Explore os principais pagadores de dividendos da B3
-              </p>
-            </div>
-            <ul className="grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-7">
+          <section className="flex flex-col gap-6">
+            <SectionHeader
+              title="Ações populares"
+              subtitle="Explore os principais pagadores de dividendos da B3"
+            />
+            <ul className="flex gap-2">
               {popularTickers.map((t) => (
-                <li key={t}>
+                <li key={t} className="min-w-0 flex-1">
                   <TickerCard ticker={t} href={getTickerPath(t)} theme="light" />
                 </li>
               ))}
             </ul>
-            <Link href="/setores" className="flex items-center gap-1.5 text-[13px] font-medium text-[#111827] no-underline transition-opacity hover:opacity-60">
-              Ver todas
-              <span className="material-symbols-outlined" style={{ fontSize: 16 }}>arrow_forward</span>
-            </Link>
+            <SectionLink href="/setores" label="Ver todas" />
           </section>
 
           {/* ── Fundos imobiliários ── */}
-          <section className="flex flex-col gap-5">
-            <div className="flex flex-col gap-1">
-              <h2 className="text-[27px] font-medium leading-tight text-[#111827]">Fundos imobiliários</h2>
-              <p className="text-[13px] font-medium text-[#6B7280]">
-                Principais FIIs da B3 para investir
-              </p>
-            </div>
-            <ul className="grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-5">
+          <section className="flex flex-col gap-6">
+            <SectionHeader
+              title="Fundos imobiliários"
+              subtitle="Principais FIIs da B3 para investir"
+            />
+            <ul className="flex gap-2">
               {popularFiis.map((t) => (
-                <li key={t}>
+                <li key={t} className="min-w-0 flex-1">
                   <TickerCard ticker={t} href={getFiiPath(t)} accentColor={tickerAccentColor(t)} theme="light" />
                 </li>
               ))}
             </ul>
-            <Link href="/fiis" className="flex items-center gap-1.5 text-[13px] font-medium text-[#111827] no-underline transition-opacity hover:opacity-60">
-              Ver todas
-              <span className="material-symbols-outlined" style={{ fontSize: 16 }}>arrow_forward</span>
-            </Link>
+            <SectionLink href="/fiis" label="Ver todas" />
           </section>
 
           {/* ── Setores ── */}
-          <section className="flex flex-col gap-5">
-            <div className="flex flex-col gap-1">
-              <h2 className="text-[27px] font-medium leading-tight text-[#111827]">Setores</h2>
-              <p className="text-[13px] font-medium text-[#6B7280]">
-                Descubra ações por setor da economia
-              </p>
-            </div>
-            <ul className="grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-7">
-              {sectors.slice(0, 7).map(({ slug, label, href }) => {
+          <section className="flex flex-col gap-6">
+            <SectionHeader
+              title="Setores"
+              subtitle="Descubra ações por setor da economia"
+            />
+            <ul className="flex gap-2">
+              {sectors.slice(0, 5).map(({ slug, label, href }) => {
                 const iconName = SECTOR_ICONS[slug] ?? "apartment";
                 return (
-                  <li key={slug}>
+                  <li key={slug} className="min-w-0 flex-1">
                     <Link
                       href={href}
-                      className="flex h-[120px] w-full flex-col justify-between rounded-[16px] border border-[rgba(0,0,0,0.08)] bg-white p-4 no-underline transition hover:border-[rgba(0,0,0,0.15)] hover:shadow-sm"
+                      className="flex h-[131px] w-full flex-col items-start gap-[50px] rounded-[16px] bg-[#E5E7EC] p-4 no-underline transition hover:brightness-95"
                     >
                       <span
-                        className="material-symbols-outlined leading-none text-[#374151]"
-                        style={{ fontSize: 24, fontVariationSettings: "'opsz' 24, 'wght' 400, 'FILL' 0, 'GRAD' 0" }}
+                        className="material-symbols-outlined leading-none text-[#9CA3AF]"
+                        style={{ fontSize: 24, fontVariationSettings: "'opsz' 24, 'wght' 400, 'FILL' 1, 'GRAD' 0" }}
                       >
                         {iconName}
                       </span>
-                      <span className="text-sm font-semibold text-[#111827]">{label}</span>
+                      <span className="text-[13px] font-semibold text-[#111827]">{label}</span>
                     </Link>
                   </li>
                 );
               })}
             </ul>
-            <Link href="/setores" className="flex items-center gap-1.5 text-[13px] font-medium text-[#111827] no-underline transition-opacity hover:opacity-60">
-              Ver todos
-              <span className="material-symbols-outlined" style={{ fontSize: 16 }}>arrow_forward</span>
-            </Link>
+            <SectionLink href="/setores" label="Ver todos" />
           </section>
 
           {/* ── Artigos ── */}
           <section className="flex flex-col gap-5">
-            <div className="flex flex-col gap-1">
-              <h2 className="text-[27px] font-medium leading-tight text-[#111827]">Artigos</h2>
-              <p className="text-[13px] font-medium text-[#6B7280]">
-                Aprenda sobre dividendos e renda passiva
-              </p>
-            </div>
+            <SectionHeader
+              title="Artigos"
+              subtitle="Aprenda sobre dividendos e renda passiva"
+            />
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
               {homeArticles.map((article) => (
                 <ArticleCard key={article.slug} article={article} theme="light" />
               ))}
             </div>
-            <Link href="/artigos" className="flex items-center gap-1.5 text-[13px] font-medium text-[#111827] no-underline transition-opacity hover:opacity-60">
-              Ver todos
-              <span className="material-symbols-outlined" style={{ fontSize: 16 }}>arrow_forward</span>
-            </Link>
+            <SectionLink href="/artigos" label="Ver todos" />
           </section>
 
           {/* ── FAQ ── */}
           <section className="flex flex-col gap-5">
-            <div className="flex flex-col gap-1">
-              <h2 className="text-[27px] font-medium leading-tight text-[#111827]">Perguntas frequentes</h2>
-              <p className="text-[13px] font-medium text-[#6B7280]">
-                Tire suas dúvidas sobre o simulador
-              </p>
-            </div>
+            <SectionHeader
+              title="Perguntas frequentes"
+              subtitle="Tire suas dúvidas sobre o simulador"
+            />
             <ul className="flex flex-col gap-2">
               {FAQ_ITEMS.map((item) => (
                 <li key={item.question}>
@@ -263,10 +266,7 @@ export default function HomePage() {
                 </li>
               ))}
             </ul>
-            <Link href="/artigos" className="flex items-center gap-1.5 text-[13px] font-medium text-[#111827] no-underline transition-opacity hover:opacity-60">
-              Ver artigos
-              <span className="material-symbols-outlined" style={{ fontSize: 16 }}>arrow_forward</span>
-            </Link>
+            <SectionLink href="/artigos" label="Ver artigos" />
           </section>
 
         </div>

@@ -21,18 +21,18 @@ export function InternalLinksRow({
     <nav
       aria-label={ariaLabel}
       className={cn(
-        "flex flex-wrap items-center gap-x-2 gap-y-2 border-t border-[var(--border)] pt-8 dark:border-neutral-800",
+        "flex flex-wrap items-center gap-x-2 gap-y-2 border-t border-[rgba(0,0,0,0.08)] pt-8",
         className
       )}
     >
       {links.map((link, i) => (
         <span key={link.href} className="inline-flex items-center gap-2">
           {i > 0 ? (
-            <span aria-hidden className="text-neutral-300 dark:text-neutral-600">
+            <span aria-hidden className="text-[#6B7280]">
               ·
             </span>
           ) : null}
-          <TextLink href={link.href} className="text-sm">
+          <TextLink href={link.href} className="text-sm font-medium text-[#111827]">
             {link.label}
           </TextLink>
         </span>
