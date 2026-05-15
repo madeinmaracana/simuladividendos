@@ -81,6 +81,30 @@ code, pre, kbd, samp {
    --------------------------------------------------------------------------- */
 .tabular-nums  { font-variant-numeric: tabular-nums; }
 .slashed-zero  { font-feature-settings: var(--font-features-numeric); font-variant-numeric: tabular-nums slashed-zero; }
+/* Zero cortado sem tabular — use em displays financeiros sem grid de largura fixa */
+.zero-slashed  { font-feature-settings: "zero" 1; font-variant-numeric: slashed-zero; }
+
+/* ---------------------------------------------------------------------------
+   Lab — tabela: minWidth aplicado só no mobile para scroll horizontal.
+   No desktop overflow-x:visible, então não precisamos forçar largura.
+   --------------------------------------------------------------------------- */
+@media (max-width: 639px) {
+  .lab-table-inner {
+    min-width: 972px;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Lab — valor investido (fluid: 36px mobile → 64px desktop)
+   Todos os filhos do inline-grid (mirror span, input, button) usam a mesma
+   classe para que o grid se dimensione corretamente.
+   --------------------------------------------------------------------------- */
+.lab-amount {
+  font-size: clamp(36px, 9vw, 64px);
+}
+.lab-currency {
+  font-size: clamp(28px, 7vw, 64px);
+}
 
 /* ---------------------------------------------------------------------------
    Tipografia editorial — Merriweather para corpo de artigos

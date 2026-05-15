@@ -1,8 +1,15 @@
 import type { MetadataRoute } from "next";
 import { getSeoBaseUrl } from "@/lib/site";
-import { buildSitemap } from "@/lib/sitemap/build-sitemap";
 
-/** Sitemap dinâmico: URLs derivadas de `data/stocks`, `data/fiis`, `data/articles` (ver `data/sitemap-sources.ts`). */
+/** Sitemap reduzido — apenas a home está indexada. */
 export default function sitemap(): MetadataRoute.Sitemap {
-  return buildSitemap(getSeoBaseUrl());
+  const base = getSeoBaseUrl().replace(/\/$/, "");
+  return [
+    {
+      url: base,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 1,
+    },
+  ];
 }

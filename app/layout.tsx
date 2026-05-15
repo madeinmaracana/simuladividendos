@@ -8,7 +8,7 @@ import "./globals.css";
 /** Inter — fonte primária do design system */
 const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["200", "400", "500", "600", "700"],
   variable: "--font-inter",
   display: "swap",
 });
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     apple: "/apple-icon",
   },
   keywords: ["dividendos", "ações", "B3", "simulador", "renda passiva", "proventos", "investimentos", "Brasil"],
-  robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
+  robots: { index: false, follow: false },
   openGraph: {
     title: defaultTitle,
     description: defaultDescription,
@@ -74,8 +74,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <div className="flex min-h-screen flex-col gap-0">
           {/* p-2 = 8px gap que cria a margem flutuante dos cards hero */}
           <div className="flex-1 p-2">{children}</div>
-          {/* Footer fora do p-2 → sem margin lateral, sem cantos arredondados */}
-          <SiteFooter />
+          {/* Footer temporariamente removido */}
+          {/* <SiteFooter /> */}
         </div>
       </body>
     </html>

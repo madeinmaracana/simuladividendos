@@ -4,17 +4,24 @@ import { getSeoBaseUrl } from "@/lib/site";
 export default function robots(): MetadataRoute.Robots {
   const base = getSeoBaseUrl().replace(/\/$/, "");
   return {
-    rules: {
-      userAgent: "*",
-      allow: "/",
-    },
-    sitemap: [
-      `${base}/sitemap.xml`,
-      `${base}/acoes/sitemap.xml`,
-      `${base}/fiis/sitemap.xml`,
-      `${base}/artigos/sitemap.xml`,
-      `${base}/setores/sitemap.xml`,
-      `${base}/comparar/sitemap.xml`,
+    rules: [
+      {
+        userAgent: "*",
+        allow: "/",
+        disallow: [
+          "/acoes/",
+          "/artigos/",
+          "/calculadora-renda-passiva/",
+          "/comparar/",
+          "/fiis/",
+          "/lab/",
+          "/melhores-acoes/",
+          "/melhores-acoes-dividendos/",
+          "/melhores-fiis/",
+          "/setores/",
+        ],
+      },
     ],
+    sitemap: `${base}/sitemap.xml`,
   };
 }
