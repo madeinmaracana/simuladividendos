@@ -13,7 +13,7 @@ function useDebouncedValue<T>(value: T, delayMs: number): T {
   return debounced;
 }
 
-export type DividendSimulatorVariant = "home" | "homeManual" | "tickerPage" | "fixedTicker";
+export type DividendSimulatorVariant = "home" | "homeManual" | "tickerPage" | "fixedTicker" | "fiiHero" | "tickerHero";
 
 const MIN_TICKER_LEN = 4;
 

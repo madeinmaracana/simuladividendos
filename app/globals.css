@@ -90,7 +90,7 @@ code, pre, kbd, samp {
    --------------------------------------------------------------------------- */
 @media (max-width: 639px) {
   .lab-table-inner {
-    min-width: 972px;
+    min-width: 1000px;
   }
 }
 

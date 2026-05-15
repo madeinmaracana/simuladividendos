@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useTickerSuggestions } from "@/hooks/useTickerSuggestions";
 import { TickerLogo } from "@/components/ui/TickerLogo";
-import { LabTickerRow } from "./LabTickerRow";
+import { LabTickerRow, LAB_COL_WIDTHS } from "./LabTickerRow";
 
 /* ── helpers ──────────────────────────────────────────────── */
 
@@ -354,11 +354,12 @@ export function LabComparador() {
             {/*
              * overflow-x-auto só no mobile — no desktop overflow-x-visible
              * permite que o botão X absoluto (right:-48px) apareça sem ser cortado.
-             * A classe lab-table-inner aplica min-width:972px só no mobile.
-             * paddingRight:56 reserva espaço para o botão X no desktop.
+             * A classe lab-table-inner aplica min-width no mobile para scroll horizontal.
+             * Sem paddingRight: a tabela ocupa a largura total do container e o X
+             * aparece naturalmente fora dele (o body não tem overflow:hidden).
              */}
             <div className="overflow-x-auto sm:overflow-x-visible w-full" style={{ scrollbarWidth: "none" }}>
-              <div className="lab-table-inner" style={{ paddingRight: 56 }}>
+              <div className="lab-table-inner">
 
                 {/* Column header row */}
                 <div className="flex w-full mb-4">
@@ -369,20 +370,26 @@ export function LabComparador() {
                   >
                     Nome da Ação
                   </div>
-                  <div style={{ ...COL_LABEL_STYLE, width: 136, paddingLeft: 16 }}>
+                  <div style={{ ...COL_LABEL_STYLE, width: LAB_COL_WIDTHS[0], paddingLeft: 16 }}>
                     Preço da cota
                   </div>
-                  <div style={{ ...COL_LABEL_STYLE, width: 120, paddingLeft: 16 }}>
+                  <div style={{ ...COL_LABEL_STYLE, width: LAB_COL_WIDTHS[1], paddingLeft: 16 }}>
                     Quantidade
                   </div>
-                  <div style={{ ...COL_LABEL_STYLE, width: 160, paddingLeft: 16 }}>
+                  <div style={{ ...COL_LABEL_STYLE, width: LAB_COL_WIDTHS[2], paddingLeft: 16 }}>
                     Último pagamento
                   </div>
-                  <div style={{ ...COL_LABEL_STYLE, width: 160, paddingLeft: 16 }}>
+                  <div style={{ ...COL_LABEL_STYLE, width: LAB_COL_WIDTHS[3], paddingLeft: 16 }}>
                     Próximo pagamento
                   </div>
-                  <div style={{ ...COL_LABEL_STYLE, width: 160, paddingLeft: 16 }}>
-                    Últimos 12 meses
+                  <div style={{ ...COL_LABEL_STYLE, width: LAB_COL_WIDTHS[4], paddingLeft: 16 }}>
+                    Freq.
+                  </div>
+                  <div style={{ ...COL_LABEL_STYLE, width: LAB_COL_WIDTHS[5], paddingLeft: 16 }}>
+                    Dividendos 12m
+                  </div>
+                  <div style={{ ...COL_LABEL_STYLE, width: LAB_COL_WIDTHS[6], paddingLeft: 16 }}>
+                    DY 12m
                   </div>
                   {/* Placeholder da coluna X no mobile */}
                   <div className="sm:hidden" style={{ width: 56 }} />
@@ -409,8 +416,7 @@ export function LabComparador() {
             </div>
 
             {/* Add ticker — fora do scroll para ficar sempre visível */}
-            {/* paddingRight:56 alinha com a área branca da tabela (exclui espaço do botão X) */}
-            <div style={{ paddingRight: 56 }}>
+            <div>
               {addingTicker ? (
                 <AddTickerRow
                   onAdd={handleAddTicker}
