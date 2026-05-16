@@ -113,6 +113,14 @@ code, pre, kbd, samp {
 }
 
 /* ---------------------------------------------------------------------------
+   SectorChipsSection — hover dos chips de navegação por setor
+   --------------------------------------------------------------------------- */
+.sector-chip:hover {
+  background: #989FAC !important;
+  color: #fff !important;
+}
+
+/* ---------------------------------------------------------------------------
    Tipografia editorial — Merriweather para corpo de artigos
    --------------------------------------------------------------------------- */
 .font-serif { font-family: var(--font-serif); }

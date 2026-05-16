@@ -1,118 +1,155 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { SectorHero } from "@/components/seo/SectorHero";
-import { SiteHeader } from "@/components/layout/SiteHeader";
-import { SectorStockList } from "@/components/seo/SectorStockList";
-import { StockFAQ } from "@/components/stocks/StockFAQ";
-import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
-import { InternalLinksRow } from "@/components/seo/InternalLinksRow";
-import { RelatedArticlesSection } from "@/components/seo/RelatedArticlesSection";
-import { Card } from "@/components/ui/Card";
-import { SectionHeading } from "@/components/ui/SectionHeading";
-import { TextLink } from "@/components/ui/TextLink";
-import { getArticlesForSector } from "@/data/articles";
-import {
-  getAllSectorSlugs,
-  getSector,
-  getStocksInSector,
-  getTickerPath,
-  isSectorSlug,
-} from "@/lib/stocks-data";
-import { breadcrumbsSector, buildSectorPageMetadata, ROUTES } from "@/lib/seo";
-import { cn } from "@/lib/cn";
-import { ui } from "@/components/ui/classes";
+import { LabComparador } from "@/components/lab/LabComparador";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { buildWebPageSchema, buildWebApplicationSchema, SITE_NAME } from "@/lib/seo";
+import { getSeoBaseUrl } from "@/lib/site";
 
+type SectorConfig = {
+  title: string;
+  description: string;
+  heroTitle: string;
+  heroDescription: string;
+  tickers: string[];
+};
+
+const SECTOR_CONFIG: Record<string, SectorConfig> = {
+  bancos: {
+    title: "Compare dividendos de bancos da B3 | Simula Dividendos",
+    description:
+      "Compare quanto cada banco paga em dividendos com um aporte simulado. Veja o último pagamento, o próximo e o total dos últimos 12 meses.",
+    heroTitle: "Compare quanto cada banco paga em dividendos.",
+    heroDescription:
+      "Simule aportes e compare a renda passiva dos principais bancos da B3.",
+    tickers: ["BBAS3", "ITUB4", "ITSA4", "BBDC4", "BPAC11"],
+  },
+  energia: {
+    title: "Compare dividendos de elétricas da B3 | Simula Dividendos",
+    description:
+      "Compare quanto cada elétrica paga em dividendos com um aporte simulado. Veja o último pagamento, o próximo e o total dos últimos 12 meses.",
+    heroTitle: "Compare quanto cada elétrica paga em dividendos.",
+    heroDescription:
+      "Simule aportes e compare a renda passiva das principais empresas de energia da B3.",
+    tickers: ["EGIE3", "TAEE11", "CMIG4", "CPLE3", "VBBR3"],
+  },
+  mineracao: {
+    title: "Compare dividendos de mineradoras da B3 | Simula Dividendos",
+    description:
+      "Compare quanto cada mineradora paga em dividendos com um aporte simulado. Veja o último pagamento, o próximo e o total dos últimos 12 meses.",
+    heroTitle: "Compare quanto cada mineradora paga em dividendos.",
+    heroDescription:
+      "Simule aportes e compare a renda passiva das principais mineradoras da B3.",
+    tickers: ["VALE3", "GGBR4", "GOAU4", "CMIN3", "USIM5"],
+  },
+  consumo: {
+    title: "Compare dividendos de empresas de consumo da B3 | Simula Dividendos",
+    description:
+      "Compare quanto cada empresa de consumo paga em dividendos com um aporte simulado. Veja o último pagamento, o próximo e o total dos últimos 12 meses.",
+    heroTitle: "Compare quanto cada empresa de consumo paga em dividendos.",
+    heroDescription:
+      "Simule aportes e compare a renda passiva das principais empresas de consumo da B3.",
+    tickers: ["ABEV3", "LREN3", "ASAI3", "VIVA3", "MGLU3"],
+  },
+  industria: {
+    title: "Compare dividendos de empresas industriais da B3 | Simula Dividendos",
+    description:
+      "Compare quanto cada empresa industrial paga em dividendos com um aporte simulado. Veja o último pagamento, o próximo e o total dos últimos 12 meses.",
+    heroTitle: "Compare quanto cada empresa industrial paga em dividendos.",
+    heroDescription:
+      "Simule aportes e compare a renda passiva das principais empresas industriais da B3.",
+    tickers: ["WEGE3", "KLBN11", "POMO4"],
+  },
+  petroleo: {
+    title: "Compare dividendos de petroleiras da B3 | Simula Dividendos",
+    description:
+      "Compare quanto cada petroleira paga em dividendos com um aporte simulado. Veja o último pagamento, o próximo e o total dos últimos 12 meses.",
+    heroTitle: "Compare quanto cada petroleira paga em dividendos.",
+    heroDescription:
+      "Simule aportes e compare a renda passiva das principais empresas de petróleo e gás da B3.",
+    tickers: ["PETR4", "UGPA3", "CSAN3"],
+  },
+  servicos_financeiros: {
+    title: "Compare dividendos de serviços financeiros da B3 | Simula Dividendos",
+    description:
+      "Compare quanto cada empresa de serviços financeiros paga em dividendos com um aporte simulado. Veja o último pagamento, o próximo e o total dos últimos 12 meses.",
+    heroTitle:
+      "Compare quanto cada empresa de serviços financeiros paga em dividendos.",
+    heroDescription:
+      "Simule aportes e compare a renda passiva das principais empresas de serviços financeiros da B3.",
+    tickers: ["B3SA3", "RDOR3"],
+  },
+};
+
+const BASE_URL = getSeoBaseUrl().replace(/\/$/, "");
 
 type PageProps = { params: { slug: string } };
 
 export function generateStaticParams() {
-  return getAllSectorSlugs().map((slug) => ({ slug }));
+  return Object.keys(SECTOR_CONFIG).map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const slug = decodeURIComponent(params.slug).toLowerCase();
-  const sector = isSectorSlug(slug) ? getSector(slug) : null;
-  if (!sector) {
+  const config = SECTOR_CONFIG[slug];
+  if (!config) {
     return { title: "Setor não encontrado" };
   }
-  return buildSectorPageMetadata(sector);
+  const canonical = `${BASE_URL}/setores/${slug}`;
+  return {
+    title: config.title,
+    description: config.description,
+    robots: { index: false, follow: true },
+    alternates: { canonical },
+    openGraph: {
+      title: config.title,
+      description: config.description,
+      url: canonical,
+      siteName: SITE_NAME,
+      locale: "pt_BR",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: config.title,
+      description: config.description,
+    },
+  };
 }
 
 export default function SetorPage({ params }: PageProps) {
   const slug = decodeURIComponent(params.slug).toLowerCase();
-  if (!isSectorSlug(slug)) {
+  const config = SECTOR_CONFIG[slug];
+  if (!config) {
     notFound();
   }
 
-  const sector = getSector(slug);
-  if (!sector) {
-    notFound();
-  }
-
-  const stocks = getStocksInSector(slug);
-  const relatedArticles = getArticlesForSector(sector.slug);
+  const path = `/setores/${slug}`;
 
   return (
-    <main className="flex w-full flex-col">
-      <SiteHeader title={sector.name} description={sector.intro} />
-      <Breadcrumbs items={breadcrumbsSector(sector)} />
-
-      <div className="w-full bg-[#F3F4F6]">
-        <div className="mx-auto flex w-full max-w-[var(--page-max)] flex-col gap-[60px] px-[var(--page-gutter)] py-16 lg:py-24">
-
-          <section aria-labelledby="heading-lista-setor" className={ui.stackSection}>
-            <SectionHeading
-              id="heading-lista-setor"
-              title="Ações neste setor"
-              description="Cada card leva à página do ticker com texto de contexto e a calculadora de dividendos."
-            />
-            <SectorStockList stocks={stocks} />
-          </section>
-
-          <section aria-labelledby="heading-relevancia-dividendos">
-            <Card>
-              <h2 id="heading-relevancia-dividendos" className={cn("text-left", ui.sectionTitle)}>
-                Por que esse setor importa para quem busca dividendos
-              </h2>
-              {(Array.isArray(sector.dividendRelevance)
-                ? sector.dividendRelevance
-                : [sector.dividendRelevance]
-              ).map((p, i) => (
-                <p key={i} className={cn(ui.body, "mt-3")}>{p}</p>
-              ))}
-              <p className={cn(ui.body, "mt-4")}>
-                Quer comparar tickers? Abra cada ação acima ou volte à{" "}
-                <TextLink href="/" className="text-sm">
-                  página inicial
-                </TextLink>{" "}
-                para usar a busca livre.
-              </p>
-            </Card>
-          </section>
-
-          <RelatedArticlesSection
-            articles={relatedArticles}
-            id="heading-artigos-setor"
-            showSimuladorCta={relatedArticles.length > 0}
-          />
-
-          <StockFAQ
-            title="Perguntas frequentes sobre o setor"
-            items={sector.faqs}
-            id="heading-faq-setor"
-          />
-
-          <InternalLinksRow
-            ariaLabel="Navegação secundária"
-            links={[
-              { href: ROUTES.setores, label: "Todos os setores" },
-              { href: ROUTES.home, label: "Início" },
-              ...(stocks[0] ? [{ href: getTickerPath(stocks[0].ticker), label: `Exemplo: ${stocks[0].ticker}` }] : []),
-            ]}
-          />
-
-        </div>
-      </div>
-    </main>
+    <>
+      <JsonLd
+        data={[
+          buildWebPageSchema({ name: config.title, description: config.description, path }),
+          buildWebApplicationSchema(),
+        ]}
+      />
+      <LabComparador
+        defaultTickers={config.tickers}
+        heroTitle={config.heroTitle}
+        heroDescription={config.heroDescription}
+        sectorChips={{
+          title: "Principais setores de ações",
+          items: [
+            { label: "Bancos",               href: "/setores/bancos" },
+            { label: "Energia elétrica",     href: "/setores/energia" },
+            { label: "Mineração",            href: "/setores/mineracao" },
+            { label: "Consumo",              href: "/setores/consumo" },
+            { label: "Indústria",            href: "/setores/industria" },
+            { label: "Petróleo e gás",       href: "/setores/petroleo" },
+            { label: "Serviços financeiros", href: "/setores/servicos_financeiros" },
+          ],
+        }}
+      />
+    </>
   );
 }

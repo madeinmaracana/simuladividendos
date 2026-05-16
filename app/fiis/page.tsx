@@ -43,6 +43,16 @@ export default function FiisPage() {
         ]}
         heroTitle="Compare quanto cada Fundo imobiliário paga em dividendos."
         heroDescription="Simule aportes e compare a renda passiva dos principais fundos imobiliários da bolsa."
+        sectorChips={{
+          title: "Principais setores de FIIs",
+          items: [
+            { label: "Papel",       href: "/fiis/setores/papel" },
+            { label: "Logística",   href: "/fiis/setores/logistica" },
+            { label: "Shoppings",   href: "/fiis/setores/shoppings" },
+            { label: "Escritórios", href: "/fiis/setores/escritorios" },
+            { label: "Híbrido",     href: "/fiis/setores/hibrido" },
+          ],
+        }}
       />
     </>
   );

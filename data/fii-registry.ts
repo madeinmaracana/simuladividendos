@@ -38,6 +38,7 @@ export const buildAllFiiStaticParams = buildAllFiiSlugStaticParams;
 export const FII_DEFINITIONS: FiiSeoDefinition[] = [
   {
     ticker: "MXRF11",
+    sector: "papel",
     lastModified: "2026-03-25",
     fundName: "Maxi Renda",
     shortDescription:
@@ -61,6 +62,7 @@ export const FII_DEFINITIONS: FiiSeoDefinition[] = [
   },
   {
     ticker: "HGLG11",
+    sector: "logistica",
     lastModified: "2026-03-25",
     fundName: "CSHG Logística",
     shortDescription:
@@ -79,6 +81,7 @@ export const FII_DEFINITIONS: FiiSeoDefinition[] = [
   },
   {
     ticker: "XPLG11",
+    sector: "logistica",
     lastModified: "2026-03-25",
     fundName: "XP Log",
     shortDescription:
@@ -89,6 +92,7 @@ export const FII_DEFINITIONS: FiiSeoDefinition[] = [
   },
   {
     ticker: "KNCR11",
+    sector: "papel",
     lastModified: "2026-03-25",
     fundName: "Kinea Rendimentos Imobiliários",
     shortDescription:
@@ -99,6 +103,7 @@ export const FII_DEFINITIONS: FiiSeoDefinition[] = [
   },
   {
     ticker: "VGHF11",
+    sector: "papel",
     lastModified: "2026-03-25",
     fundName: "Valora Hedge Fund",
     shortDescription:
@@ -117,6 +122,7 @@ export const FII_DEFINITIONS: FiiSeoDefinition[] = [
   },
   {
     ticker: "KNRI11",
+    sector: "hibrido",
     lastModified: "2026-03-25",
     fundName: "Kinea Renda Imobiliária",
     shortDescription:
@@ -135,6 +141,7 @@ export const FII_DEFINITIONS: FiiSeoDefinition[] = [
   },
   {
     ticker: "XPML11",
+    sector: "shoppings",
     lastModified: "2026-03-26",
     fundName: "XP Malls",
     shortDescription:
@@ -147,6 +154,7 @@ export const FII_DEFINITIONS: FiiSeoDefinition[] = [
   },
   {
     ticker: "HGRE11",
+    sector: "escritorios",
     lastModified: "2026-03-26",
     fundName: "CSHG Real Estate",
     shortDescription:
@@ -157,6 +165,7 @@ export const FII_DEFINITIONS: FiiSeoDefinition[] = [
   },
   {
     ticker: "VISC11",
+    sector: "shoppings",
     lastModified: "2026-03-26",
     fundName: "Vinci Shopping Centers",
     shortDescription:
@@ -167,6 +176,7 @@ export const FII_DEFINITIONS: FiiSeoDefinition[] = [
   },
   {
     ticker: "BRCR11",
+    sector: "escritorios",
     lastModified: "2026-03-26",
     fundName: "BTG Pactual Corporate Office Fund",
     shortDescription:
@@ -177,6 +187,7 @@ export const FII_DEFINITIONS: FiiSeoDefinition[] = [
   },
   {
     ticker: "RBRR11",
+    sector: "papel",
     lastModified: "2026-03-26",
     fundName: "RBR High Grade",
     shortDescription:
@@ -187,6 +198,7 @@ export const FII_DEFINITIONS: FiiSeoDefinition[] = [
   },
   {
     ticker: "IRDM11",
+    sector: "papel",
     lastModified: "2026-03-26",
     fundName: "Iridium Recebíveis Imobiliários",
     shortDescription:
@@ -197,6 +209,7 @@ export const FII_DEFINITIONS: FiiSeoDefinition[] = [
   },
   {
     ticker: "HCTR11",
+    sector: "papel",
     lastModified: "2026-03-26",
     fundName: "Hectare CE",
     shortDescription:
@@ -207,6 +220,7 @@ export const FII_DEFINITIONS: FiiSeoDefinition[] = [
   },
   {
     ticker: "KNIP11",
+    sector: "papel",
     lastModified: "2026-03-26",
     fundName: "Kinea Índices de Preços",
     shortDescription:
@@ -217,6 +231,7 @@ export const FII_DEFINITIONS: FiiSeoDefinition[] = [
   },
   {
     ticker: "CPTS11",
+    sector: "papel",
     lastModified: "2026-03-26",
     fundName: "Capitania Securities II",
     shortDescription:
@@ -227,6 +242,7 @@ export const FII_DEFINITIONS: FiiSeoDefinition[] = [
   },
   {
     ticker: "VGIR11",
+    sector: "papel",
     lastModified: "2026-03-26",
     fundName: "Valora RE III",
     shortDescription:

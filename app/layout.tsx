@@ -37,9 +37,9 @@ const merriweather = Merriweather({
 });
 
 const seoBase = getSeoBaseUrl();
-const defaultTitle = "Simula Dividendos | Simulador de renda passiva";
+const defaultTitle = "Simula Dividendos | Simulador de dividendos gratuito";
 const defaultDescription =
-  "Simule seus dividendos e descubra quanto você pode ganhar com investimentos em ações e renda passiva.";
+  "Simule dividendos de ações e FIIs da B3. Compare renda passiva, dividend yield e rendimentos mensais com um simulador de dividendos gratuito.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(seoBase),
@@ -57,8 +57,24 @@ export const metadata: Metadata = {
     shortcut: "/favicon.ico",
     apple: "/apple-icon",
   },
-  keywords: ["dividendos", "ações", "B3", "simulador", "renda passiva", "proventos", "investimentos", "Brasil"],
-  robots: { index: false, follow: false },
+  keywords: [
+    "simulador de dividendos",
+    "dividendos",
+    "ações",
+    "FIIs",
+    "B3",
+    "renda passiva",
+    "dividend yield",
+    "proventos",
+    "fundos imobiliários",
+    "investimentos",
+  ],
+  /*
+   * Padrão global: permitir indexação.
+   * Páginas específicas sobrescrevem com robots: { index: false } quando necessário
+   * (ex.: variantes de URL de ticker que são não-canônicas).
+   */
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     title: defaultTitle,
     description: defaultDescription,
@@ -74,6 +90,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="pt-BR" className={`${inter.variable} ${merriweather.variable}`} suppressHydrationWarning>
       <head>
+        {/* preconnect reduz latência no carregamento do CSS de ícones */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block"

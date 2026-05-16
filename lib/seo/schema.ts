@@ -85,6 +85,45 @@ export function buildWebPageSchema({ name, description, path }: WebPageSchemaInp
   };
 }
 
+/**
+ * Organization schema — identidade da empresa para o Google Knowledge Graph.
+ * Inclui logo para elegibilidade ao painel de conhecimento.
+ */
+export function buildOrganizationSchema() {
+  const base = getSeoBaseUrl().replace(/\/$/, "");
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Simula Dividendos",
+    url: base,
+    logo: `${base}/favicon-64x64.png`,
+    description:
+      "Simulador gratuito de dividendos da B3. Compare renda passiva de ações e fundos imobiliários brasileiros.",
+    inLanguage: "pt-BR",
+  };
+}
+
+/**
+ * WebSite schema — habilita elegibilidade para Sitelinks Search Box no Google.
+ */
+export function buildWebSiteSchema() {
+  const base = getSeoBaseUrl().replace(/\/$/, "");
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Simula Dividendos",
+    url: base,
+    description:
+      "Compare dividendos de ações e FIIs da B3. Simule renda passiva com dividend yield e rendimentos mensais.",
+    inLanguage: "pt-BR",
+    publisher: {
+      "@type": "Organization",
+      name: "Simula Dividendos",
+      url: base,
+    },
+  };
+}
+
 /** WebApplication schema — indica ao Google que o site é uma ferramenta financeira interativa. */
 export function buildWebApplicationSchema() {
   const base = getSeoBaseUrl();

@@ -7,20 +7,25 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: "*",
-        allow: ["/", "/fiis/"],
+        /*
+         * Permitimos o crawl de todas as rotas públicas.
+         * A indexação granular (quais URLs entram no índice) é controlada
+         * pelo `robots` metadata de cada página — não pelo robots.txt.
+         */
+        allow: "/",
         disallow: [
-          "/acoes/",
-          "/artigos/",
-          "/calculadora-renda-passiva/",
-          "/comparar/",
-          "/lab/",
-          "/melhores-acoes/",
-          "/melhores-acoes-dividendos/",
-          "/melhores-fiis/",
-          "/setores/",
+          "/api/",   // rotas de API internas
+          "/lab/",   // redireciona para /; sem conteúdo próprio
         ],
       },
     ],
-    sitemap: `${base}/sitemap.xml`,
+    sitemap: [
+      `${base}/sitemap.xml`,
+      `${base}/acoes/sitemap.xml`,
+      `${base}/fiis/sitemap.xml`,
+      `${base}/artigos/sitemap.xml`,
+      `${base}/comparar/sitemap.xml`,
+      `${base}/setores/sitemap.xml`,
+    ],
   };
 }

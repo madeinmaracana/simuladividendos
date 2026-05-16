@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { LabComparador } from "@/components/lab/LabComparador";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { buildWebPageSchema, buildWebApplicationSchema, SITE_NAME } from "@/lib/seo";
+import { buildWebPageSchema, buildWebApplicationSchema, buildOrganizationSchema, buildWebSiteSchema, SITE_NAME } from "@/lib/seo";
 import { getSeoBaseUrl } from "@/lib/site";
 
 /* ── SEO ──────────────────────────────────────────────────── */
@@ -38,12 +38,10 @@ export default function HomePage() {
     <>
       <JsonLd
         data={[
-          buildWebPageSchema({
-            name: TITLE,
-            description: DESCRIPTION,
-            path: "/",
-          }),
+          buildWebPageSchema({ name: TITLE, description: DESCRIPTION, path: "/" }),
           buildWebApplicationSchema(),
+          buildOrganizationSchema(),
+          buildWebSiteSchema(),
         ]}
       />
       <LabComparador />

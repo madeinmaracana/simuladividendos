@@ -5,6 +5,8 @@ import { useTickerSuggestions } from "@/hooks/useTickerSuggestions";
 import { TickerLogo } from "@/components/ui/TickerLogo";
 import { LabTickerRow, LAB_COL_WIDTHS } from "./LabTickerRow";
 import { SiteNav } from "./SiteNav";
+import { SiteFooter } from "./SiteFooter";
+import { SectorChipsSection } from "./SectorChipsSection";
 
 /* ── helpers ──────────────────────────────────────────────── */
 
@@ -153,16 +155,23 @@ function AddTickerRow({ onAdd, onCancel }: AddTickerRowProps) {
 
 /* ── LabComparador ────────────────────────────────────────── */
 
+interface SectorChip {
+  label: string;
+  href: string;
+}
+
 interface LabComparadorProps {
   defaultTickers?: string[];
   heroTitle?: string;
   heroDescription?: string;
+  sectorChips?: { title: string; items: SectorChip[] };
 }
 
 export function LabComparador({
   defaultTickers = ["BBAS3", "ITUB4", "VALE3", "EGIE3"],
   heroTitle = "Compare quanto cada ativo paga em dividendos.",
   heroDescription = "Simule aportes e compare a renda passiva dos principais ativos da bolsa.",
+  sectorChips,
 }: LabComparadorProps = {}) {
   const [investment, setInvestment] = useState(2000);
   const [editingAmount, setEditingAmount] = useState(false);
@@ -213,11 +222,20 @@ export function LabComparador({
   /* ── render ── */
 
   return (
-    <div className="min-h-screen bg-[#F3F4F6]">
-      <div className="mx-auto max-w-[969px] px-4 py-8 flex flex-col" style={{ gap: 80 }}>
+    <div className="flex flex-col min-h-screen bg-[#F3F4F6]">
+      <div className="mx-auto w-full max-w-[969px] px-4 pt-8 flex flex-col" style={{ gap: 80, paddingBottom: 320 }}>
 
         {/* ── Header / Nav ── */}
-        <SiteNav />
+        {/*
+         * display:contents faz o <header> não criar box próprio,
+         * preservando o gap do flex-col pai sem alterar o layout visual.
+         */}
+        <header style={{ display: "contents" }}>
+          <SiteNav />
+        </header>
+
+        {/* ── Conteúdo principal ── */}
+        <main style={{ display: "contents" }}>
 
         {/* ── Hero ── */}
         <div className="flex flex-col w-full" style={{ gap: 16 }}>
@@ -442,7 +460,16 @@ export function LabComparador({
           </div>
 
         </div>
+
+        {/* Sector chips navigation */}
+        {sectorChips && (
+          <SectorChipsSection title={sectorChips.title} items={sectorChips.items} />
+        )}
+
+        </main>{/* fim do <main style={{ display: "contents" }}> */}
+
       </div>
+      <SiteFooter />
     </div>
   );
 }
