@@ -1,9 +1,16 @@
 "use client";
 
 import { useMemo } from "react";
+import Link from "next/link";
 import { useDividendSimulator } from "@/components/simulator/useDividendSimulator";
 import { formatBRL } from "@/lib/format";
 import { TickerLogo } from "@/components/ui/TickerLogo";
+import { isProgrammaticFiiTicker } from "@/data/fii-registry";
+
+function assetHref(ticker: string): string {
+  const t = ticker.trim().toUpperCase();
+  return isProgrammaticFiiTicker(t) ? `/fiis/${t}` : `/acoes/${t}`;
+}
 
 interface LabTickerRowProps {
   ticker: string;
@@ -11,6 +18,8 @@ interface LabTickerRowProps {
   onRemove: () => void;
   isFirst?: boolean;
   isLast?: boolean;
+  /** Esconde o botão de fechar — usado na página de ativo individual para o ticker fixo. */
+  hideRemove?: boolean;
 }
 
 /* ── border-radius por posição ────────────────────────────── */
@@ -34,7 +43,7 @@ function stickyNameRadius(isFirst?: boolean, isLast?: boolean): React.CSSPropert
 function NaoAnunciado() {
   return (
     <span
-      className="text-[#808080] group-hover:text-white transition-colors"
+      className="text-[var(--c-muted)] group-hover:text-white transition-colors"
       style={{ fontSize: 10, fontWeight: 400, lineHeight: 1, whiteSpace: "nowrap" }}
     >
       Não anunciado
@@ -56,24 +65,24 @@ export const LAB_COL_WIDTHS = [116, 92, 120, 120, 80, 128, 88] as const;
 function ShimmerRow({ isFirst, isLast }: { isFirst?: boolean; isLast?: boolean }) {
   return (
     <div
-      className="flex items-center w-full bg-white"
+      className="flex items-center w-full bg-[var(--c-surface)]"
       style={{ minHeight: 56, borderRadius: rowRadius(isFirst, isLast) }}
     >
       {/* Nome — sticky, mesmo flex-1 do row real */}
       <div
-        className="sticky left-0 z-[1] bg-white flex items-center gap-3 px-4 flex-1"
+        className="sticky left-0 z-[1] bg-[var(--c-surface)] flex items-center gap-3 px-4 flex-1"
         style={{ minHeight: 56, ...stickyNameRadius(isFirst, isLast) }}
       >
-        <span className="inline-block h-6 w-6 animate-pulse rounded-full bg-[#F3F4F6]" />
-        <span className="inline-block h-4 w-16 animate-pulse rounded bg-[#F3F4F6]" />
+        <span className="inline-block h-6 w-6 animate-pulse rounded-full bg-[var(--c-bg)]" />
+        <span className="inline-block h-4 w-16 animate-pulse rounded bg-[var(--c-bg)]" />
       </div>
       {LAB_COL_WIDTHS.map((w, i) => (
         <div
           key={i}
-          className="zero-slashed flex items-center px-4 border-l border-[#E5E7EC] shrink-0"
+          className="zero-slashed flex items-center px-4 border-l border-[var(--c-border)] shrink-0"
           style={{ width: w, minHeight: 56 }}
         >
-          <span className="inline-block h-4 w-12 animate-pulse rounded bg-[#F3F4F6]" />
+          <span className="inline-block h-4 w-12 animate-pulse rounded bg-[var(--c-bg)]" />
         </div>
       ))}
       {/* X placeholder mobile */}
@@ -112,7 +121,7 @@ function detectFrequency(dividends: { paymentDate?: string | null }[]): string |
 
 /* ── LabTickerRow ─────────────────────────────────────────── */
 
-export function LabTickerRow({ ticker, investment, onRemove, isFirst, isLast }: LabTickerRowProps) {
+export function LabTickerRow({ ticker, investment, onRemove, isFirst, isLast, hideRemove }: LabTickerRowProps) {
   const { stock, loading, error, currency } = useDividendSimulator(
     ticker,
     null,
@@ -175,20 +184,21 @@ export function LabTickerRow({ ticker, investment, onRemove, isFirst, isLast }: 
 
   if (loading) return <ShimmerRow isFirst={isFirst} isLast={isLast} />;
 
-  const cellCls = "text-black group-hover:text-white transition-colors";
+  const cellCls = "text-[var(--c-text)] group-hover:text-white transition-colors";
   const cellSty = { fontSize: 16, fontWeight: 400 } as const;
   const numCls = `numeric-slashed ${cellCls}`; // valores monetários e numéricos
   const divCls =
-    "flex items-center px-4 border-l border-[#E5E7EC] group-hover:border-transparent transition-colors shrink-0";
+    "flex items-center px-4 border-l border-[var(--c-border)] group-hover:border-transparent transition-colors shrink-0";
 
   return (
     <div
-      className="relative flex items-center w-full bg-white group hover:bg-[#989FAC] transition-colors"
+      className="relative flex items-center w-full bg-[var(--c-surface)] group hover:bg-[var(--c-row-hover)] transition-colors"
       style={{ minHeight: 56, borderRadius: rowRadius(isFirst, isLast) }}
     >
       {/* Nome da Ação — coluna travada (sticky) */}
-      <div
-        className="sticky left-0 z-[1] flex items-center gap-3 px-4 flex-1 bg-white group-hover:bg-[#989FAC] transition-colors"
+      <Link
+        href={assetHref(ticker)}
+        className="sticky left-0 z-[1] flex items-center gap-3 px-4 flex-1 bg-[var(--c-surface)] group-hover:bg-[var(--c-row-hover)] transition-colors no-underline"
         style={{ minHeight: 56, ...stickyNameRadius(isFirst, isLast) }}
       >
         <TickerLogo ticker={ticker} size={24} theme="light" />
@@ -201,7 +211,7 @@ export function LabTickerRow({ ticker, investment, onRemove, isFirst, isLast }: 
         {error && (
           <span className="text-[10px] text-red-400 ml-1" title={error}>Erro</span>
         )}
-      </div>
+      </Link>
 
       {/* Preço da cota */}
       <div className={divCls} style={{ width: LAB_COL_WIDTHS[0], minHeight: 56 }}>
@@ -235,7 +245,7 @@ export function LabTickerRow({ ticker, investment, onRemove, isFirst, isLast }: 
       <div className={divCls} style={{ width: LAB_COL_WIDTHS[4], minHeight: 56 }}>
         {frequency ? (
           <span
-            className="text-[#808080] group-hover:text-white transition-colors"
+            className="text-[var(--c-muted)] group-hover:text-white transition-colors"
             style={{ fontSize: 10, fontWeight: 400, lineHeight: 1, whiteSpace: "nowrap" }}
           >
             {frequency}
@@ -262,51 +272,60 @@ export function LabTickerRow({ ticker, investment, onRemove, isFirst, isLast }: 
       {/*
        * Mobile: X sempre visível no fim da linha, só ícone preto.
        * sm:hidden → escondido no desktop (usa o botão absoluto abaixo).
+       * hideRemove → oculto na página de ativo individual para o ticker fixo.
        */}
-      <div
-        className="sm:hidden flex items-center justify-center border-l border-[#E5E7EC] group-hover:border-transparent transition-colors shrink-0"
-        style={{ width: 56, minHeight: 56 }}
-      >
+      {hideRemove ? (
+        /* Placeholder para manter a largura da coluna no mobile */
+        <div className="sm:hidden shrink-0" style={{ width: 56, minHeight: 56 }} />
+      ) : (
+        <div
+          className="sm:hidden flex items-center justify-center border-l border-[var(--c-border)] group-hover:border-transparent transition-colors shrink-0"
+          style={{ width: 56, minHeight: 56 }}
+        >
+          <button
+            type="button"
+            onClick={onRemove}
+            aria-label={`Remover ${ticker}`}
+            className="flex items-center justify-center bg-transparent border-none cursor-pointer p-1"
+          >
+            <span
+              className="material-symbols-outlined leading-none text-[var(--c-text)] group-hover:text-white transition-colors"
+              style={{ fontSize: 20, fontVariationSettings: "'opsz' 20, 'wght' 400, 'FILL' 0, 'GRAD' 0" }}
+            >
+              close
+            </span>
+          </button>
+        </div>
+      )}
+
+      {/*
+       * Desktop: X fora da tabela (right:-48px), visível no hover.
+       * hideRemove → não renderizado para o ticker fixo.
+       */}
+      {!hideRemove && (
         <button
           type="button"
           onClick={onRemove}
           aria-label={`Remover ${ticker}`}
-          className="flex items-center justify-center bg-transparent border-none cursor-pointer p-1"
+          className="hidden sm:flex absolute opacity-0 group-hover:opacity-100 transition-opacity items-center justify-center border-none cursor-pointer p-0"
+          style={{
+            right: -48,
+            top: "50%",
+            transform: "translateY(-50%)",
+            width: 40,
+            height: 40,
+            borderRadius: 20,
+            background: "var(--c-row-hover)",
+          }}
         >
           <span
-            className="material-symbols-outlined leading-none text-black group-hover:text-white transition-colors"
+            className="material-symbols-outlined leading-none text-white"
             style={{ fontSize: 20, fontVariationSettings: "'opsz' 20, 'wght' 400, 'FILL' 0, 'GRAD' 0" }}
           >
             close
           </span>
         </button>
-      </div>
-
-      {/*
-       * Desktop: X fora da tabela (right:-48px), visível no hover.
-       */}
-      <button
-        type="button"
-        onClick={onRemove}
-        aria-label={`Remover ${ticker}`}
-        className="hidden sm:flex absolute opacity-0 group-hover:opacity-100 transition-opacity items-center justify-center border-none cursor-pointer p-0"
-        style={{
-          right: -48,
-          top: "50%",
-          transform: "translateY(-50%)",
-          width: 40,
-          height: 40,
-          borderRadius: 20,
-          background: "#989FAC",
-        }}
-      >
-        <span
-          className="material-symbols-outlined leading-none text-white"
-          style={{ fontSize: 20, fontVariationSettings: "'opsz' 20, 'wght' 400, 'FILL' 0, 'GRAD' 0" }}
-        >
-          close
-        </span>
-      </button>
+      )}
     </div>
   );
 }

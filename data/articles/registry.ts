@@ -3,6 +3,7 @@ import type { ArticleRecord } from "./types";
 export const ARTICLES: ArticleRecord[] = [
   {
     slug: "o-que-e-dividend-yield",
+    coverImage: "/articles/o-que-e-dividend-yield.svg",
     lastModified: "2026-03-25",
     title: "O que é dividend yield? Entenda como interpretar dividendos",
     description:
@@ -75,6 +76,7 @@ export const ARTICLES: ArticleRecord[] = [
   },
   {
     slug: "como-viver-de-dividendos",
+    coverImage: "/articles/como-viver-de-dividendos.svg",
     lastModified: "2026-03-25",
     title: "Como viver de dividendos: passo a passo para planejar renda passiva",
     description:
@@ -85,21 +87,21 @@ export const ARTICLES: ArticleRecord[] = [
     relatedSectors: ["energia", "mineracao"],
     sections: [
       {
-        heading: "1) Defina o objetivo com clareza",
+        heading: "Defina o objetivo com clareza",
         paragraphs: [
           "Antes de buscar “renda mensal”, defina quanto você precisa e em que horizonte. Renda passiva costuma ser construída aos poucos, e dividendos não seguem calendário imutável para todos os papéis.",
           "Separe o que é necessário gastar do que pode ser reinvestido para aumentar o número de cotas ao longo do tempo.",
         ],
       },
       {
-        heading: "2) Entenda o que é recorrência (e o que não é)",
+        heading: "O que é recorrência (e o que não é)",
         paragraphs: [
           "Dividendos dependem de lucros, caixa, decisões corporativas e, em alguns setores, do ciclo do negócio. Por isso, a recorrência precisa ser avaliada com histórico e com cautela.",
           "Ferramentas como o Simula Dividendos ajudam a visualizar estimativas educacionais e comparar cenários com a sua quantidade de ações.",
         ],
       },
       {
-        heading: "3) Monte um plano de acompanhamento",
+        heading: "Monte um plano de acompanhamento",
         paragraphs: [
           "Acompanhar não significa reagir a cada manchete. Significa revisar teses, resultados e comunicação da companhia, além de acompanhar o comportamento dos proventos ao longo do tempo.",
         ],
@@ -125,6 +127,7 @@ export const ARTICLES: ArticleRecord[] = [
   },
   {
     slug: "quanto-investir-para-receber-1000-por-mes",
+    coverImage: "/articles/quanto-investir-para-receber-1000-por-mes.svg",
     lastModified: "2026-03-25",
     title: "Quanto investir para receber R$ 1.000/mês com dividendos (estimativas)",
     description:
@@ -178,6 +181,7 @@ export const ARTICLES: ArticleRecord[] = [
   },
   {
     slug: "quanto-investir-para-receber-1000-reais-por-mes",
+    coverImage: "/articles/quanto-investir-para-receber-1000-reais-por-mes.svg",
     lastModified: "2026-03-25",
     title: "Quanto investir para receber R$ 1.000 reais por mês? (sem promessas)",
     description:
@@ -249,6 +253,7 @@ export const ARTICLES: ArticleRecord[] = [
   },
   {
     slug: "fiis-que-pagam-dividendos-todo-mes",
+    coverImage: "/articles/fiis-que-pagam-dividendos-todo-mes.svg",
     lastModified: "2026-03-25",
     title: "FIIs que pagam dividendos todo mês? Rendimento e calendário",
     description:
@@ -314,6 +319,7 @@ export const ARTICLES: ArticleRecord[] = [
   },
   {
     slug: "melhores-acoes-de-dividendos",
+    coverImage: "/articles/melhores-acoes-de-dividendos.svg",
     lastModified: "2026-03-25",
     title: "Como avaliar “ações de dividendos” na prática (sem atalhos)",
     description:
@@ -365,6 +371,7 @@ export const ARTICLES: ArticleRecord[] = [
   },
   {
     slug: "como-calcular-renda-passiva",
+    coverImage: "/articles/como-calcular-renda-passiva.svg",
     lastModified: "2026-03-25",
     title: "Como calcular renda passiva por dividendos (com simulações)",
     description:
@@ -380,14 +387,14 @@ export const ARTICLES: ArticleRecord[] = [
     ],
     sections: [
       {
-        heading: "1) Identifique o que você quer calcular",
+        heading: "Identifique o que você quer calcular",
         paragraphs: [
           "Renda passiva por dividendos não é só “quanto recebo por mês”. Também é entender a frequência, a distribuição ao longo do tempo e o quanto do seu patrimônio está ligado a esse fluxo.",
           "Use o Simula Dividendos para simular com seu número de cotas e observar o impacto educacional do histórico.",
         ],
       },
       {
-        heading: "2) Use o histórico como referência",
+        heading: "Use o histórico como referência",
         paragraphs: [
           "A leitura do histórico reduz o risco de depender de um único período. Ainda assim, o futuro pode ser diferente, então trate como estimativa.",
         ],
@@ -408,7 +415,7 @@ export const ARTICLES: ArticleRecord[] = [
         ],
       },
       {
-        heading: "3) Estruture o acompanhamento",
+        heading: "Estruture o acompanhamento",
         paragraphs: [
           "Revise os dados, observe mudanças na política de remuneração e mantenha consistência no seu plano de aportes. Isso melhora sua leitura de cenários.",
         ],
@@ -434,6 +441,7 @@ export const ARTICLES: ArticleRecord[] = [
   },
   {
     slug: "quanto-investir-para-viver-de-dividendos",
+    coverImage: "/articles/quanto-investir-para-viver-de-dividendos.svg",
     lastModified: "2026-03-25",
     title: "Quanto investir para viver de dividendos (sem promessas irreais)",
     description:
@@ -513,6 +521,7 @@ export const ARTICLES: ArticleRecord[] = [
   },
   {
     slug: "acoes-que-pagam-dividendos-todo-mes",
+    coverImage: "/articles/acoes-que-pagam-dividendos-todo-mes.svg",
     lastModified: "2026-03-25",
     title: "Ações que pagam dividendos todo mês: o que é mito e o que é calendário",
     description:
@@ -586,6 +595,7 @@ export const ARTICLES: ArticleRecord[] = [
   },
   {
     slug: "melhores-acoes-de-dividendos-brasil",
+    coverImage: "/articles/melhores-acoes-de-dividendos-brasil.svg",
     lastModified: "2026-03-25",
     title: "Melhores ações de dividendos no Brasil: como pensar sem lista enganosa",
     description:
@@ -659,6 +669,7 @@ export const ARTICLES: ArticleRecord[] = [
   },
   {
     slug: "melhores-fiis-para-renda-mensal",
+    coverImage: "/articles/melhores-fiis-para-renda-mensal.svg",
     lastModified: "2026-03-25",
     title: "Melhores FIIs para renda mensal: como comparar sem lista enganosa",
     description:
@@ -750,6 +761,7 @@ export const ARTICLES: ArticleRecord[] = [
 
   {
     slug: "bbas3-dividendos",
+    coverImage: "/articles/bbas3-dividendos.svg",
     lastModified: "2026-05-09",
     title: "BBAS3 dividendos: histórico do Banco do Brasil e como simular",
     description:
@@ -809,6 +821,7 @@ export const ARTICLES: ArticleRecord[] = [
 
   {
     slug: "itub4-dividendos",
+    coverImage: "/articles/itub4-dividendos.svg",
     lastModified: "2026-05-09",
     title: "ITUB4 dividendos: histórico do Itaú Unibanco e como simular",
     description:
@@ -868,6 +881,7 @@ export const ARTICLES: ArticleRecord[] = [
 
   {
     slug: "petr4-dividendos",
+    coverImage: "/articles/petr4-dividendos.svg",
     lastModified: "2026-05-09",
     title: "PETR4 dividendos: histórico da Petrobras e como simular",
     description:
@@ -927,6 +941,7 @@ export const ARTICLES: ArticleRecord[] = [
 
   {
     slug: "vale3-dividendos",
+    coverImage: "/articles/vale3-dividendos.svg",
     lastModified: "2026-05-09",
     title: "VALE3 dividendos: histórico da Vale e como simular",
     description:
@@ -986,6 +1001,7 @@ export const ARTICLES: ArticleRecord[] = [
 
   {
     slug: "taee11-dividendos",
+    coverImage: "/articles/taee11-dividendos.svg",
     lastModified: "2026-05-09",
     title: "TAEE11 dividendos: histórico da Taesa e como simular",
     description:
@@ -1045,6 +1061,7 @@ export const ARTICLES: ArticleRecord[] = [
 
   {
     slug: "egie3-dividendos",
+    coverImage: "/articles/egie3-dividendos.svg",
     lastModified: "2026-05-09",
     title: "EGIE3 dividendos: histórico da Engie Brasil e como simular",
     description:
@@ -1104,6 +1121,7 @@ export const ARTICLES: ArticleRecord[] = [
 
   {
     slug: "b3sa3-dividendos",
+    coverImage: "/articles/b3sa3-dividendos.svg",
     lastModified: "2026-05-09",
     title: "B3SA3 dividendos: histórico da B3 e como simular",
     description:
@@ -1163,6 +1181,7 @@ export const ARTICLES: ArticleRecord[] = [
 
   {
     slug: "wege3-dividendos",
+    coverImage: "/articles/wege3-dividendos.svg",
     lastModified: "2026-05-09",
     title: "WEGE3 dividendos: histórico da WEG e como simular",
     description:
@@ -1222,6 +1241,7 @@ export const ARTICLES: ArticleRecord[] = [
 
   {
     slug: "abev3-dividendos",
+    coverImage: "/articles/abev3-dividendos.svg",
     lastModified: "2026-05-09",
     title: "ABEV3 dividendos: histórico da Ambev e como simular",
     description:
@@ -1281,6 +1301,7 @@ export const ARTICLES: ArticleRecord[] = [
 
   {
     slug: "klbn11-dividendos",
+    coverImage: "/articles/klbn11-dividendos.svg",
     lastModified: "2026-05-09",
     title: "KLBN11 dividendos: histórico da Klabin e como simular",
     description:

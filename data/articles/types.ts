@@ -29,4 +29,6 @@ export type ArticleRecord = {
   relatedArticleSlugs?: string[];
   /** ISO YYYY-MM-DD para `<lastmod>` no sitemap. */
   lastModified?: string;
+  /** Caminho para imagem de capa SVG, ex.: `/articles/[slug].svg` */
+  coverImage?: string;
 };

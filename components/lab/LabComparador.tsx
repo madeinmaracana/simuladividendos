@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import { useTickerSuggestions } from "@/hooks/useTickerSuggestions";
 import { TickerLogo } from "@/components/ui/TickerLogo";
 import { LabTickerRow, LAB_COL_WIDTHS } from "./LabTickerRow";
@@ -27,7 +28,7 @@ function parseAmountInput(raw: string): number {
 
 const COL_LABEL_STYLE: React.CSSProperties = {
   fontSize: 10,
-  color: "#808080",
+  color: "var(--c-muted)",
   fontWeight: 400,
 };
 
@@ -77,7 +78,7 @@ function AddTickerRow({ onAdd, onCancel }: AddTickerRowProps) {
   return (
     <div
       ref={wrapRef}
-      className="w-full bg-white overflow-hidden"
+      className="w-full bg-[var(--c-surface)] overflow-hidden"
       style={{ borderRadius: 12, marginTop: 1 }}
     >
       {/* Linha de busca */}
@@ -87,7 +88,7 @@ function AddTickerRow({ onAdd, onCancel }: AddTickerRowProps) {
       >
         <span
           className="material-symbols-outlined shrink-0 leading-none"
-          style={{ fontSize: 18, color: "#808080", fontVariationSettings: "'opsz' 20, 'wght' 400, 'FILL' 0, 'GRAD' 0" }}
+          style={{ fontSize: 18, color: "var(--c-muted)", fontVariationSettings: "'opsz' 20, 'wght' 400, 'FILL' 0, 'GRAD' 0" }}
         >
           search
         </span>
@@ -99,14 +100,14 @@ function AddTickerRow({ onAdd, onCancel }: AddTickerRowProps) {
           onChange={(e) => setQuery(e.target.value)}
           onKeyDown={handleKeyDownExtended}
           placeholder="Buscar ticker… (ex: PETR4)"
-          className="flex-1 bg-transparent text-[16px] font-normal text-[#111827] placeholder:text-[#808080] outline-none"
+          className="flex-1 bg-transparent text-[16px] font-normal text-[var(--c-text)] placeholder:text-[var(--c-muted)] outline-none"
         />
 
         <button
           type="button"
           onClick={onCancel}
           aria-label="Fechar busca"
-          className="flex shrink-0 h-6 w-6 items-center justify-center rounded-full text-[#808080] hover:text-[#111827] bg-transparent border-none cursor-pointer p-0 transition-colors"
+          className="flex shrink-0 h-6 w-6 items-center justify-center rounded-full text-[var(--c-muted)] hover:text-[var(--c-text)] bg-transparent border-none cursor-pointer p-0 transition-colors"
         >
           <span
             className="material-symbols-outlined leading-none"
@@ -119,7 +120,7 @@ function AddTickerRow({ onAdd, onCancel }: AddTickerRowProps) {
 
       {/* Sugestões inline */}
       {isOpen && suggestions.length > 0 && (
-        <ul className="m-0 p-0 list-none" style={{ borderTop: "1px solid #E5E7EC" }}>
+        <ul className="m-0 p-0 list-none" style={{ borderTop: "1px solid var(--c-border)" }}>
           {suggestions.map((s, i) => (
             <li
               key={s.symbol}
@@ -128,7 +129,7 @@ function AddTickerRow({ onAdd, onCancel }: AddTickerRowProps) {
                 height: 56,
                 padding: "0 16px",
                 gap: 12,
-                background: i === highlight ? "#E5E7EC" : "#FFF",
+                background: i === highlight ? "var(--c-border)" : "var(--c-surface)",
               }}
               onMouseEnter={() => setHighlight(i)}
               onMouseDown={(e) => e.preventDefault()}
@@ -136,11 +137,11 @@ function AddTickerRow({ onAdd, onCancel }: AddTickerRowProps) {
             >
               <TickerLogo ticker={s.symbol} size={24} theme="light" />
               <div className="flex flex-col min-w-0">
-                <span style={{ fontSize: 16, fontWeight: 400, color: "#111827", lineHeight: 1.2 }}>
+                <span style={{ fontSize: 16, fontWeight: 400, color: "var(--c-text)", lineHeight: 1.2 }}>
                   {s.symbol}
                 </span>
                 {s.name && (
-                  <span className="truncate" style={{ fontSize: 12, fontWeight: 400, color: "#808080", lineHeight: 1.2 }}>
+                  <span className="truncate" style={{ fontSize: 12, fontWeight: 400, color: "var(--c-muted)", lineHeight: 1.2 }}>
                     {s.name}
                   </span>
                 )}
@@ -160,11 +161,20 @@ interface SectorChip {
   href: string;
 }
 
+interface AssetIdentity {
+  ticker: string;
+  companyName: string;
+  sectorLabel: string;
+  sectorHref: string;
+}
+
 interface LabComparadorProps {
   defaultTickers?: string[];
   heroTitle?: string;
   heroDescription?: string;
   sectorChips?: { title: string; items: SectorChip[] };
+  /** Linha de identidade exibida acima do H1 nas páginas de ativo individual. */
+  assetIdentity?: AssetIdentity;
 }
 
 export function LabComparador({
@@ -172,6 +182,7 @@ export function LabComparador({
   heroTitle = "Compare quanto cada ativo paga em dividendos.",
   heroDescription = "Simule aportes e compare a renda passiva dos principais ativos da bolsa.",
   sectorChips,
+  assetIdentity,
 }: LabComparadorProps = {}) {
   const [investment, setInvestment] = useState(2000);
   const [editingAmount, setEditingAmount] = useState(false);
@@ -222,7 +233,7 @@ export function LabComparador({
   /* ── render ── */
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#F3F4F6]">
+    <div className="flex flex-col min-h-screen bg-[var(--c-bg)]">
       <div className="mx-auto w-full max-w-[969px] px-4 pt-8 flex flex-col" style={{ gap: 80, paddingBottom: 320 }}>
 
         {/* ── Header / Nav ── */}
@@ -239,13 +250,40 @@ export function LabComparador({
 
         {/* ── Hero ── */}
         <div className="flex flex-col w-full" style={{ gap: 16 }}>
+
+          {/* Linha de identidade do ativo — visível só nas páginas individuais */}
+          {assetIdentity && (
+            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+              <TickerLogo ticker={assetIdentity.ticker} size={24} />
+              <span
+                style={{
+                  fontSize: 16,
+                  fontWeight: 400,
+                  color: "var(--c-text)",
+                  lineHeight: "normal",
+                  letterSpacing: "-0.32px",
+                }}
+              >
+                {assetIdentity.companyName} ({assetIdentity.ticker})
+                <span style={{ color: "var(--c-muted)" }}>{" "}— </span>
+                <Link
+                  href={assetIdentity.sectorHref}
+                  className="no-underline hover:underline"
+                  style={{ color: "var(--c-muted)" }}
+                >
+                  {assetIdentity.sectorLabel}
+                </Link>
+              </span>
+            </div>
+          )}
+
           <h1
             className="text-[28px] sm:text-[40px] lg:text-[52px]"
             style={{
               margin: 0,
               fontFamily: "var(--font-inter, Inter), sans-serif",
               fontWeight: 400,
-              color: "#000",
+              color: "var(--c-text)",
               lineHeight: "normal",
               letterSpacing: "-1.04px",
             }}
@@ -258,7 +296,7 @@ export function LabComparador({
               margin: 0,
               fontFamily: "var(--font-inter, Inter), sans-serif",
               fontWeight: 400,
-              color: "#808080",
+              color: "var(--c-muted)",
               lineHeight: "normal",
               letterSpacing: "-0.48px",
             }}
@@ -272,13 +310,13 @@ export function LabComparador({
 
           {/* Investment section */}
           <div className="flex flex-col w-full" style={{ gap: 8 }}>
-            <p style={{ fontSize: 16, color: "#000", fontWeight: 400, margin: 0 }}>
+            <p style={{ fontSize: 16, color: "var(--c-text)", fontWeight: 400, margin: 0 }}>
               Valor do investimento
             </p>
 
             {/* Estrutura única — sem troca de layout */}
             <div className="flex items-baseline gap-3" style={{ width: editingAmount ? "100%" : undefined }}>
-              <span className="lab-currency" style={{ fontWeight: 200, lineHeight: "normal", color: "#00C66E" }}>
+              <span className="lab-currency" style={{ fontWeight: 200, lineHeight: "normal", color: "var(--c-green)" }}>
                 R$
               </span>
 
@@ -289,7 +327,7 @@ export function LabComparador({
                   flex: editingAmount ? 1 : undefined,
                   position: "relative",
                   borderRadius: 16,
-                  background: editingAmount ? "#E5E7EC" : "transparent",
+                  background: editingAmount ? "var(--c-border)" : "transparent",
                   padding: editingAmount ? "0 16px" : "0",
                 }}
               >
@@ -330,7 +368,7 @@ export function LabComparador({
                     type="button"
                     onClick={startEditing}
                     className="lab-amount numeric-slashed underline cursor-text bg-transparent outline-none border-none p-0 text-left"
-                    style={{ gridArea: "1/1", width: "100%", fontWeight: 600, lineHeight: "normal", color: "#000" }}
+                    style={{ gridArea: "1/1", width: "100%", fontWeight: 600, lineHeight: "normal", color: "var(--c-text)" }}
                     aria-label={`Editar valor: R$ ${formatAmount(investment)}`}
                   >
                     {formatAmount(investment)}
@@ -346,7 +384,7 @@ export function LabComparador({
                       right: 16,
                       top: "50%",
                       transform: "translateY(-50%)",
-                      color: "#808080",
+                      color: "var(--c-muted)",
                       pointerEvents: "none",
                     }}
                   >
@@ -380,7 +418,7 @@ export function LabComparador({
                 <div className="flex w-full mb-4">
                   {/* Nome — sticky, flex-1 igual ao row */}
                   <div
-                    className="sticky left-0 flex-1 bg-[#F3F4F6]"
+                    className="sticky left-0 flex-1 bg-[var(--c-bg)]"
                     style={{ ...COL_LABEL_STYLE, paddingLeft: 16 }}
                   >
                     Nome da Ação
@@ -413,7 +451,7 @@ export function LabComparador({
                 {/* Rows */}
                 <div
                   className="flex flex-col w-full"
-                  style={{ gap: 1, backgroundColor: "#E5E7EC", borderRadius: 12 }}
+                  style={{ gap: 1, backgroundColor: "var(--c-border)", borderRadius: 12 }}
                 >
                   {tickers.map((ticker, i) => (
                     <LabTickerRow
@@ -423,6 +461,7 @@ export function LabComparador({
                       onRemove={() => handleRemoveTicker(ticker)}
                       isFirst={i === 0}
                       isLast={i === tickers.length - 1}
+                      hideRemove={assetIdentity?.ticker === ticker}
                     />
                   ))}
                 </div>
@@ -442,7 +481,7 @@ export function LabComparador({
                   <button
                     type="button"
                     onClick={() => setAddingTicker(true)}
-                    className="flex items-center gap-3 font-normal text-[#111827] hover:text-[#00C66E] transition-colors bg-transparent border-none p-0 cursor-pointer"
+                    className="flex items-center gap-3 font-normal text-[var(--c-text)] hover:text-[var(--c-green)] transition-colors bg-transparent border-none p-0 cursor-pointer"
                     style={{ fontSize: 16 }}
                   >
                     <span

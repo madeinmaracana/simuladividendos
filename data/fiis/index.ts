@@ -1,5 +1,7 @@
 import { FII_DEFINITIONS } from "./fiis.registry";
 import type { FiiSeoRecord } from "./types";
+export { FII_SECTORS, getFiiSector } from "./sectors";
+export type { FiiSectorSlug, FiiSectorRecord } from "./types";
 
 export type { FiiSeoRecord, FiiSeoDefinition } from "./types";
 export { FII_DEFINITIONS };

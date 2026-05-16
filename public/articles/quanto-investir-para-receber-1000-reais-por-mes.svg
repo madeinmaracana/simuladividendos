@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#111111"/>
+  <rect x="120" y="450" width="60" height="80"  fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.16)" stroke-width="1"/>
+  <rect x="200" y="420" width="60" height="110" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.16)" stroke-width="1"/>
+  <rect x="280" y="385" width="60" height="145" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.16)" stroke-width="1"/>
+  <rect x="360" y="345" width="60" height="185" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.16)" stroke-width="1"/>
+  <rect x="440" y="295" width="60" height="235" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.16)" stroke-width="1"/>
+  <rect x="520" y="240" width="60" height="290" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.16)" stroke-width="1"/>
+  <rect x="600" y="175" width="60" height="355" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.16)" stroke-width="1"/>
+  <rect x="680" y="50"  width="60" height="480" fill="rgba(0,198,110,0.18)" stroke="rgba(0,198,110,0.55)" stroke-width="1"/>
+  <line x1="100" y1="50" x2="800" y2="50" stroke="rgba(255,255,255,0.25)" stroke-width="0.75"/>
+  <circle cx="680" cy="50" r="3" fill="#00C66E"/>
+</svg>

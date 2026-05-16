@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#111111"/>
+  <!-- All 64 squares, 8 cols x 8 rows, white by default -->
+  <!-- Row 0 (y=137) -->
+  <rect x="196" y="137" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="297" y="137" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="398" y="137" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="499" y="137" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="600" y="137" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="701" y="137" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <!-- Green cluster: row 0 col 6 (x=802), col 7 (x=903) -->
+  <rect x="802" y="137" width="28" height="28" fill="rgba(0,198,110,0.20)" stroke="rgba(0,198,110,0.55)" stroke-width="1"/>
+  <rect x="903" y="137" width="28" height="28" fill="rgba(0,198,110,0.20)" stroke="rgba(0,198,110,0.55)" stroke-width="1"/>
+  <!-- Row 1 (y=194) -->
+  <rect x="196" y="194" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="297" y="194" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="398" y="194" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="499" y="194" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="600" y="194" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <!-- Green cluster: row 1 col 5,6,7 -->
+  <rect x="701" y="194" width="28" height="28" fill="rgba(0,198,110,0.20)" stroke="rgba(0,198,110,0.55)" stroke-width="1"/>
+  <rect x="802" y="194" width="28" height="28" fill="rgba(0,198,110,0.20)" stroke="rgba(0,198,110,0.55)" stroke-width="1"/>
+  <rect x="903" y="194" width="28" height="28" fill="rgba(0,198,110,0.20)" stroke="rgba(0,198,110,0.55)" stroke-width="1"/>
+  <!-- Row 2 (y=251) -->
+  <rect x="196" y="251" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="297" y="251" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="398" y="251" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="499" y="251" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="600" y="251" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="701" y="251" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="802" y="251" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <!-- Green cluster: row 2 col 7 -->
+  <rect x="903" y="251" width="28" height="28" fill="rgba(0,198,110,0.20)" stroke="rgba(0,198,110,0.55)" stroke-width="1"/>
+  <!-- Rows 3-7 all white -->
+  <rect x="196" y="308" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="297" y="308" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="398" y="308" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="499" y="308" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="600" y="308" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="701" y="308" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="802" y="308" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="903" y="308" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="196" y="365" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="297" y="365" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="398" y="365" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="499" y="365" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="600" y="365" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="701" y="365" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="802" y="365" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="903" y="365" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="196" y="422" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="297" y="422" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="398" y="422" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="499" y="422" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="600" y="422" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="701" y="422" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="802" y="422" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="903" y="422" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="196" y="479" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="297" y="479" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="398" y="479" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="499" y="479" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="600" y="479" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="701" y="479" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="802" y="479" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="903" y="479" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="196" y="536" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="297" y="536" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="398" y="536" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="499" y="536" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="600" y="536" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="701" y="536" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="802" y="536" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <rect x="903" y="536" width="28" height="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+</svg>

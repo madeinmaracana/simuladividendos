@@ -1,0 +1,39 @@
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="frame">
+      <rect width="1200" height="675"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="675" fill="#111111"/>
+
+  <!-- Plane 1 — large, rotated -7°, bottom-left -->
+  <rect x="-80" y="100" width="860" height="680"
+    fill="#ffffff" fill-opacity="0.04"
+    stroke="#ffffff" stroke-opacity="0.16" stroke-width="0.75"
+    transform="rotate(-7 350 440)"
+    clip-path="url(#frame)"/>
+
+  <!-- Plane 2 — large, rotated +5°, right side, green tint -->
+  <rect x="400" y="-80" width="900" height="700"
+    fill="#00C66E" fill-opacity="0.05"
+    stroke="#00C66E" stroke-opacity="0.22" stroke-width="0.75"
+    transform="rotate(5 850 270)"
+    clip-path="url(#frame)"/>
+
+  <!-- Plane 3 — smaller, upper-left, very subtle -->
+  <rect x="-40" y="-80" width="580" height="500"
+    fill="#ffffff" fill-opacity="0.025"
+    stroke="#ffffff" stroke-opacity="0.10" stroke-width="0.5"
+    transform="rotate(-3 250 170)"
+    clip-path="url(#frame)"/>
+
+  <!-- Ground line -->
+  <line x1="0" y1="337" x2="1200" y2="337"
+    stroke="#ffffff" stroke-opacity="0.10" stroke-width="0.5"/>
+
+  <!-- Green accent at center intersection -->
+  <circle cx="600" cy="337" r="2.5" fill="#00C66E"/>
+  <rect x="594" y="325" width="12" height="12"
+    fill="none" stroke="#00C66E" stroke-width="0.75" stroke-opacity="0.70"/>
+</svg>

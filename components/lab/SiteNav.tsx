@@ -12,9 +12,10 @@ interface NavItem {
 }
 
 const NAV_ITEMS: NavItem[] = [
-  { href: "/",      label: "Home" },
-  { href: "/acoes", label: "Ações" },
-  { href: "/fiis",  label: "FIIs" },
+  { href: "/",        label: "Home" },
+  { href: "/acoes",   label: "Ações" },
+  { href: "/fiis",    label: "FIIs" },
+  { href: "/artigos", label: "Artigos" },
 ];
 
 /* ── NavPill ────────────────────────────────────────────────── */
@@ -38,8 +39,8 @@ function NavPill({ href, active, children, onClick }: NavPillProps) {
         justifyContent: "center",
         borderRadius: 120,
         padding: "8px 16px",
-        background: active ? "#E5E7EC" : "transparent",
-        color: "#000",
+        background: active ? "var(--c-border)" : "transparent",
+        color: "var(--c-text)",
         fontSize: 16,
         fontWeight: 400,
         lineHeight: "normal",
@@ -81,18 +82,18 @@ export function SiteNav() {
         {/* Logo */}
         <Link href="/" className="group inline-flex items-center no-underline" style={{ gap: 4 }}>
           <span
-            className="text-[#00C66E] group-hover:text-black transition-colors"
+            className="text-[var(--c-green)] group-hover:text-[var(--c-text)] transition-colors"
             style={{ fontSize: 20, fontWeight: 600, letterSpacing: "-0.2px", lineHeight: "normal" }}
           >
             Simula
           </span>
           <span
-            className="material-symbols-outlined select-none leading-none text-[#00C66E] group-hover:text-black transition-colors"
+            className="material-symbols-outlined select-none leading-none text-[var(--c-green)] group-hover:text-[var(--c-text)] transition-colors"
             style={{ fontSize: 32, fontVariationSettings: "'opsz' 32, 'wght' 400, 'FILL' 1, 'GRAD' 0" }}
           >
             nest_eco_leaf
           </span>
-          <span style={{ fontSize: 20, fontWeight: 400, color: "#808080", letterSpacing: "-0.2px", lineHeight: "normal" }}>
+          <span style={{ fontSize: 20, fontWeight: 400, color: "var(--c-muted)", letterSpacing: "-0.2px", lineHeight: "normal" }}>
             Dividendos
           </span>
         </Link>
@@ -114,7 +115,7 @@ export function SiteNav() {
           className="sm:hidden flex items-center justify-center bg-transparent border-none cursor-pointer p-1"
         >
           <span
-            className="material-symbols-outlined leading-none text-[#111827]"
+            className="material-symbols-outlined leading-none text-[var(--c-text)]"
             style={{ fontSize: 24, fontVariationSettings: "'opsz' 24, 'wght' 300, 'FILL' 0, 'GRAD' 0" }}
           >
             {open ? "close" : "menu"}
@@ -125,7 +126,7 @@ export function SiteNav() {
       {/* ── Overlay — começa abaixo do nav, logo e ícone não se movem ── */}
       {open && (
         <div
-          className="sm:hidden fixed left-0 right-0 bottom-0 z-50 bg-white"
+          className="sm:hidden fixed left-0 right-0 bottom-0 z-50 bg-[var(--c-surface)]"
           style={{ top: overlayTop }}
         >
           <nav className="flex flex-col items-start px-6 pt-6" style={{ gap: 4 }}>

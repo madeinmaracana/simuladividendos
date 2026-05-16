@@ -1,29 +1,18 @@
 import type { Metadata } from "next";
 import { notFound, redirect } from "next/navigation";
 import Link from "next/link";
-import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
-import { SiteHeader } from "@/components/layout/SiteHeader";
-import { ArticleContent } from "@/components/articles/ArticleContent";
+import { SiteNav } from "@/components/lab/SiteNav";
+import { SiteFooter } from "@/components/lab/SiteFooter";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { QuickAnswer } from "@/components/seo/QuickAnswer";
-import { StockFAQ } from "@/components/stocks/StockFAQ";
-import { Card } from "@/components/ui/Card";
-import { SectionHeading } from "@/components/ui/SectionHeading";
 import { getAllArticleSlugs, getArticleBySlug } from "@/data/articles";
-import { getFiiPath } from "@/data/fiis";
-import { getSectorPath, getTickerPath } from "@/lib/stocks-data";
-import { getSector } from "@/data/stocks";
-import { ROUTES } from "@/lib/seo/constants";
-import { breadcrumbsArticle, buildArticlePageMetadata, buildArticleSchemaFromPath } from "@/lib/seo";
-import { cn } from "@/lib/cn";
-import { ui } from "@/components/ui/classes";
-
+import { buildArticlePageMetadata, buildArticleSchemaFromPath } from "@/lib/seo";
 
 type PageProps = { params: { slug: string } };
 
-/** Consolidação de intenção: slugs antigos redirecionam para a versão principal. */
+/** Slugs antigos redirecionam para a versão principal. */
 const ARTICLE_REDIRECTS: Record<string, string> = {
-  "quanto-investir-para-receber-1000-por-mes": "quanto-investir-para-receber-1000-reais-por-mes",
+  "quanto-investir-para-receber-1000-por-mes":
+    "quanto-investir-para-receber-1000-reais-por-mes",
 };
 
 export function generateStaticParams() {
@@ -38,88 +27,163 @@ export function generateMetadata({ params }: PageProps): Metadata {
   return buildArticlePageMetadata(article);
 }
 
+/* ── page ─────────────────────────────────────────────── */
+
 export default function ArtigoPage({ params }: PageProps) {
-  const slug = decodeURIComponent(params.slug).trim().toLowerCase();
-  const redirected = ARTICLE_REDIRECTS[slug];
-  if (redirected) {
-    redirect(`/artigos/${encodeURIComponent(redirected)}`);
-  }
-  const article = getArticleBySlug(slug);
+  const slugRaw = decodeURIComponent(params.slug).trim().toLowerCase();
+  const redirected = ARTICLE_REDIRECTS[slugRaw];
+  if (redirected) redirect(`/artigos/${encodeURIComponent(redirected)}`);
+
+  const article = getArticleBySlug(slugRaw);
   if (!article) notFound();
 
   const path = `/artigos/${encodeURIComponent(article.slug)}`;
   const articleSchema = buildArticleSchemaFromPath(article, path);
 
   return (
-    <main className="flex w-full flex-col">
-      <SiteHeader title={article.title} description={article.description} />
-      <Breadcrumbs items={breadcrumbsArticle(article)} />
-
+    <div className="flex flex-col min-h-screen bg-[var(--c-bg)]">
       <JsonLd data={articleSchema} />
 
-      <div className="w-full bg-[#F3F4F6]">
-        <div className="mx-auto flex w-full max-w-[var(--page-max)] flex-col gap-16 px-[var(--page-gutter)] py-16 lg:py-24">
+      <div
+        className="mx-auto w-full max-w-[969px] px-4 pt-8 flex flex-col"
+        style={{ gap: 80, paddingBottom: 320 }}
+      >
+        {/* Nav */}
+        <header style={{ display: "contents" }}>
+          <SiteNav />
+        </header>
 
-          {article.quickAnswer ? (
-            <QuickAnswer>
-              <p>{article.quickAnswer}</p>
-            </QuickAnswer>
-          ) : null}
+        <main style={{ display: "contents" }}>
 
-          <ArticleContent sections={article.sections} />
+          {/* Conteúdo do artigo */}
+          <div className="flex flex-col w-full" style={{ gap: 40 }}>
 
-          <section aria-labelledby="heading-faq-artigo">
-            <StockFAQ
-              title="Perguntas frequentes"
-              items={article.faqs}
-              id="heading-faq-artigo"
-            />
-          </section>
+            {/* Breadcrumb + H1 */}
+            <div className="flex flex-col" style={{ gap: 16 }}>
+              <Link
+                href="/artigos"
+                className="no-underline hover:opacity-60 transition-opacity"
+                style={{
+                  fontSize: 16,
+                  fontWeight: 400,
+                  color: "var(--c-muted)",
+                  lineHeight: "normal",
+                }}
+              >
+                Artigos
+              </Link>
+              <h1
+                className="text-[28px] sm:text-[40px] lg:text-[52px]"
+                style={{
+                  margin: 0,
+                  fontWeight: 400,
+                  color: "var(--c-text)",
+                  lineHeight: "normal",
+                  letterSpacing: "-1.04px",
+                }}
+              >
+                {article.title}
+              </h1>
+            </div>
 
-          <section aria-labelledby="heading-relacionados">
-            <Card>
-              <SectionHeading
-                id="heading-relacionados"
-                title="Próximos passos"
-                description="Simulador, páginas de ativos, setores e leituras relacionadas."
+            {/* Descrição / intro */}
+            {article.description && (
+              <p
+                className="text-[16px] sm:text-[20px] lg:text-[24px]"
+                style={{
+                  margin: 0,
+                  fontWeight: 300,
+                  color: "var(--c-muted)",
+                  lineHeight: "normal",
+                  letterSpacing: "-0.48px",
+                }}
+              >
+                {article.description}
+              </p>
+            )}
+
+            {/* Imagem de capa */}
+            {article.coverImage && (
+              <div
+                style={{
+                  width: "100%",
+                  aspectRatio: "16/9",
+                  borderRadius: 16,
+                  background: `url(${article.coverImage}) center/cover no-repeat`,
+                  flexShrink: 0,
+                }}
               />
-              <div className="mt-4 flex flex-wrap gap-2">
-                <Link href="/simulador" className={cn(ui.ctaSecondary, "no-underline")}>
-                  Abrir o simulador →
-                </Link>
-                <Link href={ROUTES.artigos} className={cn(ui.pillGhost, "no-underline")}>
-                  Todos os artigos →
-                </Link>
-                {(article.relatedArticleSlugs ?? []).map((s) => {
-                  const rel = getArticleBySlug(s);
-                  if (!rel) return null;
-                  return (
-                    <Link key={s} href={ROUTES.artigo(s)} className={cn(ui.pillGhost, "no-underline")}>
-                      {rel.title}
-                    </Link>
-                  );
-                })}
-                {article.relatedTickers.slice(0, 6).map((t) => (
-                  <Link key={t} href={getTickerPath(t)} className={cn(ui.pill, "no-underline")}>
-                    {t}
-                  </Link>
+            )}
+
+            {/* Seções */}
+            {article.sections.map((section, i) => (
+              <div key={i} className="flex flex-col" style={{ gap: 16 }}>
+                <h2
+                  style={{
+                    margin: 0,
+                    fontSize: 32,
+                    fontWeight: 500,
+                    color: "var(--c-text)",
+                    lineHeight: "normal",
+                    letterSpacing: "-0.64px",
+                  }}
+                >
+                  {section.heading}
+                </h2>
+                {section.paragraphs.map((p, j) => (
+                  <p
+                    key={j}
+                    className="text-[16px] sm:text-[20px] lg:text-[24px]"
+                    style={{
+                      margin: 0,
+                      fontWeight: 300,
+                      color: "var(--c-text)",
+                      lineHeight: "normal",
+                      letterSpacing: "-0.48px",
+                    }}
+                  >
+                    {p}
+                  </p>
                 ))}
-                {(article.relatedFiis ?? []).slice(0, 6).map((t) => (
-                  <Link key={t} href={getFiiPath(t)} className={cn(ui.pill, "no-underline")}>
-                    {t}
-                  </Link>
-                ))}
-                {article.relatedSectors.slice(0, 4).map((s) => (
-                  <Link key={s} href={getSectorPath(s)} className={cn(ui.pillNeutral, "no-underline")}>
-                    {getSector(s)?.name ?? s}
-                  </Link>
+                {section.subsections?.map((sub) => (
+                  <div key={sub.heading} className="flex flex-col" style={{ gap: 12 }}>
+                    <h3
+                      style={{
+                        margin: 0,
+                        fontSize: 24,
+                        fontWeight: 500,
+                        color: "var(--c-text)",
+                        lineHeight: "normal",
+                      }}
+                    >
+                      {sub.heading}
+                    </h3>
+                    {sub.paragraphs.map((p, k) => (
+                      <p
+                        key={k}
+                        className="text-[16px] sm:text-[20px] lg:text-[24px]"
+                        style={{
+                          margin: 0,
+                          fontWeight: 300,
+                          color: "var(--c-text)",
+                          lineHeight: "normal",
+                          letterSpacing: "-0.48px",
+                        }}
+                      >
+                        {p}
+                      </p>
+                    ))}
+                  </div>
                 ))}
               </div>
-            </Card>
-          </section>
+            ))}
 
-        </div>
+          </div>
+
+        </main>
       </div>
-    </main>
+
+      <SiteFooter />
+    </div>
   );
 }

@@ -2,6 +2,31 @@
 @import "./tokens.css";
 
 /* =============================================================================
+   DESIGN SYSTEM — 6 cores oficiais (light + dark)
+   ============================================================================= */
+:root {
+  --c-bg:        #F3F4F6;
+  --c-surface:   #FFFFFF;
+  --c-border:    #E5E7EC;
+  --c-text:      #000000;
+  --c-muted:     #808080;
+  --c-green:     #00C66E;
+  --c-row-hover: #989FAC;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --c-bg:        #111111;
+    --c-surface:   #1C1C1C;
+    --c-border:    #2A2A2A;
+    --c-text:      #F0F0F0;
+    --c-muted:     #808080;
+    --c-green:     #00C66E;
+    --c-row-hover: #2E2E2E;
+  }
+}
+
+/* =============================================================================
    GLOBALS — SimulaDividendos
    Estilos base + classes utilitárias do design system.
    Os tokens estão em app/tokens.css; a referência TypeScript em lib/tokens.ts.
@@ -25,9 +50,13 @@
 /* ---------------------------------------------------------------------------
    Base
    --------------------------------------------------------------------------- */
+html {
+  background: var(--c-bg);
+}
+
 body {
-  background: #F3F4F6;
-  color: #111827;
+  background: var(--c-bg);
+  color: var(--c-text);
   font-family: var(--font-sans);
   font-feature-settings: var(--font-features-ui);
   font-variant-numeric: slashed-zero;

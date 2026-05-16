@@ -1,0 +1,42 @@
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="gb_glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00C66E" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#00C66E" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="#111111"/>
+
+  <!-- Giant arc — center upper-right off-frame -->
+  <circle cx="1060" cy="-60" r="640"
+    fill="none"
+    stroke="#ffffff" stroke-opacity="0.20" stroke-width="1"/>
+
+  <!-- Second ring — tighter -->
+  <circle cx="1060" cy="-60" r="430"
+    fill="none"
+    stroke="#ffffff" stroke-opacity="0.10" stroke-width="0.75"/>
+
+  <!-- Subtle interior fill -->
+  <circle cx="1060" cy="-60" r="639"
+    fill="#1A1A1A" clip-path="none" opacity="0.40"/>
+
+  <!-- Green touch-point on arc (lower-left visible area) -->
+  <!-- Point at ~215° on large circle: 1060 + 640*cos(215°), -60 + 640*sin(215°) -->
+  <!-- cos(215°)≈-0.819, sin(215°)≈-0.574 → 1060-524=-464? too far left -->
+  <!-- Let's use ~205°: cos≈-0.906, sin≈-0.423 → 1060-580=480, -60+(-270)=-330? no -->
+  <!-- Let's place it manually where the arc visually intersects the frame nicely -->
+  <circle cx="490" cy="270" r="4" fill="#00C66E"/>
+
+  <!-- Glow at that point -->
+  <circle cx="490" cy="270" r="90" fill="url(#gb_glow)"/>
+
+  <!-- Tangent line -->
+  <line x1="370" y1="160" x2="610" y2="380"
+    stroke="#00C66E" stroke-opacity="0.35" stroke-width="0.75"/>
+
+  <!-- Horizon reference -->
+  <line x1="0" y1="337" x2="1200" y2="337"
+    stroke="#ffffff" stroke-opacity="0.07" stroke-width="0.5"/>
+</svg>

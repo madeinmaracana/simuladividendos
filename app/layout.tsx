@@ -98,17 +98,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block"
         />
       </head>
-      <body className="min-h-screen antialiased" style={{ background: "#F3F4F6" }}>
+      <body className="min-h-screen antialiased">
         <GoogleAnalytics />
-        {/*
-          p-2 = 8px gap on all sides — cria a margem entre o card hero e as bordas do viewport.
-          Cada página inclui o SiteNav dentro do seu próprio card hero escuro.
-        */}
         <div className="flex min-h-screen flex-col gap-0">
-          {/* p-2 = 8px gap que cria a margem flutuante dos cards hero */}
-          <div className="flex-1 p-2">{children}</div>
-          {/* Footer temporariamente removido */}
-          {/* <SiteFooter /> */}
+          <div className="flex-1">{children}</div>
         </div>
       </body>
     </html>
