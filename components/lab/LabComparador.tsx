@@ -284,7 +284,7 @@ export function LabComparador() {
                 {/* Mirror span: dimensiona o grid ao conteúdo atual */}
                 <span
                   aria-hidden
-                  className="lab-amount zero-slashed"
+                  className="lab-amount numeric-slashed"
                   style={{
                     gridArea: "1/1",
                     visibility: "hidden",
@@ -292,8 +292,6 @@ export function LabComparador() {
                     whiteSpace: "pre",
                     fontWeight: 600,
                     lineHeight: "normal",
-                    fontVariantNumeric: "slashed-zero",
-                    fontFeatureSettings: '"zero" 1',
                     minWidth: "1ch",
                   }}
                 >
@@ -310,7 +308,7 @@ export function LabComparador() {
                     onChange={(e) => setRawInput(e.target.value.replace(/[^0-9.,]/g, ""))}
                     onBlur={commitEdit}
                     onKeyDown={handleAmountKeyDown}
-                    className="lab-amount zero-slashed bg-transparent outline-none border-none"
+                    className="lab-amount numeric-slashed bg-transparent outline-none border-none"
                     style={{ gridArea: "1/1", width: "100%", fontWeight: 600, lineHeight: "normal", color: "#C1C1C1", padding: 0 }}
                     aria-label="Valor do investimento"
                   />
@@ -318,7 +316,7 @@ export function LabComparador() {
                   <button
                     type="button"
                     onClick={startEditing}
-                    className="lab-amount zero-slashed underline cursor-text bg-transparent outline-none border-none p-0 text-left"
+                    className="lab-amount numeric-slashed underline cursor-text bg-transparent outline-none border-none p-0 text-left"
                     style={{ gridArea: "1/1", width: "100%", fontWeight: 600, lineHeight: "normal", color: "#000" }}
                     aria-label={`Editar valor: R$ ${formatAmount(investment)}`}
                   >
@@ -427,7 +425,7 @@ export function LabComparador() {
                   <button
                     type="button"
                     onClick={() => setAddingTicker(true)}
-                    className="flex items-center gap-1.5 font-normal text-[#111827] hover:text-[#00C66E] transition-colors bg-transparent border-none p-0 cursor-pointer"
+                    className="flex items-center gap-3 font-normal text-[#111827] hover:text-[#00C66E] transition-colors bg-transparent border-none p-0 cursor-pointer"
                     style={{ fontSize: 16 }}
                   >
                     <span
@@ -443,6 +441,7 @@ export function LabComparador() {
             </div>
 
           </div>
+
         </div>
       </div>
     </div>

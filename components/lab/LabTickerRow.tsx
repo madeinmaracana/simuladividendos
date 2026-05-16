@@ -104,9 +104,9 @@ function detectFrequency(dividends: { paymentDate?: string | null }[]): string |
   const median = intervals[Math.floor(intervals.length / 2)]!;
 
   if (median <= 45) return "Mensal";
-  if (median <= 75) return "Bim.";
-  if (median <= 120) return "Trim.";
-  if (median <= 240) return "Sem.";
+  if (median <= 75) return "Bimestral";
+  if (median <= 120) return "Trimestral";
+  if (median <= 240) return "Semestral";
   return "Anual";
 }
 
@@ -177,8 +177,9 @@ export function LabTickerRow({ ticker, investment, onRemove, isFirst, isLast }: 
 
   const cellCls = "text-black group-hover:text-white transition-colors";
   const cellSty = { fontSize: 16, fontWeight: 400 } as const;
+  const numCls = `numeric-slashed ${cellCls}`; // valores monetários e numéricos
   const divCls =
-    "zero-slashed flex items-center px-4 border-l border-[#E5E7EC] group-hover:border-transparent transition-colors shrink-0";
+    "flex items-center px-4 border-l border-[#E5E7EC] group-hover:border-transparent transition-colors shrink-0";
 
   return (
     <div
@@ -204,14 +205,14 @@ export function LabTickerRow({ ticker, investment, onRemove, isFirst, isLast }: 
 
       {/* Preço da cota */}
       <div className={divCls} style={{ width: LAB_COL_WIDTHS[0], minHeight: 56 }}>
-        <span className={cellCls} style={cellSty}>
+        <span className={numCls} style={cellSty}>
           {stock ? formatBRL(price, currency) : "—"}
         </span>
       </div>
 
       {/* Quantidade */}
       <div className={divCls} style={{ width: LAB_COL_WIDTHS[1], minHeight: 56 }}>
-        <span className={cellCls} style={cellSty}>
+        <span className={numCls} style={cellSty}>
           {shares > 0 ? `≈ ${shares.toLocaleString("pt-BR")}` : "—"}
         </span>
       </div>
@@ -219,14 +220,14 @@ export function LabTickerRow({ ticker, investment, onRemove, isFirst, isLast }: 
       {/* Último pagamento */}
       <div className={divCls} style={{ width: LAB_COL_WIDTHS[2], minHeight: 56 }}>
         {lastPaymentTotal != null && lastPaymentTotal > 0 ? (
-          <span className={cellCls} style={cellSty}>{formatBRL(lastPaymentTotal, currency)}</span>
+          <span className={numCls} style={cellSty}>{formatBRL(lastPaymentTotal, currency)}</span>
         ) : <NaoAnunciado />}
       </div>
 
       {/* Próximo pagamento */}
       <div className={divCls} style={{ width: LAB_COL_WIDTHS[3], minHeight: 56 }}>
         {nextPaymentTotal != null && nextPaymentTotal > 0 ? (
-          <span className={cellCls} style={cellSty}>{formatBRL(nextPaymentTotal, currency)}</span>
+          <span className={numCls} style={cellSty}>{formatBRL(nextPaymentTotal, currency)}</span>
         ) : <NaoAnunciado />}
       </div>
 
@@ -234,7 +235,7 @@ export function LabTickerRow({ ticker, investment, onRemove, isFirst, isLast }: 
       <div className={divCls} style={{ width: LAB_COL_WIDTHS[4], minHeight: 56 }}>
         {frequency ? (
           <span
-            className={cellCls}
+            className="text-[#808080] group-hover:text-white transition-colors"
             style={{ fontSize: 10, fontWeight: 400, lineHeight: 1, whiteSpace: "nowrap" }}
           >
             {frequency}
@@ -245,14 +246,14 @@ export function LabTickerRow({ ticker, investment, onRemove, isFirst, isLast }: 
       {/* Dividendos 12m */}
       <div className={divCls} style={{ width: LAB_COL_WIDTHS[5], minHeight: 56 }}>
         {last12mTotal > 0 ? (
-          <span className={cellCls} style={cellSty}>{formatBRL(last12mTotal, currency)}</span>
+          <span className={numCls} style={cellSty}>{formatBRL(last12mTotal, currency)}</span>
         ) : <NaoAnunciado />}
       </div>
 
       {/* DY 12m */}
       <div className={divCls} style={{ width: LAB_COL_WIDTHS[6], minHeight: 56 }}>
         {dyPercent != null ? (
-          <span className={cellCls} style={cellSty}>
+          <span className={numCls} style={cellSty}>
             {dyPercent.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 })}%
           </span>
         ) : <NaoAnunciado />}

@@ -30,6 +30,7 @@ body {
   color: #111827;
   font-family: var(--font-sans);
   font-feature-settings: var(--font-features-ui);
+  font-variant-numeric: slashed-zero;
   line-height: var(--leading-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -83,6 +84,11 @@ code, pre, kbd, samp {
 .slashed-zero  { font-feature-settings: var(--font-features-numeric); font-variant-numeric: tabular-nums slashed-zero; }
 /* Zero cortado sem tabular — use em displays financeiros sem grid de largura fixa */
 .zero-slashed  { font-feature-settings: "zero" 1; font-variant-numeric: slashed-zero; }
+/* Valores monetários e numéricos — herda Inter do body, adiciona slashed-zero */
+.numeric-slashed {
+  font-feature-settings: "zero" 1;
+  font-variant-numeric: slashed-zero;
+}
 
 /* ---------------------------------------------------------------------------
    Lab — tabela: minWidth aplicado só no mobile para scroll horizontal.

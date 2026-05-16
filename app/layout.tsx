@@ -1,16 +1,30 @@
 import type { Metadata } from "next";
-import { Inter, Merriweather } from "next/font/google";
+import localFont from "next/font/local";
+import { Merriweather } from "next/font/google";
 import { getSeoBaseUrl } from "@/lib/site";
 import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import "./globals.css";
 
-/** Inter — fonte primária do design system */
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["200", "400", "500", "600", "700"],
+/**
+ * Inter Variable — fonte local (rsms.me/inter) para suportar OpenType features completas.
+ * Google Fonts serve subsets sem as tabelas de features (zero, ss01), por isso usamos
+ * o arquivo completo via next/font/local.
+ */
+const inter = localFont({
+  src: [
+    {
+      path: "./fonts/InterVariable.woff2",
+      style: "normal",
+    },
+    {
+      path: "./fonts/InterVariable-Italic.woff2",
+      style: "italic",
+    },
+  ],
   variable: "--font-inter",
   display: "swap",
+  weight: "100 900",
 });
 
 /** Editorial / artigos — Merriweather serif */
