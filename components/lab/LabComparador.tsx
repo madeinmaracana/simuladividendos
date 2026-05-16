@@ -267,7 +267,7 @@ export function LabComparador() {
             </p>
 
             {/* Estrutura única — sem troca de layout */}
-            <div className="flex items-baseline gap-3">
+            <div className="flex items-baseline gap-3" style={{ width: editingAmount ? "100%" : undefined }}>
               <span className="lab-currency" style={{ fontWeight: 200, lineHeight: "normal", color: "#00C66E" }}>
                 R$
               </span>
@@ -275,13 +275,15 @@ export function LabComparador() {
               {/* Box: fundo e padding horizontal aparecem no edit */}
               <div
                 style={{
-                  display: "inline-grid",
+                  display: editingAmount ? "grid" : "inline-grid",
+                  flex: editingAmount ? 1 : undefined,
+                  position: "relative",
                   borderRadius: 16,
                   background: editingAmount ? "#E5E7EC" : "transparent",
                   padding: editingAmount ? "0 16px" : "0",
                 }}
               >
-                {/* Mirror span: dimensiona o grid ao conteúdo atual */}
+                {/* Mirror span: reserva largura + espaço para o hint quando editando */}
                 <span
                   aria-hidden
                   className="lab-amount numeric-slashed"
@@ -293,6 +295,7 @@ export function LabComparador() {
                     fontWeight: 600,
                     lineHeight: "normal",
                     minWidth: "1ch",
+                    paddingRight: editingAmount ? 80 : 0,
                   }}
                 >
                   {editingAmount ? (rawInput || "0") : formatAmount(investment)}
@@ -309,7 +312,7 @@ export function LabComparador() {
                     onBlur={commitEdit}
                     onKeyDown={handleAmountKeyDown}
                     className="lab-amount numeric-slashed bg-transparent outline-none border-none"
-                    style={{ gridArea: "1/1", width: "100%", fontWeight: 600, lineHeight: "normal", color: "#C1C1C1", padding: 0 }}
+                    style={{ gridArea: "1/1", width: "100%", fontWeight: 600, lineHeight: "normal", color: "#C1C1C1", padding: 0, paddingRight: 80 }}
                     aria-label="Valor do investimento"
                   />
                 ) : (
@@ -323,25 +326,29 @@ export function LabComparador() {
                     {formatAmount(investment)}
                   </button>
                 )}
-              </div>
 
-              {/* Hint Enter */}
-              <div
-                className="flex items-center gap-1.5"
-                style={{
-                  color: "#808080",
-                  opacity: editingAmount ? 1 : 0,
-                  pointerEvents: editingAmount ? "auto" : "none",
-                  alignSelf: "center",
-                }}
-              >
-                <span
-                  className="material-symbols-outlined leading-none"
-                  style={{ fontSize: 20, fontVariationSettings: "'opsz' 20, 'wght' 300, 'FILL' 0, 'GRAD' 0" }}
-                >
-                  keyboard_return
-                </span>
-                <span style={{ fontSize: 14 }}>Enter</span>
+                {/* Hint Enter — dentro do box, alinhado a 16px da direita */}
+                {editingAmount && (
+                  <div
+                    className="flex items-center gap-1.5"
+                    style={{
+                      position: "absolute",
+                      right: 16,
+                      top: "50%",
+                      transform: "translateY(-50%)",
+                      color: "#808080",
+                      pointerEvents: "none",
+                    }}
+                  >
+                    <span
+                      className="material-symbols-outlined leading-none"
+                      style={{ fontSize: 20, fontVariationSettings: "'opsz' 20, 'wght' 300, 'FILL' 0, 'GRAD' 0" }}
+                    >
+                      keyboard_return
+                    </span>
+                    <span style={{ fontSize: 14 }}>Enter</span>
+                  </div>
+                )}
               </div>
             </div>
           </div>
