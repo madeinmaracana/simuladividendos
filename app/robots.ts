@@ -7,13 +7,12 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: "*",
-        allow: "/",
+        allow: ["/", "/fiis/"],
         disallow: [
           "/acoes/",
           "/artigos/",
           "/calculadora-renda-passiva/",
           "/comparar/",
-          "/fiis/",
           "/lab/",
           "/melhores-acoes/",
           "/melhores-acoes-dividendos/",

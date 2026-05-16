@@ -1,10 +1,10 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import Link from "next/link";
 import { useTickerSuggestions } from "@/hooks/useTickerSuggestions";
 import { TickerLogo } from "@/components/ui/TickerLogo";
 import { LabTickerRow, LAB_COL_WIDTHS } from "./LabTickerRow";
+import { SiteNav } from "./SiteNav";
 
 /* ── helpers ──────────────────────────────────────────────── */
 
@@ -153,11 +153,21 @@ function AddTickerRow({ onAdd, onCancel }: AddTickerRowProps) {
 
 /* ── LabComparador ────────────────────────────────────────── */
 
-export function LabComparador() {
+interface LabComparadorProps {
+  defaultTickers?: string[];
+  heroTitle?: string;
+  heroDescription?: string;
+}
+
+export function LabComparador({
+  defaultTickers = ["BBAS3", "ITUB4", "VALE3", "EGIE3"],
+  heroTitle = "Compare quanto cada ativo paga em dividendos.",
+  heroDescription = "Simule aportes e compare a renda passiva dos principais ativos da bolsa.",
+}: LabComparadorProps = {}) {
   const [investment, setInvestment] = useState(2000);
   const [editingAmount, setEditingAmount] = useState(false);
   const [rawInput, setRawInput] = useState("");
-  const [tickers, setTickers] = useState(["BBAS3", "ITUB4", "VALE3", "EGIE3"]);
+  const [tickers, setTickers] = useState(defaultTickers);
   const [addingTicker, setAddingTicker] = useState(false);
 
   const inputRef = useRef<HTMLInputElement>(null);
@@ -206,26 +216,8 @@ export function LabComparador() {
     <div className="min-h-screen bg-[#F3F4F6]">
       <div className="mx-auto max-w-[969px] px-4 py-8 flex flex-col" style={{ gap: 80 }}>
 
-        {/* ── Header ── */}
-        <Link href="/" className="group inline-flex items-center no-underline" style={{ gap: 4 }}>
-          <span
-            className="text-[#00C66E] group-hover:text-black transition-colors"
-            style={{ fontSize: 20, fontWeight: 600, letterSpacing: "-0.2px", lineHeight: "normal" }}
-          >
-            Simula
-          </span>
-          <span
-            className="material-symbols-outlined select-none leading-none text-[#00C66E] group-hover:text-black transition-colors"
-            style={{ fontSize: 32, fontVariationSettings: "'opsz' 32, 'wght' 400, 'FILL' 1, 'GRAD' 0" }}
-          >
-            nest_eco_leaf
-          </span>
-          <span
-            style={{ fontSize: 20, fontWeight: 400, color: "#808080", letterSpacing: "-0.2px", lineHeight: "normal" }}
-          >
-            Dividendos
-          </span>
-        </Link>
+        {/* ── Header / Nav ── */}
+        <SiteNav />
 
         {/* ── Hero ── */}
         <div className="flex flex-col w-full" style={{ gap: 16 }}>
@@ -240,7 +232,7 @@ export function LabComparador() {
               letterSpacing: "-1.04px",
             }}
           >
-            Compare quanto cada ativo paga em dividendos.
+            {heroTitle}
           </h1>
           <p
             className="text-[16px] sm:text-[20px] lg:text-[24px]"
@@ -253,7 +245,7 @@ export function LabComparador() {
               letterSpacing: "-0.48px",
             }}
           >
-            Simule aportes e compare a renda passiva dos principais ativos da bolsa.
+            {heroDescription}
           </p>
         </div>
 
